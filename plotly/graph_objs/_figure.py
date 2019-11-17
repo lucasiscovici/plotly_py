@@ -16313,7 +16313,7 @@ class Figure(BaseFigure):
             locale="en-US",
             locales=dict(),
             **kwargs):
-    """
+        """
     staticPlot: {
             valType: 'boolean',
             dflt: false,
@@ -16763,7 +16763,7 @@ class Figure(BaseFigure):
             ].join(' ')
         }
     };
-"""
+    """
     return setattrAndReturnSelf(self,"_config",merge(self._config,dict(staticPlot=staticPlot,
     plotlyServerURL=plotlyServerURL,
     editable=editable,
