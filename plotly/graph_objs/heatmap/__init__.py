@@ -1819,7 +1819,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         return self["yanchor"]
 
-    @tick.setter
+    @yanchor.setter
     def yanchor(self, val):
         self["yanchor"] = val
 
