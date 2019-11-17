@@ -474,7 +474,7 @@ class BaseFigure(object):
         import plotly.io as pio
 
         if pio.renderers.render_on_display and pio.renderers.default:
-            self.show(self)
+            self.show()
         else:
             print(repr(self))
 
