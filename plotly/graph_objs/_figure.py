@@ -16763,8 +16763,7 @@ class Figure(BaseFigure):
             ].join(' ')
         }
     };
-    
-    """
+"""
     return setattrAndReturnSelf(self,"_config",merge(self._config,dict(staticPlot=staticPlot,
     plotlyServerURL=plotlyServerURL,
     editable=editable,
