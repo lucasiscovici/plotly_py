@@ -35,6 +35,7 @@ from .validators import DataValidator, LayoutValidator, FramesValidator
 Undefined = object()
 
 import copy
+F=False
 def merge(source, destination_,*,defaults={},add=True):
     if defaults is None:
         defaults={}
