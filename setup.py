@@ -419,14 +419,14 @@ class UpdatePlotlywidgetVersionCommand(Command):
 
 graph_objs_packages = [
     d[0].replace("/", ".")
-    for d in os.walk("plotly/graph_objs")
+    for d in os.walk("plotly_study/graph_objs")
     if not d[0].endswith("__pycache__")
 ]
 
 
 validator_packages = [
     d[0].replace("/", ".")
-    for d in os.walk("plotly/validators")
+    for d in os.walk("plotly_study/validators")
     if not d[0].endswith("__pycache__")
 ]
 
