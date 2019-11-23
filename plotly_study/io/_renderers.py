@@ -7,7 +7,7 @@ import six
 import os
 from distutils.version import LooseVersion
 
-from plotly import optional_imports
+from plotly_study import optional_imports
 
 from plotly_study.io._base_renderers import (
     MimetypeRenderer,

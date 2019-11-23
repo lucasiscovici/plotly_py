@@ -14,7 +14,7 @@ from plotly_study.graph_objs import (
     YAxis,
 )
 import plotly_study.tools as tls
-from plotly import subplots
+from plotly_study import subplots
 
 
 class TestMakeSubplots(TestCase):

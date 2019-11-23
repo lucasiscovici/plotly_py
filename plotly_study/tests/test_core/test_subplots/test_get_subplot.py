@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 from unittest import TestCase
 from plotly_study.graph_objs import Figure
-from plotly import subplots
+from plotly_study import subplots
 import plotly_study.graph_objs as go
 from plotly_study.subplots import SubplotXY, SubplotDomain
 

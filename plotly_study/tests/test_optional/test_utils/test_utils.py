@@ -17,7 +17,7 @@ from nose.plugins.attrib import attr
 from pandas.util.testing import assert_series_equal
 import json as _json
 
-from plotly import optional_imports, utils
+from plotly_study import optional_imports, utils
 from plotly_study.graph_objs import Scatter, Scatter3d, Figure, Data
 
 

@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 import math
 
-from plotly import exceptions, optional_imports
+from plotly_study import exceptions, optional_imports
 from plotly_study.figure_factory import utils
 from plotly_study.graph_objs import graph_objs
 

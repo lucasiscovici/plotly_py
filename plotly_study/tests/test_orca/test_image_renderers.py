@@ -5,7 +5,7 @@ import json
 import pytest
 import numpy as np
 
-from plotly import io as pio
+from plotly_study import io as pio
 import plotly_study.graph_objs as go
 
 from plotly_study.offline.offline import _get_jconfig

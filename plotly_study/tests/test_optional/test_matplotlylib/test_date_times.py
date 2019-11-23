@@ -8,7 +8,7 @@ import pandas as pd
 from nose.plugins.attrib import attr
 
 import plotly_study.tools as tls
-from plotly import optional_imports
+from plotly_study import optional_imports
 
 matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 

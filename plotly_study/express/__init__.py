@@ -3,7 +3,7 @@
 data exploration and figure generation. See the gallery at https://plotly_study.github.io/plotly_express
 """
 from __future__ import absolute_import
-from plotly import optional_imports
+from plotly_study import optional_imports
 
 pd = optional_imports.get_module("pandas")
 if pd is None:

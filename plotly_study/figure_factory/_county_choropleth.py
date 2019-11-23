@@ -7,7 +7,7 @@ import warnings
 from math import log, floor
 from numbers import Number
 
-from plotly import optional_imports
+from plotly_study import optional_imports
 import plotly_study.colors as clrs
 from plotly_study.figure_factory import utils
 from plotly_study.exceptions import PlotlyError

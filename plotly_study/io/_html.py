@@ -7,7 +7,7 @@ import six
 
 from plotly_study.io._utils import validate_coerce_fig_to_dict
 from plotly_study.offline.offline import _get_jconfig, get_plotlyjs
-from plotly import utils
+from plotly_study import utils
 
 
 # Build script to set global PlotlyConfig object. This must execute before

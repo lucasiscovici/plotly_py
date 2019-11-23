@@ -8,7 +8,7 @@ from os.path import isdir
 
 import six
 from plotly_study.io import to_json, to_image, write_image, write_html
-from plotly import utils, optional_imports
+from plotly_study import utils, optional_imports
 from plotly_study.io._orca import ensure_server
 from plotly_study.offline.offline import _get_jconfig, get_plotlyjs
 from plotly_study.tools import return_figure_from_figure_or_data

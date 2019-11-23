@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 from nose.plugins.attrib import attr
 
-from plotly import optional_imports
+from plotly_study import optional_imports
 
 matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 

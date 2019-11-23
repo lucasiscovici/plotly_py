@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 from numbers import Number
 
-from plotly import exceptions, optional_imports
+from plotly_study import exceptions, optional_imports
 import plotly_study.colors as clrs
 from plotly_study.graph_objs import graph_objs
 from plotly_study.tools import make_subplots

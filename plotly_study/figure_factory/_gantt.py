@@ -4,7 +4,7 @@ from numbers import Number
 
 import copy
 
-from plotly import exceptions, optional_imports
+from plotly_study import exceptions, optional_imports
 import plotly_study.colors as clrs
 from plotly_study.figure_factory import utils
 import plotly_study.graph_objects as go

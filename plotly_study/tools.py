@@ -16,7 +16,7 @@ import six
 import re
 import os
 
-from plotly import exceptions, optional_imports
+from plotly_study import exceptions, optional_imports
 from plotly_study.files import PLOTLY_DIR
 
 DEFAULT_PLOTLY_COLORS = [

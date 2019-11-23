@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 from nose.plugins.attrib import attr
 
-from plotly import optional_imports
+from plotly_study import optional_imports
 from plotly_study.tests.test_optional.optional_utils import run_fig
 from plotly_study.tests.test_optional.test_matplotlylib.data.data import *
 

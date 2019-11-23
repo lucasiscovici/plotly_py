@@ -1,5 +1,5 @@
 from unittest import TestCase
-from plotly import optional_imports
+from plotly_study import optional_imports
 from plotly_study.graph_objs import graph_objs as go
 from plotly_study.exceptions import PlotlyError
 import plotly_study.io as pio

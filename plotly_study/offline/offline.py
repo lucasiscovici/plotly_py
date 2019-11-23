@@ -12,7 +12,7 @@ import plotly_study
 import plotly_study.tools
 
 from plotly_study.optional_imports import get_module
-from plotly import tools
+from plotly_study import tools
 from ._plotlyjs_version import __plotlyjs_version__
 
 

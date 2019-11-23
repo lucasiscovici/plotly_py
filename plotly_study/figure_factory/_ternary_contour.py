@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 import plotly_study.colors as clrs
 from plotly_study.graph_objs import graph_objs as go
-from plotly import exceptions, optional_imports
-from plotly import optional_imports
+from plotly_study import exceptions, optional_imports
+from plotly_study import optional_imports
 from plotly_study.graph_objs import graph_objs as go
 
 np = optional_imports.get_module("numpy")

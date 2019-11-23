@@ -4,7 +4,7 @@ from __future__ import absolute_import
 
 from collections import OrderedDict
 
-from plotly import exceptions, optional_imports
+from plotly_study import exceptions, optional_imports
 from plotly_study.graph_objs import graph_objs
 
 # Optional imports, may be None for users that only use our core functionality.

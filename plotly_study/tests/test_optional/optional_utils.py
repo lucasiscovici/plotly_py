@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 import numpy as np
 
-from plotly import optional_imports
+from plotly_study import optional_imports
 from plotly_study.tests.utils import is_num_list
 from plotly_study.utils import get_by_path, node_generator
 

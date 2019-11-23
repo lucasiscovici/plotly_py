@@ -4,7 +4,7 @@ import collections
 import decimal
 import six
 
-from plotly import exceptions
+from plotly_study import exceptions
 from plotly_study.colors import (
     DEFAULT_PLOTLY_COLORS,
     PLOTLY_SCALES,

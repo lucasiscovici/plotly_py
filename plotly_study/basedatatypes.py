@@ -1623,7 +1623,7 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         Examples
         --------
 
-        >>> from plotly import subplots
+        >>> from plotly_study import subplots
         >>> import plotly_study.graph_objs as go
 
         Add two Scatter traces to a figure
@@ -1698,7 +1698,7 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         Examples
         --------
 
-        >>> from plotly import subplots
+        >>> from plotly_study import subplots
         >>> import plotly_study.graph_objs as go
 
         Add two Scatter traces to a figure
@@ -1809,7 +1809,7 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         Examples
         --------
 
-        >>> from plotly import tools
+        >>> from plotly_study import tools
         >>> import plotly_study.graph_objs as go
         >>> # stack two subplots vertically
         >>> fig = tools.make_subplots(rows=2)

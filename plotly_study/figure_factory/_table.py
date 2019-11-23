@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-from plotly import exceptions, optional_imports
+from plotly_study import exceptions, optional_imports
 from plotly_study.graph_objs import graph_objs
 
 pd = optional_imports.get_module("pandas")

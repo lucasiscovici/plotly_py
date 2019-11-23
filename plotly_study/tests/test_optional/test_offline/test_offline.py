@@ -11,7 +11,7 @@ import json as _json
 from unittest import TestCase
 
 import plotly_study
-from plotly import optional_imports
+from plotly_study import optional_imports
 
 matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 

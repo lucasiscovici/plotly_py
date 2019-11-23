@@ -27,7 +27,7 @@ Modules:
 """
 from __future__ import absolute_import
 
-from plotly import (
+from plotly_study import (
     graph_objs,
     tools,
     utils,
