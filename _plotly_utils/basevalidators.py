@@ -639,7 +639,7 @@ class SrcValidator(BaseValidator):
     def description(self):
         return """\
     The '{plotly_name}' property must be specified as a string or
-    as a plotly.grid_objs.Column object""".format(
+    as a plotly_study.grid_objs.Column object""".format(
             plotly_name=self.plotly_name
         )
 
@@ -1552,7 +1552,7 @@ class ColorscaleValidator(BaseValidator):
     specified as:
       - A list of colors that will be spaced evenly to create the colorscale.
         Many predefined colorscale lists are included in the sequential, diverging,
-        and cyclical modules in the plotly.colors package.
+        and cyclical modules in the plotly_study.colors package.
       - A list of 2-element lists where the first element is the
         normalized color level value (starting at 0 and ending at 1), 
         and the second item is a valid color string.
@@ -2378,21 +2378,21 @@ class CompoundValidator(BaseValidator):
             # graph_objs.Data and graph_objs.Layout
 
             parent_parts = parent_name.split(".")
-            module_str = ".".join(["plotly.graph_objs"] + parent_parts[1:])
+            module_str = ".".join(["plotly_study.graph_objs"] + parent_parts[1:])
         elif parent_name == "layout.template" and data_class_str == "Layout":
             # Remap template's layout to regular layout
-            module_str = "plotly.graph_objs"
+            module_str = "plotly_study.graph_objs"
         elif "layout.template.data" in parent_name:
             # Remap template's traces to regular traces
             parent_name = parent_name.replace("layout.template.data.", "")
             if parent_name:
-                module_str = "plotly.graph_objs." + parent_name
+                module_str = "plotly_study.graph_objs." + parent_name
             else:
-                module_str = "plotly.graph_objs"
+                module_str = "plotly_study.graph_objs"
         elif parent_name:
-            module_str = "plotly.graph_objs." + parent_name
+            module_str = "plotly_study.graph_objs." + parent_name
         else:
-            module_str = "plotly.graph_objs"
+            module_str = "plotly_study.graph_objs"
 
         return module_str
 
@@ -2592,7 +2592,7 @@ class BaseDataValidator(BaseValidator):
             self._class_map = {}
 
             # Import trace classes
-            trace_module = import_module("plotly.graph_objs")
+            trace_module = import_module("plotly_study.graph_objs")
             for k, class_str in self.class_strs_map.items():
                 self._class_map[k] = getattr(trace_module, class_str)
 
@@ -2602,7 +2602,7 @@ class BaseDataValidator(BaseValidator):
 
         # Import Histogram2dcontour, this is the deprecated name of the
         # Histogram2dContour trace.
-        from plotly.graph_objs import Histogram2dcontour
+        from plotly_study.graph_objs import Histogram2dcontour
 
         if v is None:
             v = []
@@ -2682,9 +2682,9 @@ class BaseTemplateValidator(CompoundValidator):
         compound_description = super(BaseTemplateValidator, self).description()
         compound_description += """
       - The name of a registered template where current registered templates
-        are stored in the plotly.io.templates configuration object. The names
+        are stored in the plotly_study.io.templates configuration object. The names
         of all registered templates can be retrieved with:
-            >>> import plotly.io as pio
+            >>> import plotly_study.io as pio
             >>> list(pio.templates)
       - A string containing multiple registered template names, joined on '+'
         characters (e.g. 'template1+template2'). In this case the resulting
@@ -2694,7 +2694,7 @@ class BaseTemplateValidator(CompoundValidator):
         return compound_description
 
     def validate_coerce(self, v, skip_invalid=False):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         try:
             # Check if v is a template identifier
