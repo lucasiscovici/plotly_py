@@ -476,7 +476,7 @@ setup(
     + graph_objs_packages
     + validator_packages,
     package_data={
-        "plotly": [
+        "plotly_study": [
             "package_data/*",
             "package_data/templates/*",
             "package_data/datasets/*",
