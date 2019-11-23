@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -14,7 +14,7 @@ class Title(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.scene.xaxis.title.Font
+          - An instance of plotly_study.graph_objs.layout.scene.xaxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -42,7 +42,7 @@ class Title(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.scene.xaxis.title.Font
+        plotly_study.graph_objs.layout.scene.xaxis.title.Font
         """
         return self["font"]
 
@@ -104,7 +104,7 @@ class Title(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.xaxis.Title
+            plotly_study.graph_objs.layout.scene.xaxis.Title
         font
             Sets this axis' title font. Note that the title's font
             used to be customized by the now deprecated `titlefont`
@@ -132,9 +132,9 @@ class Title(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.xaxis.Title 
+The first argument to the plotly_study.graph_objs.layout.scene.xaxis.Title 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.xaxis.Title"""
+an instance of plotly_study.graph_objs.layout.scene.xaxis.Title"""
             )
 
         # Handle skip_invalid
@@ -143,7 +143,7 @@ an instance of plotly.graph_objs.layout.scene.xaxis.Title"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.xaxis import title as v_title
+        from plotly_study.validators.layout.scene.xaxis import title as v_title
 
         # Initialize validators
         # ---------------------
@@ -166,7 +166,7 @@ an instance of plotly.graph_objs.layout.scene.xaxis.Title"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -356,7 +356,7 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.xaxis.Tickformatstop
+            plotly_study.graph_objs.layout.scene.xaxis.Tickformatstop
         dtickrange
             range [*min*, *max*], where "min", "max" - dtick values
             which describe some zoom level, it is possible to omit
@@ -405,9 +405,9 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.xaxis.Tickformatstop 
+The first argument to the plotly_study.graph_objs.layout.scene.xaxis.Tickformatstop 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.xaxis.Tickformatstop"""
+an instance of plotly_study.graph_objs.layout.scene.xaxis.Tickformatstop"""
             )
 
         # Handle skip_invalid
@@ -416,7 +416,7 @@ an instance of plotly.graph_objs.layout.scene.xaxis.Tickformatstop"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.xaxis import (
+        from plotly_study.validators.layout.scene.xaxis import (
             tickformatstop as v_tickformatstop,
         )
 
@@ -454,7 +454,7 @@ an instance of plotly.graph_objs.layout.scene.xaxis.Tickformatstop"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -608,7 +608,7 @@ class Tickfont(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.xaxis.Tickfont
+            plotly_study.graph_objs.layout.scene.xaxis.Tickfont
         color
 
         family
@@ -645,9 +645,9 @@ class Tickfont(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.xaxis.Tickfont 
+The first argument to the plotly_study.graph_objs.layout.scene.xaxis.Tickfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.xaxis.Tickfont"""
+an instance of plotly_study.graph_objs.layout.scene.xaxis.Tickfont"""
             )
 
         # Handle skip_invalid
@@ -656,7 +656,7 @@ an instance of plotly.graph_objs.layout.scene.xaxis.Tickfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.xaxis import tickfont as v_tickfont
+        from plotly_study.validators.layout.scene.xaxis import tickfont as v_tickfont
 
         # Initialize validators
         # ---------------------
@@ -684,4 +684,4 @@ an instance of plotly.graph_objs.layout.scene.xaxis.Tickfont"""
 
 __all__ = ["Tickfont", "Tickformatstop", "Tickformatstop", "Title", "title"]
 
-from plotly.graph_objs.layout.scene.xaxis import title
+from plotly_study.graph_objs.layout.scene.xaxis import title

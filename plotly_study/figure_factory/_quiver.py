@@ -3,8 +3,8 @@ from __future__ import absolute_import
 import math
 
 from plotly import exceptions
-from plotly.graph_objs import graph_objs
-from plotly.figure_factory import utils
+from plotly_study.graph_objs import graph_objs
+from plotly_study.figure_factory import utils
 
 
 def create_quiver(
@@ -25,15 +25,15 @@ def create_quiver(
     :param (positive float) scaleratio: the ratio between the scale of the y-axis
         and the scale of the x-axis (scale_y / scale_x). Default = None, the
         scale ratio is not fixed.
-    :param kwargs: kwargs passed through plotly.graph_objs.Scatter
+    :param kwargs: kwargs passed through plotly_study.graph_objs.Scatter
         for more information on valid kwargs call
-        help(plotly.graph_objs.Scatter)
+        help(plotly_study.graph_objs.Scatter)
 
     :rtype (dict): returns a representation of quiver figure.
 
     Example 1: Trivial Quiver
 
-    >>> from plotly.figure_factory import create_quiver
+    >>> from plotly_study.figure_factory import create_quiver
     >>> import math
 
     >>> # 1 Arrow from (0,0) to (1,1)
@@ -43,7 +43,7 @@ def create_quiver(
 
     Example 2: Quiver plot using meshgrid
 
-    >>> from plotly.figure_factory import create_quiver
+    >>> from plotly_study.figure_factory import create_quiver
 
     >>> import numpy as np
     >>> import math
@@ -60,7 +60,7 @@ def create_quiver(
 
     Example 3: Styling the quiver plot
 
-    >>> from plotly.figure_factory import create_quiver
+    >>> from plotly_study.figure_factory import create_quiver
     >>> import numpy as np
     >>> import math
 
@@ -81,7 +81,7 @@ def create_quiver(
 
     Example 4: Forcing a fix scale ratio to maintain the arrow length
 
-    >>> from plotly.figure_factory import create_quiver
+    >>> from plotly_study.figure_factory import create_quiver
     >>> import numpy as np
 
     >>> # Add data

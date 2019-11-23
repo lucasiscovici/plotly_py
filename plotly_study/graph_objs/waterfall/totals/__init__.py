@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -71,7 +71,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.totals.marker.Line
+          - An instance of plotly_study.graph_objs.waterfall.totals.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -86,7 +86,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.totals.marker.Line
+        plotly_study.graph_objs.waterfall.totals.marker.Line
         """
         return self["line"]
 
@@ -109,7 +109,7 @@ class Marker(_BaseTraceHierarchyType):
             Sets the marker color of all intermediate sums and
             total values.
         line
-            plotly.graph_objects.waterfall.totals.marker.Line
+            plotly_study.graph_objects.waterfall.totals.marker.Line
             instance or dict with compatible properties
         """
 
@@ -122,12 +122,12 @@ class Marker(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.waterfall.totals.Marker
+            plotly_study.graph_objs.waterfall.totals.Marker
         color
             Sets the marker color of all intermediate sums and
             total values.
         line
-            plotly.graph_objects.waterfall.totals.marker.Line
+            plotly_study.graph_objects.waterfall.totals.marker.Line
             instance or dict with compatible properties
 
         Returns
@@ -147,9 +147,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.totals.Marker 
+The first argument to the plotly_study.graph_objs.waterfall.totals.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.totals.Marker"""
+an instance of plotly_study.graph_objs.waterfall.totals.Marker"""
             )
 
         # Handle skip_invalid
@@ -158,7 +158,7 @@ an instance of plotly.graph_objs.waterfall.totals.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall.totals import marker as v_marker
+        from plotly_study.validators.waterfall.totals import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -183,4 +183,4 @@ an instance of plotly.graph_objs.waterfall.totals.Marker"""
 
 __all__ = ["Marker", "marker"]
 
-from plotly.graph_objs.waterfall.totals import marker
+from plotly_study.graph_objs.waterfall.totals import marker

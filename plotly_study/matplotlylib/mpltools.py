@@ -162,7 +162,7 @@ def convert_x_domain(mpl_plot_bounds, mpl_max_x_bounds):
     """Map x dimension of current plot to plotly's domain space.
 
     The bbox used to locate an axes object in mpl differs from the
-    method used to locate axes in plotly. The mpl version locates each
+    method used to locate axes in plotly_study. The mpl version locates each
     axes in the figure so that axes in a single-plot figure might have
     the bounds, [0.125, 0.125, 0.775, 0.775] (x0, y0, width, height),
     in mpl's figure coordinates. However, the axes all share one space in
@@ -193,7 +193,7 @@ def convert_y_domain(mpl_plot_bounds, mpl_max_y_bounds):
     """Map y dimension of current plot to plotly's domain space.
 
     The bbox used to locate an axes object in mpl differs from the
-    method used to locate axes in plotly. The mpl version locates each
+    method used to locate axes in plotly_study. The mpl version locates each
     axes in the figure so that axes in a single-plot figure might have
     the bounds, [0.125, 0.125, 0.775, 0.775] (x0, y0, width, height),
     in mpl's figure coordinates. However, the axes all share one space in

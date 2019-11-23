@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -77,7 +77,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.ohlc.Stream
+            an instance of plotly_study.graph_objs.ohlc.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -105,9 +105,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.ohlc.Stream 
+The first argument to the plotly_study.graph_objs.ohlc.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.ohlc.Stream"""
+an instance of plotly_study.graph_objs.ohlc.Stream"""
             )
 
         # Handle skip_invalid
@@ -116,7 +116,7 @@ an instance of plotly.graph_objs.ohlc.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.ohlc import stream as v_stream
+        from plotly_study.validators.ohlc import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.ohlc.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -227,7 +227,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.ohlc.Line
+            an instance of plotly_study.graph_objs.ohlc.Line
         dash
             Sets the dash style of lines. Set to a dash type string
             ("solid", "dot", "dash", "longdash", "dashdot", or
@@ -257,9 +257,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.ohlc.Line 
+The first argument to the plotly_study.graph_objs.ohlc.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.ohlc.Line"""
+an instance of plotly_study.graph_objs.ohlc.Line"""
             )
 
         # Handle skip_invalid
@@ -268,7 +268,7 @@ an instance of plotly.graph_objs.ohlc.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.ohlc import line as v_line
+        from plotly_study.validators.ohlc import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -291,7 +291,7 @@ an instance of plotly.graph_objs.ohlc.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -304,7 +304,7 @@ class Increasing(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.increasing.Line
+          - An instance of plotly_study.graph_objs.ohlc.increasing.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -322,7 +322,7 @@ class Increasing(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.ohlc.increasing.Line
+        plotly_study.graph_objs.ohlc.increasing.Line
         """
         return self["line"]
 
@@ -342,7 +342,7 @@ class Increasing(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         line
-            plotly.graph_objects.ohlc.increasing.Line instance or
+            plotly_study.graph_objects.ohlc.increasing.Line instance or
             dict with compatible properties
         """
 
@@ -354,9 +354,9 @@ class Increasing(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.ohlc.Increasing
+            an instance of plotly_study.graph_objs.ohlc.Increasing
         line
-            plotly.graph_objects.ohlc.increasing.Line instance or
+            plotly_study.graph_objects.ohlc.increasing.Line instance or
             dict with compatible properties
 
         Returns
@@ -376,9 +376,9 @@ class Increasing(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.ohlc.Increasing 
+The first argument to the plotly_study.graph_objs.ohlc.Increasing 
 constructor must be a dict or 
-an instance of plotly.graph_objs.ohlc.Increasing"""
+an instance of plotly_study.graph_objs.ohlc.Increasing"""
             )
 
         # Handle skip_invalid
@@ -387,7 +387,7 @@ an instance of plotly.graph_objs.ohlc.Increasing"""
 
         # Import validators
         # -----------------
-        from plotly.validators.ohlc import increasing as v_increasing
+        from plotly_study.validators.ohlc import increasing as v_increasing
 
         # Initialize validators
         # ---------------------
@@ -407,7 +407,7 @@ an instance of plotly.graph_objs.ohlc.Increasing"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -445,7 +445,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -525,7 +525,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -605,7 +605,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -626,7 +626,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.ohlc.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -664,7 +664,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.ohlc.hoverlabel.Font
+        plotly_study.graph_objs.ohlc.hoverlabel.Font
         """
         return self["font"]
 
@@ -707,7 +707,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -806,7 +806,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.ohlc.Hoverlabel
+            an instance of plotly_study.graph_objs.ohlc.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -856,9 +856,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.ohlc.Hoverlabel 
+The first argument to the plotly_study.graph_objs.ohlc.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.ohlc.Hoverlabel"""
+an instance of plotly_study.graph_objs.ohlc.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -867,7 +867,7 @@ an instance of plotly.graph_objs.ohlc.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.ohlc import hoverlabel as v_hoverlabel
+        from plotly_study.validators.ohlc import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -914,7 +914,7 @@ an instance of plotly.graph_objs.ohlc.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -927,7 +927,7 @@ class Decreasing(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.decreasing.Line
+          - An instance of plotly_study.graph_objs.ohlc.decreasing.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -945,7 +945,7 @@ class Decreasing(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.ohlc.decreasing.Line
+        plotly_study.graph_objs.ohlc.decreasing.Line
         """
         return self["line"]
 
@@ -965,7 +965,7 @@ class Decreasing(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         line
-            plotly.graph_objects.ohlc.decreasing.Line instance or
+            plotly_study.graph_objects.ohlc.decreasing.Line instance or
             dict with compatible properties
         """
 
@@ -977,9 +977,9 @@ class Decreasing(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.ohlc.Decreasing
+            an instance of plotly_study.graph_objs.ohlc.Decreasing
         line
-            plotly.graph_objects.ohlc.decreasing.Line instance or
+            plotly_study.graph_objects.ohlc.decreasing.Line instance or
             dict with compatible properties
 
         Returns
@@ -999,9 +999,9 @@ class Decreasing(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.ohlc.Decreasing 
+The first argument to the plotly_study.graph_objs.ohlc.Decreasing 
 constructor must be a dict or 
-an instance of plotly.graph_objs.ohlc.Decreasing"""
+an instance of plotly_study.graph_objs.ohlc.Decreasing"""
             )
 
         # Handle skip_invalid
@@ -1010,7 +1010,7 @@ an instance of plotly.graph_objs.ohlc.Decreasing"""
 
         # Import validators
         # -----------------
-        from plotly.validators.ohlc import decreasing as v_decreasing
+        from plotly_study.validators.ohlc import decreasing as v_decreasing
 
         # Initialize validators
         # ---------------------
@@ -1041,6 +1041,6 @@ __all__ = [
     "increasing",
 ]
 
-from plotly.graph_objs.ohlc import increasing
-from plotly.graph_objs.ohlc import hoverlabel
-from plotly.graph_objs.ohlc import decreasing
+from plotly_study.graph_objs.ohlc import increasing
+from plotly_study.graph_objs.ohlc import hoverlabel
+from plotly_study.graph_objs.ohlc import decreasing

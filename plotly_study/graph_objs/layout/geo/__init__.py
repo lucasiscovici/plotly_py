@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -37,7 +37,7 @@ class Projection(_BaseLayoutHierarchyType):
         """
         The 'rotation' property is an instance of Rotation
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.geo.projection.Rotation
+          - An instance of plotly_study.graph_objs.layout.geo.projection.Rotation
           - A dict of string/value properties that will be passed
             to the Rotation constructor
     
@@ -56,7 +56,7 @@ class Projection(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.geo.projection.Rotation
+        plotly_study.graph_objs.layout.geo.projection.Rotation
         """
         return self["rotation"]
 
@@ -127,7 +127,7 @@ class Projection(_BaseLayoutHierarchyType):
             For conic projection types only. Sets the parallels
             (tangent, secant) where the cone intersects the sphere.
         rotation
-            plotly.graph_objects.layout.geo.projection.Rotation
+            plotly_study.graph_objects.layout.geo.projection.Rotation
             instance or dict with compatible properties
         scale
             Zooms in or out on the map view. A scale of 1
@@ -147,12 +147,12 @@ class Projection(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.geo.Projection
+            an instance of plotly_study.graph_objs.layout.geo.Projection
         parallels
             For conic projection types only. Sets the parallels
             (tangent, secant) where the cone intersects the sphere.
         rotation
-            plotly.graph_objects.layout.geo.projection.Rotation
+            plotly_study.graph_objects.layout.geo.projection.Rotation
             instance or dict with compatible properties
         scale
             Zooms in or out on the map view. A scale of 1
@@ -178,9 +178,9 @@ class Projection(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.geo.Projection 
+The first argument to the plotly_study.graph_objs.layout.geo.Projection 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.geo.Projection"""
+an instance of plotly_study.graph_objs.layout.geo.Projection"""
             )
 
         # Handle skip_invalid
@@ -189,7 +189,7 @@ an instance of plotly.graph_objs.layout.geo.Projection"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.geo import projection as v_projection
+        from plotly_study.validators.layout.geo import projection as v_projection
 
         # Initialize validators
         # ---------------------
@@ -218,7 +218,7 @@ an instance of plotly.graph_objs.layout.geo.Projection"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -433,7 +433,7 @@ class Lonaxis(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.geo.Lonaxis
+            an instance of plotly_study.graph_objs.layout.geo.Lonaxis
         dtick
             Sets the graticule's longitude/latitude tick step.
         gridcolor
@@ -465,9 +465,9 @@ class Lonaxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.geo.Lonaxis 
+The first argument to the plotly_study.graph_objs.layout.geo.Lonaxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.geo.Lonaxis"""
+an instance of plotly_study.graph_objs.layout.geo.Lonaxis"""
             )
 
         # Handle skip_invalid
@@ -476,7 +476,7 @@ an instance of plotly.graph_objs.layout.geo.Lonaxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.geo import lonaxis as v_lonaxis
+        from plotly_study.validators.layout.geo import lonaxis as v_lonaxis
 
         # Initialize validators
         # ---------------------
@@ -511,7 +511,7 @@ an instance of plotly.graph_objs.layout.geo.Lonaxis"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -726,7 +726,7 @@ class Lataxis(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.geo.Lataxis
+            an instance of plotly_study.graph_objs.layout.geo.Lataxis
         dtick
             Sets the graticule's longitude/latitude tick step.
         gridcolor
@@ -758,9 +758,9 @@ class Lataxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.geo.Lataxis 
+The first argument to the plotly_study.graph_objs.layout.geo.Lataxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.geo.Lataxis"""
+an instance of plotly_study.graph_objs.layout.geo.Lataxis"""
             )
 
         # Handle skip_invalid
@@ -769,7 +769,7 @@ an instance of plotly.graph_objs.layout.geo.Lataxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.geo import lataxis as v_lataxis
+        from plotly_study.validators.layout.geo import lataxis as v_lataxis
 
         # Initialize validators
         # ---------------------
@@ -804,7 +804,7 @@ an instance of plotly.graph_objs.layout.geo.Lataxis"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -961,7 +961,7 @@ class Domain(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.geo.Domain
+            an instance of plotly_study.graph_objs.layout.geo.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this geo subplot . Note that geo
@@ -1004,9 +1004,9 @@ class Domain(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.geo.Domain 
+The first argument to the plotly_study.graph_objs.layout.geo.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.geo.Domain"""
+an instance of plotly_study.graph_objs.layout.geo.Domain"""
             )
 
         # Handle skip_invalid
@@ -1015,7 +1015,7 @@ an instance of plotly.graph_objs.layout.geo.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.geo import domain as v_domain
+        from plotly_study.validators.layout.geo import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -1044,7 +1044,7 @@ an instance of plotly.graph_objs.layout.geo.Domain"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -1125,7 +1125,7 @@ class Center(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.geo.Center
+            an instance of plotly_study.graph_objs.layout.geo.Center
         lat
             Sets the latitude of the map's center. For all
             projection types, the map's latitude center lies at the
@@ -1153,9 +1153,9 @@ class Center(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.geo.Center 
+The first argument to the plotly_study.graph_objs.layout.geo.Center 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.geo.Center"""
+an instance of plotly_study.graph_objs.layout.geo.Center"""
             )
 
         # Handle skip_invalid
@@ -1164,7 +1164,7 @@ an instance of plotly.graph_objs.layout.geo.Center"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.geo import center as v_center
+        from plotly_study.validators.layout.geo import center as v_center
 
         # Initialize validators
         # ---------------------
@@ -1189,4 +1189,4 @@ an instance of plotly.graph_objs.layout.geo.Center"""
 
 __all__ = ["Center", "Domain", "Lataxis", "Lonaxis", "Projection", "projection"]
 
-from plotly.graph_objs.layout.geo import projection
+from plotly_study.graph_objs.layout.geo import projection

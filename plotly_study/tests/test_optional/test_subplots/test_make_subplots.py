@@ -2,7 +2,7 @@ import numpy as np
 
 from unittest import TestCase
 
-import plotly.tools as tls
+import plotly_study.tools as tls
 
 
 class TestMakeSubplots(TestCase):

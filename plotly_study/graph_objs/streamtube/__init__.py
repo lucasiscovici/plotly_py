@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -77,7 +77,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.streamtube.Stream
+            an instance of plotly_study.graph_objs.streamtube.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -105,9 +105,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.streamtube.Stream 
+The first argument to the plotly_study.graph_objs.streamtube.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.streamtube.Stream"""
+an instance of plotly_study.graph_objs.streamtube.Stream"""
             )
 
         # Handle skip_invalid
@@ -116,7 +116,7 @@ an instance of plotly.graph_objs.streamtube.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.streamtube import stream as v_stream
+        from plotly_study.validators.streamtube import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.streamtube.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -174,7 +174,7 @@ class Starts(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -215,7 +215,7 @@ class Starts(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -256,7 +256,7 @@ class Starts(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -314,7 +314,7 @@ class Starts(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.streamtube.Starts
+            an instance of plotly_study.graph_objs.streamtube.Starts
         x
             Sets the x components of the starting position of the
             streamtubes
@@ -348,9 +348,9 @@ class Starts(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.streamtube.Starts 
+The first argument to the plotly_study.graph_objs.streamtube.Starts 
 constructor must be a dict or 
-an instance of plotly.graph_objs.streamtube.Starts"""
+an instance of plotly_study.graph_objs.streamtube.Starts"""
             )
 
         # Handle skip_invalid
@@ -359,7 +359,7 @@ an instance of plotly.graph_objs.streamtube.Starts"""
 
         # Import validators
         # -----------------
-        from plotly.validators.streamtube import starts as v_starts
+        from plotly_study.validators.streamtube import starts as v_starts
 
         # Initialize validators
         # ---------------------
@@ -394,7 +394,7 @@ an instance of plotly.graph_objs.streamtube.Starts"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -491,7 +491,7 @@ class Lightposition(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.streamtube.Lightposition
+            plotly_study.graph_objs.streamtube.Lightposition
         x
             Numeric vector, representing the X coordinate for each
             vertex.
@@ -519,9 +519,9 @@ class Lightposition(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.streamtube.Lightposition 
+The first argument to the plotly_study.graph_objs.streamtube.Lightposition 
 constructor must be a dict or 
-an instance of plotly.graph_objs.streamtube.Lightposition"""
+an instance of plotly_study.graph_objs.streamtube.Lightposition"""
             )
 
         # Handle skip_invalid
@@ -530,7 +530,7 @@ an instance of plotly.graph_objs.streamtube.Lightposition"""
 
         # Import validators
         # -----------------
-        from plotly.validators.streamtube import lightposition as v_lightposition
+        from plotly_study.validators.streamtube import lightposition as v_lightposition
 
         # Initialize validators
         # ---------------------
@@ -556,7 +556,7 @@ an instance of plotly.graph_objs.streamtube.Lightposition"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -765,7 +765,7 @@ class Lighting(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.streamtube.Lighting
+            an instance of plotly_study.graph_objs.streamtube.Lighting
         ambient
             Ambient light increases overall color visibility but
             can wash out the image.
@@ -807,9 +807,9 @@ class Lighting(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.streamtube.Lighting 
+The first argument to the plotly_study.graph_objs.streamtube.Lighting 
 constructor must be a dict or 
-an instance of plotly.graph_objs.streamtube.Lighting"""
+an instance of plotly_study.graph_objs.streamtube.Lighting"""
             )
 
         # Handle skip_invalid
@@ -818,7 +818,7 @@ an instance of plotly.graph_objs.streamtube.Lighting"""
 
         # Import validators
         # -----------------
-        from plotly.validators.streamtube import lighting as v_lighting
+        from plotly_study.validators.streamtube import lighting as v_lighting
 
         # Initialize validators
         # ---------------------
@@ -864,7 +864,7 @@ an instance of plotly.graph_objs.streamtube.Lighting"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -902,7 +902,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -982,7 +982,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1062,7 +1062,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1083,7 +1083,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.streamtube.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1121,7 +1121,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.hoverlabel.Font
+        plotly_study.graph_objs.streamtube.hoverlabel.Font
         """
         return self["font"]
 
@@ -1164,7 +1164,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1238,7 +1238,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.streamtube.Hoverlabel
+            an instance of plotly_study.graph_objs.streamtube.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1285,9 +1285,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.streamtube.Hoverlabel 
+The first argument to the plotly_study.graph_objs.streamtube.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.streamtube.Hoverlabel"""
+an instance of plotly_study.graph_objs.streamtube.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1296,7 +1296,7 @@ an instance of plotly.graph_objs.streamtube.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.streamtube import hoverlabel as v_hoverlabel
+        from plotly_study.validators.streamtube import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1340,7 +1340,7 @@ an instance of plotly.graph_objs.streamtube.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1967,7 +1967,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.colorbar.Tickfont
+          - An instance of plotly_study.graph_objs.streamtube.colorbar.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -1995,7 +1995,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.colorbar.Tickfont
+        plotly_study.graph_objs.streamtube.colorbar.Tickfont
         """
         return self["tickfont"]
 
@@ -2039,7 +2039,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.streamtube.colorbar.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.streamtube.colorbar.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -2081,7 +2081,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.streamtube.colorbar.Tickformatstop]
+        tuple[plotly_study.graph_objs.streamtube.colorbar.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -2100,7 +2100,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.colorbar.Tickformatstop
+          - An instance of plotly_study.graph_objs.streamtube.colorbar.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -2108,7 +2108,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.colorbar.Tickformatstop
+        plotly_study.graph_objs.streamtube.colorbar.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -2258,7 +2258,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2299,7 +2299,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2338,7 +2338,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.colorbar.Title
+          - An instance of plotly_study.graph_objs.streamtube.colorbar.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -2362,7 +2362,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.colorbar.Title
+        plotly_study.graph_objs.streamtube.colorbar.Title
         """
         return self["title"]
 
@@ -2381,7 +2381,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.streamtube.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2691,7 +2691,7 @@ class ColorBar(_BaseTraceHierarchyType):
             display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.streamtube.colorbar.Tickformatstop
+            plotly_study.graph_objects.streamtube.colorbar.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.stream
@@ -2732,7 +2732,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.streamtube.colorbar.Title instance
+            plotly_study.graph_objects.streamtube.colorbar.Title instance
             or dict with compatible properties
         titlefont
             Deprecated: Please use streamtube.colorbar.title.font
@@ -2827,7 +2827,7 @@ class ColorBar(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.streamtube.ColorBar
+            an instance of plotly_study.graph_objs.streamtube.ColorBar
         bgcolor
             Sets the color of padded area.
         bordercolor
@@ -2941,7 +2941,7 @@ class ColorBar(_BaseTraceHierarchyType):
             display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.streamtube.colorbar.Tickformatstop
+            plotly_study.graph_objects.streamtube.colorbar.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.stream
@@ -2982,7 +2982,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.streamtube.colorbar.Title instance
+            plotly_study.graph_objects.streamtube.colorbar.Title instance
             or dict with compatible properties
         titlefont
             Deprecated: Please use streamtube.colorbar.title.font
@@ -3033,9 +3033,9 @@ class ColorBar(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.streamtube.ColorBar 
+The first argument to the plotly_study.graph_objs.streamtube.ColorBar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.streamtube.ColorBar"""
+an instance of plotly_study.graph_objs.streamtube.ColorBar"""
             )
 
         # Handle skip_invalid
@@ -3044,7 +3044,7 @@ an instance of plotly.graph_objs.streamtube.ColorBar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.streamtube import colorbar as v_colorbar
+        from plotly_study.validators.streamtube import colorbar as v_colorbar
 
         # Initialize validators
         # ---------------------
@@ -3209,5 +3209,5 @@ __all__ = [
     "hoverlabel",
 ]
 
-from plotly.graph_objs.streamtube import hoverlabel
-from plotly.graph_objs.streamtube import colorbar
+from plotly_study.graph_objs.streamtube import hoverlabel
+from plotly_study.graph_objs.streamtube import colorbar

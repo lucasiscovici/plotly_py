@@ -1,6 +1,6 @@
 import plotly
-import plotly.io as pio
-import plotly.graph_objs as go
+import plotly_study.io as pio
+import plotly_study.graph_objs as go
 import os
 import shutil
 import pytest
@@ -14,7 +14,7 @@ else:
 
 # Constants
 # ---------
-project_root = os.path.dirname(os.path.realpath(plotly.__file__))
+project_root = os.path.dirname(os.path.realpath(plotly_study.__file__))
 images_root = os.path.join(project_root, "tests", "test_orca", "images")
 print(images_root)
 if sys.platform.startswith("linux"):

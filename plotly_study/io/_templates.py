@@ -75,7 +75,7 @@ class TemplatesConfig(object):
         for template_name in template_names:
             template = self._templates[template_name]
             if template is Lazy:
-                from plotly.graph_objs.layout import Template
+                from plotly_study.graph_objs.layout import Template
 
                 if template_name == "none":
                     # "none" is a special built-in named template that applied no defaults
@@ -108,7 +108,7 @@ class TemplatesConfig(object):
 
     def _validate(self, value):
         if not self._validator:
-            from plotly.validators.layout import TemplateValidator
+            from plotly_study.validators.layout import TemplateValidator
 
             self._validator = TemplateValidator()
 
@@ -149,7 +149,7 @@ class TemplatesConfig(object):
 
         The names of available templates may be retrieved with:
 
-        >>> import plotly.io as pio
+        >>> import plotly_study.io as pio
         >>> list(pio.templates)
 
         Returns
@@ -226,7 +226,7 @@ Templates configuration
         if args:
             return reduce(self._merge_2_templates, args)
         else:
-            from plotly.graph_objs.layout import Template
+            from plotly_study.graph_objs.layout import Template
 
             return Template()
 
@@ -285,8 +285,8 @@ def walk_push_to_template(fig_obj, template_obj, skip):
 
     Parameters
     ----------
-    fig_obj: plotly.basedatatypes.BasePlotlyType
-    template_obj: plotly.basedatatypes.BasePlotlyType
+    fig_obj: plotly_study.basedatatypes.BasePlotlyType
+    template_obj: plotly_study.basedatatypes.BasePlotlyType
     skip: set of str
         Set of names of properties to skip
     """
@@ -369,8 +369,8 @@ def to_templated(fig, skip=("title", "text")):
     --------
     Imports
 
-    >>> import plotly.graph_objs as go
-    >>> import plotly.io as pio
+    >>> import plotly_study.graph_objs as go
+    >>> import plotly_study.io as pio
 
     Construct a figure with large courier text
 
@@ -443,8 +443,8 @@ def to_templated(fig, skip=("title", "text")):
     """
 
     # process fig
-    from plotly.basedatatypes import BaseFigure
-    from plotly.graph_objs import Figure
+    from plotly_study.basedatatypes import BaseFigure
+    from plotly_study.graph_objs import Figure
 
     if not isinstance(fig, BaseFigure):
         fig = Figure(fig)

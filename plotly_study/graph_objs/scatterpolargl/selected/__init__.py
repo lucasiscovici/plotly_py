@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -87,7 +87,7 @@ class Textfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.scatterpolargl.selected.Textfont
+            plotly_study.graph_objs.scatterpolargl.selected.Textfont
         color
             Sets the text font color of selected points.
 
@@ -108,9 +108,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scatterpolargl.selected.Textfont 
+The first argument to the plotly_study.graph_objs.scatterpolargl.selected.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scatterpolargl.selected.Textfont"""
+an instance of plotly_study.graph_objs.scatterpolargl.selected.Textfont"""
             )
 
         # Handle skip_invalid
@@ -119,7 +119,7 @@ an instance of plotly.graph_objs.scatterpolargl.selected.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scatterpolargl.selected import textfont as v_textfont
+        from plotly_study.validators.scatterpolargl.selected import textfont as v_textfont
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.scatterpolargl.selected.Textfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -272,7 +272,7 @@ class Marker(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.scatterpolargl.selected.Marker
+            plotly_study.graph_objs.scatterpolargl.selected.Marker
         color
             Sets the marker color of selected points.
         opacity
@@ -297,9 +297,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scatterpolargl.selected.Marker 
+The first argument to the plotly_study.graph_objs.scatterpolargl.selected.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scatterpolargl.selected.Marker"""
+an instance of plotly_study.graph_objs.scatterpolargl.selected.Marker"""
             )
 
         # Handle skip_invalid
@@ -308,7 +308,7 @@ an instance of plotly.graph_objs.scatterpolargl.selected.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scatterpolargl.selected import marker as v_marker
+        from plotly_study.validators.scatterpolargl.selected import marker as v_marker
 
         # Initialize validators
         # ---------------------

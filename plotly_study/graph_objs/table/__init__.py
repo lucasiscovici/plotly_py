@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -77,7 +77,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.Stream
+            an instance of plotly_study.graph_objs.table.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -105,9 +105,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.Stream 
+The first argument to the plotly_study.graph_objs.table.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.Stream"""
+an instance of plotly_study.graph_objs.table.Stream"""
             )
 
         # Handle skip_invalid
@@ -116,7 +116,7 @@ an instance of plotly.graph_objs.table.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table import stream as v_stream
+        from plotly_study.validators.table import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.table.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -177,7 +177,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -257,7 +257,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -337,7 +337,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -358,7 +358,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.table.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.table.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -396,7 +396,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.table.hoverlabel.Font
+        plotly_study.graph_objs.table.hoverlabel.Font
         """
         return self["font"]
 
@@ -439,7 +439,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -513,7 +513,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.Hoverlabel
+            an instance of plotly_study.graph_objs.table.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -560,9 +560,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.Hoverlabel 
+The first argument to the plotly_study.graph_objs.table.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.Hoverlabel"""
+an instance of plotly_study.graph_objs.table.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -571,7 +571,7 @@ an instance of plotly.graph_objs.table.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table import hoverlabel as v_hoverlabel
+        from plotly_study.validators.table import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -615,7 +615,7 @@ an instance of plotly.graph_objs.table.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -654,7 +654,7 @@ class Header(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -673,7 +673,7 @@ class Header(_BaseTraceHierarchyType):
         """
         The 'fill' property is an instance of Fill
         that may be specified as:
-          - An instance of plotly.graph_objs.table.header.Fill
+          - An instance of plotly_study.graph_objs.table.header.Fill
           - A dict of string/value properties that will be passed
             to the Fill constructor
     
@@ -689,7 +689,7 @@ class Header(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.table.header.Fill
+        plotly_study.graph_objs.table.header.Fill
         """
         return self["fill"]
 
@@ -704,7 +704,7 @@ class Header(_BaseTraceHierarchyType):
         """
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.table.header.Font
+          - An instance of plotly_study.graph_objs.table.header.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -742,7 +742,7 @@ class Header(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.table.header.Font
+        plotly_study.graph_objs.table.header.Font
         """
         return self["font"]
 
@@ -781,7 +781,7 @@ class Header(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  format .
     
         The 'formatsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -820,7 +820,7 @@ class Header(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.table.header.Line
+          - An instance of plotly_study.graph_objs.table.header.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -839,7 +839,7 @@ class Header(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.table.header.Line
+        plotly_study.graph_objs.table.header.Line
         """
         return self["line"]
 
@@ -877,7 +877,7 @@ class Header(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  prefix .
     
         The 'prefixsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -919,7 +919,7 @@ class Header(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  suffix .
     
         The 'suffixsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -962,7 +962,7 @@ class Header(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  values .
     
         The 'valuessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -994,10 +994,10 @@ class Header(_BaseTraceHierarchyType):
         alignsrc
             Sets the source reference on plot.ly for  align .
         fill
-            plotly.graph_objects.table.header.Fill instance or dict
+            plotly_study.graph_objects.table.header.Fill instance or dict
             with compatible properties
         font
-            plotly.graph_objects.table.header.Font instance or dict
+            plotly_study.graph_objects.table.header.Font instance or dict
             with compatible properties
         format
             Sets the cell value formatting rule using d3 formatting
@@ -1009,7 +1009,7 @@ class Header(_BaseTraceHierarchyType):
         height
             The height of cells.
         line
-            plotly.graph_objects.table.header.Line instance or dict
+            plotly_study.graph_objects.table.header.Line instance or dict
             with compatible properties
         prefix
             Prefix for cell values.
@@ -1055,7 +1055,7 @@ class Header(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.Header
+            an instance of plotly_study.graph_objs.table.Header
         align
             Sets the horizontal alignment of the `text` within the
             box. Has an effect only if `text` spans more two or
@@ -1065,10 +1065,10 @@ class Header(_BaseTraceHierarchyType):
         alignsrc
             Sets the source reference on plot.ly for  align .
         fill
-            plotly.graph_objects.table.header.Fill instance or dict
+            plotly_study.graph_objects.table.header.Fill instance or dict
             with compatible properties
         font
-            plotly.graph_objects.table.header.Font instance or dict
+            plotly_study.graph_objects.table.header.Font instance or dict
             with compatible properties
         format
             Sets the cell value formatting rule using d3 formatting
@@ -1080,7 +1080,7 @@ class Header(_BaseTraceHierarchyType):
         height
             The height of cells.
         line
-            plotly.graph_objects.table.header.Line instance or dict
+            plotly_study.graph_objects.table.header.Line instance or dict
             with compatible properties
         prefix
             Prefix for cell values.
@@ -1116,9 +1116,9 @@ class Header(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.Header 
+The first argument to the plotly_study.graph_objs.table.Header 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.Header"""
+an instance of plotly_study.graph_objs.table.Header"""
             )
 
         # Handle skip_invalid
@@ -1127,7 +1127,7 @@ an instance of plotly.graph_objs.table.Header"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table import header as v_header
+        from plotly_study.validators.table import header as v_header
 
         # Initialize validators
         # ---------------------
@@ -1186,7 +1186,7 @@ an instance of plotly.graph_objs.table.Header"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1321,7 +1321,7 @@ class Domain(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.Domain
+            an instance of plotly_study.graph_objs.table.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this table trace .
@@ -1352,9 +1352,9 @@ class Domain(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.Domain 
+The first argument to the plotly_study.graph_objs.table.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.Domain"""
+an instance of plotly_study.graph_objs.table.Domain"""
             )
 
         # Handle skip_invalid
@@ -1363,7 +1363,7 @@ an instance of plotly.graph_objs.table.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table import domain as v_domain
+        from plotly_study.validators.table import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -1392,7 +1392,7 @@ an instance of plotly.graph_objs.table.Domain"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1431,7 +1431,7 @@ class Cells(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1450,7 +1450,7 @@ class Cells(_BaseTraceHierarchyType):
         """
         The 'fill' property is an instance of Fill
         that may be specified as:
-          - An instance of plotly.graph_objs.table.cells.Fill
+          - An instance of plotly_study.graph_objs.table.cells.Fill
           - A dict of string/value properties that will be passed
             to the Fill constructor
     
@@ -1466,7 +1466,7 @@ class Cells(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.table.cells.Fill
+        plotly_study.graph_objs.table.cells.Fill
         """
         return self["fill"]
 
@@ -1481,7 +1481,7 @@ class Cells(_BaseTraceHierarchyType):
         """
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.table.cells.Font
+          - An instance of plotly_study.graph_objs.table.cells.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1519,7 +1519,7 @@ class Cells(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.table.cells.Font
+        plotly_study.graph_objs.table.cells.Font
         """
         return self["font"]
 
@@ -1558,7 +1558,7 @@ class Cells(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  format .
     
         The 'formatsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1597,7 +1597,7 @@ class Cells(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.table.cells.Line
+          - An instance of plotly_study.graph_objs.table.cells.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -1616,7 +1616,7 @@ class Cells(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.table.cells.Line
+        plotly_study.graph_objs.table.cells.Line
         """
         return self["line"]
 
@@ -1654,7 +1654,7 @@ class Cells(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  prefix .
     
         The 'prefixsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1696,7 +1696,7 @@ class Cells(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  suffix .
     
         The 'suffixsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1739,7 +1739,7 @@ class Cells(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  values .
     
         The 'valuessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1771,10 +1771,10 @@ class Cells(_BaseTraceHierarchyType):
         alignsrc
             Sets the source reference on plot.ly for  align .
         fill
-            plotly.graph_objects.table.cells.Fill instance or dict
+            plotly_study.graph_objects.table.cells.Fill instance or dict
             with compatible properties
         font
-            plotly.graph_objects.table.cells.Font instance or dict
+            plotly_study.graph_objects.table.cells.Font instance or dict
             with compatible properties
         format
             Sets the cell value formatting rule using d3 formatting
@@ -1786,7 +1786,7 @@ class Cells(_BaseTraceHierarchyType):
         height
             The height of cells.
         line
-            plotly.graph_objects.table.cells.Line instance or dict
+            plotly_study.graph_objects.table.cells.Line instance or dict
             with compatible properties
         prefix
             Prefix for cell values.
@@ -1832,7 +1832,7 @@ class Cells(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.Cells
+            an instance of plotly_study.graph_objs.table.Cells
         align
             Sets the horizontal alignment of the `text` within the
             box. Has an effect only if `text` spans more two or
@@ -1842,10 +1842,10 @@ class Cells(_BaseTraceHierarchyType):
         alignsrc
             Sets the source reference on plot.ly for  align .
         fill
-            plotly.graph_objects.table.cells.Fill instance or dict
+            plotly_study.graph_objects.table.cells.Fill instance or dict
             with compatible properties
         font
-            plotly.graph_objects.table.cells.Font instance or dict
+            plotly_study.graph_objects.table.cells.Font instance or dict
             with compatible properties
         format
             Sets the cell value formatting rule using d3 formatting
@@ -1857,7 +1857,7 @@ class Cells(_BaseTraceHierarchyType):
         height
             The height of cells.
         line
-            plotly.graph_objects.table.cells.Line instance or dict
+            plotly_study.graph_objects.table.cells.Line instance or dict
             with compatible properties
         prefix
             Prefix for cell values.
@@ -1893,9 +1893,9 @@ class Cells(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.Cells 
+The first argument to the plotly_study.graph_objs.table.Cells 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.Cells"""
+an instance of plotly_study.graph_objs.table.Cells"""
             )
 
         # Handle skip_invalid
@@ -1904,7 +1904,7 @@ an instance of plotly.graph_objs.table.Cells"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table import cells as v_cells
+        from plotly_study.validators.table import cells as v_cells
 
         # Initialize validators
         # ---------------------
@@ -1974,6 +1974,6 @@ __all__ = [
     "hoverlabel",
 ]
 
-from plotly.graph_objs.table import hoverlabel
-from plotly.graph_objs.table import header
-from plotly.graph_objs.table import cells
+from plotly_study.graph_objs.table import hoverlabel
+from plotly_study.graph_objs.table import header
+from plotly_study.graph_objs.table import cells

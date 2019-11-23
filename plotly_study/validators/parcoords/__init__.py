@@ -253,7 +253,7 @@ class LineValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.parcoords.line.ColorBar
+                plotly_study.graph_objects.parcoords.line.ColorBar
                 instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in

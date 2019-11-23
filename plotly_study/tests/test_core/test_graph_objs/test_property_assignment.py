@@ -1,7 +1,7 @@
 from unittest import TestCase
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
-from plotly.tests.utils import strip_dict_params
+from plotly_study.tests.utils import strip_dict_params
 
 
 class TestAssignmentPrimitive(TestCase):

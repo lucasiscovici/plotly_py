@@ -1,10 +1,10 @@
 from __future__ import absolute_import
 
 from unittest import TestCase
-from plotly.graph_objs import Figure
+from plotly_study.graph_objs import Figure
 from plotly import subplots
-import plotly.graph_objs as go
-from plotly.subplots import SubplotXY, SubplotDomain
+import plotly_study.graph_objs as go
+from plotly_study.subplots import SubplotXY, SubplotDomain
 
 
 class TestGetSubplot(TestCase):

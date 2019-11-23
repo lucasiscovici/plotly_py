@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -151,7 +151,7 @@ class Font(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.title.Font
+            an instance of plotly_study.graph_objs.indicator.title.Font
         color
 
         family
@@ -188,9 +188,9 @@ class Font(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.title.Font 
+The first argument to the plotly_study.graph_objs.indicator.title.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.title.Font"""
+an instance of plotly_study.graph_objs.indicator.title.Font"""
             )
 
         # Handle skip_invalid
@@ -199,7 +199,7 @@ an instance of plotly.graph_objs.indicator.title.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator.title import font as v_font
+        from plotly_study.validators.indicator.title import font as v_font
 
         # Initialize validators
         # ---------------------

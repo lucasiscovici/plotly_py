@@ -1,10 +1,10 @@
 from unittest import TestCase
-import plotly.graph_objects as go
+import plotly_study.graph_objects as go
 
 
 class TestUpdateLayout(TestCase):
     def setUp(self):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         pio.templates.default = None
 

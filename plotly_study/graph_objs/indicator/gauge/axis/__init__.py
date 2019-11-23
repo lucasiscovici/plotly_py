@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -188,7 +188,7 @@ class Tickformatstop(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.indicator.gauge.axis.Tickformatstop
+            plotly_study.graph_objs.indicator.gauge.axis.Tickformatstop
         dtickrange
             range [*min*, *max*], where "min", "max" - dtick values
             which describe some zoom level, it is possible to omit
@@ -237,9 +237,9 @@ class Tickformatstop(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.gauge.axis.Tickformatstop 
+The first argument to the plotly_study.graph_objs.indicator.gauge.axis.Tickformatstop 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.gauge.axis.Tickformatstop"""
+an instance of plotly_study.graph_objs.indicator.gauge.axis.Tickformatstop"""
             )
 
         # Handle skip_invalid
@@ -248,7 +248,7 @@ an instance of plotly.graph_objs.indicator.gauge.axis.Tickformatstop"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator.gauge.axis import (
+        from plotly_study.validators.indicator.gauge.axis import (
             tickformatstop as v_tickformatstop,
         )
 
@@ -286,7 +286,7 @@ an instance of plotly.graph_objs.indicator.gauge.axis.Tickformatstop"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -440,7 +440,7 @@ class Tickfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.indicator.gauge.axis.Tickfont
+            plotly_study.graph_objs.indicator.gauge.axis.Tickfont
         color
 
         family
@@ -477,9 +477,9 @@ class Tickfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.gauge.axis.Tickfont 
+The first argument to the plotly_study.graph_objs.indicator.gauge.axis.Tickfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.gauge.axis.Tickfont"""
+an instance of plotly_study.graph_objs.indicator.gauge.axis.Tickfont"""
             )
 
         # Handle skip_invalid
@@ -488,7 +488,7 @@ an instance of plotly.graph_objs.indicator.gauge.axis.Tickfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator.gauge.axis import tickfont as v_tickfont
+        from plotly_study.validators.indicator.gauge.axis import tickfont as v_tickfont
 
         # Initialize validators
         # ---------------------

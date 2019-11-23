@@ -3,19 +3,19 @@ from __future__ import absolute_import
 import numpy as np
 
 from plotly import optional_imports
-from plotly.tests.utils import is_num_list
-from plotly.utils import get_by_path, node_generator
+from plotly_study.tests.utils import is_num_list
+from plotly_study.utils import get_by_path, node_generator
 
 import copy
 
-matplotlylib = optional_imports.get_module("plotly.matplotlylib")
+matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 
 if matplotlylib:
     import matplotlib
 
     # Force matplotlib to not use any Xwindows backend.
     matplotlib.use("Agg")
-    from plotly.matplotlylib import Exporter, PlotlyRenderer
+    from plotly_study.matplotlylib import Exporter, PlotlyRenderer
 
 
 def run_fig(fig):

@@ -5,13 +5,13 @@ import webbrowser
 
 import six
 
-from plotly.io._utils import validate_coerce_fig_to_dict
-from plotly.offline.offline import _get_jconfig, get_plotlyjs
+from plotly_study.io._utils import validate_coerce_fig_to_dict
+from plotly_study.offline.offline import _get_jconfig, get_plotlyjs
 from plotly import utils
 
 
 # Build script to set global PlotlyConfig object. This must execute before
-# plotly.js is loaded.
+# plotly_study.js is loaded.
 _window_plotly_config = """\
 <script type="text/javascript">\
 window.PlotlyConfig = {MathJaxConfig: 'local'};\
@@ -44,32 +44,32 @@ def to_html(
     fig:
         Figure object or dict representing a figure
     config: dict or None (default None)
-        Plotly.js figure config options
+        plotly_study.js figure config options
     auto_play: bool (default=True)
         Whether to automatically start the animation sequence on page load
         if the figure contains frames. Has no effect if the figure does not
         contain frames.
     include_plotlyjs: bool or string (default True)
-        Specifies how the plotly.js library is included/loaded in the output
+        Specifies how the plotly_study.js library is included/loaded in the output
         div string.
 
-        If True, a script tag containing the plotly.js source code (~3MB)
+        If True, a script tag containing the plotly_study.js source code (~3MB)
         is included in the output.  HTML files generated with this option are
         fully self-contained and can be used offline.
 
-        If 'cdn', a script tag that references the plotly.js CDN is included
+        If 'cdn', a script tag that references the plotly_study.js CDN is included
         in the output. HTML files generated with this option are about 3MB
         smaller than those generated with include_plotlyjs=True, but they
-        require an active internet connection in order to load the plotly.js
+        require an active internet connection in order to load the plotly_study.js
         library.
 
         If 'directory', a script tag is included that references an external
-        plotly.min.js bundle that is assumed to reside in the same
+        plotly_study.min.js bundle that is assumed to reside in the same
         directory as the HTML file.
 
-        If 'require', Plotly.js is loaded using require.js.  This option
+        If 'require', plotly_study.js is loaded using require.js.  This option
         assumes that require.js is globally available and that it has been
-        globally configured to know how to find Plotly.js as 'plotly'.
+        globally configured to know how to find plotly_study.js as 'plotly'.
         This option is not advised when full_html=True as it will result
         in a non-functional html file.
 
@@ -77,9 +77,9 @@ def to_html(
         references the specified path. This approach can be used to point
         the resulting HTML file to an alternative CDN or local bundle.
 
-        If False, no script tag referencing plotly.js is included. This is
+        If False, no script tag referencing plotly_study.js is included. This is
         useful when the resulting div string will be placed inside an HTML
-        document that already loads plotly.js. This option is not advised
+        document that already loads plotly_study.js. This option is not advised
         when full_html=True as it will result in a non-functional html file.
     include_mathjax: bool or string (default False)
         Specifies how the MathJax.js library is included in the output html
@@ -101,16 +101,16 @@ def to_html(
         JavaScript snippet(s) to be included in the resulting div just after
         plot creation.  The string(s) may include '{plot_id}' placeholders
         that will then be replaced by the `id` of the div element that the
-        plotly.js figure is associated with.  One application for this script
-        is to install custom plotly.js event handlers.
+        plotly_study.js figure is associated with.  One application for this script
+        is to install custom plotly_study.js event handlers.
     full_html: bool (default True)
         If True, produce a string containing a complete HTML document
         starting with an <html> tag.  If False, produce a string containing
         a single <div> element.
     animation_opts: dict or None (default None)
         dict of custom animation parameters to be passed to the function
-        Plotly.animate in Plotly.js. See
-        https://github.com/plotly/plotly.js/blob/master/src/plots/animation_attributes.js
+        plotly_study.animate in plotly_study.js. See
+        https://github.com/plotly/plotly_study.js/blob/master/src/plots/animation_attributes.js
         for available options. Has no effect if the figure does not contain
         frames, or auto_play is False.
     default_width, default_height: number or str (default '100%')
@@ -193,7 +193,7 @@ def to_html(
         base_url_line = ""
 
     # ## Build script body ##
-    # This is the part that actually calls Plotly.js
+    # This is the part that actually calls plotly_study.js
 
     # build post script snippet(s)
     then_post_script = ""
@@ -211,7 +211,7 @@ def to_html(
     then_animate = ""
     if jframes:
         then_addframes = """.then(function(){{
-                            Plotly.addFrames('{id}', {frames});
+                            plotly_study.addFrames('{id}', {frames});
                         }})""".format(
             id=plotdivid, frames=jframes
         )
@@ -222,7 +222,7 @@ def to_html(
             else:
                 animation_opts_arg = ""
             then_animate = """.then(function(){{
-                            Plotly.animate('{id}', null{animation_opts});
+                            plotly_study.animate('{id}', null{animation_opts});
                         }})""".format(
                 id=plotdivid, animation_opts=animation_opts_arg
             )
@@ -232,7 +232,7 @@ def to_html(
 
     script = """
                 if (document.getElementById("{id}")) {{
-                    Plotly.newPlot(
+                    plotly_study.newPlot(
                         '{id}',
                         {data},
                         {layout},
@@ -248,7 +248,7 @@ def to_html(
         then_post_script=then_post_script,
     )
 
-    # ## Handle loading/initializing plotly.js ##
+    # ## Handle loading/initializing plotly_study.js ##
     include_plotlyjs_orig = include_plotlyjs
     if isinstance(include_plotlyjs, six.string_types):
         include_plotlyjs = include_plotlyjs.lower()
@@ -260,7 +260,7 @@ def to_html(
     # Init and load
     load_plotlyjs = ""
 
-    # Init plotlyjs. This block needs to run before plotly.js is loaded in
+    # Init plotlyjs. This block needs to run before plotly_study.js is loaded in
     # order for MathJax configuration to work properly
     if include_plotlyjs == "require":
         require_start = 'require(["plotly"], function(Plotly) {'
@@ -277,7 +277,7 @@ def to_html(
     elif include_plotlyjs == "directory":
         load_plotlyjs = """\
         {win_config}
-        <script src="plotly.min.js"></script>\
+        <script src="plotly_study.min.js"></script>\
     """.format(
             win_config=_window_plotly_config
         )
@@ -403,46 +403,46 @@ def write_html(
         A string representing a local file path or a writeable object
         (e.g. an open file descriptor)
     config: dict or None (default None)
-        Plotly.js figure config options
+        plotly_study.js figure config options
     auto_play: bool (default=True)
         Whether to automatically start the animation sequence on page load
         if the figure contains frames. Has no effect if the figure does not
         contain frames.
     include_plotlyjs: bool or string (default True)
-        Specifies how the plotly.js library is included/loaded in the output
+        Specifies how the plotly_study.js library is included/loaded in the output
         div string.
 
-        If True, a script tag containing the plotly.js source code (~3MB)
+        If True, a script tag containing the plotly_study.js source code (~3MB)
         is included in the output.  HTML files generated with this option are
         fully self-contained and can be used offline.
 
-        If 'cdn', a script tag that references the plotly.js CDN is included
+        If 'cdn', a script tag that references the plotly_study.js CDN is included
         in the output. HTML files generated with this option are about 3MB
         smaller than those generated with include_plotlyjs=True, but they
-        require an active internet connection in order to load the plotly.js
+        require an active internet connection in order to load the plotly_study.js
         library.
 
         If 'directory', a script tag is included that references an external
-        plotly.min.js bundle that is assumed to reside in the same
+        plotly_study.min.js bundle that is assumed to reside in the same
         directory as the HTML file. If `file` is a string to a local file path
         and `full_html` is True then
 
         If 'directory', a script tag is included that references an external
-        plotly.min.js bundle that is assumed to reside in the same
+        plotly_study.min.js bundle that is assumed to reside in the same
         directory as the HTML file.  If `file` is a string to a local file
-        path and `full_html` is True, then the plotly.min.js bundle is copied
+        path and `full_html` is True, then the plotly_study.min.js bundle is copied
         into the directory of the resulting HTML file. If a file named
-        plotly.min.js already exists in the output directory then this file
+        plotly_study.min.js already exists in the output directory then this file
         is left unmodified and no copy is performed. HTML files generated
         with this option can be used offline, but they require a copy of
-        the plotly.min.js bundle in the same directory. This option is
+        the plotly_study.min.js bundle in the same directory. This option is
         useful when many figures will be saved as HTML files in the same
-        directory because the plotly.js source code will be included only
+        directory because the plotly_study.js source code will be included only
         once per output directory, rather than once per output file.
 
-        If 'require', Plotly.js is loaded using require.js.  This option
+        If 'require', plotly_study.js is loaded using require.js.  This option
         assumes that require.js is globally available and that it has been
-        globally configured to know how to find Plotly.js as 'plotly'.
+        globally configured to know how to find plotly_study.js as 'plotly'.
         This option is not advised when full_html=True as it will result
         in a non-functional html file.
 
@@ -450,9 +450,9 @@ def write_html(
         references the specified path. This approach can be used to point
         the resulting HTML file to an alternative CDN or local bundle.
 
-        If False, no script tag referencing plotly.js is included. This is
+        If False, no script tag referencing plotly_study.js is included. This is
         useful when the resulting div string will be placed inside an HTML
-        document that already loads plotly.js.  This option is not advised
+        document that already loads plotly_study.js.  This option is not advised
         when full_html=True as it will result in a non-functional html file.
 
     include_mathjax: bool or string (default False)
@@ -475,16 +475,16 @@ def write_html(
         JavaScript snippet(s) to be included in the resulting div just after
         plot creation.  The string(s) may include '{plot_id}' placeholders
         that will then be replaced by the `id` of the div element that the
-        plotly.js figure is associated with.  One application for this script
-        is to install custom plotly.js event handlers.
+        plotly_study.js figure is associated with.  One application for this script
+        is to install custom plotly_study.js event handlers.
     full_html: bool (default True)
         If True, produce a string containing a complete HTML document
         starting with an <html> tag.  If False, produce a string containing
         a single <div> element.
     animation_opts: dict or None (default None)
         dict of custom animation parameters to be passed to the function
-        Plotly.animate in Plotly.js. See
-        https://github.com/plotly/plotly.js/blob/master/src/plots/animation_attributes.js
+        plotly_study.animate in plotly_study.js. See
+        https://github.com/plotly/plotly_study.js/blob/master/src/plots/animation_attributes.js
         for available options. Has no effect if the figure does not contain
         frames, or auto_play is False.
     default_width, default_height: number or str (default '100%')
@@ -529,9 +529,9 @@ def write_html(
     else:
         file.write(html_str)
 
-    # Check if we should copy plotly.min.js to output directory
+    # Check if we should copy plotly_study.min.js to output directory
     if file_is_str and full_html and include_plotlyjs == "directory":
-        bundle_path = os.path.join(os.path.dirname(file), "plotly.min.js")
+        bundle_path = os.path.join(os.path.dirname(file), "plotly_study.min.js")
 
         if not os.path.exists(bundle_path):
             with open(bundle_path, "w") as f:

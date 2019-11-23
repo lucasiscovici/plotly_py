@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -77,7 +77,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.contourcarpet.Stream
+            an instance of plotly_study.graph_objs.contourcarpet.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -105,9 +105,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.contourcarpet.Stream 
+The first argument to the plotly_study.graph_objs.contourcarpet.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.contourcarpet.Stream"""
+an instance of plotly_study.graph_objs.contourcarpet.Stream"""
             )
 
         # Handle skip_invalid
@@ -116,7 +116,7 @@ an instance of plotly.graph_objs.contourcarpet.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.contourcarpet import stream as v_stream
+        from plotly_study.validators.contourcarpet import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.contourcarpet.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -312,7 +312,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.contourcarpet.Line
+            an instance of plotly_study.graph_objs.contourcarpet.Line
         color
             Sets the color of the contour level. Has no effect if
             `contours.coloring` is set to "lines".
@@ -346,9 +346,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.contourcarpet.Line 
+The first argument to the plotly_study.graph_objs.contourcarpet.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.contourcarpet.Line"""
+an instance of plotly_study.graph_objs.contourcarpet.Line"""
             )
 
         # Handle skip_invalid
@@ -357,7 +357,7 @@ an instance of plotly.graph_objs.contourcarpet.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.contourcarpet import line as v_line
+        from plotly_study.validators.contourcarpet import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -386,7 +386,7 @@ an instance of plotly.graph_objs.contourcarpet.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -448,7 +448,7 @@ class Contours(_BaseTraceHierarchyType):
     
         The 'labelfont' property is an instance of Labelfont
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.contours.Labelfont
+          - An instance of plotly_study.graph_objs.contourcarpet.contours.Labelfont
           - A dict of string/value properties that will be passed
             to the Labelfont constructor
     
@@ -476,7 +476,7 @@ class Contours(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.contours.Labelfont
+        plotly_study.graph_objs.contourcarpet.contours.Labelfont
         """
         return self["labelfont"]
 
@@ -759,7 +759,7 @@ class Contours(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.contourcarpet.Contours
+            an instance of plotly_study.graph_objs.contourcarpet.Contours
         coloring
             Determines the coloring method showing the contour
             values. If "fill", coloring is done evenly between each
@@ -832,9 +832,9 @@ class Contours(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.contourcarpet.Contours 
+The first argument to the plotly_study.graph_objs.contourcarpet.Contours 
 constructor must be a dict or 
-an instance of plotly.graph_objs.contourcarpet.Contours"""
+an instance of plotly_study.graph_objs.contourcarpet.Contours"""
             )
 
         # Handle skip_invalid
@@ -843,7 +843,7 @@ an instance of plotly.graph_objs.contourcarpet.Contours"""
 
         # Import validators
         # -----------------
-        from plotly.validators.contourcarpet import contours as v_contours
+        from plotly_study.validators.contourcarpet import contours as v_contours
 
         # Initialize validators
         # ---------------------
@@ -893,7 +893,7 @@ an instance of plotly.graph_objs.contourcarpet.Contours"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1520,7 +1520,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.colorbar.Tickfont
+          - An instance of plotly_study.graph_objs.contourcarpet.colorbar.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -1548,7 +1548,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.colorbar.Tickfont
+        plotly_study.graph_objs.contourcarpet.colorbar.Tickfont
         """
         return self["tickfont"]
 
@@ -1592,7 +1592,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.contourcarpet.colorbar.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.contourcarpet.colorbar.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -1634,7 +1634,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.contourcarpet.colorbar.Tickformatstop]
+        tuple[plotly_study.graph_objs.contourcarpet.colorbar.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -1654,7 +1654,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.colorbar.Tickformatstop
+          - An instance of plotly_study.graph_objs.contourcarpet.colorbar.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -1662,7 +1662,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.colorbar.Tickformatstop
+        plotly_study.graph_objs.contourcarpet.colorbar.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -1812,7 +1812,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1853,7 +1853,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1892,7 +1892,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.colorbar.Title
+          - An instance of plotly_study.graph_objs.contourcarpet.colorbar.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -1916,7 +1916,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.colorbar.Title
+        plotly_study.graph_objs.contourcarpet.colorbar.Title
         """
         return self["title"]
 
@@ -1936,7 +1936,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.contourcarpet.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2245,7 +2245,7 @@ class ColorBar(_BaseTraceHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.contourcarpet.colorbar.
+            A tuple of plotly_study.graph_objects.contourcarpet.colorbar.
             Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -2287,7 +2287,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.contourcarpet.colorbar.Title
+            plotly_study.graph_objects.contourcarpet.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -2382,7 +2382,7 @@ class ColorBar(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.contourcarpet.ColorBar
+            an instance of plotly_study.graph_objs.contourcarpet.ColorBar
         bgcolor
             Sets the color of padded area.
         bordercolor
@@ -2495,7 +2495,7 @@ class ColorBar(_BaseTraceHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.contourcarpet.colorbar.
+            A tuple of plotly_study.graph_objects.contourcarpet.colorbar.
             Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -2537,7 +2537,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.contourcarpet.colorbar.Title
+            plotly_study.graph_objects.contourcarpet.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -2588,9 +2588,9 @@ class ColorBar(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.contourcarpet.ColorBar 
+The first argument to the plotly_study.graph_objs.contourcarpet.ColorBar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.contourcarpet.ColorBar"""
+an instance of plotly_study.graph_objs.contourcarpet.ColorBar"""
             )
 
         # Handle skip_invalid
@@ -2599,7 +2599,7 @@ an instance of plotly.graph_objs.contourcarpet.ColorBar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.contourcarpet import colorbar as v_colorbar
+        from plotly_study.validators.contourcarpet import colorbar as v_colorbar
 
         # Initialize validators
         # ---------------------
@@ -2755,5 +2755,5 @@ an instance of plotly.graph_objs.contourcarpet.ColorBar"""
 
 __all__ = ["ColorBar", "Contours", "Line", "Stream", "colorbar", "contours"]
 
-from plotly.graph_objs.contourcarpet import contours
-from plotly.graph_objs.contourcarpet import colorbar
+from plotly_study.graph_objs.contourcarpet import contours
+from plotly_study.graph_objs.contourcarpet import colorbar

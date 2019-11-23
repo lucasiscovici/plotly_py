@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -90,7 +90,7 @@ class Up(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.scene.camera.Up
+            an instance of plotly_study.graph_objs.layout.scene.camera.Up
         x
 
         y
@@ -115,9 +115,9 @@ class Up(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.camera.Up 
+The first argument to the plotly_study.graph_objs.layout.scene.camera.Up 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.camera.Up"""
+an instance of plotly_study.graph_objs.layout.scene.camera.Up"""
             )
 
         # Handle skip_invalid
@@ -126,7 +126,7 @@ an instance of plotly.graph_objs.layout.scene.camera.Up"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.camera import up as v_up
+        from plotly_study.validators.layout.scene.camera import up as v_up
 
         # Initialize validators
         # ---------------------
@@ -152,7 +152,7 @@ an instance of plotly.graph_objs.layout.scene.camera.Up"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -206,7 +206,7 @@ class Projection(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.camera.Projection
+            plotly_study.graph_objs.layout.scene.camera.Projection
         type
             Sets the projection type. The projection type could be
             either "perspective" or "orthographic". The default is
@@ -229,9 +229,9 @@ class Projection(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.camera.Projection 
+The first argument to the plotly_study.graph_objs.layout.scene.camera.Projection 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.camera.Projection"""
+an instance of plotly_study.graph_objs.layout.scene.camera.Projection"""
             )
 
         # Handle skip_invalid
@@ -240,7 +240,7 @@ an instance of plotly.graph_objs.layout.scene.camera.Projection"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.camera import projection as v_projection
+        from plotly_study.validators.layout.scene.camera import projection as v_projection
 
         # Initialize validators
         # ---------------------
@@ -260,7 +260,7 @@ an instance of plotly.graph_objs.layout.scene.camera.Projection"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -352,7 +352,7 @@ class Eye(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.camera.Eye
+            plotly_study.graph_objs.layout.scene.camera.Eye
         x
 
         y
@@ -377,9 +377,9 @@ class Eye(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.camera.Eye 
+The first argument to the plotly_study.graph_objs.layout.scene.camera.Eye 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.camera.Eye"""
+an instance of plotly_study.graph_objs.layout.scene.camera.Eye"""
             )
 
         # Handle skip_invalid
@@ -388,7 +388,7 @@ an instance of plotly.graph_objs.layout.scene.camera.Eye"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.camera import eye as v_eye
+        from plotly_study.validators.layout.scene.camera import eye as v_eye
 
         # Initialize validators
         # ---------------------
@@ -414,7 +414,7 @@ an instance of plotly.graph_objs.layout.scene.camera.Eye"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -506,7 +506,7 @@ class Center(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.camera.Center
+            plotly_study.graph_objs.layout.scene.camera.Center
         x
 
         y
@@ -531,9 +531,9 @@ class Center(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.camera.Center 
+The first argument to the plotly_study.graph_objs.layout.scene.camera.Center 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.camera.Center"""
+an instance of plotly_study.graph_objs.layout.scene.camera.Center"""
             )
 
         # Handle skip_invalid
@@ -542,7 +542,7 @@ an instance of plotly.graph_objs.layout.scene.camera.Center"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.camera import center as v_center
+        from plotly_study.validators.layout.scene.camera import center as v_center
 
         # Initialize validators
         # ---------------------

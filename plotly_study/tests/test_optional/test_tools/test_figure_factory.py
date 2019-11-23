@@ -2,13 +2,13 @@ import math
 from unittest import TestCase
 
 import datetime
-import plotly.figure_factory as ff
-import plotly.io as pio
+import plotly_study.figure_factory as ff
+import plotly_study.io as pio
 
-from plotly.exceptions import PlotlyError
-from plotly.tests.test_optional.optional_utils import NumpyTestUtilsMixin
-from plotly.graph_objs import graph_objs
-from plotly.tests.utils import TestCaseNoTemplate
+from plotly_study.exceptions import PlotlyError
+from plotly_study.tests.test_optional.optional_utils import NumpyTestUtilsMixin
+from plotly_study.graph_objs import graph_objs
+from plotly_study.tests.utils import TestCaseNoTemplate
 
 
 class TestQuiver(TestCaseNoTemplate, NumpyTestUtilsMixin):
@@ -1094,7 +1094,7 @@ class TestAnnotatedHeatmap(TestCaseNoTemplate, NumpyTestUtilsMixin):
         self.assert_fig_equal(a["layout"], expected_a["layout"])
 
     def test_bug_1300(self):
-        # https://github.com/plotly/plotly.py/issues/1300
+        # https://github.com/plotly/plotly_study.py/issues/1300
         sub_z = [[0.1, 0.0, 0.0], [0.0, 1.0, 0.1]]
 
         # sub_z = sub_z.tolist()

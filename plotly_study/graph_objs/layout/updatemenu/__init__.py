@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -122,7 +122,7 @@ class Pad(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.updatemenu.Pad
+            an instance of plotly_study.graph_objs.layout.updatemenu.Pad
         b
             The amount of padding (in px) along the bottom of the
             component.
@@ -153,9 +153,9 @@ class Pad(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.updatemenu.Pad 
+The first argument to the plotly_study.graph_objs.layout.updatemenu.Pad 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.updatemenu.Pad"""
+an instance of plotly_study.graph_objs.layout.updatemenu.Pad"""
             )
 
         # Handle skip_invalid
@@ -164,7 +164,7 @@ an instance of plotly.graph_objs.layout.updatemenu.Pad"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.updatemenu import pad as v_pad
+        from plotly_study.validators.layout.updatemenu import pad as v_pad
 
         # Initialize validators
         # ---------------------
@@ -193,7 +193,7 @@ an instance of plotly.graph_objs.layout.updatemenu.Pad"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -346,7 +346,7 @@ class Font(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.updatemenu.Font
+            an instance of plotly_study.graph_objs.layout.updatemenu.Font
         color
 
         family
@@ -383,9 +383,9 @@ class Font(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.updatemenu.Font 
+The first argument to the plotly_study.graph_objs.layout.updatemenu.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.updatemenu.Font"""
+an instance of plotly_study.graph_objs.layout.updatemenu.Font"""
             )
 
         # Handle skip_invalid
@@ -394,7 +394,7 @@ an instance of plotly.graph_objs.layout.updatemenu.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.updatemenu import font as v_font
+        from plotly_study.validators.layout.updatemenu import font as v_font
 
         # Initialize validators
         # ---------------------
@@ -420,7 +420,7 @@ an instance of plotly.graph_objs.layout.updatemenu.Font"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -705,7 +705,7 @@ class Button(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.updatemenu.Button
+            plotly_study.graph_objs.layout.updatemenu.Button
         args
             Sets the arguments values to be passed to the Plotly
             method set in `method` on click.
@@ -771,9 +771,9 @@ class Button(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.updatemenu.Button 
+The first argument to the plotly_study.graph_objs.layout.updatemenu.Button 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.updatemenu.Button"""
+an instance of plotly_study.graph_objs.layout.updatemenu.Button"""
             )
 
         # Handle skip_invalid
@@ -782,7 +782,7 @@ an instance of plotly.graph_objs.layout.updatemenu.Button"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.updatemenu import button as v_button
+        from plotly_study.validators.layout.updatemenu import button as v_button
 
         # Initialize validators
         # ---------------------

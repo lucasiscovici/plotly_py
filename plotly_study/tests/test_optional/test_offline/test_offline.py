@@ -13,7 +13,7 @@ from unittest import TestCase
 import plotly
 from plotly import optional_imports
 
-matplotlylib = optional_imports.get_module("plotly.matplotlylib")
+matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 
 if matplotlylib:
     import matplotlib
@@ -23,7 +23,7 @@ if matplotlylib:
     import matplotlib.pyplot as plt
 
 
-PLOTLYJS = plotly.offline.offline.get_plotlyjs()
+PLOTLYJS = plotly_study.offline.offline.get_plotlyjs()
 
 
 class PlotlyOfflineTestCase(TestCase):
@@ -31,11 +31,11 @@ class PlotlyOfflineTestCase(TestCase):
         pass
 
     def test_iplot_works_without_init_notebook_mode(self):
-        plotly.offline.iplot([{}])
+        plotly_study.offline.iplot([{}])
 
     def test_iplot_works_after_you_call_init_notebook_mode(self):
-        plotly.offline.init_notebook_mode()
-        plotly.offline.iplot([{}])
+        plotly_study.offline.init_notebook_mode()
+        plotly_study.offline.iplot([{}])
 
     if matplotlylib:
 
@@ -48,7 +48,7 @@ class PlotlyOfflineTestCase(TestCase):
             y = [100, 200, 300]
             plt.plot(x, y)
 
-            plotly.offline.iplot_mpl(fig)
+            plotly_study.offline.iplot_mpl(fig)
 
 
 class PlotlyOfflineMPLTestCase(TestCase):
@@ -57,7 +57,7 @@ class PlotlyOfflineMPLTestCase(TestCase):
 
     def _read_html(self, file_url):
         """ Read and return the HTML contents from a file_url in the
-        form e.g. file:///Users/chriddyp/Repos/plotly.py/plotly-temp.html
+        form e.g. file:///Users/chriddyp/Repos/plotly_study.py/plotly-temp.html
         """
         with open(file_url.replace("file://", "").replace(" ", "")) as f:
             return f.read()
@@ -73,17 +73,17 @@ class PlotlyOfflineMPLTestCase(TestCase):
             y = [100, 200, 300]
             plt.plot(x, y)
 
-            figure = plotly.tools.mpl_to_plotly(fig).to_dict()
+            figure = plotly_study.tools.mpl_to_plotly(fig).to_dict()
             data = figure["data"]
 
             layout = figure["layout"]
             data_json = _json.dumps(
-                data, cls=plotly.utils.PlotlyJSONEncoder, sort_keys=True
+                data, cls=plotly_study.utils.PlotlyJSONEncoder, sort_keys=True
             )
             layout_json = _json.dumps(
-                layout, cls=plotly.utils.PlotlyJSONEncoder, sort_keys=True
+                layout, cls=plotly_study.utils.PlotlyJSONEncoder, sort_keys=True
             )
-            html = self._read_html(plotly.offline.plot_mpl(fig))
+            html = self._read_html(plotly_study.offline.plot_mpl(fig))
 
             # blank out uid before comparisons
             data_json = re.sub('"uid": "[^"]+"', '"uid": ""', data_json)

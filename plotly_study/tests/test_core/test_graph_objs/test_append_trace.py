@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 from nose.tools import raises
 
-from plotly.graph_objs import (
+from plotly_study.graph_objs import (
     Data,
     Figure,
     Layout,
@@ -12,9 +12,9 @@ from plotly.graph_objs import (
     XAxis,
     YAxis,
 )
-from plotly.tests.utils import strip_dict_params
+from plotly_study.tests.utils import strip_dict_params
 
-import plotly.tools as tls
+import plotly_study.tools as tls
 
 import copy
 

@@ -1,4 +1,4 @@
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 from _plotly_utils.basevalidators import ColorscaleValidator
 from ._core import apply_default_cascade
 import numpy as np  # is it fine to depend on np here?
@@ -112,7 +112,7 @@ def imshow(
     title : str
         The figure title.
 
-    template : str or dict or plotly.graph_objects.layout.Template instance
+    template : str or dict or plotly_study.graph_objects.layout.Template instance
         The figure template name or definition.
 
     width : number
@@ -128,8 +128,8 @@ def imshow(
     See also
     --------
 
-    plotly.graph_objects.Image : image trace
-    plotly.graph_objects.Heatmap : heatmap trace
+    plotly_study.graph_objects.Image : image trace
+    plotly_study.graph_objects.Heatmap : heatmap trace
 
     Notes
     -----

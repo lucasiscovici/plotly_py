@@ -1,5 +1,5 @@
 from unittest import TestCase
-import plotly.io as pio
+import plotly_study.io as pio
 import subprocess
 import os
 from distutils.version import LooseVersion
@@ -7,12 +7,12 @@ import requests
 import time
 import psutil
 import pytest
-import plotly.graph_objects as go
+import plotly_study.graph_objects as go
 
 
 # Fixtures
 # --------
-from plotly.io._orca import find_open_port, which, orca_env
+from plotly_study.io._orca import find_open_port, which, orca_env
 
 
 @pytest.fixture()

@@ -5,7 +5,7 @@ import decimal
 import six
 
 from plotly import exceptions
-from plotly.colors import (
+from plotly_study.colors import (
     DEFAULT_PLOTLY_COLORS,
     PLOTLY_SCALES,
     color_parser,
@@ -202,7 +202,7 @@ def annotation_dict_for_label(
     :param (int) lane: the label number for text. From 1 to n inclusive.
     :param (int) num_of_lanes: the number 'n' of rows or columns in subplot.
     :param (float) subplot_spacing: the value for the horizontal_spacing and
-        vertical_spacing params in your plotly.tools.make_subplots() call.
+        vertical_spacing params in your plotly_study.tools.make_subplots() call.
     :param (str) row_col: choose whether labels are placed along rows or
         columns.
     :param (bool) flipped: flips text by 90 degrees. Text is printed

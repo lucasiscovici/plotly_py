@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -11,7 +11,7 @@ class Unselected(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.unselected.Marker
+          - An instance of plotly_study.graph_objs.scattergl.unselected.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -29,7 +29,7 @@ class Unselected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.unselected.Marker
+        plotly_study.graph_objs.scattergl.unselected.Marker
         """
         return self["marker"]
 
@@ -44,7 +44,7 @@ class Unselected(_BaseTraceHierarchyType):
         """
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.unselected.Textfont
+          - An instance of plotly_study.graph_objs.scattergl.unselected.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -56,7 +56,7 @@ class Unselected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.unselected.Textfont
+        plotly_study.graph_objs.scattergl.unselected.Textfont
         """
         return self["textfont"]
 
@@ -76,10 +76,10 @@ class Unselected(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.scattergl.unselected.Marker
+            plotly_study.graph_objects.scattergl.unselected.Marker
             instance or dict with compatible properties
         textfont
-            plotly.graph_objects.scattergl.unselected.Textfont
+            plotly_study.graph_objects.scattergl.unselected.Textfont
             instance or dict with compatible properties
         """
 
@@ -91,12 +91,12 @@ class Unselected(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.Unselected
+            an instance of plotly_study.graph_objs.scattergl.Unselected
         marker
-            plotly.graph_objects.scattergl.unselected.Marker
+            plotly_study.graph_objects.scattergl.unselected.Marker
             instance or dict with compatible properties
         textfont
-            plotly.graph_objects.scattergl.unselected.Textfont
+            plotly_study.graph_objects.scattergl.unselected.Textfont
             instance or dict with compatible properties
 
         Returns
@@ -116,9 +116,9 @@ class Unselected(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.Unselected 
+The first argument to the plotly_study.graph_objs.scattergl.Unselected 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.Unselected"""
+an instance of plotly_study.graph_objs.scattergl.Unselected"""
             )
 
         # Handle skip_invalid
@@ -127,7 +127,7 @@ an instance of plotly.graph_objs.scattergl.Unselected"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import unselected as v_unselected
+        from plotly_study.validators.scattergl import unselected as v_unselected
 
         # Initialize validators
         # ---------------------
@@ -150,7 +150,7 @@ an instance of plotly.graph_objs.scattergl.Unselected"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -222,7 +222,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -274,7 +274,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -313,7 +313,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -382,7 +382,7 @@ class Textfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.Textfont
+            an instance of plotly_study.graph_objs.scattergl.Textfont
         color
 
         colorsrc
@@ -425,9 +425,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.Textfont 
+The first argument to the plotly_study.graph_objs.scattergl.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.Textfont"""
+an instance of plotly_study.graph_objs.scattergl.Textfont"""
             )
 
         # Handle skip_invalid
@@ -436,7 +436,7 @@ an instance of plotly.graph_objs.scattergl.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import textfont as v_textfont
+        from plotly_study.validators.scattergl import textfont as v_textfont
 
         # Initialize validators
         # ---------------------
@@ -471,7 +471,7 @@ an instance of plotly.graph_objs.scattergl.Textfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -550,7 +550,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.Stream
+            an instance of plotly_study.graph_objs.scattergl.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -578,9 +578,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.Stream 
+The first argument to the plotly_study.graph_objs.scattergl.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.Stream"""
+an instance of plotly_study.graph_objs.scattergl.Stream"""
             )
 
         # Handle skip_invalid
@@ -589,7 +589,7 @@ an instance of plotly.graph_objs.scattergl.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import stream as v_stream
+        from plotly_study.validators.scattergl import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -612,7 +612,7 @@ an instance of plotly.graph_objs.scattergl.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -625,7 +625,7 @@ class Selected(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.selected.Marker
+          - An instance of plotly_study.graph_objs.scattergl.selected.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -640,7 +640,7 @@ class Selected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.selected.Marker
+        plotly_study.graph_objs.scattergl.selected.Marker
         """
         return self["marker"]
 
@@ -655,7 +655,7 @@ class Selected(_BaseTraceHierarchyType):
         """
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.selected.Textfont
+          - An instance of plotly_study.graph_objs.scattergl.selected.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -666,7 +666,7 @@ class Selected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.selected.Textfont
+        plotly_study.graph_objs.scattergl.selected.Textfont
         """
         return self["textfont"]
 
@@ -686,10 +686,10 @@ class Selected(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.scattergl.selected.Marker instance
+            plotly_study.graph_objects.scattergl.selected.Marker instance
             or dict with compatible properties
         textfont
-            plotly.graph_objects.scattergl.selected.Textfont
+            plotly_study.graph_objects.scattergl.selected.Textfont
             instance or dict with compatible properties
         """
 
@@ -701,12 +701,12 @@ class Selected(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.Selected
+            an instance of plotly_study.graph_objs.scattergl.Selected
         marker
-            plotly.graph_objects.scattergl.selected.Marker instance
+            plotly_study.graph_objects.scattergl.selected.Marker instance
             or dict with compatible properties
         textfont
-            plotly.graph_objects.scattergl.selected.Textfont
+            plotly_study.graph_objects.scattergl.selected.Textfont
             instance or dict with compatible properties
 
         Returns
@@ -726,9 +726,9 @@ class Selected(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.Selected 
+The first argument to the plotly_study.graph_objs.scattergl.Selected 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.Selected"""
+an instance of plotly_study.graph_objs.scattergl.Selected"""
             )
 
         # Handle skip_invalid
@@ -737,7 +737,7 @@ an instance of plotly.graph_objs.scattergl.Selected"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import selected as v_selected
+        from plotly_study.validators.scattergl import selected as v_selected
 
         # Initialize validators
         # ---------------------
@@ -760,7 +760,7 @@ an instance of plotly.graph_objs.scattergl.Selected"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -986,7 +986,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.marker.ColorBar
+          - An instance of plotly_study.graph_objs.scattergl.marker.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -1118,7 +1118,7 @@ class Marker(_BaseTraceHierarchyType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.scattergl.marke
+                    A tuple of plotly_study.graph_objects.scattergl.marke
                     r.colorbar.Tickformatstop instances or dicts
                     with compatible properties
                 tickformatstopdefaults
@@ -1167,7 +1167,7 @@ class Marker(_BaseTraceHierarchyType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.scattergl.marker.colorbar.
+                    plotly_study.graph_objects.scattergl.marker.colorbar.
                     Title instance or dict with compatible
                     properties
                 titlefont
@@ -1207,7 +1207,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.marker.ColorBar
+        plotly_study.graph_objs.scattergl.marker.ColorBar
         """
         return self["colorbar"]
 
@@ -1236,7 +1236,7 @@ class Marker(_BaseTraceHierarchyType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -1275,7 +1275,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1294,7 +1294,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.marker.Line
+          - An instance of plotly_study.graph_objs.scattergl.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -1391,7 +1391,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.marker.Line
+        plotly_study.graph_objs.scattergl.marker.Line
         """
         return self["line"]
 
@@ -1428,7 +1428,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  opacity .
     
         The 'opacitysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1581,7 +1581,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1686,7 +1686,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  symbol .
     
         The 'symbolsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1756,7 +1756,7 @@ class Marker(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.scattergl.marker.ColorBar instance
+            plotly_study.graph_objects.scattergl.marker.ColorBar instance
             or dict with compatible properties
         colorscale
             Sets the colorscale. Has an effect only if in
@@ -1775,7 +1775,7 @@ class Marker(_BaseTraceHierarchyType):
         colorsrc
             Sets the source reference on plot.ly for  color .
         line
-            plotly.graph_objects.scattergl.marker.Line instance or
+            plotly_study.graph_objects.scattergl.marker.Line instance or
             dict with compatible properties
         opacity
             Sets the marker opacity.
@@ -1852,7 +1852,7 @@ class Marker(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.Marker
+            an instance of plotly_study.graph_objs.scattergl.Marker
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -1900,7 +1900,7 @@ class Marker(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.scattergl.marker.ColorBar instance
+            plotly_study.graph_objects.scattergl.marker.ColorBar instance
             or dict with compatible properties
         colorscale
             Sets the colorscale. Has an effect only if in
@@ -1919,7 +1919,7 @@ class Marker(_BaseTraceHierarchyType):
         colorsrc
             Sets the source reference on plot.ly for  color .
         line
-            plotly.graph_objects.scattergl.marker.Line instance or
+            plotly_study.graph_objects.scattergl.marker.Line instance or
             dict with compatible properties
         opacity
             Sets the marker opacity.
@@ -1978,9 +1978,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.Marker 
+The first argument to the plotly_study.graph_objs.scattergl.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.Marker"""
+an instance of plotly_study.graph_objs.scattergl.Marker"""
             )
 
         # Handle skip_invalid
@@ -1989,7 +1989,7 @@ an instance of plotly.graph_objs.scattergl.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import marker as v_marker
+        from plotly_study.validators.scattergl import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -2072,7 +2072,7 @@ an instance of plotly.graph_objs.scattergl.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2233,7 +2233,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.Line
+            an instance of plotly_study.graph_objs.scattergl.Line
         color
             Sets the line color.
         dash
@@ -2261,9 +2261,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.Line 
+The first argument to the plotly_study.graph_objs.scattergl.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.Line"""
+an instance of plotly_study.graph_objs.scattergl.Line"""
             )
 
         # Handle skip_invalid
@@ -2272,7 +2272,7 @@ an instance of plotly.graph_objs.scattergl.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import line as v_line
+        from plotly_study.validators.scattergl import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -2301,7 +2301,7 @@ an instance of plotly.graph_objs.scattergl.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2339,7 +2339,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2419,7 +2419,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2499,7 +2499,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2520,7 +2520,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.scattergl.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2558,7 +2558,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.hoverlabel.Font
+        plotly_study.graph_objs.scattergl.hoverlabel.Font
         """
         return self["font"]
 
@@ -2601,7 +2601,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2675,7 +2675,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.Hoverlabel
+            an instance of plotly_study.graph_objs.scattergl.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -2722,9 +2722,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.Hoverlabel 
+The first argument to the plotly_study.graph_objs.scattergl.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.Hoverlabel"""
+an instance of plotly_study.graph_objs.scattergl.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -2733,7 +2733,7 @@ an instance of plotly.graph_objs.scattergl.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import hoverlabel as v_hoverlabel
+        from plotly_study.validators.scattergl import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -2777,7 +2777,7 @@ an instance of plotly.graph_objs.scattergl.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2834,7 +2834,7 @@ class ErrorY(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  arrayminus .
     
         The 'arrayminussrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2854,7 +2854,7 @@ class ErrorY(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  array .
     
         The 'arraysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3208,7 +3208,7 @@ class ErrorY(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.ErrorY
+            an instance of plotly_study.graph_objs.scattergl.ErrorY
         array
             Sets the data corresponding the length of each error
             bar. Values are plotted relative to the underlying
@@ -3278,9 +3278,9 @@ class ErrorY(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.ErrorY 
+The first argument to the plotly_study.graph_objs.scattergl.ErrorY 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.ErrorY"""
+an instance of plotly_study.graph_objs.scattergl.ErrorY"""
             )
 
         # Handle skip_invalid
@@ -3289,7 +3289,7 @@ an instance of plotly.graph_objs.scattergl.ErrorY"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import error_y as v_error_y
+        from plotly_study.validators.scattergl import error_y as v_error_y
 
         # Initialize validators
         # ---------------------
@@ -3348,7 +3348,7 @@ an instance of plotly.graph_objs.scattergl.ErrorY"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -3405,7 +3405,7 @@ class ErrorX(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  arrayminus .
     
         The 'arrayminussrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3425,7 +3425,7 @@ class ErrorX(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  array .
     
         The 'arraysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3800,7 +3800,7 @@ class ErrorX(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scattergl.ErrorX
+            an instance of plotly_study.graph_objs.scattergl.ErrorX
         array
             Sets the data corresponding the length of each error
             bar. Values are plotted relative to the underlying
@@ -3872,9 +3872,9 @@ class ErrorX(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattergl.ErrorX 
+The first argument to the plotly_study.graph_objs.scattergl.ErrorX 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattergl.ErrorX"""
+an instance of plotly_study.graph_objs.scattergl.ErrorX"""
             )
 
         # Handle skip_invalid
@@ -3883,7 +3883,7 @@ an instance of plotly.graph_objs.scattergl.ErrorX"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattergl import error_x as v_error_x
+        from plotly_study.validators.scattergl import error_x as v_error_x
 
         # Initialize validators
         # ---------------------
@@ -3961,7 +3961,7 @@ __all__ = [
     "unselected",
 ]
 
-from plotly.graph_objs.scattergl import unselected
-from plotly.graph_objs.scattergl import selected
-from plotly.graph_objs.scattergl import marker
-from plotly.graph_objs.scattergl import hoverlabel
+from plotly_study.graph_objs.scattergl import unselected
+from plotly_study.graph_objs.scattergl import selected
+from plotly_study.graph_objs.scattergl import marker
+from plotly_study.graph_objs.scattergl import hoverlabel

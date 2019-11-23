@@ -3,9 +3,9 @@ from __future__ import absolute_import
 from numbers import Number
 
 from plotly import exceptions, optional_imports
-import plotly.colors as clrs
-from plotly.graph_objs import graph_objs
-from plotly.tools import make_subplots
+import plotly_study.colors as clrs
+from plotly_study.graph_objs import graph_objs
+from plotly_study.tools import make_subplots
 
 pd = optional_imports.get_module("pandas")
 np = optional_imports.get_module("numpy")
@@ -488,8 +488,8 @@ def create_violin(
 
     Example 1: Single Violin Plot
 
-    >>> from plotly.figure_factory import create_violin
-    >>> import plotly.graph_objs as graph_objects
+    >>> from plotly_study.figure_factory import create_violin
+    >>> import plotly_study.graph_objs as graph_objects
 
     >>> import numpy as np
     >>> from scipy import stats
@@ -506,8 +506,8 @@ def create_violin(
 
     Example 2: Multiple Violin Plots with Qualitative Coloring
 
-    >>> from plotly.figure_factory import create_violin
-    >>> import plotly.graph_objs as graph_objects
+    >>> from plotly_study.figure_factory import create_violin
+    >>> import plotly_study.graph_objs as graph_objects
 
     >>> import numpy as np
     >>> import pandas as pd
@@ -533,8 +533,8 @@ def create_violin(
 
     Example 3: Violin Plots with Colorscale
 
-    >>> from plotly.figure_factory import create_violin
-    >>> import plotly.graph_objs as graph_objects
+    >>> from plotly_study.figure_factory import create_violin
+    >>> import plotly_study.graph_objs as graph_objects
 
     >>> import numpy as np
     >>> import pandas as pd

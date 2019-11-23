@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -70,7 +70,7 @@ class Line(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -109,7 +109,7 @@ class Line(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  width .
     
         The 'widthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -152,7 +152,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.cells.Line
+            an instance of plotly_study.graph_objs.table.cells.Line
         color
 
         colorsrc
@@ -179,9 +179,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.cells.Line 
+The first argument to the plotly_study.graph_objs.table.cells.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.cells.Line"""
+an instance of plotly_study.graph_objs.table.cells.Line"""
             )
 
         # Handle skip_invalid
@@ -190,7 +190,7 @@ an instance of plotly.graph_objs.table.cells.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table.cells import line as v_line
+        from plotly_study.validators.table.cells import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -219,7 +219,7 @@ an instance of plotly.graph_objs.table.cells.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -291,7 +291,7 @@ class Font(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -343,7 +343,7 @@ class Font(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -382,7 +382,7 @@ class Font(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -449,7 +449,7 @@ class Font(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.cells.Font
+            an instance of plotly_study.graph_objs.table.cells.Font
         color
 
         colorsrc
@@ -492,9 +492,9 @@ class Font(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.cells.Font 
+The first argument to the plotly_study.graph_objs.table.cells.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.cells.Font"""
+an instance of plotly_study.graph_objs.table.cells.Font"""
             )
 
         # Handle skip_invalid
@@ -503,7 +503,7 @@ an instance of plotly.graph_objs.table.cells.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table.cells import font as v_font
+        from plotly_study.validators.table.cells import font as v_font
 
         # Initialize validators
         # ---------------------
@@ -538,7 +538,7 @@ an instance of plotly.graph_objs.table.cells.Font"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -613,7 +613,7 @@ class Fill(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -651,7 +651,7 @@ class Fill(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.table.cells.Fill
+            an instance of plotly_study.graph_objs.table.cells.Fill
         color
             Sets the cell fill color. It accepts either a specific
             color or an array of colors or a 2D array of colors.
@@ -675,9 +675,9 @@ class Fill(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.table.cells.Fill 
+The first argument to the plotly_study.graph_objs.table.cells.Fill 
 constructor must be a dict or 
-an instance of plotly.graph_objs.table.cells.Fill"""
+an instance of plotly_study.graph_objs.table.cells.Fill"""
             )
 
         # Handle skip_invalid
@@ -686,7 +686,7 @@ an instance of plotly.graph_objs.table.cells.Fill"""
 
         # Import validators
         # -----------------
-        from plotly.validators.table.cells import fill as v_fill
+        from plotly_study.validators.table.cells import fill as v_fill
 
         # Initialize validators
         # ---------------------

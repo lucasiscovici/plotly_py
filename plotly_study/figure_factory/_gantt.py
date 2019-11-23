@@ -5,9 +5,9 @@ from numbers import Number
 import copy
 
 from plotly import exceptions, optional_imports
-import plotly.colors as clrs
-from plotly.figure_factory import utils
-import plotly.graph_objects as go
+import plotly_study.colors as clrs
+from plotly_study.figure_factory import utils
+import plotly_study.graph_objects as go
 
 pd = optional_imports.get_module("pandas")
 
@@ -851,7 +851,7 @@ def create_gantt(
 
     Example 1: Simple Gantt Chart
 
-    >>> from plotly.figure_factory import create_gantt
+    >>> from plotly_study.figure_factory import create_gantt
 
     >>> # Make data for chart
     >>> df = [dict(Task="Job A", Start='2009-01-01', Finish='2009-02-30'),
@@ -865,7 +865,7 @@ def create_gantt(
 
     Example 2: Index by Column with Numerical Entries
 
-    >>> from plotly.figure_factory import create_gantt
+    >>> from plotly_study.figure_factory import create_gantt
 
     >>> # Make data for chart
     >>> df = [dict(Task="Job A", Start='2009-01-01',
@@ -884,7 +884,7 @@ def create_gantt(
 
     Example 3: Index by Column with String Entries
 
-    >>> from plotly.figure_factory import create_gantt
+    >>> from plotly_study.figure_factory import create_gantt
 
     >>> # Make data for chart
     >>> df = [dict(Task="Job A", Start='2009-01-01',
@@ -903,7 +903,7 @@ def create_gantt(
 
     Example 4: Use a dictionary for colors
 
-    >>> from plotly.figure_factory import create_gantt
+    >>> from plotly_study.figure_factory import create_gantt
     >>> # Make data for chart
     >>> df = [dict(Task="Job A", Start='2009-01-01',
     ...            Finish='2009-02-30', Resource='Apple'),
@@ -925,7 +925,7 @@ def create_gantt(
 
     Example 5: Use a pandas dataframe
 
-    >>> from plotly.figure_factory import create_gantt
+    >>> from plotly_study.figure_factory import create_gantt
     >>> import pandas as pd
 
     >>> # Make data as a dataframe

@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -14,7 +14,7 @@ class Title(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.volume.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -42,7 +42,7 @@ class Title(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.colorbar.title.Font
+        plotly_study.graph_objs.volume.colorbar.title.Font
         """
         return self["font"]
 
@@ -131,7 +131,7 @@ class Title(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.colorbar.Title
+            an instance of plotly_study.graph_objs.volume.colorbar.Title
         font
             Sets this color bar's title font. Note that the title's
             font used to be set by the now deprecated `titlefont`
@@ -164,9 +164,9 @@ class Title(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.colorbar.Title 
+The first argument to the plotly_study.graph_objs.volume.colorbar.Title 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.colorbar.Title"""
+an instance of plotly_study.graph_objs.volume.colorbar.Title"""
             )
 
         # Handle skip_invalid
@@ -175,7 +175,7 @@ an instance of plotly.graph_objs.volume.colorbar.Title"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume.colorbar import title as v_title
+        from plotly_study.validators.volume.colorbar import title as v_title
 
         # Initialize validators
         # ---------------------
@@ -201,7 +201,7 @@ an instance of plotly.graph_objs.volume.colorbar.Title"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -391,7 +391,7 @@ class Tickformatstop(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.volume.colorbar.Tickformatstop
+            plotly_study.graph_objs.volume.colorbar.Tickformatstop
         dtickrange
             range [*min*, *max*], where "min", "max" - dtick values
             which describe some zoom level, it is possible to omit
@@ -440,9 +440,9 @@ class Tickformatstop(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.colorbar.Tickformatstop 
+The first argument to the plotly_study.graph_objs.volume.colorbar.Tickformatstop 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.colorbar.Tickformatstop"""
+an instance of plotly_study.graph_objs.volume.colorbar.Tickformatstop"""
             )
 
         # Handle skip_invalid
@@ -451,7 +451,7 @@ an instance of plotly.graph_objs.volume.colorbar.Tickformatstop"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume.colorbar import tickformatstop as v_tickformatstop
+        from plotly_study.validators.volume.colorbar import tickformatstop as v_tickformatstop
 
         # Initialize validators
         # ---------------------
@@ -487,7 +487,7 @@ an instance of plotly.graph_objs.volume.colorbar.Tickformatstop"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -641,7 +641,7 @@ class Tickfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.volume.colorbar.Tickfont
+            plotly_study.graph_objs.volume.colorbar.Tickfont
         color
 
         family
@@ -678,9 +678,9 @@ class Tickfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.colorbar.Tickfont 
+The first argument to the plotly_study.graph_objs.volume.colorbar.Tickfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.colorbar.Tickfont"""
+an instance of plotly_study.graph_objs.volume.colorbar.Tickfont"""
             )
 
         # Handle skip_invalid
@@ -689,7 +689,7 @@ an instance of plotly.graph_objs.volume.colorbar.Tickfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume.colorbar import tickfont as v_tickfont
+        from plotly_study.validators.volume.colorbar import tickfont as v_tickfont
 
         # Initialize validators
         # ---------------------
@@ -717,4 +717,4 @@ an instance of plotly.graph_objs.volume.colorbar.Tickfont"""
 
 __all__ = ["Tickfont", "Tickformatstop", "Tickformatstop", "Title", "title"]
 
-from plotly.graph_objs.volume.colorbar import title
+from plotly_study.graph_objs.volume.colorbar import title

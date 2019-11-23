@@ -201,24 +201,24 @@ docs = dict(
     ],
     symbol_sequence=[
         "list of str",
-        "Strings should define valid plotly.js symbols.",
+        "Strings should define valid plotly_study.js symbols.",
         "When `symbol` is set, values in that column are assigned symbols by cycling through `symbol_sequence` in the order described in `category_orders`, unless the value of `symbol` is a key in `symbol_map`.",
     ],
     symbol_map=[
         "dict with str keys and str values (default `{}`)",
-        "String values should define plotly.js symbols",
+        "String values should define plotly_study.js symbols",
         "Used to override `symbol_sequence` to assign a specific symbols to marks corresponding with specific values.",
         "Keys in `symbol_map` should be values in the column denoted by `symbol`.",
     ],
     line_dash_map=[
         "dict with str keys and str values (default `{}`)",
-        "Strings values define plotly.js dash-patterns.",
+        "Strings values define plotly_study.js dash-patterns.",
         "Used to override `line_dash_sequences` to assign a specific dash-patterns to lines corresponding with specific values.",
         "Keys in `line_dash_map` should be values in the column denoted by `line_dash`.",
     ],
     line_dash_sequence=[
         "list of str",
-        "Strings should define valid plotly.js dash-patterns.",
+        "Strings should define valid plotly_study.js dash-patterns.",
         "When `line_dash` is set, values in that column are assigned dash-patterns by cycling through `line_dash_sequence` in the order described in `category_orders`, unless the value of `line_dash` is a key in `line_dash_map`.",
     ],
     color_discrete_sequence=[
@@ -283,7 +283,7 @@ docs = dict(
     ],
     title=["str", "The figure title."],
     template=[
-        "or dict or plotly.graph_objects.layout.Template instance",
+        "or dict or plotly_study.graph_objects.layout.Template instance",
         "The figure template name or definition.",
     ],
     width=["int (default `None`)", "The figure width in pixels."],

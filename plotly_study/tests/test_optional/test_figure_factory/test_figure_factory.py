@@ -1,14 +1,14 @@
 from unittest import TestCase
 from plotly import optional_imports
-from plotly.graph_objs import graph_objs as go
-from plotly.exceptions import PlotlyError
-import plotly.io as pio
+from plotly_study.graph_objs import graph_objs as go
+from plotly_study.exceptions import PlotlyError
+import plotly_study.io as pio
 
-import plotly.figure_factory as ff
-from plotly.tests.test_optional.optional_utils import NumpyTestUtilsMixin
+import plotly_study.figure_factory as ff
+from plotly_study.tests.test_optional.optional_utils import NumpyTestUtilsMixin
 
 import numpy as np
-from plotly.tests.utils import TestCaseNoTemplate
+from plotly_study.tests.utils import TestCaseNoTemplate
 from scipy.spatial import Delaunay
 import pandas as pd
 

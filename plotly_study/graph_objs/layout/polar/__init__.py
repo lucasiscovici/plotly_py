@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -110,7 +110,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  categoryarray .
     
         The 'categoryarraysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -870,7 +870,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.polar.radialaxis.Tickfont
+          - An instance of plotly_study.graph_objs.layout.polar.radialaxis.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -898,7 +898,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.polar.radialaxis.Tickfont
+        plotly_study.graph_objs.layout.polar.radialaxis.Tickfont
         """
         return self["tickfont"]
 
@@ -942,7 +942,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.polar.radialaxis.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.layout.polar.radialaxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -984,7 +984,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.polar.radialaxis.Tickformatstop]
+        tuple[plotly_study.graph_objs.layout.polar.radialaxis.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -1003,7 +1003,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.polar.radialaxis.Tickformatstop
+          - An instance of plotly_study.graph_objs.layout.polar.radialaxis.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -1011,7 +1011,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.polar.radialaxis.Tickformatstop
+        plotly_study.graph_objs.layout.polar.radialaxis.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -1161,7 +1161,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1202,7 +1202,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1241,7 +1241,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.polar.radialaxis.Title
+          - An instance of plotly_study.graph_objs.layout.polar.radialaxis.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -1260,7 +1260,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.polar.radialaxis.Title
+        plotly_study.graph_objs.layout.polar.radialaxis.Title
         """
         return self["title"]
 
@@ -1280,7 +1280,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.polar.radialaxis.title.Font
+          - An instance of plotly_study.graph_objs.layout.polar.radialaxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1576,7 +1576,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.polar.radialaxis
+            A tuple of plotly_study.graph_objects.layout.polar.radialaxis
             .Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -1618,7 +1618,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.polar.radialaxis.Title
+            plotly_study.graph_objects.layout.polar.radialaxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -1703,7 +1703,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.polar.RadialAxis
+            plotly_study.graph_objs.layout.polar.RadialAxis
         angle
             Sets the angle (in degrees) from which the radial axis
             is drawn. Note that by default, radial axis line on the
@@ -1887,7 +1887,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.polar.radialaxis
+            A tuple of plotly_study.graph_objects.layout.polar.radialaxis
             .Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -1929,7 +1929,7 @@ class RadialAxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.polar.radialaxis.Title
+            plotly_study.graph_objects.layout.polar.radialaxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -1967,9 +1967,9 @@ class RadialAxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.polar.RadialAxis 
+The first argument to the plotly_study.graph_objs.layout.polar.RadialAxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.polar.RadialAxis"""
+an instance of plotly_study.graph_objs.layout.polar.RadialAxis"""
             )
 
         # Handle skip_invalid
@@ -1978,7 +1978,7 @@ an instance of plotly.graph_objs.layout.polar.RadialAxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.polar import radialaxis as v_radialaxis
+        from plotly_study.validators.layout.polar import radialaxis as v_radialaxis
 
         # Initialize validators
         # ---------------------
@@ -2150,7 +2150,7 @@ an instance of plotly.graph_objs.layout.polar.RadialAxis"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -2285,7 +2285,7 @@ class Domain(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.polar.Domain
+            an instance of plotly_study.graph_objs.layout.polar.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this polar subplot .
@@ -2316,9 +2316,9 @@ class Domain(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.polar.Domain 
+The first argument to the plotly_study.graph_objs.layout.polar.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.polar.Domain"""
+an instance of plotly_study.graph_objs.layout.polar.Domain"""
             )
 
         # Handle skip_invalid
@@ -2327,7 +2327,7 @@ an instance of plotly.graph_objs.layout.polar.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.polar import domain as v_domain
+        from plotly_study.validators.layout.polar import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -2356,7 +2356,7 @@ an instance of plotly.graph_objs.layout.polar.Domain"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -2392,7 +2392,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  categoryarray .
     
         The 'categoryarraysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3166,7 +3166,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.polar.angularaxis.Tickfont
+          - An instance of plotly_study.graph_objs.layout.polar.angularaxis.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -3194,7 +3194,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.polar.angularaxis.Tickfont
+        plotly_study.graph_objs.layout.polar.angularaxis.Tickfont
         """
         return self["tickfont"]
 
@@ -3238,7 +3238,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.polar.angularaxis.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.layout.polar.angularaxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -3280,7 +3280,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.polar.angularaxis.Tickformatstop]
+        tuple[plotly_study.graph_objs.layout.polar.angularaxis.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -3299,7 +3299,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.polar.angularaxis.Tickformatstop
+          - An instance of plotly_study.graph_objs.layout.polar.angularaxis.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -3307,7 +3307,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.polar.angularaxis.Tickformatstop
+        plotly_study.graph_objs.layout.polar.angularaxis.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -3457,7 +3457,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3498,7 +3498,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3770,7 +3770,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.polar.angularaxi
+            A tuple of plotly_study.graph_objects.layout.polar.angularaxi
             s.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -3882,7 +3882,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.polar.AngularAxis
+            plotly_study.graph_objs.layout.polar.AngularAxis
         categoryarray
             Sets the order in which categories on this axis appear.
             Only has an effect if `categoryorder` is set to
@@ -4046,7 +4046,7 @@ class AngularAxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.polar.angularaxi
+            A tuple of plotly_study.graph_objects.layout.polar.angularaxi
             s.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -4117,9 +4117,9 @@ class AngularAxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.polar.AngularAxis 
+The first argument to the plotly_study.graph_objs.layout.polar.AngularAxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.polar.AngularAxis"""
+an instance of plotly_study.graph_objs.layout.polar.AngularAxis"""
             )
 
         # Handle skip_invalid
@@ -4128,7 +4128,7 @@ an instance of plotly.graph_objs.layout.polar.AngularAxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.polar import angularaxis as v_angularaxis
+        from plotly_study.validators.layout.polar import angularaxis as v_angularaxis
 
         # Initialize validators
         # ---------------------
@@ -4289,5 +4289,5 @@ an instance of plotly.graph_objs.layout.polar.AngularAxis"""
 
 __all__ = ["AngularAxis", "Domain", "RadialAxis", "angularaxis", "radialaxis"]
 
-from plotly.graph_objs.layout.polar import radialaxis
-from plotly.graph_objs.layout.polar import angularaxis
+from plotly_study.graph_objs.layout.polar import radialaxis
+from plotly_study.graph_objs.layout.polar import angularaxis

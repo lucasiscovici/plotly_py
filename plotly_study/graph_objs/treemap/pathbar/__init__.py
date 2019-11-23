@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -70,7 +70,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -122,7 +122,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -161,7 +161,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -231,7 +231,7 @@ class Textfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.treemap.pathbar.Textfont
+            plotly_study.graph_objs.treemap.pathbar.Textfont
         color
 
         colorsrc
@@ -274,9 +274,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.pathbar.Textfont 
+The first argument to the plotly_study.graph_objs.treemap.pathbar.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.pathbar.Textfont"""
+an instance of plotly_study.graph_objs.treemap.pathbar.Textfont"""
             )
 
         # Handle skip_invalid
@@ -285,7 +285,7 @@ an instance of plotly.graph_objs.treemap.pathbar.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap.pathbar import textfont as v_textfont
+        from plotly_study.validators.treemap.pathbar import textfont as v_textfont
 
         # Initialize validators
         # ---------------------

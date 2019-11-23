@@ -3,8 +3,8 @@ from unittest import TestCase
 import inspect
 import copy
 
-import plotly.graph_objs as go
-from plotly.subplots import make_subplots
+import plotly_study.graph_objs as go
+from plotly_study.subplots import make_subplots
 
 
 class TestSelectForEachUpdateTraces(TestCase):

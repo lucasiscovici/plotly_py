@@ -1,6 +1,6 @@
 from __future__ import absolute_import
 
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
 D = dict(
     x1=[1, 2, 2, 4, 5, 6, 1, 7, 8, 5, 3],

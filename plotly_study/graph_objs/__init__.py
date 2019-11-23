@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -77,14 +77,14 @@ class Waterfall(_BaseTraceType):
         """
         The 'connector' property is an instance of Connector
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Connector
+          - An instance of plotly_study.graph_objs.waterfall.Connector
           - A dict of string/value properties that will be passed
             to the Connector constructor
     
             Supported dict properties:
                 
                 line
-                    plotly.graph_objects.waterfall.connector.Line
+                    plotly_study.graph_objects.waterfall.connector.Line
                     instance or dict with compatible properties
                 mode
                     Sets the shape of connector lines.
@@ -93,7 +93,7 @@ class Waterfall(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Connector
+        plotly_study.graph_objs.waterfall.Connector
         """
         return self["connector"]
 
@@ -154,7 +154,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -173,19 +173,19 @@ class Waterfall(_BaseTraceType):
         """
         The 'decreasing' property is an instance of Decreasing
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Decreasing
+          - An instance of plotly_study.graph_objs.waterfall.Decreasing
           - A dict of string/value properties that will be passed
             to the Decreasing constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.waterfall.decreasing.Marke
+                    plotly_study.graph_objects.waterfall.decreasing.Marke
                     r instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Decreasing
+        plotly_study.graph_objs.waterfall.Decreasing
         """
         return self["decreasing"]
 
@@ -267,7 +267,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -286,7 +286,7 @@ class Waterfall(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Hoverlabel
+          - An instance of plotly_study.graph_objs.waterfall.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -330,7 +330,7 @@ class Waterfall(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Hoverlabel
+        plotly_study.graph_objs.waterfall.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -387,7 +387,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -433,7 +433,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -475,7 +475,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -494,19 +494,19 @@ class Waterfall(_BaseTraceType):
         """
         The 'increasing' property is an instance of Increasing
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Increasing
+          - An instance of plotly_study.graph_objs.waterfall.Increasing
           - A dict of string/value properties that will be passed
             to the Increasing constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.waterfall.increasing.Marke
+                    plotly_study.graph_objects.waterfall.increasing.Marke
                     r instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Increasing
+        plotly_study.graph_objs.waterfall.Increasing
         """
         return self["increasing"]
 
@@ -545,7 +545,7 @@ class Waterfall(_BaseTraceType):
     
         The 'insidetextfont' property is an instance of Insidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Insidetextfont
+          - An instance of plotly_study.graph_objs.waterfall.Insidetextfont
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
     
@@ -583,7 +583,7 @@ class Waterfall(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Insidetextfont
+        plotly_study.graph_objs.waterfall.Insidetextfont
         """
         return self["insidetextfont"]
 
@@ -646,7 +646,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  measure .
     
         The 'measuresrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -694,7 +694,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -782,7 +782,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  offset .
     
         The 'offsetsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -845,7 +845,7 @@ class Waterfall(_BaseTraceType):
     
         The 'outsidetextfont' property is an instance of Outsidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Outsidetextfont
+          - An instance of plotly_study.graph_objs.waterfall.Outsidetextfont
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
     
@@ -883,7 +883,7 @@ class Waterfall(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Outsidetextfont
+        plotly_study.graph_objs.waterfall.Outsidetextfont
         """
         return self["outsidetextfont"]
 
@@ -943,7 +943,7 @@ class Waterfall(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Stream
+          - An instance of plotly_study.graph_objs.waterfall.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -961,7 +961,7 @@ class Waterfall(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Stream
+        plotly_study.graph_objs.waterfall.Stream
         """
         return self["stream"]
 
@@ -1030,7 +1030,7 @@ class Waterfall(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Textfont
+          - An instance of plotly_study.graph_objs.waterfall.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -1068,7 +1068,7 @@ class Waterfall(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Textfont
+        plotly_study.graph_objs.waterfall.Textfont
         """
         return self["textfont"]
 
@@ -1137,7 +1137,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1157,7 +1157,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1212,7 +1212,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1231,19 +1231,19 @@ class Waterfall(_BaseTraceType):
         """
         The 'totals' property is an instance of Totals
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.Totals
+          - An instance of plotly_study.graph_objs.waterfall.Totals
           - A dict of string/value properties that will be passed
             to the Totals constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.waterfall.totals.Marker
+                    plotly_study.graph_objects.waterfall.totals.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.waterfall.Totals
+        plotly_study.graph_objs.waterfall.Totals
         """
         return self["totals"]
 
@@ -1358,7 +1358,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  width .
     
         The 'widthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1444,7 +1444,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1530,7 +1530,7 @@ class Waterfall(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1573,7 +1573,7 @@ class Waterfall(_BaseTraceType):
             and tick labels, make sure to set `xaxis.layer` and
             `yaxis.layer` to *below traces*.
         connector
-            plotly.graph_objects.waterfall.Connector instance or
+            plotly_study.graph_objects.waterfall.Connector instance or
             dict with compatible properties
         constraintext
             Constrain the size of text inside or outside a bar to
@@ -1586,7 +1586,7 @@ class Waterfall(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.waterfall.Decreasing instance or
+            plotly_study.graph_objects.waterfall.Decreasing instance or
             dict with compatible properties
         dx
             Sets the x coordinate step. See `x0` for more info.
@@ -1600,7 +1600,7 @@ class Waterfall(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.waterfall.Hoverlabel instance or
+            plotly_study.graph_objects.waterfall.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -1645,7 +1645,7 @@ class Waterfall(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.waterfall.Increasing instance or
+            plotly_study.graph_objects.waterfall.Increasing instance or
             dict with compatible properties
         insidetextanchor
             Determines if texts are kept at center or start/end
@@ -1712,7 +1712,7 @@ class Waterfall(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.waterfall.Stream instance or dict
+            plotly_study.graph_objects.waterfall.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -1769,7 +1769,7 @@ class Waterfall(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         totals
-            plotly.graph_objects.waterfall.Totals instance or dict
+            plotly_study.graph_objects.waterfall.Totals instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -1909,7 +1909,7 @@ class Waterfall(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Waterfall
+            an instance of plotly_study.graph_objs.Waterfall
         alignmentgroup
             Set several traces linked to the same position axis or
             matching axes to the same alignmentgroup. This controls
@@ -1924,7 +1924,7 @@ class Waterfall(_BaseTraceType):
             and tick labels, make sure to set `xaxis.layer` and
             `yaxis.layer` to *below traces*.
         connector
-            plotly.graph_objects.waterfall.Connector instance or
+            plotly_study.graph_objects.waterfall.Connector instance or
             dict with compatible properties
         constraintext
             Constrain the size of text inside or outside a bar to
@@ -1937,7 +1937,7 @@ class Waterfall(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.waterfall.Decreasing instance or
+            plotly_study.graph_objects.waterfall.Decreasing instance or
             dict with compatible properties
         dx
             Sets the x coordinate step. See `x0` for more info.
@@ -1951,7 +1951,7 @@ class Waterfall(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.waterfall.Hoverlabel instance or
+            plotly_study.graph_objects.waterfall.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -1996,7 +1996,7 @@ class Waterfall(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.waterfall.Increasing instance or
+            plotly_study.graph_objects.waterfall.Increasing instance or
             dict with compatible properties
         insidetextanchor
             Determines if texts are kept at center or start/end
@@ -2063,7 +2063,7 @@ class Waterfall(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.waterfall.Stream instance or dict
+            plotly_study.graph_objects.waterfall.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -2120,7 +2120,7 @@ class Waterfall(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         totals
-            plotly.graph_objects.waterfall.Totals instance or dict
+            plotly_study.graph_objects.waterfall.Totals instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -2197,9 +2197,9 @@ class Waterfall(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Waterfall 
+The first argument to the plotly_study.graph_objs.Waterfall 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Waterfall"""
+an instance of plotly_study.graph_objs.Waterfall"""
             )
 
         # Handle skip_invalid
@@ -2208,7 +2208,7 @@ an instance of plotly.graph_objs.Waterfall"""
 
         # Import validators
         # -----------------
-        from plotly.validators import waterfall as v_waterfall
+        from plotly_study.validators import waterfall as v_waterfall
 
         # Initialize validators
         # ---------------------
@@ -2419,7 +2419,7 @@ an instance of plotly.graph_objs.Waterfall"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -2457,25 +2457,25 @@ class Volume(_BaseTraceType):
         """
         The 'caps' property is an instance of Caps
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Caps
+          - An instance of plotly_study.graph_objs.volume.Caps
           - A dict of string/value properties that will be passed
             to the Caps constructor
     
             Supported dict properties:
                 
                 x
-                    plotly.graph_objects.volume.caps.X instance or
+                    plotly_study.graph_objects.volume.caps.X instance or
                     dict with compatible properties
                 y
-                    plotly.graph_objects.volume.caps.Y instance or
+                    plotly_study.graph_objects.volume.caps.Y instance or
                     dict with compatible properties
                 z
-                    plotly.graph_objects.volume.caps.Z instance or
+                    plotly_study.graph_objects.volume.caps.Z instance or
                     dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.volume.Caps
+        plotly_study.graph_objs.volume.Caps
         """
         return self["caps"]
 
@@ -2604,7 +2604,7 @@ class Volume(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.ColorBar
+          - An instance of plotly_study.graph_objs.volume.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -2736,7 +2736,7 @@ class Volume(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.volume.colorbar
+                    A tuple of plotly_study.graph_objects.volume.colorbar
                     .Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -2784,7 +2784,7 @@ class Volume(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.volume.colorbar.Title
+                    plotly_study.graph_objects.volume.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -2823,7 +2823,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.ColorBar
+        plotly_study.graph_objs.volume.ColorBar
         """
         return self["colorbar"]
 
@@ -2851,7 +2851,7 @@ class Volume(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -2889,7 +2889,7 @@ class Volume(_BaseTraceType):
         """
         The 'contour' property is an instance of Contour
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Contour
+          - An instance of plotly_study.graph_objs.volume.Contour
           - A dict of string/value properties that will be passed
             to the Contour constructor
     
@@ -2905,7 +2905,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.Contour
+        plotly_study.graph_objs.volume.Contour
         """
         return self["contour"]
 
@@ -2944,7 +2944,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3012,7 +3012,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3031,7 +3031,7 @@ class Volume(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Hoverlabel
+          - An instance of plotly_study.graph_objs.volume.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -3075,7 +3075,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.Hoverlabel
+        plotly_study.graph_objs.volume.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -3132,7 +3132,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3174,7 +3174,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3216,7 +3216,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3275,7 +3275,7 @@ class Volume(_BaseTraceType):
         """
         The 'lighting' property is an instance of Lighting
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Lighting
+          - An instance of plotly_study.graph_objs.volume.Lighting
           - A dict of string/value properties that will be passed
             to the Lighting constructor
     
@@ -3308,7 +3308,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.Lighting
+        plotly_study.graph_objs.volume.Lighting
         """
         return self["lighting"]
 
@@ -3323,7 +3323,7 @@ class Volume(_BaseTraceType):
         """
         The 'lightposition' property is an instance of Lightposition
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Lightposition
+          - An instance of plotly_study.graph_objs.volume.Lightposition
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
     
@@ -3341,7 +3341,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.Lightposition
+        plotly_study.graph_objs.volume.Lightposition
         """
         return self["lightposition"]
 
@@ -3385,7 +3385,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3546,25 +3546,25 @@ class Volume(_BaseTraceType):
         """
         The 'slices' property is an instance of Slices
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Slices
+          - An instance of plotly_study.graph_objs.volume.Slices
           - A dict of string/value properties that will be passed
             to the Slices constructor
     
             Supported dict properties:
                 
                 x
-                    plotly.graph_objects.volume.slices.X instance
+                    plotly_study.graph_objects.volume.slices.X instance
                     or dict with compatible properties
                 y
-                    plotly.graph_objects.volume.slices.Y instance
+                    plotly_study.graph_objects.volume.slices.Y instance
                     or dict with compatible properties
                 z
-                    plotly.graph_objects.volume.slices.Z instance
+                    plotly_study.graph_objects.volume.slices.Z instance
                     or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.volume.Slices
+        plotly_study.graph_objs.volume.Slices
         """
         return self["slices"]
 
@@ -3579,7 +3579,7 @@ class Volume(_BaseTraceType):
         """
         The 'spaceframe' property is an instance of Spaceframe
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Spaceframe
+          - An instance of plotly_study.graph_objs.volume.Spaceframe
           - A dict of string/value properties that will be passed
             to the Spaceframe constructor
     
@@ -3599,7 +3599,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.Spaceframe
+        plotly_study.graph_objs.volume.Spaceframe
         """
         return self["spaceframe"]
 
@@ -3614,7 +3614,7 @@ class Volume(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Stream
+          - An instance of plotly_study.graph_objs.volume.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -3632,7 +3632,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.Stream
+        plotly_study.graph_objs.volume.Stream
         """
         return self["stream"]
 
@@ -3647,7 +3647,7 @@ class Volume(_BaseTraceType):
         """
         The 'surface' property is an instance of Surface
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.Surface
+          - An instance of plotly_study.graph_objs.volume.Surface
           - A dict of string/value properties that will be passed
             to the Surface constructor
     
@@ -3682,7 +3682,7 @@ class Volume(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.volume.Surface
+        plotly_study.graph_objs.volume.Surface
         """
         return self["surface"]
 
@@ -3722,7 +3722,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3817,7 +3817,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  value .
     
         The 'valuesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3880,7 +3880,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3920,7 +3920,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3960,7 +3960,7 @@ class Volume(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3997,7 +3997,7 @@ class Volume(_BaseTraceType):
             chosen according to whether numbers in the `color`
             array are all positive, all negative or mixed.
         caps
-            plotly.graph_objects.volume.Caps instance or dict with
+            plotly_study.graph_objects.volume.Caps instance or dict with
             compatible properties
         cauto
             Determines whether or not the color domain is computed
@@ -4025,7 +4025,7 @@ class Volume(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.volume.ColorBar instance or dict
+            plotly_study.graph_objects.volume.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -4040,7 +4040,7 @@ class Volume(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.volume.Contour instance or dict
+            plotly_study.graph_objects.volume.Contour instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -4061,7 +4061,7 @@ class Volume(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.volume.Hoverlabel instance or dict
+            plotly_study.graph_objects.volume.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -4104,10 +4104,10 @@ class Volume(_BaseTraceType):
         isomin
             Sets the minimum boundary for iso-surface plot.
         lighting
-            plotly.graph_objects.volume.Lighting instance or dict
+            plotly_study.graph_objects.volume.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.volume.Lightposition instance or
+            plotly_study.graph_objects.volume.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -4160,16 +4160,16 @@ class Volume(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         slices
-            plotly.graph_objects.volume.Slices instance or dict
+            plotly_study.graph_objects.volume.Slices instance or dict
             with compatible properties
         spaceframe
-            plotly.graph_objects.volume.Spaceframe instance or dict
+            plotly_study.graph_objects.volume.Spaceframe instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.volume.Stream instance or dict
+            plotly_study.graph_objects.volume.Stream instance or dict
             with compatible properties
         surface
-            plotly.graph_objects.volume.Surface instance or dict
+            plotly_study.graph_objects.volume.Surface instance or dict
             with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -4293,7 +4293,7 @@ class Volume(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Volume
+            an instance of plotly_study.graph_objs.Volume
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -4302,7 +4302,7 @@ class Volume(_BaseTraceType):
             chosen according to whether numbers in the `color`
             array are all positive, all negative or mixed.
         caps
-            plotly.graph_objects.volume.Caps instance or dict with
+            plotly_study.graph_objects.volume.Caps instance or dict with
             compatible properties
         cauto
             Determines whether or not the color domain is computed
@@ -4330,7 +4330,7 @@ class Volume(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.volume.ColorBar instance or dict
+            plotly_study.graph_objects.volume.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -4345,7 +4345,7 @@ class Volume(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.volume.Contour instance or dict
+            plotly_study.graph_objects.volume.Contour instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -4366,7 +4366,7 @@ class Volume(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.volume.Hoverlabel instance or dict
+            plotly_study.graph_objects.volume.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -4409,10 +4409,10 @@ class Volume(_BaseTraceType):
         isomin
             Sets the minimum boundary for iso-surface plot.
         lighting
-            plotly.graph_objects.volume.Lighting instance or dict
+            plotly_study.graph_objects.volume.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.volume.Lightposition instance or
+            plotly_study.graph_objects.volume.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -4465,16 +4465,16 @@ class Volume(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         slices
-            plotly.graph_objects.volume.Slices instance or dict
+            plotly_study.graph_objects.volume.Slices instance or dict
             with compatible properties
         spaceframe
-            plotly.graph_objects.volume.Spaceframe instance or dict
+            plotly_study.graph_objects.volume.Spaceframe instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.volume.Stream instance or dict
+            plotly_study.graph_objects.volume.Stream instance or dict
             with compatible properties
         surface
-            plotly.graph_objects.volume.Surface instance or dict
+            plotly_study.graph_objects.volume.Surface instance or dict
             with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -4544,9 +4544,9 @@ class Volume(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Volume 
+The first argument to the plotly_study.graph_objs.Volume 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Volume"""
+an instance of plotly_study.graph_objs.Volume"""
             )
 
         # Handle skip_invalid
@@ -4555,7 +4555,7 @@ an instance of plotly.graph_objs.Volume"""
 
         # Import validators
         # -----------------
-        from plotly.validators import volume as v_volume
+        from plotly_study.validators import volume as v_volume
 
         # Initialize validators
         # ---------------------
@@ -4737,7 +4737,7 @@ an instance of plotly.graph_objs.Volume"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -4795,7 +4795,7 @@ class Violin(_BaseTraceType):
         """
         The 'box' property is an instance of Box
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Box
+          - An instance of plotly_study.graph_objs.violin.Box
           - A dict of string/value properties that will be passed
             to the Box constructor
     
@@ -4804,7 +4804,7 @@ class Violin(_BaseTraceType):
                 fillcolor
                     Sets the inner box plot fill color.
                 line
-                    plotly.graph_objects.violin.box.Line instance
+                    plotly_study.graph_objects.violin.box.Line instance
                     or dict with compatible properties
                 visible
                     Determines if an miniature box plot is drawn
@@ -4816,7 +4816,7 @@ class Violin(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.violin.Box
+        plotly_study.graph_objs.violin.Box
         """
         return self["box"]
 
@@ -4855,7 +4855,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -4962,7 +4962,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -4981,7 +4981,7 @@ class Violin(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Hoverlabel
+          - An instance of plotly_study.graph_objs.violin.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -5025,7 +5025,7 @@ class Violin(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.violin.Hoverlabel
+        plotly_study.graph_objs.violin.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -5107,7 +5107,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -5149,7 +5149,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -5191,7 +5191,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -5256,7 +5256,7 @@ class Violin(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Line
+          - An instance of plotly_study.graph_objs.violin.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -5270,7 +5270,7 @@ class Violin(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.violin.Line
+        plotly_study.graph_objs.violin.Line
         """
         return self["line"]
 
@@ -5285,7 +5285,7 @@ class Violin(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Marker
+          - An instance of plotly_study.graph_objs.violin.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -5298,7 +5298,7 @@ class Violin(_BaseTraceType):
                     and min values of the array or relative to
                     `marker.cmin` and `marker.cmax` if set.
                 line
-                    plotly.graph_objects.violin.marker.Line
+                    plotly_study.graph_objects.violin.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the marker opacity.
@@ -5316,7 +5316,7 @@ class Violin(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.violin.Marker
+        plotly_study.graph_objs.violin.Marker
         """
         return self["marker"]
 
@@ -5331,7 +5331,7 @@ class Violin(_BaseTraceType):
         """
         The 'meanline' property is an instance of Meanline
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Meanline
+          - An instance of plotly_study.graph_objs.violin.Meanline
           - A dict of string/value properties that will be passed
             to the Meanline constructor
     
@@ -5351,7 +5351,7 @@ class Violin(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.violin.Meanline
+        plotly_study.graph_objs.violin.Meanline
         """
         return self["meanline"]
 
@@ -5395,7 +5395,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -5607,19 +5607,19 @@ class Violin(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Selected
+          - An instance of plotly_study.graph_objs.violin.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.violin.selected.Marker
+                    plotly_study.graph_objects.violin.selected.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.violin.Selected
+        plotly_study.graph_objs.violin.Selected
         """
         return self["selected"]
 
@@ -5755,7 +5755,7 @@ class Violin(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Stream
+          - An instance of plotly_study.graph_objs.violin.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -5773,7 +5773,7 @@ class Violin(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.violin.Stream
+        plotly_study.graph_objs.violin.Stream
         """
         return self["stream"]
 
@@ -5815,7 +5815,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -5889,19 +5889,19 @@ class Violin(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.violin.Unselected
+          - An instance of plotly_study.graph_objs.violin.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.violin.unselected.Marker
+                    plotly_study.graph_objects.violin.unselected.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.violin.Unselected
+        plotly_study.graph_objs.violin.Unselected
         """
         return self["unselected"]
 
@@ -6027,7 +6027,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -6112,7 +6112,7 @@ class Violin(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -6151,7 +6151,7 @@ class Violin(_BaseTraceType):
             estimate. By default, the bandwidth is determined by
             Silverman's rule of thumb.
         box
-            plotly.graph_objects.violin.Box instance or dict with
+            plotly_study.graph_objects.violin.Box instance or dict with
             compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -6172,7 +6172,7 @@ class Violin(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.violin.Hoverlabel instance or dict
+            plotly_study.graph_objects.violin.Hoverlabel instance or dict
             with compatible properties
         hoveron
             Do the hover effects highlight individual violins or
@@ -6224,13 +6224,13 @@ class Violin(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.violin.Line instance or dict with
+            plotly_study.graph_objects.violin.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.violin.Marker instance or dict
+            plotly_study.graph_objects.violin.Marker instance or dict
             with compatible properties
         meanline
-            plotly.graph_objects.violin.Meanline instance or dict
+            plotly_study.graph_objects.violin.Meanline instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -6294,7 +6294,7 @@ class Violin(_BaseTraceType):
             width*count* means the violins are scaled by the number
             of sample points makingup each violin.
         selected
-            plotly.graph_objects.violin.Selected instance or dict
+            plotly_study.graph_objects.violin.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -6326,7 +6326,7 @@ class Violin(_BaseTraceType):
             settings, use mode "manual" and fill in the `span`
             attribute.
         stream
-            plotly.graph_objects.violin.Stream instance or dict
+            plotly_study.graph_objects.violin.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each sample
@@ -6360,7 +6360,7 @@ class Violin(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.violin.Unselected instance or dict
+            plotly_study.graph_objects.violin.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -6472,7 +6472,7 @@ class Violin(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Violin
+            an instance of plotly_study.graph_objs.Violin
         alignmentgroup
             Set several traces linked to the same position axis or
             matching axes to the same alignmentgroup. This controls
@@ -6483,7 +6483,7 @@ class Violin(_BaseTraceType):
             estimate. By default, the bandwidth is determined by
             Silverman's rule of thumb.
         box
-            plotly.graph_objects.violin.Box instance or dict with
+            plotly_study.graph_objects.violin.Box instance or dict with
             compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -6504,7 +6504,7 @@ class Violin(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.violin.Hoverlabel instance or dict
+            plotly_study.graph_objects.violin.Hoverlabel instance or dict
             with compatible properties
         hoveron
             Do the hover effects highlight individual violins or
@@ -6556,13 +6556,13 @@ class Violin(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.violin.Line instance or dict with
+            plotly_study.graph_objects.violin.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.violin.Marker instance or dict
+            plotly_study.graph_objects.violin.Marker instance or dict
             with compatible properties
         meanline
-            plotly.graph_objects.violin.Meanline instance or dict
+            plotly_study.graph_objects.violin.Meanline instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -6626,7 +6626,7 @@ class Violin(_BaseTraceType):
             width*count* means the violins are scaled by the number
             of sample points makingup each violin.
         selected
-            plotly.graph_objects.violin.Selected instance or dict
+            plotly_study.graph_objects.violin.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -6658,7 +6658,7 @@ class Violin(_BaseTraceType):
             settings, use mode "manual" and fill in the `span`
             attribute.
         stream
-            plotly.graph_objects.violin.Stream instance or dict
+            plotly_study.graph_objects.violin.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each sample
@@ -6692,7 +6692,7 @@ class Violin(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.violin.Unselected instance or dict
+            plotly_study.graph_objects.violin.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -6748,9 +6748,9 @@ class Violin(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Violin 
+The first argument to the plotly_study.graph_objs.Violin 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Violin"""
+an instance of plotly_study.graph_objs.Violin"""
             )
 
         # Handle skip_invalid
@@ -6759,7 +6759,7 @@ an instance of plotly.graph_objs.Violin"""
 
         # Import validators
         # -----------------
-        from plotly.validators import violin as v_violin
+        from plotly_study.validators import violin as v_violin
 
         # Initialize validators
         # ---------------------
@@ -6947,7 +6947,7 @@ an instance of plotly.graph_objs.Violin"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -7034,7 +7034,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7053,7 +7053,7 @@ class Treemap(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Domain
+          - An instance of plotly_study.graph_objs.treemap.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -7075,7 +7075,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Domain
+        plotly_study.graph_objs.treemap.Domain
         """
         return self["domain"]
 
@@ -7117,7 +7117,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7136,7 +7136,7 @@ class Treemap(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Hoverlabel
+          - An instance of plotly_study.graph_objs.treemap.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -7180,7 +7180,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Hoverlabel
+        plotly_study.graph_objs.treemap.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -7238,7 +7238,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7284,7 +7284,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7326,7 +7326,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7347,7 +7347,7 @@ class Treemap(_BaseTraceType):
     
         The 'insidetextfont' property is an instance of Insidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Insidetextfont
+          - An instance of plotly_study.graph_objs.treemap.Insidetextfont
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
     
@@ -7385,7 +7385,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Insidetextfont
+        plotly_study.graph_objs.treemap.Insidetextfont
         """
         return self["insidetextfont"]
 
@@ -7421,7 +7421,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  labels .
     
         The 'labelssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7462,7 +7462,7 @@ class Treemap(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Marker
+          - An instance of plotly_study.graph_objs.treemap.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -7515,7 +7515,7 @@ class Treemap(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.treemap.marker.ColorBar
+                    plotly_study.graph_objects.treemap.marker.ColorBar
                     instance or dict with compatible properties
                 colors
                     Sets the color of each sector of this trace. If
@@ -7552,10 +7552,10 @@ class Treemap(_BaseTraceType):
                     colors while the leaves are faded towards the
                     background color.
                 line
-                    plotly.graph_objects.treemap.marker.Line
+                    plotly_study.graph_objects.treemap.marker.Line
                     instance or dict with compatible properties
                 pad
-                    plotly.graph_objects.treemap.marker.Pad
+                    plotly_study.graph_objects.treemap.marker.Pad
                     instance or dict with compatible properties
                 reversescale
                     Reverses the color mapping if true. Has an
@@ -7571,7 +7571,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Marker
+        plotly_study.graph_objs.treemap.Marker
         """
         return self["marker"]
 
@@ -7636,7 +7636,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7699,7 +7699,7 @@ class Treemap(_BaseTraceType):
     
         The 'outsidetextfont' property is an instance of Outsidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Outsidetextfont
+          - An instance of plotly_study.graph_objs.treemap.Outsidetextfont
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
     
@@ -7737,7 +7737,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Outsidetextfont
+        plotly_study.graph_objs.treemap.Outsidetextfont
         """
         return self["outsidetextfont"]
 
@@ -7778,7 +7778,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  parents .
     
         The 'parentssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -7797,7 +7797,7 @@ class Treemap(_BaseTraceType):
         """
         The 'pathbar' property is an instance of Pathbar
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Pathbar
+          - An instance of plotly_study.graph_objs.treemap.Pathbar
           - A dict of string/value properties that will be passed
             to the Pathbar constructor
     
@@ -7822,7 +7822,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Pathbar
+        plotly_study.graph_objs.treemap.Pathbar
         """
         return self["pathbar"]
 
@@ -7837,7 +7837,7 @@ class Treemap(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Stream
+          - An instance of plotly_study.graph_objs.treemap.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -7855,7 +7855,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Stream
+        plotly_study.graph_objs.treemap.Stream
         """
         return self["stream"]
 
@@ -7896,7 +7896,7 @@ class Treemap(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Textfont
+          - An instance of plotly_study.graph_objs.treemap.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -7934,7 +7934,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Textfont
+        plotly_study.graph_objs.treemap.Textfont
         """
         return self["textfont"]
 
@@ -7996,7 +7996,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -8053,7 +8053,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -8072,7 +8072,7 @@ class Treemap(_BaseTraceType):
         """
         The 'tiling' property is an instance of Tiling
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.Tiling
+          - An instance of plotly_study.graph_objs.treemap.Tiling
           - A dict of string/value properties that will be passed
             to the Tiling constructor
     
@@ -8106,7 +8106,7 @@ class Treemap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.Tiling
+        plotly_study.graph_objs.treemap.Tiling
         """
         return self["tiling"]
 
@@ -8198,7 +8198,7 @@ class Treemap(_BaseTraceType):
         Sets the source reference on plot.ly for  values .
     
         The 'valuessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -8269,7 +8269,7 @@ class Treemap(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.treemap.Domain instance or dict
+            plotly_study.graph_objects.treemap.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -8279,7 +8279,7 @@ class Treemap(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.treemap.Hoverlabel instance or
+            plotly_study.graph_objects.treemap.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -8337,7 +8337,7 @@ class Treemap(_BaseTraceType):
             filled in, otherwise plotly attempts to find a matching
             item in `labels`.
         marker
-            plotly.graph_objects.treemap.Marker instance or dict
+            plotly_study.graph_objects.treemap.Marker instance or dict
             with compatible properties
         maxdepth
             Sets the number of rendered sectors from any given
@@ -8376,10 +8376,10 @@ class Treemap(_BaseTraceType):
         parentssrc
             Sets the source reference on plot.ly for  parents .
         pathbar
-            plotly.graph_objects.treemap.Pathbar instance or dict
+            plotly_study.graph_objects.treemap.Pathbar instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.treemap.Stream instance or dict
+            plotly_study.graph_objects.treemap.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -8417,7 +8417,7 @@ class Treemap(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         tiling
-            plotly.graph_objects.treemap.Tiling instance or dict
+            plotly_study.graph_objects.treemap.Tiling instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -8513,7 +8513,7 @@ class Treemap(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Treemap
+            an instance of plotly_study.graph_objs.Treemap
         branchvalues
             Determines how the items in `values` are summed. When
             set to "total", items in `values` are taken to be value
@@ -8533,7 +8533,7 @@ class Treemap(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.treemap.Domain instance or dict
+            plotly_study.graph_objects.treemap.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -8543,7 +8543,7 @@ class Treemap(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.treemap.Hoverlabel instance or
+            plotly_study.graph_objects.treemap.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -8601,7 +8601,7 @@ class Treemap(_BaseTraceType):
             filled in, otherwise plotly attempts to find a matching
             item in `labels`.
         marker
-            plotly.graph_objects.treemap.Marker instance or dict
+            plotly_study.graph_objects.treemap.Marker instance or dict
             with compatible properties
         maxdepth
             Sets the number of rendered sectors from any given
@@ -8640,10 +8640,10 @@ class Treemap(_BaseTraceType):
         parentssrc
             Sets the source reference on plot.ly for  parents .
         pathbar
-            plotly.graph_objects.treemap.Pathbar instance or dict
+            plotly_study.graph_objects.treemap.Pathbar instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.treemap.Stream instance or dict
+            plotly_study.graph_objects.treemap.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -8681,7 +8681,7 @@ class Treemap(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         tiling
-            plotly.graph_objects.treemap.Tiling instance or dict
+            plotly_study.graph_objects.treemap.Tiling instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -8734,9 +8734,9 @@ class Treemap(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Treemap 
+The first argument to the plotly_study.graph_objs.Treemap 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Treemap"""
+an instance of plotly_study.graph_objs.Treemap"""
             )
 
         # Handle skip_invalid
@@ -8745,7 +8745,7 @@ an instance of plotly.graph_objs.Treemap"""
 
         # Import validators
         # -----------------
-        from plotly.validators import treemap as v_treemap
+        from plotly_study.validators import treemap as v_treemap
 
         # Initialize validators
         # ---------------------
@@ -8900,7 +8900,7 @@ an instance of plotly.graph_objs.Treemap"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -8913,7 +8913,7 @@ class Table(_BaseTraceType):
         """
         The 'cells' property is an instance of Cells
         that may be specified as:
-          - An instance of plotly.graph_objs.table.Cells
+          - An instance of plotly_study.graph_objs.table.Cells
           - A dict of string/value properties that will be passed
             to the Cells constructor
     
@@ -8930,10 +8930,10 @@ class Table(_BaseTraceType):
                     Sets the source reference on plot.ly for  align
                     .
                 fill
-                    plotly.graph_objects.table.cells.Fill instance
+                    plotly_study.graph_objects.table.cells.Fill instance
                     or dict with compatible properties
                 font
-                    plotly.graph_objects.table.cells.Font instance
+                    plotly_study.graph_objects.table.cells.Font instance
                     or dict with compatible properties
                 format
                     Sets the cell value formatting rule using d3
@@ -8947,7 +8947,7 @@ class Table(_BaseTraceType):
                 height
                     The height of cells.
                 line
-                    plotly.graph_objects.table.cells.Line instance
+                    plotly_study.graph_objects.table.cells.Line instance
                     or dict with compatible properties
                 prefix
                     Prefix for cell values.
@@ -8972,7 +8972,7 @@ class Table(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.table.Cells
+        plotly_study.graph_objs.table.Cells
         """
         return self["cells"]
 
@@ -9011,7 +9011,7 @@ class Table(_BaseTraceType):
         Sets the source reference on plot.ly for  columnorder .
     
         The 'columnordersrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -9053,7 +9053,7 @@ class Table(_BaseTraceType):
         Sets the source reference on plot.ly for  columnwidth .
     
         The 'columnwidthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -9096,7 +9096,7 @@ class Table(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -9115,7 +9115,7 @@ class Table(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.table.Domain
+          - An instance of plotly_study.graph_objs.table.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -9136,7 +9136,7 @@ class Table(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.table.Domain
+        plotly_study.graph_objs.table.Domain
         """
         return self["domain"]
 
@@ -9151,7 +9151,7 @@ class Table(_BaseTraceType):
         """
         The 'header' property is an instance of Header
         that may be specified as:
-          - An instance of plotly.graph_objs.table.Header
+          - An instance of plotly_study.graph_objs.table.Header
           - A dict of string/value properties that will be passed
             to the Header constructor
     
@@ -9168,10 +9168,10 @@ class Table(_BaseTraceType):
                     Sets the source reference on plot.ly for  align
                     .
                 fill
-                    plotly.graph_objects.table.header.Fill instance
+                    plotly_study.graph_objects.table.header.Fill instance
                     or dict with compatible properties
                 font
-                    plotly.graph_objects.table.header.Font instance
+                    plotly_study.graph_objects.table.header.Font instance
                     or dict with compatible properties
                 format
                     Sets the cell value formatting rule using d3
@@ -9185,7 +9185,7 @@ class Table(_BaseTraceType):
                 height
                     The height of cells.
                 line
-                    plotly.graph_objects.table.header.Line instance
+                    plotly_study.graph_objects.table.header.Line instance
                     or dict with compatible properties
                 prefix
                     Prefix for cell values.
@@ -9210,7 +9210,7 @@ class Table(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.table.Header
+        plotly_study.graph_objs.table.Header
         """
         return self["header"]
 
@@ -9252,7 +9252,7 @@ class Table(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -9271,7 +9271,7 @@ class Table(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.table.Hoverlabel
+          - An instance of plotly_study.graph_objs.table.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -9315,7 +9315,7 @@ class Table(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.table.Hoverlabel
+        plotly_study.graph_objs.table.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -9353,7 +9353,7 @@ class Table(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -9401,7 +9401,7 @@ class Table(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -9442,7 +9442,7 @@ class Table(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.table.Stream
+          - An instance of plotly_study.graph_objs.table.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -9460,7 +9460,7 @@ class Table(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.table.Stream
+        plotly_study.graph_objs.table.Stream
         """
         return self["stream"]
 
@@ -9564,7 +9564,7 @@ class Table(_BaseTraceType):
     def _prop_descriptions(self):
         return """\
         cells
-            plotly.graph_objects.table.Cells instance or dict with
+            plotly_study.graph_objects.table.Cells instance or dict with
             compatible properties
         columnorder
             Specifies the rendered order of the data columns; for
@@ -9587,10 +9587,10 @@ class Table(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.table.Domain instance or dict with
+            plotly_study.graph_objects.table.Domain instance or dict with
             compatible properties
         header
-            plotly.graph_objects.table.Header instance or dict with
+            plotly_study.graph_objects.table.Header instance or dict with
             compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -9600,7 +9600,7 @@ class Table(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.table.Hoverlabel instance or dict
+            plotly_study.graph_objects.table.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -9627,7 +9627,7 @@ class Table(_BaseTraceType):
             Sets the trace name. The trace name appear as the
             legend item and on hover.
         stream
-            plotly.graph_objects.table.Stream instance or dict with
+            plotly_study.graph_objects.table.Stream instance or dict with
             compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -9697,9 +9697,9 @@ class Table(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Table
+            an instance of plotly_study.graph_objs.Table
         cells
-            plotly.graph_objects.table.Cells instance or dict with
+            plotly_study.graph_objects.table.Cells instance or dict with
             compatible properties
         columnorder
             Specifies the rendered order of the data columns; for
@@ -9722,10 +9722,10 @@ class Table(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.table.Domain instance or dict with
+            plotly_study.graph_objects.table.Domain instance or dict with
             compatible properties
         header
-            plotly.graph_objects.table.Header instance or dict with
+            plotly_study.graph_objects.table.Header instance or dict with
             compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -9735,7 +9735,7 @@ class Table(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.table.Hoverlabel instance or dict
+            plotly_study.graph_objects.table.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -9762,7 +9762,7 @@ class Table(_BaseTraceType):
             Sets the trace name. The trace name appear as the
             legend item and on hover.
         stream
-            plotly.graph_objects.table.Stream instance or dict with
+            plotly_study.graph_objects.table.Stream instance or dict with
             compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -9809,9 +9809,9 @@ class Table(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Table 
+The first argument to the plotly_study.graph_objs.Table 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Table"""
+an instance of plotly_study.graph_objs.Table"""
             )
 
         # Handle skip_invalid
@@ -9820,7 +9820,7 @@ an instance of plotly.graph_objs.Table"""
 
         # Import validators
         # -----------------
-        from plotly.validators import table as v_table
+        from plotly_study.validators import table as v_table
 
         # Initialize validators
         # ---------------------
@@ -9910,7 +9910,7 @@ an instance of plotly.graph_objs.Table"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -10065,7 +10065,7 @@ class Surface(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.surface.ColorBar
+          - An instance of plotly_study.graph_objs.surface.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -10197,7 +10197,7 @@ class Surface(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.surface.colorba
+                    A tuple of plotly_study.graph_objects.surface.colorba
                     r.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -10245,7 +10245,7 @@ class Surface(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.surface.colorbar.Title
+                    plotly_study.graph_objects.surface.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -10284,7 +10284,7 @@ class Surface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.surface.ColorBar
+        plotly_study.graph_objs.surface.ColorBar
         """
         return self["colorbar"]
 
@@ -10312,7 +10312,7 @@ class Surface(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -10371,25 +10371,25 @@ class Surface(_BaseTraceType):
         """
         The 'contours' property is an instance of Contours
         that may be specified as:
-          - An instance of plotly.graph_objs.surface.Contours
+          - An instance of plotly_study.graph_objs.surface.Contours
           - A dict of string/value properties that will be passed
             to the Contours constructor
     
             Supported dict properties:
                 
                 x
-                    plotly.graph_objects.surface.contours.X
+                    plotly_study.graph_objects.surface.contours.X
                     instance or dict with compatible properties
                 y
-                    plotly.graph_objects.surface.contours.Y
+                    plotly_study.graph_objects.surface.contours.Y
                     instance or dict with compatible properties
                 z
-                    plotly.graph_objects.surface.contours.Z
+                    plotly_study.graph_objects.surface.contours.Z
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.surface.Contours
+        plotly_study.graph_objs.surface.Contours
         """
         return self["contours"]
 
@@ -10428,7 +10428,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -10496,7 +10496,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -10515,7 +10515,7 @@ class Surface(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.surface.Hoverlabel
+          - An instance of plotly_study.graph_objs.surface.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -10559,7 +10559,7 @@ class Surface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.surface.Hoverlabel
+        plotly_study.graph_objs.surface.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -10616,7 +10616,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -10658,7 +10658,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -10700,7 +10700,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -10719,7 +10719,7 @@ class Surface(_BaseTraceType):
         """
         The 'lighting' property is an instance of Lighting
         that may be specified as:
-          - An instance of plotly.graph_objs.surface.Lighting
+          - An instance of plotly_study.graph_objs.surface.Lighting
           - A dict of string/value properties that will be passed
             to the Lighting constructor
     
@@ -10746,7 +10746,7 @@ class Surface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.surface.Lighting
+        plotly_study.graph_objs.surface.Lighting
         """
         return self["lighting"]
 
@@ -10761,7 +10761,7 @@ class Surface(_BaseTraceType):
         """
         The 'lightposition' property is an instance of Lightposition
         that may be specified as:
-          - An instance of plotly.graph_objs.surface.Lightposition
+          - An instance of plotly_study.graph_objs.surface.Lightposition
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
     
@@ -10779,7 +10779,7 @@ class Surface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.surface.Lightposition
+        plotly_study.graph_objs.surface.Lightposition
         """
         return self["lightposition"]
 
@@ -10823,7 +10823,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -10957,7 +10957,7 @@ class Surface(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.surface.Stream
+          - An instance of plotly_study.graph_objs.surface.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -10975,7 +10975,7 @@ class Surface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.surface.Stream
+        plotly_study.graph_objs.surface.Stream
         """
         return self["stream"]
 
@@ -11012,7 +11012,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  surfacecolor .
     
         The 'surfacecolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -11056,7 +11056,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -11198,7 +11198,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -11262,7 +11262,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -11326,7 +11326,7 @@ class Surface(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -11388,7 +11388,7 @@ class Surface(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.surface.ColorBar instance or dict
+            plotly_study.graph_objects.surface.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -11406,7 +11406,7 @@ class Surface(_BaseTraceType):
             Determines whether or not gaps (i.e. {nan} or missing
             values) in the `z` data are filled in.
         contours
-            plotly.graph_objects.surface.Contours instance or dict
+            plotly_study.graph_objects.surface.Contours instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -11428,7 +11428,7 @@ class Surface(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.surface.Hoverlabel instance or
+            plotly_study.graph_objects.surface.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -11467,10 +11467,10 @@ class Surface(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.surface.Lighting instance or dict
+            plotly_study.graph_objects.surface.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.surface.Lightposition instance or
+            plotly_study.graph_objects.surface.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -11512,7 +11512,7 @@ class Surface(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.surface.Stream instance or dict
+            plotly_study.graph_objects.surface.Stream instance or dict
             with compatible properties
         surfacecolor
             Sets the surface color values, used for setting a color
@@ -11644,7 +11644,7 @@ class Surface(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Surface
+            an instance of plotly_study.graph_objs.Surface
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -11678,7 +11678,7 @@ class Surface(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.surface.ColorBar instance or dict
+            plotly_study.graph_objects.surface.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -11696,7 +11696,7 @@ class Surface(_BaseTraceType):
             Determines whether or not gaps (i.e. {nan} or missing
             values) in the `z` data are filled in.
         contours
-            plotly.graph_objects.surface.Contours instance or dict
+            plotly_study.graph_objects.surface.Contours instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -11718,7 +11718,7 @@ class Surface(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.surface.Hoverlabel instance or
+            plotly_study.graph_objects.surface.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -11757,10 +11757,10 @@ class Surface(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.surface.Lighting instance or dict
+            plotly_study.graph_objects.surface.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.surface.Lightposition instance or
+            plotly_study.graph_objects.surface.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -11802,7 +11802,7 @@ class Surface(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.surface.Stream instance or dict
+            plotly_study.graph_objects.surface.Stream instance or dict
             with compatible properties
         surfacecolor
             Sets the surface color values, used for setting a color
@@ -11880,9 +11880,9 @@ class Surface(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Surface 
+The first argument to the plotly_study.graph_objs.Surface 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Surface"""
+an instance of plotly_study.graph_objs.Surface"""
             )
 
         # Handle skip_invalid
@@ -11891,7 +11891,7 @@ an instance of plotly.graph_objs.Surface"""
 
         # Import validators
         # -----------------
-        from plotly.validators import surface as v_surface
+        from plotly_study.validators import surface as v_surface
 
         # Initialize validators
         # ---------------------
@@ -12064,7 +12064,7 @@ an instance of plotly.graph_objs.Surface"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -12151,7 +12151,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12170,7 +12170,7 @@ class Sunburst(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Domain
+          - An instance of plotly_study.graph_objs.sunburst.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -12192,7 +12192,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Domain
+        plotly_study.graph_objs.sunburst.Domain
         """
         return self["domain"]
 
@@ -12234,7 +12234,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12253,7 +12253,7 @@ class Sunburst(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Hoverlabel
+          - An instance of plotly_study.graph_objs.sunburst.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -12297,7 +12297,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Hoverlabel
+        plotly_study.graph_objs.sunburst.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -12355,7 +12355,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12401,7 +12401,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12443,7 +12443,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12464,7 +12464,7 @@ class Sunburst(_BaseTraceType):
     
         The 'insidetextfont' property is an instance of Insidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Insidetextfont
+          - An instance of plotly_study.graph_objs.sunburst.Insidetextfont
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
     
@@ -12502,7 +12502,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Insidetextfont
+        plotly_study.graph_objs.sunburst.Insidetextfont
         """
         return self["insidetextfont"]
 
@@ -12538,7 +12538,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  labels .
     
         The 'labelssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12557,7 +12557,7 @@ class Sunburst(_BaseTraceType):
         """
         The 'leaf' property is an instance of Leaf
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Leaf
+          - An instance of plotly_study.graph_objs.sunburst.Leaf
           - A dict of string/value properties that will be passed
             to the Leaf constructor
     
@@ -12570,7 +12570,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Leaf
+        plotly_study.graph_objs.sunburst.Leaf
         """
         return self["leaf"]
 
@@ -12607,7 +12607,7 @@ class Sunburst(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Marker
+          - An instance of plotly_study.graph_objs.sunburst.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -12660,7 +12660,7 @@ class Sunburst(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.sunburst.marker.ColorBar
+                    plotly_study.graph_objects.sunburst.marker.ColorBar
                     instance or dict with compatible properties
                 colors
                     Sets the color of each sector of this trace. If
@@ -12686,7 +12686,7 @@ class Sunburst(_BaseTraceType):
                     Sets the source reference on plot.ly for
                     colors .
                 line
-                    plotly.graph_objects.sunburst.marker.Line
+                    plotly_study.graph_objects.sunburst.marker.Line
                     instance or dict with compatible properties
                 reversescale
                     Reverses the color mapping if true. Has an
@@ -12702,7 +12702,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Marker
+        plotly_study.graph_objs.sunburst.Marker
         """
         return self["marker"]
 
@@ -12767,7 +12767,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12830,7 +12830,7 @@ class Sunburst(_BaseTraceType):
     
         The 'outsidetextfont' property is an instance of Outsidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Outsidetextfont
+          - An instance of plotly_study.graph_objs.sunburst.Outsidetextfont
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
     
@@ -12868,7 +12868,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Outsidetextfont
+        plotly_study.graph_objs.sunburst.Outsidetextfont
         """
         return self["outsidetextfont"]
 
@@ -12909,7 +12909,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  parents .
     
         The 'parentssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -12928,7 +12928,7 @@ class Sunburst(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Stream
+          - An instance of plotly_study.graph_objs.sunburst.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -12946,7 +12946,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Stream
+        plotly_study.graph_objs.sunburst.Stream
         """
         return self["stream"]
 
@@ -12987,7 +12987,7 @@ class Sunburst(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.Textfont
+          - An instance of plotly_study.graph_objs.sunburst.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -13025,7 +13025,7 @@ class Sunburst(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.Textfont
+        plotly_study.graph_objs.sunburst.Textfont
         """
         return self["textfont"]
 
@@ -13064,7 +13064,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -13121,7 +13121,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -13217,7 +13217,7 @@ class Sunburst(_BaseTraceType):
         Sets the source reference on plot.ly for  values .
     
         The 'valuessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -13288,7 +13288,7 @@ class Sunburst(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.sunburst.Domain instance or dict
+            plotly_study.graph_objects.sunburst.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -13298,7 +13298,7 @@ class Sunburst(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.sunburst.Hoverlabel instance or
+            plotly_study.graph_objects.sunburst.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -13350,7 +13350,7 @@ class Sunburst(_BaseTraceType):
         labelssrc
             Sets the source reference on plot.ly for  labels .
         leaf
-            plotly.graph_objects.sunburst.Leaf instance or dict
+            plotly_study.graph_objects.sunburst.Leaf instance or dict
             with compatible properties
         level
             Sets the level from which this trace hierarchy is
@@ -13359,7 +13359,7 @@ class Sunburst(_BaseTraceType):
             filled in, otherwise plotly attempts to find a matching
             item in `labels`.
         marker
-            plotly.graph_objects.sunburst.Marker instance or dict
+            plotly_study.graph_objects.sunburst.Marker instance or dict
             with compatible properties
         maxdepth
             Sets the number of rendered sectors from any given
@@ -13398,7 +13398,7 @@ class Sunburst(_BaseTraceType):
         parentssrc
             Sets the source reference on plot.ly for  parents .
         stream
-            plotly.graph_objects.sunburst.Stream instance or dict
+            plotly_study.graph_objects.sunburst.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -13524,7 +13524,7 @@ class Sunburst(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Sunburst
+            an instance of plotly_study.graph_objs.Sunburst
         branchvalues
             Determines how the items in `values` are summed. When
             set to "total", items in `values` are taken to be value
@@ -13544,7 +13544,7 @@ class Sunburst(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.sunburst.Domain instance or dict
+            plotly_study.graph_objects.sunburst.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -13554,7 +13554,7 @@ class Sunburst(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.sunburst.Hoverlabel instance or
+            plotly_study.graph_objects.sunburst.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -13606,7 +13606,7 @@ class Sunburst(_BaseTraceType):
         labelssrc
             Sets the source reference on plot.ly for  labels .
         leaf
-            plotly.graph_objects.sunburst.Leaf instance or dict
+            plotly_study.graph_objects.sunburst.Leaf instance or dict
             with compatible properties
         level
             Sets the level from which this trace hierarchy is
@@ -13615,7 +13615,7 @@ class Sunburst(_BaseTraceType):
             filled in, otherwise plotly attempts to find a matching
             item in `labels`.
         marker
-            plotly.graph_objects.sunburst.Marker instance or dict
+            plotly_study.graph_objects.sunburst.Marker instance or dict
             with compatible properties
         maxdepth
             Sets the number of rendered sectors from any given
@@ -13654,7 +13654,7 @@ class Sunburst(_BaseTraceType):
         parentssrc
             Sets the source reference on plot.ly for  parents .
         stream
-            plotly.graph_objects.sunburst.Stream instance or dict
+            plotly_study.graph_objects.sunburst.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -13740,9 +13740,9 @@ class Sunburst(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Sunburst 
+The first argument to the plotly_study.graph_objs.Sunburst 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Sunburst"""
+an instance of plotly_study.graph_objs.Sunburst"""
             )
 
         # Handle skip_invalid
@@ -13751,7 +13751,7 @@ an instance of plotly.graph_objs.Sunburst"""
 
         # Import validators
         # -----------------
-        from plotly.validators import sunburst as v_sunburst
+        from plotly_study.validators import sunburst as v_sunburst
 
         # Initialize validators
         # ---------------------
@@ -13900,7 +13900,7 @@ an instance of plotly.graph_objs.Sunburst"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -14055,7 +14055,7 @@ class Streamtube(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.ColorBar
+          - An instance of plotly_study.graph_objs.streamtube.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -14187,7 +14187,7 @@ class Streamtube(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.streamtube.colo
+                    A tuple of plotly_study.graph_objects.streamtube.colo
                     rbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -14235,7 +14235,7 @@ class Streamtube(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.streamtube.colorbar.Title
+                    plotly_study.graph_objects.streamtube.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -14274,7 +14274,7 @@ class Streamtube(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.ColorBar
+        plotly_study.graph_objs.streamtube.ColorBar
         """
         return self["colorbar"]
 
@@ -14302,7 +14302,7 @@ class Streamtube(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -14364,7 +14364,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -14410,7 +14410,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -14429,7 +14429,7 @@ class Streamtube(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.Hoverlabel
+          - An instance of plotly_study.graph_objs.streamtube.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -14473,7 +14473,7 @@ class Streamtube(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.Hoverlabel
+        plotly_study.graph_objs.streamtube.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -14531,7 +14531,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -14594,7 +14594,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -14613,7 +14613,7 @@ class Streamtube(_BaseTraceType):
         """
         The 'lighting' property is an instance of Lighting
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.Lighting
+          - An instance of plotly_study.graph_objs.streamtube.Lighting
           - A dict of string/value properties that will be passed
             to the Lighting constructor
     
@@ -14646,7 +14646,7 @@ class Streamtube(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.Lighting
+        plotly_study.graph_objs.streamtube.Lighting
         """
         return self["lighting"]
 
@@ -14661,7 +14661,7 @@ class Streamtube(_BaseTraceType):
         """
         The 'lightposition' property is an instance of Lightposition
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.Lightposition
+          - An instance of plotly_study.graph_objs.streamtube.Lightposition
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
     
@@ -14679,7 +14679,7 @@ class Streamtube(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.Lightposition
+        plotly_study.graph_objs.streamtube.Lightposition
         """
         return self["lightposition"]
 
@@ -14744,7 +14744,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -14900,7 +14900,7 @@ class Streamtube(_BaseTraceType):
         """
         The 'starts' property is an instance of Starts
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.Starts
+          - An instance of plotly_study.graph_objs.streamtube.Starts
           - A dict of string/value properties that will be passed
             to the Starts constructor
     
@@ -14924,7 +14924,7 @@ class Streamtube(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.Starts
+        plotly_study.graph_objs.streamtube.Starts
         """
         return self["starts"]
 
@@ -14939,7 +14939,7 @@ class Streamtube(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.streamtube.Stream
+          - An instance of plotly_study.graph_objs.streamtube.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -14957,7 +14957,7 @@ class Streamtube(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.streamtube.Stream
+        plotly_study.graph_objs.streamtube.Stream
         """
         return self["stream"]
 
@@ -15072,7 +15072,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  u .
     
         The 'usrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -15135,7 +15135,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  v .
     
         The 'vsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -15175,7 +15175,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  w .
     
         The 'wsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -15215,7 +15215,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -15255,7 +15255,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -15295,7 +15295,7 @@ class Streamtube(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -15357,7 +15357,7 @@ class Streamtube(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.streamtube.ColorBar instance or
+            plotly_study.graph_objects.streamtube.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -15386,7 +15386,7 @@ class Streamtube(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.streamtube.Hoverlabel instance or
+            plotly_study.graph_objects.streamtube.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -15425,10 +15425,10 @@ class Streamtube(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.streamtube.Lighting instance or
+            plotly_study.graph_objects.streamtube.Lighting instance or
             dict with compatible properties
         lightposition
-            plotly.graph_objects.streamtube.Lightposition instance
+            plotly_study.graph_objects.streamtube.Lightposition instance
             or dict with compatible properties
         maxdisplayed
             The maximum number of displayed segments in a
@@ -15477,10 +15477,10 @@ class Streamtube(_BaseTraceType):
             1, which avoids two max divergence tubes from touching
             at adjacent starting positions.
         starts
-            plotly.graph_objects.streamtube.Starts instance or dict
+            plotly_study.graph_objects.streamtube.Starts instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.streamtube.Stream instance or dict
+            plotly_study.graph_objects.streamtube.Stream instance or dict
             with compatible properties
         text
             Sets a text element associated with this trace. If
@@ -15609,7 +15609,7 @@ class Streamtube(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Streamtube
+            an instance of plotly_study.graph_objs.Streamtube
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -15643,7 +15643,7 @@ class Streamtube(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.streamtube.ColorBar instance or
+            plotly_study.graph_objects.streamtube.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -15672,7 +15672,7 @@ class Streamtube(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.streamtube.Hoverlabel instance or
+            plotly_study.graph_objects.streamtube.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -15711,10 +15711,10 @@ class Streamtube(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.streamtube.Lighting instance or
+            plotly_study.graph_objects.streamtube.Lighting instance or
             dict with compatible properties
         lightposition
-            plotly.graph_objects.streamtube.Lightposition instance
+            plotly_study.graph_objects.streamtube.Lightposition instance
             or dict with compatible properties
         maxdisplayed
             The maximum number of displayed segments in a
@@ -15763,10 +15763,10 @@ class Streamtube(_BaseTraceType):
             1, which avoids two max divergence tubes from touching
             at adjacent starting positions.
         starts
-            plotly.graph_objects.streamtube.Starts instance or dict
+            plotly_study.graph_objects.streamtube.Starts instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.streamtube.Stream instance or dict
+            plotly_study.graph_objects.streamtube.Stream instance or dict
             with compatible properties
         text
             Sets a text element associated with this trace. If
@@ -15842,9 +15842,9 @@ class Streamtube(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Streamtube 
+The first argument to the plotly_study.graph_objs.Streamtube 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Streamtube"""
+an instance of plotly_study.graph_objs.Streamtube"""
             )
 
         # Handle skip_invalid
@@ -15853,7 +15853,7 @@ an instance of plotly.graph_objs.Streamtube"""
 
         # Import validators
         # -----------------
-        from plotly.validators import streamtube as v_streamtube
+        from plotly_study.validators import streamtube as v_streamtube
 
         # Initialize validators
         # ---------------------
@@ -16023,7 +16023,7 @@ an instance of plotly.graph_objs.Streamtube"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -16060,7 +16060,7 @@ class Splom(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -16079,7 +16079,7 @@ class Splom(_BaseTraceType):
         """
         The 'diagonal' property is an instance of Diagonal
         that may be specified as:
-          - An instance of plotly.graph_objs.splom.Diagonal
+          - An instance of plotly_study.graph_objs.splom.Diagonal
           - A dict of string/value properties that will be passed
             to the Diagonal constructor
     
@@ -16091,7 +16091,7 @@ class Splom(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.splom.Diagonal
+        plotly_study.graph_objs.splom.Diagonal
         """
         return self["diagonal"]
 
@@ -16106,14 +16106,14 @@ class Splom(_BaseTraceType):
         """
         The 'dimensions' property is a tuple of instances of
         Dimension that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.splom.Dimension
+          - A list or tuple of instances of plotly_study.graph_objs.splom.Dimension
           - A list or tuple of dicts of string/value properties that
             will be passed to the Dimension constructor
     
             Supported dict properties:
                 
                 axis
-                    plotly.graph_objects.splom.dimension.Axis
+                    plotly_study.graph_objects.splom.dimension.Axis
                     instance or dict with compatible properties
                 label
                     Sets the label corresponding to this splom
@@ -16152,7 +16152,7 @@ class Splom(_BaseTraceType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.splom.Dimension]
+        tuple[plotly_study.graph_objs.splom.Dimension]
         """
         return self["dimensions"]
 
@@ -16171,7 +16171,7 @@ class Splom(_BaseTraceType):
     
         The 'dimensiondefaults' property is an instance of Dimension
         that may be specified as:
-          - An instance of plotly.graph_objs.splom.Dimension
+          - An instance of plotly_study.graph_objs.splom.Dimension
           - A dict of string/value properties that will be passed
             to the Dimension constructor
     
@@ -16179,7 +16179,7 @@ class Splom(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.splom.Dimension
+        plotly_study.graph_objs.splom.Dimension
         """
         return self["dimensiondefaults"]
 
@@ -16221,7 +16221,7 @@ class Splom(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -16240,7 +16240,7 @@ class Splom(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.splom.Hoverlabel
+          - An instance of plotly_study.graph_objs.splom.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -16284,7 +16284,7 @@ class Splom(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.splom.Hoverlabel
+        plotly_study.graph_objs.splom.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -16341,7 +16341,7 @@ class Splom(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -16383,7 +16383,7 @@ class Splom(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -16425,7 +16425,7 @@ class Splom(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -16467,7 +16467,7 @@ class Splom(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.splom.Marker
+          - An instance of plotly_study.graph_objs.splom.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -16527,7 +16527,7 @@ class Splom(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.splom.marker.ColorBar
+                    plotly_study.graph_objects.splom.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -16549,7 +16549,7 @@ class Splom(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.splom.marker.Line instance
+                    plotly_study.graph_objects.splom.marker.Line instance
                     or dict with compatible properties
                 opacity
                     Sets the marker opacity.
@@ -16598,7 +16598,7 @@ class Splom(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.splom.Marker
+        plotly_study.graph_objs.splom.Marker
         """
         return self["marker"]
 
@@ -16642,7 +16642,7 @@ class Splom(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -16703,19 +16703,19 @@ class Splom(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.splom.Selected
+          - An instance of plotly_study.graph_objs.splom.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.splom.selected.Marker
+                    plotly_study.graph_objects.splom.selected.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.splom.Selected
+        plotly_study.graph_objs.splom.Selected
         """
         return self["selected"]
 
@@ -16817,7 +16817,7 @@ class Splom(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.splom.Stream
+          - An instance of plotly_study.graph_objs.splom.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -16835,7 +16835,7 @@ class Splom(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.splom.Stream
+        plotly_study.graph_objs.splom.Stream
         """
         return self["stream"]
 
@@ -16876,7 +16876,7 @@ class Splom(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -16950,19 +16950,19 @@ class Splom(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.splom.Unselected
+          - An instance of plotly_study.graph_objs.splom.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.splom.unselected.Marker
+                    plotly_study.graph_objects.splom.unselected.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.splom.Unselected
+        plotly_study.graph_objs.splom.Unselected
         """
         return self["unselected"]
 
@@ -17076,10 +17076,10 @@ class Splom(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         diagonal
-            plotly.graph_objects.splom.Diagonal instance or dict
+            plotly_study.graph_objects.splom.Diagonal instance or dict
             with compatible properties
         dimensions
-            A tuple of plotly.graph_objects.splom.Dimension
+            A tuple of plotly_study.graph_objects.splom.Dimension
             instances or dicts with compatible properties
         dimensiondefaults
             When used in a template (as
@@ -17094,7 +17094,7 @@ class Splom(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.splom.Hoverlabel instance or dict
+            plotly_study.graph_objects.splom.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -17137,7 +17137,7 @@ class Splom(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.splom.Marker instance or dict with
+            plotly_study.graph_objects.splom.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -17160,7 +17160,7 @@ class Splom(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.splom.Selected instance or dict
+            plotly_study.graph_objects.splom.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -17179,7 +17179,7 @@ class Splom(_BaseTraceType):
             Determines whether or not subplots on the upper half
             from the diagonal are displayed.
         stream
-            plotly.graph_objects.splom.Stream instance or dict with
+            plotly_study.graph_objects.splom.Stream instance or dict with
             compatible properties
         text
             Sets text elements associated with each (x,y) pair to
@@ -17212,7 +17212,7 @@ class Splom(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.splom.Unselected instance or dict
+            plotly_study.graph_objects.splom.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -17291,7 +17291,7 @@ class Splom(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Splom
+            an instance of plotly_study.graph_objs.Splom
         customdata
             Assigns extra data each datum. This may be useful when
             listening to hover, click and selection events. Note
@@ -17300,10 +17300,10 @@ class Splom(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         diagonal
-            plotly.graph_objects.splom.Diagonal instance or dict
+            plotly_study.graph_objects.splom.Diagonal instance or dict
             with compatible properties
         dimensions
-            A tuple of plotly.graph_objects.splom.Dimension
+            A tuple of plotly_study.graph_objects.splom.Dimension
             instances or dicts with compatible properties
         dimensiondefaults
             When used in a template (as
@@ -17318,7 +17318,7 @@ class Splom(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.splom.Hoverlabel instance or dict
+            plotly_study.graph_objects.splom.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -17361,7 +17361,7 @@ class Splom(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.splom.Marker instance or dict with
+            plotly_study.graph_objects.splom.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -17384,7 +17384,7 @@ class Splom(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.splom.Selected instance or dict
+            plotly_study.graph_objects.splom.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -17403,7 +17403,7 @@ class Splom(_BaseTraceType):
             Determines whether or not subplots on the upper half
             from the diagonal are displayed.
         stream
-            plotly.graph_objects.splom.Stream instance or dict with
+            plotly_study.graph_objects.splom.Stream instance or dict with
             compatible properties
         text
             Sets text elements associated with each (x,y) pair to
@@ -17436,7 +17436,7 @@ class Splom(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.splom.Unselected instance or dict
+            plotly_study.graph_objects.splom.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -17477,9 +17477,9 @@ class Splom(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Splom 
+The first argument to the plotly_study.graph_objs.Splom 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Splom"""
+an instance of plotly_study.graph_objs.Splom"""
             )
 
         # Handle skip_invalid
@@ -17488,7 +17488,7 @@ an instance of plotly.graph_objs.Splom"""
 
         # Import validators
         # -----------------
-        from plotly.validators import splom as v_splom
+        from plotly_study.validators import splom as v_splom
 
         # Initialize validators
         # ---------------------
@@ -17621,7 +17621,7 @@ an instance of plotly.graph_objs.Splom"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -17658,7 +17658,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  a .
     
         The 'asrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -17701,7 +17701,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  b .
     
         The 'bsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -17788,7 +17788,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  c .
     
         The 'csrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -17831,7 +17831,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -17967,7 +17967,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -17986,7 +17986,7 @@ class Scatterternary(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterternary.Hoverlabel
+          - An instance of plotly_study.graph_objs.scatterternary.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -18030,7 +18030,7 @@ class Scatterternary(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterternary.Hoverlabel
+        plotly_study.graph_objs.scatterternary.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -18112,7 +18112,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -18158,7 +18158,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -18200,7 +18200,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -18242,7 +18242,7 @@ class Scatterternary(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterternary.Line
+          - An instance of plotly_study.graph_objs.scatterternary.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -18270,7 +18270,7 @@ class Scatterternary(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterternary.Line
+        plotly_study.graph_objs.scatterternary.Line
         """
         return self["line"]
 
@@ -18285,7 +18285,7 @@ class Scatterternary(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterternary.Marker
+          - An instance of plotly_study.graph_objs.scatterternary.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -18345,7 +18345,7 @@ class Scatterternary(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scatterternary.marker.Colo
+                    plotly_study.graph_objects.scatterternary.marker.Colo
                     rBar instance or dict with compatible
                     properties
                 colorscale
@@ -18368,11 +18368,11 @@ class Scatterternary(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 gradient
-                    plotly.graph_objects.scatterternary.marker.Grad
+                    plotly_study.graph_objects.scatterternary.marker.Grad
                     ient instance or dict with compatible
                     properties
                 line
-                    plotly.graph_objects.scatterternary.marker.Line
+                    plotly_study.graph_objects.scatterternary.marker.Line
                     instance or dict with compatible properties
                 maxdisplayed
                     Sets a maximum number of points to be drawn on
@@ -18424,7 +18424,7 @@ class Scatterternary(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterternary.Marker
+        plotly_study.graph_objs.scatterternary.Marker
         """
         return self["marker"]
 
@@ -18468,7 +18468,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -18557,24 +18557,24 @@ class Scatterternary(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterternary.Selected
+          - An instance of plotly_study.graph_objs.scatterternary.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatterternary.selected.Ma
+                    plotly_study.graph_objects.scatterternary.selected.Ma
                     rker instance or dict with compatible
                     properties
                 textfont
-                    plotly.graph_objects.scatterternary.selected.Te
+                    plotly_study.graph_objects.scatterternary.selected.Te
                     xtfont instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scatterternary.Selected
+        plotly_study.graph_objs.scatterternary.Selected
         """
         return self["selected"]
 
@@ -18634,7 +18634,7 @@ class Scatterternary(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterternary.Stream
+          - An instance of plotly_study.graph_objs.scatterternary.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -18652,7 +18652,7 @@ class Scatterternary(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterternary.Stream
+        plotly_study.graph_objs.scatterternary.Stream
         """
         return self["stream"]
 
@@ -18745,7 +18745,7 @@ class Scatterternary(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterternary.Textfont
+          - An instance of plotly_study.graph_objs.scatterternary.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -18783,7 +18783,7 @@ class Scatterternary(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterternary.Textfont
+        plotly_study.graph_objs.scatterternary.Textfont
         """
         return self["textfont"]
 
@@ -18824,7 +18824,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -18844,7 +18844,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -18899,7 +18899,7 @@ class Scatterternary(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -18973,24 +18973,24 @@ class Scatterternary(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterternary.Unselected
+          - An instance of plotly_study.graph_objs.scatterternary.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatterternary.unselected.
+                    plotly_study.graph_objects.scatterternary.unselected.
                     Marker instance or dict with compatible
                     properties
                 textfont
-                    plotly.graph_objects.scatterternary.unselected.
+                    plotly_study.graph_objects.scatterternary.unselected.
                     Textfont instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scatterternary.Unselected
+        plotly_study.graph_objs.scatterternary.Unselected
         """
         return self["unselected"]
 
@@ -19101,7 +19101,7 @@ class Scatterternary(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterternary.Hoverlabel instance
+            plotly_study.graph_objects.scatterternary.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -19155,10 +19155,10 @@ class Scatterternary(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterternary.Line instance or
+            plotly_study.graph_objects.scatterternary.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scatterternary.Marker instance or
+            plotly_study.graph_objects.scatterternary.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -19188,7 +19188,7 @@ class Scatterternary(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scatterternary.Selected instance
+            plotly_study.graph_objects.scatterternary.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -19201,7 +19201,7 @@ class Scatterternary(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterternary.Stream instance or
+            plotly_study.graph_objects.scatterternary.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -19276,7 +19276,7 @@ class Scatterternary(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterternary.Unselected instance
+            plotly_study.graph_objects.scatterternary.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -19348,7 +19348,7 @@ class Scatterternary(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scatterternary
+            an instance of plotly_study.graph_objs.Scatterternary
         a
             Sets the quantity of component `a` in each data point.
             If `a`, `b`, and `c` are all provided, they need not be
@@ -19412,7 +19412,7 @@ class Scatterternary(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterternary.Hoverlabel instance
+            plotly_study.graph_objects.scatterternary.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -19466,10 +19466,10 @@ class Scatterternary(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterternary.Line instance or
+            plotly_study.graph_objects.scatterternary.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scatterternary.Marker instance or
+            plotly_study.graph_objects.scatterternary.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -19499,7 +19499,7 @@ class Scatterternary(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scatterternary.Selected instance
+            plotly_study.graph_objects.scatterternary.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -19512,7 +19512,7 @@ class Scatterternary(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterternary.Stream instance or
+            plotly_study.graph_objects.scatterternary.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -19587,7 +19587,7 @@ class Scatterternary(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterternary.Unselected instance
+            plotly_study.graph_objects.scatterternary.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -19612,9 +19612,9 @@ class Scatterternary(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scatterternary 
+The first argument to the plotly_study.graph_objs.Scatterternary 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scatterternary"""
+an instance of plotly_study.graph_objs.Scatterternary"""
             )
 
         # Handle skip_invalid
@@ -19623,7 +19623,7 @@ an instance of plotly.graph_objs.Scatterternary"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scatterternary as v_scatterternary
+        from plotly_study.validators import scatterternary as v_scatterternary
 
         # Initialize validators
         # ---------------------
@@ -19799,7 +19799,7 @@ an instance of plotly.graph_objs.Scatterternary"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -19857,7 +19857,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20046,7 +20046,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20065,7 +20065,7 @@ class Scatterpolargl(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolargl.Hoverlabel
+          - An instance of plotly_study.graph_objs.scatterpolargl.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -20109,7 +20109,7 @@ class Scatterpolargl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolargl.Hoverlabel
+        plotly_study.graph_objs.scatterpolargl.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -20166,7 +20166,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20212,7 +20212,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20254,7 +20254,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20296,7 +20296,7 @@ class Scatterpolargl(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolargl.Line
+          - An instance of plotly_study.graph_objs.scatterpolargl.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -20314,7 +20314,7 @@ class Scatterpolargl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolargl.Line
+        plotly_study.graph_objs.scatterpolargl.Line
         """
         return self["line"]
 
@@ -20329,7 +20329,7 @@ class Scatterpolargl(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolargl.Marker
+          - An instance of plotly_study.graph_objs.scatterpolargl.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -20389,7 +20389,7 @@ class Scatterpolargl(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scatterpolargl.marker.Colo
+                    plotly_study.graph_objects.scatterpolargl.marker.Colo
                     rBar instance or dict with compatible
                     properties
                 colorscale
@@ -20412,7 +20412,7 @@ class Scatterpolargl(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.scatterpolargl.marker.Line
+                    plotly_study.graph_objects.scatterpolargl.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the marker opacity.
@@ -20461,7 +20461,7 @@ class Scatterpolargl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolargl.Marker
+        plotly_study.graph_objs.scatterpolargl.Marker
         """
         return self["marker"]
 
@@ -20505,7 +20505,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20636,7 +20636,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  r .
     
         The 'rsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20655,24 +20655,24 @@ class Scatterpolargl(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolargl.Selected
+          - An instance of plotly_study.graph_objs.scatterpolargl.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatterpolargl.selected.Ma
+                    plotly_study.graph_objects.scatterpolargl.selected.Ma
                     rker instance or dict with compatible
                     properties
                 textfont
-                    plotly.graph_objects.scatterpolargl.selected.Te
+                    plotly_study.graph_objects.scatterpolargl.selected.Te
                     xtfont instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scatterpolargl.Selected
+        plotly_study.graph_objs.scatterpolargl.Selected
         """
         return self["selected"]
 
@@ -20732,7 +20732,7 @@ class Scatterpolargl(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolargl.Stream
+          - An instance of plotly_study.graph_objs.scatterpolargl.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -20750,7 +20750,7 @@ class Scatterpolargl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolargl.Stream
+        plotly_study.graph_objs.scatterpolargl.Stream
         """
         return self["stream"]
 
@@ -20819,7 +20819,7 @@ class Scatterpolargl(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolargl.Textfont
+          - An instance of plotly_study.graph_objs.scatterpolargl.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -20857,7 +20857,7 @@ class Scatterpolargl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolargl.Textfont
+        plotly_study.graph_objs.scatterpolargl.Textfont
         """
         return self["textfont"]
 
@@ -20898,7 +20898,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20918,7 +20918,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -20973,7 +20973,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -21034,7 +21034,7 @@ class Scatterpolargl(_BaseTraceType):
         Sets the source reference on plot.ly for  theta .
     
         The 'thetasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -21130,24 +21130,24 @@ class Scatterpolargl(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolargl.Unselected
+          - An instance of plotly_study.graph_objs.scatterpolargl.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatterpolargl.unselected.
+                    plotly_study.graph_objects.scatterpolargl.unselected.
                     Marker instance or dict with compatible
                     properties
                 textfont
-                    plotly.graph_objects.scatterpolargl.unselected.
+                    plotly_study.graph_objects.scatterpolargl.unselected.
                     Textfont instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scatterpolargl.Unselected
+        plotly_study.graph_objs.scatterpolargl.Unselected
         """
         return self["unselected"]
 
@@ -21246,7 +21246,7 @@ class Scatterpolargl(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterpolargl.Hoverlabel instance
+            plotly_study.graph_objects.scatterpolargl.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -21294,10 +21294,10 @@ class Scatterpolargl(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterpolargl.Line instance or
+            plotly_study.graph_objects.scatterpolargl.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scatterpolargl.Marker instance or
+            plotly_study.graph_objects.scatterpolargl.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -21335,7 +21335,7 @@ class Scatterpolargl(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatterpolargl.Selected instance
+            plotly_study.graph_objects.scatterpolargl.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -21348,7 +21348,7 @@ class Scatterpolargl(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterpolargl.Stream instance or
+            plotly_study.graph_objects.scatterpolargl.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -21427,7 +21427,7 @@ class Scatterpolargl(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterpolargl.Unselected instance
+            plotly_study.graph_objects.scatterpolargl.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -21502,7 +21502,7 @@ class Scatterpolargl(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scatterpolargl
+            an instance of plotly_study.graph_objs.Scatterpolargl
         connectgaps
             Determines whether or not gaps (i.e. {nan} or missing
             values) in the provided data arrays are connected.
@@ -21554,7 +21554,7 @@ class Scatterpolargl(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterpolargl.Hoverlabel instance
+            plotly_study.graph_objects.scatterpolargl.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -21602,10 +21602,10 @@ class Scatterpolargl(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterpolargl.Line instance or
+            plotly_study.graph_objects.scatterpolargl.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scatterpolargl.Marker instance or
+            plotly_study.graph_objects.scatterpolargl.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -21643,7 +21643,7 @@ class Scatterpolargl(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatterpolargl.Selected instance
+            plotly_study.graph_objects.scatterpolargl.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -21656,7 +21656,7 @@ class Scatterpolargl(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterpolargl.Stream instance or
+            plotly_study.graph_objects.scatterpolargl.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -21735,7 +21735,7 @@ class Scatterpolargl(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterpolargl.Unselected instance
+            plotly_study.graph_objects.scatterpolargl.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -21760,9 +21760,9 @@ class Scatterpolargl(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scatterpolargl 
+The first argument to the plotly_study.graph_objs.Scatterpolargl 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scatterpolargl"""
+an instance of plotly_study.graph_objs.Scatterpolargl"""
             )
 
         # Handle skip_invalid
@@ -21771,7 +21771,7 @@ an instance of plotly.graph_objs.Scatterpolargl"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scatterpolargl as v_scatterpolargl
+        from plotly_study.validators import scatterpolargl as v_scatterpolargl
 
         # Initialize validators
         # ---------------------
@@ -21947,7 +21947,7 @@ an instance of plotly.graph_objs.Scatterpolargl"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -22028,7 +22028,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -22206,7 +22206,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -22225,7 +22225,7 @@ class Scatterpolar(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolar.Hoverlabel
+          - An instance of plotly_study.graph_objs.scatterpolar.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -22269,7 +22269,7 @@ class Scatterpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolar.Hoverlabel
+        plotly_study.graph_objs.scatterpolar.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -22351,7 +22351,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -22397,7 +22397,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -22439,7 +22439,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -22481,7 +22481,7 @@ class Scatterpolar(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolar.Line
+          - An instance of plotly_study.graph_objs.scatterpolar.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -22509,7 +22509,7 @@ class Scatterpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolar.Line
+        plotly_study.graph_objs.scatterpolar.Line
         """
         return self["line"]
 
@@ -22524,7 +22524,7 @@ class Scatterpolar(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolar.Marker
+          - An instance of plotly_study.graph_objs.scatterpolar.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -22584,7 +22584,7 @@ class Scatterpolar(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scatterpolar.marker.ColorB
+                    plotly_study.graph_objects.scatterpolar.marker.ColorB
                     ar instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -22606,10 +22606,10 @@ class Scatterpolar(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 gradient
-                    plotly.graph_objects.scatterpolar.marker.Gradie
+                    plotly_study.graph_objects.scatterpolar.marker.Gradie
                     nt instance or dict with compatible properties
                 line
-                    plotly.graph_objects.scatterpolar.marker.Line
+                    plotly_study.graph_objects.scatterpolar.marker.Line
                     instance or dict with compatible properties
                 maxdisplayed
                     Sets a maximum number of points to be drawn on
@@ -22661,7 +22661,7 @@ class Scatterpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolar.Marker
+        plotly_study.graph_objs.scatterpolar.Marker
         """
         return self["marker"]
 
@@ -22705,7 +22705,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -22836,7 +22836,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  r .
     
         The 'rsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -22855,23 +22855,23 @@ class Scatterpolar(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolar.Selected
+          - An instance of plotly_study.graph_objs.scatterpolar.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatterpolar.selected.Mark
+                    plotly_study.graph_objects.scatterpolar.selected.Mark
                     er instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scatterpolar.selected.Text
+                    plotly_study.graph_objects.scatterpolar.selected.Text
                     font instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scatterpolar.Selected
+        plotly_study.graph_objs.scatterpolar.Selected
         """
         return self["selected"]
 
@@ -22931,7 +22931,7 @@ class Scatterpolar(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolar.Stream
+          - An instance of plotly_study.graph_objs.scatterpolar.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -22949,7 +22949,7 @@ class Scatterpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolar.Stream
+        plotly_study.graph_objs.scatterpolar.Stream
         """
         return self["stream"]
 
@@ -23018,7 +23018,7 @@ class Scatterpolar(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolar.Textfont
+          - An instance of plotly_study.graph_objs.scatterpolar.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -23056,7 +23056,7 @@ class Scatterpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatterpolar.Textfont
+        plotly_study.graph_objs.scatterpolar.Textfont
         """
         return self["textfont"]
 
@@ -23097,7 +23097,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -23117,7 +23117,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -23172,7 +23172,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -23233,7 +23233,7 @@ class Scatterpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  theta .
     
         The 'thetasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -23329,24 +23329,24 @@ class Scatterpolar(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatterpolar.Unselected
+          - An instance of plotly_study.graph_objs.scatterpolar.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatterpolar.unselected.Ma
+                    plotly_study.graph_objects.scatterpolar.unselected.Ma
                     rker instance or dict with compatible
                     properties
                 textfont
-                    plotly.graph_objects.scatterpolar.unselected.Te
+                    plotly_study.graph_objects.scatterpolar.unselected.Te
                     xtfont instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scatterpolar.Unselected
+        plotly_study.graph_objs.scatterpolar.Unselected
         """
         return self["unselected"]
 
@@ -23439,7 +23439,7 @@ class Scatterpolar(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterpolar.Hoverlabel instance
+            plotly_study.graph_objects.scatterpolar.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -23493,10 +23493,10 @@ class Scatterpolar(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterpolar.Line instance or dict
+            plotly_study.graph_objects.scatterpolar.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scatterpolar.Marker instance or
+            plotly_study.graph_objects.scatterpolar.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -23534,7 +23534,7 @@ class Scatterpolar(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatterpolar.Selected instance or
+            plotly_study.graph_objects.scatterpolar.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -23547,7 +23547,7 @@ class Scatterpolar(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterpolar.Stream instance or
+            plotly_study.graph_objects.scatterpolar.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -23626,7 +23626,7 @@ class Scatterpolar(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterpolar.Unselected instance
+            plotly_study.graph_objects.scatterpolar.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -23704,7 +23704,7 @@ class Scatterpolar(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scatterpolar
+            an instance of plotly_study.graph_objs.Scatterpolar
         cliponaxis
             Determines whether or not markers and text nodes are
             clipped about the subplot axes. To show markers and
@@ -23750,7 +23750,7 @@ class Scatterpolar(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterpolar.Hoverlabel instance
+            plotly_study.graph_objects.scatterpolar.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -23804,10 +23804,10 @@ class Scatterpolar(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterpolar.Line instance or dict
+            plotly_study.graph_objects.scatterpolar.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scatterpolar.Marker instance or
+            plotly_study.graph_objects.scatterpolar.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -23845,7 +23845,7 @@ class Scatterpolar(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatterpolar.Selected instance or
+            plotly_study.graph_objects.scatterpolar.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -23858,7 +23858,7 @@ class Scatterpolar(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterpolar.Stream instance or
+            plotly_study.graph_objects.scatterpolar.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -23937,7 +23937,7 @@ class Scatterpolar(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterpolar.Unselected instance
+            plotly_study.graph_objects.scatterpolar.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -23962,9 +23962,9 @@ class Scatterpolar(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scatterpolar 
+The first argument to the plotly_study.graph_objs.Scatterpolar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scatterpolar"""
+an instance of plotly_study.graph_objs.Scatterpolar"""
             )
 
         # Handle skip_invalid
@@ -23973,7 +23973,7 @@ an instance of plotly.graph_objs.Scatterpolar"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scatterpolar as v_scatterpolar
+        from plotly_study.validators import scatterpolar as v_scatterpolar
 
         # Initialize validators
         # ---------------------
@@ -24151,7 +24151,7 @@ an instance of plotly.graph_objs.Scatterpolar"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -24234,7 +24234,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24364,7 +24364,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24383,7 +24383,7 @@ class Scattermapbox(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scattermapbox.Hoverlabel
+          - An instance of plotly_study.graph_objs.scattermapbox.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -24427,7 +24427,7 @@ class Scattermapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattermapbox.Hoverlabel
+        plotly_study.graph_objs.scattermapbox.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -24484,7 +24484,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24530,7 +24530,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24572,7 +24572,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24612,7 +24612,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  lat .
     
         The 'latsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24654,7 +24654,7 @@ class Scattermapbox(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scattermapbox.Line
+          - An instance of plotly_study.graph_objs.scattermapbox.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -24667,7 +24667,7 @@ class Scattermapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattermapbox.Line
+        plotly_study.graph_objs.scattermapbox.Line
         """
         return self["line"]
 
@@ -24703,7 +24703,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  lon .
     
         The 'lonsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24722,7 +24722,7 @@ class Scattermapbox(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scattermapbox.Marker
+          - An instance of plotly_study.graph_objs.scattermapbox.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -24782,7 +24782,7 @@ class Scattermapbox(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scattermapbox.marker.Color
+                    plotly_study.graph_objects.scattermapbox.marker.Color
                     Bar instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -24848,7 +24848,7 @@ class Scattermapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattermapbox.Marker
+        plotly_study.graph_objs.scattermapbox.Marker
         """
         return self["marker"]
 
@@ -24892,7 +24892,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -24979,19 +24979,19 @@ class Scattermapbox(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattermapbox.Selected
+          - An instance of plotly_study.graph_objs.scattermapbox.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattermapbox.selected.Mar
+                    plotly_study.graph_objects.scattermapbox.selected.Mar
                     ker instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.scattermapbox.Selected
+        plotly_study.graph_objs.scattermapbox.Selected
         """
         return self["selected"]
 
@@ -25051,7 +25051,7 @@ class Scattermapbox(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scattermapbox.Stream
+          - An instance of plotly_study.graph_objs.scattermapbox.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -25069,7 +25069,7 @@ class Scattermapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattermapbox.Stream
+        plotly_study.graph_objs.scattermapbox.Stream
         """
         return self["stream"]
 
@@ -25140,7 +25140,7 @@ class Scattermapbox(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scattermapbox.Textfont
+          - An instance of plotly_study.graph_objs.scattermapbox.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -25168,7 +25168,7 @@ class Scattermapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattermapbox.Textfont
+        plotly_study.graph_objs.scattermapbox.Textfont
         """
         return self["textfont"]
 
@@ -25208,7 +25208,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -25263,7 +25263,7 @@ class Scattermapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -25337,20 +25337,20 @@ class Scattermapbox(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattermapbox.Unselected
+          - An instance of plotly_study.graph_objs.scattermapbox.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattermapbox.unselected.M
+                    plotly_study.graph_objects.scattermapbox.unselected.M
                     arker instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scattermapbox.Unselected
+        plotly_study.graph_objs.scattermapbox.Unselected
         """
         return self["unselected"]
 
@@ -25431,7 +25431,7 @@ class Scattermapbox(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattermapbox.Hoverlabel instance
+            plotly_study.graph_objects.scattermapbox.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -25483,14 +25483,14 @@ class Scattermapbox(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattermapbox.Line instance or
+            plotly_study.graph_objects.scattermapbox.Line instance or
             dict with compatible properties
         lon
             Sets the longitude coordinates (in degrees East).
         lonsrc
             Sets the source reference on plot.ly for  lon .
         marker
-            plotly.graph_objects.scattermapbox.Marker instance or
+            plotly_study.graph_objects.scattermapbox.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -25518,7 +25518,7 @@ class Scattermapbox(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattermapbox.Selected instance or
+            plotly_study.graph_objects.scattermapbox.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -25531,7 +25531,7 @@ class Scattermapbox(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattermapbox.Stream instance or
+            plotly_study.graph_objects.scattermapbox.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -25598,7 +25598,7 @@ class Scattermapbox(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattermapbox.Unselected instance
+            plotly_study.graph_objects.scattermapbox.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -25665,7 +25665,7 @@ class Scattermapbox(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scattermapbox
+            an instance of plotly_study.graph_objs.Scattermapbox
         below
             Determines if this scattermapbox trace's layers are to
             be inserted before the layer with the specified ID. By
@@ -25699,7 +25699,7 @@ class Scattermapbox(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattermapbox.Hoverlabel instance
+            plotly_study.graph_objects.scattermapbox.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -25751,14 +25751,14 @@ class Scattermapbox(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattermapbox.Line instance or
+            plotly_study.graph_objects.scattermapbox.Line instance or
             dict with compatible properties
         lon
             Sets the longitude coordinates (in degrees East).
         lonsrc
             Sets the source reference on plot.ly for  lon .
         marker
-            plotly.graph_objects.scattermapbox.Marker instance or
+            plotly_study.graph_objects.scattermapbox.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -25786,7 +25786,7 @@ class Scattermapbox(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattermapbox.Selected instance or
+            plotly_study.graph_objects.scattermapbox.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -25799,7 +25799,7 @@ class Scattermapbox(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattermapbox.Stream instance or
+            plotly_study.graph_objects.scattermapbox.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -25866,7 +25866,7 @@ class Scattermapbox(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattermapbox.Unselected instance
+            plotly_study.graph_objects.scattermapbox.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -25891,9 +25891,9 @@ class Scattermapbox(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scattermapbox 
+The first argument to the plotly_study.graph_objs.Scattermapbox 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scattermapbox"""
+an instance of plotly_study.graph_objs.Scattermapbox"""
             )
 
         # Handle skip_invalid
@@ -25902,7 +25902,7 @@ an instance of plotly.graph_objs.Scattermapbox"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scattermapbox as v_scattermapbox
+        from plotly_study.validators import scattermapbox as v_scattermapbox
 
         # Initialize validators
         # ---------------------
@@ -26059,7 +26059,7 @@ an instance of plotly.graph_objs.Scattermapbox"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -26117,7 +26117,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -26176,7 +26176,7 @@ class Scattergl(_BaseTraceType):
         """
         The 'error_x' property is an instance of ErrorX
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.ErrorX
+          - An instance of plotly_study.graph_objs.scattergl.ErrorX
           - A dict of string/value properties that will be passed
             to the ErrorX constructor
     
@@ -26242,7 +26242,7 @@ class Scattergl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.ErrorX
+        plotly_study.graph_objs.scattergl.ErrorX
         """
         return self["error_x"]
 
@@ -26257,7 +26257,7 @@ class Scattergl(_BaseTraceType):
         """
         The 'error_y' property is an instance of ErrorY
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.ErrorY
+          - An instance of plotly_study.graph_objs.scattergl.ErrorY
           - A dict of string/value properties that will be passed
             to the ErrorY constructor
     
@@ -26321,7 +26321,7 @@ class Scattergl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.ErrorY
+        plotly_study.graph_objs.scattergl.ErrorY
         """
         return self["error_y"]
 
@@ -26464,7 +26464,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -26483,7 +26483,7 @@ class Scattergl(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.Hoverlabel
+          - An instance of plotly_study.graph_objs.scattergl.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -26527,7 +26527,7 @@ class Scattergl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.Hoverlabel
+        plotly_study.graph_objs.scattergl.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -26584,7 +26584,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -26630,7 +26630,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -26672,7 +26672,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -26714,7 +26714,7 @@ class Scattergl(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.Line
+          - An instance of plotly_study.graph_objs.scattergl.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -26732,7 +26732,7 @@ class Scattergl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.Line
+        plotly_study.graph_objs.scattergl.Line
         """
         return self["line"]
 
@@ -26747,7 +26747,7 @@ class Scattergl(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.Marker
+          - An instance of plotly_study.graph_objs.scattergl.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -26807,7 +26807,7 @@ class Scattergl(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scattergl.marker.ColorBar
+                    plotly_study.graph_objects.scattergl.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -26829,7 +26829,7 @@ class Scattergl(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.scattergl.marker.Line
+                    plotly_study.graph_objects.scattergl.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the marker opacity.
@@ -26878,7 +26878,7 @@ class Scattergl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.Marker
+        plotly_study.graph_objs.scattergl.Marker
         """
         return self["marker"]
 
@@ -26922,7 +26922,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -27006,22 +27006,22 @@ class Scattergl(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.Selected
+          - An instance of plotly_study.graph_objs.scattergl.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattergl.selected.Marker
+                    plotly_study.graph_objects.scattergl.selected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scattergl.selected.Textfon
+                    plotly_study.graph_objects.scattergl.selected.Textfon
                     t instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.scattergl.Selected
+        plotly_study.graph_objs.scattergl.Selected
         """
         return self["selected"]
 
@@ -27081,7 +27081,7 @@ class Scattergl(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.Stream
+          - An instance of plotly_study.graph_objs.scattergl.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -27099,7 +27099,7 @@ class Scattergl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.Stream
+        plotly_study.graph_objs.scattergl.Stream
         """
         return self["stream"]
 
@@ -27143,7 +27143,7 @@ class Scattergl(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.Textfont
+          - An instance of plotly_study.graph_objs.scattergl.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -27181,7 +27181,7 @@ class Scattergl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergl.Textfont
+        plotly_study.graph_objs.scattergl.Textfont
         """
         return self["textfont"]
 
@@ -27222,7 +27222,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -27242,7 +27242,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -27297,7 +27297,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -27371,22 +27371,22 @@ class Scattergl(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergl.Unselected
+          - An instance of plotly_study.graph_objs.scattergl.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattergl.unselected.Marke
+                    plotly_study.graph_objects.scattergl.unselected.Marke
                     r instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scattergl.unselected.Textf
+                    plotly_study.graph_objects.scattergl.unselected.Textf
                     ont instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.scattergl.Unselected
+        plotly_study.graph_objs.scattergl.Unselected
         """
         return self["unselected"]
 
@@ -27515,7 +27515,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -27625,7 +27625,7 @@ class Scattergl(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -27669,10 +27669,10 @@ class Scattergl(_BaseTraceType):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.scattergl.ErrorX instance or dict
+            plotly_study.graph_objects.scattergl.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scattergl.ErrorY instance or dict
+            plotly_study.graph_objects.scattergl.ErrorY instance or dict
             with compatible properties
         fill
             Sets the area to fill with a solid color. Defaults to
@@ -27709,7 +27709,7 @@ class Scattergl(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattergl.Hoverlabel instance or
+            plotly_study.graph_objects.scattergl.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -27757,10 +27757,10 @@ class Scattergl(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattergl.Line instance or dict
+            plotly_study.graph_objects.scattergl.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scattergl.Marker instance or dict
+            plotly_study.graph_objects.scattergl.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -27785,7 +27785,7 @@ class Scattergl(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattergl.Selected instance or
+            plotly_study.graph_objects.scattergl.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -27798,7 +27798,7 @@ class Scattergl(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattergl.Stream instance or dict
+            plotly_study.graph_objects.scattergl.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -27860,7 +27860,7 @@ class Scattergl(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattergl.Unselected instance or
+            plotly_study.graph_objects.scattergl.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -27967,7 +27967,7 @@ class Scattergl(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scattergl
+            an instance of plotly_study.graph_objs.Scattergl
         connectgaps
             Determines whether or not gaps (i.e. {nan} or missing
             values) in the provided data arrays are connected.
@@ -27983,10 +27983,10 @@ class Scattergl(_BaseTraceType):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.scattergl.ErrorX instance or dict
+            plotly_study.graph_objects.scattergl.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scattergl.ErrorY instance or dict
+            plotly_study.graph_objects.scattergl.ErrorY instance or dict
             with compatible properties
         fill
             Sets the area to fill with a solid color. Defaults to
@@ -28023,7 +28023,7 @@ class Scattergl(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattergl.Hoverlabel instance or
+            plotly_study.graph_objects.scattergl.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -28071,10 +28071,10 @@ class Scattergl(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattergl.Line instance or dict
+            plotly_study.graph_objects.scattergl.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scattergl.Marker instance or dict
+            plotly_study.graph_objects.scattergl.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -28099,7 +28099,7 @@ class Scattergl(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattergl.Selected instance or
+            plotly_study.graph_objects.scattergl.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -28112,7 +28112,7 @@ class Scattergl(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattergl.Stream instance or dict
+            plotly_study.graph_objects.scattergl.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -28174,7 +28174,7 @@ class Scattergl(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattergl.Unselected instance or
+            plotly_study.graph_objects.scattergl.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -28229,9 +28229,9 @@ class Scattergl(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scattergl 
+The first argument to the plotly_study.graph_objs.Scattergl 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scattergl"""
+an instance of plotly_study.graph_objs.Scattergl"""
             )
 
         # Handle skip_invalid
@@ -28240,7 +28240,7 @@ an instance of plotly.graph_objs.Scattergl"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scattergl as v_scattergl
+        from plotly_study.validators import scattergl as v_scattergl
 
         # Initialize validators
         # ---------------------
@@ -28422,7 +28422,7 @@ an instance of plotly.graph_objs.Scattergl"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -28480,7 +28480,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -28635,7 +28635,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -28654,7 +28654,7 @@ class Scattergeo(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergeo.Hoverlabel
+          - An instance of plotly_study.graph_objs.scattergeo.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -28698,7 +28698,7 @@ class Scattergeo(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergeo.Hoverlabel
+        plotly_study.graph_objs.scattergeo.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -28755,7 +28755,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -28802,7 +28802,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -28844,7 +28844,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -28884,7 +28884,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  lat .
     
         The 'latsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -28926,7 +28926,7 @@ class Scattergeo(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergeo.Line
+          - An instance of plotly_study.graph_objs.scattergeo.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -28944,7 +28944,7 @@ class Scattergeo(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergeo.Line
+        plotly_study.graph_objs.scattergeo.Line
         """
         return self["line"]
 
@@ -29004,7 +29004,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  locations .
     
         The 'locationssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -29044,7 +29044,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  lon .
     
         The 'lonsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -29063,7 +29063,7 @@ class Scattergeo(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergeo.Marker
+          - An instance of plotly_study.graph_objs.scattergeo.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -29123,7 +29123,7 @@ class Scattergeo(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scattergeo.marker.ColorBar
+                    plotly_study.graph_objects.scattergeo.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -29145,10 +29145,10 @@ class Scattergeo(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 gradient
-                    plotly.graph_objects.scattergeo.marker.Gradient
+                    plotly_study.graph_objects.scattergeo.marker.Gradient
                     instance or dict with compatible properties
                 line
-                    plotly.graph_objects.scattergeo.marker.Line
+                    plotly_study.graph_objects.scattergeo.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the marker opacity.
@@ -29197,7 +29197,7 @@ class Scattergeo(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergeo.Marker
+        plotly_study.graph_objs.scattergeo.Marker
         """
         return self["marker"]
 
@@ -29241,7 +29241,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -29330,22 +29330,22 @@ class Scattergeo(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergeo.Selected
+          - An instance of plotly_study.graph_objs.scattergeo.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattergeo.selected.Marker
+                    plotly_study.graph_objects.scattergeo.selected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scattergeo.selected.Textfo
+                    plotly_study.graph_objects.scattergeo.selected.Textfo
                     nt instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.scattergeo.Selected
+        plotly_study.graph_objs.scattergeo.Selected
         """
         return self["selected"]
 
@@ -29405,7 +29405,7 @@ class Scattergeo(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergeo.Stream
+          - An instance of plotly_study.graph_objs.scattergeo.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -29423,7 +29423,7 @@ class Scattergeo(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergeo.Stream
+        plotly_study.graph_objs.scattergeo.Stream
         """
         return self["stream"]
 
@@ -29468,7 +29468,7 @@ class Scattergeo(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergeo.Textfont
+          - An instance of plotly_study.graph_objs.scattergeo.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -29506,7 +29506,7 @@ class Scattergeo(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattergeo.Textfont
+        plotly_study.graph_objs.scattergeo.Textfont
         """
         return self["textfont"]
 
@@ -29547,7 +29547,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -29567,7 +29567,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -29622,7 +29622,7 @@ class Scattergeo(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -29696,23 +29696,23 @@ class Scattergeo(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattergeo.Unselected
+          - An instance of plotly_study.graph_objs.scattergeo.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattergeo.unselected.Mark
+                    plotly_study.graph_objects.scattergeo.unselected.Mark
                     er instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scattergeo.unselected.Text
+                    plotly_study.graph_objects.scattergeo.unselected.Text
                     font instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scattergeo.Unselected
+        plotly_study.graph_objs.scattergeo.Unselected
         """
         return self["unselected"]
 
@@ -29793,7 +29793,7 @@ class Scattergeo(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattergeo.Hoverlabel instance or
+            plotly_study.graph_objects.scattergeo.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -29845,7 +29845,7 @@ class Scattergeo(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattergeo.Line instance or dict
+            plotly_study.graph_objects.scattergeo.Line instance or dict
             with compatible properties
         locationmode
             Determines the set of locations used to match entries
@@ -29861,7 +29861,7 @@ class Scattergeo(_BaseTraceType):
         lonsrc
             Sets the source reference on plot.ly for  lon .
         marker
-            plotly.graph_objects.scattergeo.Marker instance or dict
+            plotly_study.graph_objects.scattergeo.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -29891,7 +29891,7 @@ class Scattergeo(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattergeo.Selected instance or
+            plotly_study.graph_objects.scattergeo.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -29904,7 +29904,7 @@ class Scattergeo(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattergeo.Stream instance or dict
+            plotly_study.graph_objects.scattergeo.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (lon,lat) pair
@@ -29968,7 +29968,7 @@ class Scattergeo(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattergeo.Unselected instance or
+            plotly_study.graph_objects.scattergeo.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -30039,7 +30039,7 @@ class Scattergeo(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scattergeo
+            an instance of plotly_study.graph_objs.Scattergeo
         connectgaps
             Determines whether or not gaps (i.e. {nan} or missing
             values) in the provided data arrays are connected.
@@ -30073,7 +30073,7 @@ class Scattergeo(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattergeo.Hoverlabel instance or
+            plotly_study.graph_objects.scattergeo.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -30125,7 +30125,7 @@ class Scattergeo(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattergeo.Line instance or dict
+            plotly_study.graph_objects.scattergeo.Line instance or dict
             with compatible properties
         locationmode
             Determines the set of locations used to match entries
@@ -30141,7 +30141,7 @@ class Scattergeo(_BaseTraceType):
         lonsrc
             Sets the source reference on plot.ly for  lon .
         marker
-            plotly.graph_objects.scattergeo.Marker instance or dict
+            plotly_study.graph_objects.scattergeo.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -30171,7 +30171,7 @@ class Scattergeo(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattergeo.Selected instance or
+            plotly_study.graph_objects.scattergeo.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -30184,7 +30184,7 @@ class Scattergeo(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattergeo.Stream instance or dict
+            plotly_study.graph_objects.scattergeo.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (lon,lat) pair
@@ -30248,7 +30248,7 @@ class Scattergeo(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattergeo.Unselected instance or
+            plotly_study.graph_objects.scattergeo.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -30273,9 +30273,9 @@ class Scattergeo(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scattergeo 
+The first argument to the plotly_study.graph_objs.Scattergeo 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scattergeo"""
+an instance of plotly_study.graph_objs.Scattergeo"""
             )
 
         # Handle skip_invalid
@@ -30284,7 +30284,7 @@ an instance of plotly.graph_objs.Scattergeo"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scattergeo as v_scattergeo
+        from plotly_study.validators import scattergeo as v_scattergeo
 
         # Initialize validators
         # ---------------------
@@ -30448,7 +30448,7 @@ an instance of plotly.graph_objs.Scattergeo"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -30482,7 +30482,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  a .
     
         The 'asrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -30522,7 +30522,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  b .
     
         The 'bsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -30609,7 +30609,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -30745,7 +30745,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -30764,7 +30764,7 @@ class Scattercarpet(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scattercarpet.Hoverlabel
+          - An instance of plotly_study.graph_objs.scattercarpet.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -30808,7 +30808,7 @@ class Scattercarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattercarpet.Hoverlabel
+        plotly_study.graph_objs.scattercarpet.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -30890,7 +30890,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -30936,7 +30936,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -30978,7 +30978,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -31020,7 +31020,7 @@ class Scattercarpet(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scattercarpet.Line
+          - An instance of plotly_study.graph_objs.scattercarpet.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -31048,7 +31048,7 @@ class Scattercarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattercarpet.Line
+        plotly_study.graph_objs.scattercarpet.Line
         """
         return self["line"]
 
@@ -31063,7 +31063,7 @@ class Scattercarpet(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scattercarpet.Marker
+          - An instance of plotly_study.graph_objs.scattercarpet.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -31123,7 +31123,7 @@ class Scattercarpet(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scattercarpet.marker.Color
+                    plotly_study.graph_objects.scattercarpet.marker.Color
                     Bar instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -31145,10 +31145,10 @@ class Scattercarpet(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 gradient
-                    plotly.graph_objects.scattercarpet.marker.Gradi
+                    plotly_study.graph_objects.scattercarpet.marker.Gradi
                     ent instance or dict with compatible properties
                 line
-                    plotly.graph_objects.scattercarpet.marker.Line
+                    plotly_study.graph_objects.scattercarpet.marker.Line
                     instance or dict with compatible properties
                 maxdisplayed
                     Sets a maximum number of points to be drawn on
@@ -31200,7 +31200,7 @@ class Scattercarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattercarpet.Marker
+        plotly_study.graph_objs.scattercarpet.Marker
         """
         return self["marker"]
 
@@ -31244,7 +31244,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -31333,23 +31333,23 @@ class Scattercarpet(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattercarpet.Selected
+          - An instance of plotly_study.graph_objs.scattercarpet.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattercarpet.selected.Mar
+                    plotly_study.graph_objects.scattercarpet.selected.Mar
                     ker instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scattercarpet.selected.Tex
+                    plotly_study.graph_objects.scattercarpet.selected.Tex
                     tfont instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scattercarpet.Selected
+        plotly_study.graph_objs.scattercarpet.Selected
         """
         return self["selected"]
 
@@ -31409,7 +31409,7 @@ class Scattercarpet(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scattercarpet.Stream
+          - An instance of plotly_study.graph_objs.scattercarpet.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -31427,7 +31427,7 @@ class Scattercarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattercarpet.Stream
+        plotly_study.graph_objs.scattercarpet.Stream
         """
         return self["stream"]
 
@@ -31471,7 +31471,7 @@ class Scattercarpet(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scattercarpet.Textfont
+          - An instance of plotly_study.graph_objs.scattercarpet.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -31509,7 +31509,7 @@ class Scattercarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scattercarpet.Textfont
+        plotly_study.graph_objs.scattercarpet.Textfont
         """
         return self["textfont"]
 
@@ -31550,7 +31550,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -31570,7 +31570,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -31625,7 +31625,7 @@ class Scattercarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -31699,24 +31699,24 @@ class Scattercarpet(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scattercarpet.Unselected
+          - An instance of plotly_study.graph_objs.scattercarpet.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scattercarpet.unselected.M
+                    plotly_study.graph_objects.scattercarpet.unselected.M
                     arker instance or dict with compatible
                     properties
                 textfont
-                    plotly.graph_objects.scattercarpet.unselected.T
+                    plotly_study.graph_objects.scattercarpet.unselected.T
                     extfont instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.scattercarpet.Unselected
+        plotly_study.graph_objs.scattercarpet.Unselected
         """
         return self["unselected"]
 
@@ -31859,7 +31859,7 @@ class Scattercarpet(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattercarpet.Hoverlabel instance
+            plotly_study.graph_objects.scattercarpet.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -31912,10 +31912,10 @@ class Scattercarpet(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattercarpet.Line instance or
+            plotly_study.graph_objects.scattercarpet.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scattercarpet.Marker instance or
+            plotly_study.graph_objects.scattercarpet.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -31945,7 +31945,7 @@ class Scattercarpet(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattercarpet.Selected instance or
+            plotly_study.graph_objects.scattercarpet.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -31958,7 +31958,7 @@ class Scattercarpet(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattercarpet.Stream instance or
+            plotly_study.graph_objects.scattercarpet.Stream instance or
             dict with compatible properties
         text
             Sets text elements associated with each (a,b) point. If
@@ -32021,7 +32021,7 @@ class Scattercarpet(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattercarpet.Unselected instance
+            plotly_study.graph_objects.scattercarpet.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -32100,7 +32100,7 @@ class Scattercarpet(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scattercarpet
+            an instance of plotly_study.graph_objs.Scattercarpet
         a
             Sets the a-axis coordinates.
         asrc
@@ -32146,7 +32146,7 @@ class Scattercarpet(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattercarpet.Hoverlabel instance
+            plotly_study.graph_objects.scattercarpet.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -32199,10 +32199,10 @@ class Scattercarpet(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattercarpet.Line instance or
+            plotly_study.graph_objects.scattercarpet.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scattercarpet.Marker instance or
+            plotly_study.graph_objects.scattercarpet.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -32232,7 +32232,7 @@ class Scattercarpet(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattercarpet.Selected instance or
+            plotly_study.graph_objects.scattercarpet.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -32245,7 +32245,7 @@ class Scattercarpet(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattercarpet.Stream instance or
+            plotly_study.graph_objects.scattercarpet.Stream instance or
             dict with compatible properties
         text
             Sets text elements associated with each (a,b) point. If
@@ -32308,7 +32308,7 @@ class Scattercarpet(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattercarpet.Unselected instance
+            plotly_study.graph_objects.scattercarpet.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -32343,9 +32343,9 @@ class Scattercarpet(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scattercarpet 
+The first argument to the plotly_study.graph_objs.Scattercarpet 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scattercarpet"""
+an instance of plotly_study.graph_objs.Scattercarpet"""
             )
 
         # Handle skip_invalid
@@ -32354,7 +32354,7 @@ an instance of plotly.graph_objs.Scattercarpet"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scattercarpet as v_scattercarpet
+        from plotly_study.validators import scattercarpet as v_scattercarpet
 
         # Initialize validators
         # ---------------------
@@ -32520,7 +32520,7 @@ an instance of plotly.graph_objs.Scattercarpet"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -32578,7 +32578,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -32597,7 +32597,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'error_x' property is an instance of ErrorX
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.ErrorX
+          - An instance of plotly_study.graph_objs.scatter3d.ErrorX
           - A dict of string/value properties that will be passed
             to the ErrorX constructor
     
@@ -32663,7 +32663,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.ErrorX
+        plotly_study.graph_objs.scatter3d.ErrorX
         """
         return self["error_x"]
 
@@ -32678,7 +32678,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'error_y' property is an instance of ErrorY
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.ErrorY
+          - An instance of plotly_study.graph_objs.scatter3d.ErrorY
           - A dict of string/value properties that will be passed
             to the ErrorY constructor
     
@@ -32744,7 +32744,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.ErrorY
+        plotly_study.graph_objs.scatter3d.ErrorY
         """
         return self["error_y"]
 
@@ -32759,7 +32759,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'error_z' property is an instance of ErrorZ
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.ErrorZ
+          - An instance of plotly_study.graph_objs.scatter3d.ErrorZ
           - A dict of string/value properties that will be passed
             to the ErrorZ constructor
     
@@ -32823,7 +32823,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.ErrorZ
+        plotly_study.graph_objs.scatter3d.ErrorZ
         """
         return self["error_z"]
 
@@ -32865,7 +32865,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -32884,7 +32884,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.Hoverlabel
+          - An instance of plotly_study.graph_objs.scatter3d.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -32928,7 +32928,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.Hoverlabel
+        plotly_study.graph_objs.scatter3d.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -32985,7 +32985,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -33031,7 +33031,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -33073,7 +33073,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -33115,7 +33115,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.Line
+          - An instance of plotly_study.graph_objs.scatter3d.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -33175,7 +33175,7 @@ class Scatter3d(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scatter3d.line.ColorBar
+                    plotly_study.graph_objects.scatter3d.line.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -33213,7 +33213,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.Line
+        plotly_study.graph_objs.scatter3d.Line
         """
         return self["line"]
 
@@ -33228,7 +33228,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.Marker
+          - An instance of plotly_study.graph_objs.scatter3d.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -33288,7 +33288,7 @@ class Scatter3d(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scatter3d.marker.ColorBar
+                    plotly_study.graph_objects.scatter3d.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -33310,7 +33310,7 @@ class Scatter3d(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.scatter3d.marker.Line
+                    plotly_study.graph_objects.scatter3d.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the marker opacity. Note that the marker
@@ -33356,7 +33356,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.Marker
+        plotly_study.graph_objs.scatter3d.Marker
         """
         return self["marker"]
 
@@ -33400,7 +33400,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -33489,25 +33489,25 @@ class Scatter3d(_BaseTraceType):
         """
         The 'projection' property is an instance of Projection
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.Projection
+          - An instance of plotly_study.graph_objs.scatter3d.Projection
           - A dict of string/value properties that will be passed
             to the Projection constructor
     
             Supported dict properties:
                 
                 x
-                    plotly.graph_objects.scatter3d.projection.X
+                    plotly_study.graph_objects.scatter3d.projection.X
                     instance or dict with compatible properties
                 y
-                    plotly.graph_objects.scatter3d.projection.Y
+                    plotly_study.graph_objects.scatter3d.projection.Y
                     instance or dict with compatible properties
                 z
-                    plotly.graph_objects.scatter3d.projection.Z
+                    plotly_study.graph_objects.scatter3d.projection.Z
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.Projection
+        plotly_study.graph_objs.scatter3d.Projection
         """
         return self["projection"]
 
@@ -33568,7 +33568,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.Stream
+          - An instance of plotly_study.graph_objs.scatter3d.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -33586,7 +33586,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.Stream
+        plotly_study.graph_objs.scatter3d.Stream
         """
         return self["stream"]
 
@@ -33710,7 +33710,7 @@ class Scatter3d(_BaseTraceType):
         """
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.Textfont
+          - An instance of plotly_study.graph_objs.scatter3d.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -33745,7 +33745,7 @@ class Scatter3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.Textfont
+        plotly_study.graph_objs.scatter3d.Textfont
         """
         return self["textfont"]
 
@@ -33786,7 +33786,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -33806,7 +33806,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -33861,7 +33861,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -34003,7 +34003,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -34067,7 +34067,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -34131,7 +34131,7 @@ class Scatter3d(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -34171,13 +34171,13 @@ class Scatter3d(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         error_x
-            plotly.graph_objects.scatter3d.ErrorX instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scatter3d.ErrorY instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorY instance or dict
             with compatible properties
         error_z
-            plotly.graph_objects.scatter3d.ErrorZ instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorZ instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -34187,7 +34187,7 @@ class Scatter3d(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatter3d.Hoverlabel instance or
+            plotly_study.graph_objects.scatter3d.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -34235,10 +34235,10 @@ class Scatter3d(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatter3d.Line instance or dict
+            plotly_study.graph_objects.scatter3d.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scatter3d.Marker instance or dict
+            plotly_study.graph_objects.scatter3d.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -34268,7 +34268,7 @@ class Scatter3d(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         projection
-            plotly.graph_objects.scatter3d.Projection instance or
+            plotly_study.graph_objects.scatter3d.Projection instance or
             dict with compatible properties
         scene
             Sets a reference between this trace's 3D coordinate
@@ -34280,7 +34280,7 @@ class Scatter3d(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatter3d.Stream instance or dict
+            plotly_study.graph_objects.scatter3d.Stream instance or dict
             with compatible properties
         surfaceaxis
             If "-1", the scatter points are not fill with a surface
@@ -34297,7 +34297,7 @@ class Scatter3d(_BaseTraceType):
             flag and "hovertext" is not set, these elements will be
             seen in the hover labels.
         textfont
-            plotly.graph_objects.scatter3d.Textfont instance or
+            plotly_study.graph_objects.scatter3d.Textfont instance or
             dict with compatible properties
         textposition
             Sets the positions of the `text` elements with respects
@@ -34440,7 +34440,7 @@ class Scatter3d(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scatter3d
+            an instance of plotly_study.graph_objs.Scatter3d
         connectgaps
             Determines whether or not gaps (i.e. {nan} or missing
             values) in the provided data arrays are connected.
@@ -34452,13 +34452,13 @@ class Scatter3d(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         error_x
-            plotly.graph_objects.scatter3d.ErrorX instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scatter3d.ErrorY instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorY instance or dict
             with compatible properties
         error_z
-            plotly.graph_objects.scatter3d.ErrorZ instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorZ instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -34468,7 +34468,7 @@ class Scatter3d(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatter3d.Hoverlabel instance or
+            plotly_study.graph_objects.scatter3d.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -34516,10 +34516,10 @@ class Scatter3d(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatter3d.Line instance or dict
+            plotly_study.graph_objects.scatter3d.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scatter3d.Marker instance or dict
+            plotly_study.graph_objects.scatter3d.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -34549,7 +34549,7 @@ class Scatter3d(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         projection
-            plotly.graph_objects.scatter3d.Projection instance or
+            plotly_study.graph_objects.scatter3d.Projection instance or
             dict with compatible properties
         scene
             Sets a reference between this trace's 3D coordinate
@@ -34561,7 +34561,7 @@ class Scatter3d(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatter3d.Stream instance or dict
+            plotly_study.graph_objects.scatter3d.Stream instance or dict
             with compatible properties
         surfaceaxis
             If "-1", the scatter points are not fill with a surface
@@ -34578,7 +34578,7 @@ class Scatter3d(_BaseTraceType):
             flag and "hovertext" is not set, these elements will be
             seen in the hover labels.
         textfont
-            plotly.graph_objects.scatter3d.Textfont instance or
+            plotly_study.graph_objects.scatter3d.Textfont instance or
             dict with compatible properties
         textposition
             Sets the positions of the `text` elements with respects
@@ -34670,9 +34670,9 @@ class Scatter3d(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scatter3d 
+The first argument to the plotly_study.graph_objs.Scatter3d 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scatter3d"""
+an instance of plotly_study.graph_objs.Scatter3d"""
             )
 
         # Handle skip_invalid
@@ -34681,7 +34681,7 @@ an instance of plotly.graph_objs.Scatter3d"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scatter3d as v_scatter3d
+        from plotly_study.validators import scatter3d as v_scatter3d
 
         # Initialize validators
         # ---------------------
@@ -34854,7 +34854,7 @@ an instance of plotly.graph_objs.Scatter3d"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -34935,7 +34935,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -34994,7 +34994,7 @@ class Scatter(_BaseTraceType):
         """
         The 'error_x' property is an instance of ErrorX
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.ErrorX
+          - An instance of plotly_study.graph_objs.scatter.ErrorX
           - A dict of string/value properties that will be passed
             to the ErrorX constructor
     
@@ -35060,7 +35060,7 @@ class Scatter(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter.ErrorX
+        plotly_study.graph_objs.scatter.ErrorX
         """
         return self["error_x"]
 
@@ -35075,7 +35075,7 @@ class Scatter(_BaseTraceType):
         """
         The 'error_y' property is an instance of ErrorY
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.ErrorY
+          - An instance of plotly_study.graph_objs.scatter.ErrorY
           - A dict of string/value properties that will be passed
             to the ErrorY constructor
     
@@ -35139,7 +35139,7 @@ class Scatter(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter.ErrorY
+        plotly_study.graph_objs.scatter.ErrorY
         """
         return self["error_y"]
 
@@ -35311,7 +35311,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -35330,7 +35330,7 @@ class Scatter(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.Hoverlabel
+          - An instance of plotly_study.graph_objs.scatter.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -35374,7 +35374,7 @@ class Scatter(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter.Hoverlabel
+        plotly_study.graph_objs.scatter.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -35456,7 +35456,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -35502,7 +35502,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -35544,7 +35544,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -35586,7 +35586,7 @@ class Scatter(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.Line
+          - An instance of plotly_study.graph_objs.scatter.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -35620,7 +35620,7 @@ class Scatter(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter.Line
+        plotly_study.graph_objs.scatter.Line
         """
         return self["line"]
 
@@ -35635,7 +35635,7 @@ class Scatter(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.Marker
+          - An instance of plotly_study.graph_objs.scatter.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -35695,7 +35695,7 @@ class Scatter(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.scatter.marker.ColorBar
+                    plotly_study.graph_objects.scatter.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -35717,10 +35717,10 @@ class Scatter(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 gradient
-                    plotly.graph_objects.scatter.marker.Gradient
+                    plotly_study.graph_objects.scatter.marker.Gradient
                     instance or dict with compatible properties
                 line
-                    plotly.graph_objects.scatter.marker.Line
+                    plotly_study.graph_objects.scatter.marker.Line
                     instance or dict with compatible properties
                 maxdisplayed
                     Sets a maximum number of points to be drawn on
@@ -35772,7 +35772,7 @@ class Scatter(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter.Marker
+        plotly_study.graph_objs.scatter.Marker
         """
         return self["marker"]
 
@@ -35816,7 +35816,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -35954,7 +35954,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  r .
     
         The 'rsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -35973,22 +35973,22 @@ class Scatter(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.Selected
+          - An instance of plotly_study.graph_objs.scatter.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatter.selected.Marker
+                    plotly_study.graph_objects.scatter.selected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scatter.selected.Textfont
+                    plotly_study.graph_objects.scatter.selected.Textfont
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.scatter.Selected
+        plotly_study.graph_objs.scatter.Selected
         """
         return self["selected"]
 
@@ -36108,7 +36108,7 @@ class Scatter(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.Stream
+          - An instance of plotly_study.graph_objs.scatter.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -36126,7 +36126,7 @@ class Scatter(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter.Stream
+        plotly_study.graph_objs.scatter.Stream
         """
         return self["stream"]
 
@@ -36192,7 +36192,7 @@ class Scatter(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.Textfont
+          - An instance of plotly_study.graph_objs.scatter.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -36230,7 +36230,7 @@ class Scatter(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.scatter.Textfont
+        plotly_study.graph_objs.scatter.Textfont
         """
         return self["textfont"]
 
@@ -36271,7 +36271,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -36291,7 +36291,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -36346,7 +36346,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -36366,7 +36366,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  t .
     
         The 'tsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -36440,22 +36440,22 @@ class Scatter(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter.Unselected
+          - An instance of plotly_study.graph_objs.scatter.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.scatter.unselected.Marker
+                    plotly_study.graph_objects.scatter.unselected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.scatter.unselected.Textfon
+                    plotly_study.graph_objects.scatter.unselected.Textfon
                     t instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.scatter.Unselected
+        plotly_study.graph_objs.scatter.Unselected
         """
         return self["unselected"]
 
@@ -36584,7 +36584,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -36694,7 +36694,7 @@ class Scatter(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -36744,10 +36744,10 @@ class Scatter(_BaseTraceType):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.scatter.ErrorX instance or dict
+            plotly_study.graph_objects.scatter.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scatter.ErrorY instance or dict
+            plotly_study.graph_objects.scatter.ErrorY instance or dict
             with compatible properties
         fill
             Sets the area to fill with a solid color. Defaults to
@@ -36795,7 +36795,7 @@ class Scatter(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatter.Hoverlabel instance or
+            plotly_study.graph_objects.scatter.Hoverlabel instance or
             dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -36849,10 +36849,10 @@ class Scatter(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatter.Line instance or dict with
+            plotly_study.graph_objects.scatter.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.scatter.Marker instance or dict
+            plotly_study.graph_objects.scatter.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -36895,7 +36895,7 @@ class Scatter(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatter.Selected instance or dict
+            plotly_study.graph_objects.scatter.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -36932,7 +36932,7 @@ class Scatter(_BaseTraceType):
             fill-linked traces are not already consecutive, the
             later ones will be pushed down in the drawing order.
         stream
-            plotly.graph_objects.scatter.Stream instance or dict
+            plotly_study.graph_objects.scatter.Stream instance or dict
             with compatible properties
         t
             t coordinates in scatter traces are deprecated!Please
@@ -37000,7 +37000,7 @@ class Scatter(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatter.Unselected instance or
+            plotly_study.graph_objects.scatter.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -37119,7 +37119,7 @@ class Scatter(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Scatter
+            an instance of plotly_study.graph_objs.Scatter
         cliponaxis
             Determines whether or not markers and text nodes are
             clipped about the subplot axes. To show markers and
@@ -37141,10 +37141,10 @@ class Scatter(_BaseTraceType):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.scatter.ErrorX instance or dict
+            plotly_study.graph_objects.scatter.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scatter.ErrorY instance or dict
+            plotly_study.graph_objects.scatter.ErrorY instance or dict
             with compatible properties
         fill
             Sets the area to fill with a solid color. Defaults to
@@ -37192,7 +37192,7 @@ class Scatter(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatter.Hoverlabel instance or
+            plotly_study.graph_objects.scatter.Hoverlabel instance or
             dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -37246,10 +37246,10 @@ class Scatter(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatter.Line instance or dict with
+            plotly_study.graph_objects.scatter.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.scatter.Marker instance or dict
+            plotly_study.graph_objects.scatter.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -37292,7 +37292,7 @@ class Scatter(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatter.Selected instance or dict
+            plotly_study.graph_objects.scatter.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -37329,7 +37329,7 @@ class Scatter(_BaseTraceType):
             fill-linked traces are not already consecutive, the
             later ones will be pushed down in the drawing order.
         stream
-            plotly.graph_objects.scatter.Stream instance or dict
+            plotly_study.graph_objects.scatter.Stream instance or dict
             with compatible properties
         t
             t coordinates in scatter traces are deprecated!Please
@@ -37397,7 +37397,7 @@ class Scatter(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatter.Unselected instance or
+            plotly_study.graph_objects.scatter.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -37452,9 +37452,9 @@ class Scatter(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Scatter 
+The first argument to the plotly_study.graph_objs.Scatter 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Scatter"""
+an instance of plotly_study.graph_objs.Scatter"""
             )
 
         # Handle skip_invalid
@@ -37463,7 +37463,7 @@ an instance of plotly.graph_objs.Scatter"""
 
         # Import validators
         # -----------------
-        from plotly.validators import scatter as v_scatter
+        from plotly_study.validators import scatter as v_scatter
 
         # Initialize validators
         # ---------------------
@@ -37675,7 +37675,7 @@ an instance of plotly.graph_objs.Scatter"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -37739,7 +37739,7 @@ class Sankey(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -37758,7 +37758,7 @@ class Sankey(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.sankey.Domain
+          - An instance of plotly_study.graph_objs.sankey.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -37779,7 +37779,7 @@ class Sankey(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sankey.Domain
+        plotly_study.graph_objs.sankey.Domain
         """
         return self["domain"]
 
@@ -37821,7 +37821,7 @@ class Sankey(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.sankey.Hoverlabel
+          - An instance of plotly_study.graph_objs.sankey.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -37865,7 +37865,7 @@ class Sankey(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sankey.Hoverlabel
+        plotly_study.graph_objs.sankey.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -37903,7 +37903,7 @@ class Sankey(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -37924,7 +37924,7 @@ class Sankey(_BaseTraceType):
     
         The 'link' property is an instance of Link
         that may be specified as:
-          - An instance of plotly.graph_objs.sankey.Link
+          - An instance of plotly_study.graph_objs.sankey.Link
           - A dict of string/value properties that will be passed
             to the Link constructor
     
@@ -37938,7 +37938,7 @@ class Sankey(_BaseTraceType):
                     used.
                 colorscales
                     A tuple of
-                    plotly.graph_objects.sankey.link.Colorscale
+                    plotly_study.graph_objects.sankey.link.Colorscale
                     instances or dicts with compatible properties
                 colorscaledefaults
                     When used in a template (as layout.template.dat
@@ -37955,7 +37955,7 @@ class Sankey(_BaseTraceType):
                     `none` is set, click and hover events are still
                     fired.
                 hoverlabel
-                    plotly.graph_objects.sankey.link.Hoverlabel
+                    plotly_study.graph_objects.sankey.link.Hoverlabel
                     instance or dict with compatible properties
                 hovertemplate
                     Template string used for rendering the
@@ -37995,7 +37995,7 @@ class Sankey(_BaseTraceType):
                     Sets the source reference on plot.ly for  label
                     .
                 line
-                    plotly.graph_objects.sankey.link.Line instance
+                    plotly_study.graph_objects.sankey.link.Line instance
                     or dict with compatible properties
                 source
                     An integer number `[0..nodes.length - 1]` that
@@ -38018,7 +38018,7 @@ class Sankey(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sankey.Link
+        plotly_study.graph_objs.sankey.Link
         """
         return self["link"]
 
@@ -38062,7 +38062,7 @@ class Sankey(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -38105,7 +38105,7 @@ class Sankey(_BaseTraceType):
     
         The 'node' property is an instance of Node
         that may be specified as:
-          - An instance of plotly.graph_objs.sankey.Node
+          - An instance of plotly_study.graph_objs.sankey.Node
           - A dict of string/value properties that will be passed
             to the Node constructor
     
@@ -38133,7 +38133,7 @@ class Sankey(_BaseTraceType):
                     `none` is set, click and hover events are still
                     fired.
                 hoverlabel
-                    plotly.graph_objects.sankey.node.Hoverlabel
+                    plotly_study.graph_objects.sankey.node.Hoverlabel
                     instance or dict with compatible properties
                 hovertemplate
                     Template string used for rendering the
@@ -38173,7 +38173,7 @@ class Sankey(_BaseTraceType):
                     Sets the source reference on plot.ly for  label
                     .
                 line
-                    plotly.graph_objects.sankey.node.Line instance
+                    plotly_study.graph_objects.sankey.node.Line instance
                     or dict with compatible properties
                 pad
                     Sets the padding (in px) between the `nodes`.
@@ -38190,7 +38190,7 @@ class Sankey(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sankey.Node
+        plotly_study.graph_objs.sankey.Node
         """
         return self["node"]
 
@@ -38250,7 +38250,7 @@ class Sankey(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.sankey.Stream
+          - An instance of plotly_study.graph_objs.sankey.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -38268,7 +38268,7 @@ class Sankey(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sankey.Stream
+        plotly_study.graph_objs.sankey.Stream
         """
         return self["stream"]
 
@@ -38285,7 +38285,7 @@ class Sankey(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.sankey.Textfont
+          - An instance of plotly_study.graph_objs.sankey.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -38313,7 +38313,7 @@ class Sankey(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.sankey.Textfont
+        plotly_study.graph_objs.sankey.Textfont
         """
         return self["textfont"]
 
@@ -38478,7 +38478,7 @@ class Sankey(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.sankey.Domain instance or dict
+            plotly_study.graph_objects.sankey.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -38488,7 +38488,7 @@ class Sankey(_BaseTraceType):
             superseded by `node.hoverinfo` and `node.hoverinfo` for
             nodes and links respectively.
         hoverlabel
-            plotly.graph_objects.sankey.Hoverlabel instance or dict
+            plotly_study.graph_objects.sankey.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -38528,7 +38528,7 @@ class Sankey(_BaseTraceType):
             any other non-array values means no selection all where
             the `selected` and `unselected` styles have no effect.
         stream
-            plotly.graph_objects.sankey.Stream instance or dict
+            plotly_study.graph_objects.sankey.Stream instance or dict
             with compatible properties
         textfont
             Sets the font for node labels
@@ -38609,7 +38609,7 @@ class Sankey(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Sankey
+            an instance of plotly_study.graph_objs.Sankey
         arrangement
             If value is `snap` (the default), the node arrangement
             is assisted by automatic snapping of elements to
@@ -38626,7 +38626,7 @@ class Sankey(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.sankey.Domain instance or dict
+            plotly_study.graph_objects.sankey.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -38636,7 +38636,7 @@ class Sankey(_BaseTraceType):
             superseded by `node.hoverinfo` and `node.hoverinfo` for
             nodes and links respectively.
         hoverlabel
-            plotly.graph_objects.sankey.Hoverlabel instance or dict
+            plotly_study.graph_objects.sankey.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -38676,7 +38676,7 @@ class Sankey(_BaseTraceType):
             any other non-array values means no selection all where
             the `selected` and `unselected` styles have no effect.
         stream
-            plotly.graph_objects.sankey.Stream instance or dict
+            plotly_study.graph_objects.sankey.Stream instance or dict
             with compatible properties
         textfont
             Sets the font for node labels
@@ -38734,9 +38734,9 @@ class Sankey(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Sankey 
+The first argument to the plotly_study.graph_objs.Sankey 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Sankey"""
+an instance of plotly_study.graph_objs.Sankey"""
             )
 
         # Handle skip_invalid
@@ -38745,7 +38745,7 @@ an instance of plotly.graph_objs.Sankey"""
 
         # Import validators
         # -----------------
-        from plotly.validators import sankey as v_sankey
+        from plotly_study.validators import sankey as v_sankey
 
         # Initialize validators
         # ---------------------
@@ -38838,7 +38838,7 @@ an instance of plotly.graph_objs.Sankey"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -38875,7 +38875,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -38921,7 +38921,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -38940,7 +38940,7 @@ class Pointcloud(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.pointcloud.Hoverlabel
+          - An instance of plotly_study.graph_objs.pointcloud.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -38984,7 +38984,7 @@ class Pointcloud(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pointcloud.Hoverlabel
+        plotly_study.graph_objs.pointcloud.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -39022,7 +39022,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39045,7 +39045,7 @@ class Pointcloud(_BaseTraceType):
         the number of points. For the best performance and memory use,
         create one large `indices` typed array that is guaranteed to be
         at least as long as the largest number of points during use,
-        and reuse it on each `Plotly.restyle()` call.
+        and reuse it on each `plotly_study.restyle()` call.
     
         The 'indices' property is an array that may be specified as a tuple,
         list, numpy array, or pandas Series
@@ -39068,7 +39068,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  indices .
     
         The 'indicessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39110,7 +39110,7 @@ class Pointcloud(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.pointcloud.Marker
+          - An instance of plotly_study.graph_objs.pointcloud.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -39123,7 +39123,7 @@ class Pointcloud(_BaseTraceType):
                     `blend` to `true` reduces zoom/pan speed if
                     used with large numbers of points.
                 border
-                    plotly.graph_objects.pointcloud.marker.Border
+                    plotly_study.graph_objects.pointcloud.marker.Border
                     instance or dict with compatible properties
                 color
                     Sets the marker fill color. It accepts a
@@ -39149,7 +39149,7 @@ class Pointcloud(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pointcloud.Marker
+        plotly_study.graph_objs.pointcloud.Marker
         """
         return self["marker"]
 
@@ -39193,7 +39193,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39275,7 +39275,7 @@ class Pointcloud(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.pointcloud.Stream
+          - An instance of plotly_study.graph_objs.pointcloud.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -39293,7 +39293,7 @@ class Pointcloud(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pointcloud.Stream
+        plotly_study.graph_objs.pointcloud.Stream
         """
         return self["stream"]
 
@@ -39336,7 +39336,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39501,7 +39501,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  xbounds .
     
         The 'xboundssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39521,7 +39521,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39564,7 +39564,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  xy .
     
         The 'xysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39651,7 +39651,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  ybounds .
     
         The 'yboundssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39671,7 +39671,7 @@ class Pointcloud(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -39715,7 +39715,7 @@ class Pointcloud(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.pointcloud.Hoverlabel instance or
+            plotly_study.graph_objects.pointcloud.Hoverlabel instance or
             dict with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -39731,7 +39731,7 @@ class Pointcloud(_BaseTraceType):
             performance and memory use, create one large `indices`
             typed array that is guaranteed to be at least as long
             as the largest number of points during use, and reuse
-            it on each `Plotly.restyle()` call.
+            it on each `plotly_study.restyle()` call.
         indicessrc
             Sets the source reference on plot.ly for  indices .
         legendgroup
@@ -39739,7 +39739,7 @@ class Pointcloud(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.pointcloud.Marker instance or dict
+            plotly_study.graph_objects.pointcloud.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -39765,7 +39765,7 @@ class Pointcloud(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.pointcloud.Stream instance or dict
+            plotly_study.graph_objects.pointcloud.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -39894,7 +39894,7 @@ class Pointcloud(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Pointcloud
+            an instance of plotly_study.graph_objs.Pointcloud
         customdata
             Assigns extra data each datum. This may be useful when
             listening to hover, click and selection events. Note
@@ -39910,7 +39910,7 @@ class Pointcloud(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.pointcloud.Hoverlabel instance or
+            plotly_study.graph_objects.pointcloud.Hoverlabel instance or
             dict with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -39926,7 +39926,7 @@ class Pointcloud(_BaseTraceType):
             performance and memory use, create one large `indices`
             typed array that is guaranteed to be at least as long
             as the largest number of points during use, and reuse
-            it on each `Plotly.restyle()` call.
+            it on each `plotly_study.restyle()` call.
         indicessrc
             Sets the source reference on plot.ly for  indices .
         legendgroup
@@ -39934,7 +39934,7 @@ class Pointcloud(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.pointcloud.Marker instance or dict
+            plotly_study.graph_objects.pointcloud.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -39960,7 +39960,7 @@ class Pointcloud(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.pointcloud.Stream instance or dict
+            plotly_study.graph_objects.pointcloud.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -40056,9 +40056,9 @@ class Pointcloud(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Pointcloud 
+The first argument to the plotly_study.graph_objs.Pointcloud 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Pointcloud"""
+an instance of plotly_study.graph_objs.Pointcloud"""
             )
 
         # Handle skip_invalid
@@ -40067,7 +40067,7 @@ an instance of plotly.graph_objs.Pointcloud"""
 
         # Import validators
         # -----------------
-        from plotly.validators import pointcloud as v_pointcloud
+        from plotly_study.validators import pointcloud as v_pointcloud
 
         # Initialize validators
         # ---------------------
@@ -40196,7 +40196,7 @@ an instance of plotly.graph_objs.Pointcloud"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -40253,7 +40253,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -40314,7 +40314,7 @@ class Pie(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Domain
+          - An instance of plotly_study.graph_objs.pie.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -40335,7 +40335,7 @@ class Pie(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pie.Domain
+        plotly_study.graph_objs.pie.Domain
         """
         return self["domain"]
 
@@ -40398,7 +40398,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -40417,7 +40417,7 @@ class Pie(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Hoverlabel
+          - An instance of plotly_study.graph_objs.pie.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -40461,7 +40461,7 @@ class Pie(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pie.Hoverlabel
+        plotly_study.graph_objs.pie.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -40519,7 +40519,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -40565,7 +40565,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -40607,7 +40607,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -40628,7 +40628,7 @@ class Pie(_BaseTraceType):
     
         The 'insidetextfont' property is an instance of Insidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Insidetextfont
+          - An instance of plotly_study.graph_objs.pie.Insidetextfont
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
     
@@ -40666,7 +40666,7 @@ class Pie(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pie.Insidetextfont
+        plotly_study.graph_objs.pie.Insidetextfont
         """
         return self["insidetextfont"]
 
@@ -40728,7 +40728,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  labels .
     
         The 'labelssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -40770,7 +40770,7 @@ class Pie(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Marker
+          - An instance of plotly_study.graph_objs.pie.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -40784,12 +40784,12 @@ class Pie(_BaseTraceType):
                     Sets the source reference on plot.ly for
                     colors .
                 line
-                    plotly.graph_objects.pie.marker.Line instance
+                    plotly_study.graph_objects.pie.marker.Line instance
                     or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.pie.Marker
+        plotly_study.graph_objs.pie.Marker
         """
         return self["marker"]
 
@@ -40833,7 +40833,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -40896,7 +40896,7 @@ class Pie(_BaseTraceType):
     
         The 'outsidetextfont' property is an instance of Outsidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Outsidetextfont
+          - An instance of plotly_study.graph_objs.pie.Outsidetextfont
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
     
@@ -40934,7 +40934,7 @@ class Pie(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pie.Outsidetextfont
+        plotly_study.graph_objs.pie.Outsidetextfont
         """
         return self["outsidetextfont"]
 
@@ -40974,7 +40974,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  pull .
     
         The 'pullsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -41079,7 +41079,7 @@ class Pie(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Stream
+          - An instance of plotly_study.graph_objs.pie.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -41097,7 +41097,7 @@ class Pie(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pie.Stream
+        plotly_study.graph_objs.pie.Stream
         """
         return self["stream"]
 
@@ -41138,7 +41138,7 @@ class Pie(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Textfont
+          - An instance of plotly_study.graph_objs.pie.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -41176,7 +41176,7 @@ class Pie(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pie.Textfont
+        plotly_study.graph_objs.pie.Textfont
         """
         return self["textfont"]
 
@@ -41237,7 +41237,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -41257,7 +41257,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -41313,7 +41313,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -41332,7 +41332,7 @@ class Pie(_BaseTraceType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.Title
+          - An instance of plotly_study.graph_objs.pie.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -41355,7 +41355,7 @@ class Pie(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.pie.Title
+        plotly_study.graph_objs.pie.Title
         """
         return self["title"]
 
@@ -41374,7 +41374,7 @@ class Pie(_BaseTraceType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.title.Font
+          - An instance of plotly_study.graph_objs.pie.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -41528,7 +41528,7 @@ class Pie(_BaseTraceType):
         Sets the source reference on plot.ly for  values .
     
         The 'valuessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -41596,7 +41596,7 @@ class Pie(_BaseTraceType):
         dlabel
             Sets the label step. See `label0` for more info.
         domain
-            plotly.graph_objects.pie.Domain instance or dict with
+            plotly_study.graph_objects.pie.Domain instance or dict with
             compatible properties
         hole
             Sets the fraction of the radius to cut out of the pie.
@@ -41609,7 +41609,7 @@ class Pie(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.pie.Hoverlabel instance or dict
+            plotly_study.graph_objects.pie.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -41673,7 +41673,7 @@ class Pie(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.pie.Marker instance or dict with
+            plotly_study.graph_objects.pie.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -41720,7 +41720,7 @@ class Pie(_BaseTraceType):
             Determines whether or not the sectors are reordered
             from largest to smallest.
         stream
-            plotly.graph_objects.pie.Stream instance or dict with
+            plotly_study.graph_objects.pie.Stream instance or dict with
             compatible properties
         text
             Sets text elements associated with each sector. If
@@ -41760,7 +41760,7 @@ class Pie(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         title
-            plotly.graph_objects.pie.Title instance or dict with
+            plotly_study.graph_objects.pie.Title instance or dict with
             compatible properties
         titlefont
             Deprecated: Please use pie.title.font instead. Sets the
@@ -41876,7 +41876,7 @@ class Pie(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Pie
+            an instance of plotly_study.graph_objs.Pie
         automargin
             Determines whether outside text labels can push the
             margins.
@@ -41893,7 +41893,7 @@ class Pie(_BaseTraceType):
         dlabel
             Sets the label step. See `label0` for more info.
         domain
-            plotly.graph_objects.pie.Domain instance or dict with
+            plotly_study.graph_objects.pie.Domain instance or dict with
             compatible properties
         hole
             Sets the fraction of the radius to cut out of the pie.
@@ -41906,7 +41906,7 @@ class Pie(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.pie.Hoverlabel instance or dict
+            plotly_study.graph_objects.pie.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -41970,7 +41970,7 @@ class Pie(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.pie.Marker instance or dict with
+            plotly_study.graph_objects.pie.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -42017,7 +42017,7 @@ class Pie(_BaseTraceType):
             Determines whether or not the sectors are reordered
             from largest to smallest.
         stream
-            plotly.graph_objects.pie.Stream instance or dict with
+            plotly_study.graph_objects.pie.Stream instance or dict with
             compatible properties
         text
             Sets text elements associated with each sector. If
@@ -42057,7 +42057,7 @@ class Pie(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         title
-            plotly.graph_objects.pie.Title instance or dict with
+            plotly_study.graph_objects.pie.Title instance or dict with
             compatible properties
         titlefont
             Deprecated: Please use pie.title.font instead. Sets the
@@ -42118,9 +42118,9 @@ class Pie(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Pie 
+The first argument to the plotly_study.graph_objs.Pie 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Pie"""
+an instance of plotly_study.graph_objs.Pie"""
             )
 
         # Handle skip_invalid
@@ -42129,7 +42129,7 @@ an instance of plotly.graph_objs.Pie"""
 
         # Import validators
         # -----------------
-        from plotly.validators import pie as v_pie
+        from plotly_study.validators import pie as v_pie
 
         # Initialize validators
         # ---------------------
@@ -42310,7 +42310,7 @@ an instance of plotly.graph_objs.Pie"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -42347,7 +42347,7 @@ class Parcoords(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -42369,7 +42369,7 @@ class Parcoords(_BaseTraceType):
     
         The 'dimensions' property is a tuple of instances of
         Dimension that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.parcoords.Dimension
+          - A list or tuple of instances of plotly_study.graph_objs.parcoords.Dimension
           - A list or tuple of dicts of string/value properties that
             will be passed to the Dimension constructor
     
@@ -42455,7 +42455,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.parcoords.Dimension]
+        tuple[plotly_study.graph_objs.parcoords.Dimension]
         """
         return self["dimensions"]
 
@@ -42475,7 +42475,7 @@ class Parcoords(_BaseTraceType):
     
         The 'dimensiondefaults' property is an instance of Dimension
         that may be specified as:
-          - An instance of plotly.graph_objs.parcoords.Dimension
+          - An instance of plotly_study.graph_objs.parcoords.Dimension
           - A dict of string/value properties that will be passed
             to the Dimension constructor
     
@@ -42483,7 +42483,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcoords.Dimension
+        plotly_study.graph_objs.parcoords.Dimension
         """
         return self["dimensiondefaults"]
 
@@ -42498,7 +42498,7 @@ class Parcoords(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.parcoords.Domain
+          - An instance of plotly_study.graph_objs.parcoords.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -42520,7 +42520,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcoords.Domain
+        plotly_study.graph_objs.parcoords.Domain
         """
         return self["domain"]
 
@@ -42558,7 +42558,7 @@ class Parcoords(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -42604,7 +42604,7 @@ class Parcoords(_BaseTraceType):
     
         The 'labelfont' property is an instance of Labelfont
         that may be specified as:
-          - An instance of plotly.graph_objs.parcoords.Labelfont
+          - An instance of plotly_study.graph_objs.parcoords.Labelfont
           - A dict of string/value properties that will be passed
             to the Labelfont constructor
     
@@ -42632,7 +42632,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcoords.Labelfont
+        plotly_study.graph_objs.parcoords.Labelfont
         """
         return self["labelfont"]
 
@@ -42671,7 +42671,7 @@ class Parcoords(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.parcoords.Line
+          - An instance of plotly_study.graph_objs.parcoords.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -42731,7 +42731,7 @@ class Parcoords(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.parcoords.line.ColorBar
+                    plotly_study.graph_objects.parcoords.line.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -42765,7 +42765,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcoords.Line
+        plotly_study.graph_objs.parcoords.Line
         """
         return self["line"]
 
@@ -42809,7 +42809,7 @@ class Parcoords(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -42852,7 +42852,7 @@ class Parcoords(_BaseTraceType):
     
         The 'rangefont' property is an instance of Rangefont
         that may be specified as:
-          - An instance of plotly.graph_objs.parcoords.Rangefont
+          - An instance of plotly_study.graph_objs.parcoords.Rangefont
           - A dict of string/value properties that will be passed
             to the Rangefont constructor
     
@@ -42880,7 +42880,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcoords.Rangefont
+        plotly_study.graph_objs.parcoords.Rangefont
         """
         return self["rangefont"]
 
@@ -42895,7 +42895,7 @@ class Parcoords(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.parcoords.Stream
+          - An instance of plotly_study.graph_objs.parcoords.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -42913,7 +42913,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcoords.Stream
+        plotly_study.graph_objs.parcoords.Stream
         """
         return self["stream"]
 
@@ -42930,7 +42930,7 @@ class Parcoords(_BaseTraceType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.parcoords.Tickfont
+          - An instance of plotly_study.graph_objs.parcoords.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -42958,7 +42958,7 @@ class Parcoords(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcoords.Tickfont
+        plotly_study.graph_objs.parcoords.Tickfont
         """
         return self["tickfont"]
 
@@ -43077,7 +43077,7 @@ class Parcoords(_BaseTraceType):
             the default property values to use for elements of
             parcoords.dimensions
         domain
-            plotly.graph_objects.parcoords.Domain instance or dict
+            plotly_study.graph_objects.parcoords.Domain instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -43100,7 +43100,7 @@ class Parcoords(_BaseTraceType):
             may be positioned better inside margins when
             `labelposition` is set to "bottom".
         line
-            plotly.graph_objects.parcoords.Line instance or dict
+            plotly_study.graph_objects.parcoords.Line instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -43123,7 +43123,7 @@ class Parcoords(_BaseTraceType):
         rangefont
             Sets the font for the `dimension` range values.
         stream
-            plotly.graph_objects.parcoords.Stream instance or dict
+            plotly_study.graph_objects.parcoords.Stream instance or dict
             with compatible properties
         tickfont
             Sets the font for the `dimension` tick values.
@@ -43192,7 +43192,7 @@ class Parcoords(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Parcoords
+            an instance of plotly_study.graph_objs.Parcoords
         customdata
             Assigns extra data each datum. This may be useful when
             listening to hover, click and selection events. Note
@@ -43209,7 +43209,7 @@ class Parcoords(_BaseTraceType):
             the default property values to use for elements of
             parcoords.dimensions
         domain
-            plotly.graph_objects.parcoords.Domain instance or dict
+            plotly_study.graph_objects.parcoords.Domain instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -43232,7 +43232,7 @@ class Parcoords(_BaseTraceType):
             may be positioned better inside margins when
             `labelposition` is set to "bottom".
         line
-            plotly.graph_objects.parcoords.Line instance or dict
+            plotly_study.graph_objects.parcoords.Line instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -43255,7 +43255,7 @@ class Parcoords(_BaseTraceType):
         rangefont
             Sets the font for the `dimension` range values.
         stream
-            plotly.graph_objects.parcoords.Stream instance or dict
+            plotly_study.graph_objects.parcoords.Stream instance or dict
             with compatible properties
         tickfont
             Sets the font for the `dimension` tick values.
@@ -43304,9 +43304,9 @@ class Parcoords(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Parcoords 
+The first argument to the plotly_study.graph_objs.Parcoords 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Parcoords"""
+an instance of plotly_study.graph_objs.Parcoords"""
             )
 
         # Handle skip_invalid
@@ -43315,7 +43315,7 @@ an instance of plotly.graph_objs.Parcoords"""
 
         # Import validators
         # -----------------
-        from plotly.validators import parcoords as v_parcoords
+        from plotly_study.validators import parcoords as v_parcoords
 
         # Initialize validators
         # ---------------------
@@ -43404,7 +43404,7 @@ an instance of plotly.graph_objs.Parcoords"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -43486,7 +43486,7 @@ class Parcats(_BaseTraceType):
         Sets the source reference on plot.ly for  counts .
     
         The 'countssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -43507,7 +43507,7 @@ class Parcats(_BaseTraceType):
     
         The 'dimensions' property is a tuple of instances of
         Dimension that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.parcats.Dimension
+          - A list or tuple of instances of plotly_study.graph_objs.parcats.Dimension
           - A list or tuple of dicts of string/value properties that
             will be passed to the Dimension constructor
     
@@ -43566,7 +43566,7 @@ class Parcats(_BaseTraceType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.parcats.Dimension]
+        tuple[plotly_study.graph_objs.parcats.Dimension]
         """
         return self["dimensions"]
 
@@ -43586,7 +43586,7 @@ class Parcats(_BaseTraceType):
     
         The 'dimensiondefaults' property is an instance of Dimension
         that may be specified as:
-          - An instance of plotly.graph_objs.parcats.Dimension
+          - An instance of plotly_study.graph_objs.parcats.Dimension
           - A dict of string/value properties that will be passed
             to the Dimension constructor
     
@@ -43594,7 +43594,7 @@ class Parcats(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcats.Dimension
+        plotly_study.graph_objs.parcats.Dimension
         """
         return self["dimensiondefaults"]
 
@@ -43609,7 +43609,7 @@ class Parcats(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.parcats.Domain
+          - An instance of plotly_study.graph_objs.parcats.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -43631,7 +43631,7 @@ class Parcats(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcats.Domain
+        plotly_study.graph_objs.parcats.Domain
         """
         return self["domain"]
 
@@ -43739,7 +43739,7 @@ class Parcats(_BaseTraceType):
     
         The 'labelfont' property is an instance of Labelfont
         that may be specified as:
-          - An instance of plotly.graph_objs.parcats.Labelfont
+          - An instance of plotly_study.graph_objs.parcats.Labelfont
           - A dict of string/value properties that will be passed
             to the Labelfont constructor
     
@@ -43767,7 +43767,7 @@ class Parcats(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcats.Labelfont
+        plotly_study.graph_objs.parcats.Labelfont
         """
         return self["labelfont"]
 
@@ -43782,7 +43782,7 @@ class Parcats(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.parcats.Line
+          - An instance of plotly_study.graph_objs.parcats.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -43842,7 +43842,7 @@ class Parcats(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.parcats.line.ColorBar
+                    plotly_study.graph_objects.parcats.line.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -43909,7 +43909,7 @@ class Parcats(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcats.Line
+        plotly_study.graph_objs.parcats.Line
         """
         return self["line"]
 
@@ -43953,7 +43953,7 @@ class Parcats(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -44017,7 +44017,7 @@ class Parcats(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.parcats.Stream
+          - An instance of plotly_study.graph_objs.parcats.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -44035,7 +44035,7 @@ class Parcats(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcats.Stream
+        plotly_study.graph_objs.parcats.Stream
         """
         return self["stream"]
 
@@ -44052,7 +44052,7 @@ class Parcats(_BaseTraceType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.parcats.Tickfont
+          - An instance of plotly_study.graph_objs.parcats.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -44080,7 +44080,7 @@ class Parcats(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.parcats.Tickfont
+        plotly_study.graph_objs.parcats.Tickfont
         """
         return self["tickfont"]
 
@@ -44208,7 +44208,7 @@ class Parcats(_BaseTraceType):
             the default property values to use for elements of
             parcats.dimensions
         domain
-            plotly.graph_objects.parcats.Domain instance or dict
+            plotly_study.graph_objects.parcats.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -44250,7 +44250,7 @@ class Parcats(_BaseTraceType):
         labelfont
             Sets the font for the `dimension` labels.
         line
-            plotly.graph_objects.parcats.Line instance or dict with
+            plotly_study.graph_objects.parcats.Line instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -44276,7 +44276,7 @@ class Parcats(_BaseTraceType):
             If `backward`, sort paths based on dimensions
             categories from right to left.
         stream
-            plotly.graph_objects.parcats.Stream instance or dict
+            plotly_study.graph_objects.parcats.Stream instance or dict
             with compatible properties
         tickfont
             Sets the font for the `category` labels.
@@ -44345,7 +44345,7 @@ class Parcats(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Parcats
+            an instance of plotly_study.graph_objs.Parcats
         arrangement
             Sets the drag interaction mode for categories and
             dimensions. If `perpendicular`, the categories can only
@@ -44371,7 +44371,7 @@ class Parcats(_BaseTraceType):
             the default property values to use for elements of
             parcats.dimensions
         domain
-            plotly.graph_objects.parcats.Domain instance or dict
+            plotly_study.graph_objects.parcats.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -44413,7 +44413,7 @@ class Parcats(_BaseTraceType):
         labelfont
             Sets the font for the `dimension` labels.
         line
-            plotly.graph_objects.parcats.Line instance or dict with
+            plotly_study.graph_objects.parcats.Line instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -44439,7 +44439,7 @@ class Parcats(_BaseTraceType):
             If `backward`, sort paths based on dimensions
             categories from right to left.
         stream
-            plotly.graph_objects.parcats.Stream instance or dict
+            plotly_study.graph_objects.parcats.Stream instance or dict
             with compatible properties
         tickfont
             Sets the font for the `category` labels.
@@ -44488,9 +44488,9 @@ class Parcats(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Parcats 
+The first argument to the plotly_study.graph_objs.Parcats 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Parcats"""
+an instance of plotly_study.graph_objs.Parcats"""
             )
 
         # Handle skip_invalid
@@ -44499,7 +44499,7 @@ an instance of plotly.graph_objs.Parcats"""
 
         # Import validators
         # -----------------
-        from plotly.validators import parcats as v_parcats
+        from plotly_study.validators import parcats as v_parcats
 
         # Initialize validators
         # ---------------------
@@ -44591,7 +44591,7 @@ an instance of plotly.graph_objs.Parcats"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -44625,7 +44625,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  close .
     
         The 'closesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -44668,7 +44668,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -44687,19 +44687,19 @@ class Ohlc(_BaseTraceType):
         """
         The 'decreasing' property is an instance of Decreasing
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.Decreasing
+          - An instance of plotly_study.graph_objs.ohlc.Decreasing
           - A dict of string/value properties that will be passed
             to the Decreasing constructor
     
             Supported dict properties:
                 
                 line
-                    plotly.graph_objects.ohlc.decreasing.Line
+                    plotly_study.graph_objects.ohlc.decreasing.Line
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.ohlc.Decreasing
+        plotly_study.graph_objs.ohlc.Decreasing
         """
         return self["decreasing"]
 
@@ -44735,7 +44735,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  high .
     
         The 'highsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -44781,7 +44781,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -44800,7 +44800,7 @@ class Ohlc(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.Hoverlabel
+          - An instance of plotly_study.graph_objs.ohlc.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -44847,7 +44847,7 @@ class Ohlc(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.ohlc.Hoverlabel
+        plotly_study.graph_objs.ohlc.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -44885,7 +44885,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -44927,7 +44927,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -44946,19 +44946,19 @@ class Ohlc(_BaseTraceType):
         """
         The 'increasing' property is an instance of Increasing
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.Increasing
+          - An instance of plotly_study.graph_objs.ohlc.Increasing
           - A dict of string/value properties that will be passed
             to the Increasing constructor
     
             Supported dict properties:
                 
                 line
-                    plotly.graph_objects.ohlc.increasing.Line
+                    plotly_study.graph_objects.ohlc.increasing.Line
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.ohlc.Increasing
+        plotly_study.graph_objs.ohlc.Increasing
         """
         return self["increasing"]
 
@@ -44996,7 +44996,7 @@ class Ohlc(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.Line
+          - An instance of plotly_study.graph_objs.ohlc.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -45018,7 +45018,7 @@ class Ohlc(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.ohlc.Line
+        plotly_study.graph_objs.ohlc.Line
         """
         return self["line"]
 
@@ -45054,7 +45054,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  low .
     
         The 'lowsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -45102,7 +45102,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -45184,7 +45184,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  open .
     
         The 'opensrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -45248,7 +45248,7 @@ class Ohlc(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.ohlc.Stream
+          - An instance of plotly_study.graph_objs.ohlc.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -45266,7 +45266,7 @@ class Ohlc(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.ohlc.Stream
+        plotly_study.graph_objs.ohlc.Stream
         """
         return self["stream"]
 
@@ -45307,7 +45307,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -45496,7 +45496,7 @@ class Ohlc(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -45562,7 +45562,7 @@ class Ohlc(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.ohlc.Decreasing instance or dict
+            plotly_study.graph_objects.ohlc.Decreasing instance or dict
             with compatible properties
         high
             Sets the high values.
@@ -45576,7 +45576,7 @@ class Ohlc(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.ohlc.Hoverlabel instance or dict
+            plotly_study.graph_objects.ohlc.Hoverlabel instance or dict
             with compatible properties
         hovertext
             Same as `text`.
@@ -45589,14 +45589,14 @@ class Ohlc(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.ohlc.Increasing instance or dict
+            plotly_study.graph_objects.ohlc.Increasing instance or dict
             with compatible properties
         legendgroup
             Sets the legend group for this trace. Traces part of
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.ohlc.Line instance or dict with
+            plotly_study.graph_objects.ohlc.Line instance or dict with
             compatible properties
         low
             Sets the low values.
@@ -45637,7 +45637,7 @@ class Ohlc(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.ohlc.Stream instance or dict with
+            plotly_study.graph_objects.ohlc.Stream instance or dict with
             compatible properties
         text
             Sets hover text elements associated with each sample
@@ -45755,7 +45755,7 @@ class Ohlc(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Ohlc
+            an instance of plotly_study.graph_objs.Ohlc
         close
             Sets the close values.
         closesrc
@@ -45768,7 +45768,7 @@ class Ohlc(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.ohlc.Decreasing instance or dict
+            plotly_study.graph_objects.ohlc.Decreasing instance or dict
             with compatible properties
         high
             Sets the high values.
@@ -45782,7 +45782,7 @@ class Ohlc(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.ohlc.Hoverlabel instance or dict
+            plotly_study.graph_objects.ohlc.Hoverlabel instance or dict
             with compatible properties
         hovertext
             Same as `text`.
@@ -45795,14 +45795,14 @@ class Ohlc(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.ohlc.Increasing instance or dict
+            plotly_study.graph_objects.ohlc.Increasing instance or dict
             with compatible properties
         legendgroup
             Sets the legend group for this trace. Traces part of
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.ohlc.Line instance or dict with
+            plotly_study.graph_objects.ohlc.Line instance or dict with
             compatible properties
         low
             Sets the low values.
@@ -45843,7 +45843,7 @@ class Ohlc(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.ohlc.Stream instance or dict with
+            plotly_study.graph_objects.ohlc.Stream instance or dict with
             compatible properties
         text
             Sets hover text elements associated with each sample
@@ -45917,9 +45917,9 @@ class Ohlc(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Ohlc 
+The first argument to the plotly_study.graph_objs.Ohlc 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Ohlc"""
+an instance of plotly_study.graph_objs.Ohlc"""
             )
 
         # Handle skip_invalid
@@ -45928,7 +45928,7 @@ an instance of plotly.graph_objs.Ohlc"""
 
         # Import validators
         # -----------------
-        from plotly.validators import ohlc as v_ohlc
+        from plotly_study.validators import ohlc as v_ohlc
 
         # Initialize validators
         # ---------------------
@@ -46072,7 +46072,7 @@ an instance of plotly.graph_objs.Ohlc"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -46323,7 +46323,7 @@ class Mesh3d(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.ColorBar
+          - An instance of plotly_study.graph_objs.mesh3d.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -46455,7 +46455,7 @@ class Mesh3d(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.mesh3d.colorbar
+                    A tuple of plotly_study.graph_objects.mesh3d.colorbar
                     .Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -46503,7 +46503,7 @@ class Mesh3d(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.mesh3d.colorbar.Title
+                    plotly_study.graph_objects.mesh3d.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -46542,7 +46542,7 @@ class Mesh3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.ColorBar
+        plotly_study.graph_objs.mesh3d.ColorBar
         """
         return self["colorbar"]
 
@@ -46570,7 +46570,7 @@ class Mesh3d(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -46608,7 +46608,7 @@ class Mesh3d(_BaseTraceType):
         """
         The 'contour' property is an instance of Contour
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.Contour
+          - An instance of plotly_study.graph_objs.mesh3d.Contour
           - A dict of string/value properties that will be passed
             to the Contour constructor
     
@@ -46624,7 +46624,7 @@ class Mesh3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.Contour
+        plotly_study.graph_objs.mesh3d.Contour
         """
         return self["contour"]
 
@@ -46663,7 +46663,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -46728,7 +46728,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  facecolor .
     
         The 'facecolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -46796,7 +46796,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -46815,7 +46815,7 @@ class Mesh3d(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.Hoverlabel
+          - An instance of plotly_study.graph_objs.mesh3d.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -46859,7 +46859,7 @@ class Mesh3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.Hoverlabel
+        plotly_study.graph_objs.mesh3d.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -46916,7 +46916,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -46958,7 +46958,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47026,7 +47026,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47067,7 +47067,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  intensity .
     
         The 'intensitysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47087,7 +47087,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  i .
     
         The 'isrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47133,7 +47133,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  j .
     
         The 'jsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47179,7 +47179,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  k .
     
         The 'ksrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47198,7 +47198,7 @@ class Mesh3d(_BaseTraceType):
         """
         The 'lighting' property is an instance of Lighting
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.Lighting
+          - An instance of plotly_study.graph_objs.mesh3d.Lighting
           - A dict of string/value properties that will be passed
             to the Lighting constructor
     
@@ -47231,7 +47231,7 @@ class Mesh3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.Lighting
+        plotly_study.graph_objs.mesh3d.Lighting
         """
         return self["lighting"]
 
@@ -47246,7 +47246,7 @@ class Mesh3d(_BaseTraceType):
         """
         The 'lightposition' property is an instance of Lightposition
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.Lightposition
+          - An instance of plotly_study.graph_objs.mesh3d.Lightposition
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
     
@@ -47264,7 +47264,7 @@ class Mesh3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.Lightposition
+        plotly_study.graph_objs.mesh3d.Lightposition
         """
         return self["lightposition"]
 
@@ -47308,7 +47308,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47442,7 +47442,7 @@ class Mesh3d(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.Stream
+          - An instance of plotly_study.graph_objs.mesh3d.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -47460,7 +47460,7 @@ class Mesh3d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.Stream
+        plotly_study.graph_objs.mesh3d.Stream
         """
         return self["stream"]
 
@@ -47500,7 +47500,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47598,7 +47598,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  vertexcolor .
     
         The 'vertexcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47687,7 +47687,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47753,7 +47753,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47819,7 +47819,7 @@ class Mesh3d(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -47902,7 +47902,7 @@ class Mesh3d(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.mesh3d.ColorBar instance or dict
+            plotly_study.graph_objects.mesh3d.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -47917,7 +47917,7 @@ class Mesh3d(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.mesh3d.Contour instance or dict
+            plotly_study.graph_objects.mesh3d.Contour instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -47949,7 +47949,7 @@ class Mesh3d(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.mesh3d.Hoverlabel instance or dict
+            plotly_study.graph_objects.mesh3d.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -48026,10 +48026,10 @@ class Mesh3d(_BaseTraceType):
         ksrc
             Sets the source reference on plot.ly for  k .
         lighting
-            plotly.graph_objects.mesh3d.Lighting instance or dict
+            plotly_study.graph_objects.mesh3d.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.mesh3d.Lightposition instance or
+            plotly_study.graph_objects.mesh3d.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -48071,7 +48071,7 @@ class Mesh3d(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.mesh3d.Stream instance or dict
+            plotly_study.graph_objects.mesh3d.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -48218,7 +48218,7 @@ class Mesh3d(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Mesh3d
+            an instance of plotly_study.graph_objs.Mesh3d
         alphahull
             Determines how the mesh surface triangles are derived
             from the set of vertices (points) represented by the
@@ -48273,7 +48273,7 @@ class Mesh3d(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.mesh3d.ColorBar instance or dict
+            plotly_study.graph_objects.mesh3d.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -48288,7 +48288,7 @@ class Mesh3d(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.mesh3d.Contour instance or dict
+            plotly_study.graph_objects.mesh3d.Contour instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -48320,7 +48320,7 @@ class Mesh3d(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.mesh3d.Hoverlabel instance or dict
+            plotly_study.graph_objects.mesh3d.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -48397,10 +48397,10 @@ class Mesh3d(_BaseTraceType):
         ksrc
             Sets the source reference on plot.ly for  k .
         lighting
-            plotly.graph_objects.mesh3d.Lighting instance or dict
+            plotly_study.graph_objects.mesh3d.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.mesh3d.Lightposition instance or
+            plotly_study.graph_objects.mesh3d.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -48442,7 +48442,7 @@ class Mesh3d(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.mesh3d.Stream instance or dict
+            plotly_study.graph_objects.mesh3d.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -48528,9 +48528,9 @@ class Mesh3d(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Mesh3d 
+The first argument to the plotly_study.graph_objs.Mesh3d 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Mesh3d"""
+an instance of plotly_study.graph_objs.Mesh3d"""
             )
 
         # Handle skip_invalid
@@ -48539,7 +48539,7 @@ an instance of plotly.graph_objs.Mesh3d"""
 
         # Import validators
         # -----------------
-        from plotly.validators import mesh3d as v_mesh3d
+        from plotly_study.validators import mesh3d as v_mesh3d
 
         # Initialize validators
         # ---------------------
@@ -48748,7 +48748,7 @@ an instance of plotly.graph_objs.Mesh3d"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -48786,25 +48786,25 @@ class Isosurface(_BaseTraceType):
         """
         The 'caps' property is an instance of Caps
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Caps
+          - An instance of plotly_study.graph_objs.isosurface.Caps
           - A dict of string/value properties that will be passed
             to the Caps constructor
     
             Supported dict properties:
                 
                 x
-                    plotly.graph_objects.isosurface.caps.X instance
+                    plotly_study.graph_objects.isosurface.caps.X instance
                     or dict with compatible properties
                 y
-                    plotly.graph_objects.isosurface.caps.Y instance
+                    plotly_study.graph_objects.isosurface.caps.Y instance
                     or dict with compatible properties
                 z
-                    plotly.graph_objects.isosurface.caps.Z instance
+                    plotly_study.graph_objects.isosurface.caps.Z instance
                     or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Caps
+        plotly_study.graph_objs.isosurface.Caps
         """
         return self["caps"]
 
@@ -48933,7 +48933,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.ColorBar
+          - An instance of plotly_study.graph_objs.isosurface.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -49065,7 +49065,7 @@ class Isosurface(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.isosurface.colo
+                    A tuple of plotly_study.graph_objects.isosurface.colo
                     rbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -49113,7 +49113,7 @@ class Isosurface(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.isosurface.colorbar.Title
+                    plotly_study.graph_objects.isosurface.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -49152,7 +49152,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.ColorBar
+        plotly_study.graph_objs.isosurface.ColorBar
         """
         return self["colorbar"]
 
@@ -49180,7 +49180,7 @@ class Isosurface(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -49218,7 +49218,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'contour' property is an instance of Contour
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Contour
+          - An instance of plotly_study.graph_objs.isosurface.Contour
           - A dict of string/value properties that will be passed
             to the Contour constructor
     
@@ -49234,7 +49234,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Contour
+        plotly_study.graph_objs.isosurface.Contour
         """
         return self["contour"]
 
@@ -49273,7 +49273,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -49341,7 +49341,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -49360,7 +49360,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Hoverlabel
+          - An instance of plotly_study.graph_objs.isosurface.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -49404,7 +49404,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Hoverlabel
+        plotly_study.graph_objs.isosurface.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -49461,7 +49461,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -49503,7 +49503,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -49545,7 +49545,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -49604,7 +49604,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'lighting' property is an instance of Lighting
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Lighting
+          - An instance of plotly_study.graph_objs.isosurface.Lighting
           - A dict of string/value properties that will be passed
             to the Lighting constructor
     
@@ -49637,7 +49637,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Lighting
+        plotly_study.graph_objs.isosurface.Lighting
         """
         return self["lighting"]
 
@@ -49652,7 +49652,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'lightposition' property is an instance of Lightposition
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Lightposition
+          - An instance of plotly_study.graph_objs.isosurface.Lightposition
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
     
@@ -49670,7 +49670,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Lightposition
+        plotly_study.graph_objs.isosurface.Lightposition
         """
         return self["lightposition"]
 
@@ -49714,7 +49714,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -49848,25 +49848,25 @@ class Isosurface(_BaseTraceType):
         """
         The 'slices' property is an instance of Slices
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Slices
+          - An instance of plotly_study.graph_objs.isosurface.Slices
           - A dict of string/value properties that will be passed
             to the Slices constructor
     
             Supported dict properties:
                 
                 x
-                    plotly.graph_objects.isosurface.slices.X
+                    plotly_study.graph_objects.isosurface.slices.X
                     instance or dict with compatible properties
                 y
-                    plotly.graph_objects.isosurface.slices.Y
+                    plotly_study.graph_objects.isosurface.slices.Y
                     instance or dict with compatible properties
                 z
-                    plotly.graph_objects.isosurface.slices.Z
+                    plotly_study.graph_objects.isosurface.slices.Z
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Slices
+        plotly_study.graph_objs.isosurface.Slices
         """
         return self["slices"]
 
@@ -49881,7 +49881,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'spaceframe' property is an instance of Spaceframe
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Spaceframe
+          - An instance of plotly_study.graph_objs.isosurface.Spaceframe
           - A dict of string/value properties that will be passed
             to the Spaceframe constructor
     
@@ -49903,7 +49903,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Spaceframe
+        plotly_study.graph_objs.isosurface.Spaceframe
         """
         return self["spaceframe"]
 
@@ -49918,7 +49918,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Stream
+          - An instance of plotly_study.graph_objs.isosurface.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -49936,7 +49936,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Stream
+        plotly_study.graph_objs.isosurface.Stream
         """
         return self["stream"]
 
@@ -49951,7 +49951,7 @@ class Isosurface(_BaseTraceType):
         """
         The 'surface' property is an instance of Surface
         that may be specified as:
-          - An instance of plotly.graph_objs.isosurface.Surface
+          - An instance of plotly_study.graph_objs.isosurface.Surface
           - A dict of string/value properties that will be passed
             to the Surface constructor
     
@@ -49986,7 +49986,7 @@ class Isosurface(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.isosurface.Surface
+        plotly_study.graph_objs.isosurface.Surface
         """
         return self["surface"]
 
@@ -50026,7 +50026,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -50121,7 +50121,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  value .
     
         The 'valuesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -50184,7 +50184,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -50224,7 +50224,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -50264,7 +50264,7 @@ class Isosurface(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -50301,7 +50301,7 @@ class Isosurface(_BaseTraceType):
             chosen according to whether numbers in the `color`
             array are all positive, all negative or mixed.
         caps
-            plotly.graph_objects.isosurface.Caps instance or dict
+            plotly_study.graph_objects.isosurface.Caps instance or dict
             with compatible properties
         cauto
             Determines whether or not the color domain is computed
@@ -50329,7 +50329,7 @@ class Isosurface(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.isosurface.ColorBar instance or
+            plotly_study.graph_objects.isosurface.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -50344,7 +50344,7 @@ class Isosurface(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.isosurface.Contour instance or
+            plotly_study.graph_objects.isosurface.Contour instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -50365,7 +50365,7 @@ class Isosurface(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.isosurface.Hoverlabel instance or
+            plotly_study.graph_objects.isosurface.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -50408,10 +50408,10 @@ class Isosurface(_BaseTraceType):
         isomin
             Sets the minimum boundary for iso-surface plot.
         lighting
-            plotly.graph_objects.isosurface.Lighting instance or
+            plotly_study.graph_objects.isosurface.Lighting instance or
             dict with compatible properties
         lightposition
-            plotly.graph_objects.isosurface.Lightposition instance
+            plotly_study.graph_objects.isosurface.Lightposition instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -50453,16 +50453,16 @@ class Isosurface(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         slices
-            plotly.graph_objects.isosurface.Slices instance or dict
+            plotly_study.graph_objects.isosurface.Slices instance or dict
             with compatible properties
         spaceframe
-            plotly.graph_objects.isosurface.Spaceframe instance or
+            plotly_study.graph_objects.isosurface.Spaceframe instance or
             dict with compatible properties
         stream
-            plotly.graph_objects.isosurface.Stream instance or dict
+            plotly_study.graph_objects.isosurface.Stream instance or dict
             with compatible properties
         surface
-            plotly.graph_objects.isosurface.Surface instance or
+            plotly_study.graph_objects.isosurface.Surface instance or
             dict with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -50585,7 +50585,7 @@ class Isosurface(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Isosurface
+            an instance of plotly_study.graph_objs.Isosurface
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -50594,7 +50594,7 @@ class Isosurface(_BaseTraceType):
             chosen according to whether numbers in the `color`
             array are all positive, all negative or mixed.
         caps
-            plotly.graph_objects.isosurface.Caps instance or dict
+            plotly_study.graph_objects.isosurface.Caps instance or dict
             with compatible properties
         cauto
             Determines whether or not the color domain is computed
@@ -50622,7 +50622,7 @@ class Isosurface(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.isosurface.ColorBar instance or
+            plotly_study.graph_objects.isosurface.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -50637,7 +50637,7 @@ class Isosurface(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.isosurface.Contour instance or
+            plotly_study.graph_objects.isosurface.Contour instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -50658,7 +50658,7 @@ class Isosurface(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.isosurface.Hoverlabel instance or
+            plotly_study.graph_objects.isosurface.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -50701,10 +50701,10 @@ class Isosurface(_BaseTraceType):
         isomin
             Sets the minimum boundary for iso-surface plot.
         lighting
-            plotly.graph_objects.isosurface.Lighting instance or
+            plotly_study.graph_objects.isosurface.Lighting instance or
             dict with compatible properties
         lightposition
-            plotly.graph_objects.isosurface.Lightposition instance
+            plotly_study.graph_objects.isosurface.Lightposition instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -50746,16 +50746,16 @@ class Isosurface(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         slices
-            plotly.graph_objects.isosurface.Slices instance or dict
+            plotly_study.graph_objects.isosurface.Slices instance or dict
             with compatible properties
         spaceframe
-            plotly.graph_objects.isosurface.Spaceframe instance or
+            plotly_study.graph_objects.isosurface.Spaceframe instance or
             dict with compatible properties
         stream
-            plotly.graph_objects.isosurface.Stream instance or dict
+            plotly_study.graph_objects.isosurface.Stream instance or dict
             with compatible properties
         surface
-            plotly.graph_objects.isosurface.Surface instance or
+            plotly_study.graph_objects.isosurface.Surface instance or
             dict with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -50825,9 +50825,9 @@ class Isosurface(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Isosurface 
+The first argument to the plotly_study.graph_objs.Isosurface 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Isosurface"""
+an instance of plotly_study.graph_objs.Isosurface"""
             )
 
         # Handle skip_invalid
@@ -50836,7 +50836,7 @@ an instance of plotly.graph_objs.Isosurface"""
 
         # Import validators
         # -----------------
-        from plotly.validators import isosurface as v_isosurface
+        from plotly_study.validators import isosurface as v_isosurface
 
         # Initialize validators
         # ---------------------
@@ -51015,7 +51015,7 @@ an instance of plotly.graph_objs.Isosurface"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -51075,7 +51075,7 @@ class Indicator(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -51094,19 +51094,19 @@ class Indicator(_BaseTraceType):
         """
         The 'delta' property is an instance of Delta
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.Delta
+          - An instance of plotly_study.graph_objs.indicator.Delta
           - A dict of string/value properties that will be passed
             to the Delta constructor
     
             Supported dict properties:
                 
                 decreasing
-                    plotly.graph_objects.indicator.delta.Decreasing
+                    plotly_study.graph_objects.indicator.delta.Decreasing
                     instance or dict with compatible properties
                 font
                     Set the font used to display the delta
                 increasing
-                    plotly.graph_objects.indicator.delta.Increasing
+                    plotly_study.graph_objects.indicator.delta.Increasing
                     instance or dict with compatible properties
                 position
                     Sets the position of delta with respect to the
@@ -51125,7 +51125,7 @@ class Indicator(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.Delta
+        plotly_study.graph_objs.indicator.Delta
         """
         return self["delta"]
 
@@ -51140,7 +51140,7 @@ class Indicator(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.Domain
+          - An instance of plotly_study.graph_objs.indicator.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -51162,7 +51162,7 @@ class Indicator(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.Domain
+        plotly_study.graph_objs.indicator.Domain
         """
         return self["domain"]
 
@@ -51179,14 +51179,14 @@ class Indicator(_BaseTraceType):
     
         The 'gauge' property is an instance of Gauge
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.Gauge
+          - An instance of plotly_study.graph_objs.indicator.Gauge
           - A dict of string/value properties that will be passed
             to the Gauge constructor
     
             Supported dict properties:
                 
                 axis
-                    plotly.graph_objects.indicator.gauge.Axis
+                    plotly_study.graph_objects.indicator.gauge.Axis
                     instance or dict with compatible properties
                 bar
                     Set the appearance of the gauge's value
@@ -51202,7 +51202,7 @@ class Indicator(_BaseTraceType):
                     Set the shape of the gauge
                 steps
                     A tuple of
-                    plotly.graph_objects.indicator.gauge.Step
+                    plotly_study.graph_objects.indicator.gauge.Step
                     instances or dicts with compatible properties
                 stepdefaults
                     When used in a template (as layout.template.dat
@@ -51210,12 +51210,12 @@ class Indicator(_BaseTraceType):
                     default property values to use for elements of
                     indicator.gauge.steps
                 threshold
-                    plotly.graph_objects.indicator.gauge.Threshold
+                    plotly_study.graph_objects.indicator.gauge.Threshold
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.indicator.Gauge
+        plotly_study.graph_objs.indicator.Gauge
         """
         return self["gauge"]
 
@@ -51253,7 +51253,7 @@ class Indicator(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -51301,7 +51301,7 @@ class Indicator(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -51367,7 +51367,7 @@ class Indicator(_BaseTraceType):
         """
         The 'number' property is an instance of Number
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.Number
+          - An instance of plotly_study.graph_objs.indicator.Number
           - A dict of string/value properties that will be passed
             to the Number constructor
     
@@ -51388,7 +51388,7 @@ class Indicator(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.Number
+        plotly_study.graph_objs.indicator.Number
         """
         return self["number"]
 
@@ -51403,7 +51403,7 @@ class Indicator(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.Stream
+          - An instance of plotly_study.graph_objs.indicator.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -51421,7 +51421,7 @@ class Indicator(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.Stream
+        plotly_study.graph_objs.indicator.Stream
         """
         return self["stream"]
 
@@ -51436,7 +51436,7 @@ class Indicator(_BaseTraceType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.Title
+          - An instance of plotly_study.graph_objs.indicator.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -51453,7 +51453,7 @@ class Indicator(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.Title
+        plotly_study.graph_objs.indicator.Title
         """
         return self["title"]
 
@@ -51589,10 +51589,10 @@ class Indicator(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         delta
-            plotly.graph_objects.indicator.Delta instance or dict
+            plotly_study.graph_objects.indicator.Delta instance or dict
             with compatible properties
         domain
-            plotly.graph_objects.indicator.Domain instance or dict
+            plotly_study.graph_objects.indicator.Domain instance or dict
             with compatible properties
         gauge
             The gauge of the Indicator plot.
@@ -51627,13 +51627,13 @@ class Indicator(_BaseTraceType):
             Sets the trace name. The trace name appear as the
             legend item and on hover.
         number
-            plotly.graph_objects.indicator.Number instance or dict
+            plotly_study.graph_objects.indicator.Number instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.indicator.Stream instance or dict
+            plotly_study.graph_objects.indicator.Stream instance or dict
             with compatible properties
         title
-            plotly.graph_objects.indicator.Title instance or dict
+            plotly_study.graph_objects.indicator.Title instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -51704,7 +51704,7 @@ class Indicator(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Indicator
+            an instance of plotly_study.graph_objs.Indicator
         align
             Sets the horizontal alignment of the `text` within the
             box. Note that this attribute has no effect if an
@@ -51718,10 +51718,10 @@ class Indicator(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         delta
-            plotly.graph_objects.indicator.Delta instance or dict
+            plotly_study.graph_objects.indicator.Delta instance or dict
             with compatible properties
         domain
-            plotly.graph_objects.indicator.Domain instance or dict
+            plotly_study.graph_objects.indicator.Domain instance or dict
             with compatible properties
         gauge
             The gauge of the Indicator plot.
@@ -51756,13 +51756,13 @@ class Indicator(_BaseTraceType):
             Sets the trace name. The trace name appear as the
             legend item and on hover.
         number
-            plotly.graph_objects.indicator.Number instance or dict
+            plotly_study.graph_objects.indicator.Number instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.indicator.Stream instance or dict
+            plotly_study.graph_objects.indicator.Stream instance or dict
             with compatible properties
         title
-            plotly.graph_objects.indicator.Title instance or dict
+            plotly_study.graph_objects.indicator.Title instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -51811,9 +51811,9 @@ class Indicator(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Indicator 
+The first argument to the plotly_study.graph_objs.Indicator 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Indicator"""
+an instance of plotly_study.graph_objs.Indicator"""
             )
 
         # Handle skip_invalid
@@ -51822,7 +51822,7 @@ an instance of plotly.graph_objs.Indicator"""
 
         # Import validators
         # -----------------
-        from plotly.validators import indicator as v_indicator
+        from plotly_study.validators import indicator as v_indicator
 
         # Initialize validators
         # ---------------------
@@ -51906,7 +51906,7 @@ an instance of plotly.graph_objs.Indicator"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -51965,7 +51965,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52051,7 +52051,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52070,7 +52070,7 @@ class Image(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.image.Hoverlabel
+          - An instance of plotly_study.graph_objs.image.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -52114,7 +52114,7 @@ class Image(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.image.Hoverlabel
+        plotly_study.graph_objs.image.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -52171,7 +52171,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52211,7 +52211,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52253,7 +52253,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52301,7 +52301,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52362,7 +52362,7 @@ class Image(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.image.Stream
+          - An instance of plotly_study.graph_objs.image.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -52380,7 +52380,7 @@ class Image(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.image.Stream
+        plotly_study.graph_objs.image.Stream
         """
         return self["stream"]
 
@@ -52416,7 +52416,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52690,7 +52690,7 @@ class Image(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -52741,7 +52741,7 @@ class Image(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.image.Hoverlabel instance or dict
+            plotly_study.graph_objects.image.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -52801,7 +52801,7 @@ class Image(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         stream
-            plotly.graph_objects.image.Stream instance or dict with
+            plotly_study.graph_objects.image.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with each z value.
@@ -52921,7 +52921,7 @@ class Image(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Image
+            an instance of plotly_study.graph_objs.Image
         colormodel
             Color model used to map the numerical color components
             described in `z` into colors.
@@ -52944,7 +52944,7 @@ class Image(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.image.Hoverlabel instance or dict
+            plotly_study.graph_objects.image.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -53004,7 +53004,7 @@ class Image(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         stream
-            plotly.graph_objects.image.Stream instance or dict with
+            plotly_study.graph_objects.image.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with each z value.
@@ -53089,9 +53089,9 @@ class Image(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Image 
+The first argument to the plotly_study.graph_objs.Image 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Image"""
+an instance of plotly_study.graph_objs.Image"""
             )
 
         # Handle skip_invalid
@@ -53100,7 +53100,7 @@ an instance of plotly.graph_objs.Image"""
 
         # Import validators
         # -----------------
-        from plotly.validators import image as v_image
+        from plotly_study.validators import image as v_image
 
         # Initialize validators
         # ---------------------
@@ -53225,7 +53225,7 @@ an instance of plotly.graph_objs.Image"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -53382,7 +53382,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.ColorBar
+          - An instance of plotly_study.graph_objs.histogram2dcontour.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -53514,7 +53514,7 @@ class Histogram2dContour(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.histogram2dcont
+                    A tuple of plotly_study.graph_objects.histogram2dcont
                     our.colorbar.Tickformatstop instances or dicts
                     with compatible properties
                 tickformatstopdefaults
@@ -53563,7 +53563,7 @@ class Histogram2dContour(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.histogram2dcontour.colorba
+                    plotly_study.graph_objects.histogram2dcontour.colorba
                     r.Title instance or dict with compatible
                     properties
                 titlefont
@@ -53603,7 +53603,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.ColorBar
+        plotly_study.graph_objs.histogram2dcontour.ColorBar
         """
         return self["colorbar"]
 
@@ -53631,7 +53631,7 @@ class Histogram2dContour(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -53669,7 +53669,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'contours' property is an instance of Contours
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.Contours
+          - An instance of plotly_study.graph_objs.histogram2dcontour.Contours
           - A dict of string/value properties that will be passed
             to the Contours constructor
     
@@ -53741,7 +53741,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.Contours
+        plotly_study.graph_objs.histogram2dcontour.Contours
         """
         return self["contours"]
 
@@ -53780,7 +53780,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -53886,7 +53886,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -53905,7 +53905,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.Hoverlabel
+          - An instance of plotly_study.graph_objs.histogram2dcontour.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -53949,7 +53949,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.Hoverlabel
+        plotly_study.graph_objs.histogram2dcontour.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -54006,7 +54006,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -54048,7 +54048,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -54090,7 +54090,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.Line
+          - An instance of plotly_study.graph_objs.histogram2dcontour.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -54113,7 +54113,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.Line
+        plotly_study.graph_objs.histogram2dcontour.Line
         """
         return self["line"]
 
@@ -54128,7 +54128,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.Marker
+          - An instance of plotly_study.graph_objs.histogram2dcontour.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -54142,7 +54142,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.Marker
+        plotly_study.graph_objs.histogram2dcontour.Marker
         """
         return self["marker"]
 
@@ -54186,7 +54186,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -54383,7 +54383,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.Stream
+          - An instance of plotly_study.graph_objs.histogram2dcontour.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -54401,7 +54401,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.Stream
+        plotly_study.graph_objs.histogram2dcontour.Stream
         """
         return self["stream"]
 
@@ -54564,7 +54564,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'xbins' property is an instance of XBins
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.XBins
+          - An instance of plotly_study.graph_objs.histogram2dcontour.XBins
           - A dict of string/value properties that will be passed
             to the XBins constructor
     
@@ -54607,7 +54607,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.XBins
+        plotly_study.graph_objs.histogram2dcontour.XBins
         """
         return self["xbins"]
 
@@ -54647,7 +54647,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -54736,7 +54736,7 @@ class Histogram2dContour(_BaseTraceType):
         """
         The 'ybins' property is an instance of YBins
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2dcontour.YBins
+          - An instance of plotly_study.graph_objs.histogram2dcontour.YBins
           - A dict of string/value properties that will be passed
             to the YBins constructor
     
@@ -54779,7 +54779,7 @@ class Histogram2dContour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2dcontour.YBins
+        plotly_study.graph_objs.histogram2dcontour.YBins
         """
         return self["ybins"]
 
@@ -54819,7 +54819,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -54970,7 +54970,7 @@ class Histogram2dContour(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -55036,7 +55036,7 @@ class Histogram2dContour(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.histogram2dcontour.ColorBar
+            plotly_study.graph_objects.histogram2dcontour.ColorBar
             instance or dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -55051,7 +55051,7 @@ class Histogram2dContour(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contours
-            plotly.graph_objects.histogram2dcontour.Contours
+            plotly_study.graph_objects.histogram2dcontour.Contours
             instance or dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -55093,7 +55093,7 @@ class Histogram2dContour(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram2dcontour.Hoverlabel
+            plotly_study.graph_objects.histogram2dcontour.Hoverlabel
             instance or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -55133,10 +55133,10 @@ class Histogram2dContour(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.histogram2dcontour.Line instance
+            plotly_study.graph_objects.histogram2dcontour.Line instance
             or dict with compatible properties
         marker
-            plotly.graph_objects.histogram2dcontour.Marker instance
+            plotly_study.graph_objects.histogram2dcontour.Marker instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -55187,7 +55187,7 @@ class Histogram2dContour(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.histogram2dcontour.Stream instance
+            plotly_study.graph_objects.histogram2dcontour.Stream instance
             or dict with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -55231,7 +55231,7 @@ class Histogram2dContour(_BaseTraceType):
             Note that the same `xbingroup` value can be used to set
             (1D) histogram `bingroup`
         xbins
-            plotly.graph_objects.histogram2dcontour.XBins instance
+            plotly_study.graph_objects.histogram2dcontour.XBins instance
             or dict with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -55252,7 +55252,7 @@ class Histogram2dContour(_BaseTraceType):
             Note that the same `ybingroup` value can be used to set
             (1D) histogram `bingroup`
         ybins
-            plotly.graph_objects.histogram2dcontour.YBins instance
+            plotly_study.graph_objects.histogram2dcontour.YBins instance
             or dict with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -55362,7 +55362,7 @@ class Histogram2dContour(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Histogram2dContour
+            an instance of plotly_study.graph_objs.Histogram2dContour
         autobinx
             Obsolete: since v1.42 each bin attribute is auto-
             determined separately and `autobinx` is not needed.
@@ -55400,7 +55400,7 @@ class Histogram2dContour(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.histogram2dcontour.ColorBar
+            plotly_study.graph_objects.histogram2dcontour.ColorBar
             instance or dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -55415,7 +55415,7 @@ class Histogram2dContour(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contours
-            plotly.graph_objects.histogram2dcontour.Contours
+            plotly_study.graph_objects.histogram2dcontour.Contours
             instance or dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -55457,7 +55457,7 @@ class Histogram2dContour(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram2dcontour.Hoverlabel
+            plotly_study.graph_objects.histogram2dcontour.Hoverlabel
             instance or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -55497,10 +55497,10 @@ class Histogram2dContour(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.histogram2dcontour.Line instance
+            plotly_study.graph_objects.histogram2dcontour.Line instance
             or dict with compatible properties
         marker
-            plotly.graph_objects.histogram2dcontour.Marker instance
+            plotly_study.graph_objects.histogram2dcontour.Marker instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -55551,7 +55551,7 @@ class Histogram2dContour(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.histogram2dcontour.Stream instance
+            plotly_study.graph_objects.histogram2dcontour.Stream instance
             or dict with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -55595,7 +55595,7 @@ class Histogram2dContour(_BaseTraceType):
             Note that the same `xbingroup` value can be used to set
             (1D) histogram `bingroup`
         xbins
-            plotly.graph_objects.histogram2dcontour.XBins instance
+            plotly_study.graph_objects.histogram2dcontour.XBins instance
             or dict with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -55616,7 +55616,7 @@ class Histogram2dContour(_BaseTraceType):
             Note that the same `ybingroup` value can be used to set
             (1D) histogram `bingroup`
         ybins
-            plotly.graph_objects.histogram2dcontour.YBins instance
+            plotly_study.graph_objects.histogram2dcontour.YBins instance
             or dict with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -55667,9 +55667,9 @@ class Histogram2dContour(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Histogram2dContour 
+The first argument to the plotly_study.graph_objs.Histogram2dContour 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Histogram2dContour"""
+an instance of plotly_study.graph_objs.Histogram2dContour"""
             )
 
         # Handle skip_invalid
@@ -55678,7 +55678,7 @@ an instance of plotly.graph_objs.Histogram2dContour"""
 
         # Import validators
         # -----------------
-        from plotly.validators import histogram2dcontour as v_histogram2dcontour
+        from plotly_study.validators import histogram2dcontour as v_histogram2dcontour
 
         # Initialize validators
         # ---------------------
@@ -55885,7 +55885,7 @@ an instance of plotly.graph_objs.Histogram2dContour"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -56019,7 +56019,7 @@ class Histogram2d(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2d.ColorBar
+          - An instance of plotly_study.graph_objs.histogram2d.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -56151,7 +56151,7 @@ class Histogram2d(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.histogram2d.col
+                    A tuple of plotly_study.graph_objects.histogram2d.col
                     orbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -56200,7 +56200,7 @@ class Histogram2d(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.histogram2d.colorbar.Title
+                    plotly_study.graph_objects.histogram2d.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -56239,7 +56239,7 @@ class Histogram2d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2d.ColorBar
+        plotly_study.graph_objs.histogram2d.ColorBar
         """
         return self["colorbar"]
 
@@ -56267,7 +56267,7 @@ class Histogram2d(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -56329,7 +56329,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -56435,7 +56435,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -56454,7 +56454,7 @@ class Histogram2d(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2d.Hoverlabel
+          - An instance of plotly_study.graph_objs.histogram2d.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -56498,7 +56498,7 @@ class Histogram2d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2d.Hoverlabel
+        plotly_study.graph_objs.histogram2d.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -56555,7 +56555,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -56597,7 +56597,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -56616,7 +56616,7 @@ class Histogram2d(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2d.Marker
+          - An instance of plotly_study.graph_objs.histogram2d.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -56630,7 +56630,7 @@ class Histogram2d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2d.Marker
+        plotly_study.graph_objs.histogram2d.Marker
         """
         return self["marker"]
 
@@ -56674,7 +56674,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -56826,7 +56826,7 @@ class Histogram2d(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2d.Stream
+          - An instance of plotly_study.graph_objs.histogram2d.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -56844,7 +56844,7 @@ class Histogram2d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2d.Stream
+        plotly_study.graph_objs.histogram2d.Stream
         """
         return self["stream"]
 
@@ -57007,7 +57007,7 @@ class Histogram2d(_BaseTraceType):
         """
         The 'xbins' property is an instance of XBins
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2d.XBins
+          - An instance of plotly_study.graph_objs.histogram2d.XBins
           - A dict of string/value properties that will be passed
             to the XBins constructor
     
@@ -57050,7 +57050,7 @@ class Histogram2d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2d.XBins
+        plotly_study.graph_objs.histogram2d.XBins
         """
         return self["xbins"]
 
@@ -57110,7 +57110,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -57199,7 +57199,7 @@ class Histogram2d(_BaseTraceType):
         """
         The 'ybins' property is an instance of YBins
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram2d.YBins
+          - An instance of plotly_study.graph_objs.histogram2d.YBins
           - A dict of string/value properties that will be passed
             to the YBins constructor
     
@@ -57242,7 +57242,7 @@ class Histogram2d(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram2d.YBins
+        plotly_study.graph_objs.histogram2d.YBins
         """
         return self["ybins"]
 
@@ -57302,7 +57302,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -57474,7 +57474,7 @@ class Histogram2d(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -57535,7 +57535,7 @@ class Histogram2d(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.histogram2d.ColorBar instance or
+            plotly_study.graph_objects.histogram2d.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -57589,7 +57589,7 @@ class Histogram2d(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram2d.Hoverlabel instance or
+            plotly_study.graph_objects.histogram2d.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -57625,7 +57625,7 @@ class Histogram2d(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         marker
-            plotly.graph_objects.histogram2d.Marker instance or
+            plotly_study.graph_objects.histogram2d.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -57667,7 +57667,7 @@ class Histogram2d(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.histogram2d.Stream instance or
+            plotly_study.graph_objects.histogram2d.Stream instance or
             dict with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -57711,7 +57711,7 @@ class Histogram2d(_BaseTraceType):
             Note that the same `xbingroup` value can be used to set
             (1D) histogram `bingroup`
         xbins
-            plotly.graph_objects.histogram2d.XBins instance or dict
+            plotly_study.graph_objects.histogram2d.XBins instance or dict
             with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -57734,7 +57734,7 @@ class Histogram2d(_BaseTraceType):
             Note that the same `ybingroup` value can be used to set
             (1D) histogram `bingroup`
         ybins
-            plotly.graph_objects.histogram2d.YBins instance or dict
+            plotly_study.graph_objects.histogram2d.YBins instance or dict
             with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -57845,7 +57845,7 @@ class Histogram2d(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Histogram2d
+            an instance of plotly_study.graph_objs.Histogram2d
         autobinx
             Obsolete: since v1.42 each bin attribute is auto-
             determined separately and `autobinx` is not needed.
@@ -57878,7 +57878,7 @@ class Histogram2d(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.histogram2d.ColorBar instance or
+            plotly_study.graph_objects.histogram2d.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -57932,7 +57932,7 @@ class Histogram2d(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram2d.Hoverlabel instance or
+            plotly_study.graph_objects.histogram2d.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -57968,7 +57968,7 @@ class Histogram2d(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         marker
-            plotly.graph_objects.histogram2d.Marker instance or
+            plotly_study.graph_objects.histogram2d.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -58010,7 +58010,7 @@ class Histogram2d(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.histogram2d.Stream instance or
+            plotly_study.graph_objects.histogram2d.Stream instance or
             dict with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -58054,7 +58054,7 @@ class Histogram2d(_BaseTraceType):
             Note that the same `xbingroup` value can be used to set
             (1D) histogram `bingroup`
         xbins
-            plotly.graph_objects.histogram2d.XBins instance or dict
+            plotly_study.graph_objects.histogram2d.XBins instance or dict
             with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -58077,7 +58077,7 @@ class Histogram2d(_BaseTraceType):
             Note that the same `ybingroup` value can be used to set
             (1D) histogram `bingroup`
         ybins
-            plotly.graph_objects.histogram2d.YBins instance or dict
+            plotly_study.graph_objects.histogram2d.YBins instance or dict
             with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -58132,9 +58132,9 @@ class Histogram2d(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Histogram2d 
+The first argument to the plotly_study.graph_objs.Histogram2d 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Histogram2d"""
+an instance of plotly_study.graph_objs.Histogram2d"""
             )
 
         # Handle skip_invalid
@@ -58143,7 +58143,7 @@ an instance of plotly.graph_objs.Histogram2d"""
 
         # Import validators
         # -----------------
-        from plotly.validators import histogram2d as v_histogram2d
+        from plotly_study.validators import histogram2d as v_histogram2d
 
         # Initialize validators
         # ---------------------
@@ -58331,7 +58331,7 @@ an instance of plotly.graph_objs.Histogram2d"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -58440,7 +58440,7 @@ class Histogram(_BaseTraceType):
         """
         The 'cumulative' property is an instance of Cumulative
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.Cumulative
+          - An instance of plotly_study.graph_objs.histogram.Cumulative
           - A dict of string/value properties that will be passed
             to the Cumulative constructor
     
@@ -58475,7 +58475,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.Cumulative
+        plotly_study.graph_objs.histogram.Cumulative
         """
         return self["cumulative"]
 
@@ -58514,7 +58514,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -58533,7 +58533,7 @@ class Histogram(_BaseTraceType):
         """
         The 'error_x' property is an instance of ErrorX
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.ErrorX
+          - An instance of plotly_study.graph_objs.histogram.ErrorX
           - A dict of string/value properties that will be passed
             to the ErrorX constructor
     
@@ -58599,7 +58599,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.ErrorX
+        plotly_study.graph_objs.histogram.ErrorX
         """
         return self["error_x"]
 
@@ -58614,7 +58614,7 @@ class Histogram(_BaseTraceType):
         """
         The 'error_y' property is an instance of ErrorY
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.ErrorY
+          - An instance of plotly_study.graph_objs.histogram.ErrorY
           - A dict of string/value properties that will be passed
             to the ErrorY constructor
     
@@ -58678,7 +58678,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.ErrorY
+        plotly_study.graph_objs.histogram.ErrorY
         """
         return self["error_y"]
 
@@ -58780,7 +58780,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -58799,7 +58799,7 @@ class Histogram(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.Hoverlabel
+          - An instance of plotly_study.graph_objs.histogram.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -58843,7 +58843,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.Hoverlabel
+        plotly_study.graph_objs.histogram.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -58900,7 +58900,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -58942,7 +58942,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -58984,7 +58984,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -59026,7 +59026,7 @@ class Histogram(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.Marker
+          - An instance of plotly_study.graph_objs.histogram.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -59086,7 +59086,7 @@ class Histogram(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.histogram.marker.ColorBar
+                    plotly_study.graph_objects.histogram.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -59108,7 +59108,7 @@ class Histogram(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.histogram.marker.Line
+                    plotly_study.graph_objects.histogram.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the opacity of the bars.
@@ -59129,7 +59129,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.Marker
+        plotly_study.graph_objs.histogram.Marker
         """
         return self["marker"]
 
@@ -59173,7 +59173,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -59327,22 +59327,22 @@ class Histogram(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.Selected
+          - An instance of plotly_study.graph_objs.histogram.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.histogram.selected.Marker
+                    plotly_study.graph_objects.histogram.selected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.histogram.selected.Textfon
+                    plotly_study.graph_objects.histogram.selected.Textfon
                     t instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.histogram.Selected
+        plotly_study.graph_objs.histogram.Selected
         """
         return self["selected"]
 
@@ -59402,7 +59402,7 @@ class Histogram(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.Stream
+          - An instance of plotly_study.graph_objs.histogram.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -59420,7 +59420,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.Stream
+        plotly_study.graph_objs.histogram.Stream
         """
         return self["stream"]
 
@@ -59461,7 +59461,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -59535,22 +59535,22 @@ class Histogram(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.Unselected
+          - An instance of plotly_study.graph_objs.histogram.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.histogram.unselected.Marke
+                    plotly_study.graph_objects.histogram.unselected.Marke
                     r instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.histogram.unselected.Textf
+                    plotly_study.graph_objects.histogram.unselected.Textf
                     ont instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.histogram.Unselected
+        plotly_study.graph_objs.histogram.Unselected
         """
         return self["unselected"]
 
@@ -59633,7 +59633,7 @@ class Histogram(_BaseTraceType):
         """
         The 'xbins' property is an instance of XBins
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.XBins
+          - An instance of plotly_study.graph_objs.histogram.XBins
           - A dict of string/value properties that will be passed
             to the XBins constructor
     
@@ -59686,7 +59686,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.XBins
+        plotly_study.graph_objs.histogram.XBins
         """
         return self["xbins"]
 
@@ -59726,7 +59726,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -59790,7 +59790,7 @@ class Histogram(_BaseTraceType):
         """
         The 'ybins' property is an instance of YBins
         that may be specified as:
-          - An instance of plotly.graph_objs.histogram.YBins
+          - An instance of plotly_study.graph_objs.histogram.YBins
           - A dict of string/value properties that will be passed
             to the YBins constructor
     
@@ -59843,7 +59843,7 @@ class Histogram(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.histogram.YBins
+        plotly_study.graph_objs.histogram.YBins
         """
         return self["ybins"]
 
@@ -59883,7 +59883,7 @@ class Histogram(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -59939,7 +59939,7 @@ class Histogram(_BaseTraceType):
             can have compatible bin settings. Note that histogram
             and histogram2d* trace can share the same `bingroup`
         cumulative
-            plotly.graph_objects.histogram.Cumulative instance or
+            plotly_study.graph_objects.histogram.Cumulative instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -59949,10 +59949,10 @@ class Histogram(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         error_x
-            plotly.graph_objects.histogram.ErrorX instance or dict
+            plotly_study.graph_objects.histogram.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.histogram.ErrorY instance or dict
+            plotly_study.graph_objects.histogram.ErrorY instance or dict
             with compatible properties
         histfunc
             Specifies the binning function used for this histogram
@@ -59987,7 +59987,7 @@ class Histogram(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram.Hoverlabel instance or
+            plotly_study.graph_objects.histogram.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -60031,7 +60031,7 @@ class Histogram(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.histogram.Marker instance or dict
+            plotly_study.graph_objects.histogram.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -60074,7 +60074,7 @@ class Histogram(_BaseTraceType):
             value of the each bar spans along the vertical
             (horizontal).
         selected
-            plotly.graph_objects.histogram.Selected instance or
+            plotly_study.graph_objects.histogram.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -60087,7 +60087,7 @@ class Histogram(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.histogram.Stream instance or dict
+            plotly_study.graph_objects.histogram.Stream instance or dict
             with compatible properties
         text
             Sets hover text elements associated with each bar. If a
@@ -60119,7 +60119,7 @@ class Histogram(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.histogram.Unselected instance or
+            plotly_study.graph_objects.histogram.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -60134,7 +60134,7 @@ class Histogram(_BaseTraceType):
             x coordinates refer to `layout.xaxis`. If "x2", the x
             coordinates refer to `layout.xaxis2`, and so on.
         xbins
-            plotly.graph_objects.histogram.XBins instance or dict
+            plotly_study.graph_objects.histogram.XBins instance or dict
             with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -60148,7 +60148,7 @@ class Histogram(_BaseTraceType):
             y coordinates refer to `layout.yaxis`. If "y2", the y
             coordinates refer to `layout.yaxis2`, and so on.
         ybins
-            plotly.graph_objects.histogram.YBins instance or dict
+            plotly_study.graph_objects.histogram.YBins instance or dict
             with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -60224,7 +60224,7 @@ class Histogram(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Histogram
+            an instance of plotly_study.graph_objs.Histogram
         alignmentgroup
             Set several traces linked to the same position axis or
             matching axes to the same alignmentgroup. This controls
@@ -60252,7 +60252,7 @@ class Histogram(_BaseTraceType):
             can have compatible bin settings. Note that histogram
             and histogram2d* trace can share the same `bingroup`
         cumulative
-            plotly.graph_objects.histogram.Cumulative instance or
+            plotly_study.graph_objects.histogram.Cumulative instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -60262,10 +60262,10 @@ class Histogram(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         error_x
-            plotly.graph_objects.histogram.ErrorX instance or dict
+            plotly_study.graph_objects.histogram.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.histogram.ErrorY instance or dict
+            plotly_study.graph_objects.histogram.ErrorY instance or dict
             with compatible properties
         histfunc
             Specifies the binning function used for this histogram
@@ -60300,7 +60300,7 @@ class Histogram(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram.Hoverlabel instance or
+            plotly_study.graph_objects.histogram.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -60344,7 +60344,7 @@ class Histogram(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.histogram.Marker instance or dict
+            plotly_study.graph_objects.histogram.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -60387,7 +60387,7 @@ class Histogram(_BaseTraceType):
             value of the each bar spans along the vertical
             (horizontal).
         selected
-            plotly.graph_objects.histogram.Selected instance or
+            plotly_study.graph_objects.histogram.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -60400,7 +60400,7 @@ class Histogram(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.histogram.Stream instance or dict
+            plotly_study.graph_objects.histogram.Stream instance or dict
             with compatible properties
         text
             Sets hover text elements associated with each bar. If a
@@ -60432,7 +60432,7 @@ class Histogram(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.histogram.Unselected instance or
+            plotly_study.graph_objects.histogram.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -60447,7 +60447,7 @@ class Histogram(_BaseTraceType):
             x coordinates refer to `layout.xaxis`. If "x2", the x
             coordinates refer to `layout.xaxis2`, and so on.
         xbins
-            plotly.graph_objects.histogram.XBins instance or dict
+            plotly_study.graph_objects.histogram.XBins instance or dict
             with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -60461,7 +60461,7 @@ class Histogram(_BaseTraceType):
             y coordinates refer to `layout.yaxis`. If "y2", the y
             coordinates refer to `layout.yaxis2`, and so on.
         ybins
-            plotly.graph_objects.histogram.YBins instance or dict
+            plotly_study.graph_objects.histogram.YBins instance or dict
             with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -60485,9 +60485,9 @@ class Histogram(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Histogram 
+The first argument to the plotly_study.graph_objs.Histogram 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Histogram"""
+an instance of plotly_study.graph_objs.Histogram"""
             )
 
         # Handle skip_invalid
@@ -60496,7 +60496,7 @@ an instance of plotly.graph_objs.Histogram"""
 
         # Import validators
         # -----------------
-        from plotly.validators import histogram as v_histogram
+        from plotly_study.validators import histogram as v_histogram
 
         # Initialize validators
         # ---------------------
@@ -60675,7 +60675,7 @@ an instance of plotly.graph_objs.Histogram"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -60740,7 +60740,7 @@ class Heatmapgl(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.heatmapgl.ColorBar
+          - An instance of plotly_study.graph_objs.heatmapgl.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -60872,7 +60872,7 @@ class Heatmapgl(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.heatmapgl.color
+                    A tuple of plotly_study.graph_objects.heatmapgl.color
                     bar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -60920,7 +60920,7 @@ class Heatmapgl(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.heatmapgl.colorbar.Title
+                    plotly_study.graph_objects.heatmapgl.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -60959,7 +60959,7 @@ class Heatmapgl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.heatmapgl.ColorBar
+        plotly_study.graph_objs.heatmapgl.ColorBar
         """
         return self["colorbar"]
 
@@ -60987,7 +60987,7 @@ class Heatmapgl(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -61049,7 +61049,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61135,7 +61135,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61154,7 +61154,7 @@ class Heatmapgl(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.heatmapgl.Hoverlabel
+          - An instance of plotly_study.graph_objs.heatmapgl.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -61198,7 +61198,7 @@ class Heatmapgl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.heatmapgl.Hoverlabel
+        plotly_study.graph_objs.heatmapgl.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -61236,7 +61236,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61284,7 +61284,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61388,7 +61388,7 @@ class Heatmapgl(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.heatmapgl.Stream
+          - An instance of plotly_study.graph_objs.heatmapgl.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -61406,7 +61406,7 @@ class Heatmapgl(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.heatmapgl.Stream
+        plotly_study.graph_objs.heatmapgl.Stream
         """
         return self["stream"]
 
@@ -61442,7 +61442,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61626,7 +61626,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61736,7 +61736,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61887,7 +61887,7 @@ class Heatmapgl(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -61931,7 +61931,7 @@ class Heatmapgl(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.heatmapgl.ColorBar instance or
+            plotly_study.graph_objects.heatmapgl.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -61964,7 +61964,7 @@ class Heatmapgl(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.heatmapgl.Hoverlabel instance or
+            plotly_study.graph_objects.heatmapgl.Hoverlabel instance or
             dict with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -62000,7 +62000,7 @@ class Heatmapgl(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.heatmapgl.Stream instance or dict
+            plotly_study.graph_objects.heatmapgl.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -62153,7 +62153,7 @@ class Heatmapgl(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Heatmapgl
+            an instance of plotly_study.graph_objs.Heatmapgl
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -62169,7 +62169,7 @@ class Heatmapgl(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.heatmapgl.ColorBar instance or
+            plotly_study.graph_objects.heatmapgl.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -62202,7 +62202,7 @@ class Heatmapgl(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.heatmapgl.Hoverlabel instance or
+            plotly_study.graph_objects.heatmapgl.Hoverlabel instance or
             dict with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -62238,7 +62238,7 @@ class Heatmapgl(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.heatmapgl.Stream instance or dict
+            plotly_study.graph_objects.heatmapgl.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -62351,9 +62351,9 @@ class Heatmapgl(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Heatmapgl 
+The first argument to the plotly_study.graph_objs.Heatmapgl 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Heatmapgl"""
+an instance of plotly_study.graph_objs.Heatmapgl"""
             )
 
         # Handle skip_invalid
@@ -62362,7 +62362,7 @@ an instance of plotly.graph_objs.Heatmapgl"""
 
         # Import validators
         # -----------------
-        from plotly.validators import heatmapgl as v_heatmapgl
+        from plotly_study.validators import heatmapgl as v_heatmapgl
 
         # Initialize validators
         # ---------------------
@@ -62515,7 +62515,7 @@ an instance of plotly.graph_objs.Heatmapgl"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -62580,7 +62580,7 @@ class Heatmap(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.heatmap.ColorBar
+          - An instance of plotly_study.graph_objs.heatmap.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -62712,7 +62712,7 @@ class Heatmap(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.heatmap.colorba
+                    A tuple of plotly_study.graph_objects.heatmap.colorba
                     r.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -62760,7 +62760,7 @@ class Heatmap(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.heatmap.colorbar.Title
+                    plotly_study.graph_objects.heatmap.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -62799,7 +62799,7 @@ class Heatmap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.heatmap.ColorBar
+        plotly_study.graph_objs.heatmap.ColorBar
         """
         return self["colorbar"]
 
@@ -62827,7 +62827,7 @@ class Heatmap(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -62912,7 +62912,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -62998,7 +62998,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -63017,7 +63017,7 @@ class Heatmap(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.heatmap.Hoverlabel
+          - An instance of plotly_study.graph_objs.heatmap.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -63061,7 +63061,7 @@ class Heatmap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.heatmap.Hoverlabel
+        plotly_study.graph_objs.heatmap.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -63139,7 +63139,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -63179,7 +63179,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -63221,7 +63221,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -63269,7 +63269,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -63373,7 +63373,7 @@ class Heatmap(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.heatmap.Stream
+          - An instance of plotly_study.graph_objs.heatmap.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -63391,7 +63391,7 @@ class Heatmap(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.heatmap.Stream
+        plotly_study.graph_objs.heatmap.Stream
         """
         return self["stream"]
 
@@ -63427,7 +63427,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -63655,7 +63655,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -63809,7 +63809,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -64005,7 +64005,7 @@ class Heatmap(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -64049,7 +64049,7 @@ class Heatmap(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.heatmap.ColorBar instance or dict
+            plotly_study.graph_objects.heatmap.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -64087,7 +64087,7 @@ class Heatmap(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.heatmap.Hoverlabel instance or
+            plotly_study.graph_objects.heatmap.Hoverlabel instance or
             dict with compatible properties
         hoverongaps
             Determines whether or not gaps (i.e. {nan} or missing
@@ -64157,7 +64157,7 @@ class Heatmap(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.heatmap.Stream instance or dict
+            plotly_study.graph_objects.heatmap.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -64353,7 +64353,7 @@ class Heatmap(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Heatmap
+            an instance of plotly_study.graph_objs.Heatmap
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -64369,7 +64369,7 @@ class Heatmap(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.heatmap.ColorBar instance or dict
+            plotly_study.graph_objects.heatmap.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -64407,7 +64407,7 @@ class Heatmap(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.heatmap.Hoverlabel instance or
+            plotly_study.graph_objects.heatmap.Hoverlabel instance or
             dict with compatible properties
         hoverongaps
             Determines whether or not gaps (i.e. {nan} or missing
@@ -64477,7 +64477,7 @@ class Heatmap(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.heatmap.Stream instance or dict
+            plotly_study.graph_objects.heatmap.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -64605,9 +64605,9 @@ class Heatmap(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Heatmap 
+The first argument to the plotly_study.graph_objs.Heatmap 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Heatmap"""
+an instance of plotly_study.graph_objs.Heatmap"""
             )
 
         # Handle skip_invalid
@@ -64616,7 +64616,7 @@ an instance of plotly.graph_objs.Heatmap"""
 
         # Import validators
         # -----------------
-        from plotly.validators import heatmap as v_heatmap
+        from plotly_study.validators import heatmap as v_heatmap
 
         # Initialize validators
         # ---------------------
@@ -64807,7 +64807,7 @@ an instance of plotly.graph_objs.Heatmap"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -64884,7 +64884,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -64923,7 +64923,7 @@ class Funnelarea(_BaseTraceType):
         """
         The 'domain' property is an instance of Domain
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.Domain
+          - An instance of plotly_study.graph_objs.funnelarea.Domain
           - A dict of string/value properties that will be passed
             to the Domain constructor
     
@@ -64946,7 +64946,7 @@ class Funnelarea(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.Domain
+        plotly_study.graph_objs.funnelarea.Domain
         """
         return self["domain"]
 
@@ -64988,7 +64988,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65007,7 +65007,7 @@ class Funnelarea(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.Hoverlabel
+          - An instance of plotly_study.graph_objs.funnelarea.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -65051,7 +65051,7 @@ class Funnelarea(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.Hoverlabel
+        plotly_study.graph_objs.funnelarea.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -65109,7 +65109,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65155,7 +65155,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65197,7 +65197,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65218,7 +65218,7 @@ class Funnelarea(_BaseTraceType):
     
         The 'insidetextfont' property is an instance of Insidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.Insidetextfont
+          - An instance of plotly_study.graph_objs.funnelarea.Insidetextfont
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
     
@@ -65256,7 +65256,7 @@ class Funnelarea(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.Insidetextfont
+        plotly_study.graph_objs.funnelarea.Insidetextfont
         """
         return self["insidetextfont"]
 
@@ -65318,7 +65318,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  labels .
     
         The 'labelssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65360,7 +65360,7 @@ class Funnelarea(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.Marker
+          - An instance of plotly_study.graph_objs.funnelarea.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -65374,12 +65374,12 @@ class Funnelarea(_BaseTraceType):
                     Sets the source reference on plot.ly for
                     colors .
                 line
-                    plotly.graph_objects.funnelarea.marker.Line
+                    plotly_study.graph_objects.funnelarea.marker.Line
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.Marker
+        plotly_study.graph_objs.funnelarea.Marker
         """
         return self["marker"]
 
@@ -65423,7 +65423,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65528,7 +65528,7 @@ class Funnelarea(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.Stream
+          - An instance of plotly_study.graph_objs.funnelarea.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -65546,7 +65546,7 @@ class Funnelarea(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.Stream
+        plotly_study.graph_objs.funnelarea.Stream
         """
         return self["stream"]
 
@@ -65587,7 +65587,7 @@ class Funnelarea(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.Textfont
+          - An instance of plotly_study.graph_objs.funnelarea.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -65625,7 +65625,7 @@ class Funnelarea(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.Textfont
+        plotly_study.graph_objs.funnelarea.Textfont
         """
         return self["textfont"]
 
@@ -65686,7 +65686,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65706,7 +65706,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65762,7 +65762,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65781,7 +65781,7 @@ class Funnelarea(_BaseTraceType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.Title
+          - An instance of plotly_study.graph_objs.funnelarea.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -65804,7 +65804,7 @@ class Funnelarea(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.Title
+        plotly_study.graph_objs.funnelarea.Title
         """
         return self["title"]
 
@@ -65896,7 +65896,7 @@ class Funnelarea(_BaseTraceType):
         Sets the source reference on plot.ly for  values .
     
         The 'valuessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -65963,7 +65963,7 @@ class Funnelarea(_BaseTraceType):
         dlabel
             Sets the label step. See `label0` for more info.
         domain
-            plotly.graph_objects.funnelarea.Domain instance or dict
+            plotly_study.graph_objects.funnelarea.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -65973,7 +65973,7 @@ class Funnelarea(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.funnelarea.Hoverlabel instance or
+            plotly_study.graph_objects.funnelarea.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -66036,7 +66036,7 @@ class Funnelarea(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.funnelarea.Marker instance or dict
+            plotly_study.graph_objects.funnelarea.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -66067,7 +66067,7 @@ class Funnelarea(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.funnelarea.Stream instance or dict
+            plotly_study.graph_objects.funnelarea.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -66107,7 +66107,7 @@ class Funnelarea(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         title
-            plotly.graph_objects.funnelarea.Title instance or dict
+            plotly_study.graph_objects.funnelarea.Title instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -66203,7 +66203,7 @@ class Funnelarea(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Funnelarea
+            an instance of plotly_study.graph_objs.Funnelarea
         aspectratio
             Sets the ratio between height and width
         baseratio
@@ -66219,7 +66219,7 @@ class Funnelarea(_BaseTraceType):
         dlabel
             Sets the label step. See `label0` for more info.
         domain
-            plotly.graph_objects.funnelarea.Domain instance or dict
+            plotly_study.graph_objects.funnelarea.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -66229,7 +66229,7 @@ class Funnelarea(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.funnelarea.Hoverlabel instance or
+            plotly_study.graph_objects.funnelarea.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -66292,7 +66292,7 @@ class Funnelarea(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.funnelarea.Marker instance or dict
+            plotly_study.graph_objects.funnelarea.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -66323,7 +66323,7 @@ class Funnelarea(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.funnelarea.Stream instance or dict
+            plotly_study.graph_objects.funnelarea.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -66363,7 +66363,7 @@ class Funnelarea(_BaseTraceType):
             Sets the source reference on plot.ly for  texttemplate
             .
         title
-            plotly.graph_objects.funnelarea.Title instance or dict
+            plotly_study.graph_objects.funnelarea.Title instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -66415,9 +66415,9 @@ class Funnelarea(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Funnelarea 
+The first argument to the plotly_study.graph_objs.Funnelarea 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Funnelarea"""
+an instance of plotly_study.graph_objs.Funnelarea"""
             )
 
         # Handle skip_invalid
@@ -66426,7 +66426,7 @@ an instance of plotly.graph_objs.Funnelarea"""
 
         # Import validators
         # -----------------
-        from plotly.validators import funnelarea as v_funnelarea
+        from plotly_study.validators import funnelarea as v_funnelarea
 
         # Initialize validators
         # ---------------------
@@ -66581,7 +66581,7 @@ an instance of plotly.graph_objs.Funnelarea"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -66640,7 +66640,7 @@ class Funnel(_BaseTraceType):
         """
         The 'connector' property is an instance of Connector
         that may be specified as:
-          - An instance of plotly.graph_objs.funnel.Connector
+          - An instance of plotly_study.graph_objs.funnel.Connector
           - A dict of string/value properties that will be passed
             to the Connector constructor
     
@@ -66649,7 +66649,7 @@ class Funnel(_BaseTraceType):
                 fillcolor
                     Sets the fill color.
                 line
-                    plotly.graph_objects.funnel.connector.Line
+                    plotly_study.graph_objects.funnel.connector.Line
                     instance or dict with compatible properties
                 visible
                     Determines if connector regions and lines are
@@ -66657,7 +66657,7 @@ class Funnel(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnel.Connector
+        plotly_study.graph_objs.funnel.Connector
         """
         return self["connector"]
 
@@ -66718,7 +66718,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -66804,7 +66804,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -66823,7 +66823,7 @@ class Funnel(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.funnel.Hoverlabel
+          - An instance of plotly_study.graph_objs.funnel.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -66867,7 +66867,7 @@ class Funnel(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnel.Hoverlabel
+        plotly_study.graph_objs.funnel.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -66925,7 +66925,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -66971,7 +66971,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -67013,7 +67013,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -67056,7 +67056,7 @@ class Funnel(_BaseTraceType):
     
         The 'insidetextfont' property is an instance of Insidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.funnel.Insidetextfont
+          - An instance of plotly_study.graph_objs.funnel.Insidetextfont
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
     
@@ -67094,7 +67094,7 @@ class Funnel(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnel.Insidetextfont
+        plotly_study.graph_objs.funnel.Insidetextfont
         """
         return self["insidetextfont"]
 
@@ -67132,7 +67132,7 @@ class Funnel(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.funnel.Marker
+          - An instance of plotly_study.graph_objs.funnel.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -67192,7 +67192,7 @@ class Funnel(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.funnel.marker.ColorBar
+                    plotly_study.graph_objects.funnel.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -67214,7 +67214,7 @@ class Funnel(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.funnel.marker.Line
+                    plotly_study.graph_objects.funnel.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the opacity of the bars.
@@ -67235,7 +67235,7 @@ class Funnel(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnel.Marker
+        plotly_study.graph_objs.funnel.Marker
         """
         return self["marker"]
 
@@ -67279,7 +67279,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -67413,7 +67413,7 @@ class Funnel(_BaseTraceType):
     
         The 'outsidetextfont' property is an instance of Outsidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.funnel.Outsidetextfont
+          - An instance of plotly_study.graph_objs.funnel.Outsidetextfont
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
     
@@ -67451,7 +67451,7 @@ class Funnel(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnel.Outsidetextfont
+        plotly_study.graph_objs.funnel.Outsidetextfont
         """
         return self["outsidetextfont"]
 
@@ -67511,7 +67511,7 @@ class Funnel(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.funnel.Stream
+          - An instance of plotly_study.graph_objs.funnel.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -67529,7 +67529,7 @@ class Funnel(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnel.Stream
+        plotly_study.graph_objs.funnel.Stream
         """
         return self["stream"]
 
@@ -67598,7 +67598,7 @@ class Funnel(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.funnel.Textfont
+          - An instance of plotly_study.graph_objs.funnel.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -67636,7 +67636,7 @@ class Funnel(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.funnel.Textfont
+        plotly_study.graph_objs.funnel.Textfont
         """
         return self["textfont"]
 
@@ -67705,7 +67705,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -67725,7 +67725,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -67781,7 +67781,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -67965,7 +67965,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -68051,7 +68051,7 @@ class Funnel(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -68091,7 +68091,7 @@ class Funnel(_BaseTraceType):
             and tick labels, make sure to set `xaxis.layer` and
             `yaxis.layer` to *below traces*.
         connector
-            plotly.graph_objects.funnel.Connector instance or dict
+            plotly_study.graph_objects.funnel.Connector instance or dict
             with compatible properties
         constraintext
             Constrain the size of text inside or outside a bar to
@@ -68115,7 +68115,7 @@ class Funnel(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.funnel.Hoverlabel instance or dict
+            plotly_study.graph_objects.funnel.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -68170,7 +68170,7 @@ class Funnel(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.funnel.Marker instance or dict
+            plotly_study.graph_objects.funnel.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -68222,7 +68222,7 @@ class Funnel(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.funnel.Stream instance or dict
+            plotly_study.graph_objects.funnel.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -68408,7 +68408,7 @@ class Funnel(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Funnel
+            an instance of plotly_study.graph_objs.Funnel
         alignmentgroup
             Set several traces linked to the same position axis or
             matching axes to the same alignmentgroup. This controls
@@ -68420,7 +68420,7 @@ class Funnel(_BaseTraceType):
             and tick labels, make sure to set `xaxis.layer` and
             `yaxis.layer` to *below traces*.
         connector
-            plotly.graph_objects.funnel.Connector instance or dict
+            plotly_study.graph_objects.funnel.Connector instance or dict
             with compatible properties
         constraintext
             Constrain the size of text inside or outside a bar to
@@ -68444,7 +68444,7 @@ class Funnel(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.funnel.Hoverlabel instance or dict
+            plotly_study.graph_objects.funnel.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -68499,7 +68499,7 @@ class Funnel(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.funnel.Marker instance or dict
+            plotly_study.graph_objects.funnel.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -68551,7 +68551,7 @@ class Funnel(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.funnel.Stream instance or dict
+            plotly_study.graph_objects.funnel.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -68681,9 +68681,9 @@ class Funnel(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Funnel 
+The first argument to the plotly_study.graph_objs.Funnel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Funnel"""
+an instance of plotly_study.graph_objs.Funnel"""
             )
 
         # Handle skip_invalid
@@ -68692,7 +68692,7 @@ an instance of plotly.graph_objs.Funnel"""
 
         # Import validators
         # -----------------
-        from plotly.validators import funnel as v_funnel
+        from plotly_study.validators import funnel as v_funnel
 
         # Initialize validators
         # ---------------------
@@ -68882,7 +68882,7 @@ an instance of plotly.graph_objs.Funnel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -68971,7 +68971,7 @@ class Densitymapbox(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.densitymapbox.ColorBar
+          - An instance of plotly_study.graph_objs.densitymapbox.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -69103,7 +69103,7 @@ class Densitymapbox(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.densitymapbox.c
+                    A tuple of plotly_study.graph_objects.densitymapbox.c
                     olorbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -69152,7 +69152,7 @@ class Densitymapbox(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.densitymapbox.colorbar.Tit
+                    plotly_study.graph_objects.densitymapbox.colorbar.Tit
                     le instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -69191,7 +69191,7 @@ class Densitymapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.densitymapbox.ColorBar
+        plotly_study.graph_objs.densitymapbox.ColorBar
         """
         return self["colorbar"]
 
@@ -69219,7 +69219,7 @@ class Densitymapbox(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -69281,7 +69281,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69327,7 +69327,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69346,7 +69346,7 @@ class Densitymapbox(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.densitymapbox.Hoverlabel
+          - An instance of plotly_study.graph_objs.densitymapbox.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -69390,7 +69390,7 @@ class Densitymapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.densitymapbox.Hoverlabel
+        plotly_study.graph_objs.densitymapbox.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -69447,7 +69447,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69493,7 +69493,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69535,7 +69535,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69575,7 +69575,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  lat .
     
         The 'latsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69615,7 +69615,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  lon .
     
         The 'lonsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69663,7 +69663,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69748,7 +69748,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  radius .
     
         The 'radiussrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -69810,7 +69810,7 @@ class Densitymapbox(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.densitymapbox.Stream
+          - An instance of plotly_study.graph_objs.densitymapbox.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -69828,7 +69828,7 @@ class Densitymapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.densitymapbox.Stream
+        plotly_study.graph_objs.densitymapbox.Stream
         """
         return self["stream"]
 
@@ -69896,7 +69896,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -70102,7 +70102,7 @@ class Densitymapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -70152,7 +70152,7 @@ class Densitymapbox(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.densitymapbox.ColorBar instance or
+            plotly_study.graph_objects.densitymapbox.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -70181,7 +70181,7 @@ class Densitymapbox(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.densitymapbox.Hoverlabel instance
+            plotly_study.graph_objects.densitymapbox.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -70266,7 +70266,7 @@ class Densitymapbox(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.densitymapbox.Stream instance or
+            plotly_study.graph_objects.densitymapbox.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -70393,7 +70393,7 @@ class Densitymapbox(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Densitymapbox
+            an instance of plotly_study.graph_objs.Densitymapbox
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -70415,7 +70415,7 @@ class Densitymapbox(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.densitymapbox.ColorBar instance or
+            plotly_study.graph_objects.densitymapbox.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -70444,7 +70444,7 @@ class Densitymapbox(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.densitymapbox.Hoverlabel instance
+            plotly_study.graph_objects.densitymapbox.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -70529,7 +70529,7 @@ class Densitymapbox(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.densitymapbox.Stream instance or
+            plotly_study.graph_objects.densitymapbox.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -70615,9 +70615,9 @@ class Densitymapbox(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Densitymapbox 
+The first argument to the plotly_study.graph_objs.Densitymapbox 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Densitymapbox"""
+an instance of plotly_study.graph_objs.Densitymapbox"""
             )
 
         # Handle skip_invalid
@@ -70626,7 +70626,7 @@ an instance of plotly.graph_objs.Densitymapbox"""
 
         # Import validators
         # -----------------
-        from plotly.validators import densitymapbox as v_densitymapbox
+        from plotly_study.validators import densitymapbox as v_densitymapbox
 
         # Initialize validators
         # ---------------------
@@ -70780,7 +70780,7 @@ an instance of plotly.graph_objs.Densitymapbox"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -70835,7 +70835,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  a .
     
         The 'asrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -70968,7 +70968,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  b .
     
         The 'bsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -71060,7 +71060,7 @@ class Contourcarpet(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.ColorBar
+          - An instance of plotly_study.graph_objs.contourcarpet.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -71192,7 +71192,7 @@ class Contourcarpet(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.contourcarpet.c
+                    A tuple of plotly_study.graph_objects.contourcarpet.c
                     olorbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -71241,7 +71241,7 @@ class Contourcarpet(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.contourcarpet.colorbar.Tit
+                    plotly_study.graph_objects.contourcarpet.colorbar.Tit
                     le instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -71280,7 +71280,7 @@ class Contourcarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.ColorBar
+        plotly_study.graph_objs.contourcarpet.ColorBar
         """
         return self["colorbar"]
 
@@ -71308,7 +71308,7 @@ class Contourcarpet(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -71346,7 +71346,7 @@ class Contourcarpet(_BaseTraceType):
         """
         The 'contours' property is an instance of Contours
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.Contours
+          - An instance of plotly_study.graph_objs.contourcarpet.Contours
           - A dict of string/value properties that will be passed
             to the Contours constructor
     
@@ -71416,7 +71416,7 @@ class Contourcarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.Contours
+        plotly_study.graph_objs.contourcarpet.Contours
         """
         return self["contours"]
 
@@ -71455,7 +71455,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -71598,7 +71598,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -71640,7 +71640,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -71682,7 +71682,7 @@ class Contourcarpet(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.Line
+          - An instance of plotly_study.graph_objs.contourcarpet.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -71708,7 +71708,7 @@ class Contourcarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.Line
+        plotly_study.graph_objs.contourcarpet.Line
         """
         return self["line"]
 
@@ -71752,7 +71752,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -71901,7 +71901,7 @@ class Contourcarpet(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.contourcarpet.Stream
+          - An instance of plotly_study.graph_objs.contourcarpet.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -71919,7 +71919,7 @@ class Contourcarpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contourcarpet.Stream
+        plotly_study.graph_objs.contourcarpet.Stream
         """
         return self["stream"]
 
@@ -71955,7 +71955,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -72230,7 +72230,7 @@ class Contourcarpet(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -72310,7 +72310,7 @@ class Contourcarpet(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.contourcarpet.ColorBar instance or
+            plotly_study.graph_objects.contourcarpet.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -72325,7 +72325,7 @@ class Contourcarpet(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contours
-            plotly.graph_objects.contourcarpet.Contours instance or
+            plotly_study.graph_objects.contourcarpet.Contours instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -72358,7 +72358,7 @@ class Contourcarpet(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.contourcarpet.Line instance or
+            plotly_study.graph_objects.contourcarpet.Line instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -72397,7 +72397,7 @@ class Contourcarpet(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.contourcarpet.Stream instance or
+            plotly_study.graph_objects.contourcarpet.Stream instance or
             dict with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -72531,7 +72531,7 @@ class Contourcarpet(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Contourcarpet
+            an instance of plotly_study.graph_objs.Contourcarpet
         a
             Sets the x coordinates.
         a0
@@ -72583,7 +72583,7 @@ class Contourcarpet(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.contourcarpet.ColorBar instance or
+            plotly_study.graph_objects.contourcarpet.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -72598,7 +72598,7 @@ class Contourcarpet(_BaseTraceType):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contours
-            plotly.graph_objects.contourcarpet.Contours instance or
+            plotly_study.graph_objects.contourcarpet.Contours instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -72631,7 +72631,7 @@ class Contourcarpet(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.contourcarpet.Line instance or
+            plotly_study.graph_objects.contourcarpet.Line instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -72670,7 +72670,7 @@ class Contourcarpet(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.contourcarpet.Stream instance or
+            plotly_study.graph_objects.contourcarpet.Stream instance or
             dict with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -72755,9 +72755,9 @@ class Contourcarpet(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Contourcarpet 
+The first argument to the plotly_study.graph_objs.Contourcarpet 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Contourcarpet"""
+an instance of plotly_study.graph_objs.Contourcarpet"""
             )
 
         # Handle skip_invalid
@@ -72766,7 +72766,7 @@ an instance of plotly.graph_objs.Contourcarpet"""
 
         # Import validators
         # -----------------
-        from plotly.validators import contourcarpet as v_contourcarpet
+        from plotly_study.validators import contourcarpet as v_contourcarpet
 
         # Initialize validators
         # ---------------------
@@ -72940,7 +72940,7 @@ an instance of plotly.graph_objs.Contourcarpet"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -73028,7 +73028,7 @@ class Contour(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.contour.ColorBar
+          - An instance of plotly_study.graph_objs.contour.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -73160,7 +73160,7 @@ class Contour(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.contour.colorba
+                    A tuple of plotly_study.graph_objects.contour.colorba
                     r.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -73208,7 +73208,7 @@ class Contour(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.contour.colorbar.Title
+                    plotly_study.graph_objects.contour.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -73247,7 +73247,7 @@ class Contour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contour.ColorBar
+        plotly_study.graph_objs.contour.ColorBar
         """
         return self["colorbar"]
 
@@ -73275,7 +73275,7 @@ class Contour(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -73335,7 +73335,7 @@ class Contour(_BaseTraceType):
         """
         The 'contours' property is an instance of Contours
         that may be specified as:
-          - An instance of plotly.graph_objs.contour.Contours
+          - An instance of plotly_study.graph_objs.contour.Contours
           - A dict of string/value properties that will be passed
             to the Contours constructor
     
@@ -73407,7 +73407,7 @@ class Contour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contour.Contours
+        plotly_study.graph_objs.contour.Contours
         """
         return self["contours"]
 
@@ -73446,7 +73446,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -73595,7 +73595,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -73614,7 +73614,7 @@ class Contour(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.contour.Hoverlabel
+          - An instance of plotly_study.graph_objs.contour.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -73658,7 +73658,7 @@ class Contour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contour.Hoverlabel
+        plotly_study.graph_objs.contour.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -73736,7 +73736,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -73776,7 +73776,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -73818,7 +73818,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -73860,7 +73860,7 @@ class Contour(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.contour.Line
+          - An instance of plotly_study.graph_objs.contour.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -73886,7 +73886,7 @@ class Contour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contour.Line
+        plotly_study.graph_objs.contour.Line
         """
         return self["line"]
 
@@ -73930,7 +73930,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -74079,7 +74079,7 @@ class Contour(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.contour.Stream
+          - An instance of plotly_study.graph_objs.contour.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -74097,7 +74097,7 @@ class Contour(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.contour.Stream
+        plotly_study.graph_objs.contour.Stream
         """
         return self["stream"]
 
@@ -74133,7 +74133,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -74341,7 +74341,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -74475,7 +74475,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -74650,7 +74650,7 @@ class Contour(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -74699,7 +74699,7 @@ class Contour(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.contour.ColorBar instance or dict
+            plotly_study.graph_objects.contour.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -74719,7 +74719,7 @@ class Contour(_BaseTraceType):
             to true if `z` is a one dimensional array otherwise it
             is defaulted to false.
         contours
-            plotly.graph_objects.contour.Contours instance or dict
+            plotly_study.graph_objects.contour.Contours instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -74745,7 +74745,7 @@ class Contour(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.contour.Hoverlabel instance or
+            plotly_study.graph_objects.contour.Hoverlabel instance or
             dict with compatible properties
         hoverongaps
             Determines whether or not gaps (i.e. {nan} or missing
@@ -74792,7 +74792,7 @@ class Contour(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.contour.Line instance or dict with
+            plotly_study.graph_objects.contour.Line instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -74831,7 +74831,7 @@ class Contour(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.contour.Stream instance or dict
+            plotly_study.graph_objects.contour.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -75015,7 +75015,7 @@ class Contour(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Contour
+            an instance of plotly_study.graph_objs.Contour
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -75036,7 +75036,7 @@ class Contour(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.contour.ColorBar instance or dict
+            plotly_study.graph_objects.contour.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -75056,7 +75056,7 @@ class Contour(_BaseTraceType):
             to true if `z` is a one dimensional array otherwise it
             is defaulted to false.
         contours
-            plotly.graph_objects.contour.Contours instance or dict
+            plotly_study.graph_objects.contour.Contours instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -75082,7 +75082,7 @@ class Contour(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.contour.Hoverlabel instance or
+            plotly_study.graph_objects.contour.Hoverlabel instance or
             dict with compatible properties
         hoverongaps
             Determines whether or not gaps (i.e. {nan} or missing
@@ -75129,7 +75129,7 @@ class Contour(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.contour.Line instance or dict with
+            plotly_study.graph_objects.contour.Line instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -75168,7 +75168,7 @@ class Contour(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.contour.Stream instance or dict
+            plotly_study.graph_objects.contour.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -75290,9 +75290,9 @@ class Contour(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Contour 
+The first argument to the plotly_study.graph_objs.Contour 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Contour"""
+an instance of plotly_study.graph_objs.Contour"""
             )
 
         # Handle skip_invalid
@@ -75301,7 +75301,7 @@ an instance of plotly.graph_objs.Contour"""
 
         # Import validators
         # -----------------
-        from plotly.validators import contour as v_contour
+        from plotly_study.validators import contour as v_contour
 
         # Initialize validators
         # ---------------------
@@ -75504,7 +75504,7 @@ an instance of plotly.graph_objs.Contour"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -75682,7 +75682,7 @@ class Cone(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.cone.ColorBar
+          - An instance of plotly_study.graph_objs.cone.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -75814,7 +75814,7 @@ class Cone(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.cone.colorbar.T
+                    A tuple of plotly_study.graph_objects.cone.colorbar.T
                     ickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -75862,7 +75862,7 @@ class Cone(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.cone.colorbar.Title
+                    plotly_study.graph_objects.cone.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use cone.colorbar.title.font
@@ -75899,7 +75899,7 @@ class Cone(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.cone.ColorBar
+        plotly_study.graph_objs.cone.ColorBar
         """
         return self["colorbar"]
 
@@ -75927,7 +75927,7 @@ class Cone(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -75989,7 +75989,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76035,7 +76035,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76054,7 +76054,7 @@ class Cone(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.cone.Hoverlabel
+          - An instance of plotly_study.graph_objs.cone.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -76098,7 +76098,7 @@ class Cone(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.cone.Hoverlabel
+        plotly_study.graph_objs.cone.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -76155,7 +76155,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76197,7 +76197,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76239,7 +76239,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76258,7 +76258,7 @@ class Cone(_BaseTraceType):
         """
         The 'lighting' property is an instance of Lighting
         that may be specified as:
-          - An instance of plotly.graph_objs.cone.Lighting
+          - An instance of plotly_study.graph_objs.cone.Lighting
           - A dict of string/value properties that will be passed
             to the Lighting constructor
     
@@ -76291,7 +76291,7 @@ class Cone(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.cone.Lighting
+        plotly_study.graph_objs.cone.Lighting
         """
         return self["lighting"]
 
@@ -76306,7 +76306,7 @@ class Cone(_BaseTraceType):
         """
         The 'lightposition' property is an instance of Lightposition
         that may be specified as:
-          - An instance of plotly.graph_objs.cone.Lightposition
+          - An instance of plotly_study.graph_objs.cone.Lightposition
           - A dict of string/value properties that will be passed
             to the Lightposition constructor
     
@@ -76324,7 +76324,7 @@ class Cone(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.cone.Lightposition
+        plotly_study.graph_objs.cone.Lightposition
         """
         return self["lightposition"]
 
@@ -76368,7 +76368,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76555,7 +76555,7 @@ class Cone(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.cone.Stream
+          - An instance of plotly_study.graph_objs.cone.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -76573,7 +76573,7 @@ class Cone(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.cone.Stream
+        plotly_study.graph_objs.cone.Stream
         """
         return self["stream"]
 
@@ -76613,7 +76613,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76708,7 +76708,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  u .
     
         The 'usrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76771,7 +76771,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  v .
     
         The 'vsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76811,7 +76811,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  w .
     
         The 'wsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76852,7 +76852,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76893,7 +76893,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -76934,7 +76934,7 @@ class Cone(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -77000,7 +77000,7 @@ class Cone(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.cone.ColorBar instance or dict
+            plotly_study.graph_objects.cone.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -77029,7 +77029,7 @@ class Cone(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.cone.Hoverlabel instance or dict
+            plotly_study.graph_objects.cone.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -77069,10 +77069,10 @@ class Cone(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.cone.Lighting instance or dict
+            plotly_study.graph_objects.cone.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.cone.Lightposition instance or
+            plotly_study.graph_objects.cone.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -77131,7 +77131,7 @@ class Cone(_BaseTraceType):
             the same units as the u/v/w vector field, its the
             default value is half the sample's maximum vector norm.
         stream
-            plotly.graph_objects.cone.Stream instance or dict with
+            plotly_study.graph_objects.cone.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with the cones. If
@@ -77262,7 +77262,7 @@ class Cone(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Cone
+            an instance of plotly_study.graph_objs.Cone
         anchor
             Sets the cones' anchor with respect to their x/y/z
             positions. Note that "cm" denote the cone's center of
@@ -77300,7 +77300,7 @@ class Cone(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.cone.ColorBar instance or dict
+            plotly_study.graph_objects.cone.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -77329,7 +77329,7 @@ class Cone(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.cone.Hoverlabel instance or dict
+            plotly_study.graph_objects.cone.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -77369,10 +77369,10 @@ class Cone(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.cone.Lighting instance or dict
+            plotly_study.graph_objects.cone.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.cone.Lightposition instance or
+            plotly_study.graph_objects.cone.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -77431,7 +77431,7 @@ class Cone(_BaseTraceType):
             the same units as the u/v/w vector field, its the
             default value is half the sample's maximum vector norm.
         stream
-            plotly.graph_objects.cone.Stream instance or dict with
+            plotly_study.graph_objects.cone.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with the cones. If
@@ -77512,9 +77512,9 @@ class Cone(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Cone 
+The first argument to the plotly_study.graph_objs.Cone 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Cone"""
+an instance of plotly_study.graph_objs.Cone"""
             )
 
         # Handle skip_invalid
@@ -77523,7 +77523,7 @@ an instance of plotly.graph_objs.Cone"""
 
         # Import validators
         # -----------------
-        from plotly.validators import cone as v_cone
+        from plotly_study.validators import cone as v_cone
 
         # Initialize validators
         # ---------------------
@@ -77699,7 +77699,7 @@ an instance of plotly.graph_objs.Cone"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -77788,7 +77788,7 @@ class Choroplethmapbox(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.ColorBar
+          - An instance of plotly_study.graph_objs.choroplethmapbox.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -77920,7 +77920,7 @@ class Choroplethmapbox(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.choroplethmapbo
+                    A tuple of plotly_study.graph_objects.choroplethmapbo
                     x.colorbar.Tickformatstop instances or dicts
                     with compatible properties
                 tickformatstopdefaults
@@ -77969,7 +77969,7 @@ class Choroplethmapbox(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.choroplethmapbox.colorbar.
+                    plotly_study.graph_objects.choroplethmapbox.colorbar.
                     Title instance or dict with compatible
                     properties
                 titlefont
@@ -78009,7 +78009,7 @@ class Choroplethmapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.ColorBar
+        plotly_study.graph_objs.choroplethmapbox.ColorBar
         """
         return self["colorbar"]
 
@@ -78037,7 +78037,7 @@ class Choroplethmapbox(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -78099,7 +78099,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78167,7 +78167,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78186,7 +78186,7 @@ class Choroplethmapbox(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.Hoverlabel
+          - An instance of plotly_study.graph_objs.choroplethmapbox.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -78230,7 +78230,7 @@ class Choroplethmapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.Hoverlabel
+        plotly_study.graph_objs.choroplethmapbox.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -78287,7 +78287,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78329,7 +78329,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78371,7 +78371,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78412,7 +78412,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  locations .
     
         The 'locationssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78431,14 +78431,14 @@ class Choroplethmapbox(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.Marker
+          - An instance of plotly_study.graph_objs.choroplethmapbox.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
             Supported dict properties:
                 
                 line
-                    plotly.graph_objects.choroplethmapbox.marker.Li
+                    plotly_study.graph_objects.choroplethmapbox.marker.Li
                     ne instance or dict with compatible properties
                 opacity
                     Sets the opacity of the locations.
@@ -78448,7 +78448,7 @@ class Choroplethmapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.Marker
+        plotly_study.graph_objs.choroplethmapbox.Marker
         """
         return self["marker"]
 
@@ -78492,7 +78492,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78555,20 +78555,20 @@ class Choroplethmapbox(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.Selected
+          - An instance of plotly_study.graph_objs.choroplethmapbox.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.choroplethmapbox.selected.
+                    plotly_study.graph_objects.choroplethmapbox.selected.
                     Marker instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.Selected
+        plotly_study.graph_objs.choroplethmapbox.Selected
         """
         return self["selected"]
 
@@ -78628,7 +78628,7 @@ class Choroplethmapbox(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.Stream
+          - An instance of plotly_study.graph_objs.choroplethmapbox.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -78646,7 +78646,7 @@ class Choroplethmapbox(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.Stream
+        plotly_study.graph_objs.choroplethmapbox.Stream
         """
         return self["stream"]
 
@@ -78709,7 +78709,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78783,20 +78783,20 @@ class Choroplethmapbox(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.Unselected
+          - An instance of plotly_study.graph_objs.choroplethmapbox.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.choroplethmapbox.unselecte
+                    plotly_study.graph_objects.choroplethmapbox.unselecte
                     d.Marker instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.Unselected
+        plotly_study.graph_objs.choroplethmapbox.Unselected
         """
         return self["unselected"]
 
@@ -78942,7 +78942,7 @@ class Choroplethmapbox(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -78992,7 +78992,7 @@ class Choroplethmapbox(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.choroplethmapbox.ColorBar instance
+            plotly_study.graph_objects.choroplethmapbox.ColorBar instance
             or dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -79027,7 +79027,7 @@ class Choroplethmapbox(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.choroplethmapbox.Hoverlabel
+            plotly_study.graph_objects.choroplethmapbox.Hoverlabel
             instance or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -79072,7 +79072,7 @@ class Choroplethmapbox(_BaseTraceType):
         locationssrc
             Sets the source reference on plot.ly for  locations .
         marker
-            plotly.graph_objects.choroplethmapbox.Marker instance
+            plotly_study.graph_objects.choroplethmapbox.Marker instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -79097,7 +79097,7 @@ class Choroplethmapbox(_BaseTraceType):
             will correspond to the last color in the array and
             `zmax` will correspond to the first color.
         selected
-            plotly.graph_objects.choroplethmapbox.Selected instance
+            plotly_study.graph_objects.choroplethmapbox.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -79110,7 +79110,7 @@ class Choroplethmapbox(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.choroplethmapbox.Stream instance
+            plotly_study.graph_objects.choroplethmapbox.Stream instance
             or dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -79144,7 +79144,7 @@ class Choroplethmapbox(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.choroplethmapbox.Unselected
+            plotly_study.graph_objects.choroplethmapbox.Unselected
             instance or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -79232,7 +79232,7 @@ class Choroplethmapbox(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Choroplethmapbox
+            an instance of plotly_study.graph_objs.Choroplethmapbox
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -79254,7 +79254,7 @@ class Choroplethmapbox(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.choroplethmapbox.ColorBar instance
+            plotly_study.graph_objects.choroplethmapbox.ColorBar instance
             or dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -79289,7 +79289,7 @@ class Choroplethmapbox(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.choroplethmapbox.Hoverlabel
+            plotly_study.graph_objects.choroplethmapbox.Hoverlabel
             instance or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -79334,7 +79334,7 @@ class Choroplethmapbox(_BaseTraceType):
         locationssrc
             Sets the source reference on plot.ly for  locations .
         marker
-            plotly.graph_objects.choroplethmapbox.Marker instance
+            plotly_study.graph_objects.choroplethmapbox.Marker instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -79359,7 +79359,7 @@ class Choroplethmapbox(_BaseTraceType):
             will correspond to the last color in the array and
             `zmax` will correspond to the first color.
         selected
-            plotly.graph_objects.choroplethmapbox.Selected instance
+            plotly_study.graph_objects.choroplethmapbox.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -79372,7 +79372,7 @@ class Choroplethmapbox(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.choroplethmapbox.Stream instance
+            plotly_study.graph_objects.choroplethmapbox.Stream instance
             or dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -79406,7 +79406,7 @@ class Choroplethmapbox(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.choroplethmapbox.Unselected
+            plotly_study.graph_objects.choroplethmapbox.Unselected
             instance or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -79453,9 +79453,9 @@ class Choroplethmapbox(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Choroplethmapbox 
+The first argument to the plotly_study.graph_objs.Choroplethmapbox 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Choroplethmapbox"""
+an instance of plotly_study.graph_objs.Choroplethmapbox"""
             )
 
         # Handle skip_invalid
@@ -79464,7 +79464,7 @@ an instance of plotly.graph_objs.Choroplethmapbox"""
 
         # Import validators
         # -----------------
-        from plotly.validators import choroplethmapbox as v_choroplethmapbox
+        from plotly_study.validators import choroplethmapbox as v_choroplethmapbox
 
         # Initialize validators
         # ---------------------
@@ -79622,7 +79622,7 @@ an instance of plotly.graph_objs.Choroplethmapbox"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -79687,7 +79687,7 @@ class Choropleth(_BaseTraceType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.choropleth.ColorBar
+          - An instance of plotly_study.graph_objs.choropleth.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -79819,7 +79819,7 @@ class Choropleth(_BaseTraceType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.choropleth.colo
+                    A tuple of plotly_study.graph_objects.choropleth.colo
                     rbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -79867,7 +79867,7 @@ class Choropleth(_BaseTraceType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.choropleth.colorbar.Title
+                    plotly_study.graph_objects.choropleth.colorbar.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -79906,7 +79906,7 @@ class Choropleth(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choropleth.ColorBar
+        plotly_study.graph_objs.choropleth.ColorBar
         """
         return self["colorbar"]
 
@@ -79934,7 +79934,7 @@ class Choropleth(_BaseTraceType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -79996,7 +79996,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80067,7 +80067,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80086,7 +80086,7 @@ class Choropleth(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.choropleth.Hoverlabel
+          - An instance of plotly_study.graph_objs.choropleth.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -80130,7 +80130,7 @@ class Choropleth(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choropleth.Hoverlabel
+        plotly_study.graph_objs.choropleth.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -80187,7 +80187,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80229,7 +80229,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80271,7 +80271,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80334,7 +80334,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  locations .
     
         The 'locationssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80353,14 +80353,14 @@ class Choropleth(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.choropleth.Marker
+          - An instance of plotly_study.graph_objs.choropleth.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
             Supported dict properties:
                 
                 line
-                    plotly.graph_objects.choropleth.marker.Line
+                    plotly_study.graph_objects.choropleth.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the opacity of the locations.
@@ -80370,7 +80370,7 @@ class Choropleth(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choropleth.Marker
+        plotly_study.graph_objs.choropleth.Marker
         """
         return self["marker"]
 
@@ -80414,7 +80414,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80477,19 +80477,19 @@ class Choropleth(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.choropleth.Selected
+          - An instance of plotly_study.graph_objs.choropleth.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.choropleth.selected.Marker
+                    plotly_study.graph_objects.choropleth.selected.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.choropleth.Selected
+        plotly_study.graph_objs.choropleth.Selected
         """
         return self["selected"]
 
@@ -80549,7 +80549,7 @@ class Choropleth(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.choropleth.Stream
+          - An instance of plotly_study.graph_objs.choropleth.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -80567,7 +80567,7 @@ class Choropleth(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.choropleth.Stream
+        plotly_study.graph_objs.choropleth.Stream
         """
         return self["stream"]
 
@@ -80605,7 +80605,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80679,19 +80679,19 @@ class Choropleth(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.choropleth.Unselected
+          - An instance of plotly_study.graph_objs.choropleth.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.choropleth.unselected.Mark
+                    plotly_study.graph_objects.choropleth.unselected.Mark
                     er instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.choropleth.Unselected
+        plotly_study.graph_objs.choropleth.Unselected
         """
         return self["unselected"]
 
@@ -80837,7 +80837,7 @@ class Choropleth(_BaseTraceType):
         Sets the source reference on plot.ly for  z .
     
         The 'zsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -80881,7 +80881,7 @@ class Choropleth(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.choropleth.ColorBar instance or
+            plotly_study.graph_objects.choropleth.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -80916,7 +80916,7 @@ class Choropleth(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.choropleth.Hoverlabel instance or
+            plotly_study.graph_objects.choropleth.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -80963,7 +80963,7 @@ class Choropleth(_BaseTraceType):
         locationssrc
             Sets the source reference on plot.ly for  locations .
         marker
-            plotly.graph_objects.choropleth.Marker instance or dict
+            plotly_study.graph_objects.choropleth.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -80988,7 +80988,7 @@ class Choropleth(_BaseTraceType):
             will correspond to the last color in the array and
             `zmax` will correspond to the first color.
         selected
-            plotly.graph_objects.choropleth.Selected instance or
+            plotly_study.graph_objects.choropleth.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -81001,7 +81001,7 @@ class Choropleth(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.choropleth.Stream instance or dict
+            plotly_study.graph_objects.choropleth.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each location.
@@ -81030,7 +81030,7 @@ class Choropleth(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.choropleth.Unselected instance or
+            plotly_study.graph_objects.choropleth.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -81117,7 +81117,7 @@ class Choropleth(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Choropleth
+            an instance of plotly_study.graph_objs.Choropleth
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -81133,7 +81133,7 @@ class Choropleth(_BaseTraceType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.choropleth.ColorBar instance or
+            plotly_study.graph_objects.choropleth.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -81168,7 +81168,7 @@ class Choropleth(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.choropleth.Hoverlabel instance or
+            plotly_study.graph_objects.choropleth.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -81215,7 +81215,7 @@ class Choropleth(_BaseTraceType):
         locationssrc
             Sets the source reference on plot.ly for  locations .
         marker
-            plotly.graph_objects.choropleth.Marker instance or dict
+            plotly_study.graph_objects.choropleth.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -81240,7 +81240,7 @@ class Choropleth(_BaseTraceType):
             will correspond to the last color in the array and
             `zmax` will correspond to the first color.
         selected
-            plotly.graph_objects.choropleth.Selected instance or
+            plotly_study.graph_objects.choropleth.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -81253,7 +81253,7 @@ class Choropleth(_BaseTraceType):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.choropleth.Stream instance or dict
+            plotly_study.graph_objects.choropleth.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each location.
@@ -81282,7 +81282,7 @@ class Choropleth(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.choropleth.Unselected instance or
+            plotly_study.graph_objects.choropleth.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -81329,9 +81329,9 @@ class Choropleth(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Choropleth 
+The first argument to the plotly_study.graph_objs.Choropleth 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Choropleth"""
+an instance of plotly_study.graph_objs.Choropleth"""
             )
 
         # Handle skip_invalid
@@ -81340,7 +81340,7 @@ an instance of plotly.graph_objs.Choropleth"""
 
         # Import validators
         # -----------------
-        from plotly.validators import choropleth as v_choropleth
+        from plotly_study.validators import choropleth as v_choropleth
 
         # Initialize validators
         # ---------------------
@@ -81489,7 +81489,7 @@ an instance of plotly.graph_objs.Choropleth"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -81544,7 +81544,7 @@ class Carpet(_BaseTraceType):
         """
         The 'aaxis' property is an instance of Aaxis
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.Aaxis
+          - An instance of plotly_study.graph_objs.carpet.Aaxis
           - A dict of string/value properties that will be passed
             to the Aaxis constructor
     
@@ -81712,7 +81712,7 @@ class Carpet(_BaseTraceType):
                     09:15:23.456* with tickformat "%H~%M~%S.%2f"
                     would display "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.carpet.aaxis.Ti
+                    A tuple of plotly_study.graph_objects.carpet.aaxis.Ti
                     ckformatstop instances or dicts with compatible
                     properties
                 tickformatstopdefaults
@@ -81742,7 +81742,7 @@ class Carpet(_BaseTraceType):
                     Sets the source reference on plot.ly for
                     tickvals .
                 title
-                    plotly.graph_objects.carpet.aaxis.Title
+                    plotly_study.graph_objects.carpet.aaxis.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use carpet.aaxis.title.font
@@ -81764,7 +81764,7 @@ class Carpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.Aaxis
+        plotly_study.graph_objs.carpet.Aaxis
         """
         return self["aaxis"]
 
@@ -81780,7 +81780,7 @@ class Carpet(_BaseTraceType):
         Sets the source reference on plot.ly for  a .
     
         The 'asrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -81841,7 +81841,7 @@ class Carpet(_BaseTraceType):
         """
         The 'baxis' property is an instance of Baxis
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.Baxis
+          - An instance of plotly_study.graph_objs.carpet.Baxis
           - A dict of string/value properties that will be passed
             to the Baxis constructor
     
@@ -82009,7 +82009,7 @@ class Carpet(_BaseTraceType):
                     09:15:23.456* with tickformat "%H~%M~%S.%2f"
                     would display "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.carpet.baxis.Ti
+                    A tuple of plotly_study.graph_objects.carpet.baxis.Ti
                     ckformatstop instances or dicts with compatible
                     properties
                 tickformatstopdefaults
@@ -82039,7 +82039,7 @@ class Carpet(_BaseTraceType):
                     Sets the source reference on plot.ly for
                     tickvals .
                 title
-                    plotly.graph_objects.carpet.baxis.Title
+                    plotly_study.graph_objects.carpet.baxis.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use carpet.baxis.title.font
@@ -82061,7 +82061,7 @@ class Carpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.Baxis
+        plotly_study.graph_objs.carpet.Baxis
         """
         return self["baxis"]
 
@@ -82077,7 +82077,7 @@ class Carpet(_BaseTraceType):
         Sets the source reference on plot.ly for  b .
     
         The 'bsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -82226,7 +82226,7 @@ class Carpet(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -82287,7 +82287,7 @@ class Carpet(_BaseTraceType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.Font
+          - An instance of plotly_study.graph_objs.carpet.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -82315,7 +82315,7 @@ class Carpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.Font
+        plotly_study.graph_objs.carpet.Font
         """
         return self["font"]
 
@@ -82353,7 +82353,7 @@ class Carpet(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -82401,7 +82401,7 @@ class Carpet(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -82462,7 +82462,7 @@ class Carpet(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.Stream
+          - An instance of plotly_study.graph_objs.carpet.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -82480,7 +82480,7 @@ class Carpet(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.Stream
+        plotly_study.graph_objs.carpet.Stream
         """
         return self["stream"]
 
@@ -82621,7 +82621,7 @@ class Carpet(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -82686,7 +82686,7 @@ class Carpet(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -82722,7 +82722,7 @@ class Carpet(_BaseTraceType):
             coordinates. Use with `da` where `a0` is the starting
             coordinate and `da` the step.
         aaxis
-            plotly.graph_objects.carpet.Aaxis instance or dict with
+            plotly_study.graph_objects.carpet.Aaxis instance or dict with
             compatible properties
         asrc
             Sets the source reference on plot.ly for  a .
@@ -82734,7 +82734,7 @@ class Carpet(_BaseTraceType):
             coordinates. Use with `db` where `b0` is the starting
             coordinate and `db` the step.
         baxis
-            plotly.graph_objects.carpet.Baxis instance or dict with
+            plotly_study.graph_objects.carpet.Baxis instance or dict with
             compatible properties
         bsrc
             Sets the source reference on plot.ly for  b .
@@ -82792,7 +82792,7 @@ class Carpet(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         stream
-            plotly.graph_objects.carpet.Stream instance or dict
+            plotly_study.graph_objects.carpet.Stream instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -82895,7 +82895,7 @@ class Carpet(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Carpet
+            an instance of plotly_study.graph_objs.Carpet
         a
             An array containing values of the first parameter value
         a0
@@ -82903,7 +82903,7 @@ class Carpet(_BaseTraceType):
             coordinates. Use with `da` where `a0` is the starting
             coordinate and `da` the step.
         aaxis
-            plotly.graph_objects.carpet.Aaxis instance or dict with
+            plotly_study.graph_objects.carpet.Aaxis instance or dict with
             compatible properties
         asrc
             Sets the source reference on plot.ly for  a .
@@ -82915,7 +82915,7 @@ class Carpet(_BaseTraceType):
             coordinates. Use with `db` where `b0` is the starting
             coordinate and `db` the step.
         baxis
-            plotly.graph_objects.carpet.Baxis instance or dict with
+            plotly_study.graph_objects.carpet.Baxis instance or dict with
             compatible properties
         bsrc
             Sets the source reference on plot.ly for  b .
@@ -82973,7 +82973,7 @@ class Carpet(_BaseTraceType):
         opacity
             Sets the opacity of the trace.
         stream
-            plotly.graph_objects.carpet.Stream instance or dict
+            plotly_study.graph_objects.carpet.Stream instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -83041,9 +83041,9 @@ class Carpet(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Carpet 
+The first argument to the plotly_study.graph_objs.Carpet 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Carpet"""
+an instance of plotly_study.graph_objs.Carpet"""
             )
 
         # Handle skip_invalid
@@ -83052,7 +83052,7 @@ an instance of plotly.graph_objs.Carpet"""
 
         # Import validators
         # -----------------
-        from plotly.validators import carpet as v_carpet
+        from plotly_study.validators import carpet as v_carpet
 
         # Initialize validators
         # ---------------------
@@ -83175,7 +83175,7 @@ an instance of plotly.graph_objs.Carpet"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -83209,7 +83209,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  close .
     
         The 'closesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83252,7 +83252,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83271,7 +83271,7 @@ class Candlestick(_BaseTraceType):
         """
         The 'decreasing' property is an instance of Decreasing
         that may be specified as:
-          - An instance of plotly.graph_objs.candlestick.Decreasing
+          - An instance of plotly_study.graph_objs.candlestick.Decreasing
           - A dict of string/value properties that will be passed
             to the Decreasing constructor
     
@@ -83283,12 +83283,12 @@ class Candlestick(_BaseTraceType):
                     color, or marker line color, whichever is
                     available.
                 line
-                    plotly.graph_objects.candlestick.decreasing.Lin
+                    plotly_study.graph_objects.candlestick.decreasing.Lin
                     e instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.candlestick.Decreasing
+        plotly_study.graph_objs.candlestick.Decreasing
         """
         return self["decreasing"]
 
@@ -83324,7 +83324,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  high .
     
         The 'highsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83370,7 +83370,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83389,7 +83389,7 @@ class Candlestick(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.candlestick.Hoverlabel
+          - An instance of plotly_study.graph_objs.candlestick.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -83436,7 +83436,7 @@ class Candlestick(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.candlestick.Hoverlabel
+        plotly_study.graph_objs.candlestick.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -83474,7 +83474,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83516,7 +83516,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83535,7 +83535,7 @@ class Candlestick(_BaseTraceType):
         """
         The 'increasing' property is an instance of Increasing
         that may be specified as:
-          - An instance of plotly.graph_objs.candlestick.Increasing
+          - An instance of plotly_study.graph_objs.candlestick.Increasing
           - A dict of string/value properties that will be passed
             to the Increasing constructor
     
@@ -83547,12 +83547,12 @@ class Candlestick(_BaseTraceType):
                     color, or marker line color, whichever is
                     available.
                 line
-                    plotly.graph_objects.candlestick.increasing.Lin
+                    plotly_study.graph_objects.candlestick.increasing.Lin
                     e instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.candlestick.Increasing
+        plotly_study.graph_objs.candlestick.Increasing
         """
         return self["increasing"]
 
@@ -83590,7 +83590,7 @@ class Candlestick(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.candlestick.Line
+          - An instance of plotly_study.graph_objs.candlestick.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -83605,7 +83605,7 @@ class Candlestick(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.candlestick.Line
+        plotly_study.graph_objs.candlestick.Line
         """
         return self["line"]
 
@@ -83641,7 +83641,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  low .
     
         The 'lowsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83689,7 +83689,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83771,7 +83771,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  open .
     
         The 'opensrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -83835,7 +83835,7 @@ class Candlestick(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.candlestick.Stream
+          - An instance of plotly_study.graph_objs.candlestick.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -83853,7 +83853,7 @@ class Candlestick(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.candlestick.Stream
+        plotly_study.graph_objs.candlestick.Stream
         """
         return self["stream"]
 
@@ -83894,7 +83894,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -84083,7 +84083,7 @@ class Candlestick(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -84149,7 +84149,7 @@ class Candlestick(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.candlestick.Decreasing instance or
+            plotly_study.graph_objects.candlestick.Decreasing instance or
             dict with compatible properties
         high
             Sets the high values.
@@ -84163,7 +84163,7 @@ class Candlestick(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.candlestick.Hoverlabel instance or
+            plotly_study.graph_objects.candlestick.Hoverlabel instance or
             dict with compatible properties
         hovertext
             Same as `text`.
@@ -84176,14 +84176,14 @@ class Candlestick(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.candlestick.Increasing instance or
+            plotly_study.graph_objects.candlestick.Increasing instance or
             dict with compatible properties
         legendgroup
             Sets the legend group for this trace. Traces part of
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.candlestick.Line instance or dict
+            plotly_study.graph_objects.candlestick.Line instance or dict
             with compatible properties
         low
             Sets the low values.
@@ -84224,7 +84224,7 @@ class Candlestick(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.candlestick.Stream instance or
+            plotly_study.graph_objects.candlestick.Stream instance or
             dict with compatible properties
         text
             Sets hover text elements associated with each sample
@@ -84343,7 +84343,7 @@ class Candlestick(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Candlestick
+            an instance of plotly_study.graph_objs.Candlestick
         close
             Sets the close values.
         closesrc
@@ -84356,7 +84356,7 @@ class Candlestick(_BaseTraceType):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.candlestick.Decreasing instance or
+            plotly_study.graph_objects.candlestick.Decreasing instance or
             dict with compatible properties
         high
             Sets the high values.
@@ -84370,7 +84370,7 @@ class Candlestick(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.candlestick.Hoverlabel instance or
+            plotly_study.graph_objects.candlestick.Hoverlabel instance or
             dict with compatible properties
         hovertext
             Same as `text`.
@@ -84383,14 +84383,14 @@ class Candlestick(_BaseTraceType):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.candlestick.Increasing instance or
+            plotly_study.graph_objects.candlestick.Increasing instance or
             dict with compatible properties
         legendgroup
             Sets the legend group for this trace. Traces part of
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.candlestick.Line instance or dict
+            plotly_study.graph_objects.candlestick.Line instance or dict
             with compatible properties
         low
             Sets the low values.
@@ -84431,7 +84431,7 @@ class Candlestick(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.candlestick.Stream instance or
+            plotly_study.graph_objects.candlestick.Stream instance or
             dict with compatible properties
         text
             Sets hover text elements associated with each sample
@@ -84506,9 +84506,9 @@ class Candlestick(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Candlestick 
+The first argument to the plotly_study.graph_objs.Candlestick 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Candlestick"""
+an instance of plotly_study.graph_objs.Candlestick"""
             )
 
         # Handle skip_invalid
@@ -84517,7 +84517,7 @@ an instance of plotly.graph_objs.Candlestick"""
 
         # Import validators
         # -----------------
-        from plotly.validators import candlestick as v_candlestick
+        from plotly_study.validators import candlestick as v_candlestick
 
         # Initialize validators
         # ---------------------
@@ -84661,7 +84661,7 @@ an instance of plotly.graph_objs.Candlestick"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -84771,7 +84771,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -84878,7 +84878,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -84897,7 +84897,7 @@ class Box(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.box.Hoverlabel
+          - An instance of plotly_study.graph_objs.box.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -84941,7 +84941,7 @@ class Box(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.box.Hoverlabel
+        plotly_study.graph_objs.box.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -85021,7 +85021,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -85063,7 +85063,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -85105,7 +85105,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -85170,7 +85170,7 @@ class Box(_BaseTraceType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.box.Line
+          - An instance of plotly_study.graph_objs.box.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -85184,7 +85184,7 @@ class Box(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.box.Line
+        plotly_study.graph_objs.box.Line
         """
         return self["line"]
 
@@ -85199,7 +85199,7 @@ class Box(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.box.Marker
+          - An instance of plotly_study.graph_objs.box.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -85212,7 +85212,7 @@ class Box(_BaseTraceType):
                     and min values of the array or relative to
                     `marker.cmin` and `marker.cmax` if set.
                 line
-                    plotly.graph_objects.box.marker.Line instance
+                    plotly_study.graph_objects.box.marker.Line instance
                     or dict with compatible properties
                 opacity
                     Sets the marker opacity.
@@ -85230,7 +85230,7 @@ class Box(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.box.Marker
+        plotly_study.graph_objs.box.Marker
         """
         return self["marker"]
 
@@ -85274,7 +85274,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -85447,19 +85447,19 @@ class Box(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.box.Selected
+          - An instance of plotly_study.graph_objs.box.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.box.selected.Marker
+                    plotly_study.graph_objects.box.selected.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.box.Selected
+        plotly_study.graph_objs.box.Selected
         """
         return self["selected"]
 
@@ -85519,7 +85519,7 @@ class Box(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.box.Stream
+          - An instance of plotly_study.graph_objs.box.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -85537,7 +85537,7 @@ class Box(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.box.Stream
+        plotly_study.graph_objs.box.Stream
         """
         return self["stream"]
 
@@ -85579,7 +85579,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -85653,19 +85653,19 @@ class Box(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.box.Unselected
+          - An instance of plotly_study.graph_objs.box.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.box.unselected.Marker
+                    plotly_study.graph_objects.box.unselected.Marker
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.box.Unselected
+        plotly_study.graph_objs.box.Unselected
         """
         return self["unselected"]
 
@@ -85836,7 +85836,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -85945,7 +85945,7 @@ class Box(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -86010,7 +86010,7 @@ class Box(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.box.Hoverlabel instance or dict
+            plotly_study.graph_objects.box.Hoverlabel instance or dict
             with compatible properties
         hoveron
             Do the hover effects highlight individual boxes  or
@@ -86061,10 +86061,10 @@ class Box(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.box.Line instance or dict with
+            plotly_study.graph_objects.box.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.box.Marker instance or dict with
+            plotly_study.graph_objects.box.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -86110,7 +86110,7 @@ class Box(_BaseTraceType):
             correspond to positions to the right (left) for
             vertical boxes and above (below) for horizontal boxes
         selected
-            plotly.graph_objects.box.Selected instance or dict with
+            plotly_study.graph_objects.box.Selected instance or dict with
             compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -86123,7 +86123,7 @@ class Box(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.box.Stream instance or dict with
+            plotly_study.graph_objects.box.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with each sample
@@ -86157,7 +86157,7 @@ class Box(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.box.Unselected instance or dict
+            plotly_study.graph_objects.box.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -86279,7 +86279,7 @@ class Box(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Box
+            an instance of plotly_study.graph_objs.Box
         alignmentgroup
             Set several traces linked to the same position axis or
             matching axes to the same alignmentgroup. This controls
@@ -86316,7 +86316,7 @@ class Box(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.box.Hoverlabel instance or dict
+            plotly_study.graph_objects.box.Hoverlabel instance or dict
             with compatible properties
         hoveron
             Do the hover effects highlight individual boxes  or
@@ -86367,10 +86367,10 @@ class Box(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.box.Line instance or dict with
+            plotly_study.graph_objects.box.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.box.Marker instance or dict with
+            plotly_study.graph_objects.box.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -86416,7 +86416,7 @@ class Box(_BaseTraceType):
             correspond to positions to the right (left) for
             vertical boxes and above (below) for horizontal boxes
         selected
-            plotly.graph_objects.box.Selected instance or dict with
+            plotly_study.graph_objects.box.Selected instance or dict with
             compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -86429,7 +86429,7 @@ class Box(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.box.Stream instance or dict with
+            plotly_study.graph_objects.box.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with each sample
@@ -86463,7 +86463,7 @@ class Box(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.box.Unselected instance or dict
+            plotly_study.graph_objects.box.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -86527,9 +86527,9 @@ class Box(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Box 
+The first argument to the plotly_study.graph_objs.Box 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Box"""
+an instance of plotly_study.graph_objs.Box"""
             )
 
         # Handle skip_invalid
@@ -86538,7 +86538,7 @@ an instance of plotly.graph_objs.Box"""
 
         # Import validators
         # -----------------
-        from plotly.validators import box as v_box
+        from plotly_study.validators import box as v_box
 
         # Initialize validators
         # ---------------------
@@ -86720,7 +86720,7 @@ an instance of plotly.graph_objs.Box"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -86755,7 +86755,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  base .
     
         The 'basesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -86798,7 +86798,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -86886,7 +86886,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -86905,7 +86905,7 @@ class Barpolar(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.barpolar.Hoverlabel
+          - An instance of plotly_study.graph_objs.barpolar.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -86949,7 +86949,7 @@ class Barpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.barpolar.Hoverlabel
+        plotly_study.graph_objs.barpolar.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -87006,7 +87006,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87048,7 +87048,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87090,7 +87090,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87132,7 +87132,7 @@ class Barpolar(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.barpolar.Marker
+          - An instance of plotly_study.graph_objs.barpolar.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -87192,7 +87192,7 @@ class Barpolar(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.barpolar.marker.ColorBar
+                    plotly_study.graph_objects.barpolar.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -87214,7 +87214,7 @@ class Barpolar(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.barpolar.marker.Line
+                    plotly_study.graph_objects.barpolar.marker.Line
                     instance or dict with compatible properties
                 opacity
                     Sets the opacity of the bars.
@@ -87235,7 +87235,7 @@ class Barpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.barpolar.Marker
+        plotly_study.graph_objs.barpolar.Marker
         """
         return self["marker"]
 
@@ -87279,7 +87279,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87343,7 +87343,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  offset .
     
         The 'offsetsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87424,7 +87424,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  r .
     
         The 'rsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87443,22 +87443,22 @@ class Barpolar(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.barpolar.Selected
+          - An instance of plotly_study.graph_objs.barpolar.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.barpolar.selected.Marker
+                    plotly_study.graph_objects.barpolar.selected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.barpolar.selected.Textfont
+                    plotly_study.graph_objects.barpolar.selected.Textfont
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.barpolar.Selected
+        plotly_study.graph_objs.barpolar.Selected
         """
         return self["selected"]
 
@@ -87518,7 +87518,7 @@ class Barpolar(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.barpolar.Stream
+          - An instance of plotly_study.graph_objs.barpolar.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -87536,7 +87536,7 @@ class Barpolar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.barpolar.Stream
+        plotly_study.graph_objs.barpolar.Stream
         """
         return self["stream"]
 
@@ -87602,7 +87602,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87663,7 +87663,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  theta .
     
         The 'thetasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87759,22 +87759,22 @@ class Barpolar(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.barpolar.Unselected
+          - An instance of plotly_study.graph_objs.barpolar.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.barpolar.unselected.Marker
+                    plotly_study.graph_objects.barpolar.unselected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.barpolar.unselected.Textfo
+                    plotly_study.graph_objects.barpolar.unselected.Textfo
                     nt instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.barpolar.Unselected
+        plotly_study.graph_objs.barpolar.Unselected
         """
         return self["unselected"]
 
@@ -87834,7 +87834,7 @@ class Barpolar(_BaseTraceType):
         Sets the source reference on plot.ly for  width .
     
         The 'widthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -87890,7 +87890,7 @@ class Barpolar(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.barpolar.Hoverlabel instance or
+            plotly_study.graph_objects.barpolar.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -87933,7 +87933,7 @@ class Barpolar(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.barpolar.Marker instance or dict
+            plotly_study.graph_objects.barpolar.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -87969,7 +87969,7 @@ class Barpolar(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.barpolar.Selected instance or dict
+            plotly_study.graph_objects.barpolar.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -87982,7 +87982,7 @@ class Barpolar(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.barpolar.Stream instance or dict
+            plotly_study.graph_objects.barpolar.Stream instance or dict
             with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -88030,7 +88030,7 @@ class Barpolar(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.barpolar.Unselected instance or
+            plotly_study.graph_objects.barpolar.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -88101,7 +88101,7 @@ class Barpolar(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Barpolar
+            an instance of plotly_study.graph_objs.Barpolar
         base
             Sets where the bar base is drawn (in radial axis
             units). In "stack" barmode, traces that set "base" will
@@ -88129,7 +88129,7 @@ class Barpolar(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.barpolar.Hoverlabel instance or
+            plotly_study.graph_objects.barpolar.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -88172,7 +88172,7 @@ class Barpolar(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.barpolar.Marker instance or dict
+            plotly_study.graph_objects.barpolar.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -88208,7 +88208,7 @@ class Barpolar(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.barpolar.Selected instance or dict
+            plotly_study.graph_objects.barpolar.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -88221,7 +88221,7 @@ class Barpolar(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.barpolar.Stream instance or dict
+            plotly_study.graph_objects.barpolar.Stream instance or dict
             with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -88269,7 +88269,7 @@ class Barpolar(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.barpolar.Unselected instance or
+            plotly_study.graph_objects.barpolar.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -88298,9 +88298,9 @@ class Barpolar(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Barpolar 
+The first argument to the plotly_study.graph_objs.Barpolar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Barpolar"""
+an instance of plotly_study.graph_objs.Barpolar"""
             )
 
         # Handle skip_invalid
@@ -88309,7 +88309,7 @@ an instance of plotly.graph_objs.Barpolar"""
 
         # Import validators
         # -----------------
-        from plotly.validators import barpolar as v_barpolar
+        from plotly_study.validators import barpolar as v_barpolar
 
         # Initialize validators
         # ---------------------
@@ -88467,7 +88467,7 @@ an instance of plotly.graph_objs.Barpolar"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -88525,7 +88525,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  base .
     
         The 'basesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -88613,7 +88613,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -88672,7 +88672,7 @@ class Bar(_BaseTraceType):
         """
         The 'error_x' property is an instance of ErrorX
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.ErrorX
+          - An instance of plotly_study.graph_objs.bar.ErrorX
           - A dict of string/value properties that will be passed
             to the ErrorX constructor
     
@@ -88738,7 +88738,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.ErrorX
+        plotly_study.graph_objs.bar.ErrorX
         """
         return self["error_x"]
 
@@ -88753,7 +88753,7 @@ class Bar(_BaseTraceType):
         """
         The 'error_y' property is an instance of ErrorY
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.ErrorY
+          - An instance of plotly_study.graph_objs.bar.ErrorY
           - A dict of string/value properties that will be passed
             to the ErrorY constructor
     
@@ -88817,7 +88817,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.ErrorY
+        plotly_study.graph_objs.bar.ErrorY
         """
         return self["error_y"]
 
@@ -88859,7 +88859,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -88878,7 +88878,7 @@ class Bar(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Hoverlabel
+          - An instance of plotly_study.graph_objs.bar.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -88922,7 +88922,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.Hoverlabel
+        plotly_study.graph_objs.bar.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -88979,7 +88979,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertemplate .
     
         The 'hovertemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89025,7 +89025,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  hovertext .
     
         The 'hovertextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89067,7 +89067,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89110,7 +89110,7 @@ class Bar(_BaseTraceType):
     
         The 'insidetextfont' property is an instance of Insidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Insidetextfont
+          - An instance of plotly_study.graph_objs.bar.Insidetextfont
           - A dict of string/value properties that will be passed
             to the Insidetextfont constructor
     
@@ -89148,7 +89148,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.Insidetextfont
+        plotly_study.graph_objs.bar.Insidetextfont
         """
         return self["insidetextfont"]
 
@@ -89186,7 +89186,7 @@ class Bar(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Marker
+          - An instance of plotly_study.graph_objs.bar.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -89246,7 +89246,7 @@ class Bar(_BaseTraceType):
                     color scales can be linked to the same color
                     axis.
                 colorbar
-                    plotly.graph_objects.bar.marker.ColorBar
+                    plotly_study.graph_objects.bar.marker.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. Has an effect only if in
@@ -89268,7 +89268,7 @@ class Bar(_BaseTraceType):
                     Sets the source reference on plot.ly for  color
                     .
                 line
-                    plotly.graph_objects.bar.marker.Line instance
+                    plotly_study.graph_objects.bar.marker.Line instance
                     or dict with compatible properties
                 opacity
                     Sets the opacity of the bars.
@@ -89289,7 +89289,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.Marker
+        plotly_study.graph_objs.bar.Marker
         """
         return self["marker"]
 
@@ -89333,7 +89333,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89421,7 +89421,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  offset .
     
         The 'offsetsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89484,7 +89484,7 @@ class Bar(_BaseTraceType):
     
         The 'outsidetextfont' property is an instance of Outsidetextfont
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Outsidetextfont
+          - An instance of plotly_study.graph_objs.bar.Outsidetextfont
           - A dict of string/value properties that will be passed
             to the Outsidetextfont constructor
     
@@ -89522,7 +89522,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.Outsidetextfont
+        plotly_study.graph_objs.bar.Outsidetextfont
         """
         return self["outsidetextfont"]
 
@@ -89560,7 +89560,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  r .
     
         The 'rsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89579,22 +89579,22 @@ class Bar(_BaseTraceType):
         """
         The 'selected' property is an instance of Selected
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Selected
+          - An instance of plotly_study.graph_objs.bar.Selected
           - A dict of string/value properties that will be passed
             to the Selected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.bar.selected.Marker
+                    plotly_study.graph_objects.bar.selected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.bar.selected.Textfont
+                    plotly_study.graph_objects.bar.selected.Textfont
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.bar.Selected
+        plotly_study.graph_objs.bar.Selected
         """
         return self["selected"]
 
@@ -89654,7 +89654,7 @@ class Bar(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Stream
+          - An instance of plotly_study.graph_objs.bar.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -89672,7 +89672,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.Stream
+        plotly_study.graph_objs.bar.Stream
         """
         return self["stream"]
 
@@ -89763,7 +89763,7 @@ class Bar(_BaseTraceType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Textfont
+          - An instance of plotly_study.graph_objs.bar.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -89801,7 +89801,7 @@ class Bar(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.bar.Textfont
+        plotly_study.graph_objs.bar.Textfont
         """
         return self["textfont"]
 
@@ -89845,7 +89845,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  textposition .
     
         The 'textpositionsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89865,7 +89865,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  text .
     
         The 'textsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89920,7 +89920,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  texttemplate .
     
         The 'texttemplatesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -89940,7 +89940,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  t .
     
         The 'tsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -90014,22 +90014,22 @@ class Bar(_BaseTraceType):
         """
         The 'unselected' property is an instance of Unselected
         that may be specified as:
-          - An instance of plotly.graph_objs.bar.Unselected
+          - An instance of plotly_study.graph_objs.bar.Unselected
           - A dict of string/value properties that will be passed
             to the Unselected constructor
     
             Supported dict properties:
                 
                 marker
-                    plotly.graph_objects.bar.unselected.Marker
+                    plotly_study.graph_objects.bar.unselected.Marker
                     instance or dict with compatible properties
                 textfont
-                    plotly.graph_objects.bar.unselected.Textfont
+                    plotly_study.graph_objects.bar.unselected.Textfont
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.bar.Unselected
+        plotly_study.graph_objs.bar.Unselected
         """
         return self["unselected"]
 
@@ -90089,7 +90089,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  width .
     
         The 'widthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -90199,7 +90199,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  x .
     
         The 'xsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -90309,7 +90309,7 @@ class Bar(_BaseTraceType):
         Sets the source reference on plot.ly for  y .
     
         The 'ysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -90370,10 +90370,10 @@ class Bar(_BaseTraceType):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.bar.ErrorX instance or dict with
+            plotly_study.graph_objects.bar.ErrorX instance or dict with
             compatible properties
         error_y
-            plotly.graph_objects.bar.ErrorY instance or dict with
+            plotly_study.graph_objects.bar.ErrorY instance or dict with
             compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -90383,7 +90383,7 @@ class Bar(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.bar.Hoverlabel instance or dict
+            plotly_study.graph_objects.bar.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -90436,7 +90436,7 @@ class Bar(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.bar.Marker instance or dict with
+            plotly_study.graph_objects.bar.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -90482,7 +90482,7 @@ class Bar(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.bar.Selected instance or dict with
+            plotly_study.graph_objects.bar.Selected instance or dict with
             compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -90495,7 +90495,7 @@ class Bar(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.bar.Stream instance or dict with
+            plotly_study.graph_objects.bar.Stream instance or dict with
             compatible properties
         t
             t coordinates in scatter traces are deprecated!Please
@@ -90575,7 +90575,7 @@ class Bar(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.bar.Unselected instance or dict
+            plotly_study.graph_objects.bar.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -90700,7 +90700,7 @@ class Bar(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Bar
+            an instance of plotly_study.graph_objs.Bar
         alignmentgroup
             Set several traces linked to the same position axis or
             matching axes to the same alignmentgroup. This controls
@@ -90733,10 +90733,10 @@ class Bar(_BaseTraceType):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.bar.ErrorX instance or dict with
+            plotly_study.graph_objects.bar.ErrorX instance or dict with
             compatible properties
         error_y
-            plotly.graph_objects.bar.ErrorY instance or dict with
+            plotly_study.graph_objects.bar.ErrorY instance or dict with
             compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -90746,7 +90746,7 @@ class Bar(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.bar.Hoverlabel instance or dict
+            plotly_study.graph_objects.bar.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -90799,7 +90799,7 @@ class Bar(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.bar.Marker instance or dict with
+            plotly_study.graph_objects.bar.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -90845,7 +90845,7 @@ class Bar(_BaseTraceType):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.bar.Selected instance or dict with
+            plotly_study.graph_objects.bar.Selected instance or dict with
             compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -90858,7 +90858,7 @@ class Bar(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.bar.Stream instance or dict with
+            plotly_study.graph_objects.bar.Stream instance or dict with
             compatible properties
         t
             t coordinates in scatter traces are deprecated!Please
@@ -90938,7 +90938,7 @@ class Bar(_BaseTraceType):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.bar.Unselected instance or dict
+            plotly_study.graph_objects.bar.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -90997,9 +90997,9 @@ class Bar(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Bar 
+The first argument to the plotly_study.graph_objs.Bar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Bar"""
+an instance of plotly_study.graph_objs.Bar"""
             )
 
         # Handle skip_invalid
@@ -91008,7 +91008,7 @@ an instance of plotly.graph_objs.Bar"""
 
         # Import validators
         # -----------------
-        from plotly.validators import bar as v_bar
+        from plotly_study.validators import bar as v_bar
 
         # Initialize validators
         # ---------------------
@@ -91234,7 +91234,7 @@ an instance of plotly.graph_objs.Bar"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceType as _BaseTraceType
+from plotly_study.basedatatypes import BaseTraceType as _BaseTraceType
 import copy as _copy
 
 
@@ -91271,7 +91271,7 @@ class Area(_BaseTraceType):
         Sets the source reference on plot.ly for  customdata .
     
         The 'customdatasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -91317,7 +91317,7 @@ class Area(_BaseTraceType):
         Sets the source reference on plot.ly for  hoverinfo .
     
         The 'hoverinfosrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -91336,7 +91336,7 @@ class Area(_BaseTraceType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.area.Hoverlabel
+          - An instance of plotly_study.graph_objs.area.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -91380,7 +91380,7 @@ class Area(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.area.Hoverlabel
+        plotly_study.graph_objs.area.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -91418,7 +91418,7 @@ class Area(_BaseTraceType):
         Sets the source reference on plot.ly for  ids .
     
         The 'idssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -91460,7 +91460,7 @@ class Area(_BaseTraceType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.area.Marker
+          - An instance of plotly_study.graph_objs.area.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -91505,7 +91505,7 @@ class Area(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.area.Marker
+        plotly_study.graph_objs.area.Marker
         """
         return self["marker"]
 
@@ -91549,7 +91549,7 @@ class Area(_BaseTraceType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -91633,7 +91633,7 @@ class Area(_BaseTraceType):
         Sets the source reference on plot.ly for  r .
     
         The 'rsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -91673,7 +91673,7 @@ class Area(_BaseTraceType):
         """
         The 'stream' property is an instance of Stream
         that may be specified as:
-          - An instance of plotly.graph_objs.area.Stream
+          - An instance of plotly_study.graph_objs.area.Stream
           - A dict of string/value properties that will be passed
             to the Stream constructor
     
@@ -91691,7 +91691,7 @@ class Area(_BaseTraceType):
 
         Returns
         -------
-        plotly.graph_objs.area.Stream
+        plotly_study.graph_objs.area.Stream
         """
         return self["stream"]
 
@@ -91729,7 +91729,7 @@ class Area(_BaseTraceType):
         Sets the source reference on plot.ly for  t .
     
         The 'tsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -91851,7 +91851,7 @@ class Area(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.area.Hoverlabel instance or dict
+            plotly_study.graph_objects.area.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -91864,7 +91864,7 @@ class Area(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.area.Marker instance or dict with
+            plotly_study.graph_objects.area.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -91896,7 +91896,7 @@ class Area(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.area.Stream instance or dict with
+            plotly_study.graph_objects.area.Stream instance or dict with
             compatible properties
         t
             Area traces are deprecated! Please switch to the
@@ -91967,7 +91967,7 @@ class Area(_BaseTraceType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Area
+            an instance of plotly_study.graph_objs.Area
         customdata
             Assigns extra data each datum. This may be useful when
             listening to hover, click and selection events. Note
@@ -91983,7 +91983,7 @@ class Area(_BaseTraceType):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.area.Hoverlabel instance or dict
+            plotly_study.graph_objects.area.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -91996,7 +91996,7 @@ class Area(_BaseTraceType):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.area.Marker instance or dict with
+            plotly_study.graph_objects.area.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -92028,7 +92028,7 @@ class Area(_BaseTraceType):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.area.Stream instance or dict with
+            plotly_study.graph_objects.area.Stream instance or dict with
             compatible properties
         t
             Area traces are deprecated! Please switch to the
@@ -92081,9 +92081,9 @@ class Area(_BaseTraceType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Area 
+The first argument to the plotly_study.graph_objs.Area 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Area"""
+an instance of plotly_study.graph_objs.Area"""
             )
 
         # Handle skip_invalid
@@ -92092,7 +92092,7 @@ an instance of plotly.graph_objs.Area"""
 
         # Import validators
         # -----------------
-        from plotly.validators import area as v_area
+        from plotly_study.validators import area as v_area
 
         # Initialize validators
         # ---------------------
@@ -92185,7 +92185,7 @@ an instance of plotly.graph_objs.Area"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutType as _BaseLayoutType
+from plotly_study.basedatatypes import BaseLayoutType as _BaseLayoutType
 import copy as _copy
 
 
@@ -92215,7 +92215,7 @@ class Layout(_BaseLayoutType):
         -------
         dict
         """
-        from plotly.validators.layout import (
+        from plotly_study.validators.layout import (
             ColoraxisValidator,
             GeoValidator,
             MapboxValidator,
@@ -92247,7 +92247,7 @@ class Layout(_BaseLayoutType):
         """
         The 'angularaxis' property is an instance of AngularAxis
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.AngularAxis
+          - An instance of plotly_study.graph_objs.layout.AngularAxis
           - A dict of string/value properties that will be passed
             to the AngularAxis constructor
     
@@ -92297,7 +92297,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.AngularAxis
+        plotly_study.graph_objs.layout.AngularAxis
         """
         return self["angularaxis"]
 
@@ -92312,7 +92312,7 @@ class Layout(_BaseLayoutType):
         """
         The 'annotations' property is a tuple of instances of
         Annotation that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.Annotation
+          - A list or tuple of instances of plotly_study.graph_objs.layout.Annotation
           - A list or tuple of dicts of string/value properties that
             will be passed to the Annotation constructor
     
@@ -92417,7 +92417,7 @@ class Layout(_BaseLayoutType):
                     (default) lets the text set the box height.
                     Taller text will be clipped.
                 hoverlabel
-                    plotly.graph_objects.layout.annotation.Hoverlab
+                    plotly_study.graph_objects.layout.annotation.Hoverlab
                     el instance or dict with compatible properties
                 hovertext
                     Sets text to appear when hovering over this
@@ -92582,7 +92582,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.Annotation]
+        tuple[plotly_study.graph_objs.layout.Annotation]
         """
         return self["annotations"]
 
@@ -92601,7 +92601,7 @@ class Layout(_BaseLayoutType):
     
         The 'annotationdefaults' property is an instance of Annotation
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Annotation
+          - An instance of plotly_study.graph_objs.layout.Annotation
           - A dict of string/value properties that will be passed
             to the Annotation constructor
     
@@ -92609,7 +92609,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Annotation
+        plotly_study.graph_objs.layout.Annotation
         """
         return self["annotationdefaults"]
 
@@ -92872,7 +92872,7 @@ class Layout(_BaseLayoutType):
         """
         The 'coloraxis' property is an instance of Coloraxis
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Coloraxis
+          - An instance of plotly_study.graph_objs.layout.Coloraxis
           - A dict of string/value properties that will be passed
             to the Coloraxis constructor
     
@@ -92910,7 +92910,7 @@ class Layout(_BaseLayoutType):
                     trace color array(s) and if set, `cmax` must be
                     set as well.
                 colorbar
-                    plotly.graph_objects.layout.coloraxis.ColorBar
+                    plotly_study.graph_objects.layout.coloraxis.ColorBar
                     instance or dict with compatible properties
                 colorscale
                     Sets the colorscale. The colorscale must be an
@@ -92937,7 +92937,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Coloraxis
+        plotly_study.graph_objs.layout.Coloraxis
         """
         return self["coloraxis"]
 
@@ -92952,7 +92952,7 @@ class Layout(_BaseLayoutType):
         """
         The 'colorscale' property is an instance of Colorscale
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Colorscale
+          - An instance of plotly_study.graph_objs.layout.Colorscale
           - A dict of string/value properties that will be passed
             to the Colorscale constructor
     
@@ -92973,7 +92973,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Colorscale
+        plotly_study.graph_objs.layout.Colorscale
         """
         return self["colorscale"]
 
@@ -93007,10 +93007,10 @@ class Layout(_BaseLayoutType):
     @property
     def datarevision(self):
         """
-        If provided, a changed value tells `Plotly.react` that one or
+        If provided, a changed value tells `plotly_study.react` that one or
         more data arrays has changed. This way you can modify arrays
         in-place rather than making a complete new copy for an
-        incremental change. If NOT provided, `Plotly.react` assumes
+        incremental change. If NOT provided, `plotly_study.react` assumes
         that data arrays are being treated as immutable, thus any data
         array with a different identity from its predecessor contains
         new data.
@@ -93212,7 +93212,7 @@ class Layout(_BaseLayoutType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Font
+          - An instance of plotly_study.graph_objs.layout.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -93240,7 +93240,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Font
+        plotly_study.graph_objs.layout.Font
         """
         return self["font"]
 
@@ -93347,7 +93347,7 @@ class Layout(_BaseLayoutType):
         """
         The 'geo' property is an instance of Geo
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Geo
+          - An instance of plotly_study.graph_objs.layout.Geo
           - A dict of string/value properties that will be passed
             to the Geo constructor
     
@@ -93356,7 +93356,7 @@ class Layout(_BaseLayoutType):
                 bgcolor
                     Set the background color of the map
                 center
-                    plotly.graph_objects.layout.geo.Center instance
+                    plotly_study.graph_objects.layout.geo.Center instance
                     or dict with compatible properties
                 coastlinecolor
                     Sets the coastline color.
@@ -93368,7 +93368,7 @@ class Layout(_BaseLayoutType):
                     Sets line width (in px) of the country
                     boundaries.
                 domain
-                    plotly.graph_objects.layout.geo.Domain instance
+                    plotly_study.graph_objects.layout.geo.Domain instance
                     or dict with compatible properties
                 framecolor
                     Sets the color the frame.
@@ -93379,15 +93379,15 @@ class Layout(_BaseLayoutType):
                 landcolor
                     Sets the land mass color.
                 lataxis
-                    plotly.graph_objects.layout.geo.Lataxis
+                    plotly_study.graph_objects.layout.geo.Lataxis
                     instance or dict with compatible properties
                 lonaxis
-                    plotly.graph_objects.layout.geo.Lonaxis
+                    plotly_study.graph_objects.layout.geo.Lonaxis
                     instance or dict with compatible properties
                 oceancolor
                     Sets the ocean color
                 projection
-                    plotly.graph_objects.layout.geo.Projection
+                    plotly_study.graph_objects.layout.geo.Projection
                     instance or dict with compatible properties
                 resolution
                     Sets the resolution of the base layers. The
@@ -93432,7 +93432,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Geo
+        plotly_study.graph_objs.layout.Geo
         """
         return self["geo"]
 
@@ -93447,7 +93447,7 @@ class Layout(_BaseLayoutType):
         """
         The 'grid' property is an instance of Grid
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Grid
+          - An instance of plotly_study.graph_objs.layout.Grid
           - A dict of string/value properties that will be passed
             to the Grid constructor
     
@@ -93462,7 +93462,7 @@ class Layout(_BaseLayoutType):
                     different length, if you want to leave a row at
                     the end for non-cartesian subplots.
                 domain
-                    plotly.graph_objects.layout.grid.Domain
+                    plotly_study.graph_objects.layout.grid.Domain
                     instance or dict with compatible properties
                 pattern
                     If no `subplots`, `xaxes`, or `yaxes` are given
@@ -93535,7 +93535,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Grid
+        plotly_study.graph_objs.layout.Grid
         """
         return self["grid"]
 
@@ -93593,7 +93593,7 @@ class Layout(_BaseLayoutType):
         Sets the source reference on plot.ly for  hiddenlabels .
     
         The 'hiddenlabelssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -93663,7 +93663,7 @@ class Layout(_BaseLayoutType):
         """
         The 'hoverlabel' property is an instance of Hoverlabel
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Hoverlabel
+          - An instance of plotly_study.graph_objs.layout.Hoverlabel
           - A dict of string/value properties that will be passed
             to the Hoverlabel constructor
     
@@ -93696,7 +93696,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Hoverlabel
+        plotly_study.graph_objs.layout.Hoverlabel
         """
         return self["hoverlabel"]
 
@@ -93737,7 +93737,7 @@ class Layout(_BaseLayoutType):
         """
         The 'images' property is a tuple of instances of
         Image that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.Image
+          - A list or tuple of instances of plotly_study.graph_objs.layout.Image
           - A list or tuple of dicts of string/value properties that
             will be passed to the Image constructor
     
@@ -93823,7 +93823,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.Image]
+        tuple[plotly_study.graph_objs.layout.Image]
         """
         return self["images"]
 
@@ -93842,7 +93842,7 @@ class Layout(_BaseLayoutType):
     
         The 'imagedefaults' property is an instance of Image
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Image
+          - An instance of plotly_study.graph_objs.layout.Image
           - A dict of string/value properties that will be passed
             to the Image constructor
     
@@ -93850,7 +93850,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Image
+        plotly_study.graph_objs.layout.Image
         """
         return self["imagedefaults"]
 
@@ -93865,7 +93865,7 @@ class Layout(_BaseLayoutType):
         """
         The 'legend' property is an instance of Legend
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Legend
+          - An instance of plotly_study.graph_objs.layout.Legend
           - A dict of string/value properties that will be passed
             to the Legend constructor
     
@@ -93955,7 +93955,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Legend
+        plotly_study.graph_objs.layout.Legend
         """
         return self["legend"]
 
@@ -93970,7 +93970,7 @@ class Layout(_BaseLayoutType):
         """
         The 'mapbox' property is an instance of Mapbox
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Mapbox
+          - An instance of plotly_study.graph_objs.layout.Mapbox
           - A dict of string/value properties that will be passed
             to the Mapbox constructor
     
@@ -93989,14 +93989,14 @@ class Layout(_BaseLayoutType):
                     Sets the bearing angle of the map in degrees
                     counter-clockwise from North (mapbox.bearing).
                 center
-                    plotly.graph_objects.layout.mapbox.Center
+                    plotly_study.graph_objects.layout.mapbox.Center
                     instance or dict with compatible properties
                 domain
-                    plotly.graph_objects.layout.mapbox.Domain
+                    plotly_study.graph_objects.layout.mapbox.Domain
                     instance or dict with compatible properties
                 layers
                     A tuple of
-                    plotly.graph_objects.layout.mapbox.Layer
+                    plotly_study.graph_objects.layout.mapbox.Layer
                     instances or dicts with compatible properties
                 layerdefaults
                     When used in a template (as
@@ -94028,7 +94028,7 @@ class Layout(_BaseLayoutType):
                     Style objects are of the form described in the
                     Mapbox GL JS documentation available at
                     https://docs.mapbox.com/mapbox-gl-js/style-spec
-                    The built-in plotly.js styles objects are:
+                    The built-in plotly_study.js styles objects are:
                     open-street-map, white-bg, carto-positron,
                     carto-darkmatter, stamen-terrain, stamen-toner,
                     stamen-watercolor  The built-in Mapbox styles
@@ -94045,7 +94045,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Mapbox
+        plotly_study.graph_objs.layout.Mapbox
         """
         return self["mapbox"]
 
@@ -94060,7 +94060,7 @@ class Layout(_BaseLayoutType):
         """
         The 'margin' property is an instance of Margin
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Margin
+          - An instance of plotly_study.graph_objs.layout.Margin
           - A dict of string/value properties that will be passed
             to the Margin constructor
     
@@ -94085,7 +94085,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Margin
+        plotly_study.graph_objs.layout.Margin
         """
         return self["margin"]
 
@@ -94127,7 +94127,7 @@ class Layout(_BaseLayoutType):
         Sets the source reference on plot.ly for  meta .
     
         The 'metasrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -94146,7 +94146,7 @@ class Layout(_BaseLayoutType):
         """
         The 'modebar' property is an instance of Modebar
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Modebar
+          - An instance of plotly_study.graph_objs.layout.Modebar
           - A dict of string/value properties that will be passed
             to the Modebar constructor
     
@@ -94170,7 +94170,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Modebar
+        plotly_study.graph_objs.layout.Modebar
         """
         return self["modebar"]
 
@@ -94351,14 +94351,14 @@ class Layout(_BaseLayoutType):
         """
         The 'polar' property is an instance of Polar
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Polar
+          - An instance of plotly_study.graph_objs.layout.Polar
           - A dict of string/value properties that will be passed
             to the Polar constructor
     
             Supported dict properties:
                 
                 angularaxis
-                    plotly.graph_objects.layout.polar.AngularAxis
+                    plotly_study.graph_objects.layout.polar.AngularAxis
                     instance or dict with compatible properties
                 bargap
                     Sets the gap between bars of adjacent location
@@ -94375,7 +94375,7 @@ class Layout(_BaseLayoutType):
                 bgcolor
                     Set the background color of the subplot
                 domain
-                    plotly.graph_objects.layout.polar.Domain
+                    plotly_study.graph_objects.layout.polar.Domain
                     instance or dict with compatible properties
                 gridshape
                     Determines if the radial axis grid lines and
@@ -94390,7 +94390,7 @@ class Layout(_BaseLayoutType):
                     Sets the fraction of the radius to cut out of
                     the polar subplot.
                 radialaxis
-                    plotly.graph_objects.layout.polar.RadialAxis
+                    plotly_study.graph_objects.layout.polar.RadialAxis
                     instance or dict with compatible properties
                 sector
                     Sets angular span of this polar subplot with
@@ -94406,7 +94406,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Polar
+        plotly_study.graph_objs.layout.Polar
         """
         return self["polar"]
 
@@ -94421,7 +94421,7 @@ class Layout(_BaseLayoutType):
         """
         The 'radialaxis' property is an instance of RadialAxis
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.RadialAxis
+          - An instance of plotly_study.graph_objs.layout.RadialAxis
           - A dict of string/value properties that will be passed
             to the RadialAxis constructor
     
@@ -94476,7 +94476,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.RadialAxis
+        plotly_study.graph_objs.layout.RadialAxis
         """
         return self["radialaxis"]
 
@@ -94491,7 +94491,7 @@ class Layout(_BaseLayoutType):
         """
         The 'scene' property is an instance of Scene
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Scene
+          - An instance of plotly_study.graph_objs.layout.Scene
           - A dict of string/value properties that will be passed
             to the Scene constructor
     
@@ -94499,7 +94499,7 @@ class Layout(_BaseLayoutType):
                 
                 annotations
                     A tuple of
-                    plotly.graph_objects.layout.scene.Annotation
+                    plotly_study.graph_objects.layout.scene.Annotation
                     instances or dicts with compatible properties
                 annotationdefaults
                     When used in a template (as layout.template.lay
@@ -94524,10 +94524,10 @@ class Layout(_BaseLayoutType):
                 bgcolor
     
                 camera
-                    plotly.graph_objects.layout.scene.Camera
+                    plotly_study.graph_objects.layout.scene.Camera
                     instance or dict with compatible properties
                 domain
-                    plotly.graph_objects.layout.scene.Domain
+                    plotly_study.graph_objects.layout.scene.Domain
                     instance or dict with compatible properties
                 dragmode
                     Determines the mode of drag interactions for
@@ -94540,18 +94540,18 @@ class Layout(_BaseLayoutType):
                     camera attributes. Defaults to
                     `layout.uirevision`.
                 xaxis
-                    plotly.graph_objects.layout.scene.XAxis
+                    plotly_study.graph_objects.layout.scene.XAxis
                     instance or dict with compatible properties
                 yaxis
-                    plotly.graph_objects.layout.scene.YAxis
+                    plotly_study.graph_objects.layout.scene.YAxis
                     instance or dict with compatible properties
                 zaxis
-                    plotly.graph_objects.layout.scene.ZAxis
+                    plotly_study.graph_objects.layout.scene.ZAxis
                     instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.layout.Scene
+        plotly_study.graph_objs.layout.Scene
         """
         return self["scene"]
 
@@ -94634,7 +94634,7 @@ class Layout(_BaseLayoutType):
         """
         The 'shapes' property is a tuple of instances of
         Shape that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.Shape
+          - A list or tuple of instances of plotly_study.graph_objs.layout.Shape
           - A list or tuple of dicts of string/value properties that
             will be passed to the Shape constructor
     
@@ -94646,7 +94646,7 @@ class Layout(_BaseLayoutType):
                     Specifies whether shapes are drawn below or
                     above traces.
                 line
-                    plotly.graph_objects.layout.shape.Line instance
+                    plotly_study.graph_objects.layout.shape.Line instance
                     or dict with compatible properties
                 name
                     When used in a template, named items are
@@ -94789,7 +94789,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.Shape]
+        tuple[plotly_study.graph_objs.layout.Shape]
         """
         return self["shapes"]
 
@@ -94808,7 +94808,7 @@ class Layout(_BaseLayoutType):
     
         The 'shapedefaults' property is an instance of Shape
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Shape
+          - An instance of plotly_study.graph_objs.layout.Shape
           - A dict of string/value properties that will be passed
             to the Shape constructor
     
@@ -94816,7 +94816,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Shape
+        plotly_study.graph_objs.layout.Shape
         """
         return self["shapedefaults"]
 
@@ -94855,7 +94855,7 @@ class Layout(_BaseLayoutType):
         """
         The 'sliders' property is a tuple of instances of
         Slider that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.Slider
+          - A list or tuple of instances of plotly_study.graph_objs.layout.Slider
           - A list or tuple of dicts of string/value properties that
             will be passed to the Slider constructor
     
@@ -94876,7 +94876,7 @@ class Layout(_BaseLayoutType):
                     Sets the width (in px) of the border enclosing
                     the slider.
                 currentvalue
-                    plotly.graph_objects.layout.slider.Currentvalue
+                    plotly_study.graph_objects.layout.slider.Currentvalue
                     instance or dict with compatible properties
                 font
                     Sets the font of the slider step labels.
@@ -94907,7 +94907,7 @@ class Layout(_BaseLayoutType):
                     each side.
                 steps
                     A tuple of
-                    plotly.graph_objects.layout.slider.Step
+                    plotly_study.graph_objects.layout.slider.Step
                     instances or dicts with compatible properties
                 stepdefaults
                     When used in a template (as
@@ -94933,7 +94933,7 @@ class Layout(_BaseLayoutType):
                 tickwidth
                     Sets the tick width (in px).
                 transition
-                    plotly.graph_objects.layout.slider.Transition
+                    plotly_study.graph_objects.layout.slider.Transition
                     instance or dict with compatible properties
                 visible
                     Determines whether or not the slider is
@@ -94956,7 +94956,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.Slider]
+        tuple[plotly_study.graph_objs.layout.Slider]
         """
         return self["sliders"]
 
@@ -94975,7 +94975,7 @@ class Layout(_BaseLayoutType):
     
         The 'sliderdefaults' property is an instance of Slider
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Slider
+          - An instance of plotly_study.graph_objs.layout.Slider
           - A dict of string/value properties that will be passed
             to the Slider constructor
     
@@ -94983,7 +94983,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Slider
+        plotly_study.graph_objs.layout.Slider
         """
         return self["sliderdefaults"]
 
@@ -95052,7 +95052,7 @@ class Layout(_BaseLayoutType):
         `figure.layout` and `traceTemplate` is a dict matching the
         structure of the trace with type `trace_type` (e.g. 'scatter').
         Alternatively, this may be specified as an instance of
-        plotly.graph_objs.layout.Template.  Trace templates are applied
+        plotly_study.graph_objs.layout.Template.  Trace templates are applied
         cyclically to traces of each type. Container arrays (eg
         `annotations`) have special handling: An object ending in
         `defaults` (eg `annotationdefaults`) is applied to each array
@@ -95067,23 +95067,23 @@ class Layout(_BaseLayoutType):
     
         The 'template' property is an instance of Template
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Template
+          - An instance of plotly_study.graph_objs.layout.Template
           - A dict of string/value properties that will be passed
             to the Template constructor
     
             Supported dict properties:
                 
                 data
-                    plotly.graph_objects.layout.template.Data
+                    plotly_study.graph_objects.layout.template.Data
                     instance or dict with compatible properties
                 layout
-                    plotly.graph_objects.Layout instance or dict
+                    plotly_study.graph_objects.Layout instance or dict
                     with compatible properties
     
           - The name of a registered template where current registered templates
-            are stored in the plotly.io.templates configuration object. The names
+            are stored in the plotly_study.io.templates configuration object. The names
             of all registered templates can be retrieved with:
-                >>> import plotly.io as pio
+                >>> import plotly_study.io as pio
                 >>> list(pio.templates)
           - A string containing multiple registered template names, joined on '+'
             characters (e.g. 'template1+template2'). In this case the resulting
@@ -95092,7 +95092,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Template
+        plotly_study.graph_objs.layout.Template
         """
         return self["template"]
 
@@ -95107,25 +95107,25 @@ class Layout(_BaseLayoutType):
         """
         The 'ternary' property is an instance of Ternary
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Ternary
+          - An instance of plotly_study.graph_objs.layout.Ternary
           - A dict of string/value properties that will be passed
             to the Ternary constructor
     
             Supported dict properties:
                 
                 aaxis
-                    plotly.graph_objects.layout.ternary.Aaxis
+                    plotly_study.graph_objects.layout.ternary.Aaxis
                     instance or dict with compatible properties
                 baxis
-                    plotly.graph_objects.layout.ternary.Baxis
+                    plotly_study.graph_objects.layout.ternary.Baxis
                     instance or dict with compatible properties
                 bgcolor
                     Set the background color of the subplot
                 caxis
-                    plotly.graph_objects.layout.ternary.Caxis
+                    plotly_study.graph_objects.layout.ternary.Caxis
                     instance or dict with compatible properties
                 domain
-                    plotly.graph_objects.layout.ternary.Domain
+                    plotly_study.graph_objects.layout.ternary.Domain
                     instance or dict with compatible properties
                 sum
                     The number each triplet should sum to, and the
@@ -95138,7 +95138,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Ternary
+        plotly_study.graph_objs.layout.Ternary
         """
         return self["ternary"]
 
@@ -95153,7 +95153,7 @@ class Layout(_BaseLayoutType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Title
+          - An instance of plotly_study.graph_objs.layout.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -95214,7 +95214,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Title
+        plotly_study.graph_objs.layout.Title
         """
         return self["title"]
 
@@ -95233,7 +95233,7 @@ class Layout(_BaseLayoutType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.title.Font
+          - An instance of plotly_study.graph_objs.layout.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -95274,11 +95274,11 @@ class Layout(_BaseLayoutType):
     @property
     def transition(self):
         """
-        Sets transition options used during Plotly.react updates.
+        Sets transition options used during plotly_study.react updates.
     
         The 'transition' property is an instance of Transition
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Transition
+          - An instance of plotly_study.graph_objs.layout.Transition
           - A dict of string/value properties that will be passed
             to the Transition constructor
     
@@ -95297,7 +95297,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Transition
+        plotly_study.graph_objs.layout.Transition
         """
         return self["transition"]
 
@@ -95335,9 +95335,9 @@ class Layout(_BaseLayoutType):
     def uirevision(self):
         """
         Used to allow user interactions with the plot to persist after
-        `Plotly.react` calls that are unaware of these interactions. If
+        `plotly_study.react` calls that are unaware of these interactions. If
         `uirevision` is omitted, or if it is given and it changed from
-        the previous `Plotly.react` call, the exact new figure is used.
+        the previous `plotly_study.react` call, the exact new figure is used.
         If `uirevision` is truthy and did NOT change, any attribute
         that has been affected by user interactions and did not receive
         a different value in the new figure will keep the interaction
@@ -95370,7 +95370,7 @@ class Layout(_BaseLayoutType):
         """
         The 'updatemenus' property is a tuple of instances of
         Updatemenu that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.Updatemenu
+          - A list or tuple of instances of plotly_study.graph_objs.layout.Updatemenu
           - A list or tuple of dicts of string/value properties that
             will be passed to the Updatemenu constructor
     
@@ -95390,7 +95390,7 @@ class Layout(_BaseLayoutType):
                     the update menu.
                 buttons
                     A tuple of
-                    plotly.graph_objects.layout.updatemenu.Button
+                    plotly_study.graph_objects.layout.updatemenu.Button
                     instances or dicts with compatible properties
                 buttondefaults
                     When used in a template (as layout.template.lay
@@ -95458,7 +95458,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.Updatemenu]
+        tuple[plotly_study.graph_objs.layout.Updatemenu]
         """
         return self["updatemenus"]
 
@@ -95477,7 +95477,7 @@ class Layout(_BaseLayoutType):
     
         The 'updatemenudefaults' property is an instance of Updatemenu
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.Updatemenu
+          - An instance of plotly_study.graph_objs.layout.Updatemenu
           - A dict of string/value properties that will be passed
             to the Updatemenu constructor
     
@@ -95485,7 +95485,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.Updatemenu
+        plotly_study.graph_objs.layout.Updatemenu
         """
         return self["updatemenudefaults"]
 
@@ -95657,7 +95657,7 @@ class Layout(_BaseLayoutType):
         """
         The 'xaxis' property is an instance of XAxis
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.XAxis
+          - An instance of plotly_study.graph_objs.layout.XAxis
           - A dict of string/value properties that will be passed
             to the XAxis constructor
     
@@ -95865,10 +95865,10 @@ class Layout(_BaseLayoutType):
                     negative, regardless of the input data. Applies
                     only to linear axes.
                 rangeselector
-                    plotly.graph_objects.layout.xaxis.Rangeselector
+                    plotly_study.graph_objects.layout.xaxis.Rangeselector
                     instance or dict with compatible properties
                 rangeslider
-                    plotly.graph_objects.layout.xaxis.Rangeslider
+                    plotly_study.graph_objects.layout.xaxis.Rangeslider
                     instance or dict with compatible properties
                 scaleanchor
                     If set to another axis id (e.g. `x2`, `y`), the
@@ -95996,7 +95996,7 @@ class Layout(_BaseLayoutType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.layout.xaxis.Ti
+                    A tuple of plotly_study.graph_objects.layout.xaxis.Ti
                     ckformatstop instances or dicts with compatible
                     properties
                 tickformatstopdefaults
@@ -96051,7 +96051,7 @@ class Layout(_BaseLayoutType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.layout.xaxis.Title
+                    plotly_study.graph_objects.layout.xaxis.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use layout.xaxis.title.font
@@ -96084,7 +96084,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.XAxis
+        plotly_study.graph_objs.layout.XAxis
         """
         return self["xaxis"]
 
@@ -96099,7 +96099,7 @@ class Layout(_BaseLayoutType):
         """
         The 'yaxis' property is an instance of YAxis
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.YAxis
+          - An instance of plotly_study.graph_objs.layout.YAxis
           - A dict of string/value properties that will be passed
             to the YAxis constructor
     
@@ -96432,7 +96432,7 @@ class Layout(_BaseLayoutType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.layout.yaxis.Ti
+                    A tuple of plotly_study.graph_objects.layout.yaxis.Ti
                     ckformatstop instances or dicts with compatible
                     properties
                 tickformatstopdefaults
@@ -96487,7 +96487,7 @@ class Layout(_BaseLayoutType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.layout.yaxis.Title
+                    plotly_study.graph_objects.layout.yaxis.Title
                     instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use layout.yaxis.title.font
@@ -96520,7 +96520,7 @@ class Layout(_BaseLayoutType):
 
         Returns
         -------
-        plotly.graph_objs.layout.YAxis
+        plotly_study.graph_objs.layout.YAxis
         """
         return self["yaxis"]
 
@@ -96540,10 +96540,10 @@ class Layout(_BaseLayoutType):
     def _prop_descriptions(self):
         return """\
         angularaxis
-            plotly.graph_objects.layout.AngularAxis instance or
+            plotly_study.graph_objects.layout.AngularAxis instance or
             dict with compatible properties
         annotations
-            A tuple of plotly.graph_objects.layout.Annotation
+            A tuple of plotly_study.graph_objects.layout.Annotation
             instances or dicts with compatible properties
         annotationdefaults
             When used in a template (as
@@ -96614,19 +96614,19 @@ class Layout(_BaseLayoutType):
             well. When the "event" flag is missing, `plotly_click`
             and `plotly_selected` events are not fired.
         coloraxis
-            plotly.graph_objects.layout.Coloraxis instance or dict
+            plotly_study.graph_objects.layout.Coloraxis instance or dict
             with compatible properties
         colorscale
-            plotly.graph_objects.layout.Colorscale instance or dict
+            plotly_study.graph_objects.layout.Colorscale instance or dict
             with compatible properties
         colorway
             Sets the default trace colors.
         datarevision
-            If provided, a changed value tells `Plotly.react` that
+            If provided, a changed value tells `plotly_study.react` that
             one or more data arrays has changed. This way you can
             modify arrays in-place rather than making a complete
             new copy for an incremental change. If NOT provided,
-            `Plotly.react` assumes that data arrays are being
+            `plotly_study.react` assumes that data arrays are being
             treated as immutable, thus any data array with a
             different identity from its predecessor contains new
             data.
@@ -96703,10 +96703,10 @@ class Layout(_BaseLayoutType):
             over one another, you might need to an "opacity" to see
             multiple bars.
         geo
-            plotly.graph_objects.layout.Geo instance or dict with
+            plotly_study.graph_objects.layout.Geo instance or dict with
             compatible properties
         grid
-            plotly.graph_objects.layout.Grid instance or dict with
+            plotly_study.graph_objects.layout.Grid instance or dict with
             compatible properties
         height
             Sets the plot's height (in px).
@@ -96734,7 +96734,7 @@ class Layout(_BaseLayoutType):
             these objects will not supersede hover on point-like
             objects in case of conflict.
         hoverlabel
-            plotly.graph_objects.layout.Hoverlabel instance or dict
+            plotly_study.graph_objects.layout.Hoverlabel instance or dict
             with compatible properties
         hovermode
             Determines the mode of hover interactions. If
@@ -96745,20 +96745,20 @@ class Layout(_BaseLayoutType):
             cartesian coordinates. For anything else the default
             value is "closest".
         images
-            A tuple of plotly.graph_objects.layout.Image instances
+            A tuple of plotly_study.graph_objects.layout.Image instances
             or dicts with compatible properties
         imagedefaults
             When used in a template (as
             layout.template.layout.imagedefaults), sets the default
             property values to use for elements of layout.images
         legend
-            plotly.graph_objects.layout.Legend instance or dict
+            plotly_study.graph_objects.layout.Legend instance or dict
             with compatible properties
         mapbox
-            plotly.graph_objects.layout.Mapbox instance or dict
+            plotly_study.graph_objects.layout.Mapbox instance or dict
             with compatible properties
         margin
-            plotly.graph_objects.layout.Margin instance or dict
+            plotly_study.graph_objects.layout.Margin instance or dict
             with compatible properties
         meta
             Assigns extra meta information that can be used in
@@ -96774,7 +96774,7 @@ class Layout(_BaseLayoutType):
         metasrc
             Sets the source reference on plot.ly for  meta .
         modebar
-            plotly.graph_objects.layout.Modebar instance or dict
+            plotly_study.graph_objects.layout.Modebar instance or dict
             with compatible properties
         orientation
             Legacy polar charts are deprecated! Please switch to
@@ -96791,13 +96791,13 @@ class Layout(_BaseLayoutType):
             Sets the color of plotting area in-between x and y
             axes.
         polar
-            plotly.graph_objects.layout.Polar instance or dict with
+            plotly_study.graph_objects.layout.Polar instance or dict with
             compatible properties
         radialaxis
-            plotly.graph_objects.layout.RadialAxis instance or dict
+            plotly_study.graph_objects.layout.RadialAxis instance or dict
             with compatible properties
         scene
-            plotly.graph_objects.layout.Scene instance or dict with
+            plotly_study.graph_objects.layout.Scene instance or dict with
             compatible properties
         selectdirection
             When "dragmode" is set to "select", this limits the
@@ -96814,7 +96814,7 @@ class Layout(_BaseLayoutType):
             thousands. In English locales, dflt is ".," but other
             locales may alter this default.
         shapes
-            A tuple of plotly.graph_objects.layout.Shape instances
+            A tuple of plotly_study.graph_objects.layout.Shape instances
             or dicts with compatible properties
         shapedefaults
             When used in a template (as
@@ -96827,7 +96827,7 @@ class Layout(_BaseLayoutType):
             legend. b) One pie trace is shown in the legend. c) One
             trace is explicitly given with `showlegend: true`.
         sliders
-            A tuple of plotly.graph_objects.layout.Slider instances
+            A tuple of plotly_study.graph_objects.layout.Slider instances
             or dicts with compatible properties
         sliderdefaults
             When used in a template (as
@@ -96855,7 +96855,7 @@ class Layout(_BaseLayoutType):
             a dict matching the structure of the trace with type
             `trace_type` (e.g. 'scatter'). Alternatively, this may
             be specified as an instance of
-            plotly.graph_objs.layout.Template.  Trace templates are
+            plotly_study.graph_objs.layout.Template.  Trace templates are
             applied cyclically to traces of each type. Container
             arrays (eg `annotations`) have special handling: An
             object ending in `defaults` (eg `annotationdefaults`)
@@ -96870,17 +96870,17 @@ class Layout(_BaseLayoutType):
             an item with matching `templateitemname` and `visible:
             false`.
         ternary
-            plotly.graph_objects.layout.Ternary instance or dict
+            plotly_study.graph_objects.layout.Ternary instance or dict
             with compatible properties
         title
-            plotly.graph_objects.layout.Title instance or dict with
+            plotly_study.graph_objects.layout.Title instance or dict with
             compatible properties
         titlefont
             Deprecated: Please use layout.title.font instead. Sets
             the title font. Note that the title's font used to be
             customized by the now deprecated `titlefont` attribute.
         transition
-            Sets transition options used during Plotly.react
+            Sets transition options used during plotly_study.react
             updates.
         treemapcolorway
             Sets the default treemap slice colors. Defaults to the
@@ -96889,10 +96889,10 @@ class Layout(_BaseLayoutType):
             darker colors, see `extendtreemapcolors`.
         uirevision
             Used to allow user interactions with the plot to
-            persist after `Plotly.react` calls that are unaware of
+            persist after `plotly_study.react` calls that are unaware of
             these interactions. If `uirevision` is omitted, or if
             it is given and it changed from the previous
-            `Plotly.react` call, the exact new figure is used. If
+            `plotly_study.react` call, the exact new figure is used. If
             `uirevision` is truthy and did NOT change, any
             attribute that has been affected by user interactions
             and did not receive a different value in the new figure
@@ -96907,7 +96907,7 @@ class Layout(_BaseLayoutType):
             and the y axis range will reset but the x axis range
             will retain any user-driven zoom.
         updatemenus
-            A tuple of plotly.graph_objects.layout.Updatemenu
+            A tuple of plotly_study.graph_objects.layout.Updatemenu
             instances or dicts with compatible properties
         updatemenudefaults
             When used in a template (as
@@ -96946,10 +96946,10 @@ class Layout(_BaseLayoutType):
         width
             Sets the plot's width (in px).
         xaxis
-            plotly.graph_objects.layout.XAxis instance or dict with
+            plotly_study.graph_objects.layout.XAxis instance or dict with
             compatible properties
         yaxis
-            plotly.graph_objects.layout.YAxis instance or dict with
+            plotly_study.graph_objects.layout.YAxis instance or dict with
             compatible properties
         """
 
@@ -97048,12 +97048,12 @@ class Layout(_BaseLayoutType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Layout
+            an instance of plotly_study.graph_objs.Layout
         angularaxis
-            plotly.graph_objects.layout.AngularAxis instance or
+            plotly_study.graph_objects.layout.AngularAxis instance or
             dict with compatible properties
         annotations
-            A tuple of plotly.graph_objects.layout.Annotation
+            A tuple of plotly_study.graph_objects.layout.Annotation
             instances or dicts with compatible properties
         annotationdefaults
             When used in a template (as
@@ -97124,19 +97124,19 @@ class Layout(_BaseLayoutType):
             well. When the "event" flag is missing, `plotly_click`
             and `plotly_selected` events are not fired.
         coloraxis
-            plotly.graph_objects.layout.Coloraxis instance or dict
+            plotly_study.graph_objects.layout.Coloraxis instance or dict
             with compatible properties
         colorscale
-            plotly.graph_objects.layout.Colorscale instance or dict
+            plotly_study.graph_objects.layout.Colorscale instance or dict
             with compatible properties
         colorway
             Sets the default trace colors.
         datarevision
-            If provided, a changed value tells `Plotly.react` that
+            If provided, a changed value tells `plotly_study.react` that
             one or more data arrays has changed. This way you can
             modify arrays in-place rather than making a complete
             new copy for an incremental change. If NOT provided,
-            `Plotly.react` assumes that data arrays are being
+            `plotly_study.react` assumes that data arrays are being
             treated as immutable, thus any data array with a
             different identity from its predecessor contains new
             data.
@@ -97213,10 +97213,10 @@ class Layout(_BaseLayoutType):
             over one another, you might need to an "opacity" to see
             multiple bars.
         geo
-            plotly.graph_objects.layout.Geo instance or dict with
+            plotly_study.graph_objects.layout.Geo instance or dict with
             compatible properties
         grid
-            plotly.graph_objects.layout.Grid instance or dict with
+            plotly_study.graph_objects.layout.Grid instance or dict with
             compatible properties
         height
             Sets the plot's height (in px).
@@ -97244,7 +97244,7 @@ class Layout(_BaseLayoutType):
             these objects will not supersede hover on point-like
             objects in case of conflict.
         hoverlabel
-            plotly.graph_objects.layout.Hoverlabel instance or dict
+            plotly_study.graph_objects.layout.Hoverlabel instance or dict
             with compatible properties
         hovermode
             Determines the mode of hover interactions. If
@@ -97255,20 +97255,20 @@ class Layout(_BaseLayoutType):
             cartesian coordinates. For anything else the default
             value is "closest".
         images
-            A tuple of plotly.graph_objects.layout.Image instances
+            A tuple of plotly_study.graph_objects.layout.Image instances
             or dicts with compatible properties
         imagedefaults
             When used in a template (as
             layout.template.layout.imagedefaults), sets the default
             property values to use for elements of layout.images
         legend
-            plotly.graph_objects.layout.Legend instance or dict
+            plotly_study.graph_objects.layout.Legend instance or dict
             with compatible properties
         mapbox
-            plotly.graph_objects.layout.Mapbox instance or dict
+            plotly_study.graph_objects.layout.Mapbox instance or dict
             with compatible properties
         margin
-            plotly.graph_objects.layout.Margin instance or dict
+            plotly_study.graph_objects.layout.Margin instance or dict
             with compatible properties
         meta
             Assigns extra meta information that can be used in
@@ -97284,7 +97284,7 @@ class Layout(_BaseLayoutType):
         metasrc
             Sets the source reference on plot.ly for  meta .
         modebar
-            plotly.graph_objects.layout.Modebar instance or dict
+            plotly_study.graph_objects.layout.Modebar instance or dict
             with compatible properties
         orientation
             Legacy polar charts are deprecated! Please switch to
@@ -97301,13 +97301,13 @@ class Layout(_BaseLayoutType):
             Sets the color of plotting area in-between x and y
             axes.
         polar
-            plotly.graph_objects.layout.Polar instance or dict with
+            plotly_study.graph_objects.layout.Polar instance or dict with
             compatible properties
         radialaxis
-            plotly.graph_objects.layout.RadialAxis instance or dict
+            plotly_study.graph_objects.layout.RadialAxis instance or dict
             with compatible properties
         scene
-            plotly.graph_objects.layout.Scene instance or dict with
+            plotly_study.graph_objects.layout.Scene instance or dict with
             compatible properties
         selectdirection
             When "dragmode" is set to "select", this limits the
@@ -97324,7 +97324,7 @@ class Layout(_BaseLayoutType):
             thousands. In English locales, dflt is ".," but other
             locales may alter this default.
         shapes
-            A tuple of plotly.graph_objects.layout.Shape instances
+            A tuple of plotly_study.graph_objects.layout.Shape instances
             or dicts with compatible properties
         shapedefaults
             When used in a template (as
@@ -97337,7 +97337,7 @@ class Layout(_BaseLayoutType):
             legend. b) One pie trace is shown in the legend. c) One
             trace is explicitly given with `showlegend: true`.
         sliders
-            A tuple of plotly.graph_objects.layout.Slider instances
+            A tuple of plotly_study.graph_objects.layout.Slider instances
             or dicts with compatible properties
         sliderdefaults
             When used in a template (as
@@ -97365,7 +97365,7 @@ class Layout(_BaseLayoutType):
             a dict matching the structure of the trace with type
             `trace_type` (e.g. 'scatter'). Alternatively, this may
             be specified as an instance of
-            plotly.graph_objs.layout.Template.  Trace templates are
+            plotly_study.graph_objs.layout.Template.  Trace templates are
             applied cyclically to traces of each type. Container
             arrays (eg `annotations`) have special handling: An
             object ending in `defaults` (eg `annotationdefaults`)
@@ -97380,17 +97380,17 @@ class Layout(_BaseLayoutType):
             an item with matching `templateitemname` and `visible:
             false`.
         ternary
-            plotly.graph_objects.layout.Ternary instance or dict
+            plotly_study.graph_objects.layout.Ternary instance or dict
             with compatible properties
         title
-            plotly.graph_objects.layout.Title instance or dict with
+            plotly_study.graph_objects.layout.Title instance or dict with
             compatible properties
         titlefont
             Deprecated: Please use layout.title.font instead. Sets
             the title font. Note that the title's font used to be
             customized by the now deprecated `titlefont` attribute.
         transition
-            Sets transition options used during Plotly.react
+            Sets transition options used during plotly_study.react
             updates.
         treemapcolorway
             Sets the default treemap slice colors. Defaults to the
@@ -97399,10 +97399,10 @@ class Layout(_BaseLayoutType):
             darker colors, see `extendtreemapcolors`.
         uirevision
             Used to allow user interactions with the plot to
-            persist after `Plotly.react` calls that are unaware of
+            persist after `plotly_study.react` calls that are unaware of
             these interactions. If `uirevision` is omitted, or if
             it is given and it changed from the previous
-            `Plotly.react` call, the exact new figure is used. If
+            `plotly_study.react` call, the exact new figure is used. If
             `uirevision` is truthy and did NOT change, any
             attribute that has been affected by user interactions
             and did not receive a different value in the new figure
@@ -97417,7 +97417,7 @@ class Layout(_BaseLayoutType):
             and the y axis range will reset but the x axis range
             will retain any user-driven zoom.
         updatemenus
-            A tuple of plotly.graph_objects.layout.Updatemenu
+            A tuple of plotly_study.graph_objects.layout.Updatemenu
             instances or dicts with compatible properties
         updatemenudefaults
             When used in a template (as
@@ -97456,10 +97456,10 @@ class Layout(_BaseLayoutType):
         width
             Sets the plot's width (in px).
         xaxis
-            plotly.graph_objects.layout.XAxis instance or dict with
+            plotly_study.graph_objects.layout.XAxis instance or dict with
             compatible properties
         yaxis
-            plotly.graph_objects.layout.YAxis instance or dict with
+            plotly_study.graph_objects.layout.YAxis instance or dict with
             compatible properties
 
         Returns
@@ -97479,9 +97479,9 @@ class Layout(_BaseLayoutType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Layout 
+The first argument to the plotly_study.graph_objs.Layout 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Layout"""
+an instance of plotly_study.graph_objs.Layout"""
             )
 
         # Handle skip_invalid
@@ -97490,7 +97490,7 @@ an instance of plotly.graph_objs.Layout"""
 
         # Import validators
         # -----------------
-        from plotly.validators import layout as v_layout
+        from plotly_study.validators import layout as v_layout
 
         # Initialize validators
         # ---------------------
@@ -97777,7 +97777,7 @@ an instance of plotly.graph_objs.Layout"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseFrameHierarchyType as _BaseFrameHierarchyType
+from plotly_study.basedatatypes import BaseFrameHierarchyType as _BaseFrameHierarchyType
 import copy as _copy
 
 
@@ -97957,7 +97957,7 @@ class Frame(_BaseFrameHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.Frame
+            an instance of plotly_study.graph_objs.Frame
         baseframe
             The name of the frame into which this frame's
             properties are merged before applying. This is used to
@@ -97996,9 +97996,9 @@ class Frame(_BaseFrameHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.Frame 
+The first argument to the plotly_study.graph_objs.Frame 
 constructor must be a dict or 
-an instance of plotly.graph_objs.Frame"""
+an instance of plotly_study.graph_objs.Frame"""
             )
 
         # Handle skip_invalid
@@ -98007,7 +98007,7 @@ an instance of plotly.graph_objs.Frame"""
 
         # Import validators
         # -----------------
-        from plotly.validators import frame as v_frame
+        from plotly_study.validators import frame as v_frame
 
         # Initialize validators
         # ---------------------
@@ -98042,54 +98042,54 @@ an instance of plotly.graph_objs.Frame"""
         self._skip_invalid = False
 
 
-from plotly.graph_objs import waterfall
-from plotly.graph_objs import volume
-from plotly.graph_objs import violin
-from plotly.graph_objs import treemap
-from plotly.graph_objs import table
-from plotly.graph_objs import surface
-from plotly.graph_objs import sunburst
-from plotly.graph_objs import streamtube
-from plotly.graph_objs import splom
-from plotly.graph_objs import scatterternary
-from plotly.graph_objs import scatterpolargl
-from plotly.graph_objs import scatterpolar
-from plotly.graph_objs import scattermapbox
-from plotly.graph_objs import scattergl
-from plotly.graph_objs import scattergeo
-from plotly.graph_objs import scattercarpet
-from plotly.graph_objs import scatter3d
-from plotly.graph_objs import scatter
-from plotly.graph_objs import sankey
-from plotly.graph_objs import pointcloud
-from plotly.graph_objs import pie
-from plotly.graph_objs import parcoords
-from plotly.graph_objs import parcats
-from plotly.graph_objs import ohlc
-from plotly.graph_objs import mesh3d
-from plotly.graph_objs import isosurface
-from plotly.graph_objs import indicator
-from plotly.graph_objs import image
-from plotly.graph_objs import histogram2dcontour
-from plotly.graph_objs import histogram2d
-from plotly.graph_objs import histogram
-from plotly.graph_objs import heatmapgl
-from plotly.graph_objs import heatmap
-from plotly.graph_objs import funnelarea
-from plotly.graph_objs import funnel
-from plotly.graph_objs import densitymapbox
-from plotly.graph_objs import contourcarpet
-from plotly.graph_objs import contour
-from plotly.graph_objs import cone
-from plotly.graph_objs import choroplethmapbox
-from plotly.graph_objs import choropleth
-from plotly.graph_objs import carpet
-from plotly.graph_objs import candlestick
-from plotly.graph_objs import box
-from plotly.graph_objs import barpolar
-from plotly.graph_objs import bar
-from plotly.graph_objs import area
-from plotly.graph_objs import layout
+from plotly_study.graph_objs import waterfall
+from plotly_study.graph_objs import volume
+from plotly_study.graph_objs import violin
+from plotly_study.graph_objs import treemap
+from plotly_study.graph_objs import table
+from plotly_study.graph_objs import surface
+from plotly_study.graph_objs import sunburst
+from plotly_study.graph_objs import streamtube
+from plotly_study.graph_objs import splom
+from plotly_study.graph_objs import scatterternary
+from plotly_study.graph_objs import scatterpolargl
+from plotly_study.graph_objs import scatterpolar
+from plotly_study.graph_objs import scattermapbox
+from plotly_study.graph_objs import scattergl
+from plotly_study.graph_objs import scattergeo
+from plotly_study.graph_objs import scattercarpet
+from plotly_study.graph_objs import scatter3d
+from plotly_study.graph_objs import scatter
+from plotly_study.graph_objs import sankey
+from plotly_study.graph_objs import pointcloud
+from plotly_study.graph_objs import pie
+from plotly_study.graph_objs import parcoords
+from plotly_study.graph_objs import parcats
+from plotly_study.graph_objs import ohlc
+from plotly_study.graph_objs import mesh3d
+from plotly_study.graph_objs import isosurface
+from plotly_study.graph_objs import indicator
+from plotly_study.graph_objs import image
+from plotly_study.graph_objs import histogram2dcontour
+from plotly_study.graph_objs import histogram2d
+from plotly_study.graph_objs import histogram
+from plotly_study.graph_objs import heatmapgl
+from plotly_study.graph_objs import heatmap
+from plotly_study.graph_objs import funnelarea
+from plotly_study.graph_objs import funnel
+from plotly_study.graph_objs import densitymapbox
+from plotly_study.graph_objs import contourcarpet
+from plotly_study.graph_objs import contour
+from plotly_study.graph_objs import cone
+from plotly_study.graph_objs import choroplethmapbox
+from plotly_study.graph_objs import choropleth
+from plotly_study.graph_objs import carpet
+from plotly_study.graph_objs import candlestick
+from plotly_study.graph_objs import box
+from plotly_study.graph_objs import barpolar
+from plotly_study.graph_objs import bar
+from plotly_study.graph_objs import area
+from plotly_study.graph_objs import layout
 from ._figure import Figure
 from ._deprecations import (
     Data,

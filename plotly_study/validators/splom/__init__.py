@@ -72,7 +72,7 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.splom.unselected.Marker
+                plotly_study.graph_objects.splom.unselected.Marker
                 instance or dict with compatible properties
 """,
             ),
@@ -233,7 +233,7 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.splom.selected.Marker
+                plotly_study.graph_objects.splom.selected.Marker
                 instance or dict with compatible properties
 """,
             ),
@@ -366,7 +366,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.splom.marker.ColorBar
+                plotly_study.graph_objects.splom.marker.ColorBar
                 instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in
@@ -388,7 +388,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  color
                 .
             line
-                plotly.graph_objects.splom.marker.Line instance
+                plotly_study.graph_objects.splom.marker.Line instance
                 or dict with compatible properties
             opacity
                 Sets the marker opacity.
@@ -655,7 +655,7 @@ class DimensionsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
                 "data_docs",
                 """
             axis
-                plotly.graph_objects.splom.dimension.Axis
+                plotly_study.graph_objects.splom.dimension.Axis
                 instance or dict with compatible properties
             label
                 Sets the label corresponding to this splom

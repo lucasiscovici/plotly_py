@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -127,7 +127,7 @@ class Pad(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.title.Pad
+            an instance of plotly_study.graph_objs.layout.title.Pad
         b
             The amount of padding (in px) along the bottom of the
             component.
@@ -158,9 +158,9 @@ class Pad(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.title.Pad 
+The first argument to the plotly_study.graph_objs.layout.title.Pad 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.title.Pad"""
+an instance of plotly_study.graph_objs.layout.title.Pad"""
             )
 
         # Handle skip_invalid
@@ -169,7 +169,7 @@ an instance of plotly.graph_objs.layout.title.Pad"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.title import pad as v_pad
+        from plotly_study.validators.layout.title import pad as v_pad
 
         # Initialize validators
         # ---------------------
@@ -198,7 +198,7 @@ an instance of plotly.graph_objs.layout.title.Pad"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -352,7 +352,7 @@ class Font(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.title.Font
+            an instance of plotly_study.graph_objs.layout.title.Font
         color
 
         family
@@ -389,9 +389,9 @@ class Font(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.title.Font 
+The first argument to the plotly_study.graph_objs.layout.title.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.title.Font"""
+an instance of plotly_study.graph_objs.layout.title.Font"""
             )
 
         # Handle skip_invalid
@@ -400,7 +400,7 @@ an instance of plotly.graph_objs.layout.title.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.title import font as v_font
+        from plotly_study.validators.layout.title import font as v_font
 
         # Initialize validators
         # ---------------------

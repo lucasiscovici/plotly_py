@@ -163,12 +163,12 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
     # -----------------------------
     def _send_relayout_msg(self, layout_data, source_view_id=None):
         """
-        Send Plotly.relayout message to the frontend
+        Send plotly_study.relayout message to the frontend
 
         Parameters
         ----------
         layout_data : dict
-            Plotly.relayout layout data
+            plotly_study.relayout layout data
         source_view_id : str
             UID of view that triggered this relayout operation
             (e.g. By the user clicking 'zoom' in the toolbar). None if the
@@ -195,12 +195,12 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
 
     def _send_restyle_msg(self, restyle_data, trace_indexes=None, source_view_id=None):
         """
-        Send Plotly.restyle message to the frontend
+        Send plotly_study.restyle message to the frontend
 
         Parameters
         ----------
         restyle_data : dict
-            Plotly.restyle restyle data
+            plotly_study.restyle restyle data
         trace_indexes : list[int]
             List of trace indexes that the restyle operation
             applies to
@@ -241,12 +241,12 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
 
     def _send_addTraces_msg(self, new_traces_data):
         """
-        Send Plotly.addTraces message to the frontend
+        Send plotly_study.addTraces message to the frontend
 
         Parameters
         ----------
         new_traces_data : list[dict]
-            List of trace data for new traces as accepted by Plotly.addTraces
+            List of trace data for new traces as accepted by plotly_study.addTraces
         """
 
         # Increment layout/trace edit message IDs
@@ -274,7 +274,7 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
 
     def _send_moveTraces_msg(self, current_inds, new_inds):
         """
-        Send Plotly.moveTraces message to the frontend
+        Send plotly_study.moveTraces message to the frontend
 
         Parameters
         ----------
@@ -297,14 +297,14 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
         self, restyle_data, relayout_data, trace_indexes=None, source_view_id=None
     ):
         """
-        Send Plotly.update message to the frontend
+        Send plotly_study.update message to the frontend
 
         Parameters
         ----------
         restyle_data : dict
-            Plotly.update restyle data
+            plotly_study.update restyle data
         relayout_data : dict
-            Plotly.update relayout data
+            plotly_study.update relayout data
         trace_indexes : list[int]
             List of trace indexes that the update operation applies to
         source_view_id : str
@@ -347,7 +347,7 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
         self, styles_data, relayout_data, trace_indexes, animation_opts
     ):
         """
-        Send Plotly.update message to the frontend
+        Send plotly_study.update message to the frontend
 
         Note: there is no source_view_id parameter because animations
         triggered by the fontend are not currently supported
@@ -355,9 +355,9 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
         Parameters
         ----------
         styles_data : list[dict]
-            Plotly.animate styles data
+            plotly_study.animate styles data
         relayout_data : dict
-            Plotly.animate relayout data
+            plotly_study.animate relayout data
         trace_indexes : list[int]
             List of trace indexes that the animate operation applies to
         """
@@ -395,7 +395,7 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
 
     def _send_deleteTraces_msg(self, delete_inds):
         """
-        Send Plotly.deleteTraces message to the frontend
+        Send plotly_study.deleteTraces message to the frontend
 
         Parameters
         ----------
@@ -560,7 +560,7 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
     @observe("_js2py_restyle")
     def _handler_js2py_restyle(self, change):
         """
-        Process Plotly.restyle message from the frontend
+        Process plotly_study.restyle message from the frontend
         """
 
         # Receive message
@@ -588,7 +588,7 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
     @observe("_js2py_update")
     def _handler_js2py_update(self, change):
         """
-        Process Plotly.update message from the frontend
+        Process plotly_study.update message from the frontend
         """
 
         # Receive message
@@ -618,7 +618,7 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
     @observe("_js2py_relayout")
     def _handler_js2py_relayout(self, change):
         """
-        Process Plotly.relayout message from the frontend
+        Process plotly_study.relayout message from the frontend
         """
 
         # Receive message
@@ -786,8 +786,8 @@ class BaseFigureWidget(BaseFigure, widgets.DOMWidget):
             always
         """
         msg = """
-Frames are not supported by the plotly.graph_objs.FigureWidget class.
-Note: Frames are supported by the plotly.graph_objs.Figure class"""
+Frames are not supported by the plotly_study.graph_objs.FigureWidget class.
+Note: Frames are supported by the plotly_study.graph_objs.Figure class"""
         raise ValueError(msg)
 
     # Static Helpers

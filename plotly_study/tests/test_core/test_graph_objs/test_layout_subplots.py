@@ -1,7 +1,7 @@
 from unittest import TestCase
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 from nose.tools import raises
-import plotly.io as pio
+import plotly_study.io as pio
 
 
 class TestLayoutSubplots(TestCase):
@@ -222,7 +222,7 @@ class TestLayoutSubplots(TestCase):
         self.assertEqual(self.layout.polar8.sector, (0, 90))
 
     def test_bug_1462(self):
-        # https: // github.com / plotly / plotly.py / issues / 1462
+        # https: // github.com / plotly / plotly_study.py / issues / 1462
         fig = go.Figure(
             data=[
                 go.Scatter(x=[1, 2], y=[1, 2], xaxis="x"),

@@ -1,5 +1,5 @@
 """
-Module to test plotly.utils with optional dependencies.
+Module to test plotly_study.utils with optional dependencies.
 
 """
 from __future__ import absolute_import
@@ -18,14 +18,14 @@ from pandas.util.testing import assert_series_equal
 import json as _json
 
 from plotly import optional_imports, utils
-from plotly.graph_objs import Scatter, Scatter3d, Figure, Data
+from plotly_study.graph_objs import Scatter, Scatter3d, Figure, Data
 
 
-matplotlylib = optional_imports.get_module("plotly.matplotlylib")
+matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 
 if matplotlylib:
     import matplotlib.pyplot as plt
-    from plotly.matplotlylib import Exporter, PlotlyRenderer
+    from plotly_study.matplotlylib import Exporter, PlotlyRenderer
 
 
 ## JSON encoding

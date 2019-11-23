@@ -224,7 +224,7 @@ class ZAxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.layout.scene.za
+                A tuple of plotly_study.graph_objects.layout.scene.za
                 xis.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults
@@ -272,7 +272,7 @@ class ZAxisValidator(_plotly_utils.basevalidators.CompoundValidator):
             tickwidth
                 Sets the tick width (in px).
             title
-                plotly.graph_objects.layout.scene.zaxis.Title
+                plotly_study.graph_objects.layout.scene.zaxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use
@@ -530,7 +530,7 @@ class YAxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.layout.scene.ya
+                A tuple of plotly_study.graph_objects.layout.scene.ya
                 xis.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults
@@ -578,7 +578,7 @@ class YAxisValidator(_plotly_utils.basevalidators.CompoundValidator):
             tickwidth
                 Sets the tick width (in px).
             title
-                plotly.graph_objects.layout.scene.yaxis.Title
+                plotly_study.graph_objects.layout.scene.yaxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use
@@ -836,7 +836,7 @@ class XAxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.layout.scene.xa
+                A tuple of plotly_study.graph_objects.layout.scene.xa
                 xis.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults
@@ -884,7 +884,7 @@ class XAxisValidator(_plotly_utils.basevalidators.CompoundValidator):
             tickwidth
                 Sets the tick width (in px).
             title
-                plotly.graph_objects.layout.scene.xaxis.Title
+                plotly_study.graph_objects.layout.scene.xaxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use
@@ -1014,7 +1014,7 @@ class CameraValidator(_plotly_utils.basevalidators.CompoundValidator):
                 vector. This vector determines the view point
                 about the origin of this scene.
             projection
-                plotly.graph_objects.layout.scene.camera.Projec
+                plotly_study.graph_objects.layout.scene.camera.Projec
                 tion instance or dict with compatible
                 properties
             up
@@ -1169,7 +1169,7 @@ class AnnotationsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
                 (default) lets the text set the box height.
                 Taller text will be clipped.
             hoverlabel
-                plotly.graph_objects.layout.scene.annotation.Ho
+                plotly_study.graph_objects.layout.scene.annotation.Ho
                 verlabel instance or dict with compatible
                 properties
             hovertext

@@ -1,10 +1,10 @@
 from __future__ import absolute_import, division
 
 from plotly import exceptions, optional_imports
-import plotly.colors as clrs
-from plotly.figure_factory import utils
-from plotly.graph_objs import graph_objs
-from plotly.validators.heatmap import ColorscaleValidator
+import plotly_study.colors as clrs
+from plotly_study.figure_factory import utils
+from plotly_study.graph_objs import graph_objs
+from plotly_study.validators.heatmap import ColorscaleValidator
 
 # Optional imports, may be None for users that only use our core functionality.
 np = optional_imports.get_module("numpy")
@@ -78,14 +78,14 @@ def create_annotated_heatmap(
         depending on the heatmap's colorscale.
     :param (bool) showscale: Display colorscale. Default = False
     :param (bool) reversescale: Reverse colorscale. Default = False
-    :param kwargs: kwargs passed through plotly.graph_objs.Heatmap.
+    :param kwargs: kwargs passed through plotly_study.graph_objs.Heatmap.
         These kwargs describe other attributes about the annotated Heatmap
         trace such as the colorscale. For more information on valid kwargs
-        call help(plotly.graph_objs.Heatmap)
+        call help(plotly_study.graph_objs.Heatmap)
 
     Example 1: Simple annotated heatmap with default configuration
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
 
     >>> z = [[0.300000, 0.00000, 0.65, 0.300000],
     ...      [1, 0.100005, 0.45, 0.4300],

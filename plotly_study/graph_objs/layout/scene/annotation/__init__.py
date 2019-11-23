@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -136,7 +136,7 @@ class Hoverlabel(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.scene.annotation.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.layout.scene.annotation.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -164,7 +164,7 @@ class Hoverlabel(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.scene.annotation.hoverlabel.Font
+        plotly_study.graph_objs.layout.scene.annotation.hoverlabel.Font
         """
         return self["font"]
 
@@ -206,7 +206,7 @@ class Hoverlabel(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.annotation.Hoverlabel
+            plotly_study.graph_objs.layout.scene.annotation.Hoverlabel
         bgcolor
             Sets the background color of the hover label. By
             default uses the annotation's `bgcolor` made opaque, or
@@ -237,9 +237,9 @@ class Hoverlabel(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.annotation.Hoverlabel 
+The first argument to the plotly_study.graph_objs.layout.scene.annotation.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.annotation.Hoverlabel"""
+an instance of plotly_study.graph_objs.layout.scene.annotation.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -248,7 +248,7 @@ an instance of plotly.graph_objs.layout.scene.annotation.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.annotation import hoverlabel as v_hoverlabel
+        from plotly_study.validators.layout.scene.annotation import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -274,7 +274,7 @@ an instance of plotly.graph_objs.layout.scene.annotation.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -428,7 +428,7 @@ class Font(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.scene.annotation.Font
+            plotly_study.graph_objs.layout.scene.annotation.Font
         color
 
         family
@@ -465,9 +465,9 @@ class Font(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.scene.annotation.Font 
+The first argument to the plotly_study.graph_objs.layout.scene.annotation.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.scene.annotation.Font"""
+an instance of plotly_study.graph_objs.layout.scene.annotation.Font"""
             )
 
         # Handle skip_invalid
@@ -476,7 +476,7 @@ an instance of plotly.graph_objs.layout.scene.annotation.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.scene.annotation import font as v_font
+        from plotly_study.validators.layout.scene.annotation import font as v_font
 
         # Initialize validators
         # ---------------------
@@ -504,4 +504,4 @@ an instance of plotly.graph_objs.layout.scene.annotation.Font"""
 
 __all__ = ["Font", "Hoverlabel", "hoverlabel"]
 
-from plotly.graph_objs.layout.scene.annotation import hoverlabel
+from plotly_study.graph_objs.layout.scene.annotation import hoverlabel

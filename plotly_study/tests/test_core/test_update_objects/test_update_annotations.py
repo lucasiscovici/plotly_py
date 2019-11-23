@@ -3,8 +3,8 @@ from __future__ import absolute_import
 import types
 from unittest import TestCase
 
-import plotly.graph_objs as go
-from plotly.subplots import make_subplots
+import plotly_study.graph_objs as go
+from plotly_study.subplots import make_subplots
 
 
 class TestSelectForEachUpdateAnnotations(TestCase):

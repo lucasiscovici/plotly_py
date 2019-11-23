@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 
 from unittest import TestCase
-from plotly.graph_objs import (
+from plotly_study.graph_objs import (
     Annotation,
     Annotations,
     Data,
@@ -13,15 +13,15 @@ from plotly.graph_objs import (
     XAxis,
     YAxis,
 )
-import plotly.tools as tls
+import plotly_study.tools as tls
 from plotly import subplots
 
 
 class TestMakeSubplots(TestCase):
     """
-    Test plotly.tools.make_subplots in v4_subplots mode
+    Test plotly_study.tools.make_subplots in v4_subplots mode
 
-    In version 4, change this to test plotly.subplots.make_subplots directly
+    In version 4, change this to test plotly_study.subplots.make_subplots directly
     """
 
     def test_non_integer_rows(self):

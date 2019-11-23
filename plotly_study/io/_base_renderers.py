@@ -7,11 +7,11 @@ import os
 from os.path import isdir
 
 import six
-from plotly.io import to_json, to_image, write_image, write_html
+from plotly_study.io import to_json, to_image, write_image, write_html
 from plotly import utils, optional_imports
-from plotly.io._orca import ensure_server
-from plotly.offline.offline import _get_jconfig, get_plotlyjs
-from plotly.tools import return_figure_from_figure_or_data
+from plotly_study.io._orca import ensure_server
+from plotly_study.offline.offline import _get_jconfig, get_plotlyjs
+from plotly_study.tools import return_figure_from_figure_or_data
 
 ipython_display = optional_imports.get_module("IPython.display")
 IPython = optional_imports.get_module("IPython")
@@ -80,7 +80,7 @@ class PlotlyRenderer(MimetypeRenderer):
     compatible with JupyterLab (using the @jupyterlab/plotly-extension),
     VSCode, and nteract.
 
-    mime type: 'application/vnd.plotly.v1+json'
+    mime type: 'application/vnd.plotly_study.v1+json'
     """
 
     def __init__(self, config=None):
@@ -95,7 +95,7 @@ class PlotlyRenderer(MimetypeRenderer):
             to_json(fig_dict, validate=False, remove_uids=False)
         )
 
-        return {"application/vnd.plotly.v1+json": json_compatible_fig_dict}
+        return {"application/vnd.plotly_study.v1+json": json_compatible_fig_dict}
 
 
 # Static Image
@@ -228,7 +228,7 @@ class PdfRenderer(ImageRenderer):
 
 # HTML
 # Build script to set global PlotlyConfig object. This must execute before
-# plotly.js is loaded.
+# plotly_study.js is loaded.
 _window_plotly_config = """\
 window.PlotlyConfig = {MathJaxConfig: 'local'};"""
 
@@ -299,7 +299,7 @@ class HtmlRenderer(MimetypeRenderer):
                 )
 
             else:
-                # If not connected then we embed a copy of the plotly.js
+                # If not connected then we embed a copy of the plotly_study.js
                 # library in the notebook
                 script = """\
         <script type="text/javascript">
@@ -325,7 +325,7 @@ class HtmlRenderer(MimetypeRenderer):
 
     def to_mimebundle(self, fig_dict):
 
-        from plotly.io import to_html
+        from plotly_study.io import to_html
 
         if self.requirejs:
             include_plotlyjs = "require"
@@ -345,7 +345,7 @@ var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
             console.log([gd, 'removed!']);
-            Plotly.purge(gd);
+            plotly_study.purge(gd);
             observer.disconnect();
         }}
 }});
@@ -425,7 +425,7 @@ class KaggleRenderer(HtmlRenderer):
     """
     Renderer to display interactive figures in Kaggle Notebooks.
 
-    Same as NotebookRenderer but with connected=True so that the plotly.js
+    Same as NotebookRenderer but with connected=True so that the plotly_study.js
     bundle is loaded from a CDN rather than being embedded in the notebook.
 
     This renderer is enabled by default when running in a Kaggle notebook.
@@ -453,7 +453,7 @@ class AzureRenderer(HtmlRenderer):
     """
     Renderer to display interactive figures in Azure Notebooks.
 
-    Same as NotebookRenderer but with connected=True so that the plotly.js
+    Same as NotebookRenderer but with connected=True so that the plotly_study.js
     bundle is loaded from a CDN rather than being embedded in the notebook.
 
     This renderer is enabled by default when running in an Azure notebook.
@@ -509,7 +509,7 @@ class IFrameRenderer(MimetypeRenderer):
     iframe HTML elements that reference these files are inserted into the
     notebook.
 
-    With this approach, neither plotly.js nor the figure data are embedded in
+    With this approach, neither plotly_study.js nor the figure data are embedded in
     the notebook, so this is a good choice for notebooks that contain so many
     large figures that basic operations (like saving and opening) become
     very slow.
@@ -544,7 +544,7 @@ class IFrameRenderer(MimetypeRenderer):
         self.html_directory = html_directory
 
     def to_mimebundle(self, fig_dict):
-        from plotly.io import write_html
+        from plotly_study.io import write_html
 
         # Make iframe size slightly larger than figure size to avoid
         # having iframe have its own scroll bar.
@@ -638,7 +638,7 @@ class ExternalRenderer(BaseRenderer):
 
     Unlike MimetypeRenderer subclasses, ExternalRenderer subclasses are not
     invoked when a figure is asked to display itself in the notebook.
-    Instead, they are invoked when the plotly.io.show function is called
+    Instead, they are invoked when the plotly_study.io.show function is called
     on a figure.
     """
 
@@ -689,7 +689,7 @@ class BrowserRenderer(ExternalRenderer):
     """
     Renderer to display interactive figures in an external web browser.
     This renderer will open a new browser window or tab when the
-    plotly.io.show function is called on a figure.
+    plotly_study.io.show function is called on a figure.
 
     This renderer has no ipython/jupyter dependencies and is a good choice
     for use in environments that do not support the inline display of
@@ -718,7 +718,7 @@ class BrowserRenderer(ExternalRenderer):
         self.animation_opts = animation_opts
 
     def render(self, fig_dict):
-        from plotly.io import to_html
+        from plotly_study.io import to_html
 
         html = to_html(
             fig_dict,
@@ -776,7 +776,7 @@ supported when called from within the Databricks notebook environment."""
         return self._displayHTML
 
     def render(self, fig_dict):
-        from plotly.io import to_html
+        from plotly_study.io import to_html
 
         html = to_html(
             fig_dict,

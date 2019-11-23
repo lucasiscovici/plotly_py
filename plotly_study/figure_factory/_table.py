@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 
 from plotly import exceptions, optional_imports
-from plotly.graph_objs import graph_objs
+from plotly_study.graph_objs import graph_objs
 
 pd = optional_imports.get_module("pandas")
 
@@ -52,14 +52,14 @@ def create_table(
     :param (bool) index: Create (header-colored) index column index from
         Pandas dataframe or list[0] for each list in text. Default=False.
     :param (string) index_title: Title for index column. Default=''.
-    :param kwargs: kwargs passed through plotly.graph_objs.Heatmap.
+    :param kwargs: kwargs passed through plotly_study.graph_objs.Heatmap.
         These kwargs describe other attributes about the annotated Heatmap
         trace such as the colorscale. For more information on valid kwargs
-        call help(plotly.graph_objs.Heatmap)
+        call help(plotly_study.graph_objs.Heatmap)
 
     Example 1: Simple Plotly Table
 
-    >>> from plotly.figure_factory import create_table
+    >>> from plotly_study.figure_factory import create_table
 
     >>> text = [['Country', 'Year', 'Population'],
     ...         ['US', 2000, 282200000],
@@ -72,7 +72,7 @@ def create_table(
 
     Example 2: Table with Custom Coloring
 
-    >>> from plotly.figure_factory import create_table
+    >>> from plotly_study.figure_factory import create_table
 
     >>> text = [['Country', 'Year', 'Population'],
     ...         ['US', 2000, 282200000],
@@ -90,7 +90,7 @@ def create_table(
 
     Example 3: Simple Plotly Table with Pandas
 
-    >>> from plotly.figure_factory import create_table
+    >>> from plotly_study.figure_factory import create_table
     >>> import pandas as pd
 
     >>> df = pd.read_csv('http://www.stat.ubc.ca/~jenny/notOcto/STAT545A/examples/gapminder/data/gapminderDataFiveYear.txt', sep='\t')

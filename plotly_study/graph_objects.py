@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from plotly.graph_objs import *
+from plotly_study.graph_objs import *
 
 __all__ = [
     "AngularAxis",

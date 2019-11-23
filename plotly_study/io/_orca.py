@@ -16,9 +16,9 @@ from six import string_types
 
 import _plotly_utils.utils
 import plotly
-from plotly.files import PLOTLY_DIR, ensure_writable_plotly_dir
-from plotly.io._utils import validate_coerce_fig_to_dict
-from plotly.optional_imports import get_module
+from plotly_study.files import PLOTLY_DIR, ensure_writable_plotly_dir
+from plotly_study.io._utils import validate_coerce_fig_to_dict
+from plotly_study.optional_imports import get_module
 
 psutil = get_module("psutil")
 
@@ -223,14 +223,14 @@ class OrcaConfig(object):
         self._props = {}
 
         # Compute absolute path to the 'plotly/package_data/' directory
-        root_dir = os.path.dirname(os.path.abspath(plotly.__file__))
+        root_dir = os.path.dirname(os.path.abspath(plotly_study.__file__))
         self.package_dir = os.path.join(root_dir, "package_data")
 
         # Load pre-existing configuration
         self.reload(warn=False)
 
         # Compute constants
-        plotlyjs = os.path.join(self.package_dir, "plotly.min.js")
+        plotlyjs = os.path.join(self.package_dir, "plotly_study.min.js")
         self._constants = {
             "plotlyjs": plotlyjs,
             "config_file": os.path.join(PLOTLY_DIR, ".orca"),
@@ -268,7 +268,7 @@ class OrcaConfig(object):
         --------
         Update configuration properties using a dictionary
 
-        >>> import plotly.io as pio
+        >>> import plotly_study.io as pio
         >>> pio.orca.config.update({'timeout': 30, 'default_format': 'svg'})
 
         Update configuration properties using keyword arguments
@@ -429,7 +429,7 @@ The server_url property must be a string, but received value of type {typ}.
         None if the port is to be chosen automatically.
 
         If an orca server is active, the port in use is stored in the
-        plotly.io.orca.status.port property.
+        plotly_study.io.orca.status.port property.
 
         Returns
         -------
@@ -472,7 +472,7 @@ The port property must be an integer, but received value of type {typ}.
 
         If an orca server has been validated, then the full path to the
         validated orca executable is stored in the
-        plotly.io.orca.status.executable property.
+        plotly_study.io.orca.status.executable property.
 
         Returns
         -------
@@ -519,7 +519,7 @@ The executable property must be a string, but received value of type {typ}.
         Regardless of the value of timeout, a running orca server may be
         manually shut down like this:
 
-        >>> import plotly.io as pio
+        >>> import plotly_study.io as pio
         >>> pio.orca.shutdown_server()
 
         Returns
@@ -551,7 +551,7 @@ The timeout property must be a number, but received value of type {typ}.
     def default_width(self):
         """
         The default width to use on image export. This value is only
-        applied if no width value is supplied to the plotly.io
+        applied if no width value is supplied to the plotly_study.io
         to_image or write_image functions.
 
         Returns
@@ -580,7 +580,7 @@ The default_width property must be an int, but received value of type {typ}.
     def default_height(self):
         """
         The default height to use on image export. This value is only
-        applied if no height value is supplied to the plotly.io
+        applied if no height value is supplied to the plotly_study.io
         to_image or write_image functions.
 
         Returns
@@ -619,7 +619,7 @@ The default_height property must be an int, but received value of type {typ}.
           - 'eps' (Requires the poppler library to be installed)
 
         This value is only applied if no format value is supplied to the
-        plotly.io to_image or write_image functions.
+        plotly_study.io to_image or write_image functions.
 
         Returns
         -------
@@ -641,7 +641,7 @@ The default_height property must be an int, but received value of type {typ}.
         """
         The default image scaling factor to use on image export.
         This value is only applied if no scale value is supplied to the
-        plotly.io to_image or write_image functions.
+        plotly_study.io to_image or write_image functions.
 
         Returns
         -------
@@ -789,7 +789,7 @@ The use_xvfb property must be one of {valid_vals}
     @property
     def plotlyjs(self):
         """
-        The plotly.js bundle being used for image rendering.
+        The plotly_study.js bundle being used for image rendering.
 
         Returns
         -------
@@ -802,7 +802,7 @@ The use_xvfb property must be one of {valid_vals}
         """
         Path to orca configuration file
 
-        Using the `plotly.io.config.save()` method will save the current
+        Using the `plotly_study.io.config.save()` method will save the current
         configuration settings to this file. Settings in this file are
         restored at the beginning of each sessions.
 
@@ -898,7 +898,7 @@ class OrcaStatus(object):
         contains the full path to the orca executable.
 
         This path can be specified explicitly by setting the `executable`
-        property of the `plotly.io.orca.config` object.
+        property of the `plotly_study.io.orca.config` object.
 
         This property will be None if the `state` is 'unvalidated'.
         """
@@ -933,7 +933,7 @@ class OrcaStatus(object):
         This property will be None if the `state` is not 'running'.
 
         This port can be specified explicitly by setting the `port`
-        property of the `plotly.io.orca.config` object.
+        property of the `plotly_study.io.orca.config` object.
         """
         return self._props["port"]
 
@@ -1009,14 +1009,14 @@ def orca_env():
 def validate_executable():
     """
     Attempt to find and validate the orca executable specified by the
-    `plotly.io.orca.config.executable` property.
+    `plotly_study.io.orca.config.executable` property.
 
-    If the `plotly.io.orca.status.state` property is 'validated' or 'running'
+    If the `plotly_study.io.orca.status.state` property is 'validated' or 'running'
     then this function does nothing.
 
     How it works:
       - First, it searches the system PATH for an executable that matches the
-      name or path specified in the `plotly.io.orca.config.executable`
+      name or path specified in the `plotly_study.io.orca.config.executable`
       property.
       - Then it runs the executable with the `--help` flag to make sure
       it's the plotly orca executable
@@ -1049,17 +1049,17 @@ https://github.com/plotly/orca
 
 After installation is complete, no further configuration should be needed.
 
-If you have installed orca, then for some reason plotly.py was unable to
-locate it. In this case, set the `plotly.io.orca.config.executable`
+If you have installed orca, then for some reason plotly_study.py was unable to
+locate it. In this case, set the `plotly_study.io.orca.config.executable`
 property to the full path of your orca executable. For example:
 
-    >>> plotly.io.orca.config.executable = '/path/to/orca'
+    >>> plotly_study.io.orca.config.executable = '/path/to/orca'
 
 After updating this executable property, try the export operation again.
 If it is successful then you may want to save this configuration so that it
 will be applied automatically in future sessions. You can do this as follows:
 
-    >>> plotly.io.orca.config.save()
+    >>> plotly_study.io.orca.config.save()
 
 If you're still having trouble, feel free to ask for help on the forums at
 https://community.plot.ly/c/api/python
@@ -1103,7 +1103,7 @@ Searched for executable '{executable}' on the following path:
         if not xvfb_run_executable:
             raise ValueError(
                 """
-The plotly.io.orca.config.use_xvfb property is set to True, but the
+The plotly_study.io.orca.config.use_xvfb property is set to True, but the
 xvfb-run executable could not be found on the system path.
 
 Searched for the executable 'xvfb-run' on the following path:
@@ -1168,10 +1168,10 @@ Here is the error that was returned by the command
 
             err_msg += """\
 Note: When used on Linux, orca requires an X11 display server, but none was
-detected. Please install Xvfb and configure plotly.py to run orca using Xvfb
+detected. Please install Xvfb and configure plotly_study.py to run orca using Xvfb
 as follows:
 
-    >>> import plotly.io as pio
+    >>> import plotly_study.io as pio
     >>> pio.orca.config.use_xvfb = True
     
 You can save this configuration for use in future sessions as follows:
@@ -1224,7 +1224,7 @@ The error encountered is that unexpected output was returned by the command
             invalid_executable_msg
             + """
 An error occurred while trying to get the version of the orca executable.
-Here is the command that plotly.py ran to request the version
+Here is the command that plotly_study.py ran to request the version
     $ {executable} --version
 
 This command returned the following error:
@@ -1243,7 +1243,7 @@ This command returned the following error:
             invalid_executable_msg
             + """
 The error encountered is that no version was reported by the orca executable.
-Here is the command that plotly.py ran to request the version:
+Here is the command that plotly_study.py ran to request the version:
 
     $ {executable} --version
 """.format(
@@ -1495,21 +1495,21 @@ def to_image(fig, format=None, width=None, height=None, scale=None, validate=Tru
           - 'pdf'
           - 'eps' (Requires the poppler library to be installed)
 
-        If not specified, will default to `plotly.io.config.default_format`
+        If not specified, will default to `plotly_study.io.config.default_format`
 
     width: int or None
         The width of the exported image in layout pixels. If the `scale`
         property is 1.0, this will also be the width of the exported image
         in physical pixels.
 
-        If not specified, will default to `plotly.io.config.default_width`
+        If not specified, will default to `plotly_study.io.config.default_width`
 
     height: int or None
         The height of the exported image in layout pixels. If the `scale`
         property is 1.0, this will also be the height of the exported image
         in physical pixels.
 
-        If not specified, will default to `plotly.io.config.default_height`
+        If not specified, will default to `plotly_study.io.config.default_height`
 
     scale: int or float or None
         The scale factor to use when exporting the figure. A scale factor
@@ -1517,7 +1517,7 @@ def to_image(fig, format=None, width=None, height=None, scale=None, validate=Tru
         to the figure's layout pixel dimensions. Whereas as scale factor of
         less than 1.0 will decrease the image resolution.
 
-        If not specified, will default to `plotly.io.config.default_scale`
+        If not specified, will default to `plotly_study.io.config.default_scale`
 
     validate: bool
         True if the figure should be validated before being converted to
@@ -1566,7 +1566,7 @@ def to_image(fig, format=None, width=None, height=None, scale=None, validate=Tru
         if config.server_url:
             raise ValueError(
                 """
-Plotly.py was unable to communicate with the orca server at {server_url}
+plotly_study.py was unable to communicate with the orca server at {server_url}
 
 Please check that the server is running and accessible.
 """.format(
@@ -1582,7 +1582,7 @@ Please check that the server is running and accessible.
             if pid_exists:
                 raise ValueError(
                     """
-For some reason plotly.py was unable to communicate with the
+For some reason plotly_study.py was unable to communicate with the
 local orca server process, even though the server process seems to be running.
 
 Please review the process and connection information below:
@@ -1603,7 +1603,7 @@ For some reason the orca server process is no longer running.
 Please review the process and connection information below:
 
 {info}
-plotly.py will attempt to start the local server process again the next time
+plotly_study.py will attempt to start the local server process again the next time
 an image export operation is performed.
 """.format(
                         info=status_str
@@ -1631,8 +1631,8 @@ with the following error:
         # statusMsg: {
         #     400: 'invalid or malformed request syntax',
         #     522: client socket timeout
-        #     525: 'plotly.js error',
-        #     526: 'plotly.js version 1.11.0 or up required',
+        #     525: 'plotly_study.js error',
+        #     526: 'plotly_study.js version 1.11.0 or up required',
         #     530: 'image conversion error'
         # }
         if response.status_code == 400 and isinstance(fig, dict) and not validate:
@@ -1651,12 +1651,12 @@ figure specification"""
 Exporting scattermapbox traces requires a mapbox access token.
 Create a token in your mapbox account and then set it using:
 
->>> plotly.io.orca.config.mapbox_access_token = 'pk.abc...'
+>>> plotly_study.io.orca.config.mapbox_access_token = 'pk.abc...'
 
 If you would like this token to be applied automatically in
 future sessions, then save your orca configuration as follows:
 
->>> plotly.io.orca.config.save()
+>>> plotly_study.io.orca.config.save()
 """
         elif response.status_code == 530 and format == "eps":
             err_message += """
@@ -1704,21 +1704,21 @@ def write_image(
 
         If not specified and `file` is a string then this will default to the
         file extension. If not specified and `file` is not a string then this
-        will default to `plotly.io.config.default_format`
+        will default to `plotly_study.io.config.default_format`
 
     width: int or None
         The width of the exported image in layout pixels. If the `scale`
         property is 1.0, this will also be the width of the exported image
         in physical pixels.
 
-        If not specified, will default to `plotly.io.config.default_width`
+        If not specified, will default to `plotly_study.io.config.default_width`
 
     height: int or None
         The height of the exported image in layout pixels. If the `scale`
         property is 1.0, this will also be the height of the exported image
         in physical pixels.
 
-        If not specified, will default to `plotly.io.config.default_height`
+        If not specified, will default to `plotly_study.io.config.default_height`
 
     scale: int or float or None
         The scale factor to use when exporting the figure. A scale factor
@@ -1726,7 +1726,7 @@ def write_image(
         to the figure's layout pixel dimensions. Whereas as scale factor of
         less than 1.0 will decrease the image resolution.
 
-        If not specified, will default to `plotly.io.config.default_scale`
+        If not specified, will default to `plotly_study.io.config.default_scale`
 
     validate: bool
         True if the figure should be validated before being converted to
@@ -1754,7 +1754,7 @@ Cannot infer image type from output path '{file}'.
 Please add a file extension or specify the type using the format parameter.
 For example:
 
-    >>> import plotly.io as pio
+    >>> import plotly_study.io as pio
     >>> pio.write_image(fig, file_path, format='png')
 """.format(
                     file=file

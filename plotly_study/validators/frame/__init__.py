@@ -24,10 +24,10 @@ class NameValidator(_plotly_utils.basevalidators.StringValidator):
         )
 
 
-import plotly.validators
+import plotly_study.validators
 
 
-class LayoutValidator(plotly.validators.LayoutValidator):
+class LayoutValidator(plotly_study.validators.LayoutValidator):
     def __init__(self, plotly_name="layout", parent_name="frame", **kwargs):
         super(LayoutValidator, self).__init__(
             plotly_name=plotly_name,
@@ -50,10 +50,10 @@ class GroupValidator(_plotly_utils.basevalidators.StringValidator):
         )
 
 
-import plotly.validators
+import plotly_study.validators
 
 
-class DataValidator(plotly.validators.DataValidator):
+class DataValidator(plotly_study.validators.DataValidator):
     def __init__(self, plotly_name="data", parent_name="frame", **kwargs):
         super(DataValidator, self).__init__(
             plotly_name=plotly_name,

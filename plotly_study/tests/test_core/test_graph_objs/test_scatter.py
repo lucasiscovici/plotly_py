@@ -8,8 +8,8 @@ A module intended for use with Nose.
 from __future__ import absolute_import
 
 from nose.tools import raises
-from plotly.graph_objs import Scatter
-from plotly.exceptions import PlotlyError
+from plotly_study.graph_objs import Scatter
+from plotly_study.exceptions import PlotlyError
 
 
 def test_trivial():

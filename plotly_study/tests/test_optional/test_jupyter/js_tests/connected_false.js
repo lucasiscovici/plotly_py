@@ -2,7 +2,7 @@
 
 var test = require('../lib/tape-wrapper');
 
-test('should load plotly.js', function(t) {
+test('should load plotly_study.js', function(t) {
     t.plan(1);
 
     window.require(['plotly'], function(Plotly) {
@@ -10,14 +10,14 @@ test('should load plotly.js', function(t) {
     });
 });
 
-test('should have one plotly.js graph', function(t) {
+test('should have one plotly_study.js graph', function(t) {
     t.plan(1);
 
     var nodes = document.querySelectorAll('.js-plotly-plot');
     t.equal(nodes.length, 1);
 });
 
-test('should inject raw plotly.js code into DOM', function(t) {
+test('should inject raw plotly_study.js code into DOM', function(t) {
     t.plan(1);
 
     var nodes = document.querySelectorAll('script');

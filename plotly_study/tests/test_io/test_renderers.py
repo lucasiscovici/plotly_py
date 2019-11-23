@@ -8,9 +8,9 @@ import pytest
 import requests
 import numpy as np
 
-import plotly.graph_objs as go
-import plotly.io as pio
-from plotly.offline import get_plotlyjs
+import plotly_study.graph_objs as go
+import plotly_study.io as pio
+from plotly_study.offline import get_plotlyjs
 
 if sys.version_info.major == 3 and sys.version_info.minor >= 3:
     import unittest.mock as mock
@@ -82,7 +82,7 @@ def test_json_renderer_show_override(fig1):
 
 # Plotly mimetype
 # ---------------
-plotly_mimetype = "application/vnd.plotly.v1+json"
+plotly_mimetype = "application/vnd.plotly_study.v1+json"
 plotly_mimetype_renderers = ["plotly_mimetype", "jupyterlab", "vscode", "nteract"]
 
 

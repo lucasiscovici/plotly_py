@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -154,7 +154,7 @@ class Textfont(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.mapbox.layer.symbol.Textfont
+            plotly_study.graph_objs.layout.mapbox.layer.symbol.Textfont
         color
 
         family
@@ -191,9 +191,9 @@ class Textfont(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.mapbox.layer.symbol.Textfont 
+The first argument to the plotly_study.graph_objs.layout.mapbox.layer.symbol.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.mapbox.layer.symbol.Textfont"""
+an instance of plotly_study.graph_objs.layout.mapbox.layer.symbol.Textfont"""
             )
 
         # Handle skip_invalid
@@ -202,7 +202,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.symbol.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.mapbox.layer.symbol import textfont as v_textfont
+        from plotly_study.validators.layout.mapbox.layer.symbol import textfont as v_textfont
 
         # Initialize validators
         # ---------------------

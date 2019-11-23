@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -14,7 +14,7 @@ class Title(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.title.Font
+          - An instance of plotly_study.graph_objs.funnelarea.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -52,7 +52,7 @@ class Title(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.title.Font
+        plotly_study.graph_objs.funnelarea.title.Font
         """
         return self["font"]
 
@@ -142,7 +142,7 @@ class Title(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.funnelarea.Title
+            an instance of plotly_study.graph_objs.funnelarea.Title
         font
             Sets the font used for `title`. Note that the title's
             font used to be set by the now deprecated `titlefont`
@@ -175,9 +175,9 @@ class Title(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.funnelarea.Title 
+The first argument to the plotly_study.graph_objs.funnelarea.Title 
 constructor must be a dict or 
-an instance of plotly.graph_objs.funnelarea.Title"""
+an instance of plotly_study.graph_objs.funnelarea.Title"""
             )
 
         # Handle skip_invalid
@@ -186,7 +186,7 @@ an instance of plotly.graph_objs.funnelarea.Title"""
 
         # Import validators
         # -----------------
-        from plotly.validators.funnelarea import title as v_title
+        from plotly_study.validators.funnelarea import title as v_title
 
         # Initialize validators
         # ---------------------
@@ -212,7 +212,7 @@ an instance of plotly.graph_objs.funnelarea.Title"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -284,7 +284,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -336,7 +336,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -375,7 +375,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -444,7 +444,7 @@ class Textfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.funnelarea.Textfont
+            an instance of plotly_study.graph_objs.funnelarea.Textfont
         color
 
         colorsrc
@@ -487,9 +487,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.funnelarea.Textfont 
+The first argument to the plotly_study.graph_objs.funnelarea.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.funnelarea.Textfont"""
+an instance of plotly_study.graph_objs.funnelarea.Textfont"""
             )
 
         # Handle skip_invalid
@@ -498,7 +498,7 @@ an instance of plotly.graph_objs.funnelarea.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.funnelarea import textfont as v_textfont
+        from plotly_study.validators.funnelarea import textfont as v_textfont
 
         # Initialize validators
         # ---------------------
@@ -533,7 +533,7 @@ an instance of plotly.graph_objs.funnelarea.Textfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -612,7 +612,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.funnelarea.Stream
+            an instance of plotly_study.graph_objs.funnelarea.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -640,9 +640,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.funnelarea.Stream 
+The first argument to the plotly_study.graph_objs.funnelarea.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.funnelarea.Stream"""
+an instance of plotly_study.graph_objs.funnelarea.Stream"""
             )
 
         # Handle skip_invalid
@@ -651,7 +651,7 @@ an instance of plotly.graph_objs.funnelarea.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.funnelarea import stream as v_stream
+        from plotly_study.validators.funnelarea import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -674,7 +674,7 @@ an instance of plotly.graph_objs.funnelarea.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -709,7 +709,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  colors .
     
         The 'colorssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -728,7 +728,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.marker.Line
+          - An instance of plotly_study.graph_objs.funnelarea.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -749,7 +749,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.marker.Line
+        plotly_study.graph_objs.funnelarea.marker.Line
         """
         return self["line"]
 
@@ -775,7 +775,7 @@ class Marker(_BaseTraceHierarchyType):
         colorssrc
             Sets the source reference on plot.ly for  colors .
         line
-            plotly.graph_objects.funnelarea.marker.Line instance or
+            plotly_study.graph_objects.funnelarea.marker.Line instance or
             dict with compatible properties
         """
 
@@ -787,7 +787,7 @@ class Marker(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.funnelarea.Marker
+            an instance of plotly_study.graph_objs.funnelarea.Marker
         colors
             Sets the color of each sector. If not specified, the
             default trace color set is used to pick the sector
@@ -795,7 +795,7 @@ class Marker(_BaseTraceHierarchyType):
         colorssrc
             Sets the source reference on plot.ly for  colors .
         line
-            plotly.graph_objects.funnelarea.marker.Line instance or
+            plotly_study.graph_objects.funnelarea.marker.Line instance or
             dict with compatible properties
 
         Returns
@@ -815,9 +815,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.funnelarea.Marker 
+The first argument to the plotly_study.graph_objs.funnelarea.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.funnelarea.Marker"""
+an instance of plotly_study.graph_objs.funnelarea.Marker"""
             )
 
         # Handle skip_invalid
@@ -826,7 +826,7 @@ an instance of plotly.graph_objs.funnelarea.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.funnelarea import marker as v_marker
+        from plotly_study.validators.funnelarea import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -852,7 +852,7 @@ an instance of plotly.graph_objs.funnelarea.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -924,7 +924,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -976,7 +976,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1015,7 +1015,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1085,7 +1085,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.funnelarea.Insidetextfont
+            plotly_study.graph_objs.funnelarea.Insidetextfont
         color
 
         colorsrc
@@ -1128,9 +1128,9 @@ class Insidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.funnelarea.Insidetextfont 
+The first argument to the plotly_study.graph_objs.funnelarea.Insidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.funnelarea.Insidetextfont"""
+an instance of plotly_study.graph_objs.funnelarea.Insidetextfont"""
             )
 
         # Handle skip_invalid
@@ -1139,7 +1139,7 @@ an instance of plotly.graph_objs.funnelarea.Insidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.funnelarea import insidetextfont as v_insidetextfont
+        from plotly_study.validators.funnelarea import insidetextfont as v_insidetextfont
 
         # Initialize validators
         # ---------------------
@@ -1174,7 +1174,7 @@ an instance of plotly.graph_objs.funnelarea.Insidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1212,7 +1212,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1292,7 +1292,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1372,7 +1372,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1393,7 +1393,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.funnelarea.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.funnelarea.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1431,7 +1431,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.funnelarea.hoverlabel.Font
+        plotly_study.graph_objs.funnelarea.hoverlabel.Font
         """
         return self["font"]
 
@@ -1474,7 +1474,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1548,7 +1548,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.funnelarea.Hoverlabel
+            an instance of plotly_study.graph_objs.funnelarea.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1595,9 +1595,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.funnelarea.Hoverlabel 
+The first argument to the plotly_study.graph_objs.funnelarea.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.funnelarea.Hoverlabel"""
+an instance of plotly_study.graph_objs.funnelarea.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1606,7 +1606,7 @@ an instance of plotly.graph_objs.funnelarea.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.funnelarea import hoverlabel as v_hoverlabel
+        from plotly_study.validators.funnelarea import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1650,7 +1650,7 @@ an instance of plotly.graph_objs.funnelarea.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1785,7 +1785,7 @@ class Domain(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.funnelarea.Domain
+            an instance of plotly_study.graph_objs.funnelarea.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this funnelarea trace .
@@ -1816,9 +1816,9 @@ class Domain(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.funnelarea.Domain 
+The first argument to the plotly_study.graph_objs.funnelarea.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.funnelarea.Domain"""
+an instance of plotly_study.graph_objs.funnelarea.Domain"""
             )
 
         # Handle skip_invalid
@@ -1827,7 +1827,7 @@ an instance of plotly.graph_objs.funnelarea.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.funnelarea import domain as v_domain
+        from plotly_study.validators.funnelarea import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -1869,6 +1869,6 @@ __all__ = [
     "title",
 ]
 
-from plotly.graph_objs.funnelarea import title
-from plotly.graph_objs.funnelarea import marker
-from plotly.graph_objs.funnelarea import hoverlabel
+from plotly_study.graph_objs.funnelarea import title
+from plotly_study.graph_objs.funnelarea import marker
+from plotly_study.graph_objs.funnelarea import hoverlabel

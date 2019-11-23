@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -187,7 +187,7 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.polar.angularax
+            an instance of plotly_study.graph_objs.layout.polar.angularax
             is.Tickformatstop
         dtickrange
             range [*min*, *max*], where "min", "max" - dtick values
@@ -237,9 +237,9 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.polar.angularaxis.Tickformatstop 
+The first argument to the plotly_study.graph_objs.layout.polar.angularaxis.Tickformatstop 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.polar.angularaxis.Tickformatstop"""
+an instance of plotly_study.graph_objs.layout.polar.angularaxis.Tickformatstop"""
             )
 
         # Handle skip_invalid
@@ -248,7 +248,7 @@ an instance of plotly.graph_objs.layout.polar.angularaxis.Tickformatstop"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.polar.angularaxis import (
+        from plotly_study.validators.layout.polar.angularaxis import (
             tickformatstop as v_tickformatstop,
         )
 
@@ -286,7 +286,7 @@ an instance of plotly.graph_objs.layout.polar.angularaxis.Tickformatstop"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -440,7 +440,7 @@ class Tickfont(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.polar.angularaxis.Tickfont
+            plotly_study.graph_objs.layout.polar.angularaxis.Tickfont
         color
 
         family
@@ -477,9 +477,9 @@ class Tickfont(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.polar.angularaxis.Tickfont 
+The first argument to the plotly_study.graph_objs.layout.polar.angularaxis.Tickfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.polar.angularaxis.Tickfont"""
+an instance of plotly_study.graph_objs.layout.polar.angularaxis.Tickfont"""
             )
 
         # Handle skip_invalid
@@ -488,7 +488,7 @@ an instance of plotly.graph_objs.layout.polar.angularaxis.Tickfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.polar.angularaxis import tickfont as v_tickfont
+        from plotly_study.validators.layout.polar.angularaxis import tickfont as v_tickfont
 
         # Initialize validators
         # ---------------------

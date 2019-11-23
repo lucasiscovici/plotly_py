@@ -2,7 +2,7 @@ from __future__ import absolute_import
 
 from unittest import TestCase
 
-from plotly.graph_objs import Bar, Frames, Frame, Layout
+from plotly_study.graph_objs import Bar, Frames, Frame, Layout
 
 from nose.plugins.attrib import attr
 
@@ -65,7 +65,7 @@ class FramesTest(TestCase):
 
         matches = return_prop_descriptions(prop_descrip_text)
 
-        # Skip 'cmid' that is going to be added in plotly.js 1.45.0
+        # Skip 'cmid' that is going to be added in plotly_study.js 1.45.0
         matches = [m for m in matches if m != "cmid"]
 
         # It's OK if this needs to change, but we should check *something*.

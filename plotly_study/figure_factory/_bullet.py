@@ -4,11 +4,11 @@ import collections
 import math
 
 from plotly import exceptions, optional_imports
-import plotly.colors as clrs
-from plotly.figure_factory import utils
+import plotly_study.colors as clrs
+from plotly_study.figure_factory import utils
 
 import plotly
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
 pd = optional_imports.get_module("pandas")
 
@@ -35,7 +35,7 @@ def _bullet(
         horizontal_spacing = 1.0 / num_of_lanes
     if not vertical_spacing:
         vertical_spacing = 1.0 / num_of_lanes
-    fig = plotly.tools.make_subplots(
+    fig = plotly_study.tools.make_subplots(
         num_of_rows,
         num_of_cols,
         print_grid=False,
@@ -227,19 +227,19 @@ def create_bullet(
         the thin quantitative bars in the bullet chart.
         Default=('rgb(31, 119, 180)', 'rgb(176, 196, 221)')
     :param (float) horizontal_spacing: see the 'horizontal_spacing' param in
-        plotly.tools.make_subplots. Ranges between 0 and 1.
+        plotly_study.tools.make_subplots. Ranges between 0 and 1.
     :param (float) vertical_spacing: see the 'vertical_spacing' param in
-        plotly.tools.make_subplots. Ranges between 0 and 1.
+        plotly_study.tools.make_subplots. Ranges between 0 and 1.
     :param (dict) scatter_options: describes attributes for the scatter trace
         in each subplot such as name and marker size. Call
-        help(plotly.graph_objs.Scatter) for more information on valid params.
+        help(plotly_study.graph_objs.Scatter) for more information on valid params.
     :param layout_options: describes attributes for the layout of the figure
-        such as title, height and width. Call help(plotly.graph_objs.Layout)
+        such as title, height and width. Call help(plotly_study.graph_objs.Layout)
         for more information on valid params.
 
     Example 1: Use a Dictionary
     
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
 
     >>> data = [
     ...   {"label": "revenue", "sublabel": "us$, in thousands",
@@ -263,7 +263,7 @@ def create_bullet(
 
     Example 2: Use a DataFrame with Custom Colors
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
     >>> import pandas as pd
     >>> data = pd.read_json('https://cdn.rawgit.com/plotly/datasets/master/BulletData.json')
 

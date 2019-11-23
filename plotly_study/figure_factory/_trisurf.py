@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 
 from plotly import exceptions, optional_imports
-import plotly.colors as clrs
-from plotly.graph_objs import graph_objs
+import plotly_study.colors as clrs
+from plotly_study.graph_objs import graph_objs
 
 np = optional_imports.get_module("numpy")
 
@@ -310,8 +310,8 @@ def create_trisurf(
     >>> import numpy as np
     >>> from scipy.spatial import Delaunay
 
-    >>> from plotly.figure_factory import create_trisurf
-    >>> from plotly.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_trisurf
+    >>> from plotly_study.graph_objs import graph_objs
 
     >>> # Make data for plot
     >>> u = np.linspace(0, 2*np.pi, 20)
@@ -338,8 +338,8 @@ def create_trisurf(
     >>> import numpy as np
     >>> from scipy.spatial import Delaunay
 
-    >>> from plotly.figure_factory import create_trisurf
-    >>> from plotly.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_trisurf
+    >>> from plotly_study.graph_objs import graph_objs
 
     >>> # Make data for plot
     >>> u = np.linspace(0, 2*np.pi, 20)
@@ -366,8 +366,8 @@ def create_trisurf(
     >>> import numpy as np
     >>> from scipy.spatial import Delaunay
 
-    >>> from plotly.figure_factory import create_trisurf
-    >>> from plotly.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_trisurf
+    >>> from plotly_study.graph_objs import graph_objs
 
     >>> # Make data for plot
     >>> u = np.linspace(0, 2*np.pi, 24)
@@ -395,8 +395,8 @@ def create_trisurf(
     >>> import numpy as np
     >>> from scipy.spatial import Delaunay
 
-    >>> from plotly.figure_factory import create_trisurf
-    >>> from plotly.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_trisurf
+    >>> from plotly_study.graph_objs import graph_objs
 
     >>> # Make data for plot
     >>> u=np.linspace(-np.pi, np.pi, 30)
@@ -433,8 +433,8 @@ def create_trisurf(
     >>> from scipy.spatial import Delaunay
     >>> import random
 
-    >>> from plotly.figure_factory import create_trisurf
-    >>> from plotly.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_trisurf
+    >>> from plotly_study.graph_objs import graph_objs
 
     >>> # Make data for plot
     >>> u=np.linspace(-np.pi, np.pi, 30)

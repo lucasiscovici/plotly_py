@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -139,7 +139,7 @@ class Line(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.shape.Line
+            an instance of plotly_study.graph_objs.layout.shape.Line
         color
             Sets the line color.
         dash
@@ -167,9 +167,9 @@ class Line(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.shape.Line 
+The first argument to the plotly_study.graph_objs.layout.shape.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.shape.Line"""
+an instance of plotly_study.graph_objs.layout.shape.Line"""
             )
 
         # Handle skip_invalid
@@ -178,7 +178,7 @@ an instance of plotly.graph_objs.layout.shape.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.shape import line as v_line
+        from plotly_study.validators.layout.shape import line as v_line
 
         # Initialize validators
         # ---------------------

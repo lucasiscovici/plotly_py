@@ -39,7 +39,7 @@ from plotly import (
     _docstring_gen,
 )
 
-from plotly.version import __version__
+from plotly_study.version import __version__
 
 # Set default template here to make sure import process is complete
 io.templates._default = "plotly"

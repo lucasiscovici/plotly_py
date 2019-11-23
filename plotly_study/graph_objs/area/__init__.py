@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -77,7 +77,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.area.Stream
+            an instance of plotly_study.graph_objs.area.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -105,9 +105,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.area.Stream 
+The first argument to the plotly_study.graph_objs.area.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.area.Stream"""
+an instance of plotly_study.graph_objs.area.Stream"""
             )
 
         # Handle skip_invalid
@@ -116,7 +116,7 @@ an instance of plotly.graph_objs.area.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.area import stream as v_stream
+        from plotly_study.validators.area import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.area.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -217,7 +217,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -259,7 +259,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  opacity .
     
         The 'opacitysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -301,7 +301,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -408,7 +408,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  symbol .
     
         The 'symbolsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -481,7 +481,7 @@ class Marker(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.area.Marker
+            an instance of plotly_study.graph_objs.area.Marker
         color
             Area traces are deprecated! Please switch to the
             "barpolar" trace type. Sets themarkercolor. It accepts
@@ -528,9 +528,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.area.Marker 
+The first argument to the plotly_study.graph_objs.area.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.area.Marker"""
+an instance of plotly_study.graph_objs.area.Marker"""
             )
 
         # Handle skip_invalid
@@ -539,7 +539,7 @@ an instance of plotly.graph_objs.area.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.area import marker as v_marker
+        from plotly_study.validators.area import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -580,7 +580,7 @@ an instance of plotly.graph_objs.area.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -618,7 +618,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -698,7 +698,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -778,7 +778,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -799,7 +799,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.area.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.area.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -837,7 +837,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.area.hoverlabel.Font
+        plotly_study.graph_objs.area.hoverlabel.Font
         """
         return self["font"]
 
@@ -880,7 +880,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -954,7 +954,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.area.Hoverlabel
+            an instance of plotly_study.graph_objs.area.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1001,9 +1001,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.area.Hoverlabel 
+The first argument to the plotly_study.graph_objs.area.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.area.Hoverlabel"""
+an instance of plotly_study.graph_objs.area.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1012,7 +1012,7 @@ an instance of plotly.graph_objs.area.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.area import hoverlabel as v_hoverlabel
+        from plotly_study.validators.area import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1058,4 +1058,4 @@ an instance of plotly.graph_objs.area.Hoverlabel"""
 
 __all__ = ["Hoverlabel", "Marker", "Stream", "hoverlabel"]
 
-from plotly.graph_objs.area import hoverlabel
+from plotly_study.graph_objs.area import hoverlabel

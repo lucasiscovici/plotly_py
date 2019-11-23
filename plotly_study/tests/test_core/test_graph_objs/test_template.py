@@ -4,9 +4,9 @@ import copy
 from unittest import TestCase
 from nose.tools import raises
 
-import plotly.io as pio
-import plotly.graph_objs as go
-from plotly.tests.utils import TestCaseNoTemplate
+import plotly_study.io as pio
+import plotly_study.graph_objs as go
+from plotly_study.tests.utils import TestCaseNoTemplate
 
 
 class TemplateTest(TestCase):
@@ -127,7 +127,7 @@ class TemplateTest(TestCase):
             layout={"template": {"layout": {"xaxis": {"range": "str not tuple"}}}}
         )
 
-    # plotly.io.template tests
+    # plotly_study.io.template tests
     # ------------------------
     def test_template_as_name_constructor(self):
         fig = go.Figure(layout={"template": "test_template"})

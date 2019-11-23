@@ -246,10 +246,10 @@ class HeaderValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  align
                 .
             fill
-                plotly.graph_objects.table.header.Fill instance
+                plotly_study.graph_objects.table.header.Fill instance
                 or dict with compatible properties
             font
-                plotly.graph_objects.table.header.Font instance
+                plotly_study.graph_objects.table.header.Font instance
                 or dict with compatible properties
             format
                 Sets the cell value formatting rule using d3
@@ -263,7 +263,7 @@ class HeaderValidator(_plotly_utils.basevalidators.CompoundValidator):
             height
                 The height of cells.
             line
-                plotly.graph_objects.table.header.Line instance
+                plotly_study.graph_objects.table.header.Line instance
                 or dict with compatible properties
             prefix
                 Prefix for cell values.
@@ -429,10 +429,10 @@ class CellsValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  align
                 .
             fill
-                plotly.graph_objects.table.cells.Fill instance
+                plotly_study.graph_objects.table.cells.Fill instance
                 or dict with compatible properties
             font
-                plotly.graph_objects.table.cells.Font instance
+                plotly_study.graph_objects.table.cells.Font instance
                 or dict with compatible properties
             format
                 Sets the cell value formatting rule using d3
@@ -446,7 +446,7 @@ class CellsValidator(_plotly_utils.basevalidators.CompoundValidator):
             height
                 The height of cells.
             line
-                plotly.graph_objects.table.cells.Line instance
+                plotly_study.graph_objects.table.cells.Line instance
                 or dict with compatible properties
             prefix
                 Prefix for cell values.

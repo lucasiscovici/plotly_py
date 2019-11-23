@@ -1,9 +1,9 @@
 from __future__ import absolute_import
-import plotly.colors as clrs
-from plotly.graph_objs import graph_objs as go
+import plotly_study.colors as clrs
+from plotly_study.graph_objs import graph_objs as go
 from plotly import exceptions, optional_imports
 from plotly import optional_imports
-from plotly.graph_objs import graph_objs as go
+from plotly_study.graph_objs import graph_objs as go
 
 np = optional_imports.get_module("numpy")
 scipy_interp = optional_imports.get_module("scipy.interpolate")
@@ -574,7 +574,7 @@ def create_ternary_contour(
 
     Example 1: ternary contour plot with filled contours
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
     >>> import numpy as np
     >>> # Define coordinates
     >>> a, b = np.mgrid[0:1:20j, 0:1:20j]

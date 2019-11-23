@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -72,7 +72,7 @@ class Line(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -113,7 +113,7 @@ class Line(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  width .
     
         The 'widthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -157,7 +157,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sankey.node.Line
+            an instance of plotly_study.graph_objs.sankey.node.Line
         color
             Sets the color of the `line` around each `node`.
         colorsrc
@@ -185,9 +185,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sankey.node.Line 
+The first argument to the plotly_study.graph_objs.sankey.node.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sankey.node.Line"""
+an instance of plotly_study.graph_objs.sankey.node.Line"""
             )
 
         # Handle skip_invalid
@@ -196,7 +196,7 @@ an instance of plotly.graph_objs.sankey.node.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sankey.node import line as v_line
+        from plotly_study.validators.sankey.node import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -225,7 +225,7 @@ an instance of plotly.graph_objs.sankey.node.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -263,7 +263,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -343,7 +343,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -423,7 +423,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -444,7 +444,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.sankey.node.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.sankey.node.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -482,7 +482,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.sankey.node.hoverlabel.Font
+        plotly_study.graph_objs.sankey.node.hoverlabel.Font
         """
         return self["font"]
 
@@ -525,7 +525,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -599,7 +599,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sankey.node.Hoverlabel
+            an instance of plotly_study.graph_objs.sankey.node.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -646,9 +646,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sankey.node.Hoverlabel 
+The first argument to the plotly_study.graph_objs.sankey.node.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sankey.node.Hoverlabel"""
+an instance of plotly_study.graph_objs.sankey.node.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -657,7 +657,7 @@ an instance of plotly.graph_objs.sankey.node.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sankey.node import hoverlabel as v_hoverlabel
+        from plotly_study.validators.sankey.node import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -703,4 +703,4 @@ an instance of plotly.graph_objs.sankey.node.Hoverlabel"""
 
 __all__ = ["Hoverlabel", "Line", "hoverlabel"]
 
-from plotly.graph_objs.sankey.node import hoverlabel
+from plotly_study.graph_objs.sankey.node import hoverlabel

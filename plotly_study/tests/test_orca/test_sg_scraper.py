@@ -9,7 +9,7 @@ import pytest
 @pytest.fixture()
 def setup():
     # Reset orca state
-    plotly.io.orca.config.restore_defaults(reset_server=False)
+    plotly_study.io.orca.config.restore_defaults(reset_server=False)
 
 
 here = os.path.dirname(os.path.abspath(__file__))
@@ -23,7 +23,7 @@ def execute_plotly_example():
     """
     Some typical code which would go inside a gallery example.
     """
-    import plotly.graph_objs as go
+    import plotly_study.graph_objs as go
 
     # Create random data with numpy
     import numpy as np
@@ -37,14 +37,14 @@ def execute_plotly_example():
     trace_0 = go.Scatter(x=random_x, y=random_y_0, mode="markers", name="Above")
 
     fig = go.Figure(data=[trace_0])
-    plotly.io.show(fig)
+    plotly_study.io.show(fig)
 
 
 def test_scraper():
-    from plotly.io._sg_scraper import plotly_sg_scraper
+    from plotly_study.io._sg_scraper import plotly_sg_scraper
 
     # test that monkey-patching worked ok
-    assert plotly.io.renderers.default == "sphinx_gallery"
+    assert plotly_study.io.renderers.default == "sphinx_gallery"
     # Use dummy values for arguments of plotly_sg_scraper
     block = ""  # we don't need actually code
     import tempfile

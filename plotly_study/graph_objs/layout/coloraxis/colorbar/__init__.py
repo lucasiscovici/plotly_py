@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -14,7 +14,7 @@ class Title(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.coloraxis.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.layout.coloraxis.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -42,7 +42,7 @@ class Title(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.coloraxis.colorbar.title.Font
+        plotly_study.graph_objs.layout.coloraxis.colorbar.title.Font
         """
         return self["font"]
 
@@ -132,7 +132,7 @@ class Title(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.coloraxis.colorbar.Title
+            plotly_study.graph_objs.layout.coloraxis.colorbar.Title
         font
             Sets this color bar's title font. Note that the title's
             font used to be set by the now deprecated `titlefont`
@@ -165,9 +165,9 @@ class Title(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.coloraxis.colorbar.Title 
+The first argument to the plotly_study.graph_objs.layout.coloraxis.colorbar.Title 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.coloraxis.colorbar.Title"""
+an instance of plotly_study.graph_objs.layout.coloraxis.colorbar.Title"""
             )
 
         # Handle skip_invalid
@@ -176,7 +176,7 @@ an instance of plotly.graph_objs.layout.coloraxis.colorbar.Title"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.coloraxis.colorbar import title as v_title
+        from plotly_study.validators.layout.coloraxis.colorbar import title as v_title
 
         # Initialize validators
         # ---------------------
@@ -202,7 +202,7 @@ an instance of plotly.graph_objs.layout.coloraxis.colorbar.Title"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -391,7 +391,7 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.coloraxis.color
+            an instance of plotly_study.graph_objs.layout.coloraxis.color
             bar.Tickformatstop
         dtickrange
             range [*min*, *max*], where "min", "max" - dtick values
@@ -441,9 +441,9 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop 
+The first argument to the plotly_study.graph_objs.layout.coloraxis.colorbar.Tickformatstop 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop"""
+an instance of plotly_study.graph_objs.layout.coloraxis.colorbar.Tickformatstop"""
             )
 
         # Handle skip_invalid
@@ -452,7 +452,7 @@ an instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.coloraxis.colorbar import (
+        from plotly_study.validators.layout.coloraxis.colorbar import (
             tickformatstop as v_tickformatstop,
         )
 
@@ -490,7 +490,7 @@ an instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -644,7 +644,7 @@ class Tickfont(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.coloraxis.colorbar.Tickfont
+            plotly_study.graph_objs.layout.coloraxis.colorbar.Tickfont
         color
 
         family
@@ -681,9 +681,9 @@ class Tickfont(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.coloraxis.colorbar.Tickfont 
+The first argument to the plotly_study.graph_objs.layout.coloraxis.colorbar.Tickfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickfont"""
+an instance of plotly_study.graph_objs.layout.coloraxis.colorbar.Tickfont"""
             )
 
         # Handle skip_invalid
@@ -692,7 +692,7 @@ an instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.coloraxis.colorbar import tickfont as v_tickfont
+        from plotly_study.validators.layout.coloraxis.colorbar import tickfont as v_tickfont
 
         # Initialize validators
         # ---------------------
@@ -720,4 +720,4 @@ an instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickfont"""
 
 __all__ = ["Tickfont", "Tickformatstop", "Tickformatstop", "Title", "title"]
 
-from plotly.graph_objs.layout.coloraxis.colorbar import title
+from plotly_study.graph_objs.layout.coloraxis.colorbar import title

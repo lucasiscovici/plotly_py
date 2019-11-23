@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -79,7 +79,7 @@ class Transition(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.slider.Transition
+            plotly_study.graph_objs.layout.slider.Transition
         duration
             Sets the duration of the slider transition
         easing
@@ -102,9 +102,9 @@ class Transition(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.slider.Transition 
+The first argument to the plotly_study.graph_objs.layout.slider.Transition 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.slider.Transition"""
+an instance of plotly_study.graph_objs.layout.slider.Transition"""
             )
 
         # Handle skip_invalid
@@ -113,7 +113,7 @@ an instance of plotly.graph_objs.layout.slider.Transition"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.slider import transition as v_transition
+        from plotly_study.validators.layout.slider import transition as v_transition
 
         # Initialize validators
         # ---------------------
@@ -136,7 +136,7 @@ an instance of plotly.graph_objs.layout.slider.Transition"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -416,7 +416,7 @@ class Step(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.slider.Step
+            an instance of plotly_study.graph_objs.layout.slider.Step
         args
             Sets the arguments values to be passed to the Plotly
             method set in `method` on slide.
@@ -481,9 +481,9 @@ class Step(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.slider.Step 
+The first argument to the plotly_study.graph_objs.layout.slider.Step 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.slider.Step"""
+an instance of plotly_study.graph_objs.layout.slider.Step"""
             )
 
         # Handle skip_invalid
@@ -492,7 +492,7 @@ an instance of plotly.graph_objs.layout.slider.Step"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.slider import step as v_step
+        from plotly_study.validators.layout.slider import step as v_step
 
         # Initialize validators
         # ---------------------
@@ -535,7 +535,7 @@ an instance of plotly.graph_objs.layout.slider.Step"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -659,7 +659,7 @@ class Pad(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.slider.Pad
+            an instance of plotly_study.graph_objs.layout.slider.Pad
         b
             The amount of padding (in px) along the bottom of the
             component.
@@ -690,9 +690,9 @@ class Pad(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.slider.Pad 
+The first argument to the plotly_study.graph_objs.layout.slider.Pad 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.slider.Pad"""
+an instance of plotly_study.graph_objs.layout.slider.Pad"""
             )
 
         # Handle skip_invalid
@@ -701,7 +701,7 @@ an instance of plotly.graph_objs.layout.slider.Pad"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.slider import pad as v_pad
+        from plotly_study.validators.layout.slider import pad as v_pad
 
         # Initialize validators
         # ---------------------
@@ -730,7 +730,7 @@ an instance of plotly.graph_objs.layout.slider.Pad"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -883,7 +883,7 @@ class Font(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.slider.Font
+            an instance of plotly_study.graph_objs.layout.slider.Font
         color
 
         family
@@ -920,9 +920,9 @@ class Font(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.slider.Font 
+The first argument to the plotly_study.graph_objs.layout.slider.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.slider.Font"""
+an instance of plotly_study.graph_objs.layout.slider.Font"""
             )
 
         # Handle skip_invalid
@@ -931,7 +931,7 @@ an instance of plotly.graph_objs.layout.slider.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.slider import font as v_font
+        from plotly_study.validators.layout.slider import font as v_font
 
         # Initialize validators
         # ---------------------
@@ -957,7 +957,7 @@ an instance of plotly.graph_objs.layout.slider.Font"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -972,7 +972,7 @@ class Currentvalue(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.slider.currentvalue.Font
+          - An instance of plotly_study.graph_objs.layout.slider.currentvalue.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1000,7 +1000,7 @@ class Currentvalue(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.slider.currentvalue.Font
+        plotly_study.graph_objs.layout.slider.currentvalue.Font
         """
         return self["font"]
 
@@ -1163,7 +1163,7 @@ class Currentvalue(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.slider.Currentvalue
+            plotly_study.graph_objs.layout.slider.Currentvalue
         font
             Sets the font of the current value label text.
         offset
@@ -1198,9 +1198,9 @@ class Currentvalue(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.slider.Currentvalue 
+The first argument to the plotly_study.graph_objs.layout.slider.Currentvalue 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.slider.Currentvalue"""
+an instance of plotly_study.graph_objs.layout.slider.Currentvalue"""
             )
 
         # Handle skip_invalid
@@ -1209,7 +1209,7 @@ an instance of plotly.graph_objs.layout.slider.Currentvalue"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.slider import currentvalue as v_currentvalue
+        from plotly_study.validators.layout.slider import currentvalue as v_currentvalue
 
         # Initialize validators
         # ---------------------
@@ -1246,4 +1246,4 @@ an instance of plotly.graph_objs.layout.slider.Currentvalue"""
 
 __all__ = ["Currentvalue", "Font", "Pad", "Step", "Step", "Transition", "currentvalue"]
 
-from plotly.graph_objs.layout.slider import currentvalue
+from plotly_study.graph_objs.layout.slider import currentvalue

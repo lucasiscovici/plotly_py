@@ -1,10 +1,10 @@
-import plotly.express as px
+import plotly_study.express as px
 import numpy as np
 import pandas as pd
 import pytest
-import plotly.graph_objects as go
+import plotly_study.graph_objects as go
 import plotly
-from plotly.express._core import build_dataframe
+from plotly_study.express._core import build_dataframe
 from pandas.util.testing import assert_frame_equal
 
 attrables = (

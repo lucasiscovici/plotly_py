@@ -1,7 +1,7 @@
 import sys
 from unittest import TestCase
 
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
 if sys.version_info.major == 3 and sys.version_info.minor >= 3:
     from unittest.mock import MagicMock

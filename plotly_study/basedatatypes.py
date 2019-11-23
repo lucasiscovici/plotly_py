@@ -10,7 +10,7 @@ from contextlib import contextmanager
 from copy import deepcopy, copy
 
 from _plotly_utils.utils import _natural_sort_strings
-from plotly.subplots import (
+from plotly_study.subplots import (
     _set_trace_grid_reference,
     _get_grid_subplot,
     _get_subplot_ref_for_trace,
@@ -26,7 +26,7 @@ from _plotly_utils.basevalidators import (
 )
 from . import animation
 from .callbacks import Points, InputDeviceState
-from plotly.utils import ElidedPrettyPrinter
+from plotly_study.utils import ElidedPrettyPrinter
 from .validators import DataValidator, LayoutValidator, FramesValidator
 
 # Create Undefined sentinel value
@@ -130,7 +130,7 @@ class BaseFigure(object):
             If the `data` property is a BaseFigure instance, or a dict that
             contains a 'layout' key, then this property is ignored.
         frames
-            A list or tuple of `plotly.graph_objs.Frame` objects (or dicts
+            A list or tuple of `plotly_study.graph_objs.Frame` objects (or dicts
             that can be coerced into Frame objects)
 
             If the `data` property is a BaseFigure instance, or a dict that
@@ -210,7 +210,7 @@ class BaseFigure(object):
         # ### Create data defaults ###
         # _data_defaults is a tuple of dicts, one for each trace. When
         # running in a widget context, these defaults are populated with
-        # all property values chosen by the Plotly.js library that
+        # all property values chosen by the plotly_study.js library that
         # aren't explicitly specified by the user.
         #
         # Note: No property should exist in both the _data and
@@ -257,10 +257,10 @@ class BaseFigure(object):
         # Pass along default config to the front end. For now this just
         # ensures that the plotly domain url gets passed to the front end.
         # In the future we can extend this to allow the user to supply
-        # arbitrary config options like in plotly.offline.plot/iplot.  But
+        # arbitrary config options like in plotly_study.offline.plot/iplot.  But
         # this will require a fair amount of testing to determine which
         # options are compatible with FigureWidget.
-        from plotly.offline.offline import _get_jconfig
+        from plotly_study.offline.offline import _get_jconfig
 
         self._config = _get_jconfig(None)
 
@@ -293,13 +293,13 @@ class BaseFigure(object):
 
         # ### Batch trace edits ###
         # Dict from trace indexes to trace edit dicts. These trace edit dicts
-        # are suitable as `data` elements of Plotly.animate, but not
-        # the Plotly.update (See `_build_update_params_from_batch`)
+        # are suitable as `data` elements of plotly_study.animate, but not
+        # the plotly_study.update (See `_build_update_params_from_batch`)
         self._batch_trace_edits = OrderedDict()
 
         # ### Batch layout edits ###
         # Dict from layout properties to new layout values. This dict is
-        # directly suitable for use in Plotly.animate and Plotly.update
+        # directly suitable for use in plotly_study.animate and plotly_study.update
         self._batch_layout_edits = OrderedDict()
 
         # Animation property validators
@@ -471,7 +471,7 @@ class BaseFigure(object):
         """
         Handle rich display of figures in ipython contexts
         """
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         if pio.renderers.render_on_display and pio.renderers.default:
             self.show()
@@ -499,7 +499,7 @@ class BaseFigure(object):
 
         Examples
         --------
-        >>> import plotly.graph_objs as go
+        >>> import plotly_study.graph_objs as go
         >>> fig = go.Figure(data=[{'y': [1, 2, 3]}])
         >>> fig.update(data=[{'y': [4, 5, 6]}])
         >>> fig.to_plotly_json()
@@ -747,7 +747,7 @@ class BaseFigure(object):
         row, col: int or None (default None)
             Subplot row and column index of traces to select.
             To select traces by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  If None
+            created using plotly_study.subplots.make_subplots.  If None
             (the default), all traces are selected.
         secondary_y: boolean or None (default None)
             * If True, only select traces associated with the secondary
@@ -758,7 +758,7 @@ class BaseFigure(object):
               y-axis.
 
             To select traces by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -864,7 +864,7 @@ class BaseFigure(object):
         row, col: int or None (default None)
             Subplot row and column index of traces to select.
             To select traces by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  If None
+            created using plotly_study.subplots.make_subplots.  If None
             (the default), all traces are selected.
         secondary_y: boolean or None (default None)
             * If True, only select traces associated with the secondary
@@ -875,7 +875,7 @@ class BaseFigure(object):
               y-axis.
 
             To select traces by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -918,7 +918,7 @@ class BaseFigure(object):
         row, col: int or None (default None)
             Subplot row and column index of traces to select.
             To select traces by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  If None
+            created using plotly_study.subplots.make_subplots.  If None
             (the default), all traces are selected.
         secondary_y: boolean or None (default None)
             * If True, only select traces associated with the secondary
@@ -929,7 +929,7 @@ class BaseFigure(object):
               y-axis.
 
             To select traces by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         overwrite: bool
@@ -1189,7 +1189,7 @@ because subplot does not have a secondary y-axis"""
         # Handle source_view_id
         # ---------------------
         # If not None, the source_view_id is the UID of the frontend
-        # Plotly.js view that initially triggered this restyle operation
+        # plotly_study.js view that initially triggered this restyle operation
         # (e.g. the user clicked on the legend to hide a trace). We pass
         # this UID along so that the frontend views can determine whether
         # they need to apply the restyle operation on themselves.
@@ -1585,8 +1585,8 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         ----------
         trace : BaseTraceType or dict
             Either:
-              - An instances of a trace classe from the plotly.graph_objs
-                package (e.g plotly.graph_objs.Scatter, plotly.graph_objs.Bar)
+              - An instances of a trace classe from the plotly_study.graph_objs
+                package (e.g plotly_study.graph_objs.Scatter, plotly_study.graph_objs.Bar)
               - or a dicts where:
 
                   - The 'type' property specifies the trace type (e.g.
@@ -1598,16 +1598,16 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         row : int or None (default None)
             Subplot row index (starting from 1) for the trace to be added.
             Only valid if figure was created using
-            `plotly.subplots.make_subplots`
+            `plotly_study.subplots.make_subplots`
         col : int or None (default None)
             Subplot col index (starting from 1) for the trace to be added.
             Only valid if figure was created using
-            `plotly.subplots.make_subplots`
+            `plotly_study.subplots.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -1624,7 +1624,7 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         --------
 
         >>> from plotly import subplots
-        >>> import plotly.graph_objs as go
+        >>> import plotly_study.graph_objs as go
 
         Add two Scatter traces to a figure
 
@@ -1668,8 +1668,8 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
             A list of trace specifications to be added.
             Trace specifications may be either:
 
-              - Instances of trace classes from the plotly.graph_objs
-                package (e.g plotly.graph_objs.Scatter, plotly.graph_objs.Bar)
+              - Instances of trace classes from the plotly_study.graph_objs
+                package (e.g plotly_study.graph_objs.Scatter, plotly_study.graph_objs.Bar)
               - Dicts where:
 
                   - The 'type' property specifies the trace type (e.g.
@@ -1681,11 +1681,11 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         rows : None or list[int] (default None)
             List of subplot row indexes (starting from 1) for the traces to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         cols : None or list[int] (default None)
             List of subplot column indexes (starting from 1) for the traces
             to be added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_ys: None or list[boolean] (default None)
             List of secondary_y booleans for traces to be added. See the
             docstring for `add_trace` for more info.
@@ -1699,7 +1699,7 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         --------
 
         >>> from plotly import subplots
-        >>> import plotly.graph_objs as go
+        >>> import plotly_study.graph_objs as go
 
         Add two Scatter traces to a figure
 
@@ -1780,11 +1780,11 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         """
         Print a visual layout of the figure's axes arrangement.
         This is only valid for figures that are created
-        with plotly.tools.make_subplots.
+        with plotly_study.tools.make_subplots.
         """
         if self._grid_str is None:
             raise Exception(
-                "Use plotly.tools.make_subplots " "to create a subplot grid."
+                "Use plotly_study.tools.make_subplots " "to create a subplot grid."
             )
         print(self._grid_str)
 
@@ -1794,7 +1794,7 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         col index.
 
         A row, col index grid is generated for figures created with
-        plotly.tools.make_subplots, and can be viewed with the `print_grid`
+        plotly_study.tools.make_subplots, and can be viewed with the `print_grid`
         method
 
         Parameters
@@ -1810,7 +1810,7 @@ Invalid property path '{key_path_str}' for trace class {trace_class}
         --------
 
         >>> from plotly import tools
-        >>> import plotly.graph_objs as go
+        >>> import plotly_study.graph_objs as go
         >>> # stack two subplots vertically
         >>> fig = tools.make_subplots(rows=2)
 
@@ -1846,7 +1846,7 @@ Please use the add_trace method with the row and col parameters.
             raise Exception(
                 "In order to reference traces by row and column, "
                 "you must first use "
-                "plotly.tools.make_subplots "
+                "plotly_study.tools.make_subplots "
                 "to create the figure with a subplot grid."
             )
         return grid_ref
@@ -1855,7 +1855,7 @@ Please use the add_trace method with the row and col parameters.
         """
         Return an object representing the subplot at the specified row
         and column.  May only be used on Figures created using
-        plotly.tools.make_subplots
+        plotly_study.tools.make_subplots
 
         Parameters
         ----------
@@ -1874,18 +1874,18 @@ Please use the add_trace method with the row and col parameters.
         -------
         subplot
             * None: if subplot is empty
-            * plotly.graph_objs.layout.Scene: if subplot type is 'scene'
-            * plotly.graph_objs.layout.Polar: if subplot type is 'polar'
-            * plotly.graph_objs.layout.Ternary: if subplot type is 'ternary'
-            * plotly.graph_objs.layout.Mapbox: if subplot type is 'ternary'
+            * plotly_study.graph_objs.layout.Scene: if subplot type is 'scene'
+            * plotly_study.graph_objs.layout.Polar: if subplot type is 'polar'
+            * plotly_study.graph_objs.layout.Ternary: if subplot type is 'ternary'
+            * plotly_study.graph_objs.layout.Mapbox: if subplot type is 'ternary'
             * SubplotDomain namedtuple with `x` and `y` fields:
               if subplot type is 'domain'.
                 - x: length 2 list of the subplot start and stop width
                 - y: length 2 list of the subplot start and stop height
             * SubplotXY namedtuple with `xaxis` and `yaxis` fields:
               if subplot type is 'xy'.
-                - xaxis: plotly.graph_objs.layout.XAxis instance for subplot
-                - yaxis: plotly.graph_objs.layout.YAxis instance for subplot
+                - xaxis: plotly_study.graph_objs.layout.XAxis instance for subplot
+                - yaxis: plotly_study.graph_objs.layout.YAxis instance for subplot
         """
         return _get_grid_subplot(self, row, col, secondary_y)
 
@@ -1976,7 +1976,7 @@ Please use the add_trace method with the row and col parameters.
     # Layout
     # ------
     def _initialize_layout_template(self):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         if self._layout_obj.template is None:
             if pio.templates.default is not None:
@@ -1991,7 +1991,7 @@ Please use the add_trace method with the row and col parameters.
 
         Returns
         -------
-        plotly.graph_objs.Layout
+        plotly_study.graph_objs.Layout
         """
         return self["layout"]
 
@@ -2047,7 +2047,7 @@ Please use the add_trace method with the row and col parameters.
         # Handle source_view_id
         # ---------------------
         # If not None, the source_view_id is the UID of the frontend
-        # Plotly.js view that initially triggered this relayout operation
+        # plotly_study.js view that initially triggered this relayout operation
         # (e.g. the user clicked on the toolbar to change the drag mode
         # from zoom to pan). We pass this UID along so that the frontend
         # views can determine whether they need to apply the relayout
@@ -2301,7 +2301,7 @@ Invalid property path '{key_path_str}' for layout
 
         Returns
         -------
-        tuple[plotly.graph_objs.Frame]
+        tuple[plotly_study.graph_objs.Frame]
         """
         return self["frames"]
 
@@ -2345,7 +2345,7 @@ Invalid property path '{key_path_str}' for layout
         # Handle source_view_id
         # ---------------------
         # If not None, the source_view_id is the UID of the frontend
-        # Plotly.js view that initially triggered this update operation
+        # plotly_study.js view that initially triggered this update operation
         # (e.g. the user clicked a button that triggered an update
         # operation). We pass this UID along so that the frontend views can
         # determine whether they need to apply the update operation on
@@ -2463,7 +2463,7 @@ Invalid property path '{key_path_str}' for layout
         For example, suppose we have a figure widget, `fig`, with a single
         trace.
 
-        >>> import plotly.graph_objs as go
+        >>> import plotly_study.graph_objs as go
         >>> fig = go.FigureWidget(data=[{'y': [3, 4, 2]}])
 
         If we want to update the xaxis range, the yaxis range, and the
@@ -2619,7 +2619,7 @@ Invalid property path '{key_path_str}' for layout
         --------
         Suppose we have a figure widget, `fig`, with a single trace.
 
-        >>> import plotly.graph_objs as go
+        >>> import plotly_study.graph_objs as go
         >>> fig = go.FigureWidget(data=[{'y': [3, 4, 2]}])
 
         1) Animate a change in the xaxis and yaxis ranges using default
@@ -2672,7 +2672,7 @@ Invalid property path '{key_path_str}' for layout
         Parameters
         ----------
         animation_opts : dict
-            Animation options as accepted by frontend Plotly.animation command
+            Animation options as accepted by frontend plotly_study.animation command
 
         Returns
         -------
@@ -2817,42 +2817,42 @@ Invalid property path '{key_path_str}' for layout
 
         return result
 
-    # plotly.io methods
+    # plotly_study.io methods
     # -----------------
     # Note that docstrings are auto-generated in plotly/_docstring_gen.py
     def show(self, *args, **kwargs):
-        import plotly.io as pio
+        import plotly_study.io as pio
         kwargs= {} if kwargs is None else kwargs
         meme=merge(dict(config=self._config),kwargs,add=F)
         return pio.show(self,*args,**meme) if hasattr(self,"_config") else pio.show(self,*args,**kwargs)
 
     def to_json(self, *args, **kwargs):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         return pio.to_json(self, *args, **kwargs)
 
     def write_json(self, *args, **kwargs):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         return pio.write_json(self, *args, **kwargs)
 
     def to_html(self, *args, **kwargs):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         return pio.to_html(self, *args, **kwargs)
 
     def write_html(self, *args, **kwargs):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         return pio.write_html(self, *args, **kwargs)
 
     def to_image(self, *args, **kwargs):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         return pio.to_image(self, *args, **kwargs)
 
     def write_image(self, *args, **kwargs):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         return pio.write_image(self, *args, **kwargs)
 
@@ -3090,7 +3090,7 @@ class BasePlotlyType(object):
         Examples
         --------
 
-        >>> import plotly.graph_objs as go
+        >>> import plotly_study.graph_objs as go
         >>> go.Layout()._parent_path_str
         ''
 
@@ -3680,7 +3680,7 @@ class BasePlotlyType(object):
                 prop_str = "properties"
                 invalid_str = repr(invalid_props)
 
-            module_root = "plotly.graph_objs."
+            module_root = "plotly_study.graph_objs."
             if self._parent_path_str:
                 full_obj_name = (
                     module_root + self._parent_path_str + "." + self.__class__.__name__
@@ -4590,7 +4590,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         points in this trace
 
         Note: Callbacks will only be triggered when the trace belongs to a
-        instance of plotly.graph_objs.FigureWidget and it is displayed in an
+        instance of plotly_study.graph_objs.FigureWidget and it is displayed in an
         ipywidget context. Callbacks will not be triggered on figures
         that are displayed using plot/iplot.
 
@@ -4600,8 +4600,8 @@ class BaseTraceType(BaseTraceHierarchyType):
             Callable function that accepts 3 arguments
 
             - this trace
-            - plotly.callbacks.Points object
-            - plotly.callbacks.InputDeviceState object
+            - plotly_study.callbacks.Points object
+            - plotly_study.callbacks.InputDeviceState object
 
         append : bool
             If False (the default), this callback replaces any previously
@@ -4616,7 +4616,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         Examples
         --------
 
-        >>> from plotly.callbacks import Points, InputDeviceState
+        >>> from plotly_study.callbacks import Points, InputDeviceState
         >>> points, state = Points(), InputDeviceState()
 
         >>> def hover_fn(trace, points, state):
@@ -4650,7 +4650,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         or more points in this trace.
 
         Note: Callbacks will only be triggered when the trace belongs to a
-        instance of plotly.graph_objs.FigureWidget and it is displayed in an
+        instance of plotly_study.graph_objs.FigureWidget and it is displayed in an
         ipywidget context. Callbacks will not be triggered on figures
         that are displayed using plot/iplot.
 
@@ -4660,8 +4660,8 @@ class BaseTraceType(BaseTraceHierarchyType):
             Callable function that accepts 3 arguments
 
             - this trace
-            - plotly.callbacks.Points object
-            - plotly.callbacks.InputDeviceState object
+            - plotly_study.callbacks.Points object
+            - plotly_study.callbacks.InputDeviceState object
 
         append : bool
             If False (the default), this callback replaces any previously
@@ -4676,7 +4676,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         Examples
         --------
 
-        >>> from plotly.callbacks import Points, InputDeviceState
+        >>> from plotly_study.callbacks import Points, InputDeviceState
         >>> points, state = Points(), InputDeviceState()
 
         >>> def unhover_fn(trace, points, state):
@@ -4710,7 +4710,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         points in this trace.
 
         Note: Callbacks will only be triggered when the trace belongs to a
-        instance of plotly.graph_objs.FigureWidget and it is displayed in an
+        instance of plotly_study.graph_objs.FigureWidget and it is displayed in an
         ipywidget context. Callbacks will not be triggered on figures
         that are displayed using plot/iplot.
 
@@ -4720,8 +4720,8 @@ class BaseTraceType(BaseTraceHierarchyType):
             Callable function that accepts 3 arguments
 
             - this trace
-            - plotly.callbacks.Points object
-            - plotly.callbacks.InputDeviceState object
+            - plotly_study.callbacks.Points object
+            - plotly_study.callbacks.InputDeviceState object
 
         append : bool
             If False (the default), this callback replaces any previously
@@ -4736,7 +4736,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         Examples
         --------
 
-        >>> from plotly.callbacks import Points, InputDeviceState
+        >>> from plotly_study.callbacks import Points, InputDeviceState
         >>> points, state = Points(), InputDeviceState()
 
         >>> def click_fn(trace, points, state):
@@ -4769,7 +4769,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         points in this trace.
 
         Note: Callbacks will only be triggered when the trace belongs to a
-        instance of plotly.graph_objs.FigureWidget and it is displayed in an
+        instance of plotly_study.graph_objs.FigureWidget and it is displayed in an
         ipywidget context. Callbacks will not be triggered on figures
         that are displayed using plot/iplot.
 
@@ -4779,8 +4779,8 @@ class BaseTraceType(BaseTraceHierarchyType):
             Callable function that accepts 4 arguments
 
             - this trace
-            - plotly.callbacks.Points object
-            - plotly.callbacks.BoxSelector or plotly.callbacks.LassoSelector
+            - plotly_study.callbacks.Points object
+            - plotly_study.callbacks.BoxSelector or plotly_study.callbacks.LassoSelector
 
         append : bool
             If False (the default), this callback replaces any previously
@@ -4795,7 +4795,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         Examples
         --------
 
-        >>> from plotly.callbacks import Points
+        >>> from plotly_study.callbacks import Points
         >>> points = Points()
 
         >>> def selection_fn(trace, points, selector):
@@ -4821,7 +4821,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         if "selectedpoints" in self:
             # Update the selectedpoints property, which will notify all views
             # of the selection change.  This is a special case because no
-            # restyle event is emitted by plotly.js on selection events
+            # restyle event is emitted by plotly_study.js on selection events
             # even though these events update the selectedpoints property.
             self.selectedpoints = points.point_inds
 
@@ -4836,7 +4836,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         in this trace using doubleclick.
 
         Note: Callbacks will only be triggered when the trace belongs to a
-        instance of plotly.graph_objs.FigureWidget and it is displayed in an
+        instance of plotly_study.graph_objs.FigureWidget and it is displayed in an
         ipywidget context. Callbacks will not be triggered on figures
         that are displayed using plot/iplot.
 
@@ -4846,7 +4846,7 @@ class BaseTraceType(BaseTraceHierarchyType):
             Callable function that accepts 3 arguments
 
             - this trace
-            - plotly.callbacks.Points object
+            - plotly_study.callbacks.Points object
 
         append : bool
             If False (the default), this callback replaces any previously
@@ -4861,7 +4861,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         Examples
         --------
 
-        >>> from plotly.callbacks import Points
+        >>> from plotly_study.callbacks import Points
         >>> points = Points()
 
         >>> def deselect_fn(trace, points):
@@ -4887,7 +4887,7 @@ class BaseTraceType(BaseTraceHierarchyType):
         if "selectedpoints" in self:
             # Update the selectedpoints property, which will notify all views
             # of the selection change.  This is a special case because no
-            # restyle event is emitted by plotly.js on selection events
+            # restyle event is emitted by plotly_study.js on selection events
             # even though these events update the selectedpoints property.
             self.selectedpoints = None
 

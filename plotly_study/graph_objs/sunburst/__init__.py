@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -70,7 +70,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -122,7 +122,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -161,7 +161,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -230,7 +230,7 @@ class Textfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sunburst.Textfont
+            an instance of plotly_study.graph_objs.sunburst.Textfont
         color
 
         colorsrc
@@ -273,9 +273,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Textfont 
+The first argument to the plotly_study.graph_objs.sunburst.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Textfont"""
+an instance of plotly_study.graph_objs.sunburst.Textfont"""
             )
 
         # Handle skip_invalid
@@ -284,7 +284,7 @@ an instance of plotly.graph_objs.sunburst.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import textfont as v_textfont
+        from plotly_study.validators.sunburst import textfont as v_textfont
 
         # Initialize validators
         # ---------------------
@@ -319,7 +319,7 @@ an instance of plotly.graph_objs.sunburst.Textfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -398,7 +398,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sunburst.Stream
+            an instance of plotly_study.graph_objs.sunburst.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -426,9 +426,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Stream 
+The first argument to the plotly_study.graph_objs.sunburst.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Stream"""
+an instance of plotly_study.graph_objs.sunburst.Stream"""
             )
 
         # Handle skip_invalid
@@ -437,7 +437,7 @@ an instance of plotly.graph_objs.sunburst.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import stream as v_stream
+        from plotly_study.validators.sunburst import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -460,7 +460,7 @@ an instance of plotly.graph_objs.sunburst.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -532,7 +532,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -584,7 +584,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -623,7 +623,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -693,7 +693,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.sunburst.Outsidetextfont
+            plotly_study.graph_objs.sunburst.Outsidetextfont
         color
 
         colorsrc
@@ -736,9 +736,9 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Outsidetextfont 
+The first argument to the plotly_study.graph_objs.sunburst.Outsidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Outsidetextfont"""
+an instance of plotly_study.graph_objs.sunburst.Outsidetextfont"""
             )
 
         # Handle skip_invalid
@@ -747,7 +747,7 @@ an instance of plotly.graph_objs.sunburst.Outsidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import outsidetextfont as v_outsidetextfont
+        from plotly_study.validators.sunburst import outsidetextfont as v_outsidetextfont
 
         # Initialize validators
         # ---------------------
@@ -782,7 +782,7 @@ an instance of plotly.graph_objs.sunburst.Outsidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -940,7 +940,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.marker.ColorBar
+          - An instance of plotly_study.graph_objs.sunburst.marker.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -1072,7 +1072,7 @@ class Marker(_BaseTraceHierarchyType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.sunburst.marker
+                    A tuple of plotly_study.graph_objects.sunburst.marker
                     .colorbar.Tickformatstop instances or dicts
                     with compatible properties
                 tickformatstopdefaults
@@ -1121,7 +1121,7 @@ class Marker(_BaseTraceHierarchyType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.sunburst.marker.colorbar.T
+                    plotly_study.graph_objects.sunburst.marker.colorbar.T
                     itle instance or dict with compatible
                     properties
                 titlefont
@@ -1161,7 +1161,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.marker.ColorBar
+        plotly_study.graph_objs.sunburst.marker.ColorBar
         """
         return self["colorbar"]
 
@@ -1211,7 +1211,7 @@ class Marker(_BaseTraceHierarchyType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -1250,7 +1250,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  colors .
     
         The 'colorssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1269,7 +1269,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.marker.Line
+          - An instance of plotly_study.graph_objs.sunburst.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -1290,7 +1290,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.marker.Line
+        plotly_study.graph_objs.sunburst.marker.Line
         """
         return self["line"]
 
@@ -1393,7 +1393,7 @@ class Marker(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.sunburst.marker.ColorBar instance
+            plotly_study.graph_objects.sunburst.marker.ColorBar instance
             or dict with compatible properties
         colors
             Sets the color of each sector of this trace. If not
@@ -1416,7 +1416,7 @@ class Marker(_BaseTraceHierarchyType):
         colorssrc
             Sets the source reference on plot.ly for  colors .
         line
-            plotly.graph_objects.sunburst.marker.Line instance or
+            plotly_study.graph_objects.sunburst.marker.Line instance or
             dict with compatible properties
         reversescale
             Reverses the color mapping if true. Has an effect only
@@ -1455,7 +1455,7 @@ class Marker(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sunburst.Marker
+            an instance of plotly_study.graph_objs.sunburst.Marker
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -1496,7 +1496,7 @@ class Marker(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.sunburst.marker.ColorBar instance
+            plotly_study.graph_objects.sunburst.marker.ColorBar instance
             or dict with compatible properties
         colors
             Sets the color of each sector of this trace. If not
@@ -1519,7 +1519,7 @@ class Marker(_BaseTraceHierarchyType):
         colorssrc
             Sets the source reference on plot.ly for  colors .
         line
-            plotly.graph_objects.sunburst.marker.Line instance or
+            plotly_study.graph_objects.sunburst.marker.Line instance or
             dict with compatible properties
         reversescale
             Reverses the color mapping if true. Has an effect only
@@ -1549,9 +1549,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Marker 
+The first argument to the plotly_study.graph_objs.sunburst.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Marker"""
+an instance of plotly_study.graph_objs.sunburst.Marker"""
             )
 
         # Handle skip_invalid
@@ -1560,7 +1560,7 @@ an instance of plotly.graph_objs.sunburst.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import marker as v_marker
+        from plotly_study.validators.sunburst import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -1616,7 +1616,7 @@ an instance of plotly.graph_objs.sunburst.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1667,7 +1667,7 @@ class Leaf(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sunburst.Leaf
+            an instance of plotly_study.graph_objs.sunburst.Leaf
         opacity
             Sets the opacity of the leaves. With colorscale it is
             defaulted to 1; otherwise it is defaulted to 0.7
@@ -1689,9 +1689,9 @@ class Leaf(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Leaf 
+The first argument to the plotly_study.graph_objs.sunburst.Leaf 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Leaf"""
+an instance of plotly_study.graph_objs.sunburst.Leaf"""
             )
 
         # Handle skip_invalid
@@ -1700,7 +1700,7 @@ an instance of plotly.graph_objs.sunburst.Leaf"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import leaf as v_leaf
+        from plotly_study.validators.sunburst import leaf as v_leaf
 
         # Initialize validators
         # ---------------------
@@ -1720,7 +1720,7 @@ an instance of plotly.graph_objs.sunburst.Leaf"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1792,7 +1792,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1844,7 +1844,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1883,7 +1883,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1953,7 +1953,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.sunburst.Insidetextfont
+            plotly_study.graph_objs.sunburst.Insidetextfont
         color
 
         colorsrc
@@ -1996,9 +1996,9 @@ class Insidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Insidetextfont 
+The first argument to the plotly_study.graph_objs.sunburst.Insidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Insidetextfont"""
+an instance of plotly_study.graph_objs.sunburst.Insidetextfont"""
             )
 
         # Handle skip_invalid
@@ -2007,7 +2007,7 @@ an instance of plotly.graph_objs.sunburst.Insidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import insidetextfont as v_insidetextfont
+        from plotly_study.validators.sunburst import insidetextfont as v_insidetextfont
 
         # Initialize validators
         # ---------------------
@@ -2042,7 +2042,7 @@ an instance of plotly.graph_objs.sunburst.Insidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2080,7 +2080,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2160,7 +2160,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2240,7 +2240,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2261,7 +2261,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.sunburst.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.sunburst.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2299,7 +2299,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.sunburst.hoverlabel.Font
+        plotly_study.graph_objs.sunburst.hoverlabel.Font
         """
         return self["font"]
 
@@ -2342,7 +2342,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2416,7 +2416,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sunburst.Hoverlabel
+            an instance of plotly_study.graph_objs.sunburst.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -2463,9 +2463,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Hoverlabel 
+The first argument to the plotly_study.graph_objs.sunburst.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Hoverlabel"""
+an instance of plotly_study.graph_objs.sunburst.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -2474,7 +2474,7 @@ an instance of plotly.graph_objs.sunburst.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import hoverlabel as v_hoverlabel
+        from plotly_study.validators.sunburst import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -2518,7 +2518,7 @@ an instance of plotly.graph_objs.sunburst.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2653,7 +2653,7 @@ class Domain(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.sunburst.Domain
+            an instance of plotly_study.graph_objs.sunburst.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this sunburst trace .
@@ -2684,9 +2684,9 @@ class Domain(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.sunburst.Domain 
+The first argument to the plotly_study.graph_objs.sunburst.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.sunburst.Domain"""
+an instance of plotly_study.graph_objs.sunburst.Domain"""
             )
 
         # Handle skip_invalid
@@ -2695,7 +2695,7 @@ an instance of plotly.graph_objs.sunburst.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.sunburst import domain as v_domain
+        from plotly_study.validators.sunburst import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -2737,5 +2737,5 @@ __all__ = [
     "marker",
 ]
 
-from plotly.graph_objs.sunburst import marker
-from plotly.graph_objs.sunburst import hoverlabel
+from plotly_study.graph_objs.sunburst import marker
+from plotly_study.graph_objs.sunburst import hoverlabel

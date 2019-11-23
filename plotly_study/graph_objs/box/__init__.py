@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -11,7 +11,7 @@ class Unselected(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.box.unselected.Marker
+          - An instance of plotly_study.graph_objs.box.unselected.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -29,7 +29,7 @@ class Unselected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.box.unselected.Marker
+        plotly_study.graph_objs.box.unselected.Marker
         """
         return self["marker"]
 
@@ -49,7 +49,7 @@ class Unselected(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.box.unselected.Marker instance or
+            plotly_study.graph_objects.box.unselected.Marker instance or
             dict with compatible properties
         """
 
@@ -61,9 +61,9 @@ class Unselected(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.box.Unselected
+            an instance of plotly_study.graph_objs.box.Unselected
         marker
-            plotly.graph_objects.box.unselected.Marker instance or
+            plotly_study.graph_objects.box.unselected.Marker instance or
             dict with compatible properties
 
         Returns
@@ -83,9 +83,9 @@ class Unselected(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.box.Unselected 
+The first argument to the plotly_study.graph_objs.box.Unselected 
 constructor must be a dict or 
-an instance of plotly.graph_objs.box.Unselected"""
+an instance of plotly_study.graph_objs.box.Unselected"""
             )
 
         # Handle skip_invalid
@@ -94,7 +94,7 @@ an instance of plotly.graph_objs.box.Unselected"""
 
         # Import validators
         # -----------------
-        from plotly.validators.box import unselected as v_unselected
+        from plotly_study.validators.box import unselected as v_unselected
 
         # Initialize validators
         # ---------------------
@@ -114,7 +114,7 @@ an instance of plotly.graph_objs.box.Unselected"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -193,7 +193,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.box.Stream
+            an instance of plotly_study.graph_objs.box.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -221,9 +221,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.box.Stream 
+The first argument to the plotly_study.graph_objs.box.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.box.Stream"""
+an instance of plotly_study.graph_objs.box.Stream"""
             )
 
         # Handle skip_invalid
@@ -232,7 +232,7 @@ an instance of plotly.graph_objs.box.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.box import stream as v_stream
+        from plotly_study.validators.box import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -255,7 +255,7 @@ an instance of plotly.graph_objs.box.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -268,7 +268,7 @@ class Selected(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.box.selected.Marker
+          - An instance of plotly_study.graph_objs.box.selected.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -283,7 +283,7 @@ class Selected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.box.selected.Marker
+        plotly_study.graph_objs.box.selected.Marker
         """
         return self["marker"]
 
@@ -303,7 +303,7 @@ class Selected(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.box.selected.Marker instance or
+            plotly_study.graph_objects.box.selected.Marker instance or
             dict with compatible properties
         """
 
@@ -315,9 +315,9 @@ class Selected(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.box.Selected
+            an instance of plotly_study.graph_objs.box.Selected
         marker
-            plotly.graph_objects.box.selected.Marker instance or
+            plotly_study.graph_objects.box.selected.Marker instance or
             dict with compatible properties
 
         Returns
@@ -337,9 +337,9 @@ class Selected(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.box.Selected 
+The first argument to the plotly_study.graph_objs.box.Selected 
 constructor must be a dict or 
-an instance of plotly.graph_objs.box.Selected"""
+an instance of plotly_study.graph_objs.box.Selected"""
             )
 
         # Handle skip_invalid
@@ -348,7 +348,7 @@ an instance of plotly.graph_objs.box.Selected"""
 
         # Import validators
         # -----------------
-        from plotly.validators.box import selected as v_selected
+        from plotly_study.validators.box import selected as v_selected
 
         # Initialize validators
         # ---------------------
@@ -368,7 +368,7 @@ an instance of plotly.graph_objs.box.Selected"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -443,7 +443,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.box.marker.Line
+          - An instance of plotly_study.graph_objs.box.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -468,7 +468,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.box.marker.Line
+        plotly_study.graph_objs.box.marker.Line
         """
         return self["line"]
 
@@ -677,7 +677,7 @@ class Marker(_BaseTraceHierarchyType):
             array or relative to `marker.cmin` and `marker.cmax` if
             set.
         line
-            plotly.graph_objects.box.marker.Line instance or dict
+            plotly_study.graph_objects.box.marker.Line instance or dict
             with compatible properties
         opacity
             Sets the marker opacity.
@@ -711,7 +711,7 @@ class Marker(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.box.Marker
+            an instance of plotly_study.graph_objs.box.Marker
         color
             Sets themarkercolor. It accepts either a specific color
             or an array of numbers that are mapped to the
@@ -719,7 +719,7 @@ class Marker(_BaseTraceHierarchyType):
             array or relative to `marker.cmin` and `marker.cmax` if
             set.
         line
-            plotly.graph_objects.box.marker.Line instance or dict
+            plotly_study.graph_objects.box.marker.Line instance or dict
             with compatible properties
         opacity
             Sets the marker opacity.
@@ -751,9 +751,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.box.Marker 
+The first argument to the plotly_study.graph_objs.box.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.box.Marker"""
+an instance of plotly_study.graph_objs.box.Marker"""
             )
 
         # Handle skip_invalid
@@ -762,7 +762,7 @@ an instance of plotly.graph_objs.box.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.box import marker as v_marker
+        from plotly_study.validators.box import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -797,7 +797,7 @@ an instance of plotly.graph_objs.box.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -907,7 +907,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.box.Line
+            an instance of plotly_study.graph_objs.box.Line
         color
             Sets the color of line bounding the box(es).
         width
@@ -930,9 +930,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.box.Line 
+The first argument to the plotly_study.graph_objs.box.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.box.Line"""
+an instance of plotly_study.graph_objs.box.Line"""
             )
 
         # Handle skip_invalid
@@ -941,7 +941,7 @@ an instance of plotly.graph_objs.box.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.box import line as v_line
+        from plotly_study.validators.box import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -964,7 +964,7 @@ an instance of plotly.graph_objs.box.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1002,7 +1002,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1082,7 +1082,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1162,7 +1162,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1183,7 +1183,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.box.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.box.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1221,7 +1221,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.box.hoverlabel.Font
+        plotly_study.graph_objs.box.hoverlabel.Font
         """
         return self["font"]
 
@@ -1264,7 +1264,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1338,7 +1338,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.box.Hoverlabel
+            an instance of plotly_study.graph_objs.box.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1385,9 +1385,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.box.Hoverlabel 
+The first argument to the plotly_study.graph_objs.box.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.box.Hoverlabel"""
+an instance of plotly_study.graph_objs.box.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1396,7 +1396,7 @@ an instance of plotly.graph_objs.box.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.box import hoverlabel as v_hoverlabel
+        from plotly_study.validators.box import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1453,7 +1453,7 @@ __all__ = [
     "unselected",
 ]
 
-from plotly.graph_objs.box import unselected
-from plotly.graph_objs.box import selected
-from plotly.graph_objs.box import marker
-from plotly.graph_objs.box import hoverlabel
+from plotly_study.graph_objs.box import unselected
+from plotly_study.graph_objs.box import selected
+from plotly_study.graph_objs.box import marker
+from plotly_study.graph_objs.box import hoverlabel

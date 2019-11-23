@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -152,7 +152,7 @@ class Font(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.xaxis.rangeselector.Font
+            plotly_study.graph_objs.layout.xaxis.rangeselector.Font
         color
 
         family
@@ -189,9 +189,9 @@ class Font(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.xaxis.rangeselector.Font 
+The first argument to the plotly_study.graph_objs.layout.xaxis.rangeselector.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.xaxis.rangeselector.Font"""
+an instance of plotly_study.graph_objs.layout.xaxis.rangeselector.Font"""
             )
 
         # Handle skip_invalid
@@ -200,7 +200,7 @@ an instance of plotly.graph_objs.layout.xaxis.rangeselector.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.xaxis.rangeselector import font as v_font
+        from plotly_study.validators.layout.xaxis.rangeselector import font as v_font
 
         # Initialize validators
         # ---------------------
@@ -226,7 +226,7 @@ an instance of plotly.graph_objs.layout.xaxis.rangeselector.Font"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -477,7 +477,7 @@ class Button(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.xaxis.rangeselector.Button
+            plotly_study.graph_objs.layout.xaxis.rangeselector.Button
         count
             Sets the number of steps to take to update the range.
             Use with `step` to specify the update interval.
@@ -536,9 +536,9 @@ class Button(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.xaxis.rangeselector.Button 
+The first argument to the plotly_study.graph_objs.layout.xaxis.rangeselector.Button 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.xaxis.rangeselector.Button"""
+an instance of plotly_study.graph_objs.layout.xaxis.rangeselector.Button"""
             )
 
         # Handle skip_invalid
@@ -547,7 +547,7 @@ an instance of plotly.graph_objs.layout.xaxis.rangeselector.Button"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.xaxis.rangeselector import button as v_button
+        from plotly_study.validators.layout.xaxis.rangeselector import button as v_button
 
         # Initialize validators
         # ---------------------

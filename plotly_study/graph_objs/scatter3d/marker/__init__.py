@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -240,7 +240,7 @@ class Line(_BaseTraceHierarchyType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -279,7 +279,7 @@ class Line(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -446,7 +446,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scatter3d.marker.Line
+            an instance of plotly_study.graph_objs.scatter3d.marker.Line
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -540,9 +540,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scatter3d.marker.Line 
+The first argument to the plotly_study.graph_objs.scatter3d.marker.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scatter3d.marker.Line"""
+an instance of plotly_study.graph_objs.scatter3d.marker.Line"""
             )
 
         # Handle skip_invalid
@@ -551,7 +551,7 @@ an instance of plotly.graph_objs.scatter3d.marker.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scatter3d.marker import line as v_line
+        from plotly_study.validators.scatter3d.marker import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -601,7 +601,7 @@ an instance of plotly.graph_objs.scatter3d.marker.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1228,7 +1228,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.marker.colorbar.Tickfont
+          - An instance of plotly_study.graph_objs.scatter3d.marker.colorbar.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -1256,7 +1256,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.marker.colorbar.Tickfont
+        plotly_study.graph_objs.scatter3d.marker.colorbar.Tickfont
         """
         return self["tickfont"]
 
@@ -1300,7 +1300,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.scatter3d.marker.colorbar.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.scatter3d.marker.colorbar.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -1342,7 +1342,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.scatter3d.marker.colorbar.Tickformatstop]
+        tuple[plotly_study.graph_objs.scatter3d.marker.colorbar.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -1362,7 +1362,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.marker.colorbar.Tickformatstop
+          - An instance of plotly_study.graph_objs.scatter3d.marker.colorbar.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -1370,7 +1370,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.marker.colorbar.Tickformatstop
+        plotly_study.graph_objs.scatter3d.marker.colorbar.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -1520,7 +1520,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1561,7 +1561,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1600,7 +1600,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.marker.colorbar.Title
+          - An instance of plotly_study.graph_objs.scatter3d.marker.colorbar.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -1624,7 +1624,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.scatter3d.marker.colorbar.Title
+        plotly_study.graph_objs.scatter3d.marker.colorbar.Title
         """
         return self["title"]
 
@@ -1644,7 +1644,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.scatter3d.marker.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.scatter3d.marker.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1953,7 +1953,7 @@ class ColorBar(_BaseTraceHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.scatter3d.marker.colorb
+            A tuple of plotly_study.graph_objects.scatter3d.marker.colorb
             ar.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -1995,7 +1995,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.scatter3d.marker.colorbar.Title
+            plotly_study.graph_objects.scatter3d.marker.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -2092,7 +2092,7 @@ class ColorBar(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.scatter3d.marker.ColorBar
+            plotly_study.graph_objs.scatter3d.marker.ColorBar
         bgcolor
             Sets the color of padded area.
         bordercolor
@@ -2205,7 +2205,7 @@ class ColorBar(_BaseTraceHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.scatter3d.marker.colorb
+            A tuple of plotly_study.graph_objects.scatter3d.marker.colorb
             ar.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -2247,7 +2247,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.scatter3d.marker.colorbar.Title
+            plotly_study.graph_objects.scatter3d.marker.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -2299,9 +2299,9 @@ class ColorBar(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scatter3d.marker.ColorBar 
+The first argument to the plotly_study.graph_objs.scatter3d.marker.ColorBar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scatter3d.marker.ColorBar"""
+an instance of plotly_study.graph_objs.scatter3d.marker.ColorBar"""
             )
 
         # Handle skip_invalid
@@ -2310,7 +2310,7 @@ an instance of plotly.graph_objs.scatter3d.marker.ColorBar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scatter3d.marker import colorbar as v_colorbar
+        from plotly_study.validators.scatter3d.marker import colorbar as v_colorbar
 
         # Initialize validators
         # ---------------------
@@ -2466,4 +2466,4 @@ an instance of plotly.graph_objs.scatter3d.marker.ColorBar"""
 
 __all__ = ["ColorBar", "Line", "colorbar"]
 
-from plotly.graph_objs.scatter3d.marker import colorbar
+from plotly_study.graph_objs.scatter3d.marker import colorbar

@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -152,7 +152,7 @@ class Font(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.hoverlabel.Font
+            an instance of plotly_study.graph_objs.layout.hoverlabel.Font
         color
 
         family
@@ -189,9 +189,9 @@ class Font(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.hoverlabel.Font 
+The first argument to the plotly_study.graph_objs.layout.hoverlabel.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.hoverlabel.Font"""
+an instance of plotly_study.graph_objs.layout.hoverlabel.Font"""
             )
 
         # Handle skip_invalid
@@ -200,7 +200,7 @@ an instance of plotly.graph_objs.layout.hoverlabel.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.hoverlabel import font as v_font
+        from plotly_study.validators.layout.hoverlabel import font as v_font
 
         # Initialize validators
         # ---------------------

@@ -114,7 +114,7 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.choropleth.unselected.Mark
+                plotly_study.graph_objects.choropleth.unselected.Mark
                 er instance or dict with compatible properties
 """,
             ),
@@ -249,7 +249,7 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.choropleth.selected.Marker
+                plotly_study.graph_objects.choropleth.selected.Marker
                 instance or dict with compatible properties
 """,
             ),
@@ -327,7 +327,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             line
-                plotly.graph_objects.choropleth.marker.Line
+                plotly_study.graph_objects.choropleth.marker.Line
                 instance or dict with compatible properties
             opacity
                 Sets the opacity of the locations.
@@ -751,7 +751,7 @@ class ColorBarValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.choropleth.colo
+                A tuple of plotly_study.graph_objects.choropleth.colo
                 rbar.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults
@@ -799,7 +799,7 @@ class ColorBarValidator(_plotly_utils.basevalidators.CompoundValidator):
             tickwidth
                 Sets the tick width (in px).
             title
-                plotly.graph_objects.choropleth.colorbar.Title
+                plotly_study.graph_objects.choropleth.colorbar.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use

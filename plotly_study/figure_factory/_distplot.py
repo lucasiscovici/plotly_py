@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 
 from plotly import exceptions, optional_imports
-from plotly.figure_factory import utils
-from plotly.graph_objs import graph_objs
+from plotly_study.figure_factory import utils
+from plotly_study.graph_objs import graph_objs
 
 # Optional imports, may be None for users that only use our core functionality.
 np = optional_imports.get_module("numpy")
@@ -86,7 +86,7 @@ def create_distplot(
 
     Example 1: Simple distplot of 1 data set
 
-    >>> from plotly.figure_factory import create_distplot
+    >>> from plotly_study.figure_factory import create_distplot
 
     >>> hist_data = [[1.1, 1.1, 2.5, 3.0, 3.5,
     ...               3.5, 4.1, 4.4, 4.5, 4.5,
@@ -99,7 +99,7 @@ def create_distplot(
 
     Example 2: Two data sets and added rug text
     
-    >>> from plotly.figure_factory import create_distplot
+    >>> from plotly_study.figure_factory import create_distplot
     >>> # Add histogram data
     >>> hist1_x = [0.8, 1.2, 0.2, 0.6, 1.6,
     ...            -0.9, -0.07, 1.95, 0.9, -0.2,
@@ -136,7 +136,7 @@ def create_distplot(
 
     Example 3: Plot with normal curve and hide rug plot
     
-    >>> from plotly.figure_factory import create_distplot
+    >>> from plotly_study.figure_factory import create_distplot
     >>> import numpy as np
 
     >>> x1 = np.random.randn(190)
@@ -154,7 +154,7 @@ def create_distplot(
 
     Example 4: Distplot with Pandas
     
-    >>> from plotly.figure_factory import create_distplot
+    >>> from plotly_study.figure_factory import create_distplot
     >>> import numpy as np
     >>> import pandas as pd
 

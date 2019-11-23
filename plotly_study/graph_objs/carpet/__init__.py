@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -77,7 +77,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.carpet.Stream
+            an instance of plotly_study.graph_objs.carpet.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -105,9 +105,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.carpet.Stream 
+The first argument to the plotly_study.graph_objs.carpet.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.carpet.Stream"""
+an instance of plotly_study.graph_objs.carpet.Stream"""
             )
 
         # Handle skip_invalid
@@ -116,7 +116,7 @@ an instance of plotly.graph_objs.carpet.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.carpet import stream as v_stream
+        from plotly_study.validators.carpet import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.carpet.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -292,7 +292,7 @@ class Font(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.carpet.Font
+            an instance of plotly_study.graph_objs.carpet.Font
         color
 
         family
@@ -329,9 +329,9 @@ class Font(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.carpet.Font 
+The first argument to the plotly_study.graph_objs.carpet.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.carpet.Font"""
+an instance of plotly_study.graph_objs.carpet.Font"""
             )
 
         # Handle skip_invalid
@@ -340,7 +340,7 @@ an instance of plotly.graph_objs.carpet.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.carpet import font as v_font
+        from plotly_study.validators.carpet import font as v_font
 
         # Initialize validators
         # ---------------------
@@ -366,7 +366,7 @@ an instance of plotly.graph_objs.carpet.Font"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -467,7 +467,7 @@ class Baxis(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  categoryarray .
     
         The 'categoryarraysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1481,7 +1481,7 @@ class Baxis(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.baxis.Tickfont
+          - An instance of plotly_study.graph_objs.carpet.baxis.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -1509,7 +1509,7 @@ class Baxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.baxis.Tickfont
+        plotly_study.graph_objs.carpet.baxis.Tickfont
         """
         return self["tickfont"]
 
@@ -1552,7 +1552,7 @@ class Baxis(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.carpet.baxis.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.carpet.baxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -1594,7 +1594,7 @@ class Baxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.carpet.baxis.Tickformatstop]
+        tuple[plotly_study.graph_objs.carpet.baxis.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -1614,7 +1614,7 @@ class Baxis(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.baxis.Tickformatstop
+          - An instance of plotly_study.graph_objs.carpet.baxis.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -1622,7 +1622,7 @@ class Baxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.baxis.Tickformatstop
+        plotly_study.graph_objs.carpet.baxis.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -1721,7 +1721,7 @@ class Baxis(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1762,7 +1762,7 @@ class Baxis(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1781,7 +1781,7 @@ class Baxis(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.baxis.Title
+          - An instance of plotly_study.graph_objs.carpet.baxis.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -1805,7 +1805,7 @@ class Baxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.baxis.Title
+        plotly_study.graph_objs.carpet.baxis.Title
         """
         return self["title"]
 
@@ -1824,7 +1824,7 @@ class Baxis(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.baxis.title.Font
+          - An instance of plotly_study.graph_objs.carpet.baxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2068,7 +2068,7 @@ class Baxis(_BaseTraceHierarchyType):
             "%H~%M~%S.%2f" would display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.carpet.baxis.Tickformatstop
+            plotly_study.graph_objects.carpet.baxis.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.carpet
@@ -2094,7 +2094,7 @@ class Baxis(_BaseTraceHierarchyType):
         tickvalssrc
             Sets the source reference on plot.ly for  tickvals .
         title
-            plotly.graph_objects.carpet.baxis.Title instance or
+            plotly_study.graph_objects.carpet.baxis.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use carpet.baxis.title.font instead.
@@ -2185,7 +2185,7 @@ class Baxis(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.carpet.Baxis
+            an instance of plotly_study.graph_objs.carpet.Baxis
         arraydtick
             The stride between grid lines along the axis
         arraytick0
@@ -2337,7 +2337,7 @@ class Baxis(_BaseTraceHierarchyType):
             "%H~%M~%S.%2f" would display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.carpet.baxis.Tickformatstop
+            plotly_study.graph_objects.carpet.baxis.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.carpet
@@ -2363,7 +2363,7 @@ class Baxis(_BaseTraceHierarchyType):
         tickvalssrc
             Sets the source reference on plot.ly for  tickvals .
         title
-            plotly.graph_objects.carpet.baxis.Title instance or
+            plotly_study.graph_objects.carpet.baxis.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use carpet.baxis.title.font instead.
@@ -2398,9 +2398,9 @@ class Baxis(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.carpet.Baxis 
+The first argument to the plotly_study.graph_objs.carpet.Baxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.carpet.Baxis"""
+an instance of plotly_study.graph_objs.carpet.Baxis"""
             )
 
         # Handle skip_invalid
@@ -2409,7 +2409,7 @@ an instance of plotly.graph_objs.carpet.Baxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.carpet import baxis as v_baxis
+        from plotly_study.validators.carpet import baxis as v_baxis
 
         # Initialize validators
         # ---------------------
@@ -2599,7 +2599,7 @@ an instance of plotly.graph_objs.carpet.Baxis"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2700,7 +2700,7 @@ class Aaxis(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  categoryarray .
     
         The 'categoryarraysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3714,7 +3714,7 @@ class Aaxis(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.aaxis.Tickfont
+          - An instance of plotly_study.graph_objs.carpet.aaxis.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -3742,7 +3742,7 @@ class Aaxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.aaxis.Tickfont
+        plotly_study.graph_objs.carpet.aaxis.Tickfont
         """
         return self["tickfont"]
 
@@ -3785,7 +3785,7 @@ class Aaxis(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.carpet.aaxis.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.carpet.aaxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -3827,7 +3827,7 @@ class Aaxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.carpet.aaxis.Tickformatstop]
+        tuple[plotly_study.graph_objs.carpet.aaxis.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -3847,7 +3847,7 @@ class Aaxis(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.aaxis.Tickformatstop
+          - An instance of plotly_study.graph_objs.carpet.aaxis.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -3855,7 +3855,7 @@ class Aaxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.aaxis.Tickformatstop
+        plotly_study.graph_objs.carpet.aaxis.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -3954,7 +3954,7 @@ class Aaxis(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -3995,7 +3995,7 @@ class Aaxis(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -4014,7 +4014,7 @@ class Aaxis(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.aaxis.Title
+          - An instance of plotly_study.graph_objs.carpet.aaxis.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -4038,7 +4038,7 @@ class Aaxis(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.carpet.aaxis.Title
+        plotly_study.graph_objs.carpet.aaxis.Title
         """
         return self["title"]
 
@@ -4057,7 +4057,7 @@ class Aaxis(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.carpet.aaxis.title.Font
+          - An instance of plotly_study.graph_objs.carpet.aaxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -4301,7 +4301,7 @@ class Aaxis(_BaseTraceHierarchyType):
             "%H~%M~%S.%2f" would display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.carpet.aaxis.Tickformatstop
+            plotly_study.graph_objects.carpet.aaxis.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.carpet
@@ -4327,7 +4327,7 @@ class Aaxis(_BaseTraceHierarchyType):
         tickvalssrc
             Sets the source reference on plot.ly for  tickvals .
         title
-            plotly.graph_objects.carpet.aaxis.Title instance or
+            plotly_study.graph_objects.carpet.aaxis.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use carpet.aaxis.title.font instead.
@@ -4418,7 +4418,7 @@ class Aaxis(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.carpet.Aaxis
+            an instance of plotly_study.graph_objs.carpet.Aaxis
         arraydtick
             The stride between grid lines along the axis
         arraytick0
@@ -4570,7 +4570,7 @@ class Aaxis(_BaseTraceHierarchyType):
             "%H~%M~%S.%2f" would display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.carpet.aaxis.Tickformatstop
+            plotly_study.graph_objects.carpet.aaxis.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.carpet
@@ -4596,7 +4596,7 @@ class Aaxis(_BaseTraceHierarchyType):
         tickvalssrc
             Sets the source reference on plot.ly for  tickvals .
         title
-            plotly.graph_objects.carpet.aaxis.Title instance or
+            plotly_study.graph_objects.carpet.aaxis.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use carpet.aaxis.title.font instead.
@@ -4631,9 +4631,9 @@ class Aaxis(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.carpet.Aaxis 
+The first argument to the plotly_study.graph_objs.carpet.Aaxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.carpet.Aaxis"""
+an instance of plotly_study.graph_objs.carpet.Aaxis"""
             )
 
         # Handle skip_invalid
@@ -4642,7 +4642,7 @@ an instance of plotly.graph_objs.carpet.Aaxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.carpet import aaxis as v_aaxis
+        from plotly_study.validators.carpet import aaxis as v_aaxis
 
         # Initialize validators
         # ---------------------
@@ -4834,5 +4834,5 @@ an instance of plotly.graph_objs.carpet.Aaxis"""
 
 __all__ = ["Aaxis", "Baxis", "Font", "Stream", "aaxis", "baxis"]
 
-from plotly.graph_objs.carpet import baxis
-from plotly.graph_objs.carpet import aaxis
+from plotly_study.graph_objs.carpet import baxis
+from plotly_study.graph_objs.carpet import aaxis

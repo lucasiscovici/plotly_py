@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 from collections import OrderedDict
-from plotly.tests.utils import TestCaseNoTemplate
+from plotly_study.tests.utils import TestCaseNoTemplate
 
 
 class FigureTest(TestCaseNoTemplate):

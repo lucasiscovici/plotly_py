@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -77,7 +77,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.mesh3d.Stream
+            an instance of plotly_study.graph_objs.mesh3d.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -105,9 +105,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.mesh3d.Stream 
+The first argument to the plotly_study.graph_objs.mesh3d.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.mesh3d.Stream"""
+an instance of plotly_study.graph_objs.mesh3d.Stream"""
             )
 
         # Handle skip_invalid
@@ -116,7 +116,7 @@ an instance of plotly.graph_objs.mesh3d.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.mesh3d import stream as v_stream
+        from plotly_study.validators.mesh3d import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -139,7 +139,7 @@ an instance of plotly.graph_objs.mesh3d.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -235,7 +235,7 @@ class Lightposition(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.mesh3d.Lightposition
+            an instance of plotly_study.graph_objs.mesh3d.Lightposition
         x
             Numeric vector, representing the X coordinate for each
             vertex.
@@ -263,9 +263,9 @@ class Lightposition(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.mesh3d.Lightposition 
+The first argument to the plotly_study.graph_objs.mesh3d.Lightposition 
 constructor must be a dict or 
-an instance of plotly.graph_objs.mesh3d.Lightposition"""
+an instance of plotly_study.graph_objs.mesh3d.Lightposition"""
             )
 
         # Handle skip_invalid
@@ -274,7 +274,7 @@ an instance of plotly.graph_objs.mesh3d.Lightposition"""
 
         # Import validators
         # -----------------
-        from plotly.validators.mesh3d import lightposition as v_lightposition
+        from plotly_study.validators.mesh3d import lightposition as v_lightposition
 
         # Initialize validators
         # ---------------------
@@ -300,7 +300,7 @@ an instance of plotly.graph_objs.mesh3d.Lightposition"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -509,7 +509,7 @@ class Lighting(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.mesh3d.Lighting
+            an instance of plotly_study.graph_objs.mesh3d.Lighting
         ambient
             Ambient light increases overall color visibility but
             can wash out the image.
@@ -551,9 +551,9 @@ class Lighting(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.mesh3d.Lighting 
+The first argument to the plotly_study.graph_objs.mesh3d.Lighting 
 constructor must be a dict or 
-an instance of plotly.graph_objs.mesh3d.Lighting"""
+an instance of plotly_study.graph_objs.mesh3d.Lighting"""
             )
 
         # Handle skip_invalid
@@ -562,7 +562,7 @@ an instance of plotly.graph_objs.mesh3d.Lighting"""
 
         # Import validators
         # -----------------
-        from plotly.validators.mesh3d import lighting as v_lighting
+        from plotly_study.validators.mesh3d import lighting as v_lighting
 
         # Initialize validators
         # ---------------------
@@ -608,7 +608,7 @@ an instance of plotly.graph_objs.mesh3d.Lighting"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -646,7 +646,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -726,7 +726,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -806,7 +806,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -827,7 +827,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.mesh3d.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -865,7 +865,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.hoverlabel.Font
+        plotly_study.graph_objs.mesh3d.hoverlabel.Font
         """
         return self["font"]
 
@@ -908,7 +908,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -982,7 +982,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.mesh3d.Hoverlabel
+            an instance of plotly_study.graph_objs.mesh3d.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1029,9 +1029,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.mesh3d.Hoverlabel 
+The first argument to the plotly_study.graph_objs.mesh3d.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.mesh3d.Hoverlabel"""
+an instance of plotly_study.graph_objs.mesh3d.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1040,7 +1040,7 @@ an instance of plotly.graph_objs.mesh3d.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.mesh3d import hoverlabel as v_hoverlabel
+        from plotly_study.validators.mesh3d import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1084,7 +1084,7 @@ an instance of plotly.graph_objs.mesh3d.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1216,7 +1216,7 @@ class Contour(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.mesh3d.Contour
+            an instance of plotly_study.graph_objs.mesh3d.Contour
         color
             Sets the color of the contour lines.
         show
@@ -1241,9 +1241,9 @@ class Contour(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.mesh3d.Contour 
+The first argument to the plotly_study.graph_objs.mesh3d.Contour 
 constructor must be a dict or 
-an instance of plotly.graph_objs.mesh3d.Contour"""
+an instance of plotly_study.graph_objs.mesh3d.Contour"""
             )
 
         # Handle skip_invalid
@@ -1252,7 +1252,7 @@ an instance of plotly.graph_objs.mesh3d.Contour"""
 
         # Import validators
         # -----------------
-        from plotly.validators.mesh3d import contour as v_contour
+        from plotly_study.validators.mesh3d import contour as v_contour
 
         # Initialize validators
         # ---------------------
@@ -1278,7 +1278,7 @@ an instance of plotly.graph_objs.mesh3d.Contour"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1905,7 +1905,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.colorbar.Tickfont
+          - An instance of plotly_study.graph_objs.mesh3d.colorbar.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -1933,7 +1933,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.colorbar.Tickfont
+        plotly_study.graph_objs.mesh3d.colorbar.Tickfont
         """
         return self["tickfont"]
 
@@ -1977,7 +1977,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.mesh3d.colorbar.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.mesh3d.colorbar.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -2019,7 +2019,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.mesh3d.colorbar.Tickformatstop]
+        tuple[plotly_study.graph_objs.mesh3d.colorbar.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -2039,7 +2039,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.colorbar.Tickformatstop
+          - An instance of plotly_study.graph_objs.mesh3d.colorbar.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -2047,7 +2047,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.colorbar.Tickformatstop
+        plotly_study.graph_objs.mesh3d.colorbar.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -2197,7 +2197,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2238,7 +2238,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2277,7 +2277,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.colorbar.Title
+          - An instance of plotly_study.graph_objs.mesh3d.colorbar.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -2301,7 +2301,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.mesh3d.colorbar.Title
+        plotly_study.graph_objs.mesh3d.colorbar.Title
         """
         return self["title"]
 
@@ -2320,7 +2320,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.mesh3d.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.mesh3d.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2630,7 +2630,7 @@ class ColorBar(_BaseTraceHierarchyType):
             display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.mesh3d.colorbar.Tickformatstop
+            plotly_study.graph_objects.mesh3d.colorbar.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.mesh3d
@@ -2671,7 +2671,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.mesh3d.colorbar.Title instance or
+            plotly_study.graph_objects.mesh3d.colorbar.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use mesh3d.colorbar.title.font
@@ -2766,7 +2766,7 @@ class ColorBar(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.mesh3d.ColorBar
+            an instance of plotly_study.graph_objs.mesh3d.ColorBar
         bgcolor
             Sets the color of padded area.
         bordercolor
@@ -2880,7 +2880,7 @@ class ColorBar(_BaseTraceHierarchyType):
             display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.mesh3d.colorbar.Tickformatstop
+            plotly_study.graph_objects.mesh3d.colorbar.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.mesh3d
@@ -2921,7 +2921,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.mesh3d.colorbar.Title instance or
+            plotly_study.graph_objects.mesh3d.colorbar.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use mesh3d.colorbar.title.font
@@ -2972,9 +2972,9 @@ class ColorBar(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.mesh3d.ColorBar 
+The first argument to the plotly_study.graph_objs.mesh3d.ColorBar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.mesh3d.ColorBar"""
+an instance of plotly_study.graph_objs.mesh3d.ColorBar"""
             )
 
         # Handle skip_invalid
@@ -2983,7 +2983,7 @@ an instance of plotly.graph_objs.mesh3d.ColorBar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.mesh3d import colorbar as v_colorbar
+        from plotly_study.validators.mesh3d import colorbar as v_colorbar
 
         # Initialize validators
         # ---------------------
@@ -3148,5 +3148,5 @@ __all__ = [
     "hoverlabel",
 ]
 
-from plotly.graph_objs.mesh3d import hoverlabel
-from plotly.graph_objs.mesh3d import colorbar
+from plotly_study.graph_objs.mesh3d import hoverlabel
+from plotly_study.graph_objs.mesh3d import colorbar

@@ -1,12 +1,12 @@
 from __future__ import absolute_import
 
-import plotly.graph_objects as go
-from plotly.tests.utils import TestCaseNoTemplate
+import plotly_study.graph_objects as go
+from plotly_study.tests.utils import TestCaseNoTemplate
 
 
 class FigureTest(TestCaseNoTemplate):
     def setUp(self):
-        import plotly.io as pio
+        import plotly_study.io as pio
 
         pio.templates.default = None
 

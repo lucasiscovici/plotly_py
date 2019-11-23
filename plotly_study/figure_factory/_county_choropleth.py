@@ -8,10 +8,10 @@ from math import log, floor
 from numbers import Number
 
 from plotly import optional_imports
-import plotly.colors as clrs
-from plotly.figure_factory import utils
-from plotly.exceptions import PlotlyError
-import plotly.graph_objs as go
+import plotly_study.colors as clrs
+from plotly_study.figure_factory import utils
+from plotly_study.exceptions import PlotlyError
+import plotly_study.graph_objs as go
 
 pd.options.mode.chained_assignment = None
 
@@ -480,8 +480,8 @@ def create_choropleth(
 
     Example 1: Florida:: 
     
-        import plotly.plotly as py
-        import plotly.figure_factory as ff
+        import plotly_study.plotly as py
+        import plotly_study.figure_factory as ff
 
         import numpy as np
         import pandas as pd
@@ -508,8 +508,8 @@ def create_choropleth(
 
     Example 2: New England
     ```
-    import plotly.plotly as py
-    import plotly.figure_factory as ff
+    import plotly_study.plotly as py
+    import plotly_study.figure_factory as ff
 
     import pandas as pd
 
@@ -535,8 +535,8 @@ def create_choropleth(
 
     Example 3: California and Surrounding States
     ```
-    import plotly.plotly as py
-    import plotly.figure_factory as ff
+    import plotly_study.plotly as py
+    import plotly_study.figure_factory as ff
 
     import pandas as pd
 
@@ -570,8 +570,8 @@ def create_choropleth(
 
     Example 4: USA
     ```
-    import plotly.plotly as py
-    import plotly.figure_factory as ff
+    import plotly_study.plotly as py
+    import plotly_study.figure_factory as ff
 
     import numpy as np
     import pandas as pd

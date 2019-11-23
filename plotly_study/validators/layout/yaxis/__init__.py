@@ -114,7 +114,7 @@ class TitleValidator(_plotly_utils.basevalidators.TitleValidator):
                 constrained within the margins, so the actual
                 standoff distance is always less than the set
                 or default value. By setting `standoff` and
-                turning on `automargin`, plotly.js will push
+                turning on `automargin`, plotly_study.js will push
                 the margins to fit the axis title at given
                 standoff distance.
             text

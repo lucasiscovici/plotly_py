@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -109,7 +109,7 @@ class Line(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.candlestick.increasing.Line
+            plotly_study.graph_objs.candlestick.increasing.Line
         color
             Sets the color of line bounding the box(es).
         width
@@ -132,9 +132,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.candlestick.increasing.Line 
+The first argument to the plotly_study.graph_objs.candlestick.increasing.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.candlestick.increasing.Line"""
+an instance of plotly_study.graph_objs.candlestick.increasing.Line"""
             )
 
         # Handle skip_invalid
@@ -143,7 +143,7 @@ an instance of plotly.graph_objs.candlestick.increasing.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.candlestick.increasing import line as v_line
+        from plotly_study.validators.candlestick.increasing import line as v_line
 
         # Initialize validators
         # ---------------------

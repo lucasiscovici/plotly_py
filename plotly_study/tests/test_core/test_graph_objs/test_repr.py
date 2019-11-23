@@ -1,6 +1,6 @@
 from __future__ import absolute_import, division
 from unittest import TestCase, SkipTest
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
 
 class TestGraphObjRepr(TestCase):

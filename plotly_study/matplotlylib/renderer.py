@@ -11,9 +11,9 @@ from __future__ import absolute_import
 import six
 import warnings
 
-import plotly.graph_objs as go
-from plotly.matplotlylib.mplexporter import Renderer
-from plotly.matplotlylib import mpltools
+import plotly_study.graph_objs as go
+from plotly_study.matplotlylib.mplexporter import Renderer
+from plotly_study.matplotlylib import mpltools
 
 
 # Warning format
@@ -25,11 +25,11 @@ warnings.formatwarning = warning_on_one_line
 
 
 class PlotlyRenderer(Renderer):
-    """A renderer class inheriting from base for rendering mpl plots in plotly.
+    """A renderer class inheriting from base for rendering mpl plots in plotly_study.
 
     A renderer class to be used with an exporter for rendering matplotlib
-    plots in Plotly. This module defines the PlotlyRenderer class which handles
-    the creation of the JSON structures that get sent to plotly.
+    plots in plotly_study. This module defines the PlotlyRenderer class which handles
+    the creation of the JSON structures that get sent to plotly_study.
 
     All class attributes available are defined in __init__().
 
@@ -128,7 +128,7 @@ class PlotlyRenderer(Renderer):
         mpltools.convert_y_domain.
 
         Positional arguments:
-        ax -- an mpl axes object. This will become a subplot in plotly.
+        ax -- an mpl axes object. This will become a subplot in plotly_study.
         props.keys() -- [
             'axesbg',           (background color for axes obj)
             'axesbgalpha',      (alpha, or opacity for background)

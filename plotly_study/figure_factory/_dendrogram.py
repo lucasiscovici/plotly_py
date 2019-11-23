@@ -5,7 +5,7 @@ from __future__ import absolute_import
 from collections import OrderedDict
 
 from plotly import exceptions, optional_imports
-from plotly.graph_objs import graph_objs
+from plotly_study.graph_objs import graph_objs
 
 # Optional imports, may be None for users that only use our core functionality.
 np = optional_imports.get_module("numpy")
@@ -41,7 +41,7 @@ def create_dendrogram(
 
     Example 1: Simple bottom oriented dendrogram
 
-    >>> from plotly.figure_factory import create_dendrogram
+    >>> from plotly_study.figure_factory import create_dendrogram
 
     >>> import numpy as np
 
@@ -51,7 +51,7 @@ def create_dendrogram(
 
     Example 2: Dendrogram to put on the left of the heatmap
     
-    >>> from plotly.figure_factory import create_dendrogram
+    >>> from plotly_study.figure_factory import create_dendrogram
 
     >>> import numpy as np
 
@@ -63,7 +63,7 @@ def create_dendrogram(
 
     Example 3: Dendrogram with Pandas
     
-    >>> from plotly.figure_factory import create_dendrogram
+    >>> from plotly_study.figure_factory import create_dendrogram
 
     >>> import numpy as np
     >>> import pandas as pd

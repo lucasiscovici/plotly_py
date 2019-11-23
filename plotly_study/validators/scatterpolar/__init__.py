@@ -26,11 +26,11 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.scatterpolar.unselected.Ma
+                plotly_study.graph_objects.scatterpolar.unselected.Ma
                 rker instance or dict with compatible
                 properties
             textfont
-                plotly.graph_objects.scatterpolar.unselected.Te
+                plotly_study.graph_objects.scatterpolar.unselected.Te
                 xtfont instance or dict with compatible
                 properties
 """,
@@ -365,10 +365,10 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.scatterpolar.selected.Mark
+                plotly_study.graph_objects.scatterpolar.selected.Mark
                 er instance or dict with compatible properties
             textfont
-                plotly.graph_objects.scatterpolar.selected.Text
+                plotly_study.graph_objects.scatterpolar.selected.Text
                 font instance or dict with compatible
                 properties
 """,
@@ -560,7 +560,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.scatterpolar.marker.ColorB
+                plotly_study.graph_objects.scatterpolar.marker.ColorB
                 ar instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in
@@ -582,10 +582,10 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  color
                 .
             gradient
-                plotly.graph_objects.scatterpolar.marker.Gradie
+                plotly_study.graph_objects.scatterpolar.marker.Gradie
                 nt instance or dict with compatible properties
             line
-                plotly.graph_objects.scatterpolar.marker.Line
+                plotly_study.graph_objects.scatterpolar.marker.Line
                 instance or dict with compatible properties
             maxdisplayed
                 Sets a maximum number of points to be drawn on

@@ -10,14 +10,14 @@ from unittest import skip
 
 from nose.tools import raises
 
-from plotly.exceptions import (
+from plotly_study.exceptions import (
     PlotlyError,
     PlotlyDictKeyError,
     PlotlyDictValueError,
     PlotlyDataTypeError,
     PlotlyListEntryError,
 )
-from plotly.graph_objs import Annotations, Data, Figure, Layout
+from plotly_study.graph_objs import Annotations, Data, Figure, Layout
 
 
 def setup():

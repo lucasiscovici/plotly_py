@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -83,7 +83,7 @@ class YAxis(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.xaxis.rangeslider.YAxis
+            plotly_study.graph_objs.layout.xaxis.rangeslider.YAxis
         range
             Sets the range of this axis for the rangeslider.
         rangemode
@@ -111,9 +111,9 @@ class YAxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.xaxis.rangeslider.YAxis 
+The first argument to the plotly_study.graph_objs.layout.xaxis.rangeslider.YAxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.xaxis.rangeslider.YAxis"""
+an instance of plotly_study.graph_objs.layout.xaxis.rangeslider.YAxis"""
             )
 
         # Handle skip_invalid
@@ -122,7 +122,7 @@ an instance of plotly.graph_objs.layout.xaxis.rangeslider.YAxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.xaxis.rangeslider import yaxis as v_yaxis
+        from plotly_study.validators.layout.xaxis.rangeslider import yaxis as v_yaxis
 
         # Initialize validators
         # ---------------------

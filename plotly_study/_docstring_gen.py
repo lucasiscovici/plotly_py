@@ -1,13 +1,13 @@
 from __future__ import absolute_import
 import re as _re
-import plotly.io as pio
-from plotly.basedatatypes import BaseFigure
+import plotly_study.io as pio
+from plotly_study.basedatatypes import BaseFigure
 import sys
 
 # Perform docstrings generation
 def copy_doc_without_fig(from_fn, to_method):
     """
-    Copy docstring from a plotly.io function to a Figure method, removing the
+    Copy docstring from a plotly_study.io function to a Figure method, removing the
     fig argument docstring in the process
     """
     docstr = _re.sub(r" {4}fig:(?:.*?\n)*? {4}(\w+)", r"    \1", from_fn.__doc__)

@@ -1,9 +1,9 @@
-# plotly.py Jupyter Notebook JS test suite
+# plotly_study.py Jupyter Notebook JS test suite
 
-To make sure that plotly.py works properly inside Jupyter Notebooks in both
-`plotly.plotly` and `plotly.offline`, we here run JavaScript tests in a browser.
+To make sure that plotly_study.py works properly inside Jupyter Notebooks in both
+`plotly_study.plotly` and `plotly_study.offline`, we here run JavaScript tests in a browser.
 
-See PR [#545](https://github.com/plotly/plotly.py/pull/545) for example of what
+See PR [#545](https://github.com/plotly/plotly_study.py/pull/545) for example of what
 can go wrong in Jupyter Notebooks.
 
 
@@ -12,16 +12,16 @@ can go wrong in Jupyter Notebooks.
 Install JavaScript dependencies:
 
 ```bash
-(plotly.py/plotly/tests/test_optional/test_jupyter) $ npm install
+(plotly_study.py/plotly/tests/test_optional/test_jupyter) $ npm install
 ```
 
 Run the tests:
 
 ```bash
-(plotly.py/plotly/tests/test_optional/test_jupyter) $ nosetests
+(plotly_study.py/plotly/tests/test_optional/test_jupyter) $ nosetests
 
 # or from the repo root
-(plotly.py) $ nosetests plotly/tests/test_optional/test_jupyter
+(plotly_study.py) $ nosetests plotly/tests/test_optional/test_jupyter
 ```
 
 ## Add a test case
@@ -40,7 +40,7 @@ For example,
 ```js
 var test = require('../lib/tape-wrapper');
 
-test('should have one plotly.js graph', function(t) {
+test('should have one plotly_study.js graph', function(t) {
     t.plan(1);
 
     var nodes = document.querySelectorAll('.js-plotly-plot');
@@ -102,5 +102,5 @@ In details, `lib/server.js`:
 terminal
 
 
-See PR [#549](https://github.com/plotly/plotly.py/pull/549) for the details on
+See PR [#549](https://github.com/plotly/plotly_study.py/pull/549) for the details on
 how this suite was first implemented.

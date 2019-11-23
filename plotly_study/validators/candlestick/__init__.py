@@ -407,7 +407,7 @@ class IncreasingValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color, or marker line color, whichever is
                 available.
             line
-                plotly.graph_objects.candlestick.increasing.Lin
+                plotly_study.graph_objects.candlestick.increasing.Lin
                 e instance or dict with compatible properties
 """,
             ),
@@ -605,7 +605,7 @@ class DecreasingValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color, or marker line color, whichever is
                 available.
             line
-                plotly.graph_objects.candlestick.decreasing.Lin
+                plotly_study.graph_objects.candlestick.decreasing.Lin
                 e instance or dict with compatible properties
 """,
             ),

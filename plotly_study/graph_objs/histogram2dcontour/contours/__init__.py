@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -154,7 +154,7 @@ class Labelfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.histogram2dcontour.contours.Labelfont
+            plotly_study.graph_objs.histogram2dcontour.contours.Labelfont
         color
 
         family
@@ -191,9 +191,9 @@ class Labelfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.histogram2dcontour.contours.Labelfont 
+The first argument to the plotly_study.graph_objs.histogram2dcontour.contours.Labelfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.histogram2dcontour.contours.Labelfont"""
+an instance of plotly_study.graph_objs.histogram2dcontour.contours.Labelfont"""
             )
 
         # Handle skip_invalid
@@ -202,7 +202,7 @@ an instance of plotly.graph_objs.histogram2dcontour.contours.Labelfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.histogram2dcontour.contours import (
+        from plotly_study.validators.histogram2dcontour.contours import (
             labelfont as v_labelfont,
         )
 

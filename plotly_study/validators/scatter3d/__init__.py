@@ -477,13 +477,13 @@ class ProjectionValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             x
-                plotly.graph_objects.scatter3d.projection.X
+                plotly_study.graph_objects.scatter3d.projection.X
                 instance or dict with compatible properties
             y
-                plotly.graph_objects.scatter3d.projection.Y
+                plotly_study.graph_objects.scatter3d.projection.Y
                 instance or dict with compatible properties
             z
-                plotly.graph_objects.scatter3d.projection.Z
+                plotly_study.graph_objects.scatter3d.projection.Z
                 instance or dict with compatible properties
 """,
             ),
@@ -632,7 +632,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.scatter3d.marker.ColorBar
+                plotly_study.graph_objects.scatter3d.marker.ColorBar
                 instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in
@@ -654,7 +654,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  color
                 .
             line
-                plotly.graph_objects.scatter3d.marker.Line
+                plotly_study.graph_objects.scatter3d.marker.Line
                 instance or dict with compatible properties
             opacity
                 Sets the marker opacity. Note that the marker
@@ -769,7 +769,7 @@ class LineValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.scatter3d.line.ColorBar
+                plotly_study.graph_objects.scatter3d.line.ColorBar
                 instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in

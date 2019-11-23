@@ -9,7 +9,7 @@ from distutils.version import LooseVersion
 
 from plotly import optional_imports
 
-from plotly.io._base_renderers import (
+from plotly_study.io._base_renderers import (
     MimetypeRenderer,
     ExternalRenderer,
     PlotlyRenderer,
@@ -28,7 +28,7 @@ from plotly.io._base_renderers import (
     CoCalcRenderer,
     DatabricksRenderer,
 )
-from plotly.io._utils import validate_coerce_fig_to_dict
+from plotly_study.io._utils import validate_coerce_fig_to_dict
 
 ipython = optional_imports.get_module("IPython")
 ipython_display = optional_imports.get_module("IPython.display")
@@ -114,9 +114,9 @@ Renderer must be a subclass of MimetypeRenderer or ExternalRenderer.
         The default renderer, or None if no there is no default
 
         If not None, the default renderer is used to render
-        figures when the `plotly.io.show` function is called on a Figure.
+        figures when the `plotly_study.io.show` function is called on a Figure.
 
-        If `plotly.io.renderers.render_on_display` is True, then the default
+        If `plotly_study.io.renderers.render_on_display` is True, then the default
         renderer will also be used to display Figures automatically when
         displayed in the Jupyter Notebook
 
@@ -124,12 +124,12 @@ Renderer must be a subclass of MimetypeRenderer or ExternalRenderer.
         '+' characters. For example, to specify rendering compatible with
         the classic Jupyter Notebook, JupyterLab, and PDF export:
 
-        >>> import plotly.io as pio
+        >>> import plotly_study.io as pio
         >>> pio.renderers.default = 'notebook+jupyterlab+pdf'
 
         The names of available renderers may be retrieved with:
 
-        >>> import plotly.io as pio
+        >>> import plotly_study.io as pio
         >>> list(pio.renderers)
 
         Returns
@@ -360,7 +360,7 @@ def show(fig, renderer=None, validate=True, **kwargs):
     renderer: str or None (default None)
         A string containing the names of one or more registered renderers
         (separated by '+' characters) or None.  If None, then the default
-        renderers specified in plotly.io.renderers.default are used.
+        renderers specified in plotly_study.io.renderers.default are used.
 
     validate: bool (default True)
         True if the figure should be validated before being shown,
@@ -489,7 +489,7 @@ elif ipython and ipython.get_ipython():
     # Check if we're running in spyder and orca is installed
     if not default_renderer and "SPYDER_ARGS" in os.environ:
         try:
-            from plotly.io.orca import validate_executable
+            from plotly_study.io.orca import validate_executable
 
             validate_executable()
             default_renderer = "svg"

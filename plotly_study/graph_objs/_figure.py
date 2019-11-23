@@ -1,5 +1,5 @@
-from plotly.basedatatypes import BaseFigure
-from plotly.graph_objs import (
+from plotly_study.basedatatypes import BaseFigure
+from plotly_study.graph_objs import (
     Area,
     Bar,
     Barpolar,
@@ -138,18 +138,18 @@ class Figure(BaseFigure):
         layout
             The 'layout' property is an instance of Layout
             that may be specified as:
-              - An instance of plotly.graph_objs.Layout
+              - An instance of plotly_study.graph_objs.Layout
               - A dict of string/value properties that will be passed
                 to the Layout constructor
         
                 Supported dict properties:
                     
                     angularaxis
-                        plotly.graph_objects.layout.AngularAxis
+                        plotly_study.graph_objects.layout.AngularAxis
                         instance or dict with compatible properties
                     annotations
                         A tuple of
-                        plotly.graph_objects.layout.Annotation
+                        plotly_study.graph_objects.layout.Annotation
                         instances or dicts with compatible properties
                     annotationdefaults
                         When used in a template (as
@@ -228,20 +228,20 @@ class Figure(BaseFigure):
                         missing, `plotly_click` and `plotly_selected`
                         events are not fired.
                     coloraxis
-                        plotly.graph_objects.layout.Coloraxis instance
+                        plotly_study.graph_objects.layout.Coloraxis instance
                         or dict with compatible properties
                     colorscale
-                        plotly.graph_objects.layout.Colorscale instance
+                        plotly_study.graph_objects.layout.Colorscale instance
                         or dict with compatible properties
                     colorway
                         Sets the default trace colors.
                     datarevision
                         If provided, a changed value tells
-                        `Plotly.react` that one or more data arrays has
+                        `plotly_study.react` that one or more data arrays has
                         changed. This way you can modify arrays in-
                         place rather than making a complete new copy
                         for an incremental change. If NOT provided,
-                        `Plotly.react` assumes that data arrays are
+                        `plotly_study.react` assumes that data arrays are
                         being treated as immutable, thus any data array
                         with a different identity from its predecessor
                         contains new data.
@@ -330,10 +330,10 @@ class Figure(BaseFigure):
                         over one another, you might need to an
                         "opacity" to see multiple bars.
                     geo
-                        plotly.graph_objects.layout.Geo instance or
+                        plotly_study.graph_objects.layout.Geo instance or
                         dict with compatible properties
                     grid
-                        plotly.graph_objects.layout.Grid instance or
+                        plotly_study.graph_objects.layout.Grid instance or
                         dict with compatible properties
                     height
                         Sets the plot's height (in px).
@@ -363,7 +363,7 @@ class Figure(BaseFigure):
                         objects will not supersede hover on point-like
                         objects in case of conflict.
                     hoverlabel
-                        plotly.graph_objects.layout.Hoverlabel instance
+                        plotly_study.graph_objects.layout.Hoverlabel instance
                         or dict with compatible properties
                     hovermode
                         Determines the mode of hover interactions. If
@@ -375,7 +375,7 @@ class Figure(BaseFigure):
                         cartesian coordinates. For anything else the
                         default value is "closest".
                     images
-                        A tuple of plotly.graph_objects.layout.Image
+                        A tuple of plotly_study.graph_objects.layout.Image
                         instances or dicts with compatible properties
                     imagedefaults
                         When used in a template (as
@@ -383,13 +383,13 @@ class Figure(BaseFigure):
                         default property values to use for elements of
                         layout.images
                     legend
-                        plotly.graph_objects.layout.Legend instance or
+                        plotly_study.graph_objects.layout.Legend instance or
                         dict with compatible properties
                     mapbox
-                        plotly.graph_objects.layout.Mapbox instance or
+                        plotly_study.graph_objects.layout.Mapbox instance or
                         dict with compatible properties
                     margin
-                        plotly.graph_objects.layout.Margin instance or
+                        plotly_study.graph_objects.layout.Margin instance or
                         dict with compatible properties
                     meta
                         Assigns extra meta information that can be used
@@ -407,7 +407,7 @@ class Figure(BaseFigure):
                         Sets the source reference on plot.ly for  meta
                         .
                     modebar
-                        plotly.graph_objects.layout.Modebar instance or
+                        plotly_study.graph_objects.layout.Modebar instance or
                         dict with compatible properties
                     orientation
                         Legacy polar charts are deprecated! Please
@@ -427,13 +427,13 @@ class Figure(BaseFigure):
                         Sets the color of plotting area in-between x
                         and y axes.
                     polar
-                        plotly.graph_objects.layout.Polar instance or
+                        plotly_study.graph_objects.layout.Polar instance or
                         dict with compatible properties
                     radialaxis
-                        plotly.graph_objects.layout.RadialAxis instance
+                        plotly_study.graph_objects.layout.RadialAxis instance
                         or dict with compatible properties
                     scene
-                        plotly.graph_objects.layout.Scene instance or
+                        plotly_study.graph_objects.layout.Scene instance or
                         dict with compatible properties
                     selectdirection
                         When "dragmode" is set to "select", this limits
@@ -451,7 +451,7 @@ class Figure(BaseFigure):
                         dflt is ".," but other locales may alter this
                         default.
                     shapes
-                        A tuple of plotly.graph_objects.layout.Shape
+                        A tuple of plotly_study.graph_objects.layout.Shape
                         instances or dicts with compatible properties
                     shapedefaults
                         When used in a template (as
@@ -466,7 +466,7 @@ class Figure(BaseFigure):
                         trace is shown in the legend. c) One trace is
                         explicitly given with `showlegend: true`.
                     sliders
-                        A tuple of plotly.graph_objects.layout.Slider
+                        A tuple of plotly_study.graph_objects.layout.Slider
                         instances or dicts with compatible properties
                     sliderdefaults
                         When used in a template (as
@@ -498,7 +498,7 @@ class Figure(BaseFigure):
                         structure of the trace with type `trace_type`
                         (e.g. 'scatter'). Alternatively, this may be
                         specified as an instance of
-                        plotly.graph_objs.layout.Template.  Trace
+                        plotly_study.graph_objs.layout.Template.  Trace
                         templates are applied cyclically to traces of
                         each type. Container arrays (eg `annotations`)
                         have special handling: An object ending in
@@ -515,10 +515,10 @@ class Figure(BaseFigure):
                         plot, make an item with matching
                         `templateitemname` and `visible: false`.
                     ternary
-                        plotly.graph_objects.layout.Ternary instance or
+                        plotly_study.graph_objects.layout.Ternary instance or
                         dict with compatible properties
                     title
-                        plotly.graph_objects.layout.Title instance or
+                        plotly_study.graph_objects.layout.Title instance or
                         dict with compatible properties
                     titlefont
                         Deprecated: Please use layout.title.font
@@ -527,7 +527,7 @@ class Figure(BaseFigure):
                         deprecated `titlefont` attribute.
                     transition
                         Sets transition options used during
-                        Plotly.react updates.
+                        plotly_study.react updates.
                     treemapcolorway
                         Sets the default treemap slice colors. Defaults
                         to the main `colorway` used for trace colors.
@@ -536,10 +536,10 @@ class Figure(BaseFigure):
                         `extendtreemapcolors`.
                     uirevision
                         Used to allow user interactions with the plot
-                        to persist after `Plotly.react` calls that are
+                        to persist after `plotly_study.react` calls that are
                         unaware of these interactions. If `uirevision`
                         is omitted, or if it is given and it changed
-                        from the previous `Plotly.react` call, the
+                        from the previous `plotly_study.react` call, the
                         exact new figure is used. If `uirevision` is
                         truthy and did NOT change, any attribute that
                         has been affected by user interactions and did
@@ -559,7 +559,7 @@ class Figure(BaseFigure):
                         retain any user-driven zoom.
                     updatemenus
                         A tuple of
-                        plotly.graph_objects.layout.Updatemenu
+                        plotly_study.graph_objects.layout.Updatemenu
                         instances or dicts with compatible properties
                     updatemenudefaults
                         When used in a template (as
@@ -600,16 +600,16 @@ class Figure(BaseFigure):
                     width
                         Sets the plot's width (in px).
                     xaxis
-                        plotly.graph_objects.layout.XAxis instance or
+                        plotly_study.graph_objects.layout.XAxis instance or
                         dict with compatible properties
                     yaxis
-                        plotly.graph_objects.layout.YAxis instance or
+                        plotly_study.graph_objects.layout.YAxis instance or
                         dict with compatible properties
             
         frames
             The 'frames' property is a tuple of instances of
             Frame that may be specified as:
-              - A list or tuple of instances of plotly.graph_objs.Frame
+              - A list or tuple of instances of plotly_study.graph_objs.Frame
               - A list or tuple of dicts of string/value properties that
                 will be passed to the Frame constructor
         
@@ -700,7 +700,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.area.Hoverlabel instance or dict
+            plotly_study.graph_objects.area.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -713,7 +713,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.area.Marker instance or dict with
+            plotly_study.graph_objects.area.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -745,7 +745,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.area.Stream instance or dict with
+            plotly_study.graph_objects.area.Stream instance or dict with
             compatible properties
         t
             Area traces are deprecated! Please switch to the
@@ -783,11 +783,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -935,10 +935,10 @@ class Figure(BaseFigure):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.bar.ErrorX instance or dict with
+            plotly_study.graph_objects.bar.ErrorX instance or dict with
             compatible properties
         error_y
-            plotly.graph_objects.bar.ErrorY instance or dict with
+            plotly_study.graph_objects.bar.ErrorY instance or dict with
             compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -948,7 +948,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.bar.Hoverlabel instance or dict
+            plotly_study.graph_objects.bar.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -1001,7 +1001,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.bar.Marker instance or dict with
+            plotly_study.graph_objects.bar.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -1047,7 +1047,7 @@ class Figure(BaseFigure):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.bar.Selected instance or dict with
+            plotly_study.graph_objects.bar.Selected instance or dict with
             compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -1060,7 +1060,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.bar.Stream instance or dict with
+            plotly_study.graph_objects.bar.Stream instance or dict with
             compatible properties
         t
             t coordinates in scatter traces are deprecated!Please
@@ -1140,7 +1140,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.bar.Unselected instance or dict
+            plotly_study.graph_objects.bar.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -1184,16 +1184,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -1358,7 +1358,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.barpolar.Hoverlabel instance or
+            plotly_study.graph_objects.barpolar.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -1401,7 +1401,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.barpolar.Marker instance or dict
+            plotly_study.graph_objects.barpolar.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -1437,7 +1437,7 @@ class Figure(BaseFigure):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.barpolar.Selected instance or dict
+            plotly_study.graph_objects.barpolar.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -1450,7 +1450,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.barpolar.Stream instance or dict
+            plotly_study.graph_objects.barpolar.Stream instance or dict
             with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -1498,7 +1498,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.barpolar.Unselected instance or
+            plotly_study.graph_objects.barpolar.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -1512,11 +1512,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -1680,7 +1680,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.box.Hoverlabel instance or dict
+            plotly_study.graph_objects.box.Hoverlabel instance or dict
             with compatible properties
         hoveron
             Do the hover effects highlight individual boxes  or
@@ -1731,10 +1731,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.box.Line instance or dict with
+            plotly_study.graph_objects.box.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.box.Marker instance or dict with
+            plotly_study.graph_objects.box.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -1780,7 +1780,7 @@ class Figure(BaseFigure):
             correspond to positions to the right (left) for
             vertical boxes and above (below) for horizontal boxes
         selected
-            plotly.graph_objects.box.Selected instance or dict with
+            plotly_study.graph_objects.box.Selected instance or dict with
             compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -1793,7 +1793,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.box.Stream instance or dict with
+            plotly_study.graph_objects.box.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with each sample
@@ -1827,7 +1827,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.box.Unselected instance or dict
+            plotly_study.graph_objects.box.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -1876,16 +1876,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -2024,7 +2024,7 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.candlestick.Decreasing instance or
+            plotly_study.graph_objects.candlestick.Decreasing instance or
             dict with compatible properties
         high
             Sets the high values.
@@ -2038,7 +2038,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.candlestick.Hoverlabel instance or
+            plotly_study.graph_objects.candlestick.Hoverlabel instance or
             dict with compatible properties
         hovertext
             Same as `text`.
@@ -2051,14 +2051,14 @@ class Figure(BaseFigure):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.candlestick.Increasing instance or
+            plotly_study.graph_objects.candlestick.Increasing instance or
             dict with compatible properties
         legendgroup
             Sets the legend group for this trace. Traces part of
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.candlestick.Line instance or dict
+            plotly_study.graph_objects.candlestick.Line instance or dict
             with compatible properties
         low
             Sets the low values.
@@ -2099,7 +2099,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.candlestick.Stream instance or
+            plotly_study.graph_objects.candlestick.Stream instance or
             dict with compatible properties
         text
             Sets hover text elements associated with each sample
@@ -2159,16 +2159,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -2281,7 +2281,7 @@ class Figure(BaseFigure):
             coordinates. Use with `da` where `a0` is the starting
             coordinate and `da` the step.
         aaxis
-            plotly.graph_objects.carpet.Aaxis instance or dict with
+            plotly_study.graph_objects.carpet.Aaxis instance or dict with
             compatible properties
         asrc
             Sets the source reference on plot.ly for  a .
@@ -2293,7 +2293,7 @@ class Figure(BaseFigure):
             coordinates. Use with `db` where `b0` is the starting
             coordinate and `db` the step.
         baxis
-            plotly.graph_objects.carpet.Baxis instance or dict with
+            plotly_study.graph_objects.carpet.Baxis instance or dict with
             compatible properties
         bsrc
             Sets the source reference on plot.ly for  b .
@@ -2351,7 +2351,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         stream
-            plotly.graph_objects.carpet.Stream instance or dict
+            plotly_study.graph_objects.carpet.Stream instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -2404,16 +2404,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -2531,7 +2531,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.choropleth.ColorBar instance or
+            plotly_study.graph_objects.choropleth.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -2566,7 +2566,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.choropleth.Hoverlabel instance or
+            plotly_study.graph_objects.choropleth.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -2613,7 +2613,7 @@ class Figure(BaseFigure):
         locationssrc
             Sets the source reference on plot.ly for  locations .
         marker
-            plotly.graph_objects.choropleth.Marker instance or dict
+            plotly_study.graph_objects.choropleth.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -2638,7 +2638,7 @@ class Figure(BaseFigure):
             will correspond to the last color in the array and
             `zmax` will correspond to the first color.
         selected
-            plotly.graph_objects.choropleth.Selected instance or
+            plotly_study.graph_objects.choropleth.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -2651,7 +2651,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.choropleth.Stream instance or dict
+            plotly_study.graph_objects.choropleth.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each location.
@@ -2680,7 +2680,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.choropleth.Unselected instance or
+            plotly_study.graph_objects.choropleth.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -2712,11 +2712,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -2844,7 +2844,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.choroplethmapbox.ColorBar instance
+            plotly_study.graph_objects.choroplethmapbox.ColorBar instance
             or dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -2879,7 +2879,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.choroplethmapbox.Hoverlabel
+            plotly_study.graph_objects.choroplethmapbox.Hoverlabel
             instance or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -2924,7 +2924,7 @@ class Figure(BaseFigure):
         locationssrc
             Sets the source reference on plot.ly for  locations .
         marker
-            plotly.graph_objects.choroplethmapbox.Marker instance
+            plotly_study.graph_objects.choroplethmapbox.Marker instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -2949,7 +2949,7 @@ class Figure(BaseFigure):
             will correspond to the last color in the array and
             `zmax` will correspond to the first color.
         selected
-            plotly.graph_objects.choroplethmapbox.Selected instance
+            plotly_study.graph_objects.choroplethmapbox.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -2962,7 +2962,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.choroplethmapbox.Stream instance
+            plotly_study.graph_objects.choroplethmapbox.Stream instance
             or dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -2996,7 +2996,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.choroplethmapbox.Unselected
+            plotly_study.graph_objects.choroplethmapbox.Unselected
             instance or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -3028,11 +3028,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -3186,7 +3186,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.cone.ColorBar instance or dict
+            plotly_study.graph_objects.cone.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -3215,7 +3215,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.cone.Hoverlabel instance or dict
+            plotly_study.graph_objects.cone.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -3255,10 +3255,10 @@ class Figure(BaseFigure):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.cone.Lighting instance or dict
+            plotly_study.graph_objects.cone.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.cone.Lightposition instance or
+            plotly_study.graph_objects.cone.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -3317,7 +3317,7 @@ class Figure(BaseFigure):
             the same units as the u/v/w vector field, its the
             default value is half the sample's maximum vector norm.
         stream
-            plotly.graph_objects.cone.Stream instance or dict with
+            plotly_study.graph_objects.cone.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with the cones. If
@@ -3383,11 +3383,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -3545,7 +3545,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.contour.ColorBar instance or dict
+            plotly_study.graph_objects.contour.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -3565,7 +3565,7 @@ class Figure(BaseFigure):
             to true if `z` is a one dimensional array otherwise it
             is defaulted to false.
         contours
-            plotly.graph_objects.contour.Contours instance or dict
+            plotly_study.graph_objects.contour.Contours instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -3591,7 +3591,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.contour.Hoverlabel instance or
+            plotly_study.graph_objects.contour.Hoverlabel instance or
             dict with compatible properties
         hoverongaps
             Determines whether or not gaps (i.e. {nan} or missing
@@ -3638,7 +3638,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.contour.Line instance or dict with
+            plotly_study.graph_objects.contour.Line instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -3677,7 +3677,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.contour.Stream instance or dict
+            plotly_study.graph_objects.contour.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -3784,16 +3784,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -3983,7 +3983,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.contourcarpet.ColorBar instance or
+            plotly_study.graph_objects.contourcarpet.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -3998,7 +3998,7 @@ class Figure(BaseFigure):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contours
-            plotly.graph_objects.contourcarpet.Contours instance or
+            plotly_study.graph_objects.contourcarpet.Contours instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -4031,7 +4031,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.contourcarpet.Line instance or
+            plotly_study.graph_objects.contourcarpet.Line instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -4070,7 +4070,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.contourcarpet.Stream instance or
+            plotly_study.graph_objects.contourcarpet.Stream instance or
             dict with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -4140,16 +4140,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -4291,7 +4291,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.densitymapbox.ColorBar instance or
+            plotly_study.graph_objects.densitymapbox.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -4320,7 +4320,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.densitymapbox.Hoverlabel instance
+            plotly_study.graph_objects.densitymapbox.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -4405,7 +4405,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.densitymapbox.Stream instance or
+            plotly_study.graph_objects.densitymapbox.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -4476,11 +4476,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -4615,7 +4615,7 @@ class Figure(BaseFigure):
             and tick labels, make sure to set `xaxis.layer` and
             `yaxis.layer` to *below traces*.
         connector
-            plotly.graph_objects.funnel.Connector instance or dict
+            plotly_study.graph_objects.funnel.Connector instance or dict
             with compatible properties
         constraintext
             Constrain the size of text inside or outside a bar to
@@ -4639,7 +4639,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.funnel.Hoverlabel instance or dict
+            plotly_study.graph_objects.funnel.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -4694,7 +4694,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.funnel.Marker instance or dict
+            plotly_study.graph_objects.funnel.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -4746,7 +4746,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.funnel.Stream instance or dict
+            plotly_study.graph_objects.funnel.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -4861,17 +4861,17 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
 
-             * The figure was created using `plotly.subplots.make_subplots`.
+             * The figure was created using `plotly_study.subplots.make_subplots`.
              * The row and col arguments are not None
              * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -5014,7 +5014,7 @@ class Figure(BaseFigure):
         dlabel
             Sets the label step. See `label0` for more info.
         domain
-            plotly.graph_objects.funnelarea.Domain instance or dict
+            plotly_study.graph_objects.funnelarea.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -5024,7 +5024,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.funnelarea.Hoverlabel instance or
+            plotly_study.graph_objects.funnelarea.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -5087,7 +5087,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.funnelarea.Marker instance or dict
+            plotly_study.graph_objects.funnelarea.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -5118,7 +5118,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.funnelarea.Stream instance or dict
+            plotly_study.graph_objects.funnelarea.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -5158,7 +5158,7 @@ class Figure(BaseFigure):
             Sets the source reference on plot.ly for  texttemplate
             .
         title
-            plotly.graph_objects.funnelarea.Title instance or dict
+            plotly_study.graph_objects.funnelarea.Title instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -5195,11 +5195,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -5351,7 +5351,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.heatmap.ColorBar instance or dict
+            plotly_study.graph_objects.heatmap.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -5389,7 +5389,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.heatmap.Hoverlabel instance or
+            plotly_study.graph_objects.heatmap.Hoverlabel instance or
             dict with compatible properties
         hoverongaps
             Determines whether or not gaps (i.e. {nan} or missing
@@ -5459,7 +5459,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.heatmap.Stream instance or dict
+            plotly_study.graph_objects.heatmap.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -5572,16 +5572,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -5722,7 +5722,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.heatmapgl.ColorBar instance or
+            plotly_study.graph_objects.heatmapgl.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -5755,7 +5755,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.heatmapgl.Hoverlabel instance or
+            plotly_study.graph_objects.heatmapgl.Hoverlabel instance or
             dict with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -5791,7 +5791,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.heatmapgl.Stream instance or dict
+            plotly_study.graph_objects.heatmapgl.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each z value.
@@ -5889,16 +5889,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -6051,7 +6051,7 @@ class Figure(BaseFigure):
             can have compatible bin settings. Note that histogram
             and histogram2d* trace can share the same `bingroup`
         cumulative
-            plotly.graph_objects.histogram.Cumulative instance or
+            plotly_study.graph_objects.histogram.Cumulative instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -6061,10 +6061,10 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         error_x
-            plotly.graph_objects.histogram.ErrorX instance or dict
+            plotly_study.graph_objects.histogram.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.histogram.ErrorY instance or dict
+            plotly_study.graph_objects.histogram.ErrorY instance or dict
             with compatible properties
         histfunc
             Specifies the binning function used for this histogram
@@ -6099,7 +6099,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram.Hoverlabel instance or
+            plotly_study.graph_objects.histogram.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -6143,7 +6143,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.histogram.Marker instance or dict
+            plotly_study.graph_objects.histogram.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -6186,7 +6186,7 @@ class Figure(BaseFigure):
             value of the each bar spans along the vertical
             (horizontal).
         selected
-            plotly.graph_objects.histogram.Selected instance or
+            plotly_study.graph_objects.histogram.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -6199,7 +6199,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.histogram.Stream instance or dict
+            plotly_study.graph_objects.histogram.Stream instance or dict
             with compatible properties
         text
             Sets hover text elements associated with each bar. If a
@@ -6231,7 +6231,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.histogram.Unselected instance or
+            plotly_study.graph_objects.histogram.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -6246,7 +6246,7 @@ class Figure(BaseFigure):
             x coordinates refer to `layout.xaxis`. If "x2", the x
             coordinates refer to `layout.xaxis2`, and so on.
         xbins
-            plotly.graph_objects.histogram.XBins instance or dict
+            plotly_study.graph_objects.histogram.XBins instance or dict
             with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -6260,7 +6260,7 @@ class Figure(BaseFigure):
             y coordinates refer to `layout.yaxis`. If "y2", the y
             coordinates refer to `layout.yaxis2`, and so on.
         ybins
-            plotly.graph_objects.histogram.YBins instance or dict
+            plotly_study.graph_objects.histogram.YBins instance or dict
             with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -6269,16 +6269,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -6448,7 +6448,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.histogram2d.ColorBar instance or
+            plotly_study.graph_objects.histogram2d.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -6502,7 +6502,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram2d.Hoverlabel instance or
+            plotly_study.graph_objects.histogram2d.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -6538,7 +6538,7 @@ class Figure(BaseFigure):
         idssrc
             Sets the source reference on plot.ly for  ids .
         marker
-            plotly.graph_objects.histogram2d.Marker instance or
+            plotly_study.graph_objects.histogram2d.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -6580,7 +6580,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.histogram2d.Stream instance or
+            plotly_study.graph_objects.histogram2d.Stream instance or
             dict with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -6624,7 +6624,7 @@ class Figure(BaseFigure):
             Note that the same `xbingroup` value can be used to set
             (1D) histogram `bingroup`
         xbins
-            plotly.graph_objects.histogram2d.XBins instance or dict
+            plotly_study.graph_objects.histogram2d.XBins instance or dict
             with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -6647,7 +6647,7 @@ class Figure(BaseFigure):
             Note that the same `ybingroup` value can be used to set
             (1D) histogram `bingroup`
         ybins
-            plotly.graph_objects.histogram2d.YBins instance or dict
+            plotly_study.graph_objects.histogram2d.YBins instance or dict
             with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -6687,16 +6687,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -6877,7 +6877,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.histogram2dcontour.ColorBar
+            plotly_study.graph_objects.histogram2dcontour.ColorBar
             instance or dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -6892,7 +6892,7 @@ class Figure(BaseFigure):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contours
-            plotly.graph_objects.histogram2dcontour.Contours
+            plotly_study.graph_objects.histogram2dcontour.Contours
             instance or dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -6934,7 +6934,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.histogram2dcontour.Hoverlabel
+            plotly_study.graph_objects.histogram2dcontour.Hoverlabel
             instance or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -6974,10 +6974,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.histogram2dcontour.Line instance
+            plotly_study.graph_objects.histogram2dcontour.Line instance
             or dict with compatible properties
         marker
-            plotly.graph_objects.histogram2dcontour.Marker instance
+            plotly_study.graph_objects.histogram2dcontour.Marker instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -7028,7 +7028,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.histogram2dcontour.Stream instance
+            plotly_study.graph_objects.histogram2dcontour.Stream instance
             or dict with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -7072,7 +7072,7 @@ class Figure(BaseFigure):
             Note that the same `xbingroup` value can be used to set
             (1D) histogram `bingroup`
         xbins
-            plotly.graph_objects.histogram2dcontour.XBins instance
+            plotly_study.graph_objects.histogram2dcontour.XBins instance
             or dict with compatible properties
         xcalendar
             Sets the calendar system to use with `x` date data.
@@ -7093,7 +7093,7 @@ class Figure(BaseFigure):
             Note that the same `ybingroup` value can be used to set
             (1D) histogram `bingroup`
         ybins
-            plotly.graph_objects.histogram2dcontour.YBins instance
+            plotly_study.graph_objects.histogram2dcontour.YBins instance
             or dict with compatible properties
         ycalendar
             Sets the calendar system to use with `y` date data.
@@ -7129,16 +7129,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -7283,7 +7283,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.image.Hoverlabel instance or dict
+            plotly_study.graph_objects.image.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -7343,7 +7343,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         stream
-            plotly.graph_objects.image.Stream instance or dict with
+            plotly_study.graph_objects.image.Stream instance or dict with
             compatible properties
         text
             Sets the text elements associated with each z value.
@@ -7413,16 +7413,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -7520,10 +7520,10 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         delta
-            plotly.graph_objects.indicator.Delta instance or dict
+            plotly_study.graph_objects.indicator.Delta instance or dict
             with compatible properties
         domain
-            plotly.graph_objects.indicator.Domain instance or dict
+            plotly_study.graph_objects.indicator.Domain instance or dict
             with compatible properties
         gauge
             The gauge of the Indicator plot.
@@ -7558,13 +7558,13 @@ class Figure(BaseFigure):
             Sets the trace name. The trace name appear as the
             legend item and on hover.
         number
-            plotly.graph_objects.indicator.Number instance or dict
+            plotly_study.graph_objects.indicator.Number instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.indicator.Stream instance or dict
+            plotly_study.graph_objects.indicator.Stream instance or dict
             with compatible properties
         title
-            plotly.graph_objects.indicator.Title instance or dict
+            plotly_study.graph_objects.indicator.Title instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -7598,11 +7598,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -7708,7 +7708,7 @@ class Figure(BaseFigure):
             chosen according to whether numbers in the `color`
             array are all positive, all negative or mixed.
         caps
-            plotly.graph_objects.isosurface.Caps instance or dict
+            plotly_study.graph_objects.isosurface.Caps instance or dict
             with compatible properties
         cauto
             Determines whether or not the color domain is computed
@@ -7736,7 +7736,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.isosurface.ColorBar instance or
+            plotly_study.graph_objects.isosurface.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -7751,7 +7751,7 @@ class Figure(BaseFigure):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.isosurface.Contour instance or
+            plotly_study.graph_objects.isosurface.Contour instance or
             dict with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -7772,7 +7772,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.isosurface.Hoverlabel instance or
+            plotly_study.graph_objects.isosurface.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -7815,10 +7815,10 @@ class Figure(BaseFigure):
         isomin
             Sets the minimum boundary for iso-surface plot.
         lighting
-            plotly.graph_objects.isosurface.Lighting instance or
+            plotly_study.graph_objects.isosurface.Lighting instance or
             dict with compatible properties
         lightposition
-            plotly.graph_objects.isosurface.Lightposition instance
+            plotly_study.graph_objects.isosurface.Lightposition instance
             or dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -7860,16 +7860,16 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         slices
-            plotly.graph_objects.isosurface.Slices instance or dict
+            plotly_study.graph_objects.isosurface.Slices instance or dict
             with compatible properties
         spaceframe
-            plotly.graph_objects.isosurface.Spaceframe instance or
+            plotly_study.graph_objects.isosurface.Spaceframe instance or
             dict with compatible properties
         stream
-            plotly.graph_objects.isosurface.Stream instance or dict
+            plotly_study.graph_objects.isosurface.Stream instance or dict
             with compatible properties
         surface
-            plotly.graph_objects.isosurface.Surface instance or
+            plotly_study.graph_objects.isosurface.Surface instance or
             dict with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -7924,11 +7924,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -8119,7 +8119,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.mesh3d.ColorBar instance or dict
+            plotly_study.graph_objects.mesh3d.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -8134,7 +8134,7 @@ class Figure(BaseFigure):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.mesh3d.Contour instance or dict
+            plotly_study.graph_objects.mesh3d.Contour instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -8166,7 +8166,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.mesh3d.Hoverlabel instance or dict
+            plotly_study.graph_objects.mesh3d.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -8243,10 +8243,10 @@ class Figure(BaseFigure):
         ksrc
             Sets the source reference on plot.ly for  k .
         lighting
-            plotly.graph_objects.mesh3d.Lighting instance or dict
+            plotly_study.graph_objects.mesh3d.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.mesh3d.Lightposition instance or
+            plotly_study.graph_objects.mesh3d.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -8288,7 +8288,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.mesh3d.Stream instance or dict
+            plotly_study.graph_objects.mesh3d.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -8359,11 +8359,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -8506,7 +8506,7 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.ohlc.Decreasing instance or dict
+            plotly_study.graph_objects.ohlc.Decreasing instance or dict
             with compatible properties
         high
             Sets the high values.
@@ -8520,7 +8520,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.ohlc.Hoverlabel instance or dict
+            plotly_study.graph_objects.ohlc.Hoverlabel instance or dict
             with compatible properties
         hovertext
             Same as `text`.
@@ -8533,14 +8533,14 @@ class Figure(BaseFigure):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.ohlc.Increasing instance or dict
+            plotly_study.graph_objects.ohlc.Increasing instance or dict
             with compatible properties
         legendgroup
             Sets the legend group for this trace. Traces part of
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.ohlc.Line instance or dict with
+            plotly_study.graph_objects.ohlc.Line instance or dict with
             compatible properties
         low
             Sets the low values.
@@ -8581,7 +8581,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.ohlc.Stream instance or dict with
+            plotly_study.graph_objects.ohlc.Stream instance or dict with
             compatible properties
         text
             Sets hover text elements associated with each sample
@@ -8640,16 +8640,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -8764,7 +8764,7 @@ class Figure(BaseFigure):
             the default property values to use for elements of
             parcats.dimensions
         domain
-            plotly.graph_objects.parcats.Domain instance or dict
+            plotly_study.graph_objects.parcats.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -8806,7 +8806,7 @@ class Figure(BaseFigure):
         labelfont
             Sets the font for the `dimension` labels.
         line
-            plotly.graph_objects.parcats.Line instance or dict with
+            plotly_study.graph_objects.parcats.Line instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -8832,7 +8832,7 @@ class Figure(BaseFigure):
             If `backward`, sort paths based on dimensions
             categories from right to left.
         stream
-            plotly.graph_objects.parcats.Stream instance or dict
+            plotly_study.graph_objects.parcats.Stream instance or dict
             with compatible properties
         tickfont
             Sets the font for the `category` labels.
@@ -8866,11 +8866,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -8953,7 +8953,7 @@ class Figure(BaseFigure):
             the default property values to use for elements of
             parcoords.dimensions
         domain
-            plotly.graph_objects.parcoords.Domain instance or dict
+            plotly_study.graph_objects.parcoords.Domain instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -8976,7 +8976,7 @@ class Figure(BaseFigure):
             may be positioned better inside margins when
             `labelposition` is set to "bottom".
         line
-            plotly.graph_objects.parcoords.Line instance or dict
+            plotly_study.graph_objects.parcoords.Line instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -8999,7 +8999,7 @@ class Figure(BaseFigure):
         rangefont
             Sets the font for the `dimension` range values.
         stream
-            plotly.graph_objects.parcoords.Stream instance or dict
+            plotly_study.graph_objects.parcoords.Stream instance or dict
             with compatible properties
         tickfont
             Sets the font for the `dimension` tick values.
@@ -9033,11 +9033,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -9149,7 +9149,7 @@ class Figure(BaseFigure):
         dlabel
             Sets the label step. See `label0` for more info.
         domain
-            plotly.graph_objects.pie.Domain instance or dict with
+            plotly_study.graph_objects.pie.Domain instance or dict with
             compatible properties
         hole
             Sets the fraction of the radius to cut out of the pie.
@@ -9162,7 +9162,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.pie.Hoverlabel instance or dict
+            plotly_study.graph_objects.pie.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -9226,7 +9226,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.pie.Marker instance or dict with
+            plotly_study.graph_objects.pie.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -9273,7 +9273,7 @@ class Figure(BaseFigure):
             Determines whether or not the sectors are reordered
             from largest to smallest.
         stream
-            plotly.graph_objects.pie.Stream instance or dict with
+            plotly_study.graph_objects.pie.Stream instance or dict with
             compatible properties
         text
             Sets text elements associated with each sector. If
@@ -9313,7 +9313,7 @@ class Figure(BaseFigure):
             Sets the source reference on plot.ly for  texttemplate
             .
         title
-            plotly.graph_objects.pie.Title instance or dict with
+            plotly_study.graph_objects.pie.Title instance or dict with
             compatible properties
         titlefont
             Deprecated: Please use pie.title.font instead. Sets the
@@ -9359,11 +9359,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -9488,7 +9488,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.pointcloud.Hoverlabel instance or
+            plotly_study.graph_objects.pointcloud.Hoverlabel instance or
             dict with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -9504,7 +9504,7 @@ class Figure(BaseFigure):
             performance and memory use, create one large `indices`
             typed array that is guaranteed to be at least as long
             as the largest number of points during use, and reuse
-            it on each `Plotly.restyle()` call.
+            it on each `plotly_study.restyle()` call.
         indicessrc
             Sets the source reference on plot.ly for  indices .
         legendgroup
@@ -9512,7 +9512,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.pointcloud.Marker instance or dict
+            plotly_study.graph_objects.pointcloud.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -9538,7 +9538,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.pointcloud.Stream instance or dict
+            plotly_study.graph_objects.pointcloud.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -9619,16 +9619,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -9732,7 +9732,7 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.sankey.Domain instance or dict
+            plotly_study.graph_objects.sankey.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -9742,7 +9742,7 @@ class Figure(BaseFigure):
             superseded by `node.hoverinfo` and `node.hoverinfo` for
             nodes and links respectively.
         hoverlabel
-            plotly.graph_objects.sankey.Hoverlabel instance or dict
+            plotly_study.graph_objects.sankey.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -9782,7 +9782,7 @@ class Figure(BaseFigure):
             any other non-array values means no selection all where
             the `selected` and `unselected` styles have no effect.
         stream
-            plotly.graph_objects.sankey.Stream instance or dict
+            plotly_study.graph_objects.sankey.Stream instance or dict
             with compatible properties
         textfont
             Sets the font for node labels
@@ -9825,11 +9825,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -9963,10 +9963,10 @@ class Figure(BaseFigure):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.scatter.ErrorX instance or dict
+            plotly_study.graph_objects.scatter.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scatter.ErrorY instance or dict
+            plotly_study.graph_objects.scatter.ErrorY instance or dict
             with compatible properties
         fill
             Sets the area to fill with a solid color. Defaults to
@@ -10014,7 +10014,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatter.Hoverlabel instance or
+            plotly_study.graph_objects.scatter.Hoverlabel instance or
             dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -10068,10 +10068,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatter.Line instance or dict with
+            plotly_study.graph_objects.scatter.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.scatter.Marker instance or dict
+            plotly_study.graph_objects.scatter.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -10114,7 +10114,7 @@ class Figure(BaseFigure):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatter.Selected instance or dict
+            plotly_study.graph_objects.scatter.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -10151,7 +10151,7 @@ class Figure(BaseFigure):
             fill-linked traces are not already consecutive, the
             later ones will be pushed down in the drawing order.
         stream
-            plotly.graph_objects.scatter.Stream instance or dict
+            plotly_study.graph_objects.scatter.Stream instance or dict
             with compatible properties
         t
             t coordinates in scatter traces are deprecated!Please
@@ -10219,7 +10219,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatter.Unselected instance or
+            plotly_study.graph_objects.scatter.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -10259,16 +10259,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -10422,13 +10422,13 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         error_x
-            plotly.graph_objects.scatter3d.ErrorX instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scatter3d.ErrorY instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorY instance or dict
             with compatible properties
         error_z
-            plotly.graph_objects.scatter3d.ErrorZ instance or dict
+            plotly_study.graph_objects.scatter3d.ErrorZ instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -10438,7 +10438,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatter3d.Hoverlabel instance or
+            plotly_study.graph_objects.scatter3d.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -10486,10 +10486,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatter3d.Line instance or dict
+            plotly_study.graph_objects.scatter3d.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scatter3d.Marker instance or dict
+            plotly_study.graph_objects.scatter3d.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -10519,7 +10519,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         projection
-            plotly.graph_objects.scatter3d.Projection instance or
+            plotly_study.graph_objects.scatter3d.Projection instance or
             dict with compatible properties
         scene
             Sets a reference between this trace's 3D coordinate
@@ -10531,7 +10531,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatter3d.Stream instance or dict
+            plotly_study.graph_objects.scatter3d.Stream instance or dict
             with compatible properties
         surfaceaxis
             If "-1", the scatter points are not fill with a surface
@@ -10548,7 +10548,7 @@ class Figure(BaseFigure):
             flag and "hovertext" is not set, these elements will be
             seen in the hover labels.
         textfont
-            plotly.graph_objects.scatter3d.Textfont instance or
+            plotly_study.graph_objects.scatter3d.Textfont instance or
             dict with compatible properties
         textposition
             Sets the positions of the `text` elements with respects
@@ -10625,11 +10625,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -10793,7 +10793,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattercarpet.Hoverlabel instance
+            plotly_study.graph_objects.scattercarpet.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -10846,10 +10846,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattercarpet.Line instance or
+            plotly_study.graph_objects.scattercarpet.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scattercarpet.Marker instance or
+            plotly_study.graph_objects.scattercarpet.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -10879,7 +10879,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattercarpet.Selected instance or
+            plotly_study.graph_objects.scattercarpet.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -10892,7 +10892,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattercarpet.Stream instance or
+            plotly_study.graph_objects.scattercarpet.Stream instance or
             dict with compatible properties
         text
             Sets text elements associated with each (a,b) point. If
@@ -10955,7 +10955,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattercarpet.Unselected instance
+            plotly_study.graph_objects.scattercarpet.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -10975,16 +10975,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -11139,7 +11139,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattergeo.Hoverlabel instance or
+            plotly_study.graph_objects.scattergeo.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -11191,7 +11191,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattergeo.Line instance or dict
+            plotly_study.graph_objects.scattergeo.Line instance or dict
             with compatible properties
         locationmode
             Determines the set of locations used to match entries
@@ -11207,7 +11207,7 @@ class Figure(BaseFigure):
         lonsrc
             Sets the source reference on plot.ly for  lon .
         marker
-            plotly.graph_objects.scattergeo.Marker instance or dict
+            plotly_study.graph_objects.scattergeo.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -11237,7 +11237,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattergeo.Selected instance or
+            plotly_study.graph_objects.scattergeo.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -11250,7 +11250,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattergeo.Stream instance or dict
+            plotly_study.graph_objects.scattergeo.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (lon,lat) pair
@@ -11314,7 +11314,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattergeo.Unselected instance or
+            plotly_study.graph_objects.scattergeo.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -11324,11 +11324,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -11467,10 +11467,10 @@ class Figure(BaseFigure):
         dy
             Sets the y coordinate step. See `y0` for more info.
         error_x
-            plotly.graph_objects.scattergl.ErrorX instance or dict
+            plotly_study.graph_objects.scattergl.ErrorX instance or dict
             with compatible properties
         error_y
-            plotly.graph_objects.scattergl.ErrorY instance or dict
+            plotly_study.graph_objects.scattergl.ErrorY instance or dict
             with compatible properties
         fill
             Sets the area to fill with a solid color. Defaults to
@@ -11507,7 +11507,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattergl.Hoverlabel instance or
+            plotly_study.graph_objects.scattergl.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -11555,10 +11555,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattergl.Line instance or dict
+            plotly_study.graph_objects.scattergl.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scattergl.Marker instance or dict
+            plotly_study.graph_objects.scattergl.Marker instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -11583,7 +11583,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattergl.Selected instance or
+            plotly_study.graph_objects.scattergl.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -11596,7 +11596,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattergl.Stream instance or dict
+            plotly_study.graph_objects.scattergl.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -11658,7 +11658,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattergl.Unselected instance or
+            plotly_study.graph_objects.scattergl.Unselected instance or
             dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -11698,16 +11698,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -11864,7 +11864,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scattermapbox.Hoverlabel instance
+            plotly_study.graph_objects.scattermapbox.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -11916,14 +11916,14 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scattermapbox.Line instance or
+            plotly_study.graph_objects.scattermapbox.Line instance or
             dict with compatible properties
         lon
             Sets the longitude coordinates (in degrees East).
         lonsrc
             Sets the source reference on plot.ly for  lon .
         marker
-            plotly.graph_objects.scattermapbox.Marker instance or
+            plotly_study.graph_objects.scattermapbox.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -11951,7 +11951,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scattermapbox.Selected instance or
+            plotly_study.graph_objects.scattermapbox.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -11964,7 +11964,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scattermapbox.Stream instance or
+            plotly_study.graph_objects.scattermapbox.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -12031,7 +12031,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scattermapbox.Unselected instance
+            plotly_study.graph_objects.scattermapbox.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -12041,11 +12041,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -12211,7 +12211,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterpolar.Hoverlabel instance
+            plotly_study.graph_objects.scatterpolar.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -12265,10 +12265,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterpolar.Line instance or dict
+            plotly_study.graph_objects.scatterpolar.Line instance or dict
             with compatible properties
         marker
-            plotly.graph_objects.scatterpolar.Marker instance or
+            plotly_study.graph_objects.scatterpolar.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -12306,7 +12306,7 @@ class Figure(BaseFigure):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatterpolar.Selected instance or
+            plotly_study.graph_objects.scatterpolar.Selected instance or
             dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -12319,7 +12319,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterpolar.Stream instance or
+            plotly_study.graph_objects.scatterpolar.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -12398,7 +12398,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterpolar.Unselected instance
+            plotly_study.graph_objects.scatterpolar.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -12408,11 +12408,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -12588,7 +12588,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterpolargl.Hoverlabel instance
+            plotly_study.graph_objects.scatterpolargl.Hoverlabel instance
             or dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -12636,10 +12636,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterpolargl.Line instance or
+            plotly_study.graph_objects.scatterpolargl.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scatterpolargl.Marker instance or
+            plotly_study.graph_objects.scatterpolargl.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -12677,7 +12677,7 @@ class Figure(BaseFigure):
         rsrc
             Sets the source reference on plot.ly for  r .
         selected
-            plotly.graph_objects.scatterpolargl.Selected instance
+            plotly_study.graph_objects.scatterpolargl.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -12690,7 +12690,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterpolargl.Stream instance or
+            plotly_study.graph_objects.scatterpolargl.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -12769,7 +12769,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterpolargl.Unselected instance
+            plotly_study.graph_objects.scatterpolargl.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -12779,11 +12779,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -12966,7 +12966,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.scatterternary.Hoverlabel instance
+            plotly_study.graph_objects.scatterternary.Hoverlabel instance
             or dict with compatible properties
         hoveron
             Do the hover effects highlight individual points
@@ -13020,10 +13020,10 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.scatterternary.Line instance or
+            plotly_study.graph_objects.scatterternary.Line instance or
             dict with compatible properties
         marker
-            plotly.graph_objects.scatterternary.Marker instance or
+            plotly_study.graph_objects.scatterternary.Marker instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -13053,7 +13053,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.scatterternary.Selected instance
+            plotly_study.graph_objects.scatterternary.Selected instance
             or dict with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -13066,7 +13066,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.scatterternary.Stream instance or
+            plotly_study.graph_objects.scatterternary.Stream instance or
             dict with compatible properties
         subplot
             Sets a reference between this trace's data coordinates
@@ -13141,7 +13141,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.scatterternary.Unselected instance
+            plotly_study.graph_objects.scatterternary.Unselected instance
             or dict with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -13151,11 +13151,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -13274,10 +13274,10 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         diagonal
-            plotly.graph_objects.splom.Diagonal instance or dict
+            plotly_study.graph_objects.splom.Diagonal instance or dict
             with compatible properties
         dimensions
-            A tuple of plotly.graph_objects.splom.Dimension
+            A tuple of plotly_study.graph_objects.splom.Dimension
             instances or dicts with compatible properties
         dimensiondefaults
             When used in a template (as
@@ -13292,7 +13292,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.splom.Hoverlabel instance or dict
+            plotly_study.graph_objects.splom.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -13335,7 +13335,7 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         marker
-            plotly.graph_objects.splom.Marker instance or dict with
+            plotly_study.graph_objects.splom.Marker instance or dict with
             compatible properties
         meta
             Assigns extra meta information associated with this
@@ -13358,7 +13358,7 @@ class Figure(BaseFigure):
         opacity
             Sets the opacity of the trace.
         selected
-            plotly.graph_objects.splom.Selected instance or dict
+            plotly_study.graph_objects.splom.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -13377,7 +13377,7 @@ class Figure(BaseFigure):
             Determines whether or not subplots on the upper half
             from the diagonal are displayed.
         stream
-            plotly.graph_objects.splom.Stream instance or dict with
+            plotly_study.graph_objects.splom.Stream instance or dict with
             compatible properties
         text
             Sets text elements associated with each (x,y) pair to
@@ -13410,7 +13410,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.splom.Unselected instance or dict
+            plotly_study.graph_objects.splom.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -13436,11 +13436,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -13586,7 +13586,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.streamtube.ColorBar instance or
+            plotly_study.graph_objects.streamtube.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -13615,7 +13615,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.streamtube.Hoverlabel instance or
+            plotly_study.graph_objects.streamtube.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -13654,10 +13654,10 @@ class Figure(BaseFigure):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.streamtube.Lighting instance or
+            plotly_study.graph_objects.streamtube.Lighting instance or
             dict with compatible properties
         lightposition
-            plotly.graph_objects.streamtube.Lightposition instance
+            plotly_study.graph_objects.streamtube.Lightposition instance
             or dict with compatible properties
         maxdisplayed
             The maximum number of displayed segments in a
@@ -13706,10 +13706,10 @@ class Figure(BaseFigure):
             1, which avoids two max divergence tubes from touching
             at adjacent starting positions.
         starts
-            plotly.graph_objects.streamtube.Starts instance or dict
+            plotly_study.graph_objects.streamtube.Starts instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.streamtube.Stream instance or dict
+            plotly_study.graph_objects.streamtube.Stream instance or dict
             with compatible properties
         text
             Sets a text element associated with this trace. If
@@ -13770,11 +13770,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -13906,7 +13906,7 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.sunburst.Domain instance or dict
+            plotly_study.graph_objects.sunburst.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -13916,7 +13916,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.sunburst.Hoverlabel instance or
+            plotly_study.graph_objects.sunburst.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -13968,7 +13968,7 @@ class Figure(BaseFigure):
         labelssrc
             Sets the source reference on plot.ly for  labels .
         leaf
-            plotly.graph_objects.sunburst.Leaf instance or dict
+            plotly_study.graph_objects.sunburst.Leaf instance or dict
             with compatible properties
         level
             Sets the level from which this trace hierarchy is
@@ -13977,7 +13977,7 @@ class Figure(BaseFigure):
             filled in, otherwise plotly attempts to find a matching
             item in `labels`.
         marker
-            plotly.graph_objects.sunburst.Marker instance or dict
+            plotly_study.graph_objects.sunburst.Marker instance or dict
             with compatible properties
         maxdepth
             Sets the number of rendered sectors from any given
@@ -14016,7 +14016,7 @@ class Figure(BaseFigure):
         parentssrc
             Sets the source reference on plot.ly for  parents .
         stream
-            plotly.graph_objects.sunburst.Stream instance or dict
+            plotly_study.graph_objects.sunburst.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -14087,11 +14087,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -14244,7 +14244,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.surface.ColorBar instance or dict
+            plotly_study.graph_objects.surface.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -14262,7 +14262,7 @@ class Figure(BaseFigure):
             Determines whether or not gaps (i.e. {nan} or missing
             values) in the `z` data are filled in.
         contours
-            plotly.graph_objects.surface.Contours instance or dict
+            plotly_study.graph_objects.surface.Contours instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -14284,7 +14284,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.surface.Hoverlabel instance or
+            plotly_study.graph_objects.surface.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -14323,10 +14323,10 @@ class Figure(BaseFigure):
         idssrc
             Sets the source reference on plot.ly for  ids .
         lighting
-            plotly.graph_objects.surface.Lighting instance or dict
+            plotly_study.graph_objects.surface.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.surface.Lightposition instance or
+            plotly_study.graph_objects.surface.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -14368,7 +14368,7 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         stream
-            plotly.graph_objects.surface.Stream instance or dict
+            plotly_study.graph_objects.surface.Stream instance or dict
             with compatible properties
         surfacecolor
             Sets the surface color values, used for setting a color
@@ -14431,11 +14431,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -14533,7 +14533,7 @@ class Figure(BaseFigure):
         Parameters
         ----------
         cells
-            plotly.graph_objects.table.Cells instance or dict with
+            plotly_study.graph_objects.table.Cells instance or dict with
             compatible properties
         columnorder
             Specifies the rendered order of the data columns; for
@@ -14556,10 +14556,10 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.table.Domain instance or dict with
+            plotly_study.graph_objects.table.Domain instance or dict with
             compatible properties
         header
-            plotly.graph_objects.table.Header instance or dict with
+            plotly_study.graph_objects.table.Header instance or dict with
             compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -14569,7 +14569,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.table.Hoverlabel instance or dict
+            plotly_study.graph_objects.table.Hoverlabel instance or dict
             with compatible properties
         ids
             Assigns id labels to each datum. These ids for object
@@ -14596,7 +14596,7 @@ class Figure(BaseFigure):
             Sets the trace name. The trace name appear as the
             legend item and on hover.
         stream
-            plotly.graph_objects.table.Stream instance or dict with
+            plotly_study.graph_objects.table.Stream instance or dict with
             compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -14628,11 +14628,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -14741,7 +14741,7 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         domain
-            plotly.graph_objects.treemap.Domain instance or dict
+            plotly_study.graph_objects.treemap.Domain instance or dict
             with compatible properties
         hoverinfo
             Determines which trace information appear on hover. If
@@ -14751,7 +14751,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.treemap.Hoverlabel instance or
+            plotly_study.graph_objects.treemap.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -14809,7 +14809,7 @@ class Figure(BaseFigure):
             filled in, otherwise plotly attempts to find a matching
             item in `labels`.
         marker
-            plotly.graph_objects.treemap.Marker instance or dict
+            plotly_study.graph_objects.treemap.Marker instance or dict
             with compatible properties
         maxdepth
             Sets the number of rendered sectors from any given
@@ -14848,10 +14848,10 @@ class Figure(BaseFigure):
         parentssrc
             Sets the source reference on plot.ly for  parents .
         pathbar
-            plotly.graph_objects.treemap.Pathbar instance or dict
+            plotly_study.graph_objects.treemap.Pathbar instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.treemap.Stream instance or dict
+            plotly_study.graph_objects.treemap.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each sector. If
@@ -14889,7 +14889,7 @@ class Figure(BaseFigure):
             Sets the source reference on plot.ly for  texttemplate
             .
         tiling
-            plotly.graph_objects.treemap.Tiling instance or dict
+            plotly_study.graph_objects.treemap.Tiling instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -14927,11 +14927,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -15066,7 +15066,7 @@ class Figure(BaseFigure):
             estimate. By default, the bandwidth is determined by
             Silverman's rule of thumb.
         box
-            plotly.graph_objects.violin.Box instance or dict with
+            plotly_study.graph_objects.violin.Box instance or dict with
             compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -15087,7 +15087,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.violin.Hoverlabel instance or dict
+            plotly_study.graph_objects.violin.Hoverlabel instance or dict
             with compatible properties
         hoveron
             Do the hover effects highlight individual violins or
@@ -15139,13 +15139,13 @@ class Figure(BaseFigure):
             the same legend group hide/show at the same time when
             toggling legend items.
         line
-            plotly.graph_objects.violin.Line instance or dict with
+            plotly_study.graph_objects.violin.Line instance or dict with
             compatible properties
         marker
-            plotly.graph_objects.violin.Marker instance or dict
+            plotly_study.graph_objects.violin.Marker instance or dict
             with compatible properties
         meanline
-            plotly.graph_objects.violin.Meanline instance or dict
+            plotly_study.graph_objects.violin.Meanline instance or dict
             with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -15209,7 +15209,7 @@ class Figure(BaseFigure):
             width*count* means the violins are scaled by the number
             of sample points makingup each violin.
         selected
-            plotly.graph_objects.violin.Selected instance or dict
+            plotly_study.graph_objects.violin.Selected instance or dict
             with compatible properties
         selectedpoints
             Array containing integer indices of selected points.
@@ -15241,7 +15241,7 @@ class Figure(BaseFigure):
             settings, use mode "manual" and fill in the `span`
             attribute.
         stream
-            plotly.graph_objects.violin.Stream instance or dict
+            plotly_study.graph_objects.violin.Stream instance or dict
             with compatible properties
         text
             Sets the text elements associated with each sample
@@ -15275,7 +15275,7 @@ class Figure(BaseFigure):
             preserve user-driven changes if you give each trace a
             `uid` that stays with it as it moves.
         unselected
-            plotly.graph_objects.violin.Unselected instance or dict
+            plotly_study.graph_objects.violin.Unselected instance or dict
             with compatible properties
         visible
             Determines whether or not this trace is visible. If
@@ -15316,16 +15316,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -15471,7 +15471,7 @@ class Figure(BaseFigure):
             chosen according to whether numbers in the `color`
             array are all positive, all negative or mixed.
         caps
-            plotly.graph_objects.volume.Caps instance or dict with
+            plotly_study.graph_objects.volume.Caps instance or dict with
             compatible properties
         cauto
             Determines whether or not the color domain is computed
@@ -15499,7 +15499,7 @@ class Figure(BaseFigure):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.volume.ColorBar instance or dict
+            plotly_study.graph_objects.volume.ColorBar instance or dict
             with compatible properties
         colorscale
             Sets the colorscale. The colorscale must be an array
@@ -15514,7 +15514,7 @@ class Figure(BaseFigure):
             d,Bluered,RdBu,Reds,Blues,Picnic,Rainbow,Portland,Jet,H
             ot,Blackbody,Earth,Electric,Viridis,Cividis.
         contour
-            plotly.graph_objects.volume.Contour instance or dict
+            plotly_study.graph_objects.volume.Contour instance or dict
             with compatible properties
         customdata
             Assigns extra data each datum. This may be useful when
@@ -15535,7 +15535,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.volume.Hoverlabel instance or dict
+            plotly_study.graph_objects.volume.Hoverlabel instance or dict
             with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -15578,10 +15578,10 @@ class Figure(BaseFigure):
         isomin
             Sets the minimum boundary for iso-surface plot.
         lighting
-            plotly.graph_objects.volume.Lighting instance or dict
+            plotly_study.graph_objects.volume.Lighting instance or dict
             with compatible properties
         lightposition
-            plotly.graph_objects.volume.Lightposition instance or
+            plotly_study.graph_objects.volume.Lightposition instance or
             dict with compatible properties
         meta
             Assigns extra meta information associated with this
@@ -15634,16 +15634,16 @@ class Figure(BaseFigure):
             Determines whether or not a colorbar is displayed for
             this trace.
         slices
-            plotly.graph_objects.volume.Slices instance or dict
+            plotly_study.graph_objects.volume.Slices instance or dict
             with compatible properties
         spaceframe
-            plotly.graph_objects.volume.Spaceframe instance or dict
+            plotly_study.graph_objects.volume.Spaceframe instance or dict
             with compatible properties
         stream
-            plotly.graph_objects.volume.Stream instance or dict
+            plotly_study.graph_objects.volume.Stream instance or dict
             with compatible properties
         surface
-            plotly.graph_objects.volume.Surface instance or dict
+            plotly_study.graph_objects.volume.Surface instance or dict
             with compatible properties
         text
             Sets the text elements associated with the vertices. If
@@ -15698,11 +15698,11 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
 
         Returns
         -------
@@ -15857,7 +15857,7 @@ class Figure(BaseFigure):
             and tick labels, make sure to set `xaxis.layer` and
             `yaxis.layer` to *below traces*.
         connector
-            plotly.graph_objects.waterfall.Connector instance or
+            plotly_study.graph_objects.waterfall.Connector instance or
             dict with compatible properties
         constraintext
             Constrain the size of text inside or outside a bar to
@@ -15870,7 +15870,7 @@ class Figure(BaseFigure):
         customdatasrc
             Sets the source reference on plot.ly for  customdata .
         decreasing
-            plotly.graph_objects.waterfall.Decreasing instance or
+            plotly_study.graph_objects.waterfall.Decreasing instance or
             dict with compatible properties
         dx
             Sets the x coordinate step. See `x0` for more info.
@@ -15884,7 +15884,7 @@ class Figure(BaseFigure):
         hoverinfosrc
             Sets the source reference on plot.ly for  hoverinfo .
         hoverlabel
-            plotly.graph_objects.waterfall.Hoverlabel instance or
+            plotly_study.graph_objects.waterfall.Hoverlabel instance or
             dict with compatible properties
         hovertemplate
             Template string used for rendering the information that
@@ -15929,7 +15929,7 @@ class Figure(BaseFigure):
         idssrc
             Sets the source reference on plot.ly for  ids .
         increasing
-            plotly.graph_objects.waterfall.Increasing instance or
+            plotly_study.graph_objects.waterfall.Increasing instance or
             dict with compatible properties
         insidetextanchor
             Determines if texts are kept at center or start/end
@@ -15996,7 +15996,7 @@ class Figure(BaseFigure):
             Determines whether or not an item corresponding to this
             trace is shown in the legend.
         stream
-            plotly.graph_objects.waterfall.Stream instance or dict
+            plotly_study.graph_objects.waterfall.Stream instance or dict
             with compatible properties
         text
             Sets text elements associated with each (x,y) pair. If
@@ -16053,7 +16053,7 @@ class Figure(BaseFigure):
             Sets the source reference on plot.ly for  texttemplate
             .
         totals
-            plotly.graph_objects.waterfall.Totals instance or dict
+            plotly_study.graph_objects.waterfall.Totals instance or dict
             with compatible properties
         uid
             Assign an id to this trace, Use this to provide object
@@ -16115,16 +16115,16 @@ class Figure(BaseFigure):
         row : int or None (default)
             Subplot row index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         col : int or None (default)
             Subplot col index (starting from 1) for the trace to be
             added. Only valid if figure was created using
-            `plotly.tools.make_subplots`
+            `plotly_study.tools.make_subplots`
         secondary_y: boolean or None (default None)
             If True, associate this trace with the secondary y-axis of the
             subplot at the specified row and col. Only valid if all of the
             following conditions are satisfied:
-              * The figure was created using `plotly.subplots.make_subplots`.
+              * The figure was created using `plotly_study.subplots.make_subplots`.
               * The row and col arguments are not None
               * The subplot at the specified row and col has type xy
                 (which is the default) and secondary_y True.  These
@@ -16217,7 +16217,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of coloraxis objects to select.
             To select coloraxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all coloraxis objects are selected.
         Returns
         -------
@@ -16246,7 +16246,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of coloraxis objects to select.
             To select coloraxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all coloraxis objects are selected.
         Returns
         -------
@@ -16684,9 +16684,9 @@ class Figure(BaseFigure):
                 'Set the URL to topojson used in geo charts.',
                 'By default, the topojson files are fetched from cdn.plot.ly.',
                 'For example, set this option to:',
-                '<path-to-plotly.js>/dist/topojson/',
+                '<path-to-plotly_study.js>/dist/topojson/',
                 'to render geographical feature using the topojson files',
-                'that ship with the plotly.js module.'
+                'that ship with the plotly_study.js module.'
             ].join(' ')
         },
 
@@ -16696,7 +16696,7 @@ class Figure(BaseFigure):
             description: [
                 'Mapbox access token (required to plot mapbox trace types)',
                 'If using an Mapbox Atlas server, set this option to \'\'',
-                'so that plotly.js won\'t attempt to authenticate to the public Mapbox server.'
+                'so that plotly_study.js won\'t attempt to authenticate to the public Mapbox server.'
             ].join(' ')
         },
 
@@ -16705,7 +16705,7 @@ class Figure(BaseFigure):
             dflt: 1,
             description: [
                 'Turn all console logging on or off (errors will be thrown)',
-                'This should ONLY be set via Plotly.setPlotConfig',
+                'This should ONLY be set via plotly_study.setPlotConfig',
                 'Available levels:',
                 '0: no logs',
                 '1: warnings and errors, but not informational messages',
@@ -16878,7 +16878,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of coloraxis objects to select.
             To select coloraxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all coloraxis objects are selected.
         **kwargs
             Additional property updates to apply to each selected
@@ -16912,7 +16912,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of geo objects to select.
             To select geo objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all geo objects are selected.
         Returns
         -------
@@ -16941,7 +16941,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of geo objects to select.
             To select geo objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all geo objects are selected.
         Returns
         -------
@@ -16978,7 +16978,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of geo objects to select.
             To select geo objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all geo objects are selected.
         **kwargs
             Additional property updates to apply to each selected
@@ -17012,7 +17012,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of mapbox objects to select.
             To select mapbox objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all mapbox objects are selected.
         Returns
         -------
@@ -17041,7 +17041,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of mapbox objects to select.
             To select mapbox objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all mapbox objects are selected.
         Returns
         -------
@@ -17078,7 +17078,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of mapbox objects to select.
             To select mapbox objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all mapbox objects are selected.
         **kwargs
             Additional property updates to apply to each selected
@@ -17112,7 +17112,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of polar objects to select.
             To select polar objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all polar objects are selected.
         Returns
         -------
@@ -17141,7 +17141,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of polar objects to select.
             To select polar objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all polar objects are selected.
         Returns
         -------
@@ -17178,7 +17178,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of polar objects to select.
             To select polar objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all polar objects are selected.
         **kwargs
             Additional property updates to apply to each selected
@@ -17212,7 +17212,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of scene objects to select.
             To select scene objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all scene objects are selected.
         Returns
         -------
@@ -17241,7 +17241,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of scene objects to select.
             To select scene objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all scene objects are selected.
         Returns
         -------
@@ -17278,7 +17278,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of scene objects to select.
             To select scene objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all scene objects are selected.
         **kwargs
             Additional property updates to apply to each selected
@@ -17312,7 +17312,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of ternary objects to select.
             To select ternary objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all ternary objects are selected.
         Returns
         -------
@@ -17341,7 +17341,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of ternary objects to select.
             To select ternary objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all ternary objects are selected.
         Returns
         -------
@@ -17378,7 +17378,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of ternary objects to select.
             To select ternary objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all ternary objects are selected.
         **kwargs
             Additional property updates to apply to each selected
@@ -17412,7 +17412,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of xaxis objects to select.
             To select xaxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all xaxis objects are selected.
         Returns
         -------
@@ -17441,7 +17441,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of xaxis objects to select.
             To select xaxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all xaxis objects are selected.
         Returns
         -------
@@ -17478,7 +17478,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of xaxis objects to select.
             To select xaxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all xaxis objects are selected.
         **kwargs
             Additional property updates to apply to each selected
@@ -17512,7 +17512,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of yaxis objects to select.
             To select yaxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all yaxis objects are selected.
         secondary_y: boolean or None (default None)
             * If True, only select yaxis objects associated with the secondary
@@ -17523,7 +17523,7 @@ class Figure(BaseFigure):
               a secondary y-axis condition. 
             
             To select yaxis objects by secondary y-axis, the Figure must
-            have been created using plotly.subplots.make_subplots. See
+            have been created using plotly_study.subplots.make_subplots. See
             the docstring for the specs argument to make_subplots for more
             info on creating subplots with secondary y-axes.
         Returns
@@ -17555,7 +17555,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of yaxis objects to select.
             To select yaxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all yaxis objects are selected.
         secondary_y: boolean or None (default None)
             * If True, only select yaxis objects associated with the secondary
@@ -17566,7 +17566,7 @@ class Figure(BaseFigure):
               a secondary y-axis condition. 
             
             To select yaxis objects by secondary y-axis, the Figure must
-            have been created using plotly.subplots.make_subplots. See
+            have been created using plotly_study.subplots.make_subplots. See
             the docstring for the specs argument to make_subplots for more
             info on creating subplots with secondary y-axes.
         Returns
@@ -17613,7 +17613,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of yaxis objects to select.
             To select yaxis objects by row and column, the Figure
-            must have been created using plotly.subplots.make_subplots.
+            must have been created using plotly_study.subplots.make_subplots.
             If None (the default), all yaxis objects are selected.
         secondary_y: boolean or None (default None)
             * If True, only select yaxis objects associated with the secondary
@@ -17624,7 +17624,7 @@ class Figure(BaseFigure):
               a secondary y-axis condition. 
             
             To select yaxis objects by secondary y-axis, the Figure must
-            have been created using plotly.subplots.make_subplots. See
+            have been created using plotly_study.subplots.make_subplots. See
             the docstring for the specs argument to make_subplots for more
             info on creating subplots with secondary y-axes.
         **kwargs
@@ -17660,7 +17660,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of annotations to select.
             To select annotations by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             annotation that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all annotations are selected.
         secondary_y: boolean or None (default None)
@@ -17672,7 +17672,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select annotations by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -17705,7 +17705,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of annotations to select.
             To select annotations by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             annotations that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all annotations are selected.
         secondary_y: boolean or None (default None)
@@ -17717,7 +17717,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select annotations by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -17757,7 +17757,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of annotations to select.
             To select annotations by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             annotation that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all annotations are selected.
         secondary_y: boolean or None (default None)
@@ -17769,7 +17769,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select annotations by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         **kwargs
@@ -17940,7 +17940,7 @@ class Figure(BaseFigure):
             (default) lets the text set the box height. Taller text
             will be clipped.
         hoverlabel
-            plotly.graph_objects.layout.annotation.Hoverlabel
+            plotly_study.graph_objects.layout.annotation.Hoverlabel
             instance or dict with compatible properties
         hovertext
             Sets text to appear when hovering over this annotation.
@@ -18163,7 +18163,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of images to select.
             To select images by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             image that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all images are selected.
         secondary_y: boolean or None (default None)
@@ -18175,7 +18175,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select images by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -18208,7 +18208,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of images to select.
             To select images by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             images that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all images are selected.
         secondary_y: boolean or None (default None)
@@ -18220,7 +18220,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select images by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -18256,7 +18256,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of images to select.
             To select images by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             image that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all images are selected.
         secondary_y: boolean or None (default None)
@@ -18268,7 +18268,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select images by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         **kwargs
@@ -18437,7 +18437,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of shapes to select.
             To select shapes by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             shape that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all shapes are selected.
         secondary_y: boolean or None (default None)
@@ -18449,7 +18449,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select shapes by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -18480,7 +18480,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of shapes to select.
             To select shapes by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             shapes that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all shapes are selected.
         secondary_y: boolean or None (default None)
@@ -18492,7 +18492,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select shapes by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         Returns
@@ -18528,7 +18528,7 @@ class Figure(BaseFigure):
         row, col: int or None (default None)
             Subplot row and column index of shapes to select.
             To select shapes by row and column, the Figure must have been
-            created using plotly.subplots.make_subplots.  To select only those
+            created using plotly_study.subplots.make_subplots.  To select only those
             shape that are in paper coordinates, set row and col to the
             string 'paper'.  If None (the default), all shapes are selected.
         secondary_y: boolean or None (default None)
@@ -18540,7 +18540,7 @@ class Figure(BaseFigure):
               y-axis.
 
             To select shapes by secondary y-axis, the Figure must have been
-            created using plotly.subplots.make_subplots. See the docstring
+            created using plotly_study.subplots.make_subplots. See the docstring
             for the specs argument to make_subplots for more info on
             creating subplots with secondary y-axes.
         **kwargs
@@ -18600,7 +18600,7 @@ class Figure(BaseFigure):
             Specifies whether shapes are drawn below or above
             traces.
         line
-            plotly.graph_objects.layout.shape.Line instance or dict
+            plotly_study.graph_objects.layout.shape.Line instance or dict
             with compatible properties
         name
             When used in a template, named items are created in the

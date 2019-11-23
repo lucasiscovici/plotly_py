@@ -13,7 +13,7 @@ class ThresholdValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             line
-                plotly.graph_objects.indicator.gauge.threshold.
+                plotly_study.graph_objects.indicator.gauge.threshold.
                 Line instance or dict with compatible
                 properties
             thickness
@@ -62,7 +62,7 @@ class StepsValidator(_plotly_utils.basevalidators.CompoundArrayValidator):
             color
                 Sets the background color of the arc.
             line
-                plotly.graph_objects.indicator.gauge.step.Line
+                plotly_study.graph_objects.indicator.gauge.step.Line
                 instance or dict with compatible properties
             name
                 When used in a template, named items are
@@ -173,7 +173,7 @@ class BarValidator(_plotly_utils.basevalidators.CompoundValidator):
             color
                 Sets the background color of the arc.
             line
-                plotly.graph_objects.indicator.gauge.bar.Line
+                plotly_study.graph_objects.indicator.gauge.bar.Line
                 instance or dict with compatible properties
             thickness
                 Sets the thickness of the bar as a fraction of
@@ -293,7 +293,7 @@ class AxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.indicator.gauge
+                A tuple of plotly_study.graph_objects.indicator.gauge
                 .axis.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults

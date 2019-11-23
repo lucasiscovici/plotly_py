@@ -2,10 +2,10 @@ from __future__ import absolute_import
 
 from numbers import Number
 
-import plotly.exceptions
+import plotly_study.exceptions
 
-import plotly.colors as clrs
-from plotly.graph_objs import graph_objs
+import plotly_study.colors as clrs
+from plotly_study.graph_objs import graph_objs
 
 
 def make_linear_colorscale(colors):
@@ -56,7 +56,7 @@ def create_2d_density(
 
     Example 1: Simple 2D Density Plot
 
-    >>> from plotly.figure_factory create_2d_density
+    >>> from plotly_study.figure_factory create_2d_density
 
     >>> import numpy as np
 
@@ -73,7 +73,7 @@ def create_2d_density(
 
     Example 2: Using Parameters
 
-    >>> from plotly.figure_factory create_2d_density
+    >>> from plotly_study.figure_factory create_2d_density
 
     >>> import numpy as np
 
@@ -97,13 +97,13 @@ def create_2d_density(
     # validate x and y are filled with numbers only
     for array in [x, y]:
         if not all(isinstance(element, Number) for element in array):
-            raise plotly.exceptions.PlotlyError(
+            raise plotly_study.exceptions.PlotlyError(
                 "All elements of your 'x' and 'y' lists must be numbers."
             )
 
     # validate x and y are the same length
     if len(x) != len(y):
-        raise plotly.exceptions.PlotlyError(
+        raise plotly_study.exceptions.PlotlyError(
             "Both lists 'x' and 'y' must be the same length."
         )
 

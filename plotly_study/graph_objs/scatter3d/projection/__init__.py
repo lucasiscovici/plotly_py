@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -94,7 +94,7 @@ class Z(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scatter3d.projection.Z
+            an instance of plotly_study.graph_objs.scatter3d.projection.Z
         opacity
             Sets the projection color.
         scale
@@ -121,9 +121,9 @@ class Z(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scatter3d.projection.Z 
+The first argument to the plotly_study.graph_objs.scatter3d.projection.Z 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scatter3d.projection.Z"""
+an instance of plotly_study.graph_objs.scatter3d.projection.Z"""
             )
 
         # Handle skip_invalid
@@ -132,7 +132,7 @@ an instance of plotly.graph_objs.scatter3d.projection.Z"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scatter3d.projection import z as v_z
+        from plotly_study.validators.scatter3d.projection import z as v_z
 
         # Initialize validators
         # ---------------------
@@ -158,7 +158,7 @@ an instance of plotly.graph_objs.scatter3d.projection.Z"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -254,7 +254,7 @@ class Y(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scatter3d.projection.Y
+            an instance of plotly_study.graph_objs.scatter3d.projection.Y
         opacity
             Sets the projection color.
         scale
@@ -281,9 +281,9 @@ class Y(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scatter3d.projection.Y 
+The first argument to the plotly_study.graph_objs.scatter3d.projection.Y 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scatter3d.projection.Y"""
+an instance of plotly_study.graph_objs.scatter3d.projection.Y"""
             )
 
         # Handle skip_invalid
@@ -292,7 +292,7 @@ an instance of plotly.graph_objs.scatter3d.projection.Y"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scatter3d.projection import y as v_y
+        from plotly_study.validators.scatter3d.projection import y as v_y
 
         # Initialize validators
         # ---------------------
@@ -318,7 +318,7 @@ an instance of plotly.graph_objs.scatter3d.projection.Y"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -414,7 +414,7 @@ class X(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.scatter3d.projection.X
+            an instance of plotly_study.graph_objs.scatter3d.projection.X
         opacity
             Sets the projection color.
         scale
@@ -441,9 +441,9 @@ class X(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scatter3d.projection.X 
+The first argument to the plotly_study.graph_objs.scatter3d.projection.X 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scatter3d.projection.X"""
+an instance of plotly_study.graph_objs.scatter3d.projection.X"""
             )
 
         # Handle skip_invalid
@@ -452,7 +452,7 @@ an instance of plotly.graph_objs.scatter3d.projection.X"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scatter3d.projection import x as v_x
+        from plotly_study.validators.scatter3d.projection import x as v_x
 
         # Initialize validators
         # ---------------------

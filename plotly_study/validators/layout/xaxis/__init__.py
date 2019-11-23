@@ -114,7 +114,7 @@ class TitleValidator(_plotly_utils.basevalidators.TitleValidator):
                 constrained within the margins, so the actual
                 standoff distance is always less than the set
                 or default value. By setting `standoff` and
-                turning on `automargin`, plotly.js will push
+                turning on `automargin`, plotly_study.js will push
                 the margins to fit the axis title at given
                 standoff distance.
             text
@@ -765,7 +765,7 @@ class RangesliderValidator(_plotly_utils.basevalidators.CompoundValidator):
                 be visible. If visible, perpendicular axes will
                 be set to `fixedrange`
             yaxis
-                plotly.graph_objects.layout.xaxis.rangeslider.Y
+                plotly_study.graph_objects.layout.xaxis.rangeslider.Y
                 Axis instance or dict with compatible
                 properties
 """,

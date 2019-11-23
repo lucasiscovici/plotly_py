@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -36,7 +36,7 @@ class Title(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.title.Font
+          - An instance of plotly_study.graph_objs.indicator.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -64,7 +64,7 @@ class Title(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.title.Font
+        plotly_study.graph_objs.indicator.title.Font
         """
         return self["font"]
 
@@ -122,7 +122,7 @@ class Title(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.Title
+            an instance of plotly_study.graph_objs.indicator.Title
         align
             Sets the horizontal alignment of the title. It defaults
             to `center` except for bullet charts for which it
@@ -149,9 +149,9 @@ class Title(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.Title 
+The first argument to the plotly_study.graph_objs.indicator.Title 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.Title"""
+an instance of plotly_study.graph_objs.indicator.Title"""
             )
 
         # Handle skip_invalid
@@ -160,7 +160,7 @@ an instance of plotly.graph_objs.indicator.Title"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator import title as v_title
+        from plotly_study.validators.indicator import title as v_title
 
         # Initialize validators
         # ---------------------
@@ -186,7 +186,7 @@ an instance of plotly.graph_objs.indicator.Title"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -265,7 +265,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.Stream
+            an instance of plotly_study.graph_objs.indicator.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -293,9 +293,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.Stream 
+The first argument to the plotly_study.graph_objs.indicator.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.Stream"""
+an instance of plotly_study.graph_objs.indicator.Stream"""
             )
 
         # Handle skip_invalid
@@ -304,7 +304,7 @@ an instance of plotly.graph_objs.indicator.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator import stream as v_stream
+        from plotly_study.validators.indicator import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -327,7 +327,7 @@ an instance of plotly.graph_objs.indicator.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -342,7 +342,7 @@ class Number(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.number.Font
+          - An instance of plotly_study.graph_objs.indicator.number.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -370,7 +370,7 @@ class Number(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.number.Font
+        plotly_study.graph_objs.indicator.number.Font
         """
         return self["font"]
 
@@ -478,7 +478,7 @@ class Number(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.Number
+            an instance of plotly_study.graph_objs.indicator.Number
         font
             Set the font used to display main number
         prefix
@@ -508,9 +508,9 @@ class Number(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.Number 
+The first argument to the plotly_study.graph_objs.indicator.Number 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.Number"""
+an instance of plotly_study.graph_objs.indicator.Number"""
             )
 
         # Handle skip_invalid
@@ -519,7 +519,7 @@ an instance of plotly.graph_objs.indicator.Number"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator import number as v_number
+        from plotly_study.validators.indicator import number as v_number
 
         # Initialize validators
         # ---------------------
@@ -548,7 +548,7 @@ an instance of plotly.graph_objs.indicator.Number"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -561,7 +561,7 @@ class Gauge(_BaseTraceHierarchyType):
         """
         The 'axis' property is an instance of Axis
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.gauge.Axis
+          - An instance of plotly_study.graph_objs.indicator.gauge.Axis
           - A dict of string/value properties that will be passed
             to the Axis constructor
     
@@ -664,7 +664,7 @@ class Gauge(_BaseTraceHierarchyType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.indicator.gauge
+                    A tuple of plotly_study.graph_objects.indicator.gauge
                     .axis.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -720,7 +720,7 @@ class Gauge(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.gauge.Axis
+        plotly_study.graph_objs.indicator.gauge.Axis
         """
         return self["axis"]
 
@@ -737,7 +737,7 @@ class Gauge(_BaseTraceHierarchyType):
     
         The 'bar' property is an instance of Bar
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.gauge.Bar
+          - An instance of plotly_study.graph_objs.indicator.gauge.Bar
           - A dict of string/value properties that will be passed
             to the Bar constructor
     
@@ -746,7 +746,7 @@ class Gauge(_BaseTraceHierarchyType):
                 color
                     Sets the background color of the arc.
                 line
-                    plotly.graph_objects.indicator.gauge.bar.Line
+                    plotly_study.graph_objects.indicator.gauge.bar.Line
                     instance or dict with compatible properties
                 thickness
                     Sets the thickness of the bar as a fraction of
@@ -754,7 +754,7 @@ class Gauge(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.gauge.Bar
+        plotly_study.graph_objs.indicator.gauge.Bar
         """
         return self["bar"]
 
@@ -928,7 +928,7 @@ class Gauge(_BaseTraceHierarchyType):
         """
         The 'steps' property is a tuple of instances of
         Step that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.indicator.gauge.Step
+          - A list or tuple of instances of plotly_study.graph_objs.indicator.gauge.Step
           - A list or tuple of dicts of string/value properties that
             will be passed to the Step constructor
     
@@ -937,7 +937,7 @@ class Gauge(_BaseTraceHierarchyType):
                 color
                     Sets the background color of the arc.
                 line
-                    plotly.graph_objects.indicator.gauge.step.Line
+                    plotly_study.graph_objects.indicator.gauge.step.Line
                     instance or dict with compatible properties
                 name
                     When used in a template, named items are
@@ -968,7 +968,7 @@ class Gauge(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.indicator.gauge.Step]
+        tuple[plotly_study.graph_objs.indicator.gauge.Step]
         """
         return self["steps"]
 
@@ -988,7 +988,7 @@ class Gauge(_BaseTraceHierarchyType):
     
         The 'stepdefaults' property is an instance of Step
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.gauge.Step
+          - An instance of plotly_study.graph_objs.indicator.gauge.Step
           - A dict of string/value properties that will be passed
             to the Step constructor
     
@@ -996,7 +996,7 @@ class Gauge(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.gauge.Step
+        plotly_study.graph_objs.indicator.gauge.Step
         """
         return self["stepdefaults"]
 
@@ -1011,14 +1011,14 @@ class Gauge(_BaseTraceHierarchyType):
         """
         The 'threshold' property is an instance of Threshold
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.gauge.Threshold
+          - An instance of plotly_study.graph_objs.indicator.gauge.Threshold
           - A dict of string/value properties that will be passed
             to the Threshold constructor
     
             Supported dict properties:
                 
                 line
-                    plotly.graph_objects.indicator.gauge.threshold.
+                    plotly_study.graph_objects.indicator.gauge.threshold.
                     Line instance or dict with compatible
                     properties
                 thickness
@@ -1029,7 +1029,7 @@ class Gauge(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.gauge.Threshold
+        plotly_study.graph_objs.indicator.gauge.Threshold
         """
         return self["threshold"]
 
@@ -1049,7 +1049,7 @@ class Gauge(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         axis
-            plotly.graph_objects.indicator.gauge.Axis instance or
+            plotly_study.graph_objects.indicator.gauge.Axis instance or
             dict with compatible properties
         bar
             Set the appearance of the gauge's value
@@ -1063,7 +1063,7 @@ class Gauge(_BaseTraceHierarchyType):
         shape
             Set the shape of the gauge
         steps
-            A tuple of plotly.graph_objects.indicator.gauge.Step
+            A tuple of plotly_study.graph_objects.indicator.gauge.Step
             instances or dicts with compatible properties
         stepdefaults
             When used in a template (as
@@ -1071,7 +1071,7 @@ class Gauge(_BaseTraceHierarchyType):
             sets the default property values to use for elements of
             indicator.gauge.steps
         threshold
-            plotly.graph_objects.indicator.gauge.Threshold instance
+            plotly_study.graph_objects.indicator.gauge.Threshold instance
             or dict with compatible properties
         """
 
@@ -1098,9 +1098,9 @@ class Gauge(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.Gauge
+            an instance of plotly_study.graph_objs.indicator.Gauge
         axis
-            plotly.graph_objects.indicator.gauge.Axis instance or
+            plotly_study.graph_objects.indicator.gauge.Axis instance or
             dict with compatible properties
         bar
             Set the appearance of the gauge's value
@@ -1114,7 +1114,7 @@ class Gauge(_BaseTraceHierarchyType):
         shape
             Set the shape of the gauge
         steps
-            A tuple of plotly.graph_objects.indicator.gauge.Step
+            A tuple of plotly_study.graph_objects.indicator.gauge.Step
             instances or dicts with compatible properties
         stepdefaults
             When used in a template (as
@@ -1122,7 +1122,7 @@ class Gauge(_BaseTraceHierarchyType):
             sets the default property values to use for elements of
             indicator.gauge.steps
         threshold
-            plotly.graph_objects.indicator.gauge.Threshold instance
+            plotly_study.graph_objects.indicator.gauge.Threshold instance
             or dict with compatible properties
 
         Returns
@@ -1142,9 +1142,9 @@ class Gauge(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.Gauge 
+The first argument to the plotly_study.graph_objs.indicator.Gauge 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.Gauge"""
+an instance of plotly_study.graph_objs.indicator.Gauge"""
             )
 
         # Handle skip_invalid
@@ -1153,7 +1153,7 @@ an instance of plotly.graph_objs.indicator.Gauge"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator import gauge as v_gauge
+        from plotly_study.validators.indicator import gauge as v_gauge
 
         # Initialize validators
         # ---------------------
@@ -1197,7 +1197,7 @@ an instance of plotly.graph_objs.indicator.Gauge"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1332,7 +1332,7 @@ class Domain(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.Domain
+            an instance of plotly_study.graph_objs.indicator.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this indicator trace .
@@ -1363,9 +1363,9 @@ class Domain(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.Domain 
+The first argument to the plotly_study.graph_objs.indicator.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.Domain"""
+an instance of plotly_study.graph_objs.indicator.Domain"""
             )
 
         # Handle skip_invalid
@@ -1374,7 +1374,7 @@ an instance of plotly.graph_objs.indicator.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator import domain as v_domain
+        from plotly_study.validators.indicator import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -1403,7 +1403,7 @@ an instance of plotly.graph_objs.indicator.Domain"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1416,7 +1416,7 @@ class Delta(_BaseTraceHierarchyType):
         """
         The 'decreasing' property is an instance of Decreasing
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.delta.Decreasing
+          - An instance of plotly_study.graph_objs.indicator.delta.Decreasing
           - A dict of string/value properties that will be passed
             to the Decreasing constructor
     
@@ -1429,7 +1429,7 @@ class Delta(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.delta.Decreasing
+        plotly_study.graph_objs.indicator.delta.Decreasing
         """
         return self["decreasing"]
 
@@ -1446,7 +1446,7 @@ class Delta(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.delta.Font
+          - An instance of plotly_study.graph_objs.indicator.delta.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1474,7 +1474,7 @@ class Delta(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.delta.Font
+        plotly_study.graph_objs.indicator.delta.Font
         """
         return self["font"]
 
@@ -1489,7 +1489,7 @@ class Delta(_BaseTraceHierarchyType):
         """
         The 'increasing' property is an instance of Increasing
         that may be specified as:
-          - An instance of plotly.graph_objs.indicator.delta.Increasing
+          - An instance of plotly_study.graph_objs.indicator.delta.Increasing
           - A dict of string/value properties that will be passed
             to the Increasing constructor
     
@@ -1502,7 +1502,7 @@ class Delta(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.indicator.delta.Increasing
+        plotly_study.graph_objs.indicator.delta.Increasing
         """
         return self["increasing"]
 
@@ -1608,12 +1608,12 @@ class Delta(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         decreasing
-            plotly.graph_objects.indicator.delta.Decreasing
+            plotly_study.graph_objects.indicator.delta.Decreasing
             instance or dict with compatible properties
         font
             Set the font used to display the delta
         increasing
-            plotly.graph_objects.indicator.delta.Increasing
+            plotly_study.graph_objects.indicator.delta.Increasing
             instance or dict with compatible properties
         position
             Sets the position of delta with respect to the number.
@@ -1648,14 +1648,14 @@ class Delta(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.Delta
+            an instance of plotly_study.graph_objs.indicator.Delta
         decreasing
-            plotly.graph_objects.indicator.delta.Decreasing
+            plotly_study.graph_objects.indicator.delta.Decreasing
             instance or dict with compatible properties
         font
             Set the font used to display the delta
         increasing
-            plotly.graph_objects.indicator.delta.Increasing
+            plotly_study.graph_objects.indicator.delta.Increasing
             instance or dict with compatible properties
         position
             Sets the position of delta with respect to the number.
@@ -1687,9 +1687,9 @@ class Delta(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.Delta 
+The first argument to the plotly_study.graph_objs.indicator.Delta 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.Delta"""
+an instance of plotly_study.graph_objs.indicator.Delta"""
             )
 
         # Handle skip_invalid
@@ -1698,7 +1698,7 @@ an instance of plotly.graph_objs.indicator.Delta"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator import delta as v_delta
+        from plotly_study.validators.indicator import delta as v_delta
 
         # Initialize validators
         # ---------------------
@@ -1749,7 +1749,7 @@ __all__ = [
     "title",
 ]
 
-from plotly.graph_objs.indicator import title
-from plotly.graph_objs.indicator import number
-from plotly.graph_objs.indicator import gauge
-from plotly.graph_objs.indicator import delta
+from plotly_study.graph_objs.indicator import title
+from plotly_study.graph_objs.indicator import number
+from plotly_study.graph_objs.indicator import gauge
+from plotly_study.graph_objs.indicator import delta

@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -110,7 +110,7 @@ class Increasing(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.indicator.delta.Increasing
+            plotly_study.graph_objs.indicator.delta.Increasing
         color
             Sets the color for increasing value.
         symbol
@@ -133,9 +133,9 @@ class Increasing(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.delta.Increasing 
+The first argument to the plotly_study.graph_objs.indicator.delta.Increasing 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.delta.Increasing"""
+an instance of plotly_study.graph_objs.indicator.delta.Increasing"""
             )
 
         # Handle skip_invalid
@@ -144,7 +144,7 @@ an instance of plotly.graph_objs.indicator.delta.Increasing"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator.delta import increasing as v_increasing
+        from plotly_study.validators.indicator.delta import increasing as v_increasing
 
         # Initialize validators
         # ---------------------
@@ -167,7 +167,7 @@ an instance of plotly.graph_objs.indicator.delta.Increasing"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -320,7 +320,7 @@ class Font(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.indicator.delta.Font
+            an instance of plotly_study.graph_objs.indicator.delta.Font
         color
 
         family
@@ -357,9 +357,9 @@ class Font(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.delta.Font 
+The first argument to the plotly_study.graph_objs.indicator.delta.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.delta.Font"""
+an instance of plotly_study.graph_objs.indicator.delta.Font"""
             )
 
         # Handle skip_invalid
@@ -368,7 +368,7 @@ an instance of plotly.graph_objs.indicator.delta.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator.delta import font as v_font
+        from plotly_study.validators.indicator.delta import font as v_font
 
         # Initialize validators
         # ---------------------
@@ -394,7 +394,7 @@ an instance of plotly.graph_objs.indicator.delta.Font"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -506,7 +506,7 @@ class Decreasing(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.indicator.delta.Decreasing
+            plotly_study.graph_objs.indicator.delta.Decreasing
         color
             Sets the color for increasing value.
         symbol
@@ -529,9 +529,9 @@ class Decreasing(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.indicator.delta.Decreasing 
+The first argument to the plotly_study.graph_objs.indicator.delta.Decreasing 
 constructor must be a dict or 
-an instance of plotly.graph_objs.indicator.delta.Decreasing"""
+an instance of plotly_study.graph_objs.indicator.delta.Decreasing"""
             )
 
         # Handle skip_invalid
@@ -540,7 +540,7 @@ an instance of plotly.graph_objs.indicator.delta.Decreasing"""
 
         # Import validators
         # -----------------
-        from plotly.validators.indicator.delta import decreasing as v_decreasing
+        from plotly_study.validators.indicator.delta import decreasing as v_decreasing
 
         # Initialize validators
         # ---------------------

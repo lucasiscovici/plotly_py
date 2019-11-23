@@ -17,7 +17,7 @@ import re
 import os
 
 from plotly import exceptions, optional_imports
-from plotly.files import PLOTLY_DIR
+from plotly_study.files import PLOTLY_DIR
 
 DEFAULT_PLOTLY_COLORS = [
     "rgb(31, 119, 180)",
@@ -84,15 +84,15 @@ def mpl_to_plotly(fig, resize=False, strip_style=False, verbose=False):
     creates the JSON structure used to make plotly visualizations. Finally,
     these dictionaries are sent to plotly and your browser should open up a
     new tab for viewing! Optionally, if you're working in IPython, you can
-    set notebook=True and the PlotlyRenderer will call plotly.iplot instead
-    of plotly.plot to have the graph appear directly in the IPython notebook.
+    set notebook=True and the PlotlyRenderer will call plotly_study.iplot instead
+    of plotly_study.plot to have the graph appear directly in the IPython notebook.
 
     Note, this function gives the user access to a simple, one-line way to
-    render an mpl figure in plotly. If you need to trouble shoot, you can do
+    render an mpl figure in plotly_study. If you need to trouble shoot, you can do
     this step manually by NOT running this fuction and entereing the following:
 
     ===========================================================================
-    from plotly.matplotlylib import mplexporter, PlotlyRenderer
+    from plotly_study.matplotlylib import mplexporter, PlotlyRenderer
 
     # create an mpl figure and store it under a varialble 'fig'
 
@@ -106,7 +106,7 @@ def mpl_to_plotly(fig, resize=False, strip_style=False, verbose=False):
     renderer.layout -- a plotly layout dictionary
     renderer.data -- a list of plotly data dictionaries
     """
-    matplotlylib = optional_imports.get_module("plotly.matplotlylib")
+    matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
     if matplotlylib:
         renderer = matplotlylib.PlotlyRenderer()
         matplotlylib.Exporter(renderer).run(fig)
@@ -170,7 +170,7 @@ def get_subplots(rows=1, columns=1, print_grid=False, **kwargs):
 
     """
     # TODO: protected until #282
-    from plotly.graph_objs import graph_objs
+    from plotly_study.graph_objs import graph_objs
 
     warnings.warn(
         "tools.get_subplots is depreciated. " "Please use tools.make_subplots instead."
@@ -244,7 +244,7 @@ def make_subplots(
     print_grid=None,
     **kwargs
 ):
-    """Return an instance of plotly.graph_objs.Figure
+    """Return an instance of plotly_study.graph_objs.Figure
     with the subplots domain set in 'layout'.
 
     Example 1:
@@ -433,7 +433,7 @@ def make_subplots(
     column_width (kwarg, list of numbers)
         Column_width specifications
 
-        - Functions similarly to `column_width` of `plotly.graph_objs.Table`.
+        - Functions similarly to `column_width` of `plotly_study.graph_objs.Table`.
           Specify a list that contains numbers where the amount of numbers in
           the list is equal to `cols`.
 
@@ -456,16 +456,16 @@ def make_subplots(
           cols=2, the domains for each row from top to botton would be
           [0. 0.75] and [0.75, 1]
     """
-    import plotly.subplots
+    import plotly_study.subplots
 
     warnings.warn(
-        "plotly.tools.make_subplots is deprecated, "
-        "please use plotly.subplots.make_subplots instead",
+        "plotly_study.tools.make_subplots is deprecated, "
+        "please use plotly_study.subplots.make_subplots instead",
         DeprecationWarning,
         stacklevel=1,
     )
 
-    return plotly.subplots.make_subplots(
+    return plotly_study.subplots.make_subplots(
         rows=rows,
         cols=cols,
         shared_xaxes=shared_xaxes,
@@ -489,7 +489,7 @@ def get_graph_obj(obj, obj_type=None):
         on unrecognized graph_objs
     """
     # TODO: Deprecate or move. #283
-    from plotly.graph_objs import graph_objs
+    from plotly_study.graph_objs import graph_objs
 
     try:
         cls = getattr(graph_objs, obj_type)
@@ -529,8 +529,8 @@ def _replace_newline(obj):
 
 
 def return_figure_from_figure_or_data(figure_or_data, validate_figure):
-    from plotly.graph_objs import Figure
-    from plotly.basedatatypes import BaseFigure
+    from plotly_study.graph_objs import Figure
+    from plotly_study.basedatatypes import BaseFigure
 
     validated = False
     if isinstance(figure_or_data, dict):
@@ -544,7 +544,7 @@ def return_figure_from_figure_or_data(figure_or_data, validate_figure):
         raise exceptions.PlotlyError(
             "The `figure_or_data` positional "
             "argument must be "
-            "`dict`-like, `list`-like, or an instance of plotly.graph_objs.Figure"
+            "`dict`-like, `list`-like, or an instance of plotly_study.graph_objs.Figure"
         )
 
     if validate_figure and not validated:
@@ -588,105 +588,105 @@ class FigureFactory(object):
             # The method name stayed the same.
             new_method = old_method
         warnings.warn(
-            "plotly.tools.FigureFactory.{} is deprecated. "
-            "Use plotly.figure_factory.{}".format(old_method, new_method)
+            "plotly_study.tools.FigureFactory.{} is deprecated. "
+            "Use plotly_study.figure_factory.{}".format(old_method, new_method)
         )
 
     @staticmethod
     def create_2D_density(*args, **kwargs):
         FigureFactory._deprecated("create_2D_density", "create_2d_density")
-        from plotly.figure_factory import create_2d_density
+        from plotly_study.figure_factory import create_2d_density
 
         return create_2d_density(*args, **kwargs)
 
     @staticmethod
     def create_annotated_heatmap(*args, **kwargs):
         FigureFactory._deprecated("create_annotated_heatmap")
-        from plotly.figure_factory import create_annotated_heatmap
+        from plotly_study.figure_factory import create_annotated_heatmap
 
         return create_annotated_heatmap(*args, **kwargs)
 
     @staticmethod
     def create_candlestick(*args, **kwargs):
         FigureFactory._deprecated("create_candlestick")
-        from plotly.figure_factory import create_candlestick
+        from plotly_study.figure_factory import create_candlestick
 
         return create_candlestick(*args, **kwargs)
 
     @staticmethod
     def create_dendrogram(*args, **kwargs):
         FigureFactory._deprecated("create_dendrogram")
-        from plotly.figure_factory import create_dendrogram
+        from plotly_study.figure_factory import create_dendrogram
 
         return create_dendrogram(*args, **kwargs)
 
     @staticmethod
     def create_distplot(*args, **kwargs):
         FigureFactory._deprecated("create_distplot")
-        from plotly.figure_factory import create_distplot
+        from plotly_study.figure_factory import create_distplot
 
         return create_distplot(*args, **kwargs)
 
     @staticmethod
     def create_facet_grid(*args, **kwargs):
         FigureFactory._deprecated("create_facet_grid")
-        from plotly.figure_factory import create_facet_grid
+        from plotly_study.figure_factory import create_facet_grid
 
         return create_facet_grid(*args, **kwargs)
 
     @staticmethod
     def create_gantt(*args, **kwargs):
         FigureFactory._deprecated("create_gantt")
-        from plotly.figure_factory import create_gantt
+        from plotly_study.figure_factory import create_gantt
 
         return create_gantt(*args, **kwargs)
 
     @staticmethod
     def create_ohlc(*args, **kwargs):
         FigureFactory._deprecated("create_ohlc")
-        from plotly.figure_factory import create_ohlc
+        from plotly_study.figure_factory import create_ohlc
 
         return create_ohlc(*args, **kwargs)
 
     @staticmethod
     def create_quiver(*args, **kwargs):
         FigureFactory._deprecated("create_quiver")
-        from plotly.figure_factory import create_quiver
+        from plotly_study.figure_factory import create_quiver
 
         return create_quiver(*args, **kwargs)
 
     @staticmethod
     def create_scatterplotmatrix(*args, **kwargs):
         FigureFactory._deprecated("create_scatterplotmatrix")
-        from plotly.figure_factory import create_scatterplotmatrix
+        from plotly_study.figure_factory import create_scatterplotmatrix
 
         return create_scatterplotmatrix(*args, **kwargs)
 
     @staticmethod
     def create_streamline(*args, **kwargs):
         FigureFactory._deprecated("create_streamline")
-        from plotly.figure_factory import create_streamline
+        from plotly_study.figure_factory import create_streamline
 
         return create_streamline(*args, **kwargs)
 
     @staticmethod
     def create_table(*args, **kwargs):
         FigureFactory._deprecated("create_table")
-        from plotly.figure_factory import create_table
+        from plotly_study.figure_factory import create_table
 
         return create_table(*args, **kwargs)
 
     @staticmethod
     def create_trisurf(*args, **kwargs):
         FigureFactory._deprecated("create_trisurf")
-        from plotly.figure_factory import create_trisurf
+        from plotly_study.figure_factory import create_trisurf
 
         return create_trisurf(*args, **kwargs)
 
     @staticmethod
     def create_violin(*args, **kwargs):
         FigureFactory._deprecated("create_violin")
-        from plotly.figure_factory import create_violin
+        from plotly_study.figure_factory import create_violin
 
         return create_violin(*args, **kwargs)
 
@@ -695,7 +695,7 @@ def get_config_plotly_server_url():
     """
     Function to get the .config file's 'plotly_domain' without importing
     the chart_studio package.  This property is needed to compute the default
-    value of the plotly.js config plotlyServerURL, so it is independent of
+    value of the plotly_study.js config plotlyServerURL, so it is independent of
     the chart_studio integration and still needs to live in
 
     Returns

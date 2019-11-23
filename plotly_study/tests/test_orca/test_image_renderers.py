@@ -6,16 +6,16 @@ import pytest
 import numpy as np
 
 from plotly import io as pio
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
-from plotly.offline.offline import _get_jconfig
+from plotly_study.offline.offline import _get_jconfig
 
 if sys.version_info.major == 3 and sys.version_info.minor >= 3:
     import unittest.mock as mock
 else:
     import mock
 
-plotly_mimetype = "application/vnd.plotly.v1+json"
+plotly_mimetype = "application/vnd.plotly_study.v1+json"
 
 
 # fixtures

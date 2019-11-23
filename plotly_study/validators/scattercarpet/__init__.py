@@ -56,11 +56,11 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.scattercarpet.unselected.M
+                plotly_study.graph_objects.scattercarpet.unselected.M
                 arker instance or dict with compatible
                 properties
             textfont
-                plotly.graph_objects.scattercarpet.unselected.T
+                plotly_study.graph_objects.scattercarpet.unselected.T
                 extfont instance or dict with compatible
                 properties
 """,
@@ -323,10 +323,10 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.scattercarpet.selected.Mar
+                plotly_study.graph_objects.scattercarpet.selected.Mar
                 ker instance or dict with compatible properties
             textfont
-                plotly.graph_objects.scattercarpet.selected.Tex
+                plotly_study.graph_objects.scattercarpet.selected.Tex
                 tfont instance or dict with compatible
                 properties
 """,
@@ -476,7 +476,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.scattercarpet.marker.Color
+                plotly_study.graph_objects.scattercarpet.marker.Color
                 Bar instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in
@@ -498,10 +498,10 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  color
                 .
             gradient
-                plotly.graph_objects.scattercarpet.marker.Gradi
+                plotly_study.graph_objects.scattercarpet.marker.Gradi
                 ent instance or dict with compatible properties
             line
-                plotly.graph_objects.scattercarpet.marker.Line
+                plotly_study.graph_objects.scattercarpet.marker.Line
                 instance or dict with compatible properties
             maxdisplayed
                 Sets a maximum number of points to be drawn on

@@ -1,7 +1,7 @@
 {
-  "name": "plotly.py-jupyter-tests",
+  "name": "plotly_study.py-jupyter-tests",
   "version": "1.0.0",
-  "description": "js deps for plotly.py jupyter tests",
+  "description": "js deps for plotly_study.py jupyter tests",
   "scripts": {
     "test": "node lib/server.js"
   },

@@ -5,7 +5,7 @@ from unittest import TestCase
 
 import json as _json
 
-from plotly.utils import PlotlyJSONEncoder, get_by_path, node_generator
+from plotly_study.utils import PlotlyJSONEncoder, get_by_path, node_generator
 
 
 class TestJSONEncoder(TestCase):

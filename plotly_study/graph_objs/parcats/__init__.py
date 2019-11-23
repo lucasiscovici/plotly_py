@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -151,7 +151,7 @@ class Tickfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.parcats.Tickfont
+            an instance of plotly_study.graph_objs.parcats.Tickfont
         color
 
         family
@@ -188,9 +188,9 @@ class Tickfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.parcats.Tickfont 
+The first argument to the plotly_study.graph_objs.parcats.Tickfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.parcats.Tickfont"""
+an instance of plotly_study.graph_objs.parcats.Tickfont"""
             )
 
         # Handle skip_invalid
@@ -199,7 +199,7 @@ an instance of plotly.graph_objs.parcats.Tickfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.parcats import tickfont as v_tickfont
+        from plotly_study.validators.parcats import tickfont as v_tickfont
 
         # Initialize validators
         # ---------------------
@@ -225,7 +225,7 @@ an instance of plotly.graph_objs.parcats.Tickfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -304,7 +304,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.parcats.Stream
+            an instance of plotly_study.graph_objs.parcats.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -332,9 +332,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.parcats.Stream 
+The first argument to the plotly_study.graph_objs.parcats.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.parcats.Stream"""
+an instance of plotly_study.graph_objs.parcats.Stream"""
             )
 
         # Handle skip_invalid
@@ -343,7 +343,7 @@ an instance of plotly.graph_objs.parcats.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.parcats import stream as v_stream
+        from plotly_study.validators.parcats import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -366,7 +366,7 @@ an instance of plotly.graph_objs.parcats.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -591,7 +591,7 @@ class Line(_BaseTraceHierarchyType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.parcats.line.ColorBar
+          - An instance of plotly_study.graph_objs.parcats.line.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -723,7 +723,7 @@ class Line(_BaseTraceHierarchyType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.parcats.line.co
+                    A tuple of plotly_study.graph_objects.parcats.line.co
                     lorbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -772,7 +772,7 @@ class Line(_BaseTraceHierarchyType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.parcats.line.colorbar.Titl
+                    plotly_study.graph_objects.parcats.line.colorbar.Titl
                     e instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -811,7 +811,7 @@ class Line(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.parcats.line.ColorBar
+        plotly_study.graph_objs.parcats.line.ColorBar
         """
         return self["colorbar"]
 
@@ -840,7 +840,7 @@ class Line(_BaseTraceHierarchyType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -879,7 +879,7 @@ class Line(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1057,7 +1057,7 @@ class Line(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.parcats.line.ColorBar instance or
+            plotly_study.graph_objects.parcats.line.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. Has an effect only if in
@@ -1141,7 +1141,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.parcats.Line
+            an instance of plotly_study.graph_objs.parcats.Line
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -1189,7 +1189,7 @@ class Line(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.parcats.line.ColorBar instance or
+            plotly_study.graph_objects.parcats.line.ColorBar instance or
             dict with compatible properties
         colorscale
             Sets the colorscale. Has an effect only if in
@@ -1263,9 +1263,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.parcats.Line 
+The first argument to the plotly_study.graph_objs.parcats.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.parcats.Line"""
+an instance of plotly_study.graph_objs.parcats.Line"""
             )
 
         # Handle skip_invalid
@@ -1274,7 +1274,7 @@ an instance of plotly.graph_objs.parcats.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.parcats import line as v_line
+        from plotly_study.validators.parcats import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -1333,7 +1333,7 @@ an instance of plotly.graph_objs.parcats.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1486,7 +1486,7 @@ class Labelfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.parcats.Labelfont
+            an instance of plotly_study.graph_objs.parcats.Labelfont
         color
 
         family
@@ -1523,9 +1523,9 @@ class Labelfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.parcats.Labelfont 
+The first argument to the plotly_study.graph_objs.parcats.Labelfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.parcats.Labelfont"""
+an instance of plotly_study.graph_objs.parcats.Labelfont"""
             )
 
         # Handle skip_invalid
@@ -1534,7 +1534,7 @@ an instance of plotly.graph_objs.parcats.Labelfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.parcats import labelfont as v_labelfont
+        from plotly_study.validators.parcats import labelfont as v_labelfont
 
         # Initialize validators
         # ---------------------
@@ -1560,7 +1560,7 @@ an instance of plotly.graph_objs.parcats.Labelfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1695,7 +1695,7 @@ class Domain(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.parcats.Domain
+            an instance of plotly_study.graph_objs.parcats.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this parcats trace .
@@ -1726,9 +1726,9 @@ class Domain(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.parcats.Domain 
+The first argument to the plotly_study.graph_objs.parcats.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.parcats.Domain"""
+an instance of plotly_study.graph_objs.parcats.Domain"""
             )
 
         # Handle skip_invalid
@@ -1737,7 +1737,7 @@ an instance of plotly.graph_objs.parcats.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.parcats import domain as v_domain
+        from plotly_study.validators.parcats import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -1766,7 +1766,7 @@ an instance of plotly.graph_objs.parcats.Domain"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1802,7 +1802,7 @@ class Dimension(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  categoryarray .
     
         The 'categoryarraysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1919,7 +1919,7 @@ class Dimension(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1962,7 +1962,7 @@ class Dimension(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  values .
     
         The 'valuessrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2074,7 +2074,7 @@ class Dimension(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.parcats.Dimension
+            an instance of plotly_study.graph_objs.parcats.Dimension
         categoryarray
             Sets the order in which categories in this dimension
             appear. Only has an effect if `categoryorder` is set to
@@ -2135,9 +2135,9 @@ class Dimension(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.parcats.Dimension 
+The first argument to the plotly_study.graph_objs.parcats.Dimension 
 constructor must be a dict or 
-an instance of plotly.graph_objs.parcats.Dimension"""
+an instance of plotly_study.graph_objs.parcats.Dimension"""
             )
 
         # Handle skip_invalid
@@ -2146,7 +2146,7 @@ an instance of plotly.graph_objs.parcats.Dimension"""
 
         # Import validators
         # -----------------
-        from plotly.validators.parcats import dimension as v_dimension
+        from plotly_study.validators.parcats import dimension as v_dimension
 
         # Initialize validators
         # ---------------------
@@ -2206,4 +2206,4 @@ __all__ = [
     "line",
 ]
 
-from plotly.graph_objs.parcats import line
+from plotly_study.graph_objs.parcats import line

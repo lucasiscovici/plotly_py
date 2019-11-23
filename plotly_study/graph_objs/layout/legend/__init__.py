@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -151,7 +151,7 @@ class Font(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.legend.Font
+            an instance of plotly_study.graph_objs.layout.legend.Font
         color
 
         family
@@ -188,9 +188,9 @@ class Font(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.legend.Font 
+The first argument to the plotly_study.graph_objs.layout.legend.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.legend.Font"""
+an instance of plotly_study.graph_objs.layout.legend.Font"""
             )
 
         # Handle skip_invalid
@@ -199,7 +199,7 @@ an instance of plotly.graph_objs.layout.legend.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.legend import font as v_font
+        from plotly_study.validators.layout.legend import font as v_font
 
         # Initialize validators
         # ---------------------

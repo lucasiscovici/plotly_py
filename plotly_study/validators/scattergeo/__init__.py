@@ -26,10 +26,10 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.scattergeo.unselected.Mark
+                plotly_study.graph_objects.scattergeo.unselected.Mark
                 er instance or dict with compatible properties
             textfont
-                plotly.graph_objects.scattergeo.unselected.Text
+                plotly_study.graph_objects.scattergeo.unselected.Text
                 font instance or dict with compatible
                 properties
 """,
@@ -288,10 +288,10 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.scattergeo.selected.Marker
+                plotly_study.graph_objects.scattergeo.selected.Marker
                 instance or dict with compatible properties
             textfont
-                plotly.graph_objects.scattergeo.selected.Textfo
+                plotly_study.graph_objects.scattergeo.selected.Textfo
                 nt instance or dict with compatible properties
 """,
             ),
@@ -440,7 +440,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.scattergeo.marker.ColorBar
+                plotly_study.graph_objects.scattergeo.marker.ColorBar
                 instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in
@@ -462,10 +462,10 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  color
                 .
             gradient
-                plotly.graph_objects.scattergeo.marker.Gradient
+                plotly_study.graph_objects.scattergeo.marker.Gradient
                 instance or dict with compatible properties
             line
-                plotly.graph_objects.scattergeo.marker.Line
+                plotly_study.graph_objects.scattergeo.marker.Line
                 instance or dict with compatible properties
             opacity
                 Sets the marker opacity.

@@ -1,4 +1,4 @@
-import plotly.express as px
+import plotly_study.express as px
 import numpy as np
 
 
@@ -54,8 +54,8 @@ def test_custom_data_scatter():
 
 
 def test_px_templates():
-    import plotly.io as pio
-    import plotly.graph_objects as go
+    import plotly_study.io as pio
+    import plotly_study.graph_objects as go
 
     tips = px.data.tips()
 

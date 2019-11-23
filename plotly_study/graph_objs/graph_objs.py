@@ -1,1 +1,1 @@
-from plotly.graph_objs import *
+from plotly_study.graph_objs import *

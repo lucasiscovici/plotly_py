@@ -1,5 +1,5 @@
-import plotly.graph_objs as go
-import plotly.io as pio
+import plotly_study.graph_objs as go
+import plotly_study.io as pio
 import pytest
 import plotly
 import json
@@ -33,10 +33,10 @@ def fig1(request):
 
 opts = {
     "separators": (",", ":"),
-    "cls": plotly.utils.PlotlyJSONEncoder,
+    "cls": plotly_study.utils.PlotlyJSONEncoder,
     "sort_keys": True,
 }
-pretty_opts = {"indent": 2, "cls": plotly.utils.PlotlyJSONEncoder, "sort_keys": True}
+pretty_opts = {"indent": 2, "cls": plotly_study.utils.PlotlyJSONEncoder, "sort_keys": True}
 
 
 # to_json

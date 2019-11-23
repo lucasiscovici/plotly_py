@@ -1,9 +1,9 @@
 from __future__ import absolute_import
 
 from plotly import exceptions, optional_imports
-import plotly.colors as clrs
-from plotly.figure_factory import utils
-from plotly.subplots import make_subplots
+import plotly_study.colors as clrs
+from plotly_study.figure_factory import utils
+from plotly_study.subplots import make_subplots
 
 import math
 from numbers import Number
@@ -689,7 +689,7 @@ def create_facet_grid(
         data, then a dictionary of colors will group the data categorically
         while a Plotly Colorscale name or a custom colorscale will treat it
         numerically. To learn more about colors and types of colormap, run
-        `help(plotly.colors)`.
+        `help(plotly_study.colors)`.
     :param (bool) color_is_cat: determines whether a numerical column for the
         colormap will be treated as categorical (True) or sequential (False).
             Default = False.
@@ -721,7 +721,7 @@ def create_facet_grid(
 
     Examples 1: One Way Faceting
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
     >>> import pandas as pd
     >>> mpg = pd.read_table('https://raw.githubusercontent.com/plotly/datasets/master/mpg_2017.txt')
 
@@ -735,7 +735,7 @@ def create_facet_grid(
 
     Example 2: Two Way Faceting
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
 
     >>> import pandas as pd
 
@@ -752,7 +752,7 @@ def create_facet_grid(
 
     Example 3: Categorical Coloring
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
     >>> import pandas as pd
     >>> mpg = pd.read_table('https://raw.githubusercontent.com/plotly/datasets/master/mpg_2017.txt')
     >>> fig = ff.create_facet_grid(
@@ -767,7 +767,7 @@ def create_facet_grid(
 
     Example 4: Sequential Coloring
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
     >>> import pandas as pd
     >>> tips = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/tips.csv')
 
@@ -784,7 +784,7 @@ def create_facet_grid(
 
     Example 5: Custom labels
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
     >>> import pandas as pd
     >>> mtcars = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/mtcars.csv')
     >>> fig = ff.create_facet_grid(
@@ -798,7 +798,7 @@ def create_facet_grid(
 
     Example 6: Other Trace Type
 
-    >>> import plotly.figure_factory as ff
+    >>> import plotly_study.figure_factory as ff
     >>> import pandas as pd
     >>> mtcars = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/mtcars.csv')
     >>> fig = ff.create_facet_grid(

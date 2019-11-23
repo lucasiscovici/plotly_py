@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -11,7 +11,7 @@ class Unselected(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.unselected.Marker
+          - An instance of plotly_study.graph_objs.choroplethmapbox.unselected.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -23,7 +23,7 @@ class Unselected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.unselected.Marker
+        plotly_study.graph_objs.choroplethmapbox.unselected.Marker
         """
         return self["marker"]
 
@@ -43,7 +43,7 @@ class Unselected(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.choroplethmapbox.unselected.Marker
+            plotly_study.graph_objects.choroplethmapbox.unselected.Marker
             instance or dict with compatible properties
         """
 
@@ -56,9 +56,9 @@ class Unselected(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.choroplethmapbox.Unselected
+            plotly_study.graph_objs.choroplethmapbox.Unselected
         marker
-            plotly.graph_objects.choroplethmapbox.unselected.Marker
+            plotly_study.graph_objects.choroplethmapbox.unselected.Marker
             instance or dict with compatible properties
 
         Returns
@@ -78,9 +78,9 @@ class Unselected(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.choroplethmapbox.Unselected 
+The first argument to the plotly_study.graph_objs.choroplethmapbox.Unselected 
 constructor must be a dict or 
-an instance of plotly.graph_objs.choroplethmapbox.Unselected"""
+an instance of plotly_study.graph_objs.choroplethmapbox.Unselected"""
             )
 
         # Handle skip_invalid
@@ -89,7 +89,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Unselected"""
 
         # Import validators
         # -----------------
-        from plotly.validators.choroplethmapbox import unselected as v_unselected
+        from plotly_study.validators.choroplethmapbox import unselected as v_unselected
 
         # Initialize validators
         # ---------------------
@@ -109,7 +109,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Unselected"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -189,7 +189,7 @@ class Stream(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.choroplethmapbox.Stream
+            plotly_study.graph_objs.choroplethmapbox.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -217,9 +217,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.choroplethmapbox.Stream 
+The first argument to the plotly_study.graph_objs.choroplethmapbox.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.choroplethmapbox.Stream"""
+an instance of plotly_study.graph_objs.choroplethmapbox.Stream"""
             )
 
         # Handle skip_invalid
@@ -228,7 +228,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.choroplethmapbox import stream as v_stream
+        from plotly_study.validators.choroplethmapbox import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -251,7 +251,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -264,7 +264,7 @@ class Selected(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.selected.Marker
+          - An instance of plotly_study.graph_objs.choroplethmapbox.selected.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -275,7 +275,7 @@ class Selected(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.selected.Marker
+        plotly_study.graph_objs.choroplethmapbox.selected.Marker
         """
         return self["marker"]
 
@@ -295,7 +295,7 @@ class Selected(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.choroplethmapbox.selected.Marker
+            plotly_study.graph_objects.choroplethmapbox.selected.Marker
             instance or dict with compatible properties
         """
 
@@ -308,9 +308,9 @@ class Selected(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.choroplethmapbox.Selected
+            plotly_study.graph_objs.choroplethmapbox.Selected
         marker
-            plotly.graph_objects.choroplethmapbox.selected.Marker
+            plotly_study.graph_objects.choroplethmapbox.selected.Marker
             instance or dict with compatible properties
 
         Returns
@@ -330,9 +330,9 @@ class Selected(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.choroplethmapbox.Selected 
+The first argument to the plotly_study.graph_objs.choroplethmapbox.Selected 
 constructor must be a dict or 
-an instance of plotly.graph_objs.choroplethmapbox.Selected"""
+an instance of plotly_study.graph_objs.choroplethmapbox.Selected"""
             )
 
         # Handle skip_invalid
@@ -341,7 +341,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Selected"""
 
         # Import validators
         # -----------------
-        from plotly.validators.choroplethmapbox import selected as v_selected
+        from plotly_study.validators.choroplethmapbox import selected as v_selected
 
         # Initialize validators
         # ---------------------
@@ -361,7 +361,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Selected"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -374,7 +374,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.marker.Line
+          - An instance of plotly_study.graph_objs.choroplethmapbox.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -399,7 +399,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.marker.Line
+        plotly_study.graph_objs.choroplethmapbox.marker.Line
         """
         return self["line"]
 
@@ -436,7 +436,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  opacity .
     
         The 'opacitysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -460,7 +460,7 @@ class Marker(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         line
-            plotly.graph_objects.choroplethmapbox.marker.Line
+            plotly_study.graph_objects.choroplethmapbox.marker.Line
             instance or dict with compatible properties
         opacity
             Sets the opacity of the locations.
@@ -477,9 +477,9 @@ class Marker(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.choroplethmapbox.Marker
+            plotly_study.graph_objs.choroplethmapbox.Marker
         line
-            plotly.graph_objects.choroplethmapbox.marker.Line
+            plotly_study.graph_objects.choroplethmapbox.marker.Line
             instance or dict with compatible properties
         opacity
             Sets the opacity of the locations.
@@ -503,9 +503,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.choroplethmapbox.Marker 
+The first argument to the plotly_study.graph_objs.choroplethmapbox.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.choroplethmapbox.Marker"""
+an instance of plotly_study.graph_objs.choroplethmapbox.Marker"""
             )
 
         # Handle skip_invalid
@@ -514,7 +514,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.choroplethmapbox import marker as v_marker
+        from plotly_study.validators.choroplethmapbox import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -540,7 +540,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -578,7 +578,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -658,7 +658,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -738,7 +738,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -759,7 +759,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.choroplethmapbox.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -797,7 +797,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.hoverlabel.Font
+        plotly_study.graph_objs.choroplethmapbox.hoverlabel.Font
         """
         return self["font"]
 
@@ -840,7 +840,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -915,7 +915,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.choroplethmapbox.Hoverlabel
+            plotly_study.graph_objs.choroplethmapbox.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -962,9 +962,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.choroplethmapbox.Hoverlabel 
+The first argument to the plotly_study.graph_objs.choroplethmapbox.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.choroplethmapbox.Hoverlabel"""
+an instance of plotly_study.graph_objs.choroplethmapbox.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -973,7 +973,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.choroplethmapbox import hoverlabel as v_hoverlabel
+        from plotly_study.validators.choroplethmapbox import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1017,7 +1017,7 @@ an instance of plotly.graph_objs.choroplethmapbox.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1644,7 +1644,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.colorbar.Tickfont
+          - An instance of plotly_study.graph_objs.choroplethmapbox.colorbar.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -1672,7 +1672,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.colorbar.Tickfont
+        plotly_study.graph_objs.choroplethmapbox.colorbar.Tickfont
         """
         return self["tickfont"]
 
@@ -1716,7 +1716,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.choroplethmapbox.colorbar.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.choroplethmapbox.colorbar.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -1758,7 +1758,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.choroplethmapbox.colorbar.Tickformatstop]
+        tuple[plotly_study.graph_objs.choroplethmapbox.colorbar.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -1778,7 +1778,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.colorbar.Tickformatstop
+          - An instance of plotly_study.graph_objs.choroplethmapbox.colorbar.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -1786,7 +1786,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.colorbar.Tickformatstop
+        plotly_study.graph_objs.choroplethmapbox.colorbar.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -1936,7 +1936,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1977,7 +1977,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2016,7 +2016,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.colorbar.Title
+          - An instance of plotly_study.graph_objs.choroplethmapbox.colorbar.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -2040,7 +2040,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.choroplethmapbox.colorbar.Title
+        plotly_study.graph_objs.choroplethmapbox.colorbar.Title
         """
         return self["title"]
 
@@ -2060,7 +2060,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.choroplethmapbox.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.choroplethmapbox.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2369,7 +2369,7 @@ class ColorBar(_BaseTraceHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.choroplethmapbox.colorb
+            A tuple of plotly_study.graph_objects.choroplethmapbox.colorb
             ar.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -2411,7 +2411,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.choroplethmapbox.colorbar.Title
+            plotly_study.graph_objects.choroplethmapbox.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -2508,7 +2508,7 @@ class ColorBar(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.choroplethmapbox.ColorBar
+            plotly_study.graph_objs.choroplethmapbox.ColorBar
         bgcolor
             Sets the color of padded area.
         bordercolor
@@ -2621,7 +2621,7 @@ class ColorBar(_BaseTraceHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.choroplethmapbox.colorb
+            A tuple of plotly_study.graph_objects.choroplethmapbox.colorb
             ar.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -2663,7 +2663,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.choroplethmapbox.colorbar.Title
+            plotly_study.graph_objects.choroplethmapbox.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -2715,9 +2715,9 @@ class ColorBar(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.choroplethmapbox.ColorBar 
+The first argument to the plotly_study.graph_objs.choroplethmapbox.ColorBar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.choroplethmapbox.ColorBar"""
+an instance of plotly_study.graph_objs.choroplethmapbox.ColorBar"""
             )
 
         # Handle skip_invalid
@@ -2726,7 +2726,7 @@ an instance of plotly.graph_objs.choroplethmapbox.ColorBar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.choroplethmapbox import colorbar as v_colorbar
+        from plotly_study.validators.choroplethmapbox import colorbar as v_colorbar
 
         # Initialize validators
         # ---------------------
@@ -2894,8 +2894,8 @@ __all__ = [
     "unselected",
 ]
 
-from plotly.graph_objs.choroplethmapbox import unselected
-from plotly.graph_objs.choroplethmapbox import selected
-from plotly.graph_objs.choroplethmapbox import marker
-from plotly.graph_objs.choroplethmapbox import hoverlabel
-from plotly.graph_objs.choroplethmapbox import colorbar
+from plotly_study.graph_objs.choroplethmapbox import unselected
+from plotly_study.graph_objs.choroplethmapbox import selected
+from plotly_study.graph_objs.choroplethmapbox import marker
+from plotly_study.graph_objs.choroplethmapbox import hoverlabel
+from plotly_study.graph_objs.choroplethmapbox import colorbar

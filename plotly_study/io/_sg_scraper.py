@@ -7,14 +7,14 @@ import plotly
 from glob import glob
 import shutil
 
-plotly.io.renderers.default = "sphinx_gallery"
+plotly_study.io.renderers.default = "sphinx_gallery"
 
 
 def plotly_sg_scraper(block, block_vars, gallery_conf, **kwargs):
     """Scrape Plotly figures for galleries of examples using
     sphinx-gallery.
 
-    Examples should use ``plotly.io.show()`` to display the figure with
+    Examples should use ``plotly_study.io.show()`` to display the figure with
     the custom sphinx_gallery renderer.
 
     Since the sphinx_gallery renderer generates both html and static png

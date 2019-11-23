@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import sys
 from unittest import TestCase
-from plotly.optional_imports import get_module
+from plotly_study.optional_imports import get_module
 
 
 class OptionalImportsTest(TestCase):
@@ -25,7 +25,7 @@ class OptionalImportsTest(TestCase):
 
     def test_get_module_import_exception(self):
         # Get module that raises an exception on import
-        module_str = "plotly.tests.test_core." "test_optional_imports.exploding_module"
+        module_str = "plotly_study.tests.test_core." "test_optional_imports.exploding_module"
 
         if sys.version_info.major == 3 and sys.version_info.minor >= 4:
             with self.assertLogs("_plotly_utils.optional_imports", level="ERROR") as cm:

@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -145,7 +145,7 @@ class Tiling(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Tiling
+            an instance of plotly_study.graph_objs.treemap.Tiling
         flip
             Determines if the positions obtained from solver are
             flipped on each axis.
@@ -186,9 +186,9 @@ class Tiling(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Tiling 
+The first argument to the plotly_study.graph_objs.treemap.Tiling 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Tiling"""
+an instance of plotly_study.graph_objs.treemap.Tiling"""
             )
 
         # Handle skip_invalid
@@ -197,7 +197,7 @@ an instance of plotly.graph_objs.treemap.Tiling"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import tiling as v_tiling
+        from plotly_study.validators.treemap import tiling as v_tiling
 
         # Initialize validators
         # ---------------------
@@ -226,7 +226,7 @@ an instance of plotly.graph_objs.treemap.Tiling"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -298,7 +298,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -350,7 +350,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -389,7 +389,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -458,7 +458,7 @@ class Textfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Textfont
+            an instance of plotly_study.graph_objs.treemap.Textfont
         color
 
         colorsrc
@@ -501,9 +501,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Textfont 
+The first argument to the plotly_study.graph_objs.treemap.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Textfont"""
+an instance of plotly_study.graph_objs.treemap.Textfont"""
             )
 
         # Handle skip_invalid
@@ -512,7 +512,7 @@ an instance of plotly.graph_objs.treemap.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import textfont as v_textfont
+        from plotly_study.validators.treemap import textfont as v_textfont
 
         # Initialize validators
         # ---------------------
@@ -547,7 +547,7 @@ an instance of plotly.graph_objs.treemap.Textfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -626,7 +626,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Stream
+            an instance of plotly_study.graph_objs.treemap.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -654,9 +654,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Stream 
+The first argument to the plotly_study.graph_objs.treemap.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Stream"""
+an instance of plotly_study.graph_objs.treemap.Stream"""
             )
 
         # Handle skip_invalid
@@ -665,7 +665,7 @@ an instance of plotly.graph_objs.treemap.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import stream as v_stream
+        from plotly_study.validators.treemap import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -688,7 +688,7 @@ an instance of plotly.graph_objs.treemap.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -749,7 +749,7 @@ class Pathbar(_BaseTraceHierarchyType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.pathbar.Textfont
+          - An instance of plotly_study.graph_objs.treemap.pathbar.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -787,7 +787,7 @@ class Pathbar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.pathbar.Textfont
+        plotly_study.graph_objs.treemap.pathbar.Textfont
         """
         return self["textfont"]
 
@@ -883,7 +883,7 @@ class Pathbar(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Pathbar
+            an instance of plotly_study.graph_objs.treemap.Pathbar
         edgeshape
             Determines which shape is used for edges between
             `barpath` labels.
@@ -917,9 +917,9 @@ class Pathbar(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Pathbar 
+The first argument to the plotly_study.graph_objs.treemap.Pathbar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Pathbar"""
+an instance of plotly_study.graph_objs.treemap.Pathbar"""
             )
 
         # Handle skip_invalid
@@ -928,7 +928,7 @@ an instance of plotly.graph_objs.treemap.Pathbar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import pathbar as v_pathbar
+        from plotly_study.validators.treemap import pathbar as v_pathbar
 
         # Initialize validators
         # ---------------------
@@ -960,7 +960,7 @@ an instance of plotly.graph_objs.treemap.Pathbar"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1032,7 +1032,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1084,7 +1084,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1123,7 +1123,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1193,7 +1193,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.treemap.Outsidetextfont
+            plotly_study.graph_objs.treemap.Outsidetextfont
         color
 
         colorsrc
@@ -1236,9 +1236,9 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Outsidetextfont 
+The first argument to the plotly_study.graph_objs.treemap.Outsidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Outsidetextfont"""
+an instance of plotly_study.graph_objs.treemap.Outsidetextfont"""
             )
 
         # Handle skip_invalid
@@ -1247,7 +1247,7 @@ an instance of plotly.graph_objs.treemap.Outsidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import outsidetextfont as v_outsidetextfont
+        from plotly_study.validators.treemap import outsidetextfont as v_outsidetextfont
 
         # Initialize validators
         # ---------------------
@@ -1282,7 +1282,7 @@ an instance of plotly.graph_objs.treemap.Outsidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1440,7 +1440,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'colorbar' property is an instance of ColorBar
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.marker.ColorBar
+          - An instance of plotly_study.graph_objs.treemap.marker.ColorBar
           - A dict of string/value properties that will be passed
             to the ColorBar constructor
     
@@ -1572,7 +1572,7 @@ class Marker(_BaseTraceHierarchyType):
                     tickformat "%H~%M~%S.%2f" would display
                     "09~15~23.46"
                 tickformatstops
-                    A tuple of plotly.graph_objects.treemap.marker.
+                    A tuple of plotly_study.graph_objects.treemap.marker.
                     colorbar.Tickformatstop instances or dicts with
                     compatible properties
                 tickformatstopdefaults
@@ -1621,7 +1621,7 @@ class Marker(_BaseTraceHierarchyType):
                 tickwidth
                     Sets the tick width (in px).
                 title
-                    plotly.graph_objects.treemap.marker.colorbar.Ti
+                    plotly_study.graph_objects.treemap.marker.colorbar.Ti
                     tle instance or dict with compatible properties
                 titlefont
                     Deprecated: Please use
@@ -1660,7 +1660,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.marker.ColorBar
+        plotly_study.graph_objs.treemap.marker.ColorBar
         """
         return self["colorbar"]
 
@@ -1710,7 +1710,7 @@ class Marker(_BaseTraceHierarchyType):
         specified as:
           - A list of colors that will be spaced evenly to create the colorscale.
             Many predefined colorscale lists are included in the sequential, diverging,
-            and cyclical modules in the plotly.colors package.
+            and cyclical modules in the plotly_study.colors package.
           - A list of 2-element lists where the first element is the
             normalized color level value (starting at 0 and ending at 1), 
             and the second item is a valid color string.
@@ -1749,7 +1749,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  colors .
     
         The 'colorssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1796,7 +1796,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.marker.Line
+          - An instance of plotly_study.graph_objs.treemap.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -1817,7 +1817,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.marker.Line
+        plotly_study.graph_objs.treemap.marker.Line
         """
         return self["line"]
 
@@ -1832,7 +1832,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'pad' property is an instance of Pad
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.marker.Pad
+          - An instance of plotly_study.graph_objs.treemap.marker.Pad
           - A dict of string/value properties that will be passed
             to the Pad constructor
     
@@ -1849,7 +1849,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.marker.Pad
+        plotly_study.graph_objs.treemap.marker.Pad
         """
         return self["pad"]
 
@@ -1952,7 +1952,7 @@ class Marker(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.treemap.marker.ColorBar instance
+            plotly_study.graph_objects.treemap.marker.ColorBar instance
             or dict with compatible properties
         colors
             Sets the color of each sector of this trace. If not
@@ -1985,10 +1985,10 @@ class Marker(_BaseTraceHierarchyType):
             while the leaves are faded towards the background
             color.
         line
-            plotly.graph_objects.treemap.marker.Line instance or
+            plotly_study.graph_objects.treemap.marker.Line instance or
             dict with compatible properties
         pad
-            plotly.graph_objects.treemap.marker.Pad instance or
+            plotly_study.graph_objects.treemap.marker.Pad instance or
             dict with compatible properties
         reversescale
             Reverses the color mapping if true. Has an effect only
@@ -2029,7 +2029,7 @@ class Marker(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Marker
+            an instance of plotly_study.graph_objs.treemap.Marker
         autocolorscale
             Determines whether the colorscale is a default palette
             (`autocolorscale: true`) or the palette determined by
@@ -2070,7 +2070,7 @@ class Marker(_BaseTraceHierarchyType):
             `layout.coloraxis2`, etc. Note that multiple color
             scales can be linked to the same color axis.
         colorbar
-            plotly.graph_objects.treemap.marker.ColorBar instance
+            plotly_study.graph_objects.treemap.marker.ColorBar instance
             or dict with compatible properties
         colors
             Sets the color of each sector of this trace. If not
@@ -2103,10 +2103,10 @@ class Marker(_BaseTraceHierarchyType):
             while the leaves are faded towards the background
             color.
         line
-            plotly.graph_objects.treemap.marker.Line instance or
+            plotly_study.graph_objects.treemap.marker.Line instance or
             dict with compatible properties
         pad
-            plotly.graph_objects.treemap.marker.Pad instance or
+            plotly_study.graph_objects.treemap.marker.Pad instance or
             dict with compatible properties
         reversescale
             Reverses the color mapping if true. Has an effect only
@@ -2136,9 +2136,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Marker 
+The first argument to the plotly_study.graph_objs.treemap.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Marker"""
+an instance of plotly_study.graph_objs.treemap.Marker"""
             )
 
         # Handle skip_invalid
@@ -2147,7 +2147,7 @@ an instance of plotly.graph_objs.treemap.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import marker as v_marker
+        from plotly_study.validators.treemap import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -2209,7 +2209,7 @@ an instance of plotly.graph_objs.treemap.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2281,7 +2281,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2333,7 +2333,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2372,7 +2372,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2441,7 +2441,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Insidetextfont
+            an instance of plotly_study.graph_objs.treemap.Insidetextfont
         color
 
         colorsrc
@@ -2484,9 +2484,9 @@ class Insidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Insidetextfont 
+The first argument to the plotly_study.graph_objs.treemap.Insidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Insidetextfont"""
+an instance of plotly_study.graph_objs.treemap.Insidetextfont"""
             )
 
         # Handle skip_invalid
@@ -2495,7 +2495,7 @@ an instance of plotly.graph_objs.treemap.Insidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import insidetextfont as v_insidetextfont
+        from plotly_study.validators.treemap import insidetextfont as v_insidetextfont
 
         # Initialize validators
         # ---------------------
@@ -2530,7 +2530,7 @@ an instance of plotly.graph_objs.treemap.Insidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2568,7 +2568,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2648,7 +2648,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2728,7 +2728,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2749,7 +2749,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.treemap.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.treemap.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -2787,7 +2787,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.treemap.hoverlabel.Font
+        plotly_study.graph_objs.treemap.hoverlabel.Font
         """
         return self["font"]
 
@@ -2830,7 +2830,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2904,7 +2904,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Hoverlabel
+            an instance of plotly_study.graph_objs.treemap.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -2951,9 +2951,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Hoverlabel 
+The first argument to the plotly_study.graph_objs.treemap.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Hoverlabel"""
+an instance of plotly_study.graph_objs.treemap.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -2962,7 +2962,7 @@ an instance of plotly.graph_objs.treemap.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import hoverlabel as v_hoverlabel
+        from plotly_study.validators.treemap import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -3006,7 +3006,7 @@ an instance of plotly.graph_objs.treemap.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -3141,7 +3141,7 @@ class Domain(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.treemap.Domain
+            an instance of plotly_study.graph_objs.treemap.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this treemap trace .
@@ -3172,9 +3172,9 @@ class Domain(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.treemap.Domain 
+The first argument to the plotly_study.graph_objs.treemap.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.treemap.Domain"""
+an instance of plotly_study.graph_objs.treemap.Domain"""
             )
 
         # Handle skip_invalid
@@ -3183,7 +3183,7 @@ an instance of plotly.graph_objs.treemap.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.treemap import domain as v_domain
+        from plotly_study.validators.treemap import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -3227,6 +3227,6 @@ __all__ = [
     "pathbar",
 ]
 
-from plotly.graph_objs.treemap import pathbar
-from plotly.graph_objs.treemap import marker
-from plotly.graph_objs.treemap import hoverlabel
+from plotly_study.graph_objs.treemap import pathbar
+from plotly_study.graph_objs.treemap import marker
+from plotly_study.graph_objs.treemap import hoverlabel

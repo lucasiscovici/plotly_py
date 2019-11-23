@@ -1,5 +1,5 @@
-import plotly.graph_objs as go
-import plotly.io as pio
+import plotly_study.graph_objs as go
+import plotly_study.io as pio
 from collections import namedtuple, OrderedDict
 
 from _plotly_utils.basevalidators import ColorscaleValidator
@@ -8,7 +8,7 @@ import math
 import pandas as pd
 import numpy as np
 
-from plotly.subplots import (
+from plotly_study.subplots import (
     make_subplots,
     _set_trace_grid_reference,
     _subplot_type_for_trace_type,

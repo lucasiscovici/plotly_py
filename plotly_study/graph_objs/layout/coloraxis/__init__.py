@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -625,7 +625,7 @@ class ColorBar(_BaseLayoutHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickfont
+          - An instance of plotly_study.graph_objs.layout.coloraxis.colorbar.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -653,7 +653,7 @@ class ColorBar(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.coloraxis.colorbar.Tickfont
+        plotly_study.graph_objs.layout.coloraxis.colorbar.Tickfont
         """
         return self["tickfont"]
 
@@ -697,7 +697,7 @@ class ColorBar(_BaseLayoutHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.layout.coloraxis.colorbar.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -739,7 +739,7 @@ class ColorBar(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop]
+        tuple[plotly_study.graph_objs.layout.coloraxis.colorbar.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -759,7 +759,7 @@ class ColorBar(_BaseLayoutHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop
+          - An instance of plotly_study.graph_objs.layout.coloraxis.colorbar.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -767,7 +767,7 @@ class ColorBar(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.coloraxis.colorbar.Tickformatstop
+        plotly_study.graph_objs.layout.coloraxis.colorbar.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -917,7 +917,7 @@ class ColorBar(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -958,7 +958,7 @@ class ColorBar(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -997,7 +997,7 @@ class ColorBar(_BaseLayoutHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.coloraxis.colorbar.Title
+          - An instance of plotly_study.graph_objs.layout.coloraxis.colorbar.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -1021,7 +1021,7 @@ class ColorBar(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.coloraxis.colorbar.Title
+        plotly_study.graph_objs.layout.coloraxis.colorbar.Title
         """
         return self["title"]
 
@@ -1041,7 +1041,7 @@ class ColorBar(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.coloraxis.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.layout.coloraxis.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1350,7 +1350,7 @@ class ColorBar(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.coloraxis.colorb
+            A tuple of plotly_study.graph_objects.layout.coloraxis.colorb
             ar.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -1392,7 +1392,7 @@ class ColorBar(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.coloraxis.colorbar.Title
+            plotly_study.graph_objects.layout.coloraxis.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -1489,7 +1489,7 @@ class ColorBar(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.coloraxis.ColorBar
+            plotly_study.graph_objs.layout.coloraxis.ColorBar
         bgcolor
             Sets the color of padded area.
         bordercolor
@@ -1602,7 +1602,7 @@ class ColorBar(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.coloraxis.colorb
+            A tuple of plotly_study.graph_objects.layout.coloraxis.colorb
             ar.Tickformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -1644,7 +1644,7 @@ class ColorBar(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.coloraxis.colorbar.Title
+            plotly_study.graph_objects.layout.coloraxis.colorbar.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use
@@ -1696,9 +1696,9 @@ class ColorBar(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.coloraxis.ColorBar 
+The first argument to the plotly_study.graph_objs.layout.coloraxis.ColorBar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.coloraxis.ColorBar"""
+an instance of plotly_study.graph_objs.layout.coloraxis.ColorBar"""
             )
 
         # Handle skip_invalid
@@ -1707,7 +1707,7 @@ an instance of plotly.graph_objs.layout.coloraxis.ColorBar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.coloraxis import colorbar as v_colorbar
+        from plotly_study.validators.layout.coloraxis import colorbar as v_colorbar
 
         # Initialize validators
         # ---------------------
@@ -1863,4 +1863,4 @@ an instance of plotly.graph_objs.layout.coloraxis.ColorBar"""
 
 __all__ = ["ColorBar", "colorbar"]
 
-from plotly.graph_objs.layout.coloraxis import colorbar
+from plotly_study.graph_objs.layout.coloraxis import colorbar

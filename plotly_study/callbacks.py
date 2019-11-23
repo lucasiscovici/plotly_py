@@ -1,5 +1,5 @@
 from __future__ import absolute_import
-from plotly.utils import _list_repr_elided
+from plotly_study.utils import _list_repr_elided
 
 
 class InputDeviceState:

@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -70,7 +70,7 @@ class Font(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -122,7 +122,7 @@ class Font(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -161,7 +161,7 @@ class Font(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -231,7 +231,7 @@ class Font(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.title.Font
+            an instance of plotly_study.graph_objs.pie.title.Font
         color
 
         colorsrc
@@ -274,9 +274,9 @@ class Font(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.title.Font 
+The first argument to the plotly_study.graph_objs.pie.title.Font 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.title.Font"""
+an instance of plotly_study.graph_objs.pie.title.Font"""
             )
 
         # Handle skip_invalid
@@ -285,7 +285,7 @@ an instance of plotly.graph_objs.pie.title.Font"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie.title import font as v_font
+        from plotly_study.validators.pie.title import font as v_font
 
         # Initialize validators
         # ---------------------

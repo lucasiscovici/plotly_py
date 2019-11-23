@@ -1,6 +1,6 @@
 """
 `plotly_express` is a terse, consistent, high-level wrapper around `plotly` for rapid \
-data exploration and figure generation. See the gallery at https://plotly.github.io/plotly_express
+data exploration and figure generation. See the gallery at https://plotly_study.github.io/plotly_express
 """
 from __future__ import absolute_import
 from plotly import optional_imports

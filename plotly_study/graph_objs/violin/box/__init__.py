@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -108,7 +108,7 @@ class Line(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.violin.box.Line
+            an instance of plotly_study.graph_objs.violin.box.Line
         color
             Sets the inner box plot bounding line color.
         width
@@ -131,9 +131,9 @@ class Line(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.violin.box.Line 
+The first argument to the plotly_study.graph_objs.violin.box.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.violin.box.Line"""
+an instance of plotly_study.graph_objs.violin.box.Line"""
             )
 
         # Handle skip_invalid
@@ -142,7 +142,7 @@ an instance of plotly.graph_objs.violin.box.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.violin.box import line as v_line
+        from plotly_study.validators.violin.box import line as v_line
 
         # Initialize validators
         # ---------------------

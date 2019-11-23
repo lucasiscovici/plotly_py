@@ -3,10 +3,10 @@ from __future__ import absolute_import
 import six
 
 from plotly import exceptions, optional_imports
-import plotly.colors as clrs
-from plotly.figure_factory import utils
-from plotly.graph_objs import graph_objs
-from plotly.tools import make_subplots
+import plotly_study.colors as clrs
+from plotly_study.figure_factory import utils
+from plotly_study.graph_objs import graph_objs
+from plotly_study.tools import make_subplots
 
 pd = optional_imports.get_module("pandas")
 
@@ -75,7 +75,7 @@ def hide_tick_labels_from_box_subplots(fig):
     for trace in fig["data"]:
         if trace["type"] == "box":
             # stores the xaxes which correspond to boxplot subplots
-            # since we use xaxis1, xaxis2, etc, in plotly.py
+            # since we use xaxis1, xaxis2, etc, in plotly_study.py
             boxplot_xaxes.append("xaxis{}".format(trace["xaxis"][1:]))
     for xaxis in boxplot_xaxes:
         fig["layout"][xaxis]["showticklabels"] = False
@@ -893,8 +893,8 @@ def create_scatterplotmatrix(
 
     Example 1: Vanilla Scatterplot Matrix
 
-    >>> from plotly.graph_objs import graph_objs
-    >>> from plotly.figure_factory import create_scatterplotmatrix
+    >>> from plotly_study.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_scatterplotmatrix
 
     >>> import numpy as np
     >>> import pandas as pd
@@ -910,8 +910,8 @@ def create_scatterplotmatrix(
 
     Example 2: Indexing a Column
 
-    >>> from plotly.graph_objs import graph_objs
-    >>> from plotly.figure_factory import create_scatterplotmatrix
+    >>> from plotly_study.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_scatterplotmatrix
 
     >>> import numpy as np
     >>> import pandas as pd
@@ -931,8 +931,8 @@ def create_scatterplotmatrix(
 
     Example 3: Styling the Diagonal Subplots
 
-    >>> from plotly.graph_objs import graph_objs
-    >>> from plotly.figure_factory import create_scatterplotmatrix
+    >>> from plotly_study.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_scatterplotmatrix
 
     >>> import numpy as np
     >>> import pandas as pd
@@ -953,8 +953,8 @@ def create_scatterplotmatrix(
 
     Example 4: Use a Theme to Style the Subplots
 
-    >>> from plotly.graph_objs import graph_objs
-    >>> from plotly.figure_factory import create_scatterplotmatrix
+    >>> from plotly_study.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_scatterplotmatrix
 
     >>> import numpy as np
     >>> import pandas as pd
@@ -972,8 +972,8 @@ def create_scatterplotmatrix(
 
     Example 5: Example 4 with Interval Factoring
 
-    >>> from plotly.graph_objs import graph_objs
-    >>> from plotly.figure_factory import create_scatterplotmatrix
+    >>> from plotly_study.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_scatterplotmatrix
 
     >>> import numpy as np
     >>> import pandas as pd
@@ -994,8 +994,8 @@ def create_scatterplotmatrix(
 
     Example 6: Using the colormap as a Dictionary
 
-    >>> from plotly.graph_objs import graph_objs
-    >>> from plotly.figure_factory import create_scatterplotmatrix
+    >>> from plotly_study.graph_objs import graph_objs
+    >>> from plotly_study.figure_factory import create_scatterplotmatrix
 
     >>> import numpy as np
     >>> import pandas as pd

@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -87,7 +87,7 @@ class Domain(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.grid.Domain
+            an instance of plotly_study.graph_objs.layout.grid.Domain
         x
             Sets the horizontal domain of this grid subplot (in
             plot fraction). The first and last cells end exactly at
@@ -114,9 +114,9 @@ class Domain(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.grid.Domain 
+The first argument to the plotly_study.graph_objs.layout.grid.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.grid.Domain"""
+an instance of plotly_study.graph_objs.layout.grid.Domain"""
             )
 
         # Handle skip_invalid
@@ -125,7 +125,7 @@ an instance of plotly.graph_objs.layout.grid.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.grid import domain as v_domain
+        from plotly_study.validators.layout.grid import domain as v_domain
 
         # Initialize validators
         # ---------------------

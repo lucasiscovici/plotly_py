@@ -1,8 +1,8 @@
 from __future__ import absolute_import
 
 from plotly import exceptions
-from plotly.graph_objs import graph_objs
-from plotly.figure_factory import utils
+from plotly_study.graph_objs import graph_objs
+from plotly_study.figure_factory import utils
 
 
 # Default colours for finance charts
@@ -73,7 +73,7 @@ def make_increasing_ohlc(open, high, low, close, dates, **kwargs):
     :param (list) close: closing values
     :param (list) dates: list of datetime objects. Default: None
     :param kwargs: kwargs to be passed to increasing trace via
-        plotly.graph_objs.Scatter.
+        plotly_study.graph_objs.Scatter.
 
     :rtype (trace) ohlc_incr_data: Scatter trace of all increasing ohlc
         sticks.
@@ -112,7 +112,7 @@ def make_decreasing_ohlc(open, high, low, close, dates, **kwargs):
     :param (list) close: closing values
     :param (list) dates: list of datetime objects. Default: None
     :param kwargs: kwargs to be passed to increasing trace via
-        plotly.graph_objs.Scatter.
+        plotly_study.graph_objs.Scatter.
 
     :rtype (trace) ohlc_decr_data: Scatter trace of all decreasing ohlc
         sticks.
@@ -149,16 +149,16 @@ def create_ohlc(open, high, low, close, dates=None, direction="both", **kwargs):
         less than or equal to the corresponding open value. When the
         direction is 'both', both increasing and decreasing units are
         returned. Default: 'both'
-    :param kwargs: kwargs passed through plotly.graph_objs.Scatter.
+    :param kwargs: kwargs passed through plotly_study.graph_objs.Scatter.
         These kwargs describe other attributes about the ohlc Scatter trace
         such as the color or the legend name. For more information on valid
-        kwargs call help(plotly.graph_objs.Scatter)
+        kwargs call help(plotly_study.graph_objs.Scatter)
 
     :rtype (dict): returns a representation of an ohlc chart figure.
 
     Example 1: Simple OHLC chart from a Pandas DataFrame
 
-    >>> from plotly.figure_factory import create_ohlc
+    >>> from plotly_study.figure_factory import create_ohlc
     >>> from datetime import datetime
 
     >>> import pandas.io.data as web
@@ -170,7 +170,7 @@ def create_ohlc(open, high, low, close, dates=None, direction="both", **kwargs):
 
     Example 2: Add text and annotations to the OHLC chart
 
-    >>> from plotly.figure_factory import create_ohlc
+    >>> from plotly_study.figure_factory import create_ohlc
     >>> from datetime import datetime
 
     >>> import pandas.io.data as web
@@ -199,8 +199,8 @@ def create_ohlc(open, high, low, close, dates=None, direction="both", **kwargs):
 
     Example 3: Customize the OHLC colors
 
-    >>> from plotly.figure_factory import create_ohlc
-    >>> from plotly.graph_objs import Line, Marker
+    >>> from plotly_study.figure_factory import create_ohlc
+    >>> from plotly_study.graph_objs import Line, Marker
     >>> from datetime import datetime
 
     >>> import pandas.io.data as web
@@ -229,7 +229,7 @@ def create_ohlc(open, high, low, close, dates=None, direction="both", **kwargs):
 
     Example 4: OHLC chart with datetime objects
 
-    >>> from plotly.figure_factory import create_ohlc
+    >>> from plotly_study.figure_factory import create_ohlc
 
     >>> from datetime import datetime
 

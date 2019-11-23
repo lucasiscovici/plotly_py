@@ -63,7 +63,7 @@ def make_subplots(
     **kwargs
 ):
     """
-    Return an instance of plotly.graph_objs.Figure with predefined subplots
+    Return an instance of plotly_study.graph_objs.Figure with predefined subplots
     configured in 'layout'.
 
     Parameters
@@ -234,8 +234,8 @@ def make_subplots(
     Example 1:
 
     >>> # Stack two subplots vertically, and add a scatter trace to each
-    >>> from plotly.subplots import make_subplots
-    ... import plotly.graph_objs as go
+    >>> from plotly_study.subplots import make_subplots
+    ... import plotly_study.graph_objs as go
     ... fig = make_subplots(rows=2)
 
     This is the format of your plot grid:
@@ -319,7 +319,7 @@ def make_subplots(
     ...     cols=[1, 2, 1, 2])
     """
 
-    import plotly.graph_objs as go
+    import plotly_study.graph_objs as go
 
     # Handle backward compatibility
     # -----------------------------
@@ -981,7 +981,7 @@ def _init_subplot_domain(x_domain, y_domain):
 
 
 def _subplot_type_for_trace_type(trace_type):
-    from plotly.validators import DataValidator
+    from plotly_study.validators import DataValidator
 
     trace_validator = DataValidator()
     if trace_type in trace_validator.class_strs_map:
@@ -1326,7 +1326,7 @@ No subplot specified at grid position ({row}, {col})""".format(
                 """
 Subplot with type '{subplot_type}' at grid position ({row}, {col}) was not
 created with the secondary_y spec property set to True. See the docstring
-for the specs argument to plotly.subplots.make_subplots for more information.
+for the specs argument to plotly_study.subplots.make_subplots for more information.
 """
             )
         trace_kwargs = subplot_refs[1].trace_kwargs
@@ -1340,7 +1340,7 @@ for the specs argument to plotly.subplots.make_subplots for more information.
 Trace type '{typ}' is not compatible with subplot type '{subplot_type}'
 at grid position ({row}, {col}) 
 
-See the docstring for the specs argument to plotly.subplots.make_subplots 
+See the docstring for the specs argument to plotly_study.subplots.make_subplots 
 for more information on subplot types""".format(
                     typ=trace.type,
                     subplot_type=subplot_refs[0].subplot_type,
@@ -1360,7 +1360,7 @@ def _get_grid_subplot(fig, row, col, secondary_y=False):
         raise Exception(
             "In order to reference traces by row and column, "
             "you must first use "
-            "plotly.tools.make_subplots "
+            "plotly_study.tools.make_subplots "
             "to create the figure with a subplot grid."
         )
 

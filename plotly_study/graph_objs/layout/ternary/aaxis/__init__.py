@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -14,7 +14,7 @@ class Title(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.aaxis.title.Font
+          - An instance of plotly_study.graph_objs.layout.ternary.aaxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -42,7 +42,7 @@ class Title(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.aaxis.title.Font
+        plotly_study.graph_objs.layout.ternary.aaxis.title.Font
         """
         return self["font"]
 
@@ -104,7 +104,7 @@ class Title(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.ternary.aaxis.Title
+            plotly_study.graph_objs.layout.ternary.aaxis.Title
         font
             Sets this axis' title font. Note that the title's font
             used to be customized by the now deprecated `titlefont`
@@ -132,9 +132,9 @@ class Title(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.ternary.aaxis.Title 
+The first argument to the plotly_study.graph_objs.layout.ternary.aaxis.Title 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.ternary.aaxis.Title"""
+an instance of plotly_study.graph_objs.layout.ternary.aaxis.Title"""
             )
 
         # Handle skip_invalid
@@ -143,7 +143,7 @@ an instance of plotly.graph_objs.layout.ternary.aaxis.Title"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.ternary.aaxis import title as v_title
+        from plotly_study.validators.layout.ternary.aaxis import title as v_title
 
         # Initialize validators
         # ---------------------
@@ -166,7 +166,7 @@ an instance of plotly.graph_objs.layout.ternary.aaxis.Title"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -356,7 +356,7 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.ternary.aaxis.Tickformatstop
+            plotly_study.graph_objs.layout.ternary.aaxis.Tickformatstop
         dtickrange
             range [*min*, *max*], where "min", "max" - dtick values
             which describe some zoom level, it is possible to omit
@@ -405,9 +405,9 @@ class Tickformatstop(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.ternary.aaxis.Tickformatstop 
+The first argument to the plotly_study.graph_objs.layout.ternary.aaxis.Tickformatstop 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.ternary.aaxis.Tickformatstop"""
+an instance of plotly_study.graph_objs.layout.ternary.aaxis.Tickformatstop"""
             )
 
         # Handle skip_invalid
@@ -416,7 +416,7 @@ an instance of plotly.graph_objs.layout.ternary.aaxis.Tickformatstop"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.ternary.aaxis import (
+        from plotly_study.validators.layout.ternary.aaxis import (
             tickformatstop as v_tickformatstop,
         )
 
@@ -454,7 +454,7 @@ an instance of plotly.graph_objs.layout.ternary.aaxis.Tickformatstop"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -608,7 +608,7 @@ class Tickfont(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.ternary.aaxis.Tickfont
+            plotly_study.graph_objs.layout.ternary.aaxis.Tickfont
         color
 
         family
@@ -645,9 +645,9 @@ class Tickfont(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.ternary.aaxis.Tickfont 
+The first argument to the plotly_study.graph_objs.layout.ternary.aaxis.Tickfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.ternary.aaxis.Tickfont"""
+an instance of plotly_study.graph_objs.layout.ternary.aaxis.Tickfont"""
             )
 
         # Handle skip_invalid
@@ -656,7 +656,7 @@ an instance of plotly.graph_objs.layout.ternary.aaxis.Tickfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.ternary.aaxis import tickfont as v_tickfont
+        from plotly_study.validators.layout.ternary.aaxis import tickfont as v_tickfont
 
         # Initialize validators
         # ---------------------
@@ -684,4 +684,4 @@ an instance of plotly.graph_objs.layout.ternary.aaxis.Tickfont"""
 
 __all__ = ["Tickfont", "Tickformatstop", "Tickformatstop", "Title", "title"]
 
-from plotly.graph_objs.layout.ternary.aaxis import title
+from plotly_study.graph_objs.layout.ternary.aaxis import title

@@ -7,10 +7,10 @@ from unittest import TestCase
 import pandas as pd
 from nose.plugins.attrib import attr
 
-import plotly.tools as tls
+import plotly_study.tools as tls
 from plotly import optional_imports
 
-matplotlylib = optional_imports.get_module("plotly.matplotlylib")
+matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 
 if matplotlylib:
     from matplotlib.dates import date2num

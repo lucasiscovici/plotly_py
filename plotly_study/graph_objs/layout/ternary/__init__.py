@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -133,7 +133,7 @@ class Domain(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.ternary.Domain
+            an instance of plotly_study.graph_objs.layout.ternary.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this ternary subplot .
@@ -164,9 +164,9 @@ class Domain(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.ternary.Domain 
+The first argument to the plotly_study.graph_objs.layout.ternary.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.ternary.Domain"""
+an instance of plotly_study.graph_objs.layout.ternary.Domain"""
             )
 
         # Handle skip_invalid
@@ -175,7 +175,7 @@ an instance of plotly.graph_objs.layout.ternary.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.ternary import domain as v_domain
+        from plotly_study.validators.layout.ternary import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -204,7 +204,7 @@ an instance of plotly.graph_objs.layout.ternary.Domain"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -863,7 +863,7 @@ class Caxis(_BaseLayoutHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.caxis.Tickfont
+          - An instance of plotly_study.graph_objs.layout.ternary.caxis.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -891,7 +891,7 @@ class Caxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.caxis.Tickfont
+        plotly_study.graph_objs.layout.ternary.caxis.Tickfont
         """
         return self["tickfont"]
 
@@ -935,7 +935,7 @@ class Caxis(_BaseLayoutHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.ternary.caxis.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.layout.ternary.caxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -977,7 +977,7 @@ class Caxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.ternary.caxis.Tickformatstop]
+        tuple[plotly_study.graph_objs.layout.ternary.caxis.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -997,7 +997,7 @@ class Caxis(_BaseLayoutHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.caxis.Tickformatstop
+          - An instance of plotly_study.graph_objs.layout.ternary.caxis.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -1005,7 +1005,7 @@ class Caxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.caxis.Tickformatstop
+        plotly_study.graph_objs.layout.ternary.caxis.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -1155,7 +1155,7 @@ class Caxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1196,7 +1196,7 @@ class Caxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1235,7 +1235,7 @@ class Caxis(_BaseLayoutHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.caxis.Title
+          - An instance of plotly_study.graph_objs.layout.ternary.caxis.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -1254,7 +1254,7 @@ class Caxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.caxis.Title
+        plotly_study.graph_objs.layout.ternary.caxis.Title
         """
         return self["title"]
 
@@ -1273,7 +1273,7 @@ class Caxis(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.caxis.title.Font
+          - An instance of plotly_study.graph_objs.layout.ternary.caxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1469,7 +1469,7 @@ class Caxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.ternary.caxis.Ti
+            A tuple of plotly_study.graph_objects.layout.ternary.caxis.Ti
             ckformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -1511,7 +1511,7 @@ class Caxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.ternary.caxis.Title
+            plotly_study.graph_objects.layout.ternary.caxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use layout.ternary.caxis.title.font
@@ -1576,7 +1576,7 @@ class Caxis(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.ternary.Caxis
+            an instance of plotly_study.graph_objs.layout.ternary.Caxis
         color
             Sets default for all colors associated with this axis
             all at once: line, font, tick, and grid colors. Grid
@@ -1705,7 +1705,7 @@ class Caxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.ternary.caxis.Ti
+            A tuple of plotly_study.graph_objects.layout.ternary.caxis.Ti
             ckformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -1747,7 +1747,7 @@ class Caxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.ternary.caxis.Title
+            plotly_study.graph_objects.layout.ternary.caxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use layout.ternary.caxis.title.font
@@ -1776,9 +1776,9 @@ class Caxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.ternary.Caxis 
+The first argument to the plotly_study.graph_objs.layout.ternary.Caxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.ternary.Caxis"""
+an instance of plotly_study.graph_objs.layout.ternary.Caxis"""
             )
 
         # Handle skip_invalid
@@ -1787,7 +1787,7 @@ an instance of plotly.graph_objs.layout.ternary.Caxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.ternary import caxis as v_caxis
+        from plotly_study.validators.layout.ternary import caxis as v_caxis
 
         # Initialize validators
         # ---------------------
@@ -1923,7 +1923,7 @@ an instance of plotly.graph_objs.layout.ternary.Caxis"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -2582,7 +2582,7 @@ class Baxis(_BaseLayoutHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.baxis.Tickfont
+          - An instance of plotly_study.graph_objs.layout.ternary.baxis.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -2610,7 +2610,7 @@ class Baxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.baxis.Tickfont
+        plotly_study.graph_objs.layout.ternary.baxis.Tickfont
         """
         return self["tickfont"]
 
@@ -2654,7 +2654,7 @@ class Baxis(_BaseLayoutHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.ternary.baxis.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.layout.ternary.baxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -2696,7 +2696,7 @@ class Baxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.ternary.baxis.Tickformatstop]
+        tuple[plotly_study.graph_objs.layout.ternary.baxis.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -2716,7 +2716,7 @@ class Baxis(_BaseLayoutHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.baxis.Tickformatstop
+          - An instance of plotly_study.graph_objs.layout.ternary.baxis.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -2724,7 +2724,7 @@ class Baxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.baxis.Tickformatstop
+        plotly_study.graph_objs.layout.ternary.baxis.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -2874,7 +2874,7 @@ class Baxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2915,7 +2915,7 @@ class Baxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2954,7 +2954,7 @@ class Baxis(_BaseLayoutHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.baxis.Title
+          - An instance of plotly_study.graph_objs.layout.ternary.baxis.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -2973,7 +2973,7 @@ class Baxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.baxis.Title
+        plotly_study.graph_objs.layout.ternary.baxis.Title
         """
         return self["title"]
 
@@ -2992,7 +2992,7 @@ class Baxis(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.baxis.title.Font
+          - An instance of plotly_study.graph_objs.layout.ternary.baxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -3188,7 +3188,7 @@ class Baxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.ternary.baxis.Ti
+            A tuple of plotly_study.graph_objects.layout.ternary.baxis.Ti
             ckformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -3230,7 +3230,7 @@ class Baxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.ternary.baxis.Title
+            plotly_study.graph_objects.layout.ternary.baxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use layout.ternary.baxis.title.font
@@ -3295,7 +3295,7 @@ class Baxis(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.ternary.Baxis
+            an instance of plotly_study.graph_objs.layout.ternary.Baxis
         color
             Sets default for all colors associated with this axis
             all at once: line, font, tick, and grid colors. Grid
@@ -3424,7 +3424,7 @@ class Baxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.ternary.baxis.Ti
+            A tuple of plotly_study.graph_objects.layout.ternary.baxis.Ti
             ckformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -3466,7 +3466,7 @@ class Baxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.ternary.baxis.Title
+            plotly_study.graph_objects.layout.ternary.baxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use layout.ternary.baxis.title.font
@@ -3495,9 +3495,9 @@ class Baxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.ternary.Baxis 
+The first argument to the plotly_study.graph_objs.layout.ternary.Baxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.ternary.Baxis"""
+an instance of plotly_study.graph_objs.layout.ternary.Baxis"""
             )
 
         # Handle skip_invalid
@@ -3506,7 +3506,7 @@ an instance of plotly.graph_objs.layout.ternary.Baxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.ternary import baxis as v_baxis
+        from plotly_study.validators.layout.ternary import baxis as v_baxis
 
         # Initialize validators
         # ---------------------
@@ -3642,7 +3642,7 @@ an instance of plotly.graph_objs.layout.ternary.Baxis"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -4301,7 +4301,7 @@ class Aaxis(_BaseLayoutHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.aaxis.Tickfont
+          - An instance of plotly_study.graph_objs.layout.ternary.aaxis.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -4329,7 +4329,7 @@ class Aaxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.aaxis.Tickfont
+        plotly_study.graph_objs.layout.ternary.aaxis.Tickfont
         """
         return self["tickfont"]
 
@@ -4373,7 +4373,7 @@ class Aaxis(_BaseLayoutHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.layout.ternary.aaxis.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.layout.ternary.aaxis.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -4415,7 +4415,7 @@ class Aaxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.layout.ternary.aaxis.Tickformatstop]
+        tuple[plotly_study.graph_objs.layout.ternary.aaxis.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -4435,7 +4435,7 @@ class Aaxis(_BaseLayoutHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.aaxis.Tickformatstop
+          - An instance of plotly_study.graph_objs.layout.ternary.aaxis.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -4443,7 +4443,7 @@ class Aaxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.aaxis.Tickformatstop
+        plotly_study.graph_objs.layout.ternary.aaxis.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -4593,7 +4593,7 @@ class Aaxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -4634,7 +4634,7 @@ class Aaxis(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -4673,7 +4673,7 @@ class Aaxis(_BaseLayoutHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.aaxis.Title
+          - An instance of plotly_study.graph_objs.layout.ternary.aaxis.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -4692,7 +4692,7 @@ class Aaxis(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.ternary.aaxis.Title
+        plotly_study.graph_objs.layout.ternary.aaxis.Title
         """
         return self["title"]
 
@@ -4711,7 +4711,7 @@ class Aaxis(_BaseLayoutHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.ternary.aaxis.title.Font
+          - An instance of plotly_study.graph_objs.layout.ternary.aaxis.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -4907,7 +4907,7 @@ class Aaxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.ternary.aaxis.Ti
+            A tuple of plotly_study.graph_objects.layout.ternary.aaxis.Ti
             ckformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -4949,7 +4949,7 @@ class Aaxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.ternary.aaxis.Title
+            plotly_study.graph_objects.layout.ternary.aaxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use layout.ternary.aaxis.title.font
@@ -5014,7 +5014,7 @@ class Aaxis(_BaseLayoutHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.layout.ternary.Aaxis
+            an instance of plotly_study.graph_objs.layout.ternary.Aaxis
         color
             Sets default for all colors associated with this axis
             all at once: line, font, tick, and grid colors. Grid
@@ -5143,7 +5143,7 @@ class Aaxis(_BaseLayoutHierarchyType):
             09:15:23.456* with tickformat "%H~%M~%S.%2f" would
             display "09~15~23.46"
         tickformatstops
-            A tuple of plotly.graph_objects.layout.ternary.aaxis.Ti
+            A tuple of plotly_study.graph_objects.layout.ternary.aaxis.Ti
             ckformatstop instances or dicts with compatible
             properties
         tickformatstopdefaults
@@ -5185,7 +5185,7 @@ class Aaxis(_BaseLayoutHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.layout.ternary.aaxis.Title
+            plotly_study.graph_objects.layout.ternary.aaxis.Title
             instance or dict with compatible properties
         titlefont
             Deprecated: Please use layout.ternary.aaxis.title.font
@@ -5214,9 +5214,9 @@ class Aaxis(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.ternary.Aaxis 
+The first argument to the plotly_study.graph_objs.layout.ternary.Aaxis 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.ternary.Aaxis"""
+an instance of plotly_study.graph_objs.layout.ternary.Aaxis"""
             )
 
         # Handle skip_invalid
@@ -5225,7 +5225,7 @@ an instance of plotly.graph_objs.layout.ternary.Aaxis"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.ternary import aaxis as v_aaxis
+        from plotly_study.validators.layout.ternary import aaxis as v_aaxis
 
         # Initialize validators
         # ---------------------
@@ -5363,6 +5363,6 @@ an instance of plotly.graph_objs.layout.ternary.Aaxis"""
 
 __all__ = ["Aaxis", "Baxis", "Caxis", "Domain", "aaxis", "baxis", "caxis"]
 
-from plotly.graph_objs.layout.ternary import caxis
-from plotly.graph_objs.layout.ternary import baxis
-from plotly.graph_objs.layout.ternary import aaxis
+from plotly_study.graph_objs.layout.ternary import caxis
+from plotly_study.graph_objs.layout.ternary import baxis
+from plotly_study.graph_objs.layout.ternary import aaxis

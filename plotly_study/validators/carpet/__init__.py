@@ -567,7 +567,7 @@ class BaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 09:15:23.456* with tickformat "%H~%M~%S.%2f"
                 would display "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.carpet.baxis.Ti
+                A tuple of plotly_study.graph_objects.carpet.baxis.Ti
                 ckformatstop instances or dicts with compatible
                 properties
             tickformatstopdefaults
@@ -597,7 +597,7 @@ class BaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for
                 tickvals .
             title
-                plotly.graph_objects.carpet.baxis.Title
+                plotly_study.graph_objects.carpet.baxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use carpet.baxis.title.font
@@ -838,7 +838,7 @@ class AaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 09:15:23.456* with tickformat "%H~%M~%S.%2f"
                 would display "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.carpet.aaxis.Ti
+                A tuple of plotly_study.graph_objects.carpet.aaxis.Ti
                 ckformatstop instances or dicts with compatible
                 properties
             tickformatstopdefaults
@@ -868,7 +868,7 @@ class AaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for
                 tickvals .
             title
-                plotly.graph_objects.carpet.aaxis.Title
+                plotly_study.graph_objects.carpet.aaxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use carpet.aaxis.title.font

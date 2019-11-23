@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -137,7 +137,7 @@ class Marker(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.scattermapbox.unselected.Marker
+            plotly_study.graph_objs.scattermapbox.unselected.Marker
         color
             Sets the marker color of unselected points, applied
             only when a selection exists.
@@ -165,9 +165,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.scattermapbox.unselected.Marker 
+The first argument to the plotly_study.graph_objs.scattermapbox.unselected.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.scattermapbox.unselected.Marker"""
+an instance of plotly_study.graph_objs.scattermapbox.unselected.Marker"""
             )
 
         # Handle skip_invalid
@@ -176,7 +176,7 @@ an instance of plotly.graph_objs.scattermapbox.unselected.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.scattermapbox.unselected import marker as v_marker
+        from plotly_study.validators.scattermapbox.unselected import marker as v_marker
 
         # Initialize validators
         # ---------------------

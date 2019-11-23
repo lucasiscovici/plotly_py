@@ -1,7 +1,7 @@
 import copy
 from numbers import Number as Num
 from unittest import TestCase
-import plotly.io as pio
+import plotly_study.io as pio
 
 
 class TestCaseNoTemplate(TestCase):

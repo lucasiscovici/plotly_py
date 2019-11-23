@@ -407,7 +407,7 @@ class IncreasingValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             line
-                plotly.graph_objects.ohlc.increasing.Line
+                plotly_study.graph_objects.ohlc.increasing.Line
                 instance or dict with compatible properties
 """,
             ),
@@ -600,7 +600,7 @@ class DecreasingValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             line
-                plotly.graph_objects.ohlc.decreasing.Line
+                plotly_study.graph_objects.ohlc.decreasing.Line
                 instance or dict with compatible properties
 """,
             ),

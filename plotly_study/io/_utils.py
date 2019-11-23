@@ -1,18 +1,18 @@
 from __future__ import absolute_import
 
 import plotly
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
 
 def validate_coerce_fig_to_dict(fig, validate):
-    from plotly.basedatatypes import BaseFigure
+    from plotly_study.basedatatypes import BaseFigure
 
     if isinstance(fig, BaseFigure):
         fig_dict = fig.to_dict()
     elif isinstance(fig, dict):
         if validate:
             # This will raise an exception if fig is not a valid plotly figure
-            fig_dict = plotly.graph_objs.Figure(fig).to_plotly_json()
+            fig_dict = plotly_study.graph_objs.Figure(fig).to_plotly_json()
         else:
             fig_dict = fig
     else:

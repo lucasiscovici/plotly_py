@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -57,7 +57,7 @@ class Z(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  locations .
     
         The 'locationssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -134,7 +134,7 @@ class Z(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.slices.Z
+            an instance of plotly_study.graph_objs.volume.slices.Z
         fill
             Sets the fill ratio of the `slices`. The default fill
             value of the `slices` is 1 meaning that they are
@@ -168,9 +168,9 @@ class Z(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.slices.Z 
+The first argument to the plotly_study.graph_objs.volume.slices.Z 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.slices.Z"""
+an instance of plotly_study.graph_objs.volume.slices.Z"""
             )
 
         # Handle skip_invalid
@@ -179,7 +179,7 @@ an instance of plotly.graph_objs.volume.slices.Z"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume.slices import z as v_z
+        from plotly_study.validators.volume.slices import z as v_z
 
         # Initialize validators
         # ---------------------
@@ -208,7 +208,7 @@ an instance of plotly.graph_objs.volume.slices.Z"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -267,7 +267,7 @@ class Y(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  locations .
     
         The 'locationssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -344,7 +344,7 @@ class Y(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.slices.Y
+            an instance of plotly_study.graph_objs.volume.slices.Y
         fill
             Sets the fill ratio of the `slices`. The default fill
             value of the `slices` is 1 meaning that they are
@@ -378,9 +378,9 @@ class Y(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.slices.Y 
+The first argument to the plotly_study.graph_objs.volume.slices.Y 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.slices.Y"""
+an instance of plotly_study.graph_objs.volume.slices.Y"""
             )
 
         # Handle skip_invalid
@@ -389,7 +389,7 @@ an instance of plotly.graph_objs.volume.slices.Y"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume.slices import y as v_y
+        from plotly_study.validators.volume.slices import y as v_y
 
         # Initialize validators
         # ---------------------
@@ -418,7 +418,7 @@ an instance of plotly.graph_objs.volume.slices.Y"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -477,7 +477,7 @@ class X(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  locations .
     
         The 'locationssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -554,7 +554,7 @@ class X(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.slices.X
+            an instance of plotly_study.graph_objs.volume.slices.X
         fill
             Sets the fill ratio of the `slices`. The default fill
             value of the `slices` is 1 meaning that they are
@@ -588,9 +588,9 @@ class X(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.slices.X 
+The first argument to the plotly_study.graph_objs.volume.slices.X 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.slices.X"""
+an instance of plotly_study.graph_objs.volume.slices.X"""
             )
 
         # Handle skip_invalid
@@ -599,7 +599,7 @@ an instance of plotly.graph_objs.volume.slices.X"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume.slices import x as v_x
+        from plotly_study.validators.volume.slices import x as v_x
 
         # Initialize validators
         # ---------------------

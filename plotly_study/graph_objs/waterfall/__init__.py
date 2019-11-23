@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -11,7 +11,7 @@ class Totals(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.totals.Marker
+          - An instance of plotly_study.graph_objs.waterfall.totals.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -21,12 +21,12 @@ class Totals(_BaseTraceHierarchyType):
                     Sets the marker color of all intermediate sums
                     and total values.
                 line
-                    plotly.graph_objects.waterfall.totals.marker.Li
+                    plotly_study.graph_objects.waterfall.totals.marker.Li
                     ne instance or dict with compatible properties
 
         Returns
         -------
-        plotly.graph_objs.waterfall.totals.Marker
+        plotly_study.graph_objs.waterfall.totals.Marker
         """
         return self["marker"]
 
@@ -46,7 +46,7 @@ class Totals(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.waterfall.totals.Marker instance
+            plotly_study.graph_objects.waterfall.totals.Marker instance
             or dict with compatible properties
         """
 
@@ -58,9 +58,9 @@ class Totals(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.waterfall.Totals
+            an instance of plotly_study.graph_objs.waterfall.Totals
         marker
-            plotly.graph_objects.waterfall.totals.Marker instance
+            plotly_study.graph_objects.waterfall.totals.Marker instance
             or dict with compatible properties
 
         Returns
@@ -80,9 +80,9 @@ class Totals(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Totals 
+The first argument to the plotly_study.graph_objs.waterfall.Totals 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Totals"""
+an instance of plotly_study.graph_objs.waterfall.Totals"""
             )
 
         # Handle skip_invalid
@@ -91,7 +91,7 @@ an instance of plotly.graph_objs.waterfall.Totals"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import totals as v_totals
+        from plotly_study.validators.waterfall import totals as v_totals
 
         # Initialize validators
         # ---------------------
@@ -111,7 +111,7 @@ an instance of plotly.graph_objs.waterfall.Totals"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -183,7 +183,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -235,7 +235,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -274,7 +274,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -343,7 +343,7 @@ class Textfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.waterfall.Textfont
+            an instance of plotly_study.graph_objs.waterfall.Textfont
         color
 
         colorsrc
@@ -386,9 +386,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Textfont 
+The first argument to the plotly_study.graph_objs.waterfall.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Textfont"""
+an instance of plotly_study.graph_objs.waterfall.Textfont"""
             )
 
         # Handle skip_invalid
@@ -397,7 +397,7 @@ an instance of plotly.graph_objs.waterfall.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import textfont as v_textfont
+        from plotly_study.validators.waterfall import textfont as v_textfont
 
         # Initialize validators
         # ---------------------
@@ -432,7 +432,7 @@ an instance of plotly.graph_objs.waterfall.Textfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -511,7 +511,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.waterfall.Stream
+            an instance of plotly_study.graph_objs.waterfall.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -539,9 +539,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Stream 
+The first argument to the plotly_study.graph_objs.waterfall.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Stream"""
+an instance of plotly_study.graph_objs.waterfall.Stream"""
             )
 
         # Handle skip_invalid
@@ -550,7 +550,7 @@ an instance of plotly.graph_objs.waterfall.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import stream as v_stream
+        from plotly_study.validators.waterfall import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -573,7 +573,7 @@ an instance of plotly.graph_objs.waterfall.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -645,7 +645,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -697,7 +697,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -736,7 +736,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -806,7 +806,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.waterfall.Outsidetextfont
+            plotly_study.graph_objs.waterfall.Outsidetextfont
         color
 
         colorsrc
@@ -849,9 +849,9 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Outsidetextfont 
+The first argument to the plotly_study.graph_objs.waterfall.Outsidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Outsidetextfont"""
+an instance of plotly_study.graph_objs.waterfall.Outsidetextfont"""
             )
 
         # Handle skip_invalid
@@ -860,7 +860,7 @@ an instance of plotly.graph_objs.waterfall.Outsidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import outsidetextfont as v_outsidetextfont
+        from plotly_study.validators.waterfall import outsidetextfont as v_outsidetextfont
 
         # Initialize validators
         # ---------------------
@@ -895,7 +895,7 @@ an instance of plotly.graph_objs.waterfall.Outsidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -967,7 +967,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1019,7 +1019,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1058,7 +1058,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1128,7 +1128,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.waterfall.Insidetextfont
+            plotly_study.graph_objs.waterfall.Insidetextfont
         color
 
         colorsrc
@@ -1171,9 +1171,9 @@ class Insidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Insidetextfont 
+The first argument to the plotly_study.graph_objs.waterfall.Insidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Insidetextfont"""
+an instance of plotly_study.graph_objs.waterfall.Insidetextfont"""
             )
 
         # Handle skip_invalid
@@ -1182,7 +1182,7 @@ an instance of plotly.graph_objs.waterfall.Insidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import insidetextfont as v_insidetextfont
+        from plotly_study.validators.waterfall import insidetextfont as v_insidetextfont
 
         # Initialize validators
         # ---------------------
@@ -1217,7 +1217,7 @@ an instance of plotly.graph_objs.waterfall.Insidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1230,7 +1230,7 @@ class Increasing(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.increasing.Marker
+          - An instance of plotly_study.graph_objs.waterfall.increasing.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -1239,13 +1239,13 @@ class Increasing(_BaseTraceHierarchyType):
                 color
                     Sets the marker color of all increasing values.
                 line
-                    plotly.graph_objects.waterfall.increasing.marke
+                    plotly_study.graph_objects.waterfall.increasing.marke
                     r.Line instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.waterfall.increasing.Marker
+        plotly_study.graph_objs.waterfall.increasing.Marker
         """
         return self["marker"]
 
@@ -1265,7 +1265,7 @@ class Increasing(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.waterfall.increasing.Marker
+            plotly_study.graph_objects.waterfall.increasing.Marker
             instance or dict with compatible properties
         """
 
@@ -1277,9 +1277,9 @@ class Increasing(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.waterfall.Increasing
+            an instance of plotly_study.graph_objs.waterfall.Increasing
         marker
-            plotly.graph_objects.waterfall.increasing.Marker
+            plotly_study.graph_objects.waterfall.increasing.Marker
             instance or dict with compatible properties
 
         Returns
@@ -1299,9 +1299,9 @@ class Increasing(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Increasing 
+The first argument to the plotly_study.graph_objs.waterfall.Increasing 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Increasing"""
+an instance of plotly_study.graph_objs.waterfall.Increasing"""
             )
 
         # Handle skip_invalid
@@ -1310,7 +1310,7 @@ an instance of plotly.graph_objs.waterfall.Increasing"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import increasing as v_increasing
+        from plotly_study.validators.waterfall import increasing as v_increasing
 
         # Initialize validators
         # ---------------------
@@ -1330,7 +1330,7 @@ an instance of plotly.graph_objs.waterfall.Increasing"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1368,7 +1368,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1448,7 +1448,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1528,7 +1528,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1549,7 +1549,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.waterfall.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1587,7 +1587,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.hoverlabel.Font
+        plotly_study.graph_objs.waterfall.hoverlabel.Font
         """
         return self["font"]
 
@@ -1630,7 +1630,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1704,7 +1704,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.waterfall.Hoverlabel
+            an instance of plotly_study.graph_objs.waterfall.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1751,9 +1751,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Hoverlabel 
+The first argument to the plotly_study.graph_objs.waterfall.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Hoverlabel"""
+an instance of plotly_study.graph_objs.waterfall.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1762,7 +1762,7 @@ an instance of plotly.graph_objs.waterfall.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import hoverlabel as v_hoverlabel
+        from plotly_study.validators.waterfall import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1806,7 +1806,7 @@ an instance of plotly.graph_objs.waterfall.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1819,7 +1819,7 @@ class Decreasing(_BaseTraceHierarchyType):
         """
         The 'marker' property is an instance of Marker
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.decreasing.Marker
+          - An instance of plotly_study.graph_objs.waterfall.decreasing.Marker
           - A dict of string/value properties that will be passed
             to the Marker constructor
     
@@ -1828,13 +1828,13 @@ class Decreasing(_BaseTraceHierarchyType):
                 color
                     Sets the marker color of all decreasing values.
                 line
-                    plotly.graph_objects.waterfall.decreasing.marke
+                    plotly_study.graph_objects.waterfall.decreasing.marke
                     r.Line instance or dict with compatible
                     properties
 
         Returns
         -------
-        plotly.graph_objs.waterfall.decreasing.Marker
+        plotly_study.graph_objs.waterfall.decreasing.Marker
         """
         return self["marker"]
 
@@ -1854,7 +1854,7 @@ class Decreasing(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         marker
-            plotly.graph_objects.waterfall.decreasing.Marker
+            plotly_study.graph_objects.waterfall.decreasing.Marker
             instance or dict with compatible properties
         """
 
@@ -1866,9 +1866,9 @@ class Decreasing(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.waterfall.Decreasing
+            an instance of plotly_study.graph_objs.waterfall.Decreasing
         marker
-            plotly.graph_objects.waterfall.decreasing.Marker
+            plotly_study.graph_objects.waterfall.decreasing.Marker
             instance or dict with compatible properties
 
         Returns
@@ -1888,9 +1888,9 @@ class Decreasing(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Decreasing 
+The first argument to the plotly_study.graph_objs.waterfall.Decreasing 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Decreasing"""
+an instance of plotly_study.graph_objs.waterfall.Decreasing"""
             )
 
         # Handle skip_invalid
@@ -1899,7 +1899,7 @@ an instance of plotly.graph_objs.waterfall.Decreasing"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import decreasing as v_decreasing
+        from plotly_study.validators.waterfall import decreasing as v_decreasing
 
         # Initialize validators
         # ---------------------
@@ -1919,7 +1919,7 @@ an instance of plotly.graph_objs.waterfall.Decreasing"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1932,7 +1932,7 @@ class Connector(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.waterfall.connector.Line
+          - An instance of plotly_study.graph_objs.waterfall.connector.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -1950,7 +1950,7 @@ class Connector(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.waterfall.connector.Line
+        plotly_study.graph_objs.waterfall.connector.Line
         """
         return self["line"]
 
@@ -2011,7 +2011,7 @@ class Connector(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         line
-            plotly.graph_objects.waterfall.connector.Line instance
+            plotly_study.graph_objects.waterfall.connector.Line instance
             or dict with compatible properties
         mode
             Sets the shape of connector lines.
@@ -2027,9 +2027,9 @@ class Connector(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.waterfall.Connector
+            an instance of plotly_study.graph_objs.waterfall.Connector
         line
-            plotly.graph_objects.waterfall.connector.Line instance
+            plotly_study.graph_objects.waterfall.connector.Line instance
             or dict with compatible properties
         mode
             Sets the shape of connector lines.
@@ -2053,9 +2053,9 @@ class Connector(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.waterfall.Connector 
+The first argument to the plotly_study.graph_objs.waterfall.Connector 
 constructor must be a dict or 
-an instance of plotly.graph_objs.waterfall.Connector"""
+an instance of plotly_study.graph_objs.waterfall.Connector"""
             )
 
         # Handle skip_invalid
@@ -2064,7 +2064,7 @@ an instance of plotly.graph_objs.waterfall.Connector"""
 
         # Import validators
         # -----------------
-        from plotly.validators.waterfall import connector as v_connector
+        from plotly_study.validators.waterfall import connector as v_connector
 
         # Initialize validators
         # ---------------------
@@ -2107,8 +2107,8 @@ __all__ = [
     "totals",
 ]
 
-from plotly.graph_objs.waterfall import totals
-from plotly.graph_objs.waterfall import increasing
-from plotly.graph_objs.waterfall import hoverlabel
-from plotly.graph_objs.waterfall import decreasing
-from plotly.graph_objs.waterfall import connector
+from plotly_study.graph_objs.waterfall import totals
+from plotly_study.graph_objs.waterfall import increasing
+from plotly_study.graph_objs.waterfall import hoverlabel
+from plotly_study.graph_objs.waterfall import decreasing
+from plotly_study.graph_objs.waterfall import connector

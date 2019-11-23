@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -14,7 +14,7 @@ class Title(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.title.Font
+          - An instance of plotly_study.graph_objs.pie.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -52,7 +52,7 @@ class Title(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.pie.title.Font
+        plotly_study.graph_objs.pie.title.Font
         """
         return self["font"]
 
@@ -143,7 +143,7 @@ class Title(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Title
+            an instance of plotly_study.graph_objs.pie.Title
         font
             Sets the font used for `title`. Note that the title's
             font used to be set by the now deprecated `titlefont`
@@ -176,9 +176,9 @@ class Title(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Title 
+The first argument to the plotly_study.graph_objs.pie.Title 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Title"""
+an instance of plotly_study.graph_objs.pie.Title"""
             )
 
         # Handle skip_invalid
@@ -187,7 +187,7 @@ an instance of plotly.graph_objs.pie.Title"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import title as v_title
+        from plotly_study.validators.pie import title as v_title
 
         # Initialize validators
         # ---------------------
@@ -213,7 +213,7 @@ an instance of plotly.graph_objs.pie.Title"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -285,7 +285,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -337,7 +337,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -376,7 +376,7 @@ class Textfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -445,7 +445,7 @@ class Textfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Textfont
+            an instance of plotly_study.graph_objs.pie.Textfont
         color
 
         colorsrc
@@ -488,9 +488,9 @@ class Textfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Textfont 
+The first argument to the plotly_study.graph_objs.pie.Textfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Textfont"""
+an instance of plotly_study.graph_objs.pie.Textfont"""
             )
 
         # Handle skip_invalid
@@ -499,7 +499,7 @@ an instance of plotly.graph_objs.pie.Textfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import textfont as v_textfont
+        from plotly_study.validators.pie import textfont as v_textfont
 
         # Initialize validators
         # ---------------------
@@ -534,7 +534,7 @@ an instance of plotly.graph_objs.pie.Textfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -613,7 +613,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Stream
+            an instance of plotly_study.graph_objs.pie.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -641,9 +641,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Stream 
+The first argument to the plotly_study.graph_objs.pie.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Stream"""
+an instance of plotly_study.graph_objs.pie.Stream"""
             )
 
         # Handle skip_invalid
@@ -652,7 +652,7 @@ an instance of plotly.graph_objs.pie.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import stream as v_stream
+        from plotly_study.validators.pie import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -675,7 +675,7 @@ an instance of plotly.graph_objs.pie.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -747,7 +747,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -799,7 +799,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -838,7 +838,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -907,7 +907,7 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Outsidetextfont
+            an instance of plotly_study.graph_objs.pie.Outsidetextfont
         color
 
         colorsrc
@@ -950,9 +950,9 @@ class Outsidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Outsidetextfont 
+The first argument to the plotly_study.graph_objs.pie.Outsidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Outsidetextfont"""
+an instance of plotly_study.graph_objs.pie.Outsidetextfont"""
             )
 
         # Handle skip_invalid
@@ -961,7 +961,7 @@ an instance of plotly.graph_objs.pie.Outsidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import outsidetextfont as v_outsidetextfont
+        from plotly_study.validators.pie import outsidetextfont as v_outsidetextfont
 
         # Initialize validators
         # ---------------------
@@ -996,7 +996,7 @@ an instance of plotly.graph_objs.pie.Outsidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1031,7 +1031,7 @@ class Marker(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  colors .
     
         The 'colorssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1050,7 +1050,7 @@ class Marker(_BaseTraceHierarchyType):
         """
         The 'line' property is an instance of Line
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.marker.Line
+          - An instance of plotly_study.graph_objs.pie.marker.Line
           - A dict of string/value properties that will be passed
             to the Line constructor
     
@@ -1071,7 +1071,7 @@ class Marker(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.pie.marker.Line
+        plotly_study.graph_objs.pie.marker.Line
         """
         return self["line"]
 
@@ -1097,7 +1097,7 @@ class Marker(_BaseTraceHierarchyType):
         colorssrc
             Sets the source reference on plot.ly for  colors .
         line
-            plotly.graph_objects.pie.marker.Line instance or dict
+            plotly_study.graph_objects.pie.marker.Line instance or dict
             with compatible properties
         """
 
@@ -1109,7 +1109,7 @@ class Marker(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Marker
+            an instance of plotly_study.graph_objs.pie.Marker
         colors
             Sets the color of each sector. If not specified, the
             default trace color set is used to pick the sector
@@ -1117,7 +1117,7 @@ class Marker(_BaseTraceHierarchyType):
         colorssrc
             Sets the source reference on plot.ly for  colors .
         line
-            plotly.graph_objects.pie.marker.Line instance or dict
+            plotly_study.graph_objects.pie.marker.Line instance or dict
             with compatible properties
 
         Returns
@@ -1137,9 +1137,9 @@ class Marker(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Marker 
+The first argument to the plotly_study.graph_objs.pie.Marker 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Marker"""
+an instance of plotly_study.graph_objs.pie.Marker"""
             )
 
         # Handle skip_invalid
@@ -1148,7 +1148,7 @@ an instance of plotly.graph_objs.pie.Marker"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import marker as v_marker
+        from plotly_study.validators.pie import marker as v_marker
 
         # Initialize validators
         # ---------------------
@@ -1174,7 +1174,7 @@ an instance of plotly.graph_objs.pie.Marker"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1246,7 +1246,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  color .
     
         The 'colorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1298,7 +1298,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  family .
     
         The 'familysrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1337,7 +1337,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  size .
     
         The 'sizesrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1406,7 +1406,7 @@ class Insidetextfont(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Insidetextfont
+            an instance of plotly_study.graph_objs.pie.Insidetextfont
         color
 
         colorsrc
@@ -1449,9 +1449,9 @@ class Insidetextfont(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Insidetextfont 
+The first argument to the plotly_study.graph_objs.pie.Insidetextfont 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Insidetextfont"""
+an instance of plotly_study.graph_objs.pie.Insidetextfont"""
             )
 
         # Handle skip_invalid
@@ -1460,7 +1460,7 @@ an instance of plotly.graph_objs.pie.Insidetextfont"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import insidetextfont as v_insidetextfont
+        from plotly_study.validators.pie import insidetextfont as v_insidetextfont
 
         # Initialize validators
         # ---------------------
@@ -1495,7 +1495,7 @@ an instance of plotly.graph_objs.pie.Insidetextfont"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1533,7 +1533,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1613,7 +1613,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1693,7 +1693,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1714,7 +1714,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.pie.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.pie.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1752,7 +1752,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.pie.hoverlabel.Font
+        plotly_study.graph_objs.pie.hoverlabel.Font
         """
         return self["font"]
 
@@ -1795,7 +1795,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1869,7 +1869,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Hoverlabel
+            an instance of plotly_study.graph_objs.pie.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1916,9 +1916,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Hoverlabel 
+The first argument to the plotly_study.graph_objs.pie.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Hoverlabel"""
+an instance of plotly_study.graph_objs.pie.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1927,7 +1927,7 @@ an instance of plotly.graph_objs.pie.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import hoverlabel as v_hoverlabel
+        from plotly_study.validators.pie import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1971,7 +1971,7 @@ an instance of plotly.graph_objs.pie.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2105,7 +2105,7 @@ class Domain(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.pie.Domain
+            an instance of plotly_study.graph_objs.pie.Domain
         column
             If there is a layout grid, use the domain for this
             column in the grid for this pie trace .
@@ -2136,9 +2136,9 @@ class Domain(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.pie.Domain 
+The first argument to the plotly_study.graph_objs.pie.Domain 
 constructor must be a dict or 
-an instance of plotly.graph_objs.pie.Domain"""
+an instance of plotly_study.graph_objs.pie.Domain"""
             )
 
         # Handle skip_invalid
@@ -2147,7 +2147,7 @@ an instance of plotly.graph_objs.pie.Domain"""
 
         # Import validators
         # -----------------
-        from plotly.validators.pie import domain as v_domain
+        from plotly_study.validators.pie import domain as v_domain
 
         # Initialize validators
         # ---------------------
@@ -2190,6 +2190,6 @@ __all__ = [
     "title",
 ]
 
-from plotly.graph_objs.pie import title
-from plotly.graph_objs.pie import marker
-from plotly.graph_objs.pie import hoverlabel
+from plotly_study.graph_objs.pie import title
+from plotly_study.graph_objs.pie import marker
+from plotly_study.graph_objs.pie import hoverlabel

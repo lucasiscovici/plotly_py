@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -96,7 +96,7 @@ class Rotation(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.geo.projection.Rotation
+            plotly_study.graph_objs.layout.geo.projection.Rotation
         lat
             Rotates the map along meridians (in degrees North).
         lon
@@ -123,9 +123,9 @@ class Rotation(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.geo.projection.Rotation 
+The first argument to the plotly_study.graph_objs.layout.geo.projection.Rotation 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.geo.projection.Rotation"""
+an instance of plotly_study.graph_objs.layout.geo.projection.Rotation"""
             )
 
         # Handle skip_invalid
@@ -134,7 +134,7 @@ an instance of plotly.graph_objs.layout.geo.projection.Rotation"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.geo.projection import rotation as v_rotation
+        from plotly_study.validators.layout.geo.projection import rotation as v_rotation
 
         # Initialize validators
         # ---------------------

@@ -2,9 +2,9 @@ import pytest
 import copy
 import pickle
 
-from plotly.tools import make_subplots
-import plotly.graph_objs as go
-import plotly.io as pio
+from plotly_study.tools import make_subplots
+import plotly_study.graph_objs as go
+import plotly_study.io as pio
 
 
 # fixtures

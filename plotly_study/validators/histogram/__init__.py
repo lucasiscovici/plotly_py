@@ -306,10 +306,10 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.histogram.unselected.Marke
+                plotly_study.graph_objects.histogram.unselected.Marke
                 r instance or dict with compatible properties
             textfont
-                plotly.graph_objects.histogram.unselected.Textf
+                plotly_study.graph_objects.histogram.unselected.Textf
                 ont instance or dict with compatible properties
 """,
             ),
@@ -442,10 +442,10 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.histogram.selected.Marker
+                plotly_study.graph_objects.histogram.selected.Marker
                 instance or dict with compatible properties
             textfont
-                plotly.graph_objects.histogram.selected.Textfon
+                plotly_study.graph_objects.histogram.selected.Textfon
                 t instance or dict with compatible properties
 """,
             ),
@@ -637,7 +637,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.histogram.marker.ColorBar
+                plotly_study.graph_objects.histogram.marker.ColorBar
                 instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in
@@ -659,7 +659,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  color
                 .
             line
-                plotly.graph_objects.histogram.marker.Line
+                plotly_study.graph_objects.histogram.marker.Line
                 instance or dict with compatible properties
             opacity
                 Sets the opacity of the bars.

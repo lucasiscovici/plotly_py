@@ -4,14 +4,14 @@ from nose.plugins.attrib import attr
 
 from plotly import optional_imports
 
-matplotlylib = optional_imports.get_module("plotly.matplotlylib")
+matplotlylib = optional_imports.get_module("plotly_study.matplotlylib")
 
 if matplotlylib:
     import matplotlib.pyplot as plt
 
-    from plotly.tests.utils import compare_dict, strip_dict_params
-    from plotly.tests.test_optional.optional_utils import run_fig
-    from plotly.tests.test_optional.test_matplotlylib.data.annotations import *
+    from plotly_study.tests.utils import compare_dict, strip_dict_params
+    from plotly_study.tests.test_optional.optional_utils import run_fig
+    from plotly_study.tests.test_optional.test_matplotlylib.data.annotations import *
 
 
 @attr("matplotlib")

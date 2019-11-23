@@ -56,10 +56,10 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.barpolar.unselected.Marker
+                plotly_study.graph_objects.barpolar.unselected.Marker
                 instance or dict with compatible properties
             textfont
-                plotly.graph_objects.barpolar.unselected.Textfo
+                plotly_study.graph_objects.barpolar.unselected.Textfo
                 nt instance or dict with compatible properties
 """,
             ),
@@ -264,10 +264,10 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.barpolar.selected.Marker
+                plotly_study.graph_objects.barpolar.selected.Marker
                 instance or dict with compatible properties
             textfont
-                plotly.graph_objects.barpolar.selected.Textfont
+                plotly_study.graph_objects.barpolar.selected.Textfont
                 instance or dict with compatible properties
 """,
             ),
@@ -471,7 +471,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 color scales can be linked to the same color
                 axis.
             colorbar
-                plotly.graph_objects.barpolar.marker.ColorBar
+                plotly_study.graph_objects.barpolar.marker.ColorBar
                 instance or dict with compatible properties
             colorscale
                 Sets the colorscale. Has an effect only if in
@@ -493,7 +493,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  color
                 .
             line
-                plotly.graph_objects.barpolar.marker.Line
+                plotly_study.graph_objects.barpolar.marker.Line
                 instance or dict with compatible properties
             opacity
                 Sets the opacity of the bars.

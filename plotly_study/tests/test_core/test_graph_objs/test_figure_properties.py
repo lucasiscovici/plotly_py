@@ -1,7 +1,7 @@
 from unittest import TestCase
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 from nose.tools import raises
-import plotly.io as pio
+import plotly_study.io as pio
 
 
 class TestFigureProperties(TestCase):

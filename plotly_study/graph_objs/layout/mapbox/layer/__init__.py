@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -105,7 +105,7 @@ class Symbol(_BaseLayoutHierarchyType):
     
         The 'textfont' property is an instance of Textfont
         that may be specified as:
-          - An instance of plotly.graph_objs.layout.mapbox.layer.symbol.Textfont
+          - An instance of plotly_study.graph_objs.layout.mapbox.layer.symbol.Textfont
           - A dict of string/value properties that will be passed
             to the Textfont constructor
     
@@ -133,7 +133,7 @@ class Symbol(_BaseLayoutHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.layout.mapbox.layer.symbol.Textfont
+        plotly_study.graph_objs.layout.mapbox.layer.symbol.Textfont
         """
         return self["textfont"]
 
@@ -221,7 +221,7 @@ class Symbol(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.mapbox.layer.Symbol
+            plotly_study.graph_objs.layout.mapbox.layer.Symbol
         icon
             Sets the symbol icon image (mapbox.layer.layout.icon-
             image). Full list: https://www.mapbox.com/maki-icons/
@@ -264,9 +264,9 @@ class Symbol(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.mapbox.layer.Symbol 
+The first argument to the plotly_study.graph_objs.layout.mapbox.layer.Symbol 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.mapbox.layer.Symbol"""
+an instance of plotly_study.graph_objs.layout.mapbox.layer.Symbol"""
             )
 
         # Handle skip_invalid
@@ -275,7 +275,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Symbol"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.mapbox.layer import symbol as v_symbol
+        from plotly_study.validators.layout.mapbox.layer import symbol as v_symbol
 
         # Initialize validators
         # ---------------------
@@ -310,7 +310,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Symbol"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -345,7 +345,7 @@ class Line(_BaseLayoutHierarchyType):
         Sets the source reference on plot.ly for  dash .
     
         The 'dashsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -409,7 +409,7 @@ class Line(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.mapbox.layer.Line
+            plotly_study.graph_objs.layout.mapbox.layer.Line
         dash
             Sets the length of dashes and gaps
             (mapbox.layer.paint.line-dasharray). Has an effect only
@@ -437,9 +437,9 @@ class Line(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.mapbox.layer.Line 
+The first argument to the plotly_study.graph_objs.layout.mapbox.layer.Line 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.mapbox.layer.Line"""
+an instance of plotly_study.graph_objs.layout.mapbox.layer.Line"""
             )
 
         # Handle skip_invalid
@@ -448,7 +448,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Line"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.mapbox.layer import line as v_line
+        from plotly_study.validators.layout.mapbox.layer import line as v_line
 
         # Initialize validators
         # ---------------------
@@ -474,7 +474,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Line"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -566,7 +566,7 @@ class Fill(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.mapbox.layer.Fill
+            plotly_study.graph_objs.layout.mapbox.layer.Fill
         outlinecolor
             Sets the fill outline color (mapbox.layer.paint.fill-
             outline-color). Has an effect only when `type` is set
@@ -589,9 +589,9 @@ class Fill(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.mapbox.layer.Fill 
+The first argument to the plotly_study.graph_objs.layout.mapbox.layer.Fill 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.mapbox.layer.Fill"""
+an instance of plotly_study.graph_objs.layout.mapbox.layer.Fill"""
             )
 
         # Handle skip_invalid
@@ -600,7 +600,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Fill"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.mapbox.layer import fill as v_fill
+        from plotly_study.validators.layout.mapbox.layer import fill as v_fill
 
         # Initialize validators
         # ---------------------
@@ -620,7 +620,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Fill"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
+from plotly_study.basedatatypes import BaseLayoutHierarchyType as _BaseLayoutHierarchyType
 import copy as _copy
 
 
@@ -673,7 +673,7 @@ class Circle(_BaseLayoutHierarchyType):
         arg
             dict of properties compatible with this constructor or
             an instance of
-            plotly.graph_objs.layout.mapbox.layer.Circle
+            plotly_study.graph_objs.layout.mapbox.layer.Circle
         radius
             Sets the circle radius (mapbox.layer.paint.circle-
             radius). Has an effect only when `type` is set to
@@ -696,9 +696,9 @@ class Circle(_BaseLayoutHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.layout.mapbox.layer.Circle 
+The first argument to the plotly_study.graph_objs.layout.mapbox.layer.Circle 
 constructor must be a dict or 
-an instance of plotly.graph_objs.layout.mapbox.layer.Circle"""
+an instance of plotly_study.graph_objs.layout.mapbox.layer.Circle"""
             )
 
         # Handle skip_invalid
@@ -707,7 +707,7 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Circle"""
 
         # Import validators
         # -----------------
-        from plotly.validators.layout.mapbox.layer import circle as v_circle
+        from plotly_study.validators.layout.mapbox.layer import circle as v_circle
 
         # Initialize validators
         # ---------------------
@@ -729,4 +729,4 @@ an instance of plotly.graph_objs.layout.mapbox.layer.Circle"""
 
 __all__ = ["Circle", "Fill", "Line", "Symbol", "symbol"]
 
-from plotly.graph_objs.layout.mapbox.layer import symbol
+from plotly_study.graph_objs.layout.mapbox.layer import symbol

@@ -155,7 +155,7 @@ class UnselectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.violin.unselected.Marker
+                plotly_study.graph_objects.violin.unselected.Marker
                 instance or dict with compatible properties
 """,
             ),
@@ -339,7 +339,7 @@ class SelectedValidator(_plotly_utils.basevalidators.CompoundValidator):
                 "data_docs",
                 """
             marker
-                plotly.graph_objects.violin.selected.Marker
+                plotly_study.graph_objects.violin.selected.Marker
                 instance or dict with compatible properties
 """,
             ),
@@ -545,7 +545,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 and min values of the array or relative to
                 `marker.cmin` and `marker.cmax` if set.
             line
-                plotly.graph_objects.violin.marker.Line
+                plotly_study.graph_objects.violin.marker.Line
                 instance or dict with compatible properties
             opacity
                 Sets the marker opacity.
@@ -862,7 +862,7 @@ class BoxValidator(_plotly_utils.basevalidators.CompoundValidator):
             fillcolor
                 Sets the inner box plot fill color.
             line
-                plotly.graph_objects.violin.box.Line instance
+                plotly_study.graph_objects.violin.box.Line instance
                 or dict with compatible properties
             visible
                 Determines if an miniature box plot is drawn

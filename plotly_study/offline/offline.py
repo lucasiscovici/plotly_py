@@ -9,9 +9,9 @@ import os
 import warnings
 import pkgutil
 import plotly
-import plotly.tools
+import plotly_study.tools
 
-from plotly.optional_imports import get_module
+from plotly_study.optional_imports import get_module
 from plotly import tools
 from ._plotlyjs_version import __plotlyjs_version__
 
@@ -23,7 +23,7 @@ def download_plotlyjs(download_url):
     warnings.warn(
         """
         `download_plotlyjs` is deprecated and will be removed in the
-        next release. plotly.js is shipped with this module, it is no
+        next release. plotly_study.js is shipped with this module, it is no
         longer necessary to download this bundle separately.
     """,
         DeprecationWarning,
@@ -33,37 +33,37 @@ def download_plotlyjs(download_url):
 
 def get_plotlyjs_version():
     """
-    Returns the version of plotly.js that is bundled with plotly.py.
+    Returns the version of plotly_study.js that is bundled with plotly_study.py.
 
     Returns
     -------
     str
-        Plotly.js version string
+        plotly_study.js version string
     """
     return __plotlyjs_version__
 
 
 def get_plotlyjs():
     """
-    Return the contents of the minified plotly.js library as a string.
+    Return the contents of the minified plotly_study.js library as a string.
 
     This may be useful when building standalone HTML reports.
 
     Returns
     -------
     str
-        Contents of the minified plotly.js library as a string
+        Contents of the minified plotly_study.js library as a string
 
     Examples
     --------
     Here is an example of creating a standalone HTML report that contains
     two plotly figures, each in their own div.  The include_plotlyjs argument
     is set to False when creating the divs so that we don't include multiple
-    copies of the plotly.js library in the output.  Instead, a single copy
-    of plotly.js is included in a script tag in the html head element.
+    copies of the plotly_study.js library in the output.  Instead, a single copy
+    of plotly_study.js is included in a script tag in the html head element.
 
-    >>> import plotly.graph_objs as go
-    >>> from plotly.offline import plot, get_plotlyjs
+    >>> import plotly_study.graph_objs as go
+    >>> from plotly_study.offline import plot, get_plotlyjs
     >>> fig1 = go.Figure(data=[{'type': 'bar', 'y': [1, 3, 2]}],
     ...                 layout={'height': 400})
     >>> fig2 = go.Figure(data=[{'type': 'scatter', 'y': [1, 3, 2]}],
@@ -149,7 +149,7 @@ def _get_jconfig(config=None):
     if config and isinstance(config, dict):
         # Warn user on unrecognized config options.  We make this a warning
         # rather than an error since we don't have code generation logic in
-        # place yet to guarantee that the config options in plotly.py are up
+        # place yet to guarantee that the config options in plotly_study.py are up
         # to date
         bad_config = [k for k in config if k not in configkeys]
         if bad_config:
@@ -164,7 +164,7 @@ Unrecognized config options supplied: {bad_config}""".format(
     else:
         clean_config = {}
 
-    plotly_platform_url = plotly.tools.get_config_plotly_server_url()
+    plotly_platform_url = plotly_study.tools.get_config_plotly_server_url()
 
     if not clean_config.get("plotlyServerURL", None):
         clean_config["plotlyServerURL"] = plotly_platform_url
@@ -181,7 +181,7 @@ Unrecognized config options supplied: {bad_config}""".format(
 
 
 # Build script to set global PlotlyConfig object. This must execute before
-# plotly.js is loaded.
+# plotly_study.js is loaded.
 _window_plotly_config = """\
 <script type="text/javascript">\
 window.PlotlyConfig = {MathJaxConfig: 'local'};\
@@ -218,7 +218,7 @@ def get_image_download_script(caller):
         "function downloadimage(format, height, width,"
         " filename) {{"
         "var p = document.getElementById('{{plot_id}}');"
-        "Plotly.downloadImage(p, {{format: format, height: height, "
+        "plotly_study.downloadImage(p, {{format: format, height: height, "
         "width: width, filename: filename}});}};"
         + check_start
         + "downloadimage('{format}', {height}, {width}, "
@@ -251,18 +251,18 @@ def build_save_image_post_script(
 
 def init_notebook_mode(connected=False):
     """
-    Initialize plotly.js in the browser if it hasn't been loaded into the DOM
+    Initialize plotly_study.js in the browser if it hasn't been loaded into the DOM
     yet. This is an idempotent method and can and should be called from any
-    offline methods that require plotly.js to be loaded into the notebook dom.
+    offline methods that require plotly_study.js to be loaded into the notebook dom.
 
     Keyword arguments:
 
-    connected (default=False) -- If True, the plotly.js library will be loaded
-    from an online CDN. If False, the plotly.js library will be loaded locally
+    connected (default=False) -- If True, the plotly_study.js library will be loaded
+    from an online CDN. If False, the plotly_study.js library will be loaded locally
     from the plotly python package
 
     Use `connected=True` if you want your notebooks to have smaller file sizes.
-    In the case where `connected=False`, the entirety of the plotly.js library
+    In the case where `connected=False`, the entirety of the plotly_study.js library
     will be loaded into the notebook, which will result in a file-size increase
     of a couple megabytes. Additionally, because the library will be downloaded
     from the web, you and your viewers must be connected to the internet to be
@@ -275,7 +275,7 @@ def init_notebook_mode(connected=False):
     your notebook, resulting in much larger notebook sizes compared to the case
     where `connected=True`.
     """
-    import plotly.io as pio
+    import plotly_study.io as pio
 
     ipython = get_module("IPython")
     if not ipython:
@@ -286,7 +286,7 @@ def init_notebook_mode(connected=False):
     else:
         pio.renderers.default = "plotly_mimetype+notebook"
 
-    # Trigger immediate activation of notebook. This way the plotly.js
+    # Trigger immediate activation of notebook. This way the plotly_study.js
     # library reference is available to the notebook immediately
     pio.renderers._activate_pending_renderers()
 
@@ -307,7 +307,7 @@ def iplot(
     """
     Draw plotly graphs inside an IPython or Jupyter notebook
 
-    figure_or_data -- a plotly.graph_objs.Figure or plotly.graph_objs.Data or
+    figure_or_data -- a plotly_study.graph_objs.Figure or plotly_study.graph_objs.Data or
                       dict or list that describes a Plotly graph.
                       See https://plot.ly/python/ for examples of
                       graph descriptions.
@@ -318,7 +318,7 @@ def iplot(
                                 Plotly Cloud or Plotly Enterprise
     link_text (default='Export to plot.ly') -- the text of export link
     validate (default=True) -- validate that all of the keys in the figure
-                               are valid? omit if your version of plotly.js
+                               are valid? omit if your version of plotly_study.js
                                has become outdated with your version of
                                graph_reference.json or if you need to include
                                extra, unnecessary keys in your figure.
@@ -326,7 +326,7 @@ def iplot(
         the format of the image to be downloaded, if we choose to download an
         image. This parameter has a default value of None indicating that no
         image should be downloaded. Please note: for higher resolution images
-        and more export options, consider using plotly.io.write_image. See
+        and more export options, consider using plotly_study.io.write_image. See
         https://plot.ly/python/static-image-export/ for more details.
     filename (default='plot') -- Sets the name of the file your image
         will be saved to. The extension should not be included.
@@ -340,14 +340,14 @@ def iplot(
         the figure does not contain frames.
     animation_opts (default=None) -- Dict of custom animation parameters that
         are used for the automatically started animation on page load. This
-        dict is passed to the function Plotly.animate in Plotly.js. See
-        https://github.com/plotly/plotly.js/blob/master/src/plots/animation_attributes.js
+        dict is passed to the function plotly_study.animate in plotly_study.js. See
+        https://github.com/plotly/plotly_study.js/blob/master/src/plots/animation_attributes.js
         for available options. Has no effect if the figure
         does not contain frames, or auto_play is False.
 
     Example:
     ```
-    from plotly.offline import init_notebook_mode, iplot
+    from plotly_study.offline import init_notebook_mode, iplot
     init_notebook_mode()
     iplot([{'x': [1, 2, 3], 'y': [5, 2, 7]}])
     # We can also download an image of the plot by setting the image to the
@@ -357,7 +357,7 @@ def iplot(
 
     animation_opts Example:
     ```
-    from plotly.offline import iplot
+    from plotly_study.offline import iplot
     figure = {'data': [{'x': [0, 1], 'y': [0, 1]}],
               'layout': {'xaxis': {'range': [0, 5], 'autorange': False},
                          'yaxis': {'range': [0, 5], 'autorange': False},
@@ -369,7 +369,7 @@ def iplot(
     iplot(figure, animation_opts={'frame': {'duration': 1}})
     ```
     """
-    import plotly.io as pio
+    import plotly_study.io as pio
 
     ipython = get_module("IPython")
     if not ipython:
@@ -420,8 +420,8 @@ def plot(
 
     Example:
     ```
-    from plotly.offline import plot
-    import plotly.graph_objs as go
+    from plotly_study.offline import plot
+    import plotly_study.graph_objs as go
 
     plot([go.Scatter(x=[1, 2, 3], y=[3, 2, 6])], filename='my-graph.html')
     # We can also download an image of the plot by setting the image parameter
@@ -431,7 +431,7 @@ def plot(
     ```
     More examples below.
 
-    figure_or_data -- a plotly.graph_objs.Figure or plotly.graph_objs.Data or
+    figure_or_data -- a plotly_study.graph_objs.Figure or plotly_study.graph_objs.Data or
                       dict or list that describes a Plotly graph.
                       See https://plot.ly/python/ for examples of
                       graph descriptions.
@@ -442,7 +442,7 @@ def plot(
         Plotly Enterprise
     link_text (default='Export to plot.ly') -- the text of export link
     validate (default=True) -- validate that all of the keys in the figure
-        are valid? omit if your version of plotly.js has become outdated
+        are valid? omit if your version of plotly_study.js has become outdated
         with your version of graph_reference.json or if you need to include
         extra, unnecessary keys in your figure.
     output_type ('file' | 'div' - default 'file') -- if 'file', then
@@ -456,38 +456,38 @@ def plot(
         Use 'div' if you are embedding these graphs in an HTML file with
         other graphs or HTML markup, like a HTML report or an website.
     include_plotlyjs (True | False | 'cdn' | 'directory' | path - default=True)
-        Specifies how the plotly.js library is included in the output html
+        Specifies how the plotly_study.js library is included in the output html
         file or div string.
 
-        If True, a script tag containing the plotly.js source code (~3MB)
+        If True, a script tag containing the plotly_study.js source code (~3MB)
         is included in the output.  HTML files generated with this option are
         fully self-contained and can be used offline.
 
-        If 'cdn', a script tag that references the plotly.js CDN is included
+        If 'cdn', a script tag that references the plotly_study.js CDN is included
         in the output. HTML files generated with this option are about 3MB
         smaller than those generated with include_plotlyjs=True, but they
-        require an active internet connection in order to load the plotly.js
+        require an active internet connection in order to load the plotly_study.js
         library.
 
         If 'directory', a script tag is included that references an external
-        plotly.min.js bundle that is assumed to reside in the same
+        plotly_study.min.js bundle that is assumed to reside in the same
         directory as the HTML file.  If output_type='file' then the
-        plotly.min.js bundle is copied into the directory of the resulting
-        HTML file. If a file named plotly.min.js already exists in the output
+        plotly_study.min.js bundle is copied into the directory of the resulting
+        HTML file. If a file named plotly_study.min.js already exists in the output
         directory then this file is left unmodified and no copy is performed.
         HTML files generated with this option can be used offline, but they
-        require a copy of the plotly.min.js bundle in the same directory.
+        require a copy of the plotly_study.min.js bundle in the same directory.
         This option is useful when many figures will be saved as HTML files in
-        the same directory because the plotly.js source code will be included
+        the same directory because the plotly_study.js source code will be included
         only once per output directory, rather than once per output file.
 
         If a string that ends in '.js', a script tag is included that
         references the specified path. This approach can be used to point
         the resulting HTML file to an alternative CDN.
 
-        If False, no script tag referencing plotly.js is included. This is
+        If False, no script tag referencing plotly_study.js is included. This is
         useful when output_type='div' and the resulting div string will be
-        placed inside an HTML document that already loads plotly.js.  This
+        placed inside an HTML document that already loads plotly_study.js.  This
         option is not advised when output_type='file' as it will result in
         a non-functional html file.
     filename (default='temp-plot.html') -- The local filename to save the
@@ -530,14 +530,14 @@ def plot(
         the figure does not contain frames.
     animation_opts (default=None) -- Dict of custom animation parameters that
         are used for the automatically started animation on page load. This
-        dict is passed to the function Plotly.animate in Plotly.js. See
-        https://github.com/plotly/plotly.js/blob/master/src/plots/animation_attributes.js
+        dict is passed to the function plotly_study.animate in plotly_study.js. See
+        https://github.com/plotly/plotly_study.js/blob/master/src/plots/animation_attributes.js
         for available options. Has no effect if the figure
         does not contain frames, or auto_play is False.
 
     Example:
     ```
-    from plotly.offline import plot
+    from plotly_study.offline import plot
     figure = {'data': [{'x': [0, 1], 'y': [0, 1]}],
               'layout': {'xaxis': {'range': [0, 5], 'autorange': False},
                          'yaxis': {'range': [0, 5], 'autorange': False},
@@ -549,7 +549,7 @@ def plot(
     plot(figure, animation_opts={'frame': {'duration': 1}})
     ```
     """
-    import plotly.io as pio
+    import plotly_study.io as pio
 
     # Output type
     if output_type not in ["div", "file"]:
@@ -631,10 +631,10 @@ def plot_mpl(
     Convert a matplotlib figure to a Plotly graph stored locally as HTML.
 
     For more information on converting matplotlib visualizations to plotly
-    graphs, call help(plotly.tools.mpl_to_plotly)
+    graphs, call help(plotly_study.tools.mpl_to_plotly)
 
     For more information on creating plotly charts locally as an HTML document
-    or string, call help(plotly.offline.plot)
+    or string, call help(plotly_study.offline.plot)
 
     mpl_fig -- a matplotlib figure object to convert to a plotly graph
 
@@ -647,7 +647,7 @@ def plot_mpl(
         Plotly Enterprise
     link_text (default='Export to plot.ly') -- the text of export link
     validate (default=True) -- validate that all of the keys in the figure
-        are valid? omit if your version of plotly.js has become outdated
+        are valid? omit if your version of plotly_study.js has become outdated
         with your version of graph_reference.json or if you need to include
         extra, unnecessary keys in your figure.
     output_type ('file' | 'div' - default 'file') -- if 'file', then
@@ -660,9 +660,9 @@ def plot_mpl(
         in a standalone HTML file.
         Use 'div' if you are embedding these graphs in an HTML file with
         other graphs or HTML markup, like a HTML report or an website.
-    include_plotlyjs (default=True) -- If True, include the plotly.js
+    include_plotlyjs (default=True) -- If True, include the plotly_study.js
         source code in the output file or string.
-        Set as False if your HTML file already contains a copy of the plotly.js
+        Set as False if your HTML file already contains a copy of the plotly_study.js
         library.
     filename (default='temp-plot.html') -- The local filename to save the
         outputted chart to. If the filename already exists, it will be
@@ -681,7 +681,7 @@ def plot_mpl(
 
     Example:
     ```
-    from plotly.offline import init_notebook_mode, plot_mpl
+    from plotly_study.offline import init_notebook_mode, plot_mpl
     import matplotlib.pyplot as plt
 
     init_notebook_mode()
@@ -696,7 +696,7 @@ def plot_mpl(
     plot_mpl(fig, image='png')
     ```
     """
-    plotly_plot = plotly.tools.mpl_to_plotly(mpl_fig, resize, strip_style, verbose)
+    plotly_plot = plotly_study.tools.mpl_to_plotly(mpl_fig, resize, strip_style, verbose)
     return plot(
         plotly_plot,
         show_link,
@@ -731,13 +731,13 @@ def iplot_mpl(
     notebook without connecting to an external server.
 
     To save the chart to Plotly Cloud or Plotly Enterprise, use
-    `plotly.plotly.plot_mpl`.
+    `plotly_study.plotly_study.plot_mpl`.
 
     For more information on converting matplotlib visualizations to plotly
-    graphs call `help(plotly.tools.mpl_to_plotly)`
+    graphs call `help(plotly_study.tools.mpl_to_plotly)`
 
     For more information on plotting plotly charts offline in an Ipython
-    notebook call `help(plotly.offline.iplot)`
+    notebook call `help(plotly_study.offline.iplot)`
 
     mpl_fig -- a matplotlib.figure to convert to a plotly graph
 
@@ -750,7 +750,7 @@ def iplot_mpl(
                                 Plotly Cloud or Plotly Enterprise
     link_text (default='Export to plot.ly') -- the text of export link
     validate (default=True) -- validate that all of the keys in the figure
-                               are valid? omit if your version of plotly.js
+                               are valid? omit if your version of plotly_study.js
                                has become outdated with your version of
                                graph_reference.json or if you need to include
                                extra, unnecessary keys in your figure.
@@ -765,7 +765,7 @@ def iplot_mpl(
 
     Example:
     ```
-    from plotly.offline import init_notebook_mode, iplot_mpl
+    from plotly_study.offline import init_notebook_mode, iplot_mpl
     import matplotlib.pyplot as plt
 
     fig = plt.figure()
@@ -779,7 +779,7 @@ def iplot_mpl(
     iplot_mpl(fig, image='jpeg')
     ```
     """
-    plotly_plot = plotly.tools.mpl_to_plotly(mpl_fig, resize, strip_style, verbose)
+    plotly_plot = plotly_study.tools.mpl_to_plotly(mpl_fig, resize, strip_style, verbose)
     return iplot(
         plotly_plot,
         show_link,
@@ -813,7 +813,7 @@ def enable_mpl_offline(
 
     Example:
     ```
-    from plotly.offline import enable_mpl_offline
+    from plotly_study.offline import enable_mpl_offline
     import matplotlib.pyplot as plt
 
     enable_mpl_offline()

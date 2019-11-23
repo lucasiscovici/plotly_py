@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-import plotly.graph_objs as go
+import plotly_study.graph_objs as go
 
 
 OLD_CLASS_NAMES = [
@@ -56,7 +56,7 @@ class TestBackwardsCompat(TestCase):
 
     def test_title_as_string_layout(self):
         """
-        Prior to plotly.js 1.43.0 title properties were strings, in 1.43.0
+        Prior to plotly_study.js 1.43.0 title properties were strings, in 1.43.0
         these title properties became compound objects with a text property.
 
         For backwards compatibility, we still need to support setting this

@@ -197,7 +197,7 @@ class NodeValidator(_plotly_utils.basevalidators.CompoundValidator):
                 `none` is set, click and hover events are still
                 fired.
             hoverlabel
-                plotly.graph_objects.sankey.node.Hoverlabel
+                plotly_study.graph_objects.sankey.node.Hoverlabel
                 instance or dict with compatible properties
             hovertemplate
                 Template string used for rendering the
@@ -237,7 +237,7 @@ class NodeValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  label
                 .
             line
-                plotly.graph_objects.sankey.node.Line instance
+                plotly_study.graph_objects.sankey.node.Line instance
                 or dict with compatible properties
             pad
                 Sets the padding (in px) between the `nodes`.
@@ -320,7 +320,7 @@ class LinkValidator(_plotly_utils.basevalidators.CompoundValidator):
                 used.
             colorscales
                 A tuple of
-                plotly.graph_objects.sankey.link.Colorscale
+                plotly_study.graph_objects.sankey.link.Colorscale
                 instances or dicts with compatible properties
             colorscaledefaults
                 When used in a template (as layout.template.dat
@@ -337,7 +337,7 @@ class LinkValidator(_plotly_utils.basevalidators.CompoundValidator):
                 `none` is set, click and hover events are still
                 fired.
             hoverlabel
-                plotly.graph_objects.sankey.link.Hoverlabel
+                plotly_study.graph_objects.sankey.link.Hoverlabel
                 instance or dict with compatible properties
             hovertemplate
                 Template string used for rendering the
@@ -377,7 +377,7 @@ class LinkValidator(_plotly_utils.basevalidators.CompoundValidator):
                 Sets the source reference on plot.ly for  label
                 .
             line
-                plotly.graph_objects.sankey.link.Line instance
+                plotly_study.graph_objects.sankey.link.Line instance
                 or dict with compatible properties
             source
                 An integer number `[0..nodes.length - 1]` that

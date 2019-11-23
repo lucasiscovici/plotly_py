@@ -216,7 +216,7 @@ class CaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.layout.ternary.
+                A tuple of plotly_study.graph_objects.layout.ternary.
                 caxis.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults
@@ -264,7 +264,7 @@ class CaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
             tickwidth
                 Sets the tick width (in px).
             title
-                plotly.graph_objects.layout.ternary.caxis.Title
+                plotly_study.graph_objects.layout.ternary.caxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use
@@ -453,7 +453,7 @@ class BaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.layout.ternary.
+                A tuple of plotly_study.graph_objects.layout.ternary.
                 baxis.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults
@@ -501,7 +501,7 @@ class BaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
             tickwidth
                 Sets the tick width (in px).
             title
-                plotly.graph_objects.layout.ternary.baxis.Title
+                plotly_study.graph_objects.layout.ternary.baxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use
@@ -676,7 +676,7 @@ class AaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
                 tickformat "%H~%M~%S.%2f" would display
                 "09~15~23.46"
             tickformatstops
-                A tuple of plotly.graph_objects.layout.ternary.
+                A tuple of plotly_study.graph_objects.layout.ternary.
                 aaxis.Tickformatstop instances or dicts with
                 compatible properties
             tickformatstopdefaults
@@ -724,7 +724,7 @@ class AaxisValidator(_plotly_utils.basevalidators.CompoundValidator):
             tickwidth
                 Sets the tick width (in px).
             title
-                plotly.graph_objects.layout.ternary.aaxis.Title
+                plotly_study.graph_objects.layout.ternary.aaxis.Title
                 instance or dict with compatible properties
             titlefont
                 Deprecated: Please use

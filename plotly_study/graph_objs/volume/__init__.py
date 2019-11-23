@@ -1,4 +1,4 @@
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -145,7 +145,7 @@ class Surface(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Surface
+            an instance of plotly_study.graph_objs.volume.Surface
         count
             Sets the number of iso-surfaces between minimum and
             maximum iso-values. By default this value is 2 meaning
@@ -187,9 +187,9 @@ class Surface(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Surface 
+The first argument to the plotly_study.graph_objs.volume.Surface 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Surface"""
+an instance of plotly_study.graph_objs.volume.Surface"""
             )
 
         # Handle skip_invalid
@@ -198,7 +198,7 @@ an instance of plotly.graph_objs.volume.Surface"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import surface as v_surface
+        from plotly_study.validators.volume import surface as v_surface
 
         # Initialize validators
         # ---------------------
@@ -227,7 +227,7 @@ an instance of plotly.graph_objs.volume.Surface"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -306,7 +306,7 @@ class Stream(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Stream
+            an instance of plotly_study.graph_objs.volume.Stream
         maxpoints
             Sets the maximum number of points to keep on the plots
             from an incoming stream. If `maxpoints` is set to 50,
@@ -334,9 +334,9 @@ class Stream(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Stream 
+The first argument to the plotly_study.graph_objs.volume.Stream 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Stream"""
+an instance of plotly_study.graph_objs.volume.Stream"""
             )
 
         # Handle skip_invalid
@@ -345,7 +345,7 @@ an instance of plotly.graph_objs.volume.Stream"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import stream as v_stream
+        from plotly_study.validators.volume import stream as v_stream
 
         # Initialize validators
         # ---------------------
@@ -368,7 +368,7 @@ an instance of plotly.graph_objs.volume.Stream"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -450,7 +450,7 @@ class Spaceframe(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Spaceframe
+            an instance of plotly_study.graph_objs.volume.Spaceframe
         fill
             Sets the fill ratio of the `spaceframe` elements. The
             default fill value is 1 meaning that they are entirely
@@ -479,9 +479,9 @@ class Spaceframe(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Spaceframe 
+The first argument to the plotly_study.graph_objs.volume.Spaceframe 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Spaceframe"""
+an instance of plotly_study.graph_objs.volume.Spaceframe"""
             )
 
         # Handle skip_invalid
@@ -490,7 +490,7 @@ an instance of plotly.graph_objs.volume.Spaceframe"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import spaceframe as v_spaceframe
+        from plotly_study.validators.volume import spaceframe as v_spaceframe
 
         # Initialize validators
         # ---------------------
@@ -513,7 +513,7 @@ an instance of plotly.graph_objs.volume.Spaceframe"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -526,7 +526,7 @@ class Slices(_BaseTraceHierarchyType):
         """
         The 'x' property is an instance of X
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.slices.X
+          - An instance of plotly_study.graph_objs.volume.slices.X
           - A dict of string/value properties that will be passed
             to the X constructor
     
@@ -553,7 +553,7 @@ class Slices(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.slices.X
+        plotly_study.graph_objs.volume.slices.X
         """
         return self["x"]
 
@@ -568,7 +568,7 @@ class Slices(_BaseTraceHierarchyType):
         """
         The 'y' property is an instance of Y
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.slices.Y
+          - An instance of plotly_study.graph_objs.volume.slices.Y
           - A dict of string/value properties that will be passed
             to the Y constructor
     
@@ -595,7 +595,7 @@ class Slices(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.slices.Y
+        plotly_study.graph_objs.volume.slices.Y
         """
         return self["y"]
 
@@ -610,7 +610,7 @@ class Slices(_BaseTraceHierarchyType):
         """
         The 'z' property is an instance of Z
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.slices.Z
+          - An instance of plotly_study.graph_objs.volume.slices.Z
           - A dict of string/value properties that will be passed
             to the Z constructor
     
@@ -637,7 +637,7 @@ class Slices(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.slices.Z
+        plotly_study.graph_objs.volume.slices.Z
         """
         return self["z"]
 
@@ -657,13 +657,13 @@ class Slices(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         x
-            plotly.graph_objects.volume.slices.X instance or dict
+            plotly_study.graph_objects.volume.slices.X instance or dict
             with compatible properties
         y
-            plotly.graph_objects.volume.slices.Y instance or dict
+            plotly_study.graph_objects.volume.slices.Y instance or dict
             with compatible properties
         z
-            plotly.graph_objects.volume.slices.Z instance or dict
+            plotly_study.graph_objects.volume.slices.Z instance or dict
             with compatible properties
         """
 
@@ -675,15 +675,15 @@ class Slices(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Slices
+            an instance of plotly_study.graph_objs.volume.Slices
         x
-            plotly.graph_objects.volume.slices.X instance or dict
+            plotly_study.graph_objects.volume.slices.X instance or dict
             with compatible properties
         y
-            plotly.graph_objects.volume.slices.Y instance or dict
+            plotly_study.graph_objects.volume.slices.Y instance or dict
             with compatible properties
         z
-            plotly.graph_objects.volume.slices.Z instance or dict
+            plotly_study.graph_objects.volume.slices.Z instance or dict
             with compatible properties
 
         Returns
@@ -703,9 +703,9 @@ class Slices(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Slices 
+The first argument to the plotly_study.graph_objs.volume.Slices 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Slices"""
+an instance of plotly_study.graph_objs.volume.Slices"""
             )
 
         # Handle skip_invalid
@@ -714,7 +714,7 @@ an instance of plotly.graph_objs.volume.Slices"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import slices as v_slices
+        from plotly_study.validators.volume import slices as v_slices
 
         # Initialize validators
         # ---------------------
@@ -740,7 +740,7 @@ an instance of plotly.graph_objs.volume.Slices"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -836,7 +836,7 @@ class Lightposition(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Lightposition
+            an instance of plotly_study.graph_objs.volume.Lightposition
         x
             Numeric vector, representing the X coordinate for each
             vertex.
@@ -864,9 +864,9 @@ class Lightposition(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Lightposition 
+The first argument to the plotly_study.graph_objs.volume.Lightposition 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Lightposition"""
+an instance of plotly_study.graph_objs.volume.Lightposition"""
             )
 
         # Handle skip_invalid
@@ -875,7 +875,7 @@ an instance of plotly.graph_objs.volume.Lightposition"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import lightposition as v_lightposition
+        from plotly_study.validators.volume import lightposition as v_lightposition
 
         # Initialize validators
         # ---------------------
@@ -901,7 +901,7 @@ an instance of plotly.graph_objs.volume.Lightposition"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1110,7 +1110,7 @@ class Lighting(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Lighting
+            an instance of plotly_study.graph_objs.volume.Lighting
         ambient
             Ambient light increases overall color visibility but
             can wash out the image.
@@ -1152,9 +1152,9 @@ class Lighting(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Lighting 
+The first argument to the plotly_study.graph_objs.volume.Lighting 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Lighting"""
+an instance of plotly_study.graph_objs.volume.Lighting"""
             )
 
         # Handle skip_invalid
@@ -1163,7 +1163,7 @@ an instance of plotly.graph_objs.volume.Lighting"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import lighting as v_lighting
+        from plotly_study.validators.volume import lighting as v_lighting
 
         # Initialize validators
         # ---------------------
@@ -1209,7 +1209,7 @@ an instance of plotly.graph_objs.volume.Lighting"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1247,7 +1247,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  align .
     
         The 'alignsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1327,7 +1327,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bgcolor .
     
         The 'bgcolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1407,7 +1407,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  bordercolor .
     
         The 'bordercolorsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1428,7 +1428,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.hoverlabel.Font
+          - An instance of plotly_study.graph_objs.volume.hoverlabel.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -1466,7 +1466,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.hoverlabel.Font
+        plotly_study.graph_objs.volume.hoverlabel.Font
         """
         return self["font"]
 
@@ -1509,7 +1509,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  namelength .
     
         The 'namelengthsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -1583,7 +1583,7 @@ class Hoverlabel(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Hoverlabel
+            an instance of plotly_study.graph_objs.volume.Hoverlabel
         align
             Sets the horizontal alignment of the text content
             within hover label box. Has an effect only if the hover
@@ -1630,9 +1630,9 @@ class Hoverlabel(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Hoverlabel 
+The first argument to the plotly_study.graph_objs.volume.Hoverlabel 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Hoverlabel"""
+an instance of plotly_study.graph_objs.volume.Hoverlabel"""
             )
 
         # Handle skip_invalid
@@ -1641,7 +1641,7 @@ an instance of plotly.graph_objs.volume.Hoverlabel"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import hoverlabel as v_hoverlabel
+        from plotly_study.validators.volume import hoverlabel as v_hoverlabel
 
         # Initialize validators
         # ---------------------
@@ -1685,7 +1685,7 @@ an instance of plotly.graph_objs.volume.Hoverlabel"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -1817,7 +1817,7 @@ class Contour(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Contour
+            an instance of plotly_study.graph_objs.volume.Contour
         color
             Sets the color of the contour lines.
         show
@@ -1842,9 +1842,9 @@ class Contour(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Contour 
+The first argument to the plotly_study.graph_objs.volume.Contour 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Contour"""
+an instance of plotly_study.graph_objs.volume.Contour"""
             )
 
         # Handle skip_invalid
@@ -1853,7 +1853,7 @@ an instance of plotly.graph_objs.volume.Contour"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import contour as v_contour
+        from plotly_study.validators.volume import contour as v_contour
 
         # Initialize validators
         # ---------------------
@@ -1879,7 +1879,7 @@ an instance of plotly.graph_objs.volume.Contour"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -2506,7 +2506,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickfont' property is an instance of Tickfont
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.colorbar.Tickfont
+          - An instance of plotly_study.graph_objs.volume.colorbar.Tickfont
           - A dict of string/value properties that will be passed
             to the Tickfont constructor
     
@@ -2534,7 +2534,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.colorbar.Tickfont
+        plotly_study.graph_objs.volume.colorbar.Tickfont
         """
         return self["tickfont"]
 
@@ -2578,7 +2578,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'tickformatstops' property is a tuple of instances of
         Tickformatstop that may be specified as:
-          - A list or tuple of instances of plotly.graph_objs.volume.colorbar.Tickformatstop
+          - A list or tuple of instances of plotly_study.graph_objs.volume.colorbar.Tickformatstop
           - A list or tuple of dicts of string/value properties that
             will be passed to the Tickformatstop constructor
     
@@ -2620,7 +2620,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        tuple[plotly.graph_objs.volume.colorbar.Tickformatstop]
+        tuple[plotly_study.graph_objs.volume.colorbar.Tickformatstop]
         """
         return self["tickformatstops"]
 
@@ -2640,7 +2640,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'tickformatstopdefaults' property is an instance of Tickformatstop
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.colorbar.Tickformatstop
+          - An instance of plotly_study.graph_objs.volume.colorbar.Tickformatstop
           - A dict of string/value properties that will be passed
             to the Tickformatstop constructor
     
@@ -2648,7 +2648,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.colorbar.Tickformatstop
+        plotly_study.graph_objs.volume.colorbar.Tickformatstop
         """
         return self["tickformatstopdefaults"]
 
@@ -2798,7 +2798,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  ticktext .
     
         The 'ticktextsrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2839,7 +2839,7 @@ class ColorBar(_BaseTraceHierarchyType):
         Sets the source reference on plot.ly for  tickvals .
     
         The 'tickvalssrc' property must be specified as a string or
-        as a plotly.grid_objs.Column object
+        as a plotly_study.grid_objs.Column object
 
         Returns
         -------
@@ -2878,7 +2878,7 @@ class ColorBar(_BaseTraceHierarchyType):
         """
         The 'title' property is an instance of Title
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.colorbar.Title
+          - An instance of plotly_study.graph_objs.volume.colorbar.Title
           - A dict of string/value properties that will be passed
             to the Title constructor
     
@@ -2902,7 +2902,7 @@ class ColorBar(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.colorbar.Title
+        plotly_study.graph_objs.volume.colorbar.Title
         """
         return self["title"]
 
@@ -2921,7 +2921,7 @@ class ColorBar(_BaseTraceHierarchyType):
     
         The 'font' property is an instance of Font
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.colorbar.title.Font
+          - An instance of plotly_study.graph_objs.volume.colorbar.title.Font
           - A dict of string/value properties that will be passed
             to the Font constructor
     
@@ -3231,7 +3231,7 @@ class ColorBar(_BaseTraceHierarchyType):
             display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.volume.colorbar.Tickformatstop
+            plotly_study.graph_objects.volume.colorbar.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.volume
@@ -3272,7 +3272,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.volume.colorbar.Title instance or
+            plotly_study.graph_objects.volume.colorbar.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use volume.colorbar.title.font
@@ -3367,7 +3367,7 @@ class ColorBar(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.ColorBar
+            an instance of plotly_study.graph_objs.volume.ColorBar
         bgcolor
             Sets the color of padded area.
         bordercolor
@@ -3481,7 +3481,7 @@ class ColorBar(_BaseTraceHierarchyType):
             display "09~15~23.46"
         tickformatstops
             A tuple of
-            plotly.graph_objects.volume.colorbar.Tickformatstop
+            plotly_study.graph_objects.volume.colorbar.Tickformatstop
             instances or dicts with compatible properties
         tickformatstopdefaults
             When used in a template (as layout.template.data.volume
@@ -3522,7 +3522,7 @@ class ColorBar(_BaseTraceHierarchyType):
         tickwidth
             Sets the tick width (in px).
         title
-            plotly.graph_objects.volume.colorbar.Title instance or
+            plotly_study.graph_objects.volume.colorbar.Title instance or
             dict with compatible properties
         titlefont
             Deprecated: Please use volume.colorbar.title.font
@@ -3573,9 +3573,9 @@ class ColorBar(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.ColorBar 
+The first argument to the plotly_study.graph_objs.volume.ColorBar 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.ColorBar"""
+an instance of plotly_study.graph_objs.volume.ColorBar"""
             )
 
         # Handle skip_invalid
@@ -3584,7 +3584,7 @@ an instance of plotly.graph_objs.volume.ColorBar"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import colorbar as v_colorbar
+        from plotly_study.validators.volume import colorbar as v_colorbar
 
         # Initialize validators
         # ---------------------
@@ -3738,7 +3738,7 @@ an instance of plotly.graph_objs.volume.ColorBar"""
         self._skip_invalid = False
 
 
-from plotly.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
+from plotly_study.basedatatypes import BaseTraceHierarchyType as _BaseTraceHierarchyType
 import copy as _copy
 
 
@@ -3751,7 +3751,7 @@ class Caps(_BaseTraceHierarchyType):
         """
         The 'x' property is an instance of X
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.caps.X
+          - An instance of plotly_study.graph_objs.volume.caps.X
           - A dict of string/value properties that will be passed
             to the X constructor
     
@@ -3773,7 +3773,7 @@ class Caps(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.caps.X
+        plotly_study.graph_objs.volume.caps.X
         """
         return self["x"]
 
@@ -3788,7 +3788,7 @@ class Caps(_BaseTraceHierarchyType):
         """
         The 'y' property is an instance of Y
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.caps.Y
+          - An instance of plotly_study.graph_objs.volume.caps.Y
           - A dict of string/value properties that will be passed
             to the Y constructor
     
@@ -3810,7 +3810,7 @@ class Caps(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.caps.Y
+        plotly_study.graph_objs.volume.caps.Y
         """
         return self["y"]
 
@@ -3825,7 +3825,7 @@ class Caps(_BaseTraceHierarchyType):
         """
         The 'z' property is an instance of Z
         that may be specified as:
-          - An instance of plotly.graph_objs.volume.caps.Z
+          - An instance of plotly_study.graph_objs.volume.caps.Z
           - A dict of string/value properties that will be passed
             to the Z constructor
     
@@ -3847,7 +3847,7 @@ class Caps(_BaseTraceHierarchyType):
 
         Returns
         -------
-        plotly.graph_objs.volume.caps.Z
+        plotly_study.graph_objs.volume.caps.Z
         """
         return self["z"]
 
@@ -3867,13 +3867,13 @@ class Caps(_BaseTraceHierarchyType):
     def _prop_descriptions(self):
         return """\
         x
-            plotly.graph_objects.volume.caps.X instance or dict
+            plotly_study.graph_objects.volume.caps.X instance or dict
             with compatible properties
         y
-            plotly.graph_objects.volume.caps.Y instance or dict
+            plotly_study.graph_objects.volume.caps.Y instance or dict
             with compatible properties
         z
-            plotly.graph_objects.volume.caps.Z instance or dict
+            plotly_study.graph_objects.volume.caps.Z instance or dict
             with compatible properties
         """
 
@@ -3885,15 +3885,15 @@ class Caps(_BaseTraceHierarchyType):
         ----------
         arg
             dict of properties compatible with this constructor or
-            an instance of plotly.graph_objs.volume.Caps
+            an instance of plotly_study.graph_objs.volume.Caps
         x
-            plotly.graph_objects.volume.caps.X instance or dict
+            plotly_study.graph_objects.volume.caps.X instance or dict
             with compatible properties
         y
-            plotly.graph_objects.volume.caps.Y instance or dict
+            plotly_study.graph_objects.volume.caps.Y instance or dict
             with compatible properties
         z
-            plotly.graph_objects.volume.caps.Z instance or dict
+            plotly_study.graph_objects.volume.caps.Z instance or dict
             with compatible properties
 
         Returns
@@ -3913,9 +3913,9 @@ class Caps(_BaseTraceHierarchyType):
         else:
             raise ValueError(
                 """\
-The first argument to the plotly.graph_objs.volume.Caps 
+The first argument to the plotly_study.graph_objs.volume.Caps 
 constructor must be a dict or 
-an instance of plotly.graph_objs.volume.Caps"""
+an instance of plotly_study.graph_objs.volume.Caps"""
             )
 
         # Handle skip_invalid
@@ -3924,7 +3924,7 @@ an instance of plotly.graph_objs.volume.Caps"""
 
         # Import validators
         # -----------------
-        from plotly.validators.volume import caps as v_caps
+        from plotly_study.validators.volume import caps as v_caps
 
         # Initialize validators
         # ---------------------
@@ -3967,7 +3967,7 @@ __all__ = [
     "slices",
 ]
 
-from plotly.graph_objs.volume import slices
-from plotly.graph_objs.volume import hoverlabel
-from plotly.graph_objs.volume import colorbar
-from plotly.graph_objs.volume import caps
+from plotly_study.graph_objs.volume import slices
+from plotly_study.graph_objs.volume import hoverlabel
+from plotly_study.graph_objs.volume import colorbar
+from plotly_study.graph_objs.volume import caps

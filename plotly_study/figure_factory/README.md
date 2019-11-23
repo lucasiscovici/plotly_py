@@ -3,14 +3,14 @@
 ## What is a Figure Factory?
 In the Python Plotly Library:
 
-We have basic plot types that are created using the `plotly.graph_objs` module.
-These plot types include Scatter, Box and Bar types. For a complete list see the [graph_objs file](https://github.com/plotly/plotly.py/blob/master/plotly/graph_objs/graph_objs.py). They are the basis of the plots and charts instatiated by Plotly.
+We have basic plot types that are created using the `plotly_study.graph_objs` module.
+These plot types include Scatter, Box and Bar types. For a complete list see the [graph_objs file](https://github.com/plotly/plotly_study.py/blob/master/plotly/graph_objs/graph_objs.py). They are the basis of the plots and charts instatiated by plotly_study.
 
-To create a basic chart like this, first we create the `data` using the tools in `plotly.graph_objs` and then we plot it. For example:
+To create a basic chart like this, first we create the `data` using the tools in `plotly_study.graph_objs` and then we plot it. For example:
 
 ```
-import plotly.plotly as py
-import plotly.graph_objs as go
+import plotly_study.plotly as py
+import plotly_study.graph_objs as go
 
 trace = go.Scatter(
     x = [1, 2, 3],
@@ -23,15 +23,15 @@ data = [trace]
 py.iplot(data, filename='new-scatter-plot')
 ```
 
-There is another type of chart which uses these basic plot types to make other types of graphs, and these are the figure factories. These are wrappers that utilize the code from `plotly.graph_objs` to build charts that can use their structures. A good example of a figure factory is the [Scatterplot Matrix](https://plot.ly/python/scatterplot-matrix/) as it utilizes `go.Scatter`, `go.Box` and `go.Histogram`.
+There is another type of chart which uses these basic plot types to make other types of graphs, and these are the figure factories. These are wrappers that utilize the code from `plotly_study.graph_objs` to build charts that can use their structures. A good example of a figure factory is the [Scatterplot Matrix](https://plot.ly/python/scatterplot-matrix/) as it utilizes `go.Scatter`, `go.Box` and `go.Histogram`.
 
-So if you have ever wanted to contribute to the Plotly Python Library by adding a new chart type we don't have, now you can! This README will help you get started by cloning the plotly.py repo, forking a new branch, creating a new figure factory, and creatng a new Pull Request to get feedback for merging. Just follow all these steps and you'll be ready to go.
+So if you have ever wanted to contribute to the Plotly Python Library by adding a new chart type we don't have, now you can! This README will help you get started by cloning the plotly_study.py repo, forking a new branch, creating a new figure factory, and creatng a new Pull Request to get feedback for merging. Just follow all these steps and you'll be ready to go.
 
 ## Getting Started:
-1. In the Terminal, clone the `plotly.py` repo locally and then check out the master branch.
+1. In the Terminal, clone the `plotly_study.py` repo locally and then check out the master branch.
 
 ```
-$ git clone git@github.com:plotly/plotly.py.git
+$ git clone git@github.com:plotly/plotly_study.py.git
 $ git fetch origin
 $ git checkout master
 ```
@@ -45,7 +45,7 @@ $ git checkout -b "add-ff-type"
 ## Create a figure_factory File
 1. Creating python file
 
-Move to the `plotly/figure_factory` directory in the `plotly.py` repo. To do this, open up the Terminal and excute the command:
+Move to the `plotly/figure_factory` directory in the `plotly_study.py` repo. To do this, open up the Terminal and excute the command:
 
 ```
 cd plotly/figure_factory
@@ -66,16 +66,16 @@ from __future__ import absolute_import
 # Require that numpy exists for figure_factory
 import numpy
 
-from plotly.figure_factory._2d_density import create_2d_density
-from plotly.figure_factory._annotated_heatmap import create_annotated_heatmap
-from plotly.figure_factory._candlestick import create_candlestick
+from plotly_study.figure_factory._2d_density import create_2d_density
+from plotly_study.figure_factory._annotated_heatmap import create_annotated_heatmap
+from plotly_study.figure_factory._candlestick import create_candlestick
 ...
 ```
 
 Now add the following line to the end of `__init__.py`:
 
 ```
-from plotly.figure_factory._foo import create_foo
+from plotly_study.figure_factory._foo import create_foo
 ```
 
 3. Imports
@@ -169,22 +169,22 @@ $ git push origin add-ff-type
 
 ## Be Part of the Discussion
 
-Go check out your newly pushed branch at https://github.com/plotly/plotly.py. If you have any other questions, check out the [Plotly Contributing Page](https://github.com/plotly/plotly.py/blob/master/contributing.md). Thanks for contributing to Plotly's Graphing Library!
+Go check out your newly pushed branch at https://github.com/plotly/plotly_study.py. If you have any other questions, check out the [Plotly Contributing Page](https://github.com/plotly/plotly_study.py/blob/master/contributing.md). Thanks for contributing to Plotly's Graphing Library!
 
 ### Table of Current Figure Factories
 | Name              | Documentation                             | In GitHub     |
 | ----------------- | ----------------------------------------- | ------------- |
-| 2D Density        | https://plot.ly/python/density-plots/     |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_2d_density.py|
-| Annotated Heatmap | https://plot.ly/python/annotated_heatmap/ |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_annotated_heatmap.py|
-| Candlestick       | https://plot.ly/python/candlestick-charts/|https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_candlestick.py|
-| Dendrogram        | https://plot.ly/python/dendrogram/        |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_dendrogram.py|
-| Distplot          | https://plot.ly/python/distplot/          |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_distplot.py|
-| Facet Grid        | https://plot.ly/python/facet-plots/       |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_facet_grid.py|
-| Gantt             | https://plot.ly/python/gantt/             |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_gantt.py|
-| Ohlc              | https://plot.ly/python/ohlc-charts/       |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_ohlc.py|
-| Quiver            | https://plot.ly/python/quiver-plots/      |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_quiver.py|
-| Scatterplot Matrix| https://plot.ly/python/scatterplot-matrix/|https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_scatterplot.py|
-| Streamline        | https://plot.ly/python/streamline-plots/  |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_streamline.py|
-| Table             | https://plot.ly/python/table/             |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_table.py|
-| Trisurf           | https://plot.ly/python/trisurf/           |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_trisurf.py|
-| Violin            | https://plot.ly/python/violin-plot/       |https://github.com/plotly/plotly.py/blob/master/plotly/figure_factory/_violin.py|
+| 2D Density        | https://plot.ly/python/density-plots/     |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_2d_density.py|
+| Annotated Heatmap | https://plot.ly/python/annotated_heatmap/ |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_annotated_heatmap.py|
+| Candlestick       | https://plot.ly/python/candlestick-charts/|https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_candlestick.py|
+| Dendrogram        | https://plot.ly/python/dendrogram/        |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_dendrogram.py|
+| Distplot          | https://plot.ly/python/distplot/          |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_distplot.py|
+| Facet Grid        | https://plot.ly/python/facet-plots/       |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_facet_grid.py|
+| Gantt             | https://plot.ly/python/gantt/             |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_gantt.py|
+| Ohlc              | https://plot.ly/python/ohlc-charts/       |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_ohlc.py|
+| Quiver            | https://plot.ly/python/quiver-plots/      |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_quiver.py|
+| Scatterplot Matrix| https://plot.ly/python/scatterplot-matrix/|https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_scatterplot.py|
+| Streamline        | https://plot.ly/python/streamline-plots/  |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_streamline.py|
+| Table             | https://plot.ly/python/table/             |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_table.py|
+| Trisurf           | https://plot.ly/python/trisurf/           |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_trisurf.py|
+| Violin            | https://plot.ly/python/violin-plot/       |https://github.com/plotly/plotly_study.py/blob/master/plotly/figure_factory/_violin.py|

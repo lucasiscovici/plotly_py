@@ -359,7 +359,7 @@ class MarkerValidator(_plotly_utils.basevalidators.CompoundValidator):
                 `blend` to `true` reduces zoom/pan speed if
                 used with large numbers of points.
             border
-                plotly.graph_objects.pointcloud.marker.Border
+                plotly_study.graph_objects.pointcloud.marker.Border
                 instance or dict with compatible properties
             color
                 Sets the marker fill color. It accepts a
