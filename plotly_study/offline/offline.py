@@ -87,7 +87,7 @@ def get_plotlyjs():
     ...      f.write(html)
     """
     path = os.path.join("package_data", __NAME_JS)
-    plotlyjs = pkgutil.get_data("plotly", path).decode("utf-8")
+    plotlyjs = pkgutil.get_data("plotly_study", path).decode("utf-8")
     return plotlyjs
 
 

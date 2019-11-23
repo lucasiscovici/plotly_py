@@ -86,7 +86,7 @@ class TemplatesConfig(object):
                     path = os.path.join(
                         "package_data", "templates", template_name + ".json"
                     )
-                    template_str = pkgutil.get_data("plotly", path).decode("utf-8")
+                    template_str = pkgutil.get_data("plotly_study", path).decode("utf-8")
                     template_dict = json.loads(template_str)
                     template = Template(template_dict)
 
