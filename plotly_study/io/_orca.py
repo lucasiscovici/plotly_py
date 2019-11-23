@@ -15,7 +15,7 @@ import retrying
 from six import string_types
 
 import _plotly_utils.utils
-import plotly
+import plotly_study
 from plotly_study.files import PLOTLY_DIR, ensure_writable_plotly_dir
 from plotly_study.io._utils import validate_coerce_fig_to_dict
 from plotly_study.optional_imports import get_module
@@ -230,7 +230,7 @@ class OrcaConfig(object):
         self.reload(warn=False)
 
         # Compute constants
-        plotlyjs = os.path.join(self.package_dir, "plotly_study.min.js")
+        plotlyjs = os.path.join(self.package_dir, "plotly.min.js")
         self._constants = {
             "plotlyjs": plotlyjs,
             "config_file": os.path.join(PLOTLY_DIR, ".orca"),

@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import pytest
 import plotly_study.graph_objects as go
-import plotly
+import plotly_study
 from plotly_study.express._core import build_dataframe
 from pandas.util.testing import assert_frame_equal
 

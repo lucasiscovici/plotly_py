@@ -10,7 +10,7 @@ from unittest import TestCase
 from nose.plugins.attrib import attr
 import json as _json
 
-import plotly
+import plotly_study
 import plotly_study.io as pio
 import json
 
@@ -41,7 +41,7 @@ window.PlotlyConfig = {MathJaxConfig: 'local'};</script>"""
 
 cdn_script = '<script src="https://cdn.plot.ly/plotly-latest.min.js">' "</script>"
 
-directory_script = '<script src="plotly_study.min.js"></script>'
+directory_script = '<script src="plotly.min.js"></script>'
 
 
 mathjax_cdn = "https://cdnjs.cloudflare.com" "/ajax/libs/mathjax/2.7.5/MathJax.js"
@@ -67,8 +67,8 @@ class PlotlyOfflineBaseTestCase(TestCase):
         try:
             os.remove(os.path.join(here, "temp-plot.html"))
             # Some tests that produce temp-plot.html
-            # also produce plotly_study.min.js
-            os.remove(os.path.join(here, "plotly_study.min.js"))
+            # also produce plotly.min.js
+            os.remove(os.path.join(here, "plotly.min.js"))
         except OSError:
             pass
 
@@ -196,7 +196,7 @@ class PlotlyOfflineTestCase(PlotlyOfflineBaseTestCase):
             self.assertNotIn(directory_script, html)
 
     def test_including_plotlyjs_directory_html(self):
-        self.assertFalse(os.path.exists(os.path.join(here, "plotly_study.min.js")))
+        self.assertFalse(os.path.exists(os.path.join(here, "plotly.min.js")))
 
         for include_plotlyjs in ["directory", "Directory", "DIRECTORY"]:
             html = self._read_html(
@@ -212,13 +212,13 @@ class PlotlyOfflineTestCase(PlotlyOfflineBaseTestCase):
             self.assertNotIn(cdn_script, html)
             self.assertIn(directory_script, html)
 
-        # plot creates plotly_study.min.js in the output directory
-        self.assertTrue(os.path.exists(os.path.join(here, "plotly_study.min.js")))
-        with open(os.path.join(here, "plotly_study.min.js"), "r") as f:
+        # plot creates plotly.min.js in the output directory
+        self.assertTrue(os.path.exists(os.path.join(here, "plotly.min.js")))
+        with open(os.path.join(here, "plotly.min.js"), "r") as f:
             self.assertEqual(f.read(), PLOTLYJS)
 
     def test_including_plotlyjs_directory_div(self):
-        self.assertFalse(os.path.exists(os.path.join(here, "plotly_study.min.js")))
+        self.assertFalse(os.path.exists(os.path.join(here, "plotly.min.js")))
 
         for include_plotlyjs in ["directory", "Directory", "DIRECTORY"]:
             html = plotly_study.offline.plot(
@@ -233,17 +233,17 @@ class PlotlyOfflineTestCase(PlotlyOfflineBaseTestCase):
             self.assertNotIn(cdn_script, html)
             self.assertIn(directory_script, html)
 
-        # plot does NOT create a plotly_study.min.js file in the output directory
+        # plot does NOT create a plotly.min.js file in the output directory
         # when output_type is div
-        self.assertFalse(os.path.exists("plotly_study.min.js"))
+        self.assertFalse(os.path.exists("plotly.min.js"))
 
     def test_including_plotlyjs_path_html(self):
         for include_plotlyjs in [
             (
                 "https://cdnjs.cloudflare.com/ajax/libs/plotly_study.js/1.40.1/"
-                "plotly_study.min.js"
+                "plotly.min.js"
             ),
-            "subpath/to/plotly_study.min.js",
+            "subpath/to/plotly.min.js",
             "something.js",
         ]:
 
@@ -265,9 +265,9 @@ class PlotlyOfflineTestCase(PlotlyOfflineBaseTestCase):
         for include_plotlyjs in [
             (
                 "https://cdnjs.cloudflare.com/ajax/libs/plotly_study.js/1.40.1/"
-                "plotly_study.min.js"
+                "plotly.min.js"
             ),
-            "subpath/to/plotly_study.min.js",
+            "subpath/to/plotly.min.js",
             "something.js",
         ]:
 

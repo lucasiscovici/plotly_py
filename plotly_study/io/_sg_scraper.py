@@ -3,7 +3,7 @@
 # which can be used by projects using plotly in their documentation.
 import inspect, os
 
-import plotly
+import plotly_study
 from glob import glob
 import shutil
 

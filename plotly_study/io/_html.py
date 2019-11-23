@@ -64,7 +64,7 @@ def to_html(
         library.
 
         If 'directory', a script tag is included that references an external
-        plotly_study.min.js bundle that is assumed to reside in the same
+        plotly.min.js bundle that is assumed to reside in the same
         directory as the HTML file.
 
         If 'require', plotly_study.js is loaded using require.js.  This option
@@ -277,7 +277,7 @@ def to_html(
     elif include_plotlyjs == "directory":
         load_plotlyjs = """\
         {win_config}
-        <script src="plotly_study.min.js"></script>\
+        <script src="plotly.min.js"></script>\
     """.format(
             win_config=_window_plotly_config
         )
@@ -423,19 +423,19 @@ def write_html(
         library.
 
         If 'directory', a script tag is included that references an external
-        plotly_study.min.js bundle that is assumed to reside in the same
+        plotly.min.js bundle that is assumed to reside in the same
         directory as the HTML file. If `file` is a string to a local file path
         and `full_html` is True then
 
         If 'directory', a script tag is included that references an external
-        plotly_study.min.js bundle that is assumed to reside in the same
+        plotly.min.js bundle that is assumed to reside in the same
         directory as the HTML file.  If `file` is a string to a local file
-        path and `full_html` is True, then the plotly_study.min.js bundle is copied
+        path and `full_html` is True, then the plotly.min.js bundle is copied
         into the directory of the resulting HTML file. If a file named
-        plotly_study.min.js already exists in the output directory then this file
+        plotly.min.js already exists in the output directory then this file
         is left unmodified and no copy is performed. HTML files generated
         with this option can be used offline, but they require a copy of
-        the plotly_study.min.js bundle in the same directory. This option is
+        the plotly.min.js bundle in the same directory. This option is
         useful when many figures will be saved as HTML files in the same
         directory because the plotly_study.js source code will be included only
         once per output directory, rather than once per output file.
@@ -529,9 +529,9 @@ def write_html(
     else:
         file.write(html_str)
 
-    # Check if we should copy plotly_study.min.js to output directory
+    # Check if we should copy plotly.min.js to output directory
     if file_is_str and full_html and include_plotlyjs == "directory":
-        bundle_path = os.path.join(os.path.dirname(file), "plotly_study.min.js")
+        bundle_path = os.path.join(os.path.dirname(file), "plotly.min.js")
 
         if not os.path.exists(bundle_path):
             with open(bundle_path, "w") as f:

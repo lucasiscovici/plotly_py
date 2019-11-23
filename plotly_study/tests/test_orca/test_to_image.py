@@ -1,4 +1,4 @@
-import plotly
+import plotly_study
 import plotly_study.io as pio
 import plotly_study.graph_objs as go
 import os

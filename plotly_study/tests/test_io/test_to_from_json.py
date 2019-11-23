@@ -1,7 +1,7 @@
 import plotly_study.graph_objs as go
 import plotly_study.io as pio
 import pytest
-import plotly
+import plotly_study
 import json
 import sys
 import os

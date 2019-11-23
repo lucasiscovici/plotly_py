@@ -8,7 +8,7 @@ from __future__ import absolute_import
 import os
 import warnings
 import pkgutil
-import plotly
+import plotly_study
 import plotly_study.tools
 
 from plotly_study.optional_imports import get_module
@@ -470,13 +470,13 @@ def plot(
         library.
 
         If 'directory', a script tag is included that references an external
-        plotly_study.min.js bundle that is assumed to reside in the same
+        plotly.min.js bundle that is assumed to reside in the same
         directory as the HTML file.  If output_type='file' then the
-        plotly_study.min.js bundle is copied into the directory of the resulting
-        HTML file. If a file named plotly_study.min.js already exists in the output
+        plotly.min.js bundle is copied into the directory of the resulting
+        HTML file. If a file named plotly.min.js already exists in the output
         directory then this file is left unmodified and no copy is performed.
         HTML files generated with this option can be used offline, but they
-        require a copy of the plotly_study.min.js bundle in the same directory.
+        require a copy of the plotly.min.js bundle in the same directory.
         This option is useful when many figures will be saved as HTML files in
         the same directory because the plotly_study.js source code will be included
         only once per output directory, rather than once per output file.

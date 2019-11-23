@@ -1,4 +1,4 @@
-import plotly
+import plotly_study
 import os
 import shutil
 import pytest
