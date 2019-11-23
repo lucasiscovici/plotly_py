@@ -458,17 +458,17 @@ setup(
     ],
     license="MIT",
     packages=[
-        "plotly",
+        "plotly_study",
         "plotlywidget",
-        "plotly.plotly",
-        "plotly.offline",
-        "plotly.io",
-        "plotly.matplotlylib",
-        "plotly.matplotlylib.mplexporter",
-        "plotly.matplotlylib.mplexporter.renderers",
-        "plotly.figure_factory",
-        "plotly.data",
-        "plotly.express",
+        "plotly_study.plotly",
+        "plotly_study.offline",
+        "plotly_study.io",
+        "plotly_study.matplotlylib",
+        "plotly_study.matplotlylib.mplexporter",
+        "plotly_study.matplotlylib.mplexporter.renderers",
+        "plotly_study.figure_factory",
+        "plotly_study.data",
+        "plotly_study.express",
         "_plotly_utils",
         "_plotly_utils.colors",
         "_plotly_future_",
@@ -476,7 +476,7 @@ setup(
     + graph_objs_packages
     + validator_packages,
     package_data={
-        "plotly_study": [
+        "plotly": [
             "package_data/*",
             "package_data/templates/*",
             "package_data/datasets/*",
