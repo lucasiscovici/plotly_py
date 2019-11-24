@@ -1517,7 +1517,7 @@ class ColorscaleValidator(BaseValidator):
         if self._named_colorscales is None:
             import inspect
             import itertools
-            from plotly import colors
+            from plotly_study  import colors
 
             colorscale_members = itertools.chain(
                 inspect.getmembers(colors.sequential),
