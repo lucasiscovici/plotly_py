@@ -232,7 +232,7 @@ def to_html(
 
     script = """
                 if (document.getElementById("{id}")) {{
-                    plotly.newPlot(
+                    Plotly.newPlot(
                         '{id}',
                         {data},
                         {layout},
