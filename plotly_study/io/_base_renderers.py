@@ -95,7 +95,7 @@ class PlotlyRenderer(MimetypeRenderer):
             to_json(fig_dict, validate=False, remove_uids=False)
         )
 
-        return {"application/vnd.plotly_study.v1+json": json_compatible_fig_dict}
+        return {"application/vnd.plotly.v1+json": json_compatible_fig_dict}
 
 
 # Static Image
@@ -345,7 +345,7 @@ var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
             console.log([gd, 'removed!']);
-            plotly_study.purge(gd);
+            plotly.purge(gd);
             observer.disconnect();
         }}
 }});

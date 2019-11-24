@@ -211,7 +211,7 @@ def to_html(
     then_animate = ""
     if jframes:
         then_addframes = """.then(function(){{
-                            plotly_study.addFrames('{id}', {frames});
+                            plotly.addFrames('{id}', {frames});
                         }})""".format(
             id=plotdivid, frames=jframes
         )
@@ -222,7 +222,7 @@ def to_html(
             else:
                 animation_opts_arg = ""
             then_animate = """.then(function(){{
-                            plotly_study.animate('{id}', null{animation_opts});
+                            plotly.animate('{id}', null{animation_opts});
                         }})""".format(
                 id=plotdivid, animation_opts=animation_opts_arg
             )
@@ -232,7 +232,7 @@ def to_html(
 
     script = """
                 if (document.getElementById("{id}")) {{
-                    plotly_study.newPlot(
+                    plotly.newPlot(
                         '{id}',
                         {data},
                         {layout},
