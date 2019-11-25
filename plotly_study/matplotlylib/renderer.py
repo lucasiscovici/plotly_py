@@ -14,7 +14,7 @@ import warnings
 import plotly_study.graph_objs as go
 from plotly_study.matplotlylib.mplexporter import Renderer
 from plotly_study.matplotlylib import mpltools
-
+import numpy as np
 
 # Warning format
 def warning_on_one_line(msg, category, filename, lineno, file=None, line=None):
@@ -304,7 +304,7 @@ class PlotlyRenderer(Renderer):
             self.msg += "    Heck yeah, I drew that bar chart\n"
             self.plotly_fig.add_trace(bar),
             if bar_gap is not None:
-                self.plotly_fig["layout"]["bargap"] = bar_gap
+                self.plotly_fig["layout"]["bargap"] = np.round(bar_gap,10)
         else:
             self.msg += "    Bar chart not drawn\n"
             warnings.warn(
