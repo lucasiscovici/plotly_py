@@ -345,7 +345,7 @@ var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
             console.log([gd, 'removed!']);
-            plotly.purge(gd);
+            Plotly.purge(gd);
             observer.disconnect();
         }}
 }});
